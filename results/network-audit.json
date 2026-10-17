@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "runs": {
+    "network-aa": {
+      "cases": 9,
+      "batches": 756
+    },
+    "network-screen": {
+      "cases": 33,
+      "batches": 2772
+    },
+    "network-confirm": {
+      "cases": 33,
+      "batches": 2772
+    }
+  },
+  "GMP_comparisons_per_library": 4056,
+  "direct_transform_cases": 441,
+  "direct_coefficient_checks": 7620714,
+  "naive_convolutions": 24,
+  "sha256": {
+    "scripts/make_network_patch.py": "30f089ee032235f3c715f215f2a677a014f5efde29dfb1802a2f9f8f73b0a769",
+    "scripts/network_frames.py": "66e6be38d2f75c5b2fc0cca61d87c03534205074e1983737be990c6d70a6d763",
+    "scripts/build_experiment.py": "a361988bad20f107900b1896fa502c07acd542a199097783817e7ad419ec8bec",
+    "scripts/check_network.sh": "3a85585493a2d4d3ac9e14149e94720442a9f55a5df126489830d194d23b55d8",
+    "scripts/audit_network.py": "1496380592abcf0e68ef48e47a0a6e3bec20f67e5bb14353552115a71b15ad29",
+    "bench/test_network.c": "8a902ef3492bebf6026693a1ef0133cdc3c7eeedac49565ad54bdf15293bbff2",
+    "tests/test_network_frames.py": "a67bae870085250496e073b1b78092d7fc6cd3d00c32162e325fe2889a3f977a"
+  },
+  "sister_source_sha256": {
+    "docs/packed-movement-audit.md": "66ea3c04f4d7ea2b6c2f5aaedc3ce7164f703370c3728d673c165ee2c7685d32",
+    "docs/research/shared-computation.md": "ce693a6b8b0dacdcddee32ae0230338727284f15c4a317df467c0a201a60c0a5",
+    "notes/dag-construction.tex": "62a873452a9139bc06d3e2a530d1c5e25165ab41617090e6d8d5ebd4c82c9179"
+  },
+  "note": "Evidence integrity and coverage only; no performance success is required."
+}

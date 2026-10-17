@@ -1,0 +1,1391 @@
+{
+  "tables": [
+    {
+      "table": 1,
+      "node": 5,
+      "previous_best": "trie_incidence",
+      "previous_additions": 33,
+      "best_control": "ordinary_gain_0",
+      "best_carried": "carried_gain_0",
+      "best_ablation": "ablated_gain_0",
+      "qualifies": false,
+      "pool_counts": {
+        "ordinary": 484,
+        "carried": 113,
+        "ablated": 103,
+        "carried_not_ordinary": 63,
+        "carried_not_ordinary_or_ablated": 28
+      },
+      "lower_bound": {
+        "active_inputs": 32,
+        "components": 1,
+        "additions": 31
+      },
+      "metrics": {
+        "previous_memo_balanced": {
+          "additions": 69,
+          "peak_live_computed_values": 19,
+          "depth": 5,
+          "generated_additions": 69
+        },
+        "previous_greedy_common_pairs": {
+          "additions": 33,
+          "peak_live_computed_values": 11,
+          "depth": 6,
+          "generated_additions": 33
+        },
+        "previous_trie_natural": {
+          "additions": 81,
+          "peak_live_computed_values": 19,
+          "depth": 10,
+          "generated_additions": 81
+        },
+        "previous_trie_reverse": {
+          "additions": 47,
+          "peak_live_computed_values": 11,
+          "depth": 10,
+          "generated_additions": 47
+        },
+        "previous_trie_incidence": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 10,
+          "generated_additions": 33
+        },
+        "ordinary_gain_0": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 33
+        },
+        "ordinary_gain_1": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 33
+        },
+        "ordinary_ratio_0": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 33
+        },
+        "ordinary_ratio_1": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 33
+        },
+        "carried_gain_0": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 33
+        },
+        "carried_gain_1": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 33
+        },
+        "carried_ratio_0": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 33
+        },
+        "carried_ratio_1": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 33
+        },
+        "ablated_gain_0": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 33
+        },
+        "ablated_gain_1": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 33
+        },
+        "ablated_ratio_0": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 33
+        },
+        "ablated_ratio_1": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 33
+        }
+      }
+    },
+    {
+      "table": 11,
+      "node": 10,
+      "previous_best": "greedy_common_pairs",
+      "previous_additions": 95,
+      "best_control": "ordinary_ratio_0",
+      "best_carried": "carried_ratio_0",
+      "best_ablation": "ablated_ratio_0",
+      "qualifies": false,
+      "pool_counts": {
+        "ordinary": 1130,
+        "carried": 358,
+        "ablated": 330,
+        "carried_not_ordinary": 136,
+        "carried_not_ordinary_or_ablated": 31
+      },
+      "lower_bound": {
+        "active_inputs": 67,
+        "components": 1,
+        "additions": 66
+      },
+      "metrics": {
+        "previous_memo_balanced": {
+          "additions": 250,
+          "peak_live_computed_values": 42,
+          "depth": 7,
+          "generated_additions": 250
+        },
+        "previous_greedy_common_pairs": {
+          "additions": 95,
+          "peak_live_computed_values": 34,
+          "depth": 11,
+          "generated_additions": 95
+        },
+        "previous_trie_natural": {
+          "additions": 175,
+          "peak_live_computed_values": 39,
+          "depth": 10,
+          "generated_additions": 175
+        },
+        "previous_trie_reverse": {
+          "additions": 240,
+          "peak_live_computed_values": 42,
+          "depth": 10,
+          "generated_additions": 240
+        },
+        "previous_trie_incidence": {
+          "additions": 103,
+          "peak_live_computed_values": 34,
+          "depth": 10,
+          "generated_additions": 103
+        },
+        "ordinary_gain_0": {
+          "additions": 113,
+          "peak_live_computed_values": 32,
+          "depth": 12,
+          "generated_additions": 113
+        },
+        "ordinary_gain_1": {
+          "additions": 118,
+          "peak_live_computed_values": 32,
+          "depth": 12,
+          "generated_additions": 118
+        },
+        "ordinary_ratio_0": {
+          "additions": 95,
+          "peak_live_computed_values": 34,
+          "depth": 13,
+          "generated_additions": 95
+        },
+        "ordinary_ratio_1": {
+          "additions": 96,
+          "peak_live_computed_values": 34,
+          "depth": 12,
+          "generated_additions": 96
+        },
+        "carried_gain_0": {
+          "additions": 113,
+          "peak_live_computed_values": 32,
+          "depth": 12,
+          "generated_additions": 113
+        },
+        "carried_gain_1": {
+          "additions": 118,
+          "peak_live_computed_values": 32,
+          "depth": 12,
+          "generated_additions": 118
+        },
+        "carried_ratio_0": {
+          "additions": 95,
+          "peak_live_computed_values": 34,
+          "depth": 13,
+          "generated_additions": 95
+        },
+        "carried_ratio_1": {
+          "additions": 96,
+          "peak_live_computed_values": 34,
+          "depth": 12,
+          "generated_additions": 96
+        },
+        "ablated_gain_0": {
+          "additions": 113,
+          "peak_live_computed_values": 32,
+          "depth": 12,
+          "generated_additions": 113
+        },
+        "ablated_gain_1": {
+          "additions": 118,
+          "peak_live_computed_values": 32,
+          "depth": 12,
+          "generated_additions": 118
+        },
+        "ablated_ratio_0": {
+          "additions": 95,
+          "peak_live_computed_values": 34,
+          "depth": 13,
+          "generated_additions": 95
+        },
+        "ablated_ratio_1": {
+          "additions": 96,
+          "peak_live_computed_values": 34,
+          "depth": 12,
+          "generated_additions": 96
+        }
+      }
+    },
+    {
+      "table": 12,
+      "node": 8,
+      "previous_best": "greedy_common_pairs",
+      "previous_additions": 130,
+      "best_control": "ordinary_ratio_0",
+      "best_carried": "carried_ratio_0",
+      "best_ablation": "ablated_ratio_0",
+      "qualifies": false,
+      "pool_counts": {
+        "ordinary": 1232,
+        "carried": 415,
+        "ablated": 397,
+        "carried_not_ordinary": 126,
+        "carried_not_ordinary_or_ablated": 35
+      },
+      "lower_bound": {
+        "active_inputs": 93,
+        "components": 1,
+        "additions": 92
+      },
+      "metrics": {
+        "previous_memo_balanced": {
+          "additions": 402,
+          "peak_live_computed_values": 56,
+          "depth": 6,
+          "generated_additions": 402
+        },
+        "previous_greedy_common_pairs": {
+          "additions": 130,
+          "peak_live_computed_values": 47,
+          "depth": 9,
+          "generated_additions": 130
+        },
+        "previous_trie_natural": {
+          "additions": 262,
+          "peak_live_computed_values": 55,
+          "depth": 9,
+          "generated_additions": 262
+        },
+        "previous_trie_reverse": {
+          "additions": 308,
+          "peak_live_computed_values": 66,
+          "depth": 9,
+          "generated_additions": 308
+        },
+        "previous_trie_incidence": {
+          "additions": 159,
+          "peak_live_computed_values": 48,
+          "depth": 9,
+          "generated_additions": 159
+        },
+        "ordinary_gain_0": {
+          "additions": 154,
+          "peak_live_computed_values": 45,
+          "depth": 9,
+          "generated_additions": 154
+        },
+        "ordinary_gain_1": {
+          "additions": 151,
+          "peak_live_computed_values": 45,
+          "depth": 12,
+          "generated_additions": 151
+        },
+        "ordinary_ratio_0": {
+          "additions": 130,
+          "peak_live_computed_values": 47,
+          "depth": 10,
+          "generated_additions": 130
+        },
+        "ordinary_ratio_1": {
+          "additions": 130,
+          "peak_live_computed_values": 47,
+          "depth": 12,
+          "generated_additions": 130
+        },
+        "carried_gain_0": {
+          "additions": 155,
+          "peak_live_computed_values": 45,
+          "depth": 9,
+          "generated_additions": 155
+        },
+        "carried_gain_1": {
+          "additions": 151,
+          "peak_live_computed_values": 45,
+          "depth": 12,
+          "generated_additions": 151
+        },
+        "carried_ratio_0": {
+          "additions": 130,
+          "peak_live_computed_values": 47,
+          "depth": 10,
+          "generated_additions": 130
+        },
+        "carried_ratio_1": {
+          "additions": 130,
+          "peak_live_computed_values": 47,
+          "depth": 12,
+          "generated_additions": 130
+        },
+        "ablated_gain_0": {
+          "additions": 155,
+          "peak_live_computed_values": 45,
+          "depth": 9,
+          "generated_additions": 155
+        },
+        "ablated_gain_1": {
+          "additions": 150,
+          "peak_live_computed_values": 46,
+          "depth": 12,
+          "generated_additions": 150
+        },
+        "ablated_ratio_0": {
+          "additions": 130,
+          "peak_live_computed_values": 47,
+          "depth": 10,
+          "generated_additions": 130
+        },
+        "ablated_ratio_1": {
+          "additions": 130,
+          "peak_live_computed_values": 47,
+          "depth": 12,
+          "generated_additions": 130
+        }
+      }
+    },
+    {
+      "table": 15,
+      "node": 7,
+      "previous_best": "greedy_common_pairs",
+      "previous_additions": 202,
+      "best_control": "ordinary_ratio_0",
+      "best_carried": "carried_ratio_0",
+      "best_ablation": "ablated_ratio_0",
+      "qualifies": false,
+      "pool_counts": {
+        "ordinary": 1046,
+        "carried": 423,
+        "ablated": 370,
+        "carried_not_ordinary": 57,
+        "carried_not_ordinary_or_ablated": 35
+      },
+      "lower_bound": {
+        "active_inputs": 144,
+        "components": 1,
+        "additions": 143
+      },
+      "metrics": {
+        "previous_memo_balanced": {
+          "additions": 517,
+          "peak_live_computed_values": 92,
+          "depth": 6,
+          "generated_additions": 517
+        },
+        "previous_greedy_common_pairs": {
+          "additions": 202,
+          "peak_live_computed_values": 83,
+          "depth": 7,
+          "generated_additions": 202
+        },
+        "previous_trie_natural": {
+          "additions": 318,
+          "peak_live_computed_values": 83,
+          "depth": 7,
+          "generated_additions": 318
+        },
+        "previous_trie_reverse": {
+          "additions": 519,
+          "peak_live_computed_values": 86,
+          "depth": 7,
+          "generated_additions": 519
+        },
+        "previous_trie_incidence": {
+          "additions": 207,
+          "peak_live_computed_values": 85,
+          "depth": 7,
+          "generated_additions": 207
+        },
+        "ordinary_gain_0": {
+          "additions": 218,
+          "peak_live_computed_values": 83,
+          "depth": 9,
+          "generated_additions": 218
+        },
+        "ordinary_gain_1": {
+          "additions": 219,
+          "peak_live_computed_values": 83,
+          "depth": 9,
+          "generated_additions": 219
+        },
+        "ordinary_ratio_0": {
+          "additions": 202,
+          "peak_live_computed_values": 83,
+          "depth": 8,
+          "generated_additions": 202
+        },
+        "ordinary_ratio_1": {
+          "additions": 204,
+          "peak_live_computed_values": 83,
+          "depth": 8,
+          "generated_additions": 204
+        },
+        "carried_gain_0": {
+          "additions": 218,
+          "peak_live_computed_values": 83,
+          "depth": 9,
+          "generated_additions": 218
+        },
+        "carried_gain_1": {
+          "additions": 219,
+          "peak_live_computed_values": 83,
+          "depth": 9,
+          "generated_additions": 219
+        },
+        "carried_ratio_0": {
+          "additions": 202,
+          "peak_live_computed_values": 83,
+          "depth": 8,
+          "generated_additions": 202
+        },
+        "carried_ratio_1": {
+          "additions": 204,
+          "peak_live_computed_values": 83,
+          "depth": 8,
+          "generated_additions": 204
+        },
+        "ablated_gain_0": {
+          "additions": 218,
+          "peak_live_computed_values": 83,
+          "depth": 9,
+          "generated_additions": 218
+        },
+        "ablated_gain_1": {
+          "additions": 219,
+          "peak_live_computed_values": 83,
+          "depth": 9,
+          "generated_additions": 219
+        },
+        "ablated_ratio_0": {
+          "additions": 202,
+          "peak_live_computed_values": 83,
+          "depth": 8,
+          "generated_additions": 202
+        },
+        "ablated_ratio_1": {
+          "additions": 204,
+          "peak_live_computed_values": 83,
+          "depth": 8,
+          "generated_additions": 204
+        }
+      }
+    },
+    {
+      "table": 16,
+      "node": 4,
+      "previous_best": "greedy_common_pairs",
+      "previous_additions": 71,
+      "best_control": "ordinary_ratio_0",
+      "best_carried": "carried_ratio_0",
+      "best_ablation": "ablated_ratio_0",
+      "qualifies": false,
+      "pool_counts": {
+        "ordinary": 869,
+        "carried": 212,
+        "ablated": 202,
+        "carried_not_ordinary": 94,
+        "carried_not_ordinary_or_ablated": 24
+      },
+      "lower_bound": {
+        "active_inputs": 61,
+        "components": 1,
+        "additions": 60
+      },
+      "metrics": {
+        "previous_memo_balanced": {
+          "additions": 175,
+          "peak_live_computed_values": 24,
+          "depth": 6,
+          "generated_additions": 175
+        },
+        "previous_greedy_common_pairs": {
+          "additions": 71,
+          "peak_live_computed_values": 20,
+          "depth": 13,
+          "generated_additions": 71
+        },
+        "previous_trie_natural": {
+          "additions": 148,
+          "peak_live_computed_values": 25,
+          "depth": 10,
+          "generated_additions": 148
+        },
+        "previous_trie_reverse": {
+          "additions": 147,
+          "peak_live_computed_values": 22,
+          "depth": 10,
+          "generated_additions": 147
+        },
+        "previous_trie_incidence": {
+          "additions": 84,
+          "peak_live_computed_values": 21,
+          "depth": 10,
+          "generated_additions": 84
+        },
+        "ordinary_gain_0": {
+          "additions": 88,
+          "peak_live_computed_values": 19,
+          "depth": 13,
+          "generated_additions": 88
+        },
+        "ordinary_gain_1": {
+          "additions": 89,
+          "peak_live_computed_values": 19,
+          "depth": 13,
+          "generated_additions": 89
+        },
+        "ordinary_ratio_0": {
+          "additions": 71,
+          "peak_live_computed_values": 19,
+          "depth": 14,
+          "generated_additions": 71
+        },
+        "ordinary_ratio_1": {
+          "additions": 71,
+          "peak_live_computed_values": 19,
+          "depth": 14,
+          "generated_additions": 71
+        },
+        "carried_gain_0": {
+          "additions": 89,
+          "peak_live_computed_values": 19,
+          "depth": 13,
+          "generated_additions": 89
+        },
+        "carried_gain_1": {
+          "additions": 89,
+          "peak_live_computed_values": 19,
+          "depth": 13,
+          "generated_additions": 89
+        },
+        "carried_ratio_0": {
+          "additions": 71,
+          "peak_live_computed_values": 19,
+          "depth": 14,
+          "generated_additions": 71
+        },
+        "carried_ratio_1": {
+          "additions": 71,
+          "peak_live_computed_values": 19,
+          "depth": 14,
+          "generated_additions": 71
+        },
+        "ablated_gain_0": {
+          "additions": 89,
+          "peak_live_computed_values": 19,
+          "depth": 13,
+          "generated_additions": 89
+        },
+        "ablated_gain_1": {
+          "additions": 89,
+          "peak_live_computed_values": 19,
+          "depth": 13,
+          "generated_additions": 89
+        },
+        "ablated_ratio_0": {
+          "additions": 71,
+          "peak_live_computed_values": 19,
+          "depth": 14,
+          "generated_additions": 71
+        },
+        "ablated_ratio_1": {
+          "additions": 71,
+          "peak_live_computed_values": 19,
+          "depth": 14,
+          "generated_additions": 71
+        }
+      }
+    },
+    {
+      "table": 19,
+      "node": 2,
+      "previous_best": "greedy_common_pairs",
+      "previous_additions": 75,
+      "best_control": "previous_greedy_common_pairs",
+      "best_carried": "previous_greedy_common_pairs",
+      "best_ablation": "previous_greedy_common_pairs",
+      "qualifies": false,
+      "pool_counts": {
+        "ordinary": 977,
+        "carried": 250,
+        "ablated": 244,
+        "carried_not_ordinary": 84,
+        "carried_not_ordinary_or_ablated": 21
+      },
+      "lower_bound": {
+        "active_inputs": 59,
+        "components": 1,
+        "additions": 58
+      },
+      "metrics": {
+        "previous_memo_balanced": {
+          "additions": 191,
+          "peak_live_computed_values": 32,
+          "depth": 6,
+          "generated_additions": 191
+        },
+        "previous_greedy_common_pairs": {
+          "additions": 75,
+          "peak_live_computed_values": 26,
+          "depth": 10,
+          "generated_additions": 75
+        },
+        "previous_trie_natural": {
+          "additions": 165,
+          "peak_live_computed_values": 25,
+          "depth": 10,
+          "generated_additions": 165
+        },
+        "previous_trie_reverse": {
+          "additions": 167,
+          "peak_live_computed_values": 30,
+          "depth": 10,
+          "generated_additions": 167
+        },
+        "previous_trie_incidence": {
+          "additions": 85,
+          "peak_live_computed_values": 23,
+          "depth": 10,
+          "generated_additions": 85
+        },
+        "ordinary_gain_0": {
+          "additions": 101,
+          "peak_live_computed_values": 23,
+          "depth": 10,
+          "generated_additions": 101
+        },
+        "ordinary_gain_1": {
+          "additions": 99,
+          "peak_live_computed_values": 23,
+          "depth": 10,
+          "generated_additions": 99
+        },
+        "ordinary_ratio_0": {
+          "additions": 76,
+          "peak_live_computed_values": 23,
+          "depth": 12,
+          "generated_additions": 76
+        },
+        "ordinary_ratio_1": {
+          "additions": 76,
+          "peak_live_computed_values": 22,
+          "depth": 14,
+          "generated_additions": 76
+        },
+        "carried_gain_0": {
+          "additions": 101,
+          "peak_live_computed_values": 23,
+          "depth": 10,
+          "generated_additions": 101
+        },
+        "carried_gain_1": {
+          "additions": 99,
+          "peak_live_computed_values": 23,
+          "depth": 10,
+          "generated_additions": 99
+        },
+        "carried_ratio_0": {
+          "additions": 76,
+          "peak_live_computed_values": 23,
+          "depth": 12,
+          "generated_additions": 76
+        },
+        "carried_ratio_1": {
+          "additions": 76,
+          "peak_live_computed_values": 22,
+          "depth": 14,
+          "generated_additions": 76
+        },
+        "ablated_gain_0": {
+          "additions": 101,
+          "peak_live_computed_values": 23,
+          "depth": 10,
+          "generated_additions": 101
+        },
+        "ablated_gain_1": {
+          "additions": 99,
+          "peak_live_computed_values": 23,
+          "depth": 10,
+          "generated_additions": 99
+        },
+        "ablated_ratio_0": {
+          "additions": 76,
+          "peak_live_computed_values": 23,
+          "depth": 12,
+          "generated_additions": 76
+        },
+        "ablated_ratio_1": {
+          "additions": 76,
+          "peak_live_computed_values": 22,
+          "depth": 14,
+          "generated_additions": 76
+        }
+      }
+    },
+    {
+      "table": 2,
+      "node": 6,
+      "previous_best": "trie_incidence",
+      "previous_additions": 33,
+      "best_control": "ordinary_gain_0",
+      "best_carried": "carried_gain_0",
+      "best_ablation": "ablated_gain_0",
+      "qualifies": false,
+      "pool_counts": {
+        "ordinary": 492,
+        "carried": 111,
+        "ablated": 101,
+        "carried_not_ordinary": 66,
+        "carried_not_ordinary_or_ablated": 30
+      },
+      "lower_bound": {
+        "active_inputs": 32,
+        "components": 1,
+        "additions": 31
+      },
+      "metrics": {
+        "previous_memo_balanced": {
+          "additions": 81,
+          "peak_live_computed_values": 18,
+          "depth": 5,
+          "generated_additions": 81
+        },
+        "previous_greedy_common_pairs": {
+          "additions": 33,
+          "peak_live_computed_values": 11,
+          "depth": 6,
+          "generated_additions": 33
+        },
+        "previous_trie_natural": {
+          "additions": 81,
+          "peak_live_computed_values": 20,
+          "depth": 10,
+          "generated_additions": 81
+        },
+        "previous_trie_reverse": {
+          "additions": 47,
+          "peak_live_computed_values": 11,
+          "depth": 10,
+          "generated_additions": 47
+        },
+        "previous_trie_incidence": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 10,
+          "generated_additions": 33
+        },
+        "ordinary_gain_0": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 33
+        },
+        "ordinary_gain_1": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 33
+        },
+        "ordinary_ratio_0": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 33
+        },
+        "ordinary_ratio_1": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 33
+        },
+        "carried_gain_0": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 33
+        },
+        "carried_gain_1": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 33
+        },
+        "carried_ratio_0": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 33
+        },
+        "carried_ratio_1": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 33
+        },
+        "ablated_gain_0": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 33
+        },
+        "ablated_gain_1": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 33
+        },
+        "ablated_ratio_0": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 33
+        },
+        "ablated_ratio_1": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 33
+        }
+      }
+    },
+    {
+      "table": 21,
+      "node": 1,
+      "previous_best": "greedy_common_pairs",
+      "previous_additions": 76,
+      "best_control": "ordinary_ratio_0",
+      "best_carried": "carried_ratio_0",
+      "best_ablation": "ablated_ratio_0",
+      "qualifies": false,
+      "pool_counts": {
+        "ordinary": 921,
+        "carried": 235,
+        "ablated": 227,
+        "carried_not_ordinary": 73,
+        "carried_not_ordinary_or_ablated": 25
+      },
+      "lower_bound": {
+        "active_inputs": 65,
+        "components": 1,
+        "additions": 64
+      },
+      "metrics": {
+        "previous_memo_balanced": {
+          "additions": 214,
+          "peak_live_computed_values": 36,
+          "depth": 6,
+          "generated_additions": 214
+        },
+        "previous_greedy_common_pairs": {
+          "additions": 76,
+          "peak_live_computed_values": 25,
+          "depth": 10,
+          "generated_additions": 76
+        },
+        "previous_trie_natural": {
+          "additions": 141,
+          "peak_live_computed_values": 27,
+          "depth": 9,
+          "generated_additions": 141
+        },
+        "previous_trie_reverse": {
+          "additions": 193,
+          "peak_live_computed_values": 32,
+          "depth": 9,
+          "generated_additions": 193
+        },
+        "previous_trie_incidence": {
+          "additions": 83,
+          "peak_live_computed_values": 25,
+          "depth": 9,
+          "generated_additions": 83
+        },
+        "ordinary_gain_0": {
+          "additions": 95,
+          "peak_live_computed_values": 25,
+          "depth": 9,
+          "generated_additions": 95
+        },
+        "ordinary_gain_1": {
+          "additions": 95,
+          "peak_live_computed_values": 25,
+          "depth": 9,
+          "generated_additions": 95
+        },
+        "ordinary_ratio_0": {
+          "additions": 76,
+          "peak_live_computed_values": 25,
+          "depth": 13,
+          "generated_additions": 76
+        },
+        "ordinary_ratio_1": {
+          "additions": 76,
+          "peak_live_computed_values": 25,
+          "depth": 13,
+          "generated_additions": 76
+        },
+        "carried_gain_0": {
+          "additions": 95,
+          "peak_live_computed_values": 25,
+          "depth": 9,
+          "generated_additions": 95
+        },
+        "carried_gain_1": {
+          "additions": 95,
+          "peak_live_computed_values": 25,
+          "depth": 9,
+          "generated_additions": 95
+        },
+        "carried_ratio_0": {
+          "additions": 76,
+          "peak_live_computed_values": 25,
+          "depth": 13,
+          "generated_additions": 76
+        },
+        "carried_ratio_1": {
+          "additions": 76,
+          "peak_live_computed_values": 25,
+          "depth": 13,
+          "generated_additions": 76
+        },
+        "ablated_gain_0": {
+          "additions": 95,
+          "peak_live_computed_values": 25,
+          "depth": 9,
+          "generated_additions": 95
+        },
+        "ablated_gain_1": {
+          "additions": 95,
+          "peak_live_computed_values": 25,
+          "depth": 9,
+          "generated_additions": 95
+        },
+        "ablated_ratio_0": {
+          "additions": 76,
+          "peak_live_computed_values": 25,
+          "depth": 13,
+          "generated_additions": 76
+        },
+        "ablated_ratio_1": {
+          "additions": 76,
+          "peak_live_computed_values": 25,
+          "depth": 13,
+          "generated_additions": 76
+        }
+      }
+    },
+    {
+      "table": 5,
+      "node": 0,
+      "previous_best": "greedy_common_pairs",
+      "previous_additions": 85,
+      "best_control": "ordinary_ratio_0",
+      "best_carried": "carried_ratio_0",
+      "best_ablation": "ablated_ratio_0",
+      "qualifies": false,
+      "pool_counts": {
+        "ordinary": 1503,
+        "carried": 395,
+        "ablated": 392,
+        "carried_not_ordinary": 224,
+        "carried_not_ordinary_or_ablated": 68
+      },
+      "lower_bound": {
+        "active_inputs": 68,
+        "components": 1,
+        "additions": 67
+      },
+      "metrics": {
+        "previous_memo_balanced": {
+          "additions": 258,
+          "peak_live_computed_values": 43,
+          "depth": 7,
+          "generated_additions": 258
+        },
+        "previous_greedy_common_pairs": {
+          "additions": 85,
+          "peak_live_computed_values": 28,
+          "depth": 12,
+          "generated_additions": 85
+        },
+        "previous_trie_natural": {
+          "additions": 153,
+          "peak_live_computed_values": 32,
+          "depth": 10,
+          "generated_additions": 153
+        },
+        "previous_trie_reverse": {
+          "additions": 272,
+          "peak_live_computed_values": 47,
+          "depth": 10,
+          "generated_additions": 272
+        },
+        "previous_trie_incidence": {
+          "additions": 107,
+          "peak_live_computed_values": 25,
+          "depth": 10,
+          "generated_additions": 107
+        },
+        "ordinary_gain_0": {
+          "additions": 120,
+          "peak_live_computed_values": 25,
+          "depth": 11,
+          "generated_additions": 120
+        },
+        "ordinary_gain_1": {
+          "additions": 120,
+          "peak_live_computed_values": 25,
+          "depth": 11,
+          "generated_additions": 120
+        },
+        "ordinary_ratio_0": {
+          "additions": 83,
+          "peak_live_computed_values": 25,
+          "depth": 15,
+          "generated_additions": 83
+        },
+        "ordinary_ratio_1": {
+          "additions": 83,
+          "peak_live_computed_values": 26,
+          "depth": 15,
+          "generated_additions": 83
+        },
+        "carried_gain_0": {
+          "additions": 119,
+          "peak_live_computed_values": 25,
+          "depth": 11,
+          "generated_additions": 119
+        },
+        "carried_gain_1": {
+          "additions": 119,
+          "peak_live_computed_values": 25,
+          "depth": 11,
+          "generated_additions": 119
+        },
+        "carried_ratio_0": {
+          "additions": 83,
+          "peak_live_computed_values": 25,
+          "depth": 15,
+          "generated_additions": 83
+        },
+        "carried_ratio_1": {
+          "additions": 83,
+          "peak_live_computed_values": 26,
+          "depth": 15,
+          "generated_additions": 83
+        },
+        "ablated_gain_0": {
+          "additions": 119,
+          "peak_live_computed_values": 25,
+          "depth": 11,
+          "generated_additions": 119
+        },
+        "ablated_gain_1": {
+          "additions": 118,
+          "peak_live_computed_values": 25,
+          "depth": 11,
+          "generated_additions": 118
+        },
+        "ablated_ratio_0": {
+          "additions": 83,
+          "peak_live_computed_values": 25,
+          "depth": 15,
+          "generated_additions": 83
+        },
+        "ablated_ratio_1": {
+          "additions": 83,
+          "peak_live_computed_values": 26,
+          "depth": 15,
+          "generated_additions": 83
+        }
+      }
+    },
+    {
+      "table": 6,
+      "node": 3,
+      "previous_best": "greedy_common_pairs",
+      "previous_additions": 135,
+      "best_control": "ordinary_ratio_0",
+      "best_carried": "carried_ratio_0",
+      "best_ablation": "ablated_ratio_0",
+      "qualifies": false,
+      "pool_counts": {
+        "ordinary": 1834,
+        "carried": 484,
+        "ablated": 468,
+        "carried_not_ordinary": 234,
+        "carried_not_ordinary_or_ablated": 51
+      },
+      "lower_bound": {
+        "active_inputs": 108,
+        "components": 1,
+        "additions": 107
+      },
+      "metrics": {
+        "previous_memo_balanced": {
+          "additions": 436,
+          "peak_live_computed_values": 56,
+          "depth": 7,
+          "generated_additions": 436
+        },
+        "previous_greedy_common_pairs": {
+          "additions": 135,
+          "peak_live_computed_values": 40,
+          "depth": 10,
+          "generated_additions": 135
+        },
+        "previous_trie_natural": {
+          "additions": 301,
+          "peak_live_computed_values": 53,
+          "depth": 9,
+          "generated_additions": 301
+        },
+        "previous_trie_reverse": {
+          "additions": 324,
+          "peak_live_computed_values": 46,
+          "depth": 9,
+          "generated_additions": 324
+        },
+        "previous_trie_incidence": {
+          "additions": 143,
+          "peak_live_computed_values": 40,
+          "depth": 9,
+          "generated_additions": 143
+        },
+        "ordinary_gain_0": {
+          "additions": 199,
+          "peak_live_computed_values": 36,
+          "depth": 10,
+          "generated_additions": 199
+        },
+        "ordinary_gain_1": {
+          "additions": 198,
+          "peak_live_computed_values": 36,
+          "depth": 11,
+          "generated_additions": 198
+        },
+        "ordinary_ratio_0": {
+          "additions": 135,
+          "peak_live_computed_values": 38,
+          "depth": 11,
+          "generated_additions": 135
+        },
+        "ordinary_ratio_1": {
+          "additions": 135,
+          "peak_live_computed_values": 39,
+          "depth": 11,
+          "generated_additions": 135
+        },
+        "carried_gain_0": {
+          "additions": 201,
+          "peak_live_computed_values": 36,
+          "depth": 10,
+          "generated_additions": 201
+        },
+        "carried_gain_1": {
+          "additions": 200,
+          "peak_live_computed_values": 36,
+          "depth": 11,
+          "generated_additions": 200
+        },
+        "carried_ratio_0": {
+          "additions": 135,
+          "peak_live_computed_values": 38,
+          "depth": 11,
+          "generated_additions": 135
+        },
+        "carried_ratio_1": {
+          "additions": 135,
+          "peak_live_computed_values": 39,
+          "depth": 11,
+          "generated_additions": 135
+        },
+        "ablated_gain_0": {
+          "additions": 199,
+          "peak_live_computed_values": 36,
+          "depth": 10,
+          "generated_additions": 199
+        },
+        "ablated_gain_1": {
+          "additions": 200,
+          "peak_live_computed_values": 36,
+          "depth": 11,
+          "generated_additions": 200
+        },
+        "ablated_ratio_0": {
+          "additions": 135,
+          "peak_live_computed_values": 38,
+          "depth": 11,
+          "generated_additions": 135
+        },
+        "ablated_ratio_1": {
+          "additions": 135,
+          "peak_live_computed_values": 39,
+          "depth": 11,
+          "generated_additions": 135
+        }
+      }
+    },
+    {
+      "table": 9,
+      "node": 9,
+      "previous_best": "trie_incidence",
+      "previous_additions": 37,
+      "best_control": "ordinary_gain_0",
+      "best_carried": "carried_gain_0",
+      "best_ablation": "ablated_gain_0",
+      "qualifies": false,
+      "pool_counts": {
+        "ordinary": 447,
+        "carried": 118,
+        "ablated": 101,
+        "carried_not_ordinary": 74,
+        "carried_not_ordinary_or_ablated": 30
+      },
+      "lower_bound": {
+        "active_inputs": 36,
+        "components": 1,
+        "additions": 35
+      },
+      "metrics": {
+        "previous_memo_balanced": {
+          "additions": 58,
+          "peak_live_computed_values": 10,
+          "depth": 6,
+          "generated_additions": 58
+        },
+        "previous_greedy_common_pairs": {
+          "additions": 37,
+          "peak_live_computed_values": 13,
+          "depth": 6,
+          "generated_additions": 37
+        },
+        "previous_trie_natural": {
+          "additions": 82,
+          "peak_live_computed_values": 21,
+          "depth": 10,
+          "generated_additions": 82
+        },
+        "previous_trie_reverse": {
+          "additions": 64,
+          "peak_live_computed_values": 16,
+          "depth": 10,
+          "generated_additions": 64
+        },
+        "previous_trie_incidence": {
+          "additions": 37,
+          "peak_live_computed_values": 8,
+          "depth": 10,
+          "generated_additions": 37
+        },
+        "ordinary_gain_0": {
+          "additions": 37,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 37
+        },
+        "ordinary_gain_1": {
+          "additions": 37,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 37
+        },
+        "ordinary_ratio_0": {
+          "additions": 37,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 37
+        },
+        "ordinary_ratio_1": {
+          "additions": 37,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 37
+        },
+        "carried_gain_0": {
+          "additions": 37,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 37
+        },
+        "carried_gain_1": {
+          "additions": 37,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 37
+        },
+        "carried_ratio_0": {
+          "additions": 37,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 37
+        },
+        "carried_ratio_1": {
+          "additions": 37,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 37
+        },
+        "ablated_gain_0": {
+          "additions": 37,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 37
+        },
+        "ablated_gain_1": {
+          "additions": 37,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 37
+        },
+        "ablated_ratio_0": {
+          "additions": 37,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 37
+        },
+        "ablated_ratio_1": {
+          "additions": 37,
+          "peak_live_computed_values": 8,
+          "depth": 6,
+          "generated_additions": 37
+        }
+      }
+    }
+  ],
+  "qualified": 0
+}

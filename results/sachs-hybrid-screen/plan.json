@@ -1,0 +1,32 @@
+{
+  "inherited_manifest": "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hypergraph-screen/completion.json",
+  "inherited_manifest_sha256": "e25ea523ca0264b6540166e36d381793fdac325a092e3fa1d119f1ccac73c612",
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/sachs_hybrid_screen.py": "bc7bd8d983e343f5c7e01aa39f297db2731541ef2ca0cfc4f799ec7c556e8ca6",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/sachs_hypergraph_screen.py": "bb03029b4e48aa1bd556cef756500208d211bcaccb42cfd5b0b23b496016a43e",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hypergraph-screen/completion.json": "e25ea523ca0264b6540166e36d381793fdac325a092e3fa1d119f1ccac73c612",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hypergraph-screen/table-1.json": "9428243c409e264df7c5c84b6893f7857ec3dee2c5565ebc6e958cb896e95120",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hypergraph-screen/table-11.json": "a4e0cdc9bbf44fce7624552c305146c11224fe42e31bcce4bbacc000782e0f99",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hypergraph-screen/table-12.json": "6885fe4047e38b2b6dc0b8b06137bba32fc42d5f21e86199c2c0ea8f61aa7c4e",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hypergraph-screen/table-15.json": "c1670bb8081b98c45452329f1cf1e1ad18e2c75fd8b2bef53d0a048a10eb83ea",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hypergraph-screen/table-16.json": "63452f60fcddac5d7415da632df30f4386abcf523bb81e6b3caf8ce6299e04a9",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hypergraph-screen/table-19.json": "8c6f5cfc998aa01a1d1a857bf92a64e9c6c69de319b969e64fdf07b72a6a9d1b",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hypergraph-screen/table-2.json": "cc11be12969e25572b133d59cfa4eb4fb3fd06b903de43ec4f831c89bd4f0576",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hypergraph-screen/table-21.json": "a143a42f8d59d7aced1618f96afca1ac1429248a97f7a8d6790c77784cac0a8e",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hypergraph-screen/table-5.json": "5bbe2ec47fe383227583379da1bb7d9651520e9fbffcdaee69532efaf7934e59",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hypergraph-screen/table-6.json": "bc718037c2541983a7dd3c48874584aadd9e1330edebdfa9c6d29c023ca80917",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hypergraph-screen/table-9.json": "0dcec23ec9d5918edfd0d9cd1a7c1249e953c8fdf575158c2b1caa5fef063bfe"
+  },
+  "corpus": "All 11 original pruned Sachs tables and 299 distinct queries. No truncation or query/table selection.",
+  "proposals": "Ordinary: existing conventional intermediates plus two capped rounds of output-support intersections. Theory: actual active intermediate supports in all three carried circuits. Ablation: supports in all three separate-singleton circuits. Only supports contained in >=2 distinct output forms are retained.",
+  "synthesis": "Dynamic ordinary common pairs always available. Up to 256 static proposals per run, 256 sharing rounds, four fixed policies: gain or gain/build-cost, ascending or descending support tie break. Same caps and policies across families. All selected sums built from disjoint available terms; exact active gate cost checked after synthesis.",
+  "arms": [
+    "ordinary",
+    "ordinary+carried",
+    "ordinary+ablated"
+  ],
+  "selection": "Each arm retains all previous conventional circuits as fallbacks. Hybrids also retain the new ordinary runs, so worse proposals cannot force regression. Compare best additions, then live computed values, then name.",
+  "gate": "At least 5% fewer additions than strengthened ordinary; strictly fewer than equally budgeted ablated proposals; no greater peak live computed values than the selected ordinary comparator. A passing table requires held-out queries and native accuracy/runtime work before any application claim.",
+  "budget": "Four identical capped synthesis passes per proposal family. Pool generation and per-proposal compatibility work differ; equal structural limits do not imply identical wall time. No numeric performance benchmark.",
+  "limits": "Offline future-query knowledge and full retained sums; rounded diagnostic weights never used. Native early cutoff, preparation runtime, online cache learning and logarithm/base conversions remain unqualified. Proposal support provenance is weaker than executing the original theory circuit."
+}

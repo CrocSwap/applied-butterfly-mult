@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "decision": "No application qualified for a timing campaign in this screen",
+  "local_report_links_checked": true,
+  "baseline_flint_unchanged": true,
+  "prior_fingerprints_checked": 86,
+  "certificate_queries": 1665680,
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/docs/bulk-exclusion-screen.md": "e0dd1a3612e562244274e09d184fc50994d5bd36803dc700affee084486bfa9e",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/bulk-exclusion-screen/checks.json": "c361b64ead2fc4be73df599cf4e82cdb913127879ffd7ec3c578b76036241f80",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/screen_bulk_exclusion.py": "3fd1dbb85c184609712236abd5615defb7999d09c6e162f5183b9be4629bc485",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/bulk-exclusion-screen/sources/manifest.json": "8d66b204dff89a67b90da6860ab926bcc6c15b0245249bf6ffd838ed06b495cb"
+  }
+}

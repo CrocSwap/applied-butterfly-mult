@@ -1,0 +1,23 @@
+{
+  "objective": "Find five new, independently useful FLINT optimizations ready for maintainer review, supported by correctness tests, reproducible benchmarks, and documented applicability.",
+  "baseline": {
+    "repository": "https://github.com/flintlib/flint.git",
+    "commit": "26b9bc9df973206db15616d0849a4c8be9d22059",
+    "source_directory": ".deps/flint-optimization-base",
+    "compiler": "clang",
+    "cflags": "-O3 -g -mcpu=apple-m2 -fno-omit-frame-pointer"
+  },
+  "historical_baseline": "657a2839cf0125164859ff102b1f124abcb87ce0",
+  "policy": {
+    "existing_optimizations_count_as_new": false,
+    "theory_attribution_required": false,
+    "complete_flint_public_call_is_sufficient": true,
+    "typical_target_cpu_reduction_percent": 2,
+    "confirmation_runs": 2,
+    "timing": "Resident libraries; equal work; alternating ABBA/BAAB; CPU and wall clocks; unchanged-source and same-function controls; no concurrent campaign computation.",
+    "correctness": "Independent references and relevant upstream tests; cover aliases, boundaries, fallback paths, and applicable thread counts. Preserve rigorous numerical contracts.",
+    "evidence": "Freeze candidate source, binaries, workloads and plans before confirmation; retain raw samples and rejected candidates. Do not overwrite historical evidence.",
+    "portability": "Prefer portable source changes. Report architecture-specific paths and untested platforms explicitly.",
+    "combined_validation": "Check interactions and performance of the retained patch series before completion."
+  }
+}

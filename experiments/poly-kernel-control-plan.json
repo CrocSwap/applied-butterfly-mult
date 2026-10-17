@@ -1,0 +1,44 @@
+{
+  "cases": [
+    [
+      8,
+      240,
+      1000000007,
+      "full"
+    ],
+    [
+      8,
+      256,
+      1000000007,
+      "full"
+    ],
+    [
+      8,
+      1008,
+      1000000007,
+      "full"
+    ],
+    [
+      8,
+      1024,
+      1000000007,
+      "full"
+    ],
+    [
+      8,
+      1024,
+      1108307720798209,
+      "full"
+    ],
+    [
+      4,
+      256,
+      1000000007,
+      "full"
+    ]
+  ],
+  "trials": 31,
+  "batch_ms": 10,
+  "seed": 491811,
+  "scope": "Unchanged-library control and conditional arithmetic ablation on the screen cases."
+}

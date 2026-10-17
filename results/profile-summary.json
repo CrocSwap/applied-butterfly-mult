@@ -1,0 +1,410 @@
+[
+  {
+    "source": "results/m2-profile-16384-mul/sample.txt",
+    "samples": 4657,
+    "counts": {
+      "forward_fft": 2478,
+      "reconstruction": 619,
+      "inverse_fft": 1276,
+      "other_or_inline": 284
+    },
+    "percent": {
+      "forward_fft": 53.21,
+      "inverse_fft": 27.4,
+      "other_or_inline": 6.1,
+      "reconstruction": 13.29
+    },
+    "functions": [
+      {
+        "function": "sd_fft_no_trunc_block",
+        "samples": 818
+      },
+      {
+        "function": "sd_fft_basecase_4_0",
+        "samples": 773
+      },
+      {
+        "function": "_fft_small_np2_crt_recompose",
+        "samples": 619
+      },
+      {
+        "function": "sd_ifft_no_trunc_block",
+        "samples": 442
+      },
+      {
+        "function": "sd_fft_basecase_6_0",
+        "samples": 344
+      },
+      {
+        "function": "sd_ifft_basecase_4_0",
+        "samples": 321
+      },
+      {
+        "function": "sd_fft_basecase_8_0",
+        "samples": 309
+      },
+      {
+        "function": "_mpn_ctx_mpn_mul_window_np2",
+        "samples": 276
+      },
+      {
+        "function": "sd_ifft_basecase_6_0",
+        "samples": 177
+      },
+      {
+        "function": "radix_4_moth_inv_trunc_block_3_3_1",
+        "samples": 155
+      },
+      {
+        "function": "sd_ifft_basecase_8_0",
+        "samples": 137
+      },
+      {
+        "function": "sd_fft_moth_trunc_block_4_1_0",
+        "samples": 83
+      },
+      {
+        "function": "sd_fft_moth_trunc_block_2_4_1",
+        "samples": 74
+      },
+      {
+        "function": "sd_fft_trunc_block",
+        "samples": 72
+      },
+      {
+        "function": "radix_4_moth_inv_trunc_block_0_4_1",
+        "samples": 35
+      },
+      {
+        "function": "radix_4_moth_inv_trunc_block_1_4_0",
+        "samples": 9
+      },
+      {
+        "function": "sd_fft_no_trunc_internal",
+        "samples": 5
+      }
+    ],
+    "caveat": "Exclusive samples, approximate attribution. Inlined work and entries omitted below five samples remain other_or_inline. No separation of arithmetic and memory stalls."
+  },
+  {
+    "source": "results/m2-profile-16384-sqr/sample.txt",
+    "samples": 7648,
+    "counts": {
+      "reconstruction": 1524,
+      "forward_fft": 2802,
+      "inverse_fft": 2898,
+      "other_or_inline": 424
+    },
+    "percent": {
+      "forward_fft": 36.64,
+      "inverse_fft": 37.89,
+      "other_or_inline": 5.54,
+      "reconstruction": 19.93
+    },
+    "functions": [
+      {
+        "function": "_fft_small_np2_crt_recompose",
+        "samples": 1524
+      },
+      {
+        "function": "sd_fft_no_trunc_block",
+        "samples": 966
+      },
+      {
+        "function": "sd_ifft_no_trunc_block",
+        "samples": 953
+      },
+      {
+        "function": "sd_fft_basecase_4_0",
+        "samples": 846
+      },
+      {
+        "function": "sd_ifft_basecase_4_0",
+        "samples": 699
+      },
+      {
+        "function": "sd_ifft_basecase_6_0",
+        "samples": 447
+      },
+      {
+        "function": "_mpn_ctx_mpn_mul_window_np2",
+        "samples": 414
+      },
+      {
+        "function": "sd_fft_basecase_6_0",
+        "samples": 366
+      },
+      {
+        "function": "radix_4_moth_inv_trunc_block_3_3_1",
+        "samples": 342
+      },
+      {
+        "function": "sd_ifft_basecase_8_0",
+        "samples": 335
+      },
+      {
+        "function": "sd_fft_basecase_8_0",
+        "samples": 329
+      },
+      {
+        "function": "sd_fft_moth_trunc_block_2_4_1",
+        "samples": 117
+      },
+      {
+        "function": "sd_fft_moth_trunc_block_4_1_0",
+        "samples": 103
+      },
+      {
+        "function": "sd_fft_trunc_block",
+        "samples": 75
+      },
+      {
+        "function": "radix_4_moth_inv_trunc_block_0_4_1",
+        "samples": 67
+      },
+      {
+        "function": "radix_4_moth_inv_trunc_block_1_4_0",
+        "samples": 44
+      },
+      {
+        "function": "sd_ifft_no_trunc_internal",
+        "samples": 6
+      },
+      {
+        "function": "sd_ifft_trunc_block",
+        "samples": 5
+      }
+    ],
+    "caveat": "Exclusive samples, approximate attribution. Inlined work and entries omitted below five samples remain other_or_inline. No separation of arithmetic and memory stalls."
+  },
+  {
+    "source": "results/m2-profile-65536-mul/sample.txt",
+    "samples": 7685,
+    "counts": {
+      "reconstruction": 1688,
+      "forward_fft": 3316,
+      "packing": 765,
+      "inverse_fft": 1576,
+      "pointwise": 270,
+      "other_or_inline": 70
+    },
+    "percent": {
+      "forward_fft": 43.15,
+      "inverse_fft": 20.51,
+      "other_or_inline": 0.91,
+      "packing": 9.95,
+      "pointwise": 3.51,
+      "reconstruction": 21.96
+    },
+    "functions": [
+      {
+        "function": "_mpn_from_ffts_6",
+        "samples": 1538
+      },
+      {
+        "function": "sd_fft_no_trunc_block",
+        "samples": 1048
+      },
+      {
+        "function": "sd_fft_basecase_4_0",
+        "samples": 1012
+      },
+      {
+        "function": "mpn_to_ffts_6_140",
+        "samples": 765
+      },
+      {
+        "function": "sd_ifft_no_trunc_block",
+        "samples": 610
+      },
+      {
+        "function": "sd_fft_basecase_6_0",
+        "samples": 432
+      },
+      {
+        "function": "sd_fft_basecase_8_0",
+        "samples": 425
+      },
+      {
+        "function": "sd_ifft_basecase_4_0",
+        "samples": 389
+      },
+      {
+        "function": "sd_ifft_basecase_6_0",
+        "samples": 289
+      },
+      {
+        "function": "sd_fft_ctx_point_mul",
+        "samples": 270
+      },
+      {
+        "function": "sd_fft_moth_trunc_block_2_4_1",
+        "samples": 212
+      },
+      {
+        "function": "sd_ifft_basecase_8_0",
+        "samples": 187
+      },
+      {
+        "function": "_convert_block",
+        "samples": 150
+      },
+      {
+        "function": "sd_fft_moth_trunc_block_4_3_0",
+        "samples": 137
+      },
+      {
+        "function": "radix_4_moth_inv_trunc_block_3_3_1",
+        "samples": 60
+      },
+      {
+        "function": "OUTLINED_FUNCTION_0",
+        "samples": 41
+      },
+      {
+        "function": "sd_fft_trunc_block",
+        "samples": 39
+      },
+      {
+        "function": "radix_4_moth_inv_trunc_block_2_4_1",
+        "samples": 27
+      },
+      {
+        "function": "radix_4_moth_inv_trunc_block_3_4_0",
+        "samples": 14
+      },
+      {
+        "function": "sd_fft_no_trunc_internal",
+        "samples": 11
+      },
+      {
+        "function": "OUTLINED_FUNCTION_3",
+        "samples": 10
+      },
+      {
+        "function": "__bzero",
+        "samples": 8
+      }
+    ],
+    "caveat": "Exclusive samples, approximate attribution. Inlined work and entries omitted below five samples remain other_or_inline. No separation of arithmetic and memory stalls."
+  },
+  {
+    "source": "results/m2-profile-524288-mul/sample.txt",
+    "samples": 7652,
+    "counts": {
+      "forward_fft": 3580,
+      "reconstruction": 1453,
+      "inverse_fft": 1696,
+      "packing": 643,
+      "pointwise": 253,
+      "other_or_inline": 27
+    },
+    "percent": {
+      "forward_fft": 46.79,
+      "inverse_fft": 22.16,
+      "other_or_inline": 0.35,
+      "packing": 8.4,
+      "pointwise": 3.31,
+      "reconstruction": 18.99
+    },
+    "functions": [
+      {
+        "function": "sd_fft_no_trunc_block",
+        "samples": 1645
+      },
+      {
+        "function": "_mpn_from_ffts_6",
+        "samples": 1303
+      },
+      {
+        "function": "sd_fft_basecase_4_0",
+        "samples": 838
+      },
+      {
+        "function": "sd_ifft_no_trunc_block",
+        "samples": 832
+      },
+      {
+        "function": "mpn_to_ffts_6_140",
+        "samples": 643
+      },
+      {
+        "function": "sd_fft_basecase_6_0",
+        "samples": 365
+      },
+      {
+        "function": "sd_ifft_basecase_4_0",
+        "samples": 351
+      },
+      {
+        "function": "sd_fft_basecase_8_0",
+        "samples": 321
+      },
+      {
+        "function": "sd_fft_moth_trunc_block_2_4_1",
+        "samples": 281
+      },
+      {
+        "function": "sd_fft_ctx_point_mul",
+        "samples": 253
+      },
+      {
+        "function": "sd_ifft_basecase_6_0",
+        "samples": 199
+      },
+      {
+        "function": "sd_ifft_basecase_8_0",
+        "samples": 192
+      },
+      {
+        "function": "_convert_block",
+        "samples": 150
+      },
+      {
+        "function": "sd_fft_trunc_block",
+        "samples": 85
+      },
+      {
+        "function": "radix_4_moth_inv_trunc_block_3_3_1",
+        "samples": 51
+      },
+      {
+        "function": "sd_fft_moth_trunc_block_4_2_0",
+        "samples": 26
+      },
+      {
+        "function": "radix_2_moth_inv_trunc_block_1_2_1",
+        "samples": 23
+      },
+      {
+        "function": "sd_ifft_no_trunc_block.cold.1",
+        "samples": 22
+      },
+      {
+        "function": "radix_4_moth_inv_trunc_block_1_4_1",
+        "samples": 15
+      },
+      {
+        "function": "sd_fft_no_trunc_internal",
+        "samples": 13
+      },
+      {
+        "function": "__bzero",
+        "samples": 12
+      },
+      {
+        "function": "sd_fft_moth_trunc_block_4_3_0",
+        "samples": 6
+      },
+      {
+        "function": "sd_ifft_trunc_block",
+        "samples": 6
+      },
+      {
+        "function": "radix_4_moth_inv_trunc_block_2_4_0",
+        "samples": 5
+      }
+    ],
+    "caveat": "Exclusive samples, approximate attribution. Inlined work and entries omitted below five samples remain other_or_inline. No separation of arithmetic and memory stalls."
+  }
+]

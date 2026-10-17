@@ -1,0 +1,5100 @@
+{
+  "status": "PASS",
+  "networkx_version": "3.4.2",
+  "checks": [
+    {
+      "case": "validate-independent-7-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 4628,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 4628,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 4628,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 4628,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 4628,
+          "count": 1,
+          "visits": 6,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 4628,
+          "count": 1,
+          "visits": 6,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 4628,
+          "count": 1,
+          "visits": 326,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 4628,
+        "count": 1,
+        "enumerated_paths": 120
+      }
+    },
+    {
+      "case": "validate-independent-7-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 4022,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 4022,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 4022,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 4022,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 4022,
+          "count": 1,
+          "visits": 19,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 4022,
+          "count": 1,
+          "visits": 6,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 4022,
+          "count": 1,
+          "visits": 326,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 4022,
+        "count": 1,
+        "enumerated_paths": 120
+      }
+    },
+    {
+      "case": "validate-independent-8-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 3469,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 3469,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 3469,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 3469,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 3469,
+          "count": 1,
+          "visits": 32,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 3469,
+          "count": 1,
+          "visits": 29,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 3469,
+          "count": 1,
+          "visits": 1237,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 3469,
+        "count": 1,
+        "enumerated_paths": 720
+      }
+    },
+    {
+      "case": "validate-independent-8-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 4479,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 4479,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 4479,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 4479,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 4479,
+          "count": 1,
+          "visits": 21,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 4479,
+          "count": 1,
+          "visits": 21,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 4479,
+          "count": 1,
+          "visits": 1237,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 4479,
+        "count": 1,
+        "enumerated_paths": 720
+      }
+    },
+    {
+      "case": "validate-independent-9-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 4749,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 4749,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 4749,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 4749,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 4749,
+          "count": 1,
+          "visits": 22,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 4749,
+          "count": 1,
+          "visits": 19,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 4749,
+          "count": 1,
+          "visits": 3620,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 4749,
+        "count": 1,
+        "enumerated_paths": 2520
+      }
+    },
+    {
+      "case": "validate-independent-9-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 5043,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 5043,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 5043,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 5043,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 5043,
+          "count": 1,
+          "visits": 6,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 5043,
+          "count": 1,
+          "visits": 6,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 5043,
+          "count": 1,
+          "visits": 3620,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 5043,
+        "count": 1,
+        "enumerated_paths": 2520
+      }
+    },
+    {
+      "case": "validate-reciprocal-7-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 3968,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 3968,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 3968,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 3968,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 3968,
+          "count": 1,
+          "visits": 20,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 3968,
+          "count": 1,
+          "visits": 6,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 3968,
+          "count": 1,
+          "visits": 326,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 3968,
+        "count": 1,
+        "enumerated_paths": 120
+      }
+    },
+    {
+      "case": "validate-reciprocal-7-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 3931,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 3931,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 3931,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 3931,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 3931,
+          "count": 1,
+          "visits": 16,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 3931,
+          "count": 1,
+          "visits": 16,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 3931,
+          "count": 1,
+          "visits": 326,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 3931,
+        "count": 1,
+        "enumerated_paths": 120
+      }
+    },
+    {
+      "case": "validate-reciprocal-8-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 3827,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 3827,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 3827,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 3827,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 3827,
+          "count": 1,
+          "visits": 12,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 3827,
+          "count": 1,
+          "visits": 6,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 3827,
+          "count": 1,
+          "visits": 1237,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 3827,
+        "count": 1,
+        "enumerated_paths": 720
+      }
+    },
+    {
+      "case": "validate-reciprocal-8-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 4158,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 4158,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 4158,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 4158,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 4158,
+          "count": 1,
+          "visits": 22,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 4158,
+          "count": 1,
+          "visits": 22,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 4158,
+          "count": 1,
+          "visits": 1237,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 4158,
+        "count": 1,
+        "enumerated_paths": 720
+      }
+    },
+    {
+      "case": "validate-reciprocal-9-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 4856,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 4856,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 4856,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 4856,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 4856,
+          "count": 1,
+          "visits": 11,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 4856,
+          "count": 1,
+          "visits": 6,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 4856,
+          "count": 1,
+          "visits": 3620,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 4856,
+        "count": 1,
+        "enumerated_paths": 2520
+      }
+    },
+    {
+      "case": "validate-reciprocal-9-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 4552,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 4552,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 4552,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 4552,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 4552,
+          "count": 1,
+          "visits": 27,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 4552,
+          "count": 1,
+          "visits": 10,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 4552,
+          "count": 1,
+          "visits": 3620,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 4552,
+        "count": 1,
+        "enumerated_paths": 2520
+      }
+    },
+    {
+      "case": "validate-two_cycle-7-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 12799,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 12799,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 12799,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 12799,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 12799,
+          "count": 1,
+          "visits": 82,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 12799,
+          "count": 1,
+          "visits": 19,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 12799,
+          "count": 1,
+          "visits": 326,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 12799,
+        "count": 1,
+        "enumerated_paths": 120
+      }
+    },
+    {
+      "case": "validate-two_cycle-7-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 14022,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 14022,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 14022,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 14022,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 14022,
+          "count": 1,
+          "visits": 77,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 14022,
+          "count": 1,
+          "visits": 18,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 14022,
+          "count": 1,
+          "visits": 326,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 14022,
+        "count": 1,
+        "enumerated_paths": 120
+      }
+    },
+    {
+      "case": "validate-two_cycle-8-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 13469,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 13469,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 13469,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 13469,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 13469,
+          "count": 1,
+          "visits": 135,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 13469,
+          "count": 1,
+          "visits": 46,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 13469,
+          "count": 1,
+          "visits": 1237,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 13469,
+        "count": 1,
+        "enumerated_paths": 720
+      }
+    },
+    {
+      "case": "validate-two_cycle-8-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 14094,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 14094,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 14094,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 14094,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 14094,
+          "count": 1,
+          "visits": 122,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 14094,
+          "count": 1,
+          "visits": 36,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 14094,
+          "count": 1,
+          "visits": 1237,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 14094,
+        "count": 1,
+        "enumerated_paths": 720
+      }
+    },
+    {
+      "case": "validate-two_cycle-9-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 13872,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 13872,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 13872,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 13872,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 13872,
+          "count": 1,
+          "visits": 180,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 13872,
+          "count": 1,
+          "visits": 34,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 13872,
+          "count": 1,
+          "visits": 3620,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 13872,
+        "count": 1,
+        "enumerated_paths": 2520
+      }
+    },
+    {
+      "case": "validate-two_cycle-9-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 14888,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 14888,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 14888,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 14888,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 14888,
+          "count": 1,
+          "visits": 172,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 14888,
+          "count": 1,
+          "visits": 26,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 14888,
+          "count": 1,
+          "visits": 3620,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 14888,
+        "count": 1,
+        "enumerated_paths": 2520
+      }
+    },
+    {
+      "case": "validate-three_cycle-7-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 21481,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 21481,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 21481,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 21481,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 21481,
+          "count": 1,
+          "visits": 40,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 21481,
+          "count": 1,
+          "visits": 37,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 21481,
+          "count": 1,
+          "visits": 326,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 21481,
+        "count": 1,
+        "enumerated_paths": 120
+      }
+    },
+    {
+      "case": "validate-three_cycle-7-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 23162,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 23162,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 23162,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 23162,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 23162,
+          "count": 1,
+          "visits": 44,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 23162,
+          "count": 1,
+          "visits": 41,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 23162,
+          "count": 1,
+          "visits": 326,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 23162,
+        "count": 1,
+        "enumerated_paths": 120
+      }
+    },
+    {
+      "case": "validate-three_cycle-8-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 22254,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 22254,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 22254,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 22254,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 22254,
+          "count": 1,
+          "visits": 51,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 22254,
+          "count": 1,
+          "visits": 45,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 22254,
+          "count": 1,
+          "visits": 1237,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 22254,
+        "count": 1,
+        "enumerated_paths": 720
+      }
+    },
+    {
+      "case": "validate-three_cycle-8-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 23580,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 23580,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 23580,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 23580,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 23580,
+          "count": 1,
+          "visits": 56,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 23580,
+          "count": 1,
+          "visits": 49,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 23580,
+          "count": 1,
+          "visits": 1237,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 23580,
+        "count": 1,
+        "enumerated_paths": 720
+      }
+    },
+    {
+      "case": "validate-three_cycle-9-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 23784,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 23784,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 23784,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 23784,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 23784,
+          "count": 1,
+          "visits": 67,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 23784,
+          "count": 1,
+          "visits": 61,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 23784,
+          "count": 1,
+          "visits": 3620,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 23784,
+        "count": 1,
+        "enumerated_paths": 2520
+      }
+    },
+    {
+      "case": "validate-three_cycle-9-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 24343,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 24343,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 24343,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 24343,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 24343,
+          "count": 1,
+          "visits": 58,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 24343,
+          "count": 1,
+          "visits": 55,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 24343,
+          "count": 1,
+          "visits": 3620,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 24343,
+        "count": 1,
+        "enumerated_paths": 2520
+      }
+    },
+    {
+      "case": "validate-four_cluster-7-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 32923,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 32923,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 32923,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 32923,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 32923,
+          "count": 1,
+          "visits": 72,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 32923,
+          "count": 1,
+          "visits": 72,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 32923,
+          "count": 1,
+          "visits": 326,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 32923,
+        "count": 1,
+        "enumerated_paths": 120
+      }
+    },
+    {
+      "case": "validate-four_cluster-7-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 34022,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 34022,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 34022,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 34022,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 34022,
+          "count": 1,
+          "visits": 72,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 34022,
+          "count": 1,
+          "visits": 71,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 34022,
+          "count": 1,
+          "visits": 326,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 34022,
+        "count": 1,
+        "enumerated_paths": 120
+      }
+    },
+    {
+      "case": "validate-four_cluster-8-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 33327,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 33327,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 33327,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 33327,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 33327,
+          "count": 1,
+          "visits": 75,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 33327,
+          "count": 1,
+          "visits": 74,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 33327,
+          "count": 1,
+          "visits": 1237,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 33327,
+        "count": 1,
+        "enumerated_paths": 720
+      }
+    },
+    {
+      "case": "validate-four_cluster-8-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 33580,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 33580,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 33580,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 33580,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 33580,
+          "count": 1,
+          "visits": 71,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 33580,
+          "count": 1,
+          "visits": 67,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 33580,
+          "count": 1,
+          "visits": 1237,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 33580,
+        "count": 1,
+        "enumerated_paths": 720
+      }
+    },
+    {
+      "case": "validate-four_cluster-9-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 33521,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 33521,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 33521,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 33521,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 33521,
+          "count": 1,
+          "visits": 80,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 33521,
+          "count": 1,
+          "visits": 77,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 33521,
+          "count": 1,
+          "visits": 3620,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 33521,
+        "count": 1,
+        "enumerated_paths": 2520
+      }
+    },
+    {
+      "case": "validate-four_cluster-9-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 34888,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 34888,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 34888,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 34888,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 34888,
+          "count": 1,
+          "visits": 66,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 34888,
+          "count": 1,
+          "visits": 67,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 34888,
+          "count": 1,
+          "visits": 3620,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 34888,
+        "count": 1,
+        "enumerated_paths": 2520
+      }
+    },
+    {
+      "case": "validate-quantized-7-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 8,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 8,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 8,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 8,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 8,
+          "count": 1,
+          "visits": 9,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 8,
+          "count": 1,
+          "visits": 6,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 8,
+          "count": 1,
+          "visits": 326,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 8,
+        "count": 1,
+        "enumerated_paths": 120
+      }
+    },
+    {
+      "case": "validate-quantized-7-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 9,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 9,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 9,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 9,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 9,
+          "count": 1,
+          "visits": 37,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 9,
+          "count": 1,
+          "visits": 33,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 9,
+          "count": 1,
+          "visits": 326,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 9,
+        "count": 1,
+        "enumerated_paths": 120
+      }
+    },
+    {
+      "case": "validate-quantized-8-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 9,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 9,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 9,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 9,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 9,
+          "count": 1,
+          "visits": 14,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 9,
+          "count": 1,
+          "visits": 9,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 9,
+          "count": 1,
+          "visits": 1237,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 9,
+        "count": 1,
+        "enumerated_paths": 720
+      }
+    },
+    {
+      "case": "validate-quantized-8-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 9,
+          "count": 2,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 9,
+          "count": 2,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 9,
+          "count": 2,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 9,
+          "count": 2,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 9,
+          "count": 2,
+          "visits": 27,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 9,
+          "count": 2,
+          "visits": 25,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 9,
+          "count": 2,
+          "visits": 1237,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 9,
+        "count": 2,
+        "enumerated_paths": 720
+      }
+    },
+    {
+      "case": "validate-quantized-9-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 10,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 10,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 10,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 10,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 10,
+          "count": 1,
+          "visits": 23,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 10,
+          "count": 1,
+          "visits": 22,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 10,
+          "count": 1,
+          "visits": 3620,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 10,
+        "count": 1,
+        "enumerated_paths": 2520
+      }
+    },
+    {
+      "case": "validate-quantized-9-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 12,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 12,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 12,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 12,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 12,
+          "count": 1,
+          "visits": 6,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 12,
+          "count": 1,
+          "visits": 6,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 12,
+          "count": 1,
+          "visits": 3620,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 12,
+        "count": 1,
+        "enumerated_paths": 2520
+      }
+    },
+    {
+      "case": "independent-19-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 5575,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 5575,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 5575,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 5575,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 5575,
+          "count": 1,
+          "visits": 19,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 5575,
+          "count": 1,
+          "visits": 19,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "independent-19-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 5475,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 5475,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 5475,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 5475,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 5475,
+          "count": 1,
+          "visits": 6,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 5475,
+          "count": 1,
+          "visits": 6,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "independent-19-6700099",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 5358,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 5358,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 5358,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 5358,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 5358,
+          "count": 1,
+          "visits": 14,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 5358,
+          "count": 1,
+          "visits": 14,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "independent-27-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 5552,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 5552,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 5552,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 5552,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 5552,
+          "count": 1,
+          "visits": 6,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 5552,
+          "count": 1,
+          "visits": 6,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "independent-27-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 5456,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 5456,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 5456,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 5456,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 5456,
+          "count": 1,
+          "visits": 15,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 5456,
+          "count": 1,
+          "visits": 15,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "independent-27-6700099",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 5460,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 5460,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 5460,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 5460,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 5460,
+          "count": 1,
+          "visits": 6,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 5460,
+          "count": 1,
+          "visits": 6,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "reciprocal-19-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 5458,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 5458,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 5458,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 5458,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 5458,
+          "count": 1,
+          "visits": 37,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 5458,
+          "count": 1,
+          "visits": 16,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "reciprocal-19-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 5610,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 5610,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 5610,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 5610,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 5610,
+          "count": 1,
+          "visits": 6,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 5610,
+          "count": 1,
+          "visits": 6,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "reciprocal-19-6700099",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 5457,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 5457,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 5457,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 5457,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 5457,
+          "count": 1,
+          "visits": 12,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 5457,
+          "count": 1,
+          "visits": 6,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "reciprocal-27-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 5456,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 5456,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 5456,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 5456,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 5456,
+          "count": 1,
+          "visits": 6,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 5456,
+          "count": 1,
+          "visits": 6,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "reciprocal-27-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 5580,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 5580,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 5580,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 5580,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 5580,
+          "count": 1,
+          "visits": 16,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 5580,
+          "count": 1,
+          "visits": 6,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "reciprocal-27-6700099",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 5393,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 5393,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 5393,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 5393,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 5393,
+          "count": 1,
+          "visits": 20,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 5393,
+          "count": 1,
+          "visits": 6,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "two_cycle-19-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 15118,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 15118,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 15118,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 15118,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 15118,
+          "count": 1,
+          "visits": 1236,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 15118,
+          "count": 1,
+          "visits": 44,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "two_cycle-19-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 14323,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 14323,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 14323,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 14323,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 14323,
+          "count": 1,
+          "visits": 1229,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 14323,
+          "count": 1,
+          "visits": 44,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "two_cycle-19-6700099",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 14789,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 14789,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 14789,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 14789,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 14789,
+          "count": 1,
+          "visits": 1224,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 14789,
+          "count": 1,
+          "visits": 42,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "two_cycle-27-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 14603,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 14603,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 14603,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 14603,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 14603,
+          "count": 1,
+          "visits": 2803,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 14603,
+          "count": 1,
+          "visits": 64,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "two_cycle-27-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 14009,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 14009,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 14009,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 14009,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 14009,
+          "count": 1,
+          "visits": 2797,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 14009,
+          "count": 1,
+          "visits": 62,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "two_cycle-27-6700099",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 13597,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 13597,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 13597,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 13597,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 13597,
+          "count": 1,
+          "visits": 2792,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 13597,
+          "count": 1,
+          "visits": 55,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "three_cycle-19-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 23041,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 23041,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 23041,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 23041,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 23041,
+          "count": 1,
+          "visits": 158,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 23041,
+          "count": 1,
+          "visits": 155,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "three_cycle-19-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 23417,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 23417,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 23417,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 23417,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 23417,
+          "count": 1,
+          "visits": 159,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 23417,
+          "count": 1,
+          "visits": 156,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "three_cycle-19-6700099",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 23379,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 23379,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 23379,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 23379,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 23379,
+          "count": 1,
+          "visits": 156,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 23379,
+          "count": 1,
+          "visits": 153,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "three_cycle-27-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 24173,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 24173,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 24173,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 24173,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 24173,
+          "count": 1,
+          "visits": 261,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 24173,
+          "count": 1,
+          "visits": 258,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "three_cycle-27-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 23732,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 23732,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 23732,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 23732,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 23732,
+          "count": 1,
+          "visits": 254,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 23732,
+          "count": 1,
+          "visits": 251,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "three_cycle-27-6700099",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 22884,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 22884,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 22884,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 22884,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 22884,
+          "count": 1,
+          "visits": 243,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 22884,
+          "count": 1,
+          "visits": 240,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "four_cluster-19-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 34751,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 34751,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 34751,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 34751,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 34751,
+          "count": 1,
+          "visits": 71,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 34751,
+          "count": 1,
+          "visits": 71,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "four_cluster-19-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 33852,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 33852,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 33852,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 33852,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 33852,
+          "count": 1,
+          "visits": 85,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 33852,
+          "count": 1,
+          "visits": 66,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "four_cluster-19-6700099",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 34488,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 34488,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 34488,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 34488,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 34488,
+          "count": 1,
+          "visits": 70,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 34488,
+          "count": 1,
+          "visits": 68,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "four_cluster-27-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 33380,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 33380,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 33380,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 33380,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 33380,
+          "count": 1,
+          "visits": 86,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 33380,
+          "count": 1,
+          "visits": 71,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "four_cluster-27-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 34474,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 34474,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 34474,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 34474,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 34474,
+          "count": 1,
+          "visits": 71,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 34474,
+          "count": 1,
+          "visits": 72,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "four_cluster-27-6700099",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 32493,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 32493,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 32493,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 32493,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 32493,
+          "count": 1,
+          "visits": 74,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 32493,
+          "count": 1,
+          "visits": 66,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "quantized-19-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 12,
+          "count": 50,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 12,
+          "count": 50,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 12,
+          "count": 50,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 12,
+          "count": 50,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 12,
+          "count": 50,
+          "visits": 149,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 12,
+          "count": 50,
+          "visits": 143,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "quantized-19-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 12,
+          "count": 98,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 12,
+          "count": 98,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 12,
+          "count": 98,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 12,
+          "count": 98,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 12,
+          "count": 98,
+          "visits": 221,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 12,
+          "count": 98,
+          "visits": 221,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "quantized-19-6700099",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 12,
+          "count": 26,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 12,
+          "count": 26,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 12,
+          "count": 26,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 12,
+          "count": 26,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 12,
+          "count": 26,
+          "visits": 76,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 12,
+          "count": 26,
+          "visits": 71,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "quantized-27-4300051",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 12,
+          "count": 116,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 12,
+          "count": 116,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 12,
+          "count": 116,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 12,
+          "count": 116,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 12,
+          "count": 116,
+          "visits": 339,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 12,
+          "count": 116,
+          "visits": 337,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "quantized-27-5900087",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 12,
+          "count": 1216,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 12,
+          "count": 1216,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 12,
+          "count": 1216,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 12,
+          "count": 1216,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 12,
+          "count": 1216,
+          "visits": 2358,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 12,
+          "count": 1216,
+          "visits": 2334,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "quantized-27-6700099",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 12,
+          "count": 153,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 12,
+          "count": 153,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 12,
+          "count": 153,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 12,
+          "count": 153,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 12,
+          "count": 153,
+          "visits": 363,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 12,
+          "count": 153,
+          "visits": 357,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "case": "wnt-00",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 0,
+          "count": 24,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 0,
+          "count": 24,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 0,
+          "count": 24,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 0,
+          "count": 24,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 0,
+          "count": 24,
+          "visits": 61,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 0,
+          "count": 24,
+          "visits": 61,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 0,
+          "count": 24,
+          "visits": 1773,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 0,
+        "count": 24,
+        "enumerated_paths": 24
+      }
+    },
+    {
+      "case": "wnt-01",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 0,
+          "count": 211,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 0,
+          "count": 211,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 0,
+          "count": 211,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 0,
+          "count": 211,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 0,
+          "count": 211,
+          "visits": 592,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 0,
+          "count": 211,
+          "visits": 448,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 0,
+          "count": 211,
+          "visits": 2185,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 0,
+        "count": 211,
+        "enumerated_paths": 211
+      }
+    },
+    {
+      "case": "wnt-02",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 0,
+          "count": 138,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 0,
+          "count": 138,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 0,
+          "count": 138,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 0,
+          "count": 138,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 0,
+          "count": 138,
+          "visits": 368,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 0,
+          "count": 138,
+          "visits": 310,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 0,
+          "count": 138,
+          "visits": 1595,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 0,
+        "count": 138,
+        "enumerated_paths": 138
+      }
+    },
+    {
+      "case": "wnt-03",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 0,
+          "count": 434,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 0,
+          "count": 434,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 0,
+          "count": 434,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 0,
+          "count": 434,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 0,
+          "count": 434,
+          "visits": 1025,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 0,
+          "count": 434,
+          "visits": 920,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 0,
+          "count": 434,
+          "visits": 8109,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 0,
+        "count": 434,
+        "enumerated_paths": 434
+      }
+    },
+    {
+      "case": "wnt-04",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 0,
+          "count": 227,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 0,
+          "count": 227,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 0,
+          "count": 227,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 0,
+          "count": 227,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 0,
+          "count": 227,
+          "visits": 525,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 0,
+          "count": 227,
+          "visits": 503,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 0,
+          "count": 227,
+          "visits": 8264,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 0,
+        "count": 227,
+        "enumerated_paths": 227
+      }
+    },
+    {
+      "case": "wnt-05",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 0,
+          "count": 64,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 0,
+          "count": 64,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 0,
+          "count": 64,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 0,
+          "count": 64,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 0,
+          "count": 64,
+          "visits": 153,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 0,
+          "count": 64,
+          "visits": 153,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 0,
+          "count": 64,
+          "visits": 3014,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 0,
+        "count": 64,
+        "enumerated_paths": 64
+      }
+    },
+    {
+      "case": "wnt-06",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": -2305843009213693952,
+          "count": 0,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": -2305843009213693952,
+          "count": 0,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": -2305843009213693952,
+          "count": 0,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": -2305843009213693952,
+          "count": 0,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": -2305843009213693952,
+          "count": 0,
+          "visits": 1,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": -2305843009213693952,
+          "count": 0,
+          "visits": 1,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": -2305843009213693952,
+          "count": 0,
+          "visits": 1,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": -2305843009213693952,
+        "count": 0,
+        "enumerated_paths": 0
+      }
+    },
+    {
+      "case": "wnt-07",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": -2305843009213693952,
+          "count": 0,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": -2305843009213693952,
+          "count": 0,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": -2305843009213693952,
+          "count": 0,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": -2305843009213693952,
+          "count": 0,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": -2305843009213693952,
+          "count": 0,
+          "visits": 1,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": -2305843009213693952,
+          "count": 0,
+          "visits": 1,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": -2305843009213693952,
+          "count": 0,
+          "visits": 2,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": -2305843009213693952,
+        "count": 0,
+        "enumerated_paths": 0
+      }
+    },
+    {
+      "case": "wnt-08",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 0,
+          "count": 70,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 0,
+          "count": 70,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 0,
+          "count": 70,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 0,
+          "count": 70,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 0,
+          "count": 70,
+          "visits": 133,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 0,
+          "count": 70,
+          "visits": 121,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 0,
+          "count": 70,
+          "visits": 837,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 0,
+        "count": 70,
+        "enumerated_paths": 70
+      }
+    },
+    {
+      "case": "wnt-09",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 0,
+          "count": 100,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 0,
+          "count": 100,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 0,
+          "count": 100,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 0,
+          "count": 100,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 0,
+          "count": 100,
+          "visits": 222,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 0,
+          "count": 100,
+          "visits": 206,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 0,
+          "count": 100,
+          "visits": 1766,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 0,
+        "count": 100,
+        "enumerated_paths": 100
+      }
+    },
+    {
+      "case": "wnt-10",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 0,
+          "count": 88,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 0,
+          "count": 88,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 0,
+          "count": 88,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 0,
+          "count": 88,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 0,
+          "count": 88,
+          "visits": 203,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 0,
+          "count": 88,
+          "visits": 177,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 0,
+          "count": 88,
+          "visits": 765,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 0,
+        "count": 88,
+        "enumerated_paths": 88
+      }
+    },
+    {
+      "case": "wnt-11",
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 0,
+          "count": 32,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 0,
+          "count": 32,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 0,
+          "count": 32,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 0,
+          "count": 32,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 0,
+          "count": 32,
+          "visits": 90,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": 0,
+          "count": 32,
+          "visits": 90,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": 0,
+          "count": 32,
+          "visits": 2207,
+          "fallback": 0
+        }
+      ],
+      "oracle": {
+        "weight": 0,
+        "count": 32,
+        "enumerated_paths": 32
+      }
+    }
+  ],
+  "circuit_preparation": [
+    {
+      "n": 4,
+      "name": "paired",
+      "construction_seconds": 7.320800796151161e-05,
+      "export_seconds": 6.795907393097878e-05,
+      "verified": {
+        "n": 4,
+        "inputs": 6,
+        "outputs": 6,
+        "additions": 0,
+        "scratch_roles": 6,
+        "nonzero_coefficients": 6,
+        "all_output_supports_exact": true,
+        "all_additions_disjoint": true,
+        "circuit_sha256": "da74af48cf62093ef97022bced929a495c4ab668a0e7368aa687ce54d36f7673"
+      }
+    },
+    {
+      "n": 4,
+      "name": "separate_weights",
+      "construction_seconds": 5.7499855756759644e-05,
+      "export_seconds": 6.579095497727394e-05,
+      "verified": {
+        "n": 4,
+        "inputs": 6,
+        "outputs": 6,
+        "additions": 0,
+        "scratch_roles": 6,
+        "nonzero_coefficients": 6,
+        "all_output_supports_exact": true,
+        "all_additions_disjoint": true,
+        "circuit_sha256": "da74af48cf62093ef97022bced929a495c4ab668a0e7368aa687ce54d36f7673"
+      }
+    },
+    {
+      "n": 4,
+      "name": "sergeev",
+      "construction_seconds": 1.874985173344612e-05,
+      "export_seconds": 6.174994632601738e-05,
+      "verified": {
+        "n": 4,
+        "inputs": 6,
+        "outputs": 6,
+        "additions": 0,
+        "scratch_roles": 6,
+        "nonzero_coefficients": 6,
+        "all_output_supports_exact": true,
+        "all_additions_disjoint": true,
+        "circuit_sha256": "da74af48cf62093ef97022bced929a495c4ab668a0e7368aa687ce54d36f7673"
+      }
+    },
+    {
+      "n": 5,
+      "name": "paired",
+      "construction_seconds": 8.616689592599869e-05,
+      "export_seconds": 7.233396172523499e-05,
+      "verified": {
+        "n": 5,
+        "inputs": 10,
+        "outputs": 10,
+        "additions": 20,
+        "scratch_roles": 30,
+        "nonzero_coefficients": 30,
+        "all_output_supports_exact": true,
+        "all_additions_disjoint": true,
+        "circuit_sha256": "53b3e55de2a46bdf65736d01471cd926b9ac952d5d51b3e2bacd15b2dfae1735"
+      }
+    },
+    {
+      "n": 5,
+      "name": "separate_weights",
+      "construction_seconds": 0.00010624993592500687,
+      "export_seconds": 7.025012746453285e-05,
+      "verified": {
+        "n": 5,
+        "inputs": 10,
+        "outputs": 10,
+        "additions": 20,
+        "scratch_roles": 30,
+        "nonzero_coefficients": 30,
+        "all_output_supports_exact": true,
+        "all_additions_disjoint": true,
+        "circuit_sha256": "53b3e55de2a46bdf65736d01471cd926b9ac952d5d51b3e2bacd15b2dfae1735"
+      }
+    },
+    {
+      "n": 5,
+      "name": "sergeev",
+      "construction_seconds": 5.287490785121918e-05,
+      "export_seconds": 6.741704419255257e-05,
+      "verified": {
+        "n": 5,
+        "inputs": 10,
+        "outputs": 10,
+        "additions": 20,
+        "scratch_roles": 30,
+        "nonzero_coefficients": 30,
+        "all_output_supports_exact": true,
+        "all_additions_disjoint": true,
+        "circuit_sha256": "e04b7bdf0a64589cb7a8bb8d742c6df90d5237938fa4b50e4b990b54e44c8445"
+      }
+    },
+    {
+      "n": 6,
+      "name": "paired",
+      "construction_seconds": 0.00012149987742304802,
+      "export_seconds": 8.195918053388596e-05,
+      "verified": {
+        "n": 6,
+        "inputs": 15,
+        "outputs": 15,
+        "additions": 51,
+        "scratch_roles": 66,
+        "nonzero_coefficients": 90,
+        "all_output_supports_exact": true,
+        "all_additions_disjoint": true,
+        "circuit_sha256": "41f02ba28a0c132846233fcbd746691915a996d2c0dbbe4362452d5dd78c72d1"
+      }
+    },
+    {
+      "n": 6,
+      "name": "separate_weights",
+      "construction_seconds": 0.00012966617941856384,
+      "export_seconds": 8.908379822969437e-05,
+      "verified": {
+        "n": 6,
+        "inputs": 15,
+        "outputs": 15,
+        "additions": 51,
+        "scratch_roles": 66,
+        "nonzero_coefficients": 90,
+        "all_output_supports_exact": true,
+        "all_additions_disjoint": true,
+        "circuit_sha256": "04a55d3bada1b618a3b800186a07066310062f2bf7e50cbd13f5162d41387aff"
+      }
+    },
+    {
+      "n": 6,
+      "name": "sergeev",
+      "construction_seconds": 7.295887917280197e-05,
+      "export_seconds": 7.670791819691658e-05,
+      "verified": {
+        "n": 6,
+        "inputs": 15,
+        "outputs": 15,
+        "additions": 51,
+        "scratch_roles": 66,
+        "nonzero_coefficients": 90,
+        "all_output_supports_exact": true,
+        "all_additions_disjoint": true,
+        "circuit_sha256": "83f1e8ed7153587761b42aa585c08a55c3da9bed6924892b1adeddee5449de54"
+      }
+    },
+    {
+      "n": 16,
+      "name": "paired",
+      "construction_seconds": 0.0008589578792452812,
+      "export_seconds": 0.0003864169120788574,
+      "verified": {
+        "n": 16,
+        "inputs": 120,
+        "outputs": 120,
+        "additions": 842,
+        "scratch_roles": 962,
+        "nonzero_coefficients": 10920,
+        "all_output_supports_exact": true,
+        "all_additions_disjoint": true,
+        "circuit_sha256": "28ab7eb9c788a6d2c7e561f64fe502750a1a101e3a8ce72b1902bfab05dd90ea"
+      }
+    },
+    {
+      "n": 16,
+      "name": "separate_weights",
+      "construction_seconds": 0.0008246251381933689,
+      "export_seconds": 0.00038724998012185097,
+      "verified": {
+        "n": 16,
+        "inputs": 120,
+        "outputs": 120,
+        "additions": 912,
+        "scratch_roles": 1032,
+        "nonzero_coefficients": 10920,
+        "all_output_supports_exact": true,
+        "all_additions_disjoint": true,
+        "circuit_sha256": "25d384139d0bfdadd88abc180e613f54024716203bab5db52a39fc774cd0f033"
+      }
+    },
+    {
+      "n": 16,
+      "name": "sergeev",
+      "construction_seconds": 0.0008169999346137047,
+      "export_seconds": 0.00038795778527855873,
+      "verified": {
+        "n": 16,
+        "inputs": 120,
+        "outputs": 120,
+        "additions": 926,
+        "scratch_roles": 1046,
+        "nonzero_coefficients": 10920,
+        "all_output_supports_exact": true,
+        "all_additions_disjoint": true,
+        "circuit_sha256": "e13da1ef63016500fef4c1802a5a2d66b06a01061eb085e36c2ff59099318dca"
+      }
+    },
+    {
+      "n": 24,
+      "name": "paired",
+      "construction_seconds": 0.0017771250568330288,
+      "export_seconds": 0.0008346252143383026,
+      "verified": {
+        "n": 24,
+        "inputs": 276,
+        "outputs": 276,
+        "additions": 2112,
+        "scratch_roles": 2388,
+        "nonzero_coefficients": 63756,
+        "all_output_supports_exact": true,
+        "all_additions_disjoint": true,
+        "circuit_sha256": "e012e09057cc9cc3b98b3fde5d2e42131c000ba545e8b1809085ea8a083de195"
+      }
+    },
+    {
+      "n": 24,
+      "name": "separate_weights",
+      "construction_seconds": 0.0018933750689029694,
+      "export_seconds": 0.0009028748609125614,
+      "verified": {
+        "n": 24,
+        "inputs": 276,
+        "outputs": 276,
+        "additions": 2324,
+        "scratch_roles": 2600,
+        "nonzero_coefficients": 63756,
+        "all_output_supports_exact": true,
+        "all_additions_disjoint": true,
+        "circuit_sha256": "69a3035e36381e7c82839df15b7f55ce23d069b1935c4a22e95b57ba82e9d6ec"
+      }
+    },
+    {
+      "n": 24,
+      "name": "sergeev",
+      "construction_seconds": 0.002161707729101181,
+      "export_seconds": 0.00103779137134552,
+      "verified": {
+        "n": 24,
+        "inputs": 276,
+        "outputs": 276,
+        "additions": 2361,
+        "scratch_roles": 2637,
+        "nonzero_coefficients": 63756,
+        "all_output_supports_exact": true,
+        "all_additions_disjoint": true,
+        "circuit_sha256": "80d00d30bc35bfa43907fce6969b8dc530a5ff4d7258587afd79d143cb7949d4"
+      }
+    },
+    {
+      "n": 103,
+      "name": "paired",
+      "construction_seconds": 0.0980283753015101,
+      "export_seconds": 0.019530707970261574,
+      "verified": {
+        "n": 103,
+        "inputs": 5253,
+        "outputs": 5253,
+        "additions": 45647,
+        "scratch_roles": 50900,
+        "nonzero_coefficients": 26527650,
+        "all_output_supports_exact": true,
+        "all_additions_disjoint": true,
+        "circuit_sha256": "cd0ad889c006ff025461a7d276ac1b68de441e3343bf39f26c869c8376d02fd3"
+      }
+    },
+    {
+      "n": 103,
+      "name": "separate_weights",
+      "construction_seconds": 0.1062149996869266,
+      "export_seconds": 0.02161391731351614,
+      "verified": {
+        "n": 103,
+        "inputs": 5253,
+        "outputs": 5253,
+        "additions": 50722,
+        "scratch_roles": 55975,
+        "nonzero_coefficients": 26527650,
+        "all_output_supports_exact": true,
+        "all_additions_disjoint": true,
+        "circuit_sha256": "377cf56cc1d0866baa927708b6eaa4a14fdf440bf9ca8a52d19a8817b31460a3"
+      }
+    },
+    {
+      "n": 103,
+      "name": "sergeev",
+      "construction_seconds": 0.20086829224601388,
+      "export_seconds": 0.0214030840434134,
+      "verified": {
+        "n": 103,
+        "inputs": 5253,
+        "outputs": 5253,
+        "additions": 51253,
+        "scratch_roles": 56506,
+        "nonzero_coefficients": 26527650,
+        "all_output_supports_exact": true,
+        "all_additions_disjoint": true,
+        "circuit_sha256": "6ac350b57f61d0ae3f9f602e308c4b92876d5c309b2e994b4af9e83c8487f2f3"
+      }
+    }
+  ],
+  "compile_command": [
+    "clang",
+    "-std=gnu23",
+    "-O3",
+    "-g",
+    "-mcpu=apple-m2",
+    "-I/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run",
+    "-I/Users/colkitt/sith/toys/math/butterflyMult/bench",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/theory_paths_hard.c",
+    "-o",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/theory-paths-hard"
+  ],
+  "frozen_sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/docs/theory-transfer-screen.md": "0e273cb2a6550cad0dd03ba55fb219a78b3b617fd52d457f538b1da7d42adb56",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-transfer-audit.json": "1c28bede4f6f262300227ccda35e01908c2db9049172764c25de3b7b3cd5fc31",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-transfer-completion.json": "1c2289a7cfaf7ed314aa5aa0440a595be9c62446d5c36ba5c56baf25180fa36d",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-transfer-screen.json": "8c6e17c8dead29eb585331bd8e6b6ec5f3df9c658a8a41a63fe91745827b8b94",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/audit_theory_transfer.py": "de5ca3598289bb02b2632715281db3632fe91aad68624d719615e1a21ae00dcc",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/summary.json": "2a6947a745d8a316efe138753f7f89352538f35f1c4c9e88a6b1cb0cc6a7891f",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-control/summary.json": "d5272b819bf1a73e7cefee085400e806f9fc2bca1e35ab56a398c114e49f576e",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/summary.json": "d87c1c0d7ca6cab328ea783e7c97b3adf7c56adc4d9a5216cc63f294ae418fb2",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/theory_paths.c": "845cef5f3ee119a370f0afdd57c62b78ab08463f861192558954de7b8a37aec6",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/benchmark_theory_paths.py": "3fbee3805467d7df6c3df6bb6520dd6d0ddacb76c845a7d41057cc6f886e090b",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/screen_theory_transfer.py": "1d1f58cfd06b2c3ee50857dd0c9fea41f561593510b385724b9a2e4549ea5489",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/compare.py": "d39062f684dc872dc37b895723a42e1d31add2dce640132a5d1114c24f203fac",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/exclusion_circuit.py": "b253f9d7318becda1c1f3b24e2287ed44a9c27fcea00cf9d531afb950d0457a0",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/paired_exclusion_circuit.py": "8f05f04cf06217befd6d0ee0f2d7d0c5c5eb32cfab8c9a8ca7917fd6d620b7d2",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/theory-paths": "b8b62246f808e533e776cacd714f14cbc78d8f914db71f672bfa32d95c8d03ca",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/raw.jsonl": "0b08422c50dc092ed3d30aaddf446efee1a921eb3f93496d17a1ea58cd72076d",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/paired-4.bin": "f343023d2244b9a4c0a119b9816a2224607ba92793ce149b77bcdffdf016dd62",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/sergeev-4.bin": "f343023d2244b9a4c0a119b9816a2224607ba92793ce149b77bcdffdf016dd62",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/interval-4.bin": "f343023d2244b9a4c0a119b9816a2224607ba92793ce149b77bcdffdf016dd62",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/paired-5.bin": "e821ba504e78d1cde31aee40836021583113508668f0db3d20e1e5fd8128b726",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/sergeev-5.bin": "a7744469e413d1bb2de36ccf567a71e466521c5a7937295cb47b2e0ed9f8448a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/interval-5.bin": "eca9ee78e4aa48d408b9162029a3df771a7e396ac69553032dc71ab545aea4f5",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/paired-6.bin": "4e84dcce681b39fa0e6c858c40515855ec11494441cdada374d67f53cf8a1af8",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/sergeev-6.bin": "165032abdf5b2b6dc8dd1de4043c0ef4ffc359e0746a2cc9a5bec21c89016eec",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/interval-6.bin": "9612260552861be681584587fa3edce952de9b156140f15fd5444db65f482c37",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/paired-7.bin": "e65462705a7d6e250869d4299be6bd5b3545a9e1e2240b022b11ca5f25919556",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/sergeev-7.bin": "3fb3aa85b1995fac504964896e6759dea3432095af194aa2997753bf7d7f5b4e",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/interval-7.bin": "98274263f2eab2e6c9e52bd82fe075d0f45db22ebcf4198febda084822d627a7",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/paired-8.bin": "7bf745f052d453d64db0f15534daede799117c41b9651d2b9b2e0cc6525d926d",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/sergeev-8.bin": "2cca1c1c578a1c7df308efbb3e255dd0f77abb7c07975775e039bdec2dac79be",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/interval-8.bin": "0ac53dc41da27167375617e73d00e05e36152d944ce0894d997c6849d7d01fa3",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/paired-16.bin": "4e97a20b064e9ae2bc7f3bf399671e10b805934d82bb9962f33db0c15b08daf9",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/sergeev-16.bin": "dde60d8e780490b48c22e718dfbcb2f0490e28f5f70d722d2341aeed6d6af2aa",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/interval-16.bin": "501b9762323831c6c845e42fd6b2e8072225cce4592e238555031e8b8bdc29f8",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/paired-32.bin": "4cf3759f8638beb1768165e9f8708c29488b69be49618a9f9a2e8def6da01d38",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/sergeev-32.bin": "998af04fec7c54f65bc2e458bfa5de6d3c42e65724617b6899b071a77c202cd7",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/interval-32.bin": "4aa9b56d2042507164f3e66a4be9b007a4d000a70ff2b23f3963854ae5009947",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/paired-49.bin": "b2a1ed2846371b239b441625b4abaa68a45d7dafa269730511656d309e0139e1",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/sergeev-49.bin": "156f958a94e00ea2e7c2fd2c66b581d58dbbdd26da7a5535c3cbfe60bf7d8302",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/interval-49.bin": "ed8fab0e46cd8ca3435612c15eed058aaf1d2fee59bbeb4256f1e3c54f1da264",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/paired-64.bin": "be187d8acee5933168e8c8de4ed5711158df014a0fb7d7ff6cccacf37f3aa598",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/sergeev-64.bin": "9e23bfd049552f1661b639e332a2ebb97b58e4732e32f47c145b73d122abade9",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/interval-64.bin": "63457eb92f0e932517f9647c2739032f87260b5ebb583cb1efe5dbffc23332a7",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/check_theory_paths_control.py": "e9adf601951d92cd32e64dec19911fee57b8067b9802112a14da6c1e5cb0336a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/theory_paths_control.c": "f7b88f38b097d43c5e68b3b16a2d97e209bc81e8671e5c1df0f395bbb827e89a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-control/theory-paths": "63c6c7c7a1887460463a8de66ac1f880a269cc155b31fe57a20c186cafeaf45a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-control/raw.jsonl": "505a4e70fcb68fdeceba948998ae4607e42e86659a4f800bb0805b46131c6bb0",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/confirm_theory_paths.py": "b60d5b43ca645c3bb88c630e51be442b6fd609fe9926aa21beecffc79ad4aefa",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/plan.json": "3229173612f511f69b9de73d639ad76748f1a440107a0abb73726939687a0c98",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/raw.jsonl": "7d83e5017867bc2bdfcd4846a448366601e1c8169e5f02e30f392d746c35b466",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/paired-8.bin": "7bf745f052d453d64db0f15534daede799117c41b9651d2b9b2e0cc6525d926d",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/sergeev-8.bin": "2cca1c1c578a1c7df308efbb3e255dd0f77abb7c07975775e039bdec2dac79be",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/separate_weights-8.bin": "295b39b83b2b147cf0d57741e06875c3a8d0aa79f59989beb6ec02c39e7d74a0",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/paired-12.bin": "5a90096177b9ce24995324a6f5f1b27d56fe6ee9ed914cd5f237a72b2a35f2cc",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/sergeev-12.bin": "619015246289c80d35347ca44fca6a9a7dc6d446e1937faeb05a3fae080a2b3a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/separate_weights-12.bin": "93d1a3cc720d81f951e2b45e82879eb123d272bd4009c3245528ed33265c2b1a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/paired-16.bin": "4e97a20b064e9ae2bc7f3bf399671e10b805934d82bb9962f33db0c15b08daf9",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/sergeev-16.bin": "dde60d8e780490b48c22e718dfbcb2f0490e28f5f70d722d2341aeed6d6af2aa",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/separate_weights-16.bin": "fef677119975bcb662543849a6df717cd9bd1ff1d1fb1b8b7fe16ba6f08dce9e",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/paired-20.bin": "4d94129f9f224fb04800eae6f47496d86ab00c50df5a9333d9fc22042ddf81df",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/sergeev-20.bin": "d397bcb19bda906074a35650f3d882769cf3acb7bbb7d70b57a71b795500cba1",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/separate_weights-20.bin": "a69dae85603866fb1ec94aab5fd30d584a1170fef7656561c21b32d61b5e0063",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/paired-24.bin": "181ced7f1ede046636c3bf8d3067b63f65b1cf831a3d894d5b26a8a25468d7ce",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/sergeev-24.bin": "b87d61b2d197d2d3549ae14c43766190978ec7c5f7063e7c9c56eb2ed78c8f9c",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/separate_weights-24.bin": "4e57536c342e561631d6e6973ccf9f7e4d75aa3d0aafeb36e39e3f47b4f8d5a1",
+    "/Users/colkitt/sith/toys/math/butterflyMult/docs/theory-paths-qualification.md": "d3aa08c21761ed69bdeda2e9803c90938ec0d2a3de6caade6e60ea9d70a241c1",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-bnb-audit.json": "ced9d1d39ff17bb06c36cc3d5b2999b0296e16d80f5075274dd36d3e36fe3231",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-bnb-completion.json": "28d36af8ccd16e94d1939393f8439b0e031b036bc58ba42a567925f7892a82d2",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/audit_theory_paths_bnb.py": "34354b179aa0cf6b3bfc786fcf557b8e16b36139cb7ebeeb70f6e1db2dd001bf",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-bnb/summary.json": "e5a7ca6d59208fc084ac4e5d8ce303a0a599fb1f7c688311659a0f2aeeb28e40",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-bnb-validation/validation.json": "0ea58717235c4277cada77e4f95948948a52abc7c8d422ef45f0ed2317256f98",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/theory_paths_bnb.c": "9368ef346b382c8b6017bdd6809f4cf38815fcc96b283227a2834636fdefca2b",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/qualify_theory_paths_bnb.py": "16089537587677325c4ce5c8f355ceda0578bb16d67f0b47fe714bc68862e745",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-bnb/theory-paths-bnb": "6691feda86a062ed2c362fa68af0fffdde73c37c72bf5d4c93ebee5babadb72f",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-bnb/raw.jsonl": "5c73c99515e6d7a9e2947e9627a3dc25d818daa236f2d177018bad70e1f1bd40",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-bnb/plan.json": "35f9e0660f4ac639c8c470b47b9101b2c046c0eb0a6eae804c8bad3185325aba",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/validate_theory_paths_bnb.py": "4c32b9c7e17b74e323d71d8561db3c0938a26c8765ee65058462adc6fc30b921",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-bnb-validation/trace.c": "a0aab03c1bebba34533e0e0e0e6b14778cc4fd34cd879f4ad61b1096e8ec894f",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-bnb-validation/trace": "fd42e160588ccc2bb0c54bc46e6d37862b63d954129c77922ae00b5005b68470",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/theory-paths-qualification-venv/lib/python3.14/site-packages/networkx/algorithms/simple_paths.py": "2c5745365b69b7ead123de31ec7543428a0d6e09bebab9331900b15477c84794",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/theory-paths-qualification-venv/lib/python3.14/site-packages/networkx/__init__.py": "bd5f9b6329a5f492b9395f0873f75cb4be59191e4dab01787f37789ac4766fd5",
+    "docs/prepared-inputs-m2.md": "4eab0f229e9fd8c298d33feaa98158e1c98b5b225591e576e7bb5fdd926cd905",
+    "README.md": "c9d38806fcffdfbaf8cbf835ca84f7c55b0c4dda635c8025ed7f52318f925476",
+    "results/poly-prepared-audit.json": "6d548469f364bfc0f4044156c1cbb0e1a0405709c1d6fdd375f4bdd73c807991",
+    "results/poly-prepared-doc-snapshots/README-before.md": "f3fa7eedfc8a2c9a5c9e7cb7318336f08fa6d97c97444178b0d2ebac635a2b98",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/poly-prepared-completion.json": "12e7f76ba539c977fb2ff8d0164f5e097438fdaa505d1e551581d590dfd49ccd",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/screen_bulk_exclusion.py": "3fd1dbb85c184609712236abd5615defb7999d09c6e162f5183b9be4629bc485",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/bulk-exclusion-screen/sources/manifest.json": "8d66b204dff89a67b90da6860ab926bcc6c15b0245249bf6ffd838ed06b495cb",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/bulk-exclusion-screen/completion.json": "6c8635441623e46814d87be69d1bfb5b031e53f068dd197e0bd96a453a9c89fd",
+    "/Users/colkitt/sith/toys/math/butterflyMult/docs/bulk-exclusion-screen.md": "e0dd1a3612e562244274e09d184fc50994d5bd36803dc700affee084486bfa9e",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/bulk-exclusion-screen/checks.json": "c361b64ead2fc4be73df599cf4e82cdb913127879ffd7ec3c578b76036241f80",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/phase-fusion-screen/completion.json": "87d6afa47ce9965afd30143e7d2fb929c8ef0c3a8a1147ea2dc757bd4de077a5",
+    "/Users/colkitt/sith/toys/math/butterflyMult/docs/phase-fusion-screen.md": "8b2f5c0dbcc5b23f3228030db64bed3a65f48d884ff383da820d1d3f7decdc3b",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/phase-fusion-screen/summary.json": "0543112a316cb3f4f2d92053b37bbb32c02d82623c71d22ce470c19ddcf2ba13",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/phase-fusion-screen/barriers.json": "0d0e1236485cbd45d40a59e2817ed9566bf8c7c93b1a541715348e840e8cc4fa",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/phase_probe.c": "79dd979c5317b5729dd25b494deb6e44cfd5f8f5a03561e09074bc162f49bcbf",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/phase_probe_forward.c": "e77adc7123ff0fb2cdb8b02f5df78802eeb6040656228158f04b7a5ced11b8f6",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/phase_probe_inverse.c": "795cd8bf9c07d8d7ab8b944e691ad9b8ac0c15fbc88430b2c990110e5eee0134",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/src/fft_small/sd_fft.c": "5f7f49decaf78c1eb13db5800a0749a266d73e5c778be17555e39f665af13315",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/src/fft_small/sd_ifft.c": "349c6381fe8cb0b088bf4d00405214e836ff2038952766b744922b650c9972e2",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/src/fft_small/sd_fft_ctx.c": "b40d32e6ccb2bafd808e46257342aa96e1cb7b699e20efc93ccbe709845f8c07",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/src/fft_small/mpn_mul.c": "daa4cc857b1e818b4a08efad47a22acf72112cb297729e16482f9cd427d358e4",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/src/fft_small/op.c": "5b231f890c06a280be49a3367e78b8d93bc30de5c34579bb42fddf1b8aed4cc8",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/src/fft_small.h": "b92f01c6528c4ef936bcb1ce942fa4b74a1c22386bb7a0ad80cd9245447e3037",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/src/machine_vectors.h": "15329b18fe0dbc24f10f0237a229d13cb8edd06b16aabb0f23b225fd97c41a1b",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/audit_sparse_fusion.py": "bbaa32f9786f083409e363b081bfb7a1e597c8d32e4183c13a4105c2170934ce",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/prepare_layers.py": "a6e2adc612f264b1c0e51d18ce6315de9ae5e2ae2420aa22e99a22d8bf304947",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/certify.py": "2348d95008276c5d5764f7e028c3918e484582cd589bd4d9b82919161745e53e",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/search_network.py": "3a4faa5037d9b8e7ca5828afac193a96b6966a8b114f14937921795b24ec4f6a",
+    "/Users/colkitt/sith/toys/math/integerMult/docs/research/sparse-fusion-audit.md": "631c852e068adf8d2943bf8f7373d822f423c2180ed0c8d413188a30ff51d75a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/screen_phase_fusion.py": "972a29e24cb25c76bd67d08c22fd8bf8f0cd7d04c1a1d5989221fe6e601a78e4",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/libflint.25.0.dylib": "31b9d75a502a408098b37990830d1f033a55fc5957e22ebf12cdaeb2a0fafe58",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/phase-fusion-screen/phase-probe": "4d7de2790b69d486c5cb480da8b80c678445edc189b331b0b75b542508a0d91a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/phase-fusion-screen/raw.jsonl": "de4b9ef626b16dfb6ff5b7e45a635365d491f21c8bec753eb4d240673c799454",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/phase-fusion-screen/plan.json": "e299ad16f1021b064b978ff53b9e8a5e85ebcfa188fe7d7e2df314248d5609be",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/phase-fusion-screen/compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/check_phase_barriers.py": "8651f595b2773e8c69b1cd475914e02bfb21a7199fdc990929cb0240f1479b07"
+  },
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/qualify_theory_paths_hard.py": "72062cbc176428787616d36a8db2d6f2e40a51f6e1e0bf30fb878eed6b35df38",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/theory_paths_hard.c": "56084e7e48397a73b3dfbc15d98824c456b643e6c9731aa1a129605071f46fa4",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/theory_paths_bnb.c": "9368ef346b382c8b6017bdd6809f4cf38815fcc96b283227a2834636fdefca2b",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/theory_paths_control.c": "f7b88f38b097d43c5e68b3b16a2d97e209bc81e8671e5c1df0f395bbb827e89a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/compare.py": "d39062f684dc872dc37b895723a42e1d31add2dce640132a5d1114c24f203fac",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/screen_theory_transfer.py": "1d1f58cfd06b2c3ee50857dd0c9fea41f561593510b385724b9a2e4549ea5489",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/check_theory_paths_control.py": "e9adf601951d92cd32e64dec19911fee57b8067b9802112a14da6c1e5cb0336a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/benchmark_theory_paths.py": "3fbee3805467d7df6c3df6bb6520dd6d0ddacb76c845a7d41057cc6f886e090b",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/paired_exclusion_circuit.py": "8f05f04cf06217befd6d0ee0f2d7d0c5c5eb32cfab8c9a8ca7917fd6d620b7d2",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/exclusion_circuit.py": "b253f9d7318becda1c1f3b24e2287ed44a9c27fcea00cf9d531afb950d0457a0",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/data/manifest.json": "bea00a8ad37056502c7ceb920c2bd73af1de474a17d80d67a64e14dee4153352",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/separate_weights-16.bin": "fef677119975bcb662543849a6df717cd9bd1ff1d1fb1b8b7fe16ba6f08dce9e",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/separate_weights-6.bin": "61cc1b893a6bd92462b3d2639c68123e85ae691213247b9c2796cd0ff5a648af",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/separate_weights-5.bin": "e821ba504e78d1cde31aee40836021583113508668f0db3d20e1e5fd8128b726",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/separate_weights-4.bin": "f343023d2244b9a4c0a119b9816a2224607ba92793ce149b77bcdffdf016dd62",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/paired-103.bin": "6d26bde76bb78304fd1e0c1a6e1cab4f3754674e95e8ddfa43de8d56faec6177",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/sergeev-4.bin": "f343023d2244b9a4c0a119b9816a2224607ba92793ce149b77bcdffdf016dd62",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/paired-4.bin": "f343023d2244b9a4c0a119b9816a2224607ba92793ce149b77bcdffdf016dd62",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/sergeev-24.bin": "b87d61b2d197d2d3549ae14c43766190978ec7c5f7063e7c9c56eb2ed78c8f9c",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/paired-5.bin": "e821ba504e78d1cde31aee40836021583113508668f0db3d20e1e5fd8128b726",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/sergeev-5.bin": "a7744469e413d1bb2de36ccf567a71e466521c5a7937295cb47b2e0ed9f8448a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/paired-16.bin": "4e97a20b064e9ae2bc7f3bf399671e10b805934d82bb9962f33db0c15b08daf9",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/paired-6.bin": "4e84dcce681b39fa0e6c858c40515855ec11494441cdada374d67f53cf8a1af8",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/sergeev-6.bin": "165032abdf5b2b6dc8dd1de4043c0ef4ffc359e0746a2cc9a5bec21c89016eec",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/separate_weights-103.bin": "648fa4afb7725a22d7dff3654e48da2f544fba2853713fa2ae081f155e92762b",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/sergeev-16.bin": "dde60d8e780490b48c22e718dfbcb2f0490e28f5f70d722d2341aeed6d6af2aa",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/paired-24.bin": "181ced7f1ede046636c3bf8d3067b63f65b1cf831a3d894d5b26a8a25468d7ce",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/sergeev-103.bin": "e37b8f2138a030fe273e7116bf13af5b4e0d34c430db8763ae6a92b463209983",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/separate_weights-24.bin": "4e57536c342e561631d6e6973ccf9f7e4d75aa3d0aafeb36e39e3f47b4f8d5a1",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/four_cluster-27-4300051.txt": "7d75ef85d416419a9b7b01a0eea785d93a178db89c6b3cb23e48e8d9ee24f3e5",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/wnt-10-labels.json": "ed1a811ed54126fb5d995d892fa680c1dad544d6f86feab82e9b20a64cfb1a4a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-reciprocal-7-5900087.txt": "e003f3c010bd886cfe753f58ddf4938de63771bd36f479b177594f9c9bcf5894",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/independent-19-4300051.txt": "864b5af17532c031757382febb87dd622c44d2bc09fb11013bd00a9aa8c92680",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/quantized-27-4300051.txt": "17528f6f5c9e0b764808a69b2a3281175dd24da9a1fe25c30c6567a7ed35b042",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-reciprocal-8-4300051.txt": "e5f576f328ed4cafbb51ea9e1ca16f762affbbc036ad5295d7a4e97fce5d87ed",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/three_cycle-19-5900087.txt": "644eeb9b99b1dd4baea7995e408cd9021095cef20e9cee2dd95210e4636da0ae",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-independent-7-5900087.txt": "c014503c588c7667e81aea48cb99802ec61a4389958b0939d162a027fcfdad7a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-four_cluster-9-5900087.txt": "cd73893d4a00406f31483dc6108c6d5c76206df4e8bad8cdaaeab7f7fc0d0592",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-independent-8-4300051.txt": "8093693ae586260e8311486a0cb608cc8d9f969ab2eab947e75ce1fd08742217",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/reciprocal-27-4300051.txt": "d8d6e2cea25cdef179aebc7f36405b290eaff9f5d5adb56461366df203714694",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/wnt-05-labels.json": "41dc80fccac2812d9cd8c934a97ee01ed61356ba1c502902977ab30a9ef72f81",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-three_cycle-7-5900087.txt": "3f61dc22c0cb312002fb92c13095056db403cd88f7fcba38e38a959be860de2a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/three_cycle-27-5900087.txt": "4cfb811f3bc6c1fcc1a2b42074bffc367800b3f29ff19e9bd2f1e666a31eb8a8",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/quantized-19-4300051.txt": "2ed762dedf30c18032ffba72c8dbaa656605c8a7d6ba4a6fb416012476006b56",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-three_cycle-8-4300051.txt": "29bf9b17daa017f58395ba0eff35b1e0116d54da9aa1ea6bd45bf8ea74fe713e",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/independent-27-4300051.txt": "451d953ddc7edfc0192c6533dc9a7dd9f731beb93fccf5f3d90ef51a3849df7d",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-two_cycle-9-4300051.txt": "804530e21b37ec3ff9350e032bae8fb5abba2ca4516800970a79b852de726372",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/four_cluster-19-4300051.txt": "8ce0813d2ad225a392bd64d2535093badca8dd2eb80c318e933f4fcb26bfefde",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/wnt-00-labels.json": "ecec3fe9011229cd3287c78cfd71c0c15f42ba4f59ee4f23e97894af6319207e",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-quantized-9-5900087.txt": "966b298be3f92f7d74dff4d8408db3d4f05e59ad7e3d7e059cd87b9a2982e314",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/reciprocal-19-4300051.txt": "39098bd7adb012a236cc8d75adb41ddace6cec63c0cd27deadedd6fd95d9a77b",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/wnt-09-labels.json": "b42b4c82b8ede1bd652666ff35de12a2f349e9984626e28d1ab9682f735bc6f9",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/wnt-06.txt": "e3a1f602e991c5d5f55fee48fa84b62547791521cfac7f623da793977582d0ba",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/reciprocal-27-5900087.txt": "68fed44b8d23b0a7830e27828ddf1f54243fbe6d40b9d2f24ae69ead40834a02",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/two_cycle-19-6700099.txt": "1147a6441ed154a27c5d671db46bef23fc18ddc362f73225b5c5a4e54fce5c58",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-four_cluster-9-4300051.txt": "693676267baf947753e23dfd1b5900c28e4de344180bc547a44421c8be2a6428",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-independent-8-5900087.txt": "e6bbb053458920705151565711656a6a7d442a33fa28f69cd572e6d87ce52278",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/wnt-07.txt": "32b74c557271b6c207dcf7698975f5acc44b4f5ff8f8ec2222a5d06346a27905",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-independent-7-4300051.txt": "ca280f7f7ef1d3e2f2ef65f67234b2f37fb1a1574f1a98054b0e97e518e35a74",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/three_cycle-19-4300051.txt": "df2a420ae19eb6c94b26b7124330fe71f50510c1d4b4b109cede1911f4c423b8",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-reciprocal-8-5900087.txt": "d47104e522ec64b8cec28dc04d5bec931a65a932a73ea0b264c8ff64938c5b18",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/wnt-03-labels.json": "57402994fedc5b63c7077840b04830128bbafbe621f4e5e20b17d1b8de2eb2cf",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/wnt-11.txt": "a6a4d6daa78c048e8043524629e54ca9375715c0cff2f26f6d792cd513330b19",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/wnt-05.txt": "c95c8755a6b7c073bf28ae33883c261a0bf38361ece31f8ce51795354403c21a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-reciprocal-7-4300051.txt": "f507cb3376246663ed3097f18cfa5c644cd5bdf44a3a5627d42db26532558abc",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/independent-19-5900087.txt": "761be60f9bf5cd9fa79eca23987b40aeb88577d308f7bc1380584db0c6705293",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/quantized-27-5900087.txt": "798f9e4a2ee6470ec2bb515335b97e6d483d39f9a3ac3ae4c005587ababa5116",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/four_cluster-27-5900087.txt": "3d2ab6dd4f81d2065bff53b7eade02eb5a4e437c8538940922f9000a8ac25313",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/wnt-04.txt": "ac991ab978a102264c1567bec29163f4691947bade0c100d6c9488e783d02802",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/wnt-10.txt": "b8bfceb4728bf6afa463ea142d37a51d060483ac4a522d8f7705c5abf273cbdf",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/wnt-00.txt": "7854949d355dcb30e597f1c141f5a2ac1660ce9c01ea2757852dc0389c08df15",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/two_cycle-27-6700099.txt": "7c8e75882f6667fad850c69e475b989e0aeb3b44e26962e9dd4d0c511b779d68",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/reciprocal-19-5900087.txt": "ff6338b05a9f91a68707dc5fd65875ceb8414e945edcd9fa4beecdca0dd74f5c",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/wnt-06-labels.json": "99b774ce6afd69533ca21aba90a3e569f0e48f3ffbff69c4902a31750865c62b",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/wnt-01.txt": "cb8487009985d1706d2f916351556e89db47e197d0fce36cc5ac9caf913424f4",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/wnt-03.txt": "127aa912f5d219a2e5a3607741c9bce78baa58a3e6b397d830fb0223ba4d6f55",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-quantized-9-4300051.txt": "626c51b1ef25cf28f22d6eb9b0dee18955c5924594f37324c51887e112a6e231",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/four_cluster-19-5900087.txt": "6771f84ae7e7f06894e5d1b8eae782b21a6ef451cc9cbb5e9c03f78be6d23a80",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-two_cycle-9-5900087.txt": "cc21229c344b7d8347ccbf03b231cafd7ce35bd0d3394a23dfaf49fb99d39fa3",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/quantized-19-5900087.txt": "bb15fb3f12db640d66ed0ce77e9b32676247ff4c0ebc572bde82b88808cdda10",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-three_cycle-8-5900087.txt": "7b249ea0a213574fdfb931f12b76b568049f944b22e2801ab6b1b9ac075e8f69",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/independent-27-5900087.txt": "c7f99e261dd496ced66fb00b01e1ef8dfb87b866ffe9d3398d63f566d851af4f",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/wnt-02.txt": "f72f41656060b0e3152fd080fb56b951e2ce86c91ece8cad52304ec64d45308f",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-three_cycle-7-4300051.txt": "55b847389658f8a9a7f59d745336df1bec6fe09f0986ea3be74403d2bada13cb",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/three_cycle-27-4300051.txt": "35298c2350e8222a2a451152c64abce68787cf7f453f045a932725acfcc93591",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/four_cluster-27-6700099.txt": "9193c1ce536201ad13365ea80e7d9258727f692b374508be9704d94ed11aabba",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/wnt-08-labels.json": "e5642b1e07c645405df44bfb30349fd7096c69ccb04441599fc5627e445083e1",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/independent-19-6700099.txt": "580544515dae75a7b605e53510f30cfe77a75f8777cdd19309d0cca6943ef882",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/quantized-27-6700099.txt": "7503a827a60cc2b2be18969012f8f781ab56f0ec5887c7cd4fc0e3492be44fcd",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-quantized-7-4300051.txt": "316eb8c3bb9c0d0c204c1c9fb41b9740c8cb5e0fbe7ec47e328d96e483c27365",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-two_cycle-8-4300051.txt": "a9788e8f274613c4cc38e8bf9bd1dafed89783c7dde2371cbe8d65908975473a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/reciprocal-27-6700099.txt": "7ee482e08c1f052bf102c7ff9f41ef0e0943c84dc1a79dc1a1bb4165376f6a45",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/two_cycle-19-5900087.txt": "5d8b34cc1d3a8783e2572df19dc4b2d235aa6a9a1a36547a837c6f938f96a70f",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-quantized-8-5900087.txt": "c6835d7534f6b1938e26af51750096bd4ccb66e741be7531e835d89f57f3cab7",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-two_cycle-7-5900087.txt": "b42ae2d953af33ec31187571180d937bc87c623fba8761600f645ce167f2697e",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/wnt-01-labels.json": "a34556b3317dc6d558feb6a0f4e9d76e00d8f2047630480e92658feb555ec14c",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-three_cycle-9-4300051.txt": "e92d0b84cdfe69ad01fca0860687e448087db941da843625aa13ec8a3c95a031",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/quantized-19-6700099.txt": "0acc25bc857f0f4e24ac20808ce26ff12ead96df7dfdcf162582b9368147f7b0",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/wnt-04-labels.json": "07f84e55f93dcc6a22aa03d72b44018cf1bdc9926f75153646d1f2212afdaedf",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/independent-27-6700099.txt": "054b47f915548588ae7015723a1e222044795ad8765ac019f043e1e36f99f26a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/wnt-09.txt": "b42b17106dc785e7a1953a556fd9ccd6a0ff2cbd319592ffba0a4395964ed3ab",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-four_cluster-7-4300051.txt": "10f6313f6d0018363fff1ea31cb73143c9dd1a817691a5d08496c38c8a6e91b3",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/wnt-08.txt": "c8971204afc0f715e0b79cbf69ccdb8096c9ff13088b12f1305d836583c9cbbf",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-independent-9-4300051.txt": "0e97aaa1c9fdab06d283f733db2c622f931a2ad7e823a66bc99539009f16dd32",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-four_cluster-8-5900087.txt": "048568b45c169db71308a70dea23638fc3cf497c89b2c142db42adc9ecdc1e1d",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/four_cluster-19-6700099.txt": "dd0f93694d46d3833aaee97a0a6810de9db0deab14963abba8b4f00db1a5494e",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-reciprocal-9-4300051.txt": "048c84f68b3e84ad053a816195bbb6a88663b08afa0fe5b182684d59c1414eaa",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/wnt-11-labels.json": "b3acf73fb174fbd49e31936da5e9135aaa9f88cc6480cd5604d14c1e7565c880",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/two_cycle-27-5900087.txt": "85afa4347d48390c25567a9df7971e3a8f638c2193759620f29fb3364c4338a6",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/reciprocal-19-6700099.txt": "7b77acf2b62e34bfcc74cddae4e60a576a6f8923b1b41d3b11364e428ab7fa21",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-three_cycle-9-5900087.txt": "2cb313b4603f3676925fe1dd12cd59b8689599c93f3aa48bfe3c950b942ad3f0",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-quantized-8-4300051.txt": "c3a0de1951afb70558969c374cc26f203d8ad485dffa02d8e7f0611e956cdc68",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-two_cycle-7-4300051.txt": "1ada579bdf52d7b0e076401cce77f018f7ec850a2895b0ffd63a85342c5fddc4",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-quantized-7-5900087.txt": "02d3981e31a02d4bb14aac3f151780228dec2e5eb5d7a13b98e4bbebe1ca8e5f",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-two_cycle-8-5900087.txt": "a16cf854e85a24d4e629c431cd2ac6809aa062402e33d530bbe3ac8e6b9dd246",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/two_cycle-19-4300051.txt": "daba276c368f1225e7688fd252b89ee53840762adb477597ec23964ca65df94d",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/three_cycle-19-6700099.txt": "b45b236b9a4e0654c431f665d636f5b3964ab8c2ce31be4cfa07e7496e59d241",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/wnt-07-labels.json": "8fa1d6207238a375a405ab826f587289c4a3b0023bb528ad5a3cefceaed77c2a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/two_cycle-27-4300051.txt": "552fb51f1b543a4ebecd8f7153bfb1f55b71bdf3e8a78fa373c0733a1b1d1913",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/wnt-02-labels.json": "c07c79f71283463ad064c5297120086973a6de013fdda0061061183293cb710f",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-reciprocal-9-5900087.txt": "5b5130e8607ad62300af1ed63018a13ea7080b1438e30c3b11d07631d80f314b",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-independent-9-5900087.txt": "3c5fbc38b1b639aa470c82bc8f21102ae47071b3d9c4f00ab1aac4e4e984e849",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-four_cluster-8-4300051.txt": "2a5938d36848377fff83b37492575e21eba3893dc81e2607bd32f6870f395af2",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/validate-four_cluster-7-5900087.txt": "322fcdcdc83d7f2c45d35e05308d6e0b8d4dd603574ef7ff399a07336fcf15c8",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/graphs/three_cycle-27-6700099.txt": "53253dd23e30379609a4f4d32b0a95c401359e40270c41686a8dfaeccb5e80b8",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/plan.json": "585c3a22dac6c42119a72475d14cb9bbd89e2a7dbafaa5c6d48d5a4ed278cb4f",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/bnb-frozen.inc": "6655c8c1a967658cd9245ae296cc9f6d4667738efd5854d39e8f29d593cd643b",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/theory-paths-hard": "8b0db28ed47c55ad645e9f8c832bcacf6e0212e5300708190f03b90db8808fa5",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

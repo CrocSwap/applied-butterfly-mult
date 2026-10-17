@@ -1,0 +1,129 @@
+{
+  "source": "results/polynomial-profile-1008/sample.txt",
+  "samples": 3369,
+  "counts": {
+    "other_or_inline": 1642,
+    "forward_fft": 1127,
+    "inverse_fft": 528,
+    "reconstruction": 72
+  },
+  "percent": {
+    "forward_fft": 33.45,
+    "inverse_fft": 15.67,
+    "other_or_inline": 48.74,
+    "reconstruction": 2.14
+  },
+  "functions": [
+    {
+      "function": "_point_addmul",
+      "samples": 1094
+    },
+    {
+      "function": "sd_fft_basecase_4_0",
+      "samples": 513
+    },
+    {
+      "function": "_crt_2_fn",
+      "samples": 296
+    },
+    {
+      "function": "sd_ifft_basecase_4_0",
+      "samples": 220
+    },
+    {
+      "function": "sd_fft_basecase_6_0",
+      "samples": 191
+    },
+    {
+      "function": "sd_fft_basecase_8_0",
+      "samples": 184
+    },
+    {
+      "function": "sd_fft_no_trunc_block",
+      "samples": 160
+    },
+    {
+      "function": "sd_ifft_basecase_6_0",
+      "samples": 115
+    },
+    {
+      "function": "fft_small_op_mul",
+      "samples": 112
+    },
+    {
+      "function": "sd_ifft_basecase_8_0",
+      "samples": 83
+    },
+    {
+      "function": "sd_ifft_no_trunc_block",
+      "samples": 74
+    },
+    {
+      "function": "_convert_block",
+      "samples": 72
+    },
+    {
+      "function": "_tpoly_invert_in_place",
+      "samples": 69
+    },
+    {
+      "function": "sd_fft_trunc_block",
+      "samples": 47
+    },
+    {
+      "function": "sd_ifft_no_trunc_block.cold.1",
+      "samples": 36
+    },
+    {
+      "function": "_mod",
+      "samples": 34
+    },
+    {
+      "function": "sd_fft_basecase_8_1",
+      "samples": 20
+    },
+    {
+      "function": "fft_small_op_addmul",
+      "samples": 6
+    },
+    {
+      "function": "sd_fft_basecase_6_1",
+      "samples": 6
+    },
+    {
+      "function": "sd_fft_trunc_internal",
+      "samples": 6
+    }
+  ],
+  "caveat": "Exclusive samples, approximate attribution. Inlined work and entries omitted below five samples remain other_or_inline. No separation of arithmetic and memory stalls.",
+  "case": {
+    "dim": 8,
+    "length": 1008,
+    "modulus": 1000000007,
+    "window": "full"
+  },
+  "commands": [
+    [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/poly-survey",
+      "8",
+      "1008",
+      "1000000007",
+      "full",
+      "0",
+      "16000"
+    ],
+    [
+      "sample",
+      "28958",
+      "4",
+      "1",
+      "-file",
+      "results/polynomial-profile-1008/sample.txt"
+    ]
+  ],
+  "sha256": {
+    "scripts/profile_polynomial_case.py": "4c9a21c25f08e8df155a857f669eedf55670f9c0488b2cc43867abaab50d35a4",
+    "build/poly-survey": "420348661aa267e7ebd13c5210d7dca97e2d6bd9e6c300b57910c745192a9299",
+    ".deps/flint/libflint.25.0.dylib": "31b9d75a502a408098b37990830d1f033a55fc5957e22ebf12cdaeb2a0fafe58"
+  }
+}

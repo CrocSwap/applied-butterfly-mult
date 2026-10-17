@@ -1,0 +1,4 @@
+{"phase":"binding","engine":0,"image":"/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"}
+{"phase":"binding","engine":1,"image":"/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"}
+{"phase":"check","engine":0,"passed":true,"accuracy":1018}
+{"phase":"check","engine":1,"passed":true,"accuracy":1018}

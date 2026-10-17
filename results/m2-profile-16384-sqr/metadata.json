@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-07T16:58:39.464267+00:00",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "cpu": "Apple M2",
+  "memory_bytes": 25769803776,
+  "compiler": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin",
+  "flint_commit": "657a2839cf0125164859ff102b1f124abcb87ce0",
+  "flint_diff": "",
+  "configure": "--with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --disable-static CC=clang 'CFLAGS=-O3 -g -mcpu=apple-m2 -fno-omit-frame-pointer'",
+  "libraries": "gmp 6.3.0\nmpfr 4.2.2",
+  "threads": 1,
+  "limb_bits": 64,
+  "method": "warm fixed random operands; AB/BA batches; four exact input-pattern checks per case",
+  "environment": {},
+  "limbs": 16384,
+  "operation": "sqr",
+  "seconds": 10,
+  "sampling_interval_ms": 1
+}

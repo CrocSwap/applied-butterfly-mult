@@ -1,0 +1,44 @@
+--- a/src/nmod_poly/interpolate_nmod_vec.c
++++ b/src/nmod_poly/interpolate_nmod_vec.c
+@@ -15,6 +15,7 @@
+ #include "nmod_vec.h"
+ #include "nmod_poly.h"
+ #include "gr_poly.h"
++#include "gr_poly/impl.h"
+ 
+ void
+ _nmod_poly_interpolate_nmod_vec(nn_ptr poly,
+@@ -110,8 +110,32 @@
+ _nmod_poly_interpolation_weights(nn_ptr w, const nn_ptr * tree, slong len, nmod_t mod)
+ {
+     gr_ctx_t ctx;
++    nn_ptr tmp;
++    slong n, height;
++
++    if (len == 0)
++        return;
++    if (len == 1)
++    {
++        w[0] = (mod.n != 1);
++        return;
++    }
++
+     _gr_ctx_init_nmod(ctx, &mod);
+-    GR_MUST_SUCCEED(_gr_poly_interpolation_weights(w, (const gr_ptr *) tree, len, ctx));
++    tmp = _nmod_vec_init(len + 1);
++    height = FLINT_CLOG2(len);
++    n = WORD(1) << (height - 1);
++
++    GR_MUST_SUCCEED(_gr_poly_mul_monic(tmp, tree[height - 1], n + 1,
++        tree[height - 1] + n + 1, len - n + 1, ctx));
++    _nmod_poly_derivative(tmp, tmp, len + 1, mod);
++    _nmod_poly_evaluate_nmod_vec_fast_precomp(w, tmp, len, tree, len, mod);
++
++    /* All weights must be units. Batch inversion uses one inverse and
++       reuses the derivative workspace for its nonaliased output. */
++    _nmod_vec_invert(tmp, w, len, mod);
++    _nmod_vec_set(w, tmp, len);
++    _nmod_vec_clear(tmp);
+ }
+ 
+ void

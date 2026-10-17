@@ -1,0 +1,137 @@
+[
+  {
+    "run": "fused-load-aa",
+    "metrics": {
+      "wall": {
+        "sqr": {
+          "cases": 3,
+          "reduction_pct": -1.2285392875349022,
+          "ci95_low_pct": -5.715033982820694,
+          "ci95_high_pct": 2.9512649211963504
+        },
+        "mul": {
+          "cases": 3,
+          "reduction_pct": -0.6708271979052771,
+          "ci95_low_pct": -5.757748069802071,
+          "ci95_high_pct": 3.914395278560334
+        },
+        "unbalanced": {
+          "cases": 3,
+          "reduction_pct": 0.6950425537982641,
+          "ci95_low_pct": -4.428205394697393,
+          "ci95_high_pct": 5.602615906819031
+        }
+      },
+      "cpu": {
+        "sqr": {
+          "cases": 3,
+          "reduction_pct": 0.20866454046724048,
+          "ci95_low_pct": -0.23390931678020088,
+          "ci95_high_pct": 0.6588579792371596
+        },
+        "mul": {
+          "cases": 3,
+          "reduction_pct": -0.10296210226738989,
+          "ci95_low_pct": -0.5118731539838661,
+          "ci95_high_pct": 0.28322460625771484
+        },
+        "unbalanced": {
+          "cases": 3,
+          "reduction_pct": 0.2398478630366685,
+          "ci95_low_pct": -0.16802745128972063,
+          "ci95_high_pct": 0.6340354966812511
+        }
+      }
+    }
+  },
+  {
+    "run": "fused-load-screen",
+    "metrics": {
+      "wall": {
+        "sqr": {
+          "cases": 9,
+          "reduction_pct": -0.969808368477465,
+          "ci95_low_pct": -5.046114223502052,
+          "ci95_high_pct": 3.3481715072680496
+        },
+        "mul": {
+          "cases": 9,
+          "reduction_pct": -1.674196467169664,
+          "ci95_low_pct": -4.292113675727083,
+          "ci95_high_pct": 0.9127244262476908
+        },
+        "unbalanced": {
+          "cases": 9,
+          "reduction_pct": 5.5145803311482,
+          "ci95_low_pct": 1.3079697599872042,
+          "ci95_high_pct": 9.647637577310586
+        }
+      },
+      "cpu": {
+        "sqr": {
+          "cases": 9,
+          "reduction_pct": 0.14174691955477492,
+          "ci95_low_pct": -0.12761484702068504,
+          "ci95_high_pct": 0.41333191366790256
+        },
+        "mul": {
+          "cases": 9,
+          "reduction_pct": 0.08854855842266307,
+          "ci95_low_pct": -0.1334308815956975,
+          "ci95_high_pct": 0.31132540991526403
+        },
+        "unbalanced": {
+          "cases": 9,
+          "reduction_pct": 0.22375430748037273,
+          "ci95_low_pct": -0.009979166957796437,
+          "ci95_high_pct": 0.46709951913070924
+        }
+      }
+    }
+  },
+  {
+    "run": "fused-load-repeat",
+    "metrics": {
+      "wall": {
+        "sqr": {
+          "cases": 9,
+          "reduction_pct": -3.6445053703541452,
+          "ci95_low_pct": -7.047415355997422,
+          "ci95_high_pct": -0.2148778841660759
+        },
+        "mul": {
+          "cases": 9,
+          "reduction_pct": -0.16473908819298888,
+          "ci95_low_pct": -3.454676893282338,
+          "ci95_high_pct": 2.869965070882541
+        },
+        "unbalanced": {
+          "cases": 9,
+          "reduction_pct": 0.291922014915158,
+          "ci95_low_pct": -4.684302371564408,
+          "ci95_high_pct": 5.609271313273101
+        }
+      },
+      "cpu": {
+        "sqr": {
+          "cases": 9,
+          "reduction_pct": -0.24272519668413484,
+          "ci95_low_pct": -0.6038822718167802,
+          "ci95_high_pct": 0.11727521836104593
+        },
+        "mul": {
+          "cases": 9,
+          "reduction_pct": 0.1315435023142575,
+          "ci95_low_pct": -0.11107325482557773,
+          "ci95_high_pct": 0.3787301196265358
+        },
+        "unbalanced": {
+          "cases": 9,
+          "reduction_pct": -0.16745146069439,
+          "ci95_low_pct": -0.4607029657150319,
+          "ci95_high_pct": 0.13067770018125868
+        }
+      }
+    }
+  }
+]

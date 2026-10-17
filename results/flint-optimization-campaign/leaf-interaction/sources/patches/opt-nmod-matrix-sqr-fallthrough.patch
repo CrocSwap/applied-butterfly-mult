@@ -1,0 +1,50 @@
+--- a/src/nmod_poly_mat/sqr.c
++++ b/src/nmod_poly_mat/sqr.c
+@@ -41,7 +41,7 @@
+             && (mod >= 2 * Alen - 1) && n_is_prime(mod))
+             nmod_poly_mat_sqr_interpolate(C, A);
+ 
+-        if (Alen > KS_MAX_LENGTH)
++        else if (Alen > KS_MAX_LENGTH)
+             nmod_poly_mat_sqr_classical(C, A);
+         else
+             nmod_poly_mat_sqr_KS(C, A);
+--- a/src/nmod_poly_mat/test/t-sqr.c
++++ b/src/nmod_poly_mat/test/t-sqr.c
+@@ -104,5 +104,36 @@
+         nmod_poly_mat_clear(B);
+     }
+ 
++
++    /* Exercise the interpolation branch, including in-place squaring.
++       Falling through to a second algorithm computes A^4 when aliased. */
++    for (i = 0; i < 2; i++)
++    {
++        nmod_poly_mat_t A, B, C;
++        slong j, dim = 82 + 2 * i;
++        ulong mod = 1000003;
++
++        nmod_poly_mat_init(A, dim, dim, mod);
++        nmod_poly_mat_init(B, dim, dim, mod);
++        nmod_poly_mat_init(C, dim, dim, mod);
++
++        for (j = 0; j < dim; j++)
++        {
++            nmod_poly_set_coeff_ui(nmod_poly_mat_entry(A, j, j), 0, 2);
++            if (i != 0)
++                nmod_poly_set_coeff_ui(nmod_poly_mat_entry(A, j, j), 3, 1);
++        }
++
++        nmod_poly_mat_mul_classical(C, A, A);
++        nmod_poly_mat_sqr(B, A);
++        FLINT_TEST(nmod_poly_mat_equal(B, C));
++        nmod_poly_mat_sqr(A, A);
++        FLINT_TEST(nmod_poly_mat_equal(A, C));
++
++        nmod_poly_mat_clear(A);
++        nmod_poly_mat_clear(B);
++        nmod_poly_mat_clear(C);
++    }
++
+     TEST_FUNCTION_END(state);
+ }

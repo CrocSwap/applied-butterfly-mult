@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "scope": "Internal diagonal phases in the 4- and 8-point source factorizations",
+  "cases": [
+    {
+      "p": 257,
+      "fft4_diagonal": [
+        1,
+        1,
+        1,
+        241
+      ],
+      "sister_two_bit_phase_signatures_checked": 32,
+      "matching_signatures": 0,
+      "noncommutation_witnesses": [
+        {
+          "direction": 1,
+          "row": 2,
+          "column": 3,
+          "commutator_entry": 16
+        },
+        {
+          "direction": 2,
+          "row": 1,
+          "column": 3,
+          "commutator_entry": 16
+        },
+        {
+          "direction": 3,
+          "row": 0,
+          "column": 3,
+          "commutator_entry": 16
+        }
+      ],
+      "fft8_order_eight_twiddles": [
+        64,
+        4
+      ]
+    },
+    {
+      "p": 1108307720798209,
+      "fft4_diagonal": [
+        1,
+        1,
+        1,
+        834463902588453
+      ],
+      "sister_two_bit_phase_signatures_checked": 32,
+      "matching_signatures": 0,
+      "noncommutation_witnesses": [
+        {
+          "direction": 1,
+          "row": 2,
+          "column": 3,
+          "commutator_entry": 273843818209756
+        },
+        {
+          "direction": 2,
+          "row": 1,
+          "column": 3,
+          "commutator_entry": 273843818209756
+        },
+        {
+          "direction": 3,
+          "row": 0,
+          "column": 3,
+          "commutator_entry": 273843818209756
+        }
+      ],
+      "fft8_order_eight_twiddles": [
+        982524503535289,
+        829102427533442
+      ]
+    }
+  ],
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/check_phase_barriers.py": "8651f595b2773e8c69b1cd475914e02bfb21a7199fdc990929cb0240f1479b07",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/screen_phase_fusion.py": "972a29e24cb25c76bd67d08c22fd8bf8f0cd7d04c1a1d5989221fe6e601a78e4",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/phase-fusion-screen/summary.json": "0543112a316cb3f4f2d92053b37bbb32c02d82623c71d22ce470c19ddcf2ba13",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/phase-fusion-screen/raw.jsonl": "de4b9ef626b16dfb6ff5b7e45a635365d491f21c8bec753eb4d240673c799454"
+  }
+}

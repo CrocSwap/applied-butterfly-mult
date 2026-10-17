@@ -1,0 +1,362 @@
+[
+  {
+    "run": "ablation-control",
+    "metrics": {
+      "wall": {
+        "sqr": {
+          "cases": 3,
+          "reduction_pct": 0.23835140247367992,
+          "ci95_low_pct": -0.013829325517811242,
+          "ci95_high_pct": 0.47909718813250457
+        },
+        "mul": {
+          "cases": 3,
+          "reduction_pct": 0.15387946153757603,
+          "ci95_low_pct": -0.1688628546620885,
+          "ci95_high_pct": 0.47843059870946725
+        },
+        "unbalanced": {
+          "cases": 3,
+          "reduction_pct": 0.32754606481879556,
+          "ci95_low_pct": -0.020551749143460363,
+          "ci95_high_pct": 0.6409688820387061
+        }
+      },
+      "cpu": {
+        "sqr": {
+          "cases": 3,
+          "reduction_pct": 0.24362548711729382,
+          "ci95_low_pct": -0.002279883096423241,
+          "ci95_high_pct": 0.4814990943579067
+        },
+        "mul": {
+          "cases": 3,
+          "reduction_pct": 0.16648108679796492,
+          "ci95_low_pct": -0.11155844775521118,
+          "ci95_high_pct": 0.4438072979721319
+        },
+        "unbalanced": {
+          "cases": 3,
+          "reduction_pct": 0.3856689978664729,
+          "ci95_low_pct": 0.05348529253768053,
+          "ci95_high_pct": 0.6873755917838009
+        }
+      }
+    }
+  },
+  {
+    "run": "ablation-retained-check",
+    "metrics": {
+      "wall": {
+        "sqr": {
+          "cases": 3,
+          "reduction_pct": 3.5833723929145966,
+          "ci95_low_pct": 3.2929661583459557,
+          "ci95_high_pct": 3.8356898505992887
+        },
+        "mul": {
+          "cases": 3,
+          "reduction_pct": 2.281325602798401,
+          "ci95_low_pct": 1.9898549595712245,
+          "ci95_high_pct": 2.561117864236573
+        },
+        "unbalanced": {
+          "cases": 3,
+          "reduction_pct": 2.7051798217124556,
+          "ci95_low_pct": 2.3519953631061963,
+          "ci95_high_pct": 3.0294760906613427
+        }
+      },
+      "cpu": {
+        "sqr": {
+          "cases": 3,
+          "reduction_pct": 3.5587204872707945,
+          "ci95_low_pct": 3.294367545827037,
+          "ci95_high_pct": 3.801569336072008
+        },
+        "mul": {
+          "cases": 3,
+          "reduction_pct": 2.318878849593975,
+          "ci95_low_pct": 2.0365220827553876,
+          "ci95_high_pct": 2.5886914300847996
+        },
+        "unbalanced": {
+          "cases": 3,
+          "reduction_pct": 2.680784801399272,
+          "ci95_low_pct": 2.3622256652333307,
+          "ci95_high_pct": 2.9825439229533957
+        }
+      }
+    }
+  },
+  {
+    "run": "ablation-no-fusion-1",
+    "metrics": {
+      "wall": {
+        "sqr": {
+          "cases": 9,
+          "reduction_pct": 2.126214008226235,
+          "ci95_low_pct": 1.8600264275379086,
+          "ci95_high_pct": 2.425018470145268
+        },
+        "mul": {
+          "cases": 9,
+          "reduction_pct": 1.2460840562006803,
+          "ci95_low_pct": 1.0496693520425149,
+          "ci95_high_pct": 1.4428156949025217
+        },
+        "unbalanced": {
+          "cases": 9,
+          "reduction_pct": 1.3802591649448637,
+          "ci95_low_pct": 1.2304594096740895,
+          "ci95_high_pct": 1.5341332991490098
+        }
+      },
+      "cpu": {
+        "sqr": {
+          "cases": 9,
+          "reduction_pct": 2.0958789681147727,
+          "ci95_low_pct": 1.8623965644667395,
+          "ci95_high_pct": 2.358514514592347
+        },
+        "mul": {
+          "cases": 9,
+          "reduction_pct": 1.2756341347540667,
+          "ci95_low_pct": 1.0827362101623716,
+          "ci95_high_pct": 1.460991712622628
+        },
+        "unbalanced": {
+          "cases": 9,
+          "reduction_pct": 1.3839101707618262,
+          "ci95_low_pct": 1.2406847938057353,
+          "ci95_high_pct": 1.5286603862147863
+        }
+      }
+    }
+  },
+  {
+    "run": "ablation-no-fusion-2",
+    "metrics": {
+      "wall": {
+        "sqr": {
+          "cases": 9,
+          "reduction_pct": 1.1639659214436993,
+          "ci95_low_pct": -0.09476133001442566,
+          "ci95_high_pct": 2.0811641933145553
+        },
+        "mul": {
+          "cases": 9,
+          "reduction_pct": 1.382985969637296,
+          "ci95_low_pct": 1.0650719327936597,
+          "ci95_high_pct": 1.7666815093157817
+        },
+        "unbalanced": {
+          "cases": 9,
+          "reduction_pct": 1.369498651977763,
+          "ci95_low_pct": 1.095048260942344,
+          "ci95_high_pct": 1.647987346196278
+        }
+      },
+      "cpu": {
+        "sqr": {
+          "cases": 9,
+          "reduction_pct": 1.9983367253930684,
+          "ci95_low_pct": 1.7412322478511988,
+          "ci95_high_pct": 2.2517549513055957
+        },
+        "mul": {
+          "cases": 9,
+          "reduction_pct": 1.3375294752548839,
+          "ci95_low_pct": 1.0609353623816986,
+          "ci95_high_pct": 1.6650354530770795
+        },
+        "unbalanced": {
+          "cases": 9,
+          "reduction_pct": 1.3162421125158863,
+          "ci95_low_pct": 1.0888955142839274,
+          "ci95_high_pct": 1.553796977348687
+        }
+      }
+    }
+  },
+  {
+    "run": "ablation-scalar-conversion-1",
+    "metrics": {
+      "wall": {
+        "sqr": {
+          "cases": 9,
+          "reduction_pct": 0.9236424875891491,
+          "ci95_low_pct": 0.6761531695612333,
+          "ci95_high_pct": 1.2269477137894502
+        },
+        "mul": {
+          "cases": 9,
+          "reduction_pct": 0.47419522526920277,
+          "ci95_low_pct": 0.2069608193224104,
+          "ci95_high_pct": 0.7629658180832388
+        },
+        "unbalanced": {
+          "cases": 9,
+          "reduction_pct": 0.48326580884541226,
+          "ci95_low_pct": 0.27997766314681316,
+          "ci95_high_pct": 0.6849107730132142
+        }
+      },
+      "cpu": {
+        "sqr": {
+          "cases": 9,
+          "reduction_pct": 0.7520959069894029,
+          "ci95_low_pct": 0.5693389204587396,
+          "ci95_high_pct": 0.9287618350543148
+        },
+        "mul": {
+          "cases": 9,
+          "reduction_pct": 0.36497279180833786,
+          "ci95_low_pct": 0.1418667646133187,
+          "ci95_high_pct": 0.5622962102791451
+        },
+        "unbalanced": {
+          "cases": 9,
+          "reduction_pct": 0.4858468978516939,
+          "ci95_low_pct": 0.2920050520369033,
+          "ci95_high_pct": 0.6753535523565168
+        }
+      }
+    }
+  },
+  {
+    "run": "ablation-scalar-conversion-2",
+    "metrics": {
+      "wall": {
+        "sqr": {
+          "cases": 9,
+          "reduction_pct": 0.5315198317092595,
+          "ci95_low_pct": 0.3328561037988176,
+          "ci95_high_pct": 0.7331169952955241
+        },
+        "mul": {
+          "cases": 9,
+          "reduction_pct": 0.4532758154900174,
+          "ci95_low_pct": 0.1321269450345608,
+          "ci95_high_pct": 0.7480234753933335
+        },
+        "unbalanced": {
+          "cases": 9,
+          "reduction_pct": 0.4660748396132619,
+          "ci95_low_pct": 0.2783584968138908,
+          "ci95_high_pct": 0.6554546811433415
+        }
+      },
+      "cpu": {
+        "sqr": {
+          "cases": 9,
+          "reduction_pct": 0.5046492916104373,
+          "ci95_low_pct": 0.33987572065349303,
+          "ci95_high_pct": 0.675066131430957
+        },
+        "mul": {
+          "cases": 9,
+          "reduction_pct": 0.4661470618686714,
+          "ci95_low_pct": 0.28157443564978957,
+          "ci95_high_pct": 0.6323682321816237
+        },
+        "unbalanced": {
+          "cases": 9,
+          "reduction_pct": 0.48981094875870657,
+          "ci95_low_pct": 0.31882399832540154,
+          "ci95_high_pct": 0.666248634860167
+        }
+      }
+    }
+  },
+  {
+    "run": "ablation-general-carry-1",
+    "metrics": {
+      "wall": {
+        "sqr": {
+          "cases": 9,
+          "reduction_pct": 1.4964720950576327,
+          "ci95_low_pct": 1.3352296781844353,
+          "ci95_high_pct": 1.6683495934398218
+        },
+        "mul": {
+          "cases": 9,
+          "reduction_pct": 0.9172120097952097,
+          "ci95_low_pct": 0.7330438157887587,
+          "ci95_high_pct": 1.1090622468335254
+        },
+        "unbalanced": {
+          "cases": 9,
+          "reduction_pct": 0.6619463781008861,
+          "ci95_low_pct": 0.23408282910029055,
+          "ci95_high_pct": 1.0065021323664824
+        }
+      },
+      "cpu": {
+        "sqr": {
+          "cases": 9,
+          "reduction_pct": 1.4735178510774438,
+          "ci95_low_pct": 1.3190347953826564,
+          "ci95_high_pct": 1.6366427644335713
+        },
+        "mul": {
+          "cases": 9,
+          "reduction_pct": 0.9172420121553726,
+          "ci95_low_pct": 0.7452132753318241,
+          "ci95_high_pct": 1.1005103218909906
+        },
+        "unbalanced": {
+          "cases": 9,
+          "reduction_pct": 0.9156958499198731,
+          "ci95_low_pct": 0.728964926860276,
+          "ci95_high_pct": 1.081937090177243
+        }
+      }
+    }
+  },
+  {
+    "run": "ablation-general-carry-2",
+    "metrics": {
+      "wall": {
+        "sqr": {
+          "cases": 9,
+          "reduction_pct": 1.449085968377406,
+          "ci95_low_pct": 1.2859335041406128,
+          "ci95_high_pct": 1.6163902857748935
+        },
+        "mul": {
+          "cases": 9,
+          "reduction_pct": 0.882004600248032,
+          "ci95_low_pct": 0.7000522164766099,
+          "ci95_high_pct": 1.0814348901978854
+        },
+        "unbalanced": {
+          "cases": 9,
+          "reduction_pct": 1.1404691476988082,
+          "ci95_low_pct": 0.943210547712503,
+          "ci95_high_pct": 1.3458696736343478
+        }
+      },
+      "cpu": {
+        "sqr": {
+          "cases": 9,
+          "reduction_pct": 1.4976800963258263,
+          "ci95_low_pct": 1.343365385852724,
+          "ci95_high_pct": 1.6552306150741325
+        },
+        "mul": {
+          "cases": 9,
+          "reduction_pct": 0.8972326219582438,
+          "ci95_low_pct": 0.7285100724101601,
+          "ci95_high_pct": 1.0810434835097693
+        },
+        "unbalanced": {
+          "cases": 9,
+          "reduction_pct": 1.1227409965607338,
+          "ci95_low_pct": 0.9437765738421922,
+          "ci95_high_pct": 1.3101145926803892
+        }
+      }
+    }
+  }
+]

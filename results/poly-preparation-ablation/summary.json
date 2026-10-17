@@ -1,0 +1,152 @@
+[
+  {
+    "dim": 8,
+    "length": 240,
+    "modulus": 1000000007,
+    "window": "full",
+    "supported": true,
+    "cpu": {
+      "reduction_pct": 6.572340083637873,
+      "ci95_low_pct": 6.190195583512937,
+      "ci95_high_pct": 6.951005785012132,
+      "baseline_median_ns": 844048.15625,
+      "candidate_median_ns": 789014.34375,
+      "quartets": 31,
+      "bootstrap_block": 5
+    },
+    "wall": {
+      "reduction_pct": 6.567752035823471,
+      "ci95_low_pct": 6.20790642171285,
+      "ci95_high_pct": 6.9537921135931935,
+      "baseline_median_ns": 844062.5,
+      "candidate_median_ns": 789125.0,
+      "quartets": 31,
+      "bootstrap_block": 5
+    }
+  },
+  {
+    "dim": 8,
+    "length": 256,
+    "modulus": 1000000007,
+    "window": "full",
+    "supported": true,
+    "cpu": {
+      "reduction_pct": 9.601445217386495,
+      "ci95_low_pct": 8.847368994485272,
+      "ci95_high_pct": 10.345555959778018,
+      "baseline_median_ns": 1324261.75,
+      "candidate_median_ns": 1197141.96875,
+      "quartets": 31,
+      "bootstrap_block": 5
+    },
+    "wall": {
+      "reduction_pct": 9.699623557727177,
+      "ci95_low_pct": 8.819392801311354,
+      "ci95_high_pct": 10.633409679975625,
+      "baseline_median_ns": 1324375.0,
+      "candidate_median_ns": 1197250.0,
+      "quartets": 31,
+      "bootstrap_block": 5
+    }
+  },
+  {
+    "dim": 8,
+    "length": 1024,
+    "modulus": 1000000007,
+    "window": "full",
+    "supported": true,
+    "cpu": {
+      "reduction_pct": 9.644906462534786,
+      "ci95_low_pct": 9.41531024769252,
+      "ci95_high_pct": 9.876797900570999,
+      "baseline_median_ns": 5363583.25,
+      "candidate_median_ns": 4847385.5,
+      "quartets": 31,
+      "bootstrap_block": 5
+    },
+    "wall": {
+      "reduction_pct": 9.699365593725663,
+      "ci95_low_pct": 9.443667820361956,
+      "ci95_high_pct": 9.969235778198637,
+      "baseline_median_ns": 5363750.0,
+      "candidate_median_ns": 4847500.0,
+      "quartets": 31,
+      "bootstrap_block": 5
+    }
+  },
+  {
+    "dim": 4,
+    "length": 256,
+    "modulus": 1000000007,
+    "window": "full",
+    "supported": true,
+    "cpu": {
+      "reduction_pct": 5.565998147000029,
+      "ci95_low_pct": 5.247407739505583,
+      "ci95_high_pct": 5.793163415723146,
+      "baseline_median_ns": 231886.3984375,
+      "candidate_median_ns": 219294.6015625,
+      "quartets": 31,
+      "bootstrap_block": 5
+    },
+    "wall": {
+      "reduction_pct": 5.551071785883388,
+      "ci95_low_pct": 5.281378086587873,
+      "ci95_high_pct": 5.757471530501935,
+      "baseline_median_ns": 231992.1875,
+      "candidate_median_ns": 219289.0625,
+      "quartets": 31,
+      "bootstrap_block": 5
+    }
+  },
+  {
+    "dim": 8,
+    "length": 1024,
+    "modulus": 1108307720798209,
+    "window": "full",
+    "supported": true,
+    "cpu": {
+      "reduction_pct": 10.376782612297008,
+      "ci95_low_pct": 10.029653477528356,
+      "ci95_high_pct": 10.776372391460532,
+      "baseline_median_ns": 2627070.3125,
+      "candidate_median_ns": 2356742.1875,
+      "quartets": 31,
+      "bootstrap_block": 5
+    },
+    "wall": {
+      "reduction_pct": 10.448764528440735,
+      "ci95_low_pct": 10.021393992868932,
+      "ci95_high_pct": 10.998418233691766,
+      "baseline_median_ns": 2627562.5,
+      "candidate_median_ns": 2357750.0,
+      "quartets": 31,
+      "bootstrap_block": 5
+    }
+  },
+  {
+    "dim": 8,
+    "length": 1008,
+    "modulus": 1000000007,
+    "window": "full",
+    "supported": true,
+    "cpu": {
+      "reduction_pct": 6.056126770240111,
+      "ci95_low_pct": 5.827267620268395,
+      "ci95_high_pct": 6.26233264750935,
+      "baseline_median_ns": 3847026.125,
+      "candidate_median_ns": 3603625.125,
+      "quartets": 31,
+      "bootstrap_block": 5
+    },
+    "wall": {
+      "reduction_pct": 6.001985029504143,
+      "ci95_low_pct": 5.743653644660274,
+      "ci95_high_pct": 6.253258965226749,
+      "baseline_median_ns": 3848125.0,
+      "candidate_median_ns": 3634375.0,
+      "quartets": 31,
+      "bootstrap_block": 5
+    }
+  }
+]

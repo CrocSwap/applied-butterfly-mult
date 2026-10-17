@@ -1,0 +1,1008 @@
+{
+  "status": "complete_static_screen",
+  "validation_outputs": 1060,
+  "tables": [
+    {
+      "table": 1,
+      "node": 5,
+      "trace_calls": 218,
+      "pair_or_fewer_exclusion_unique_queries": 8,
+      "best_control": "trie_incidence",
+      "best_carried": "carried_natural",
+      "best_ablation": "separate_natural",
+      "qualifies": false,
+      "unique_queries": 8,
+      "rows": 32,
+      "metrics": {
+        "memo_balanced": {
+          "additions": 69,
+          "peak_live_computed_values": 19,
+          "depth": 5,
+          "generated_additions": 69,
+          "contraction_entry_visits": 0
+        },
+        "greedy_common_pairs": {
+          "additions": 33,
+          "peak_live_computed_values": 11,
+          "depth": 6,
+          "generated_additions": 33,
+          "contraction_entry_visits": 0
+        },
+        "trie_natural": {
+          "additions": 81,
+          "peak_live_computed_values": 19,
+          "depth": 10,
+          "generated_additions": 81,
+          "contraction_entry_visits": 0
+        },
+        "carried_natural": {
+          "additions": 53,
+          "peak_live_computed_values": 14,
+          "depth": 6,
+          "generated_additions": 345,
+          "contraction_entry_visits": 3685
+        },
+        "separate_natural": {
+          "additions": 59,
+          "peak_live_computed_values": 15,
+          "depth": 8,
+          "generated_additions": 540,
+          "contraction_entry_visits": 3074
+        },
+        "trie_reverse": {
+          "additions": 47,
+          "peak_live_computed_values": 11,
+          "depth": 10,
+          "generated_additions": 47,
+          "contraction_entry_visits": 0
+        },
+        "carried_reverse": {
+          "additions": 68,
+          "peak_live_computed_values": 19,
+          "depth": 7,
+          "generated_additions": 352,
+          "contraction_entry_visits": 3682
+        },
+        "separate_reverse": {
+          "additions": 71,
+          "peak_live_computed_values": 18,
+          "depth": 9,
+          "generated_additions": 552,
+          "contraction_entry_visits": 3072
+        },
+        "trie_incidence": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 10,
+          "generated_additions": 33,
+          "contraction_entry_visits": 0
+        },
+        "carried_incidence": {
+          "additions": 62,
+          "peak_live_computed_values": 18,
+          "depth": 8,
+          "generated_additions": 324,
+          "contraction_entry_visits": 3522
+        },
+        "separate_incidence": {
+          "additions": 67,
+          "peak_live_computed_values": 17,
+          "depth": 8,
+          "generated_additions": 530,
+          "contraction_entry_visits": 2907
+        }
+      }
+    },
+    {
+      "table": 2,
+      "node": 6,
+      "trace_calls": 212,
+      "pair_or_fewer_exclusion_unique_queries": 8,
+      "best_control": "trie_incidence",
+      "best_carried": "carried_natural",
+      "best_ablation": "separate_natural",
+      "qualifies": false,
+      "unique_queries": 8,
+      "rows": 32,
+      "metrics": {
+        "memo_balanced": {
+          "additions": 81,
+          "peak_live_computed_values": 18,
+          "depth": 5,
+          "generated_additions": 81,
+          "contraction_entry_visits": 0
+        },
+        "greedy_common_pairs": {
+          "additions": 33,
+          "peak_live_computed_values": 11,
+          "depth": 6,
+          "generated_additions": 33,
+          "contraction_entry_visits": 0
+        },
+        "trie_natural": {
+          "additions": 81,
+          "peak_live_computed_values": 20,
+          "depth": 10,
+          "generated_additions": 81,
+          "contraction_entry_visits": 0
+        },
+        "carried_natural": {
+          "additions": 52,
+          "peak_live_computed_values": 15,
+          "depth": 6,
+          "generated_additions": 341,
+          "contraction_entry_visits": 3685
+        },
+        "separate_natural": {
+          "additions": 59,
+          "peak_live_computed_values": 15,
+          "depth": 8,
+          "generated_additions": 536,
+          "contraction_entry_visits": 3074
+        },
+        "trie_reverse": {
+          "additions": 47,
+          "peak_live_computed_values": 11,
+          "depth": 10,
+          "generated_additions": 47,
+          "contraction_entry_visits": 0
+        },
+        "carried_reverse": {
+          "additions": 67,
+          "peak_live_computed_values": 19,
+          "depth": 7,
+          "generated_additions": 348,
+          "contraction_entry_visits": 3682
+        },
+        "separate_reverse": {
+          "additions": 71,
+          "peak_live_computed_values": 18,
+          "depth": 9,
+          "generated_additions": 548,
+          "contraction_entry_visits": 3072
+        },
+        "trie_incidence": {
+          "additions": 33,
+          "peak_live_computed_values": 8,
+          "depth": 10,
+          "generated_additions": 33,
+          "contraction_entry_visits": 0
+        },
+        "carried_incidence": {
+          "additions": 60,
+          "peak_live_computed_values": 16,
+          "depth": 8,
+          "generated_additions": 323,
+          "contraction_entry_visits": 3522
+        },
+        "separate_incidence": {
+          "additions": 65,
+          "peak_live_computed_values": 18,
+          "depth": 8,
+          "generated_additions": 529,
+          "contraction_entry_visits": 2907
+        }
+      }
+    },
+    {
+      "table": 5,
+      "node": 0,
+      "trace_calls": 212,
+      "pair_or_fewer_exclusion_unique_queries": 11,
+      "best_control": "greedy_common_pairs",
+      "best_carried": "carried_reverse",
+      "best_ablation": "separate_incidence",
+      "qualifies": false,
+      "unique_queries": 24,
+      "rows": 68,
+      "metrics": {
+        "memo_balanced": {
+          "additions": 258,
+          "peak_live_computed_values": 43,
+          "depth": 7,
+          "generated_additions": 258,
+          "contraction_entry_visits": 0
+        },
+        "greedy_common_pairs": {
+          "additions": 85,
+          "peak_live_computed_values": 28,
+          "depth": 12,
+          "generated_additions": 85,
+          "contraction_entry_visits": 0
+        },
+        "trie_natural": {
+          "additions": 153,
+          "peak_live_computed_values": 32,
+          "depth": 10,
+          "generated_additions": 153,
+          "contraction_entry_visits": 0
+        },
+        "carried_natural": {
+          "additions": 238,
+          "peak_live_computed_values": 35,
+          "depth": 9,
+          "generated_additions": 782,
+          "contraction_entry_visits": 7156
+        },
+        "separate_natural": {
+          "additions": 257,
+          "peak_live_computed_values": 39,
+          "depth": 11,
+          "generated_additions": 1060,
+          "contraction_entry_visits": 6574
+        },
+        "trie_reverse": {
+          "additions": 272,
+          "peak_live_computed_values": 47,
+          "depth": 10,
+          "generated_additions": 272,
+          "contraction_entry_visits": 0
+        },
+        "carried_reverse": {
+          "additions": 232,
+          "peak_live_computed_values": 34,
+          "depth": 9,
+          "generated_additions": 772,
+          "contraction_entry_visits": 7164
+        },
+        "separate_reverse": {
+          "additions": 250,
+          "peak_live_computed_values": 38,
+          "depth": 11,
+          "generated_additions": 1045,
+          "contraction_entry_visits": 6582
+        },
+        "trie_incidence": {
+          "additions": 107,
+          "peak_live_computed_values": 25,
+          "depth": 10,
+          "generated_additions": 107,
+          "contraction_entry_visits": 0
+        },
+        "carried_incidence": {
+          "additions": 236,
+          "peak_live_computed_values": 34,
+          "depth": 8,
+          "generated_additions": 746,
+          "contraction_entry_visits": 7054
+        },
+        "separate_incidence": {
+          "additions": 247,
+          "peak_live_computed_values": 38,
+          "depth": 9,
+          "generated_additions": 1017,
+          "contraction_entry_visits": 6465
+        }
+      }
+    },
+    {
+      "table": 6,
+      "node": 3,
+      "trace_calls": 238,
+      "pair_or_fewer_exclusion_unique_queries": 12,
+      "best_control": "greedy_common_pairs",
+      "best_carried": "carried_reverse",
+      "best_ablation": "separate_natural",
+      "qualifies": false,
+      "unique_queries": 33,
+      "rows": 108,
+      "metrics": {
+        "memo_balanced": {
+          "additions": 436,
+          "peak_live_computed_values": 56,
+          "depth": 7,
+          "generated_additions": 436,
+          "contraction_entry_visits": 0
+        },
+        "greedy_common_pairs": {
+          "additions": 135,
+          "peak_live_computed_values": 40,
+          "depth": 10,
+          "generated_additions": 135,
+          "contraction_entry_visits": 0
+        },
+        "trie_natural": {
+          "additions": 301,
+          "peak_live_computed_values": 53,
+          "depth": 9,
+          "generated_additions": 301,
+          "contraction_entry_visits": 0
+        },
+        "carried_natural": {
+          "additions": 326,
+          "peak_live_computed_values": 49,
+          "depth": 9,
+          "generated_additions": 1486,
+          "contraction_entry_visits": 14795
+        },
+        "separate_natural": {
+          "additions": 339,
+          "peak_live_computed_values": 45,
+          "depth": 11,
+          "generated_additions": 1861,
+          "contraction_entry_visits": 14264
+        },
+        "trie_reverse": {
+          "additions": 324,
+          "peak_live_computed_values": 46,
+          "depth": 9,
+          "generated_additions": 324,
+          "contraction_entry_visits": 0
+        },
+        "carried_reverse": {
+          "additions": 308,
+          "peak_live_computed_values": 49,
+          "depth": 9,
+          "generated_additions": 1492,
+          "contraction_entry_visits": 14795
+        },
+        "separate_reverse": {
+          "additions": 349,
+          "peak_live_computed_values": 47,
+          "depth": 11,
+          "generated_additions": 1860,
+          "contraction_entry_visits": 14264
+        },
+        "trie_incidence": {
+          "additions": 143,
+          "peak_live_computed_values": 40,
+          "depth": 9,
+          "generated_additions": 143,
+          "contraction_entry_visits": 0
+        },
+        "carried_incidence": {
+          "additions": 338,
+          "peak_live_computed_values": 48,
+          "depth": 9,
+          "generated_additions": 1431,
+          "contraction_entry_visits": 14656
+        },
+        "separate_incidence": {
+          "additions": 356,
+          "peak_live_computed_values": 45,
+          "depth": 10,
+          "generated_additions": 1805,
+          "contraction_entry_visits": 14115
+        }
+      }
+    },
+    {
+      "table": 9,
+      "node": 9,
+      "trace_calls": 192,
+      "pair_or_fewer_exclusion_unique_queries": 8,
+      "best_control": "trie_incidence",
+      "best_carried": "carried_natural",
+      "best_ablation": "separate_natural",
+      "qualifies": false,
+      "unique_queries": 8,
+      "rows": 36,
+      "metrics": {
+        "memo_balanced": {
+          "additions": 58,
+          "peak_live_computed_values": 10,
+          "depth": 6,
+          "generated_additions": 58,
+          "contraction_entry_visits": 0
+        },
+        "greedy_common_pairs": {
+          "additions": 37,
+          "peak_live_computed_values": 13,
+          "depth": 6,
+          "generated_additions": 37,
+          "contraction_entry_visits": 0
+        },
+        "trie_natural": {
+          "additions": 82,
+          "peak_live_computed_values": 21,
+          "depth": 10,
+          "generated_additions": 82,
+          "contraction_entry_visits": 0
+        },
+        "carried_natural": {
+          "additions": 70,
+          "peak_live_computed_values": 18,
+          "depth": 8,
+          "generated_additions": 386,
+          "contraction_entry_visits": 4086
+        },
+        "separate_natural": {
+          "additions": 74,
+          "peak_live_computed_values": 19,
+          "depth": 8,
+          "generated_additions": 599,
+          "contraction_entry_visits": 3492
+        },
+        "trie_reverse": {
+          "additions": 64,
+          "peak_live_computed_values": 16,
+          "depth": 10,
+          "generated_additions": 64,
+          "contraction_entry_visits": 0
+        },
+        "carried_reverse": {
+          "additions": 76,
+          "peak_live_computed_values": 21,
+          "depth": 8,
+          "generated_additions": 380,
+          "contraction_entry_visits": 4096
+        },
+        "separate_reverse": {
+          "additions": 83,
+          "peak_live_computed_values": 21,
+          "depth": 10,
+          "generated_additions": 607,
+          "contraction_entry_visits": 3503
+        },
+        "trie_incidence": {
+          "additions": 37,
+          "peak_live_computed_values": 8,
+          "depth": 10,
+          "generated_additions": 37,
+          "contraction_entry_visits": 0
+        },
+        "carried_incidence": {
+          "additions": 74,
+          "peak_live_computed_values": 20,
+          "depth": 8,
+          "generated_additions": 362,
+          "contraction_entry_visits": 3934
+        },
+        "separate_incidence": {
+          "additions": 79,
+          "peak_live_computed_values": 19,
+          "depth": 8,
+          "generated_additions": 575,
+          "contraction_entry_visits": 3327
+        }
+      }
+    },
+    {
+      "table": 11,
+      "node": 10,
+      "trace_calls": 268,
+      "pair_or_fewer_exclusion_unique_queries": 7,
+      "best_control": "greedy_common_pairs",
+      "best_carried": "carried_incidence",
+      "best_ablation": "separate_incidence",
+      "qualifies": false,
+      "unique_queries": 32,
+      "rows": 67,
+      "metrics": {
+        "memo_balanced": {
+          "additions": 250,
+          "peak_live_computed_values": 42,
+          "depth": 7,
+          "generated_additions": 250,
+          "contraction_entry_visits": 0
+        },
+        "greedy_common_pairs": {
+          "additions": 95,
+          "peak_live_computed_values": 34,
+          "depth": 11,
+          "generated_additions": 95,
+          "contraction_entry_visits": 0
+        },
+        "trie_natural": {
+          "additions": 175,
+          "peak_live_computed_values": 39,
+          "depth": 10,
+          "generated_additions": 175,
+          "contraction_entry_visits": 0
+        },
+        "carried_natural": {
+          "additions": 266,
+          "peak_live_computed_values": 41,
+          "depth": 8,
+          "generated_additions": 838,
+          "contraction_entry_visits": 6980
+        },
+        "separate_natural": {
+          "additions": 270,
+          "peak_live_computed_values": 41,
+          "depth": 10,
+          "generated_additions": 1116,
+          "contraction_entry_visits": 6397
+        },
+        "trie_reverse": {
+          "additions": 240,
+          "peak_live_computed_values": 42,
+          "depth": 10,
+          "generated_additions": 240,
+          "contraction_entry_visits": 0
+        },
+        "carried_reverse": {
+          "additions": 245,
+          "peak_live_computed_values": 38,
+          "depth": 9,
+          "generated_additions": 855,
+          "contraction_entry_visits": 6974
+        },
+        "separate_reverse": {
+          "additions": 273,
+          "peak_live_computed_values": 41,
+          "depth": 11,
+          "generated_additions": 1136,
+          "contraction_entry_visits": 6391
+        },
+        "trie_incidence": {
+          "additions": 103,
+          "peak_live_computed_values": 34,
+          "depth": 10,
+          "generated_additions": 103,
+          "contraction_entry_visits": 0
+        },
+        "carried_incidence": {
+          "additions": 231,
+          "peak_live_computed_values": 45,
+          "depth": 8,
+          "generated_additions": 793,
+          "contraction_entry_visits": 6849
+        },
+        "separate_incidence": {
+          "additions": 257,
+          "peak_live_computed_values": 45,
+          "depth": 9,
+          "generated_additions": 1071,
+          "contraction_entry_visits": 6256
+        }
+      }
+    },
+    {
+      "table": 12,
+      "node": 8,
+      "trace_calls": 366,
+      "pair_or_fewer_exclusion_unique_queries": 14,
+      "best_control": "greedy_common_pairs",
+      "best_carried": "carried_incidence",
+      "best_ablation": "separate_incidence",
+      "qualifies": false,
+      "unique_queries": 43,
+      "rows": 95,
+      "metrics": {
+        "memo_balanced": {
+          "additions": 402,
+          "peak_live_computed_values": 56,
+          "depth": 6,
+          "generated_additions": 402,
+          "contraction_entry_visits": 0
+        },
+        "greedy_common_pairs": {
+          "additions": 130,
+          "peak_live_computed_values": 47,
+          "depth": 9,
+          "generated_additions": 130,
+          "contraction_entry_visits": 0
+        },
+        "trie_natural": {
+          "additions": 262,
+          "peak_live_computed_values": 55,
+          "depth": 9,
+          "generated_additions": 262,
+          "contraction_entry_visits": 0
+        },
+        "carried_natural": {
+          "additions": 367,
+          "peak_live_computed_values": 49,
+          "depth": 7,
+          "generated_additions": 1397,
+          "contraction_entry_visits": 13381
+        },
+        "separate_natural": {
+          "additions": 380,
+          "peak_live_computed_values": 49,
+          "depth": 9,
+          "generated_additions": 1789,
+          "contraction_entry_visits": 12819
+        },
+        "trie_reverse": {
+          "additions": 308,
+          "peak_live_computed_values": 66,
+          "depth": 9,
+          "generated_additions": 308,
+          "contraction_entry_visits": 0
+        },
+        "carried_reverse": {
+          "additions": 359,
+          "peak_live_computed_values": 49,
+          "depth": 8,
+          "generated_additions": 1395,
+          "contraction_entry_visits": 13379
+        },
+        "separate_reverse": {
+          "additions": 374,
+          "peak_live_computed_values": 49,
+          "depth": 10,
+          "generated_additions": 1781,
+          "contraction_entry_visits": 12817
+        },
+        "trie_incidence": {
+          "additions": 159,
+          "peak_live_computed_values": 48,
+          "depth": 9,
+          "generated_additions": 159,
+          "contraction_entry_visits": 0
+        },
+        "carried_incidence": {
+          "additions": 312,
+          "peak_live_computed_values": 48,
+          "depth": 8,
+          "generated_additions": 1311,
+          "contraction_entry_visits": 13249
+        },
+        "separate_incidence": {
+          "additions": 349,
+          "peak_live_computed_values": 50,
+          "depth": 9,
+          "generated_additions": 1684,
+          "contraction_entry_visits": 12676
+        }
+      }
+    },
+    {
+      "table": 15,
+      "node": 7,
+      "trace_calls": 464,
+      "pair_or_fewer_exclusion_unique_queries": 1,
+      "best_control": "greedy_common_pairs",
+      "best_carried": "carried_reverse",
+      "best_ablation": "separate_natural",
+      "qualifies": false,
+      "unique_queries": 81,
+      "rows": 163,
+      "metrics": {
+        "memo_balanced": {
+          "additions": 517,
+          "peak_live_computed_values": 92,
+          "depth": 6,
+          "generated_additions": 517,
+          "contraction_entry_visits": 0
+        },
+        "greedy_common_pairs": {
+          "additions": 202,
+          "peak_live_computed_values": 83,
+          "depth": 7,
+          "generated_additions": 202,
+          "contraction_entry_visits": 0
+        },
+        "trie_natural": {
+          "additions": 318,
+          "peak_live_computed_values": 83,
+          "depth": 7,
+          "generated_additions": 318,
+          "contraction_entry_visits": 0
+        },
+        "carried_natural": {
+          "additions": 524,
+          "peak_live_computed_values": 95,
+          "depth": 6,
+          "generated_additions": 903,
+          "contraction_entry_visits": 3681
+        },
+        "separate_natural": {
+          "additions": 524,
+          "peak_live_computed_values": 95,
+          "depth": 8,
+          "generated_additions": 947,
+          "contraction_entry_visits": 3702
+        },
+        "trie_reverse": {
+          "additions": 519,
+          "peak_live_computed_values": 86,
+          "depth": 7,
+          "generated_additions": 519,
+          "contraction_entry_visits": 0
+        },
+        "carried_reverse": {
+          "additions": 503,
+          "peak_live_computed_values": 95,
+          "depth": 7,
+          "generated_additions": 902,
+          "contraction_entry_visits": 3681
+        },
+        "separate_reverse": {
+          "additions": 524,
+          "peak_live_computed_values": 95,
+          "depth": 9,
+          "generated_additions": 949,
+          "contraction_entry_visits": 3702
+        },
+        "trie_incidence": {
+          "additions": 207,
+          "peak_live_computed_values": 85,
+          "depth": 7,
+          "generated_additions": 207,
+          "contraction_entry_visits": 0
+        },
+        "carried_incidence": {
+          "additions": 514,
+          "peak_live_computed_values": 96,
+          "depth": 7,
+          "generated_additions": 876,
+          "contraction_entry_visits": 3663
+        },
+        "separate_incidence": {
+          "additions": 525,
+          "peak_live_computed_values": 96,
+          "depth": 9,
+          "generated_additions": 927,
+          "contraction_entry_visits": 3683
+        }
+      }
+    },
+    {
+      "table": 16,
+      "node": 4,
+      "trace_calls": 238,
+      "pair_or_fewer_exclusion_unique_queries": 4,
+      "best_control": "greedy_common_pairs",
+      "best_carried": "carried_reverse",
+      "best_ablation": "separate_incidence",
+      "qualifies": false,
+      "unique_queries": 17,
+      "rows": 61,
+      "metrics": {
+        "memo_balanced": {
+          "additions": 175,
+          "peak_live_computed_values": 24,
+          "depth": 6,
+          "generated_additions": 175,
+          "contraction_entry_visits": 0
+        },
+        "greedy_common_pairs": {
+          "additions": 71,
+          "peak_live_computed_values": 20,
+          "depth": 13,
+          "generated_additions": 71,
+          "contraction_entry_visits": 0
+        },
+        "trie_natural": {
+          "additions": 148,
+          "peak_live_computed_values": 25,
+          "depth": 10,
+          "generated_additions": 148,
+          "contraction_entry_visits": 0
+        },
+        "carried_natural": {
+          "additions": 171,
+          "peak_live_computed_values": 23,
+          "depth": 9,
+          "generated_additions": 577,
+          "contraction_entry_visits": 5264
+        },
+        "separate_natural": {
+          "additions": 174,
+          "peak_live_computed_values": 22,
+          "depth": 10,
+          "generated_additions": 809,
+          "contraction_entry_visits": 4693
+        },
+        "trie_reverse": {
+          "additions": 147,
+          "peak_live_computed_values": 22,
+          "depth": 10,
+          "generated_additions": 147,
+          "contraction_entry_visits": 0
+        },
+        "carried_reverse": {
+          "additions": 171,
+          "peak_live_computed_values": 22,
+          "depth": 9,
+          "generated_additions": 581,
+          "contraction_entry_visits": 5264
+        },
+        "separate_reverse": {
+          "additions": 174,
+          "peak_live_computed_values": 21,
+          "depth": 10,
+          "generated_additions": 814,
+          "contraction_entry_visits": 4693
+        },
+        "trie_incidence": {
+          "additions": 84,
+          "peak_live_computed_values": 21,
+          "depth": 10,
+          "generated_additions": 84,
+          "contraction_entry_visits": 0
+        },
+        "carried_incidence": {
+          "additions": 172,
+          "peak_live_computed_values": 26,
+          "depth": 8,
+          "generated_additions": 582,
+          "contraction_entry_visits": 5264
+        },
+        "separate_incidence": {
+          "additions": 172,
+          "peak_live_computed_values": 27,
+          "depth": 9,
+          "generated_additions": 814,
+          "contraction_entry_visits": 4693
+        }
+      }
+    },
+    {
+      "table": 19,
+      "node": 2,
+      "trace_calls": 222,
+      "pair_or_fewer_exclusion_unique_queries": 5,
+      "best_control": "greedy_common_pairs",
+      "best_carried": "carried_incidence",
+      "best_ablation": "separate_incidence",
+      "qualifies": false,
+      "unique_queries": 21,
+      "rows": 59,
+      "metrics": {
+        "memo_balanced": {
+          "additions": 191,
+          "peak_live_computed_values": 32,
+          "depth": 6,
+          "generated_additions": 191,
+          "contraction_entry_visits": 0
+        },
+        "greedy_common_pairs": {
+          "additions": 75,
+          "peak_live_computed_values": 26,
+          "depth": 10,
+          "generated_additions": 75,
+          "contraction_entry_visits": 0
+        },
+        "trie_natural": {
+          "additions": 165,
+          "peak_live_computed_values": 25,
+          "depth": 10,
+          "generated_additions": 165,
+          "contraction_entry_visits": 0
+        },
+        "carried_natural": {
+          "additions": 208,
+          "peak_live_computed_values": 26,
+          "depth": 8,
+          "generated_additions": 594,
+          "contraction_entry_visits": 5189
+        },
+        "separate_natural": {
+          "additions": 214,
+          "peak_live_computed_values": 26,
+          "depth": 9,
+          "generated_additions": 831,
+          "contraction_entry_visits": 4615
+        },
+        "trie_reverse": {
+          "additions": 167,
+          "peak_live_computed_values": 30,
+          "depth": 10,
+          "generated_additions": 167,
+          "contraction_entry_visits": 0
+        },
+        "carried_reverse": {
+          "additions": 209,
+          "peak_live_computed_values": 26,
+          "depth": 8,
+          "generated_additions": 599,
+          "contraction_entry_visits": 5189
+        },
+        "separate_reverse": {
+          "additions": 214,
+          "peak_live_computed_values": 26,
+          "depth": 9,
+          "generated_additions": 837,
+          "contraction_entry_visits": 4615
+        },
+        "trie_incidence": {
+          "additions": 85,
+          "peak_live_computed_values": 23,
+          "depth": 10,
+          "generated_additions": 85,
+          "contraction_entry_visits": 0
+        },
+        "carried_incidence": {
+          "additions": 205,
+          "peak_live_computed_values": 29,
+          "depth": 8,
+          "generated_additions": 607,
+          "contraction_entry_visits": 5188
+        },
+        "separate_incidence": {
+          "additions": 210,
+          "peak_live_computed_values": 29,
+          "depth": 9,
+          "generated_additions": 840,
+          "contraction_entry_visits": 4614
+        }
+      }
+    },
+    {
+      "table": 21,
+      "node": 1,
+      "trace_calls": 248,
+      "pair_or_fewer_exclusion_unique_queries": 8,
+      "best_control": "greedy_common_pairs",
+      "best_carried": "carried_incidence",
+      "best_ablation": "separate_incidence",
+      "qualifies": false,
+      "unique_queries": 24,
+      "rows": 65,
+      "metrics": {
+        "memo_balanced": {
+          "additions": 214,
+          "peak_live_computed_values": 36,
+          "depth": 6,
+          "generated_additions": 214,
+          "contraction_entry_visits": 0
+        },
+        "greedy_common_pairs": {
+          "additions": 76,
+          "peak_live_computed_values": 25,
+          "depth": 10,
+          "generated_additions": 76,
+          "contraction_entry_visits": 0
+        },
+        "trie_natural": {
+          "additions": 141,
+          "peak_live_computed_values": 27,
+          "depth": 9,
+          "generated_additions": 141,
+          "contraction_entry_visits": 0
+        },
+        "carried_natural": {
+          "additions": 205,
+          "peak_live_computed_values": 32,
+          "depth": 9,
+          "generated_additions": 786,
+          "contraction_entry_visits": 7059
+        },
+        "separate_natural": {
+          "additions": 213,
+          "peak_live_computed_values": 32,
+          "depth": 10,
+          "generated_additions": 1061,
+          "contraction_entry_visits": 6475
+        },
+        "trie_reverse": {
+          "additions": 193,
+          "peak_live_computed_values": 32,
+          "depth": 9,
+          "generated_additions": 193,
+          "contraction_entry_visits": 0
+        },
+        "carried_reverse": {
+          "additions": 204,
+          "peak_live_computed_values": 32,
+          "depth": 8,
+          "generated_additions": 775,
+          "contraction_entry_visits": 7059
+        },
+        "separate_reverse": {
+          "additions": 210,
+          "peak_live_computed_values": 32,
+          "depth": 10,
+          "generated_additions": 1047,
+          "contraction_entry_visits": 6475
+        },
+        "trie_incidence": {
+          "additions": 83,
+          "peak_live_computed_values": 25,
+          "depth": 9,
+          "generated_additions": 83,
+          "contraction_entry_visits": 0
+        },
+        "carried_incidence": {
+          "additions": 192,
+          "peak_live_computed_values": 32,
+          "depth": 8,
+          "generated_additions": 741,
+          "contraction_entry_visits": 6940
+        },
+        "separate_incidence": {
+          "additions": 196,
+          "peak_live_computed_values": 32,
+          "depth": 8,
+          "generated_additions": 1004,
+          "contraction_entry_visits": 6347
+        }
+      }
+    }
+  ],
+  "qualified": 0
+}

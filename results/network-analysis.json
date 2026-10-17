@@ -1,0 +1,137 @@
+[
+  {
+    "run": "network-aa",
+    "metrics": {
+      "wall": {
+        "sqr": {
+          "cases": 3,
+          "reduction_pct": 1.9221667493713346,
+          "ci95_low_pct": 0.5038482173395309,
+          "ci95_high_pct": 3.6703533823655765
+        },
+        "mul": {
+          "cases": 3,
+          "reduction_pct": 0.32736032920541724,
+          "ci95_low_pct": -0.4140342285762433,
+          "ci95_high_pct": 0.9965724816664467
+        },
+        "unbalanced": {
+          "cases": 3,
+          "reduction_pct": 1.3275911461312462,
+          "ci95_low_pct": 0.12324448896450235,
+          "ci95_high_pct": 2.6821340460050913
+        }
+      },
+      "cpu": {
+        "sqr": {
+          "cases": 3,
+          "reduction_pct": 1.0984829725172118,
+          "ci95_low_pct": 0.2529055281824899,
+          "ci95_high_pct": 2.210285049980265
+        },
+        "mul": {
+          "cases": 3,
+          "reduction_pct": 0.3376045953081497,
+          "ci95_low_pct": -0.0818728248496603,
+          "ci95_high_pct": 0.7452186108770076
+        },
+        "unbalanced": {
+          "cases": 3,
+          "reduction_pct": 0.6550482625399368,
+          "ci95_low_pct": -0.1348485893551965,
+          "ci95_high_pct": 1.5449762450931104
+        }
+      }
+    }
+  },
+  {
+    "run": "network-screen",
+    "metrics": {
+      "wall": {
+        "sqr": {
+          "cases": 9,
+          "reduction_pct": -4.282899638008519,
+          "ci95_low_pct": -5.184944972790473,
+          "ci95_high_pct": -3.500591331268743
+        },
+        "mul": {
+          "cases": 9,
+          "reduction_pct": -3.641427718482637,
+          "ci95_low_pct": -4.118856367434387,
+          "ci95_high_pct": -3.164503562177634
+        },
+        "unbalanced": {
+          "cases": 9,
+          "reduction_pct": -3.2158080317051363,
+          "ci95_low_pct": -4.0711550144137965,
+          "ci95_high_pct": -2.3640738544063122
+        }
+      },
+      "cpu": {
+        "sqr": {
+          "cases": 9,
+          "reduction_pct": -3.3666780646668837,
+          "ci95_low_pct": -3.8025619161600854,
+          "ci95_high_pct": -2.9464494257143814
+        },
+        "mul": {
+          "cases": 9,
+          "reduction_pct": -3.2634815588644672,
+          "ci95_low_pct": -3.5288691304012465,
+          "ci95_high_pct": -3.001648120346312
+        },
+        "unbalanced": {
+          "cases": 9,
+          "reduction_pct": -3.203722142093013,
+          "ci95_low_pct": -3.577193088921815,
+          "ci95_high_pct": -2.8381595130146486
+        }
+      }
+    }
+  },
+  {
+    "run": "network-confirm",
+    "metrics": {
+      "wall": {
+        "sqr": {
+          "cases": 9,
+          "reduction_pct": -2.4642724491170442,
+          "ci95_low_pct": -3.7757883364477163,
+          "ci95_high_pct": -1.1674463954858494
+        },
+        "mul": {
+          "cases": 9,
+          "reduction_pct": -3.6177287807571012,
+          "ci95_low_pct": -4.796304034214227,
+          "ci95_high_pct": -2.5197144011736894
+        },
+        "unbalanced": {
+          "cases": 9,
+          "reduction_pct": -3.9722482615701438,
+          "ci95_low_pct": -5.885546262825203,
+          "ci95_high_pct": -2.0463622454464536
+        }
+      },
+      "cpu": {
+        "sqr": {
+          "cases": 9,
+          "reduction_pct": -2.47592474039815,
+          "ci95_low_pct": -2.7338123786378787,
+          "ci95_high_pct": -2.2193417967759865
+        },
+        "mul": {
+          "cases": 9,
+          "reduction_pct": -3.1947101288295476,
+          "ci95_low_pct": -3.485103212606311,
+          "ci95_high_pct": -2.94835032648324
+        },
+        "unbalanced": {
+          "cases": 9,
+          "reduction_pct": -3.212436705250865,
+          "ci95_low_pct": -3.488944056774268,
+          "ci95_high_pct": -2.930401744709865
+        }
+      }
+    }
+  }
+]

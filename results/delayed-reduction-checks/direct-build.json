@@ -1,0 +1,70 @@
+{
+  "commands": [
+    [
+      "clang",
+      "-std=gnu23",
+      "-O3",
+      "-g",
+      "-mcpu=apple-m2",
+      "-fno-omit-frame-pointer",
+      "-I/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/src",
+      "-I/opt/homebrew/opt/gmp/include",
+      "-I/opt/homebrew/opt/mpfr/include",
+      "-DBUILDING_FLINT",
+      "-DFLINT_NOSTDIO",
+      "-DFLINT_NOSTDARG",
+      "-c",
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/delayed-reduction-screen/test-control.c",
+      "-o",
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/delayed-reduction-screen/test-control.o"
+    ],
+    [
+      "clang",
+      "-std=gnu23",
+      "-O3",
+      "-g",
+      "-mcpu=apple-m2",
+      "-fno-omit-frame-pointer",
+      "-I/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/src",
+      "-I/opt/homebrew/opt/gmp/include",
+      "-I/opt/homebrew/opt/mpfr/include",
+      "-DBUILDING_FLINT",
+      "-DFLINT_NOSTDIO",
+      "-DFLINT_NOSTDARG",
+      "-c",
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/delayed-reduction-screen/test-delayed.c",
+      "-o",
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/delayed-reduction-screen/test-delayed.o"
+    ],
+    [
+      "clang",
+      "-std=gnu23",
+      "-O3",
+      "-g",
+      "-mcpu=apple-m2",
+      "-fno-omit-frame-pointer",
+      "-I/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/src",
+      "-I/opt/homebrew/opt/gmp/include",
+      "-I/opt/homebrew/opt/mpfr/include",
+      "/Users/colkitt/sith/toys/math/butterflyMult/bench/test_delayed_reduction.c",
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/delayed-reduction-screen/test-control.o",
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/delayed-reduction-screen/test-delayed.o",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/libflint.25.0.dylib",
+      "-L/opt/homebrew/opt/gmp/lib",
+      "-L/opt/homebrew/opt/mpfr/lib",
+      "-Wl,-rpath,/opt/homebrew/opt/gmp/lib",
+      "-Wl,-rpath,/opt/homebrew/opt/mpfr/lib",
+      "-pthread",
+      "-lmpfr",
+      "-lgmp",
+      "-o",
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/delayed-reduction-screen/test-delayed-reduction"
+    ]
+  ],
+  "sha256": {
+    "bench/test_delayed_reduction.c": "a96d040f45e33746da991349774ad25f63dd01c870cbeb56779bc03f9e91ae76",
+    "build/delayed-reduction-screen/test-delayed-reduction": "9585da6bdd81b88b75f714c56ba12db7922194a3448b293c133e3138153a0e5a",
+    "build/delayed-reduction-screen/control.c": "349c6381fe8cb0b088bf4d00405214e836ff2038952766b744922b650c9972e2",
+    "build/delayed-reduction-screen/delayed.c": "8fafa38ca7e931cbbd4acc5ed8d4c01cebf23ceffc109dc62b33090bcbe006c1"
+  }
+}

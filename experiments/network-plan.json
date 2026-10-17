@@ -1,0 +1,61 @@
+{
+  "created_utc": "2026-10-07T18:30:39.935248+00:00",
+  "candidate": "network-two-lane",
+  "control": "network-control",
+  "change": "Private 8x2 16-point factorization with bit0/bit1 exchanged output frame; 32-point 2x16 recursion; inverse consumes same frame; np2 pipeline keeps matching spectra through pointwise multiplication. Original public transforms and CRT unchanged.",
+  "sizes": [
+    4095,
+    4096,
+    4097,
+    6144,
+    8191,
+    8192,
+    8193,
+    12288,
+    16383,
+    16384,
+    16385
+  ],
+  "operations": [
+    "mul",
+    "sqr",
+    "unbalanced"
+  ],
+  "trials": 21,
+  "batch_ms": 10,
+  "runs": [
+    {
+      "name": "network-aa",
+      "baseline": "unmodified FLINT",
+      "candidate": "network-control",
+      "sizes": [
+        4096,
+        8192,
+        16384
+      ],
+      "seed": 39193
+    },
+    {
+      "name": "network-screen",
+      "baseline": "unmodified FLINT",
+      "candidate": "network-two-lane",
+      "sizes": "all",
+      "seed": 59173
+    },
+    {
+      "name": "network-confirm",
+      "baseline": "network-control",
+      "candidate": "network-two-lane",
+      "sizes": "all",
+      "seed": 27183
+    }
+  ],
+  "primary_metric": "Thread CPU time; wall retained. Equal-weight means across original nine interior sizes, grouped by shape.",
+  "decision": "Treat this as a bounded feasibility screen. Advance only if both baseline comparisons show improvement exceeding controls; require a further independent unmodified-baseline confirmation for any claimed >=1% win. Otherwise retain research artifacts and reject this concrete schedule.",
+  "model_scope": "The frame enumeration is exact for 16 binary-indexed wires. The lane-crossing bound is restricted to fixed frames, not arbitrary FFT networks. No arithmetic-rank or asymptotic improvement is claimed.",
+  "sister_sources": [
+    "docs/packed-movement-audit.md",
+    "docs/research/shared-computation.md",
+    "notes/dag-construction.tex"
+  ]
+}

@@ -1,0 +1,1038 @@
+[
+  {
+    "case": {
+      "g": 1,
+      "prec": 128,
+      "constant": 0,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 0.0,
+    "instrumented_kernel_cpu_fraction": 0
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 128,
+      "constant": 0,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 0.0,
+    "instrumented_kernel_cpu_fraction": 0
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 128,
+      "constant": 0,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0408163265
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 128,
+      "constant": 0,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0417939274
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 128,
+      "constant": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 0.0,
+    "instrumented_kernel_cpu_fraction": 0
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 128,
+      "constant": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 0.0,
+    "instrumented_kernel_cpu_fraction": 0
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 128,
+      "constant": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0554488177
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 128,
+      "constant": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0585997046
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 0.0,
+    "instrumented_kernel_cpu_fraction": 0
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 0.0,
+    "instrumented_kernel_cpu_fraction": 0
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "constant": 0,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0501951731
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "constant": 0,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0534381882
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "constant": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 0.0,
+    "instrumented_kernel_cpu_fraction": 0
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "constant": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 0.0,
+    "instrumented_kernel_cpu_fraction": 0
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "constant": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0822917592
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "constant": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0801742204
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 2048,
+      "constant": 0,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 2.0,
+    "instrumented_kernel_cpu_fraction": 0.0713137167
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 2048,
+      "constant": 0,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 2.0,
+    "instrumented_kernel_cpu_fraction": 0.071310782
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 2048,
+      "constant": 0,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0427665581
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 2048,
+      "constant": 0,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0456203365
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 2048,
+      "constant": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0762417073
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 2048,
+      "constant": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0694314839
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 2048,
+      "constant": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.110853859
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 2048,
+      "constant": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0984650908
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 128,
+      "constant": 0,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 2.0,
+    "instrumented_kernel_cpu_fraction": 0.0470070918
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 128,
+      "constant": 0,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 2.0,
+    "instrumented_kernel_cpu_fraction": 0.0485930848
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 128,
+      "constant": 0,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0198199592
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 128,
+      "constant": 0,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0196612009
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 128,
+      "constant": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0357363274
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 128,
+      "constant": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0360434057
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 128,
+      "constant": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0307756847
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 128,
+      "constant": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0314562561
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 2.0,
+    "instrumented_kernel_cpu_fraction": 0.0416484925
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 2.0,
+    "instrumented_kernel_cpu_fraction": 0.0417368418
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 0,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.028137182
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 0,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0300834055
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.032684811
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.032136066
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.051131601
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0464287468
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "constant": 0,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 2.0,
+    "instrumented_kernel_cpu_fraction": 0.0620889382
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "constant": 0,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 2.0,
+    "instrumented_kernel_cpu_fraction": 0.0636001689
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "constant": 0,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0394847933
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "constant": 0,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0418873989
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "constant": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0541376246
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "constant": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0544029167
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "constant": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0720545323
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "constant": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0732933316
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 128,
+      "constant": 0,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 2.0,
+    "instrumented_kernel_cpu_fraction": 0.0343583042
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 128,
+      "constant": 0,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 2.0,
+    "instrumented_kernel_cpu_fraction": 0.0374395388
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 128,
+      "constant": 0,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0171960888
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 128,
+      "constant": 0,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0235847413
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 128,
+      "constant": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0269703269
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 128,
+      "constant": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0268409349
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 128,
+      "constant": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0392370603
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 128,
+      "constant": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0376734814
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 2.0,
+    "instrumented_kernel_cpu_fraction": 0.0332640571
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 2.0,
+    "instrumented_kernel_cpu_fraction": 0.0391035707
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "constant": 0,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0285282014
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "constant": 0,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0380485374
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "constant": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.028524661
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "constant": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0285517429
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "constant": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0616791353
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "constant": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0625348008
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "constant": 0,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 2.0,
+    "instrumented_kernel_cpu_fraction": 0.0594331599
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "constant": 0,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 2.0,
+    "instrumented_kernel_cpu_fraction": 0.064632373
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "constant": 0,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0439288942
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "constant": 0,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0546141603
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "constant": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0480567152
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "constant": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0517463696
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "constant": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0902092383
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "constant": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 1.0,
+    "instrumented_kernel_cpu_fraction": 0.0876394291
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 0,
+      "all": 0,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 0.0,
+    "instrumented_kernel_cpu_fraction": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 1,
+      "all": 0,
+      "trials": 21,
+      "same": 0
+    },
+    "all1_calls_per_evaluation": 0.0,
+    "instrumented_kernel_cpu_fraction": 0
+  }
+]

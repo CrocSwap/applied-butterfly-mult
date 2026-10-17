@@ -1,0 +1,1730 @@
+[
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 508,
+    "minimum_accuracy_candidate": 508,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 508,
+    "minimum_accuracy_candidate": 508,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 508,
+    "minimum_accuracy_candidate": 508,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 508,
+    "minimum_accuracy_candidate": 508,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 505,
+    "minimum_accuracy_candidate": 505,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 505,
+    "minimum_accuracy_candidate": 505,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 505,
+    "minimum_accuracy_candidate": 505,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 505,
+    "minimum_accuracy_candidate": 505,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 4,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 509,
+    "minimum_accuracy_candidate": 509,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 4,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 509,
+    "minimum_accuracy_candidate": 509,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 4,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 508,
+    "minimum_accuracy_candidate": 508,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 4,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 508,
+    "minimum_accuracy_candidate": 508,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 4,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 506,
+    "minimum_accuracy_candidate": 506,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 4,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 506,
+    "minimum_accuracy_candidate": 506,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 4,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 506,
+    "minimum_accuracy_candidate": 506,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 4,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 506,
+    "minimum_accuracy_candidate": 506,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 16,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 509,
+    "minimum_accuracy_candidate": 509,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 16,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 509,
+    "minimum_accuracy_candidate": 509,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 16,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 508,
+    "minimum_accuracy_candidate": 508,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 16,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 508,
+    "minimum_accuracy_candidate": 508,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 16,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 507,
+    "minimum_accuracy_candidate": 507,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 16,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 507,
+    "minimum_accuracy_candidate": 507,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 16,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 506,
+    "minimum_accuracy_candidate": 506,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 16,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 506,
+    "minimum_accuracy_candidate": 506,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 2045,
+    "minimum_accuracy_candidate": 2045,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 2045,
+    "minimum_accuracy_candidate": 2045,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 2044,
+    "minimum_accuracy_candidate": 2044,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 2044,
+    "minimum_accuracy_candidate": 2044,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 2042,
+    "minimum_accuracy_candidate": 2042,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 2042,
+    "minimum_accuracy_candidate": 2042,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 2042,
+    "minimum_accuracy_candidate": 2042,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 2042,
+    "minimum_accuracy_candidate": 2042,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 4,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 2045,
+    "minimum_accuracy_candidate": 2045,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 4,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 2045,
+    "minimum_accuracy_candidate": 2045,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 4,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 2045,
+    "minimum_accuracy_candidate": 2045,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 4,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 2045,
+    "minimum_accuracy_candidate": 2045,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 4,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 2043,
+    "minimum_accuracy_candidate": 2043,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 4,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 2043,
+    "minimum_accuracy_candidate": 2043,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 4,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 2043,
+    "minimum_accuracy_candidate": 2043,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 4,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 2043,
+    "minimum_accuracy_candidate": 2043,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 16,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 2045,
+    "minimum_accuracy_candidate": 2045,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 16,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 2045,
+    "minimum_accuracy_candidate": 2045,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 16,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 2045,
+    "minimum_accuracy_candidate": 2045,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 16,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 2045,
+    "minimum_accuracy_candidate": 2045,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 16,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 2043,
+    "minimum_accuracy_candidate": 2043,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 16,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 2043,
+    "minimum_accuracy_candidate": 2043,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 16,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 2043,
+    "minimum_accuracy_candidate": 2043,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 16,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 2043,
+    "minimum_accuracy_candidate": 2043,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 500,
+    "minimum_accuracy_candidate": 500,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 500,
+    "minimum_accuracy_candidate": 500,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 497,
+    "minimum_accuracy_candidate": 497,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 497,
+    "minimum_accuracy_candidate": 497,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 498,
+    "minimum_accuracy_candidate": 498,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 498,
+    "minimum_accuracy_candidate": 498,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 495,
+    "minimum_accuracy_candidate": 495,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 495,
+    "minimum_accuracy_candidate": 495,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 4,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 502,
+    "minimum_accuracy_candidate": 502,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 4,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 502,
+    "minimum_accuracy_candidate": 502,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 4,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 499,
+    "minimum_accuracy_candidate": 499,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 4,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 499,
+    "minimum_accuracy_candidate": 499,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 4,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 500,
+    "minimum_accuracy_candidate": 500,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 4,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 500,
+    "minimum_accuracy_candidate": 500,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 4,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 498,
+    "minimum_accuracy_candidate": 498,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 4,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 498,
+    "minimum_accuracy_candidate": 498,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 16,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 1024,
+    "minimum_accuracy_baseline": 507,
+    "minimum_accuracy_candidate": 507,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 16,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 1024,
+    "minimum_accuracy_baseline": 507,
+    "minimum_accuracy_candidate": 507,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 16,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 1024,
+    "minimum_accuracy_baseline": 501,
+    "minimum_accuracy_candidate": 501,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 16,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 1024,
+    "minimum_accuracy_baseline": 501,
+    "minimum_accuracy_candidate": 501,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 16,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 1024,
+    "minimum_accuracy_baseline": 503,
+    "minimum_accuracy_candidate": 503,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 16,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 1024,
+    "minimum_accuracy_baseline": 503,
+    "minimum_accuracy_candidate": 503,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 16,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 1024,
+    "minimum_accuracy_baseline": 500,
+    "minimum_accuracy_candidate": 500,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 16,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 1024,
+    "minimum_accuracy_baseline": 500,
+    "minimum_accuracy_candidate": 500,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 2034,
+    "minimum_accuracy_candidate": 2034,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 2034,
+    "minimum_accuracy_candidate": 2034,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 2032,
+    "minimum_accuracy_candidate": 2032,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 2032,
+    "minimum_accuracy_candidate": 2032,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 2032,
+    "minimum_accuracy_candidate": 2032,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 2032,
+    "minimum_accuracy_candidate": 2032,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 2030,
+    "minimum_accuracy_candidate": 2030,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 2030,
+    "minimum_accuracy_candidate": 2030,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 4,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 2036,
+    "minimum_accuracy_candidate": 2036,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 4,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 2036,
+    "minimum_accuracy_candidate": 2036,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 4,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 2034,
+    "minimum_accuracy_candidate": 2034,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 4,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 2034,
+    "minimum_accuracy_candidate": 2034,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 4,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 2035,
+    "minimum_accuracy_candidate": 2035,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 4,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 2035,
+    "minimum_accuracy_candidate": 2035,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 4,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 2032,
+    "minimum_accuracy_candidate": 2032,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 4,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 2032,
+    "minimum_accuracy_candidate": 2032,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 16,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 1024,
+    "minimum_accuracy_baseline": 2042,
+    "minimum_accuracy_candidate": 2042,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 16,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 1024,
+    "minimum_accuracy_baseline": 2042,
+    "minimum_accuracy_candidate": 2042,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 16,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 1024,
+    "minimum_accuracy_baseline": 2036,
+    "minimum_accuracy_candidate": 2036,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 16,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 1024,
+    "minimum_accuracy_baseline": 2036,
+    "minimum_accuracy_candidate": 2036,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 16,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 1024,
+    "minimum_accuracy_baseline": 2038,
+    "minimum_accuracy_candidate": 2038,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 16,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 1024,
+    "minimum_accuracy_baseline": 2038,
+    "minimum_accuracy_candidate": 2038,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 16,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "shared",
+    "status": "PASS",
+    "outputs": 1024,
+    "minimum_accuracy_baseline": 2035,
+    "minimum_accuracy_candidate": 2035,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 16,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21
+    },
+    "variant": "prepared",
+    "status": "PASS",
+    "outputs": 1024,
+    "minimum_accuracy_baseline": 2035,
+    "minimum_accuracy_candidate": 2035,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "compile_command": [
+    "clang",
+    "-std=gnu23",
+    "-O2",
+    "-mcpu=apple-m2",
+    "-I/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/src",
+    "-I/opt/homebrew/opt/gmp/include",
+    "-I/opt/homebrew/opt/mpfr/include",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/phase_probe.c",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/phase_probe_forward.c",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/phase_probe_inverse.c",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/libflint.25.0.dylib",
+    "-L/opt/homebrew/opt/gmp/lib",
+    "-L/opt/homebrew/opt/mpfr/lib",
+    "-lgmp",
+    "-lmpfr",
+    "-o",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/phase-fusion-screen/phase-probe"
+  ],
+  "scope": "Full 2..32-point kernels, j=0..7, two primes; constant-vector probes through 256 points; logical contiguous layer windows",
+  "decision_gate": "A legal exact operator match is required before optimization or timing",
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/phase_probe.c": "79dd979c5317b5729dd25b494deb6e44cfd5f8f5a03561e09074bc162f49bcbf",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/phase_probe_forward.c": "e77adc7123ff0fb2cdb8b02f5df78802eeb6040656228158f04b7a5ced11b8f6",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/phase_probe_inverse.c": "795cd8bf9c07d8d7ab8b944e691ad9b8ac0c15fbc88430b2c990110e5eee0134",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/src/fft_small/sd_fft.c": "5f7f49decaf78c1eb13db5800a0749a266d73e5c778be17555e39f665af13315",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/src/fft_small/sd_ifft.c": "349c6381fe8cb0b088bf4d00405214e836ff2038952766b744922b650c9972e2",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/src/fft_small/sd_fft_ctx.c": "b40d32e6ccb2bafd808e46257342aa96e1cb7b699e20efc93ccbe709845f8c07",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/src/fft_small/mpn_mul.c": "daa4cc857b1e818b4a08efad47a22acf72112cb297729e16482f9cd427d358e4",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/src/fft_small/op.c": "5b231f890c06a280be49a3367e78b8d93bc30de5c34579bb42fddf1b8aed4cc8",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/src/fft_small.h": "b92f01c6528c4ef936bcb1ce942fa4b74a1c22386bb7a0ad80cd9245447e3037",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/src/machine_vectors.h": "15329b18fe0dbc24f10f0237a229d13cb8edd06b16aabb0f23b225fd97c41a1b",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/audit_sparse_fusion.py": "bbaa32f9786f083409e363b081bfb7a1e597c8d32e4183c13a4105c2170934ce",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/prepare_layers.py": "a6e2adc612f264b1c0e51d18ce6315de9ae5e2ae2420aa22e99a22d8bf304947",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/certify.py": "2348d95008276c5d5764f7e028c3918e484582cd589bd4d9b82919161745e53e",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/search_network.py": "3a4faa5037d9b8e7ca5828afac193a96b6966a8b114f14937921795b24ec4f6a",
+    "/Users/colkitt/sith/toys/math/integerMult/docs/research/sparse-fusion-audit.md": "631c852e068adf8d2943bf8f7373d822f423c2180ed0c8d413188a30ff51d75a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/screen_phase_fusion.py": "972a29e24cb25c76bd67d08c22fd8bf8f0cd7d04c1a1d5989221fe6e601a78e4",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/libflint.25.0.dylib": "31b9d75a502a408098b37990830d1f033a55fc5957e22ebf12cdaeb2a0fafe58"
+  }
+}

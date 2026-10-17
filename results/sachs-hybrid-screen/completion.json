@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "decision": "No theory-specific hybrid improvement; ordinary synthesis saves two additions, 972 to 970. Park Sachs construction transfer; no timing or held-out runtime stage warranted.",
+  "inherited_manifest": "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hypergraph-screen/completion.json",
+  "inherited_manifest_sha256": "e25ea523ca0264b6540166e36d381793fdac325a092e3fa1d119f1ccac73c612",
+  "historical_fingerprints_verified": 1945,
+  "qualified_for_timing": 0,
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hybrid-screen/table-2.json": "a030733403715babba65be17107abd7e2c455a740041b36a46dc66306a973777",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hybrid-screen/summary.json": "f2fa8a668a6da3a5a0f6f954d95fcea02dfac23fb2da61e5f408efff9d0f6e2b",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hybrid-screen/table-21.json": "8ee3da72d6ba27ed93570e9e4b30a2edfc5fab240e0479d732a5fca378d0c29c",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hybrid-screen/audit.json": "691be879cad05dc9d2a2f723088d9bec52de4112959eec22dcecd70a722bfb91",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hybrid-screen/plan.json": "d07657581c9164abd1bd1f67b12c3e472521dea0bec0f7e4c3dc21e4f7bd3f5d",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hybrid-screen/table-16.json": "7423fac21e6549bf27955a868741a5e094bb65f047a5f4ba470184ddde1134f8",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hybrid-screen/run.log": "6770037633237d611fbb0b1a4a8c0c02f65eef1c5af412c66704e871a340cc45",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hybrid-screen/table-11.json": "93d72b9f67fe070ea3a71fd4ececcdc8c3f945cf4eb1b54edc8289bd1f36b14c",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hybrid-screen/table-5.json": "21941131c3553afe42147e872eaf5b5aa986dd3a93ffa8d7a30dc1347c1f97ef",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hybrid-screen/table-9.json": "88c1d947cbc843768bb0934ac418d2a9df62beb2ee123849a9ee10495fbe5470",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hybrid-screen/table-6.json": "db0ce1ac49104b01667158dd1f9c2ab02cd1cea759e9513604fcd8f70d92e520",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hybrid-screen/table-12.json": "1fe22f2116d9d693ff59c96b10bfd71f0994890f3af4ab12c84a99778d68ca9a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hybrid-screen/table-15.json": "4ae877efc61f47a974c673799df28256b03d6cf0a384c4f31e606fbc0cf5e999",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hybrid-screen/table-19.json": "4384ae73eb491f7f3350b10b4911fa6b5b05f92200845af98727294956407ea7",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hybrid-screen/table-1.json": "eb46869368191654b6ac0e43c247e8833333adb1d8459f6b1a692465aa98e13b",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/sachs_hybrid_screen.py": "bc7bd8d983e343f5c7e01aa39f297db2731541ef2ca0cfc4f799ec7c556e8ca6",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/audit_sachs_hybrid.py": "a5d8b6f2394b117510511c2e24b19047bd3ef37f02ce491b66e0be41cd270a8c",
+    "/Users/colkitt/sith/toys/math/butterflyMult/docs/sachs-hybrid-screen.md": "63864a84af98d648c13fd15067d870cdb21243fbc56e34c0664705d59e90afa2"
+  }
+}

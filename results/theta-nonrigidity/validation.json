@@ -1,0 +1,2050 @@
+[
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "iterative",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 505,
+    "minimum_accuracy_candidate": 505,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "recursive",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 505,
+    "minimum_accuracy_candidate": 505,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "h4",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 505,
+    "minimum_accuracy_candidate": 506,
+    "radius_sum_ratio": 0.998544625,
+    "wider_outputs": 8,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "h8",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 505,
+    "minimum_accuracy_candidate": 505,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "iterative",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 506,
+    "minimum_accuracy_candidate": 506,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "recursive",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 506,
+    "minimum_accuracy_candidate": 506,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "h4",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 506,
+    "minimum_accuracy_candidate": 506,
+    "radius_sum_ratio": 0.993918587,
+    "wider_outputs": 2,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "h8",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 506,
+    "minimum_accuracy_candidate": 506,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "iterative",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 2043,
+    "minimum_accuracy_candidate": 2043,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      2048,
+      2048
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "recursive",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 2043,
+    "minimum_accuracy_candidate": 2043,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      2048,
+      2048
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "h4",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 2043,
+    "minimum_accuracy_candidate": 2043,
+    "radius_sum_ratio": 0.983079612,
+    "wider_outputs": 2,
+    "working_precision": [
+      2048,
+      2048
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "h8",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 2043,
+    "minimum_accuracy_candidate": 2043,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      2048,
+      2048
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "iterative",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 2043,
+    "minimum_accuracy_candidate": 2043,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      2048,
+      2048
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "recursive",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 2043,
+    "minimum_accuracy_candidate": 2043,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      2048,
+      2048
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "h4",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 2043,
+    "minimum_accuracy_candidate": 2043,
+    "radius_sum_ratio": 0.975606116,
+    "wider_outputs": 2,
+    "working_precision": [
+      2048,
+      2048
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "h8",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 2043,
+    "minimum_accuracy_candidate": 2043,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      2048,
+      2048
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "iterative",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 495,
+    "minimum_accuracy_candidate": 495,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "recursive",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 495,
+    "minimum_accuracy_candidate": 495,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "h4",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 495,
+    "minimum_accuracy_candidate": 495,
+    "radius_sum_ratio": 1.01704964,
+    "wider_outputs": 27,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "h8",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 495,
+    "minimum_accuracy_candidate": 495,
+    "radius_sum_ratio": 1.01249492,
+    "wider_outputs": 7,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "iterative",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 495,
+    "minimum_accuracy_candidate": 495,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "recursive",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 495,
+    "minimum_accuracy_candidate": 495,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "h4",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 495,
+    "minimum_accuracy_candidate": 495,
+    "radius_sum_ratio": 1.01362849,
+    "wider_outputs": 29,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "h8",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 495,
+    "minimum_accuracy_candidate": 495,
+    "radius_sum_ratio": 1.01021287,
+    "wider_outputs": 7,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "iterative",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 2030,
+    "minimum_accuracy_candidate": 2030,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      2048,
+      2048
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "recursive",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 2030,
+    "minimum_accuracy_candidate": 2030,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      2048,
+      2048
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "h4",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 2030,
+    "minimum_accuracy_candidate": 2030,
+    "radius_sum_ratio": 1.01705284,
+    "wider_outputs": 29,
+    "working_precision": [
+      2048,
+      2048
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "h8",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 2030,
+    "minimum_accuracy_candidate": 2030,
+    "radius_sum_ratio": 1.01249216,
+    "wider_outputs": 7,
+    "working_precision": [
+      2048,
+      2048
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "iterative",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 2030,
+    "minimum_accuracy_candidate": 2030,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      2048,
+      2048
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "recursive",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 2030,
+    "minimum_accuracy_candidate": 2030,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      2048,
+      2048
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "h4",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 2030,
+    "minimum_accuracy_candidate": 2030,
+    "radius_sum_ratio": 1.01363152,
+    "wider_outputs": 28,
+    "working_precision": [
+      2048,
+      2048
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "h8",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 2030,
+    "minimum_accuracy_candidate": 2030,
+    "radius_sum_ratio": 1.01021296,
+    "wider_outputs": 7,
+    "working_precision": [
+      2048,
+      2048
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 4,
+      "prec": 512,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "iterative",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 494,
+    "minimum_accuracy_candidate": 494,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 4,
+      "prec": 512,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "recursive",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 494,
+    "minimum_accuracy_candidate": 494,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 4,
+      "prec": 512,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "h4",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 494,
+    "minimum_accuracy_candidate": 494,
+    "radius_sum_ratio": 1.02215631,
+    "wider_outputs": 113,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 4,
+      "prec": 512,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "h8",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 494,
+    "minimum_accuracy_candidate": 494,
+    "radius_sum_ratio": 1.03423356,
+    "wider_outputs": 123,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 4,
+      "prec": 512,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "iterative",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 494,
+    "minimum_accuracy_candidate": 494,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 4,
+      "prec": 512,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "recursive",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 494,
+    "minimum_accuracy_candidate": 494,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 4,
+      "prec": 512,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "h4",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 494,
+    "minimum_accuracy_candidate": 494,
+    "radius_sum_ratio": 1.01771863,
+    "wider_outputs": 119,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 4,
+      "prec": 512,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "h8",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 494,
+    "minimum_accuracy_candidate": 494,
+    "radius_sum_ratio": 1.0272972,
+    "wider_outputs": 125,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 4,
+      "prec": 2048,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "iterative",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 2029,
+    "minimum_accuracy_candidate": 2029,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      2048,
+      2048
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 4,
+      "prec": 2048,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "recursive",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 2029,
+    "minimum_accuracy_candidate": 2029,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      2048,
+      2048
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 4,
+      "prec": 2048,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "h4",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 2029,
+    "minimum_accuracy_candidate": 2029,
+    "radius_sum_ratio": 1.02215843,
+    "wider_outputs": 111,
+    "working_precision": [
+      2048,
+      2048
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 4,
+      "prec": 2048,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "h8",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 2029,
+    "minimum_accuracy_candidate": 2029,
+    "radius_sum_ratio": 1.03423254,
+    "wider_outputs": 123,
+    "working_precision": [
+      2048,
+      2048
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 4,
+      "prec": 2048,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "iterative",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 2029,
+    "minimum_accuracy_candidate": 2029,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      2048,
+      2048
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 4,
+      "prec": 2048,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "recursive",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 2029,
+    "minimum_accuracy_candidate": 2029,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      2048,
+      2048
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 4,
+      "prec": 2048,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "h4",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 2029,
+    "minimum_accuracy_candidate": 2029,
+    "radius_sum_ratio": 1.017722,
+    "wider_outputs": 113,
+    "working_precision": [
+      2048,
+      2048
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 4,
+      "prec": 2048,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "h8",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 2029,
+    "minimum_accuracy_candidate": 2029,
+    "radius_sum_ratio": 1.02729697,
+    "wider_outputs": 126,
+    "working_precision": [
+      2048,
+      2048
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 6,
+      "prec": 512,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "iterative",
+    "status": "PASS",
+    "outputs": 4096,
+    "minimum_accuracy_baseline": 482,
+    "minimum_accuracy_candidate": 482,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 6,
+      "prec": 512,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "recursive",
+    "status": "PASS",
+    "outputs": 4096,
+    "minimum_accuracy_baseline": 482,
+    "minimum_accuracy_candidate": 482,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 6,
+      "prec": 512,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "h4",
+    "status": "PASS",
+    "outputs": 4096,
+    "minimum_accuracy_baseline": 482,
+    "minimum_accuracy_candidate": 482,
+    "radius_sum_ratio": 1.0313361,
+    "wider_outputs": 1976,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 6,
+      "prec": 512,
+      "fixture": 0,
+      "group": "constants"
+    },
+    "variant": "h8",
+    "status": "PASS",
+    "outputs": 4096,
+    "minimum_accuracy_baseline": 482,
+    "minimum_accuracy_candidate": 482,
+    "radius_sum_ratio": 1.04338077,
+    "wider_outputs": 1903,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 6,
+      "prec": 512,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "iterative",
+    "status": "PASS",
+    "outputs": 4096,
+    "minimum_accuracy_baseline": 481,
+    "minimum_accuracy_candidate": 481,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 6,
+      "prec": 512,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "recursive",
+    "status": "PASS",
+    "outputs": 4096,
+    "minimum_accuracy_baseline": 481,
+    "minimum_accuracy_candidate": 481,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 6,
+      "prec": 512,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "h4",
+    "status": "PASS",
+    "outputs": 4096,
+    "minimum_accuracy_baseline": 481,
+    "minimum_accuracy_candidate": 481,
+    "radius_sum_ratio": 1.02471017,
+    "wider_outputs": 1986,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 6,
+      "prec": 512,
+      "fixture": 1,
+      "group": "constants"
+    },
+    "variant": "h8",
+    "status": "PASS",
+    "outputs": 4096,
+    "minimum_accuracy_baseline": 481,
+    "minimum_accuracy_candidate": 481,
+    "radius_sum_ratio": 1.03453457,
+    "wider_outputs": 1913,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "fixture": 0,
+      "constant": 0,
+      "group": "nonzero"
+    },
+    "variant": "iterative",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 505,
+    "minimum_accuracy_candidate": 505,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "fixture": 0,
+      "constant": 0,
+      "group": "nonzero"
+    },
+    "variant": "recursive",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 505,
+    "minimum_accuracy_candidate": 505,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "fixture": 0,
+      "constant": 0,
+      "group": "nonzero"
+    },
+    "variant": "h4",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 505,
+    "minimum_accuracy_candidate": 505,
+    "radius_sum_ratio": 1.07445206,
+    "wider_outputs": 13,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "fixture": 0,
+      "constant": 0,
+      "group": "nonzero"
+    },
+    "variant": "h8",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 505,
+    "minimum_accuracy_candidate": 505,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "fixture": 1,
+      "constant": 0,
+      "group": "nonzero"
+    },
+    "variant": "iterative",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 505,
+    "minimum_accuracy_candidate": 505,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "fixture": 1,
+      "constant": 0,
+      "group": "nonzero"
+    },
+    "variant": "recursive",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 505,
+    "minimum_accuracy_candidate": 505,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "fixture": 1,
+      "constant": 0,
+      "group": "nonzero"
+    },
+    "variant": "h4",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 505,
+    "minimum_accuracy_candidate": 505,
+    "radius_sum_ratio": 1.07151555,
+    "wider_outputs": 13,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "fixture": 1,
+      "constant": 0,
+      "group": "nonzero"
+    },
+    "variant": "h8",
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 505,
+    "minimum_accuracy_candidate": 505,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 0,
+      "constant": 0,
+      "group": "nonzero"
+    },
+    "variant": "iterative",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 498,
+    "minimum_accuracy_candidate": 498,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 0,
+      "constant": 0,
+      "group": "nonzero"
+    },
+    "variant": "recursive",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 498,
+    "minimum_accuracy_candidate": 498,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 0,
+      "constant": 0,
+      "group": "nonzero"
+    },
+    "variant": "h4",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 498,
+    "minimum_accuracy_candidate": 498,
+    "radius_sum_ratio": 1.07539947,
+    "wider_outputs": 54,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 0,
+      "constant": 0,
+      "group": "nonzero"
+    },
+    "variant": "h8",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 498,
+    "minimum_accuracy_candidate": 498,
+    "radius_sum_ratio": 1.15011517,
+    "wider_outputs": 60,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 1,
+      "constant": 0,
+      "group": "nonzero"
+    },
+    "variant": "iterative",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 495,
+    "minimum_accuracy_candidate": 495,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 1,
+      "constant": 0,
+      "group": "nonzero"
+    },
+    "variant": "recursive",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 495,
+    "minimum_accuracy_candidate": 495,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 1,
+      "constant": 0,
+      "group": "nonzero"
+    },
+    "variant": "h4",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 495,
+    "minimum_accuracy_candidate": 495,
+    "radius_sum_ratio": 1.07536612,
+    "wider_outputs": 55,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 1,
+      "constant": 0,
+      "group": "nonzero"
+    },
+    "variant": "h8",
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 495,
+    "minimum_accuracy_candidate": 495,
+    "radius_sum_ratio": 1.1466691,
+    "wider_outputs": 59,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 0,
+      "nb": 4,
+      "group": "mixed"
+    },
+    "variant": "iterative",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 500,
+    "minimum_accuracy_candidate": 500,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 0,
+      "nb": 4,
+      "group": "mixed"
+    },
+    "variant": "recursive",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 500,
+    "minimum_accuracy_candidate": 500,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 0,
+      "nb": 4,
+      "group": "mixed"
+    },
+    "variant": "h4",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 500,
+    "minimum_accuracy_candidate": 500,
+    "radius_sum_ratio": 1.11064628,
+    "wider_outputs": 189,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 0,
+      "nb": 4,
+      "group": "mixed"
+    },
+    "variant": "h8",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 500,
+    "minimum_accuracy_candidate": 500,
+    "radius_sum_ratio": 1.22411604,
+    "wider_outputs": 216,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 1,
+      "nb": 4,
+      "group": "mixed"
+    },
+    "variant": "iterative",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 497,
+    "minimum_accuracy_candidate": 497,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 1,
+      "nb": 4,
+      "group": "mixed"
+    },
+    "variant": "recursive",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 497,
+    "minimum_accuracy_candidate": 497,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 1,
+      "nb": 4,
+      "group": "mixed"
+    },
+    "variant": "h4",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 497,
+    "minimum_accuracy_candidate": 497,
+    "radius_sum_ratio": 1.0942735,
+    "wider_outputs": 193,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 1,
+      "nb": 4,
+      "group": "mixed"
+    },
+    "variant": "h8",
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 497,
+    "minimum_accuracy_candidate": 497,
+    "radius_sum_ratio": 1.17524885,
+    "wider_outputs": 184,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "fixture": 0,
+      "group": "inactive"
+    },
+    "variant": "iterative",
+    "status": "PASS",
+    "outputs": 4,
+    "minimum_accuracy_baseline": 507,
+    "minimum_accuracy_candidate": 507,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "fixture": 0,
+      "group": "inactive"
+    },
+    "variant": "recursive",
+    "status": "PASS",
+    "outputs": 4,
+    "minimum_accuracy_baseline": 507,
+    "minimum_accuracy_candidate": 507,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "fixture": 0,
+      "group": "inactive"
+    },
+    "variant": "h4",
+    "status": "PASS",
+    "outputs": 4,
+    "minimum_accuracy_baseline": 507,
+    "minimum_accuracy_candidate": 507,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "fixture": 0,
+      "group": "inactive"
+    },
+    "variant": "h8",
+    "status": "PASS",
+    "outputs": 4,
+    "minimum_accuracy_baseline": 507,
+    "minimum_accuracy_candidate": 507,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "fixture": 1,
+      "group": "inactive"
+    },
+    "variant": "iterative",
+    "status": "PASS",
+    "outputs": 4,
+    "minimum_accuracy_baseline": 508,
+    "minimum_accuracy_candidate": 508,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "fixture": 1,
+      "group": "inactive"
+    },
+    "variant": "recursive",
+    "status": "PASS",
+    "outputs": 4,
+    "minimum_accuracy_baseline": 508,
+    "minimum_accuracy_candidate": 508,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "fixture": 1,
+      "group": "inactive"
+    },
+    "variant": "h4",
+    "status": "PASS",
+    "outputs": 4,
+    "minimum_accuracy_baseline": 508,
+    "minimum_accuracy_candidate": 508,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "fixture": 1,
+      "group": "inactive"
+    },
+    "variant": "h8",
+    "status": "PASS",
+    "outputs": 4,
+    "minimum_accuracy_baseline": 508,
+    "minimum_accuracy_candidate": 508,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0,
+    "working_precision": [
+      512,
+      512
+    ],
+    "attempts": [
+      1,
+      1
+    ]
+  }
+]

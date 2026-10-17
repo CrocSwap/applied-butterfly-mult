@@ -1,0 +1,74 @@
+[
+  {
+    "id": "gibby",
+    "path": "data/asia1k.dat",
+    "url": "https://raw.githubusercontent.com/sums-of-products/gibby/4aae8cefb7c9ca3f8ddbf0ed18bd9198beb9aa80/data/asia1k.dat",
+    "git_blob_sha": "a0a2900913925a6fff56d13a24efaf4a22b60811"
+  },
+  {
+    "id": "gibby",
+    "path": "data/sachs1k.dat",
+    "url": "https://raw.githubusercontent.com/sums-of-products/gibby/4aae8cefb7c9ca3f8ddbf0ed18bd9198beb9aa80/data/sachs1k.dat",
+    "git_blob_sha": "669e797f2352efa6cf1af483a3f106a8899a84b0"
+  },
+  {
+    "id": "gibby",
+    "path": "gibby.cpp",
+    "url": "https://raw.githubusercontent.com/sums-of-products/gibby/4aae8cefb7c9ca3f8ddbf0ed18bd9198beb9aa80/gibby.cpp",
+    "git_blob_sha": "8317d046b9334153e8f98889d3615b312424f816"
+  },
+  {
+    "id": "gibby",
+    "path": "src/BD.hpp",
+    "url": "https://raw.githubusercontent.com/sums-of-products/gibby/4aae8cefb7c9ca3f8ddbf0ed18bd9198beb9aa80/src/BD.hpp",
+    "git_blob_sha": "819a33ede13d37006acccbb1f08fef7ea2239220"
+  },
+  {
+    "id": "gibby",
+    "path": "src/Breal.hpp",
+    "url": "https://raw.githubusercontent.com/sums-of-products/gibby/4aae8cefb7c9ca3f8ddbf0ed18bd9198beb9aa80/src/Breal.hpp",
+    "git_blob_sha": "be8335dcebd7c3d128cf321a8cb50a14b71e0dee"
+  },
+  {
+    "id": "gibby",
+    "path": "src/DAGsampler.hpp",
+    "url": "https://raw.githubusercontent.com/sums-of-products/gibby/4aae8cefb7c9ca3f8ddbf0ed18bd9198beb9aa80/src/DAGsampler.hpp",
+    "git_blob_sha": "5c3a764cac63a65d2b0b051e02a42255aca4a92a"
+  },
+  {
+    "id": "gibby",
+    "path": "src/DDAG.hpp",
+    "url": "https://raw.githubusercontent.com/sums-of-products/gibby/4aae8cefb7c9ca3f8ddbf0ed18bd9198beb9aa80/src/DDAG.hpp",
+    "git_blob_sha": "b4de709705e84b302cebbfd949a669001a20445b"
+  },
+  {
+    "id": "gibby",
+    "path": "src/Gibby.hpp",
+    "url": "https://raw.githubusercontent.com/sums-of-products/gibby/4aae8cefb7c9ca3f8ddbf0ed18bd9198beb9aa80/src/Gibby.hpp",
+    "git_blob_sha": "5c1670b68b541d28373103eed0833dfcf40dc9ee"
+  },
+  {
+    "id": "gibby",
+    "path": "src/HashCounter.hpp",
+    "url": "https://raw.githubusercontent.com/sums-of-products/gibby/4aae8cefb7c9ca3f8ddbf0ed18bd9198beb9aa80/src/HashCounter.hpp",
+    "git_blob_sha": "8d693b784323f313b24484ca0113bc77ca7c0032"
+  },
+  {
+    "id": "gibby",
+    "path": "src/SumTree.hpp",
+    "url": "https://raw.githubusercontent.com/sums-of-products/gibby/4aae8cefb7c9ca3f8ddbf0ed18bd9198beb9aa80/src/SumTree.hpp",
+    "git_blob_sha": "e7486aadec924a65949813bceef8f07e98e3004e"
+  },
+  {
+    "id": "gibby",
+    "path": "src/Wsets.hpp",
+    "url": "https://raw.githubusercontent.com/sums-of-products/gibby/4aae8cefb7c9ca3f8ddbf0ed18bd9198beb9aa80/src/Wsets.hpp",
+    "git_blob_sha": "cadc7e6ed77468cdf4f679854e6cb9e94840504d"
+  },
+  {
+    "id": "gibby",
+    "path": "src/basics.hpp",
+    "url": "https://raw.githubusercontent.com/sums-of-products/gibby/4aae8cefb7c9ca3f8ddbf0ed18bd9198beb9aa80/src/basics.hpp",
+    "git_blob_sha": "f0e96abc0efbc8e28f149f7cf3e668e51bf8047a"
+  }
+]

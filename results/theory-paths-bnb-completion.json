@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "decision": "Reject current six-edge path candidate for application promotion",
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/docs/theory-paths-qualification.md": "d3aa08c21761ed69bdeda2e9803c90938ec0d2a3de6caade6e60ea9d70a241c1",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-bnb-audit.json": "ced9d1d39ff17bb06c36cc3d5b2999b0296e16d80f5075274dd36d3e36fe3231"
+  }
+}

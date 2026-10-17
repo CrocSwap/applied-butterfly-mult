@@ -1,0 +1,12 @@
+{
+  "current": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/theta-equal/candidate/libflint-experiment.dylib",
+  "iterative": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/theta-nonrigidity/iterative/libflint-experiment.dylib",
+  "recursive": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/theta-nonrigidity/recursive/libflint-experiment.dylib",
+  "h4": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/theta-nonrigidity/h4/libflint-experiment.dylib",
+  "h8": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/theta-nonrigidity/h8/libflint-experiment.dylib",
+  "rebuild": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/theta-nonrigidity/rebuild/libflint-experiment.dylib",
+  "current_trace": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/theta-nonrigidity/current-trace/libflint-experiment.dylib",
+  "recursive_trace": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/theta-nonrigidity/recursive-trace/libflint-experiment.dylib",
+  "h4_trace": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/theta-nonrigidity/h4-trace/libflint-experiment.dylib",
+  "h8_trace": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/theta-nonrigidity/h8-trace/libflint-experiment.dylib"
+}

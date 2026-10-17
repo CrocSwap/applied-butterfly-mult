@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "decision": "No direct weighted-frame transfer identified; retain conventional theta primitive patch as a practical research byproduct",
+  "local_report_links_checked": true,
+  "baseline_source_unchanged": true,
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/docs/weighted-phase-application.md": "59c13656f473891e46bf8708c8a3dfbf0322336c9a7c3ed1f4fe94190394c357",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/weighted-phase-application/audit.json": "85567c7b537601a75788424eb04a66ef6ed955de2fee3b51ec72363213d98446",
+    "/Users/colkitt/sith/toys/math/butterflyMult/patches/theta-direct-walsh.patch": "e89d63d928c974e046c1b8b2dd8cb35866fe234e7aad8c6ab9eddbbf38f18feb"
+  }
+}

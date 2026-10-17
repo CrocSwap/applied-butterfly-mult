@@ -1,0 +1,31 @@
+{
+  "returncode": -6,
+  "stdout": "nmod_poly_mat_sqr...\nFLINT exception (General error):\n    test nmod_poly_mat_equal(A, C) FAILED\n/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/sqr-fallthrough/src/nmod_poly_mat/test/t-sqr.c:131",
+  "stderr": "",
+  "command": [
+    "clang",
+    "-std=gnu23",
+    "-O3",
+    "-g",
+    "-mcpu=apple-m2",
+    "-fno-omit-frame-pointer",
+    "-DBUILDING_FLINT",
+    "-I/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/src",
+    "-I/opt/homebrew/opt/gmp/include",
+    "-I/opt/homebrew/opt/mpfr/include",
+    "-I/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/src/nmod_poly_mat/test",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/sqr-fallthrough/src/nmod_poly_mat/test/main.c",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+    "-L/opt/homebrew/opt/gmp/lib",
+    "-L/opt/homebrew/opt/mpfr/lib",
+    "-Wl,-rpath,/opt/homebrew/opt/gmp/lib",
+    "-Wl,-rpath,/opt/homebrew/opt/mpfr/lib",
+    "-pthread",
+    "-lmpfr",
+    "-lgmp",
+    "-o",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/flint-optimization-campaign/sqr-regression/baseline-test"
+  ],
+  "baseline_sha256": "a608ca2fe954c5d7bf30dfe6eee004635c69ac8beb37ce77bc7560f039033f67",
+  "test_source_sha256": "4de7b3691fb61fbbeaa97973dc9db07c29e1e473a83cc5c5b5482964bcf1fed5"
+}

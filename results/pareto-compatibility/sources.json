@@ -1,0 +1,122 @@
+[
+  {
+    "repository": "HanZhang39/MultiObjectiveSearch",
+    "commit": "62fcfc27d96f63c3daff27eacf97332c6ac9f63e",
+    "path": "README.md",
+    "local_path": "results/pareto-compatibility/sources/HanZhang39/MultiObjectiveSearch/README.md",
+    "git_blob": "2ee54683a39c7cb2d15f9bf50d9dd2790b20b8c1",
+    "url": "https://raw.githubusercontent.com/HanZhang39/MultiObjectiveSearch/62fcfc27d96f63c3daff27eacf97332c6ac9f63e/README.md"
+  },
+  {
+    "repository": "HanZhang39/MultiObjectiveSearch",
+    "commit": "62fcfc27d96f63c3daff27eacf97332c6ac9f63e",
+    "path": "src/Solvers/LTMOA.cpp",
+    "local_path": "results/pareto-compatibility/sources/HanZhang39/MultiObjectiveSearch/src/Solvers/LTMOA.cpp",
+    "git_blob": "676c829b425fa147d35dbb0bfe5ee790eb0428a7",
+    "url": "https://raw.githubusercontent.com/HanZhang39/MultiObjectiveSearch/62fcfc27d96f63c3daff27eacf97332c6ac9f63e/src/Solvers/LTMOA.cpp"
+  },
+  {
+    "repository": "HanZhang39/MultiObjectiveSearch",
+    "commit": "62fcfc27d96f63c3daff27eacf97332c6ac9f63e",
+    "path": "src/Solvers/LTMOA2.cpp",
+    "local_path": "results/pareto-compatibility/sources/HanZhang39/MultiObjectiveSearch/src/Solvers/LTMOA2.cpp",
+    "git_blob": "1bfedae31ef58c6edfe224bab50a9d6bb42b2c0c",
+    "url": "https://raw.githubusercontent.com/HanZhang39/MultiObjectiveSearch/62fcfc27d96f63c3daff27eacf97332c6ac9f63e/src/Solvers/LTMOA2.cpp"
+  },
+  {
+    "repository": "HanZhang39/MultiObjectiveSearch",
+    "commit": "62fcfc27d96f63c3daff27eacf97332c6ac9f63e",
+    "path": "inc/LTMOA2.h",
+    "local_path": "results/pareto-compatibility/sources/HanZhang39/MultiObjectiveSearch/inc/LTMOA2.h",
+    "git_blob": "4c3edeec93d68421def7c4590e25dc5e5eb270a9",
+    "url": "https://raw.githubusercontent.com/HanZhang39/MultiObjectiveSearch/62fcfc27d96f63c3daff27eacf97332c6ac9f63e/inc/LTMOA2.h"
+  },
+  {
+    "repository": "HanZhang39/MultiObjectiveSearch",
+    "commit": "62fcfc27d96f63c3daff27eacf97332c6ac9f63e",
+    "path": "inc/GCL.h",
+    "local_path": "results/pareto-compatibility/sources/HanZhang39/MultiObjectiveSearch/inc/GCL.h",
+    "git_blob": "ead371bd1316279a3d7a9010d92ae5cbb4d0241b",
+    "url": "https://raw.githubusercontent.com/HanZhang39/MultiObjectiveSearch/62fcfc27d96f63c3daff27eacf97332c6ac9f63e/inc/GCL.h"
+  },
+  {
+    "repository": "HanZhang39/MultiObjectiveSearch",
+    "commit": "62fcfc27d96f63c3daff27eacf97332c6ac9f63e",
+    "path": "src/Solvers/GCL.cpp",
+    "local_path": "results/pareto-compatibility/sources/HanZhang39/MultiObjectiveSearch/src/Solvers/GCL.cpp",
+    "git_blob": "be1bde320c3a47a1f1b17a3a18ad1ec4e9545825",
+    "url": "https://raw.githubusercontent.com/HanZhang39/MultiObjectiveSearch/62fcfc27d96f63c3daff27eacf97332c6ac9f63e/src/Solvers/GCL.cpp"
+  },
+  {
+    "repository": "Tarek-pub/Bicriteria_Aggregation",
+    "commit": "029970db0ee7425b1739d3c87bfa94e3f9081dbd",
+    "path": "Readme.md",
+    "local_path": "results/pareto-compatibility/sources/Tarek-pub/Bicriteria_Aggregation/Readme.md",
+    "git_blob": "ddffb5cde1d8827ce5f2a37a643ae478bf2b36a5",
+    "url": "https://raw.githubusercontent.com/Tarek-pub/Bicriteria_Aggregation/029970db0ee7425b1739d3c87bfa94e3f9081dbd/Readme.md"
+  },
+  {
+    "repository": "Tarek-pub/Bicriteria_Aggregation",
+    "commit": "029970db0ee7425b1739d3c87bfa94e3f9081dbd",
+    "path": "src/main/java/multicriteriaSTCuts/dynamicProgamming/MincutSolutionVector.java",
+    "local_path": "results/pareto-compatibility/sources/Tarek-pub/Bicriteria_Aggregation/src/main/java/multicriteriaSTCuts/dynamicProgamming/MincutSolutionVector.java",
+    "git_blob": "06059373ec30fcb6fb122a9792477e1919e2d5ec",
+    "url": "https://raw.githubusercontent.com/Tarek-pub/Bicriteria_Aggregation/029970db0ee7425b1739d3c87bfa94e3f9081dbd/src/main/java/multicriteriaSTCuts/dynamicProgamming/MincutSolutionVector.java"
+  },
+  {
+    "repository": "Tarek-pub/Bicriteria_Aggregation",
+    "commit": "029970db0ee7425b1739d3c87bfa94e3f9081dbd",
+    "path": "src/main/java/multicriteriaSTCuts/dynamicProgamming/algorithms/NormalBicritSolutionHeap.java",
+    "local_path": "results/pareto-compatibility/sources/Tarek-pub/Bicriteria_Aggregation/src/main/java/multicriteriaSTCuts/dynamicProgamming/algorithms/NormalBicritSolutionHeap.java",
+    "git_blob": "4787538904244a52fd5b3dec351af2b59f8d38d7",
+    "url": "https://raw.githubusercontent.com/Tarek-pub/Bicriteria_Aggregation/029970db0ee7425b1739d3c87bfa94e3f9081dbd/src/main/java/multicriteriaSTCuts/dynamicProgamming/algorithms/NormalBicritSolutionHeap.java"
+  },
+  {
+    "repository": "Tarek-pub/Bicriteria_Aggregation",
+    "commit": "029970db0ee7425b1739d3c87bfa94e3f9081dbd",
+    "path": "src/main/java/multicriteriaSTCuts/dynamicProgamming/algorithms/HeuristicBicritSolutionHeap.java",
+    "local_path": "results/pareto-compatibility/sources/Tarek-pub/Bicriteria_Aggregation/src/main/java/multicriteriaSTCuts/dynamicProgamming/algorithms/HeuristicBicritSolutionHeap.java",
+    "git_blob": "31e8fc51797143687f7c58c43641773c35e90cee",
+    "url": "https://raw.githubusercontent.com/Tarek-pub/Bicriteria_Aggregation/029970db0ee7425b1739d3c87bfa94e3f9081dbd/src/main/java/multicriteriaSTCuts/dynamicProgamming/algorithms/HeuristicBicritSolutionHeap.java"
+  },
+  {
+    "repository": "Tarek-pub/Bicriteria_Aggregation",
+    "commit": "029970db0ee7425b1739d3c87bfa94e3f9081dbd",
+    "path": "src/main/java/multicriteriaSTCuts/dynamicProgamming/algorithms/BicritMergeIterator.java",
+    "local_path": "results/pareto-compatibility/sources/Tarek-pub/Bicriteria_Aggregation/src/main/java/multicriteriaSTCuts/dynamicProgamming/algorithms/BicritMergeIterator.java",
+    "git_blob": "874e3fe4eaeb984bff0dca1f27528c6cec5c04a0",
+    "url": "https://raw.githubusercontent.com/Tarek-pub/Bicriteria_Aggregation/029970db0ee7425b1739d3c87bfa94e3f9081dbd/src/main/java/multicriteriaSTCuts/dynamicProgamming/algorithms/BicritMergeIterator.java"
+  },
+  {
+    "repository": "utndatasystems/DPconv",
+    "commit": "dc56bdc52c452bf86b3ac5c224b0176148c38757",
+    "path": "README.md",
+    "local_path": "results/pareto-compatibility/sources/utndatasystems/DPconv/README.md",
+    "git_blob": "372be26efcf6cdc8b1516346cc7f07a79ad0ce3a",
+    "url": "https://raw.githubusercontent.com/utndatasystems/DPconv/dc56bdc52c452bf86b3ac5c224b0176148c38757/README.md"
+  },
+  {
+    "repository": "utndatasystems/DPconv",
+    "commit": "dc56bdc52c452bf86b3ac5c224b0176148c38757",
+    "path": "LICENSE",
+    "local_path": "results/pareto-compatibility/sources/utndatasystems/DPconv/LICENSE",
+    "git_blob": "992ead83d3b0b1623160719700ba5d581bfe0bba",
+    "url": "https://raw.githubusercontent.com/utndatasystems/DPconv/dc56bdc52c452bf86b3ac5c224b0176148c38757/LICENSE"
+  },
+  {
+    "repository": "utndatasystems/DPconv",
+    "commit": "dc56bdc52c452bf86b3ac5c224b0176148c38757",
+    "path": "src/include/SubsetConvolution.hpp",
+    "local_path": "results/pareto-compatibility/sources/utndatasystems/DPconv/src/include/SubsetConvolution.hpp",
+    "git_blob": "5d3348e8f831f114de9636cda4379ebf936d4be6",
+    "url": "https://raw.githubusercontent.com/utndatasystems/DPconv/dc56bdc52c452bf86b3ac5c224b0176148c38757/src/include/SubsetConvolution.hpp"
+  },
+  {
+    "repository": "utndatasystems/DPconv",
+    "commit": "dc56bdc52c452bf86b3ac5c224b0176148c38757",
+    "path": "src/algorithms/DPconv.cpp",
+    "local_path": "results/pareto-compatibility/sources/utndatasystems/DPconv/src/algorithms/DPconv.cpp",
+    "git_blob": "1eb57b110967abc49682eed1a40f5dccb467353a",
+    "url": "https://raw.githubusercontent.com/utndatasystems/DPconv/dc56bdc52c452bf86b3ac5c224b0176148c38757/src/algorithms/DPconv.cpp"
+  }
+]

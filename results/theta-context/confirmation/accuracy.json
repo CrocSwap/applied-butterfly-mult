@@ -1,0 +1,506 @@
+[
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "constant": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 63,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "baseline_min_accuracy": 507,
+    "candidate_min_accuracy": 507,
+    "radius_sum_ratio": 0.536326589,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "constant": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 63,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "baseline_min_accuracy": 495,
+    "candidate_min_accuracy": 495,
+    "radius_sum_ratio": 0.174312546,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 63,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "baseline_min_accuracy": 508,
+    "candidate_min_accuracy": 508,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 1
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 1,
+      "all": 0,
+      "trials": 63,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 1,
+    "baseline_min_accuracy": 506,
+    "candidate_min_accuracy": 506,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 0,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 63,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "baseline_min_accuracy": 505,
+    "candidate_min_accuracy": 506,
+    "radius_sum_ratio": 0.309877338,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 63,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "baseline_min_accuracy": 507,
+    "candidate_min_accuracy": 507,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 63,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "baseline_min_accuracy": 507,
+    "candidate_min_accuracy": 507,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "constant": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 63,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "baseline_min_accuracy": 250,
+    "candidate_min_accuracy": 250,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 6
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 63,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "baseline_min_accuracy": 505,
+    "candidate_min_accuracy": 505,
+    "radius_sum_ratio": 0.323131187,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 63,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "baseline_min_accuracy": 500,
+    "candidate_min_accuracy": 500,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 6
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "constant": 0,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 63,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "baseline_min_accuracy": 498,
+    "candidate_min_accuracy": 499,
+    "radius_sum_ratio": 0.186061577,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "constant": 0,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 63,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "baseline_min_accuracy": 506,
+    "candidate_min_accuracy": 507,
+    "radius_sum_ratio": 0.567353394,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 63,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "baseline_min_accuracy": 506,
+    "candidate_min_accuracy": 506,
+    "radius_sum_ratio": 0.322525525,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 63,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "baseline_min_accuracy": 256,
+    "candidate_min_accuracy": 256,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 1
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 0,
+      "all": 0,
+      "trials": 63,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 1,
+    "baseline_min_accuracy": 506,
+    "candidate_min_accuracy": 506,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "constant": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 63,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "baseline_min_accuracy": 507,
+    "candidate_min_accuracy": 508,
+    "radius_sum_ratio": 0.51796761,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "constant": 0,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 63,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "baseline_min_accuracy": 497,
+    "candidate_min_accuracy": 497,
+    "radius_sum_ratio": 0.167397397,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 63,
+      "same": 1
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "baseline_min_accuracy": 507,
+    "candidate_min_accuracy": 507,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "constant": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 63,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "baseline_min_accuracy": 250,
+    "candidate_min_accuracy": 250,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 1
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 63,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "baseline_min_accuracy": 256,
+    "candidate_min_accuracy": 256,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "constant": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 63,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "baseline_min_accuracy": 507,
+    "candidate_min_accuracy": 507,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "constant": 0,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 63,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "baseline_min_accuracy": 506,
+    "candidate_min_accuracy": 507,
+    "radius_sum_ratio": 0.539673642,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 63,
+      "same": 1
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "baseline_min_accuracy": 508,
+    "candidate_min_accuracy": 508,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "constant": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 63,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "baseline_min_accuracy": 507,
+    "candidate_min_accuracy": 507,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 0,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 63,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "baseline_min_accuracy": 505,
+    "candidate_min_accuracy": 505,
+    "radius_sum_ratio": 0.326959207,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "constant": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 63,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "baseline_min_accuracy": 495,
+    "candidate_min_accuracy": 495,
+    "radius_sum_ratio": 0.186281444,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 63,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "baseline_min_accuracy": 499,
+    "candidate_min_accuracy": 499,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 7
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 63,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "baseline_min_accuracy": 507,
+    "candidate_min_accuracy": 507,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 3
+  }
+]

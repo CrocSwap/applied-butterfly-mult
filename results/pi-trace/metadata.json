@@ -1,0 +1,26 @@
+{
+  "purpose": "Branch reachability/counts only, not performance attribution",
+  "harness_build": [
+    "clang",
+    "-std=gnu23",
+    "-O3",
+    "-g",
+    "-mcpu=apple-m2",
+    "-fno-omit-frame-pointer",
+    "-I/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/src",
+    "-I/opt/homebrew/opt/gmp/include",
+    "-I/opt/homebrew/opt/mpfr/include",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/trace_pi.c",
+    "-o",
+    "/Users/colkitt/sith/toys/math/butterflyMult/build/trace-pi",
+    "-L/opt/homebrew/opt/gmp/lib",
+    "-L/opt/homebrew/opt/mpfr/lib",
+    "-Wl,-rpath,/opt/homebrew/opt/gmp/lib",
+    "-Wl,-rpath,/opt/homebrew/opt/mpfr/lib",
+    "-pthread",
+    "-lmpfr",
+    "-lgmp"
+  ],
+  "harness_sha256": "0f376ec3d3bccb398fe1d8cc21644303ffe6ad4286e83509ce6f7f95ee4ed85b",
+  "harness_source_sha256": "6d1cf0d1729b56c61328ccd0169ffb5b56808a7b2e662867594c8bae58224a5e"
+}

@@ -1,0 +1,137 @@
+--- a/src/arb_poly/test/t-evaluate2_rectangular.c
++++ b/src/arb_poly/test/t-evaluate2_rectangular.c
+@@ -60,5 +60,63 @@
+         arb_clear(z2);
+     }
+ 
++
++    /* Exact dyadic Horner references cover block boundaries, the automatic
++       high-precision dispatch, and either output aliasing the point. */
++    {
++        const slong lengths[] = {0, 1, 2, 3, 4, 8, 15, 16, 17,
++                                 24, 25, 26, 31, 32, 33, 63, 64, 65,
++                                 127, 128, 129};
++        const slong precisions[] = {32, 128, 1024, 4096};
++        slong li, pi, j, alg, point;
++        arb_poly_t f, df;
++        arb_t x, y, z, exact_y, exact_z, coefficient;
++
++        arb_poly_init(f); arb_poly_init(df);
++        arb_init(x); arb_init(y); arb_init(z);
++        arb_init(exact_y); arb_init(exact_z); arb_init(coefficient);
++        for (li = 0; li < 21; li++)
++        {
++            arb_poly_zero(f);
++            for (j = 0; j < lengths[li]; j++)
++            {
++                arb_set_si(coefficient, (7 * j) % 19 - 9);
++                arb_mul_2exp_si(coefficient, coefficient, -3);
++                arb_poly_set_coeff_arb(f, j, coefficient);
++            }
++            arb_poly_derivative(df, f, ARF_PREC_EXACT);
++            for (point = 0; point < 3; point++)
++            {
++                arb_set_si(x, point == 0 ? 0 : (point == 1 ? 3 : 8));
++                arb_mul_2exp_si(x, x, -3);
++                
++                arb_poly_evaluate_horner(exact_y, f, x, ARF_PREC_EXACT);
++                arb_poly_evaluate_horner(exact_z, df, x, ARF_PREC_EXACT);
++                for (pi = 0; pi < 4; pi++)
++                for (alg = 0; alg < 2; alg++)
++                {
++                    void (*evaluate)(arb_t, arb_t, const arb_poly_t,
++                                     const arb_t, slong) = alg ?
++                        arb_poly_evaluate2 : arb_poly_evaluate2_rectangular;
++                    evaluate(y, z, f, x, precisions[pi]);
++                    if (!arb_contains(y, exact_y) || !arb_contains(z, exact_z))
++                        TEST_FUNCTION_FAIL("exact evaluation: n=%wd prec=%wd\n",
++                                           lengths[li], precisions[pi]);
++                    arb_set(y, x);
++                    evaluate(y, z, f, y, precisions[pi]);
++                    if (!arb_contains(y, exact_y) || !arb_contains(z, exact_z))
++                        TEST_FUNCTION_FAIL("value aliases point\n");
++                    arb_set(z, x);
++                    evaluate(y, z, f, z, precisions[pi]);
++                    if (!arb_contains(y, exact_y) || !arb_contains(z, exact_z))
++                        TEST_FUNCTION_FAIL("derivative aliases point\n");
++                }
++            }
++        }
++        arb_poly_clear(f); arb_poly_clear(df);
++        arb_clear(x); arb_clear(y); arb_clear(z);
++        arb_clear(exact_y); arb_clear(exact_z); arb_clear(coefficient);
++    }
++
+     TEST_FUNCTION_END(state);
+ }
+--- a/src/acb_poly/test/t-evaluate2_rectangular.c
++++ b/src/acb_poly/test/t-evaluate2_rectangular.c
+@@ -60,5 +60,68 @@
+         acb_clear(z2);
+     }
+ 
++
++    /* Exact dyadic Horner references cover block boundaries, the automatic
++       high-precision dispatch, and either output aliasing the point. */
++    {
++        const slong lengths[] = {0, 1, 2, 3, 4, 8, 15, 16, 17,
++                                 24, 25, 26, 31, 32, 33, 63, 64, 65,
++                                 127, 128, 129};
++        const slong precisions[] = {32, 128, 1024, 4096};
++        slong li, pi, j, alg, point;
++        acb_poly_t f, df;
++        acb_t x, y, z, exact_y, exact_z, coefficient;
++
++        acb_poly_init(f); acb_poly_init(df);
++        acb_init(x); acb_init(y); acb_init(z);
++        acb_init(exact_y); acb_init(exact_z); acb_init(coefficient);
++        for (li = 0; li < 21; li++)
++        {
++            acb_poly_zero(f);
++            for (j = 0; j < lengths[li]; j++)
++            {
++                arb_set_si(acb_realref(coefficient), (7 * j) % 19 - 9);
++                arb_set_si(acb_imagref(coefficient), (5 * j) % 13 - 6);
++                acb_mul_2exp_si(coefficient, coefficient, -3);
++                acb_poly_set_coeff_acb(f, j, coefficient);
++            }
++            acb_poly_derivative(df, f, ARF_PREC_EXACT);
++            for (point = 0; point < 3; point++)
++            {
++                acb_set_si(x, point == 0 ? 0 : (point == 1 ? 3 : 8));
++                acb_mul_2exp_si(x, x, -3);
++                if (point == 1)
++                {
++                    arb_one(acb_imagref(x));
++                    arb_mul_2exp_si(acb_imagref(x), acb_imagref(x), -4);
++                }
++                acb_poly_evaluate_horner(exact_y, f, x, ARF_PREC_EXACT);
++                acb_poly_evaluate_horner(exact_z, df, x, ARF_PREC_EXACT);
++                for (pi = 0; pi < 4; pi++)
++                for (alg = 0; alg < 2; alg++)
++                {
++                    void (*evaluate)(acb_t, acb_t, const acb_poly_t,
++                                     const acb_t, slong) = alg ?
++                        acb_poly_evaluate2 : acb_poly_evaluate2_rectangular;
++                    evaluate(y, z, f, x, precisions[pi]);
++                    if (!acb_contains(y, exact_y) || !acb_contains(z, exact_z))
++                        TEST_FUNCTION_FAIL("exact evaluation: n=%wd prec=%wd\n",
++                                           lengths[li], precisions[pi]);
++                    acb_set(y, x);
++                    evaluate(y, z, f, y, precisions[pi]);
++                    if (!acb_contains(y, exact_y) || !acb_contains(z, exact_z))
++                        TEST_FUNCTION_FAIL("value aliases point\n");
++                    acb_set(z, x);
++                    evaluate(y, z, f, z, precisions[pi]);
++                    if (!acb_contains(y, exact_y) || !acb_contains(z, exact_z))
++                        TEST_FUNCTION_FAIL("derivative aliases point\n");
++                }
++            }
++        }
++        acb_poly_clear(f); acb_poly_clear(df);
++        acb_clear(x); acb_clear(y); acb_clear(z);
++        acb_clear(exact_y); acb_clear(exact_z); acb_clear(coefficient);
++    }
++
+     TEST_FUNCTION_END(state);
+ }

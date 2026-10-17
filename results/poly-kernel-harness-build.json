@@ -1,0 +1,30 @@
+{
+  "command": [
+    "clang",
+    "-std=gnu23",
+    "-O3",
+    "-g",
+    "-mcpu=apple-m2",
+    "-fno-omit-frame-pointer",
+    "-I/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/src",
+    "-I/opt/homebrew/opt/gmp/include",
+    "-I/opt/homebrew/opt/mpfr/include",
+    "bench/compare_poly.c",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/libflint.25.0.dylib",
+    "-L/opt/homebrew/opt/gmp/lib",
+    "-L/opt/homebrew/opt/mpfr/lib",
+    "-Wl,-rpath,/opt/homebrew/opt/gmp/lib",
+    "-Wl,-rpath,/opt/homebrew/opt/mpfr/lib",
+    "-pthread",
+    "-lmpfr",
+    "-lgmp",
+    "-o",
+    "build/compare-poly"
+  ],
+  "sha256": {
+    "bench/compare_poly.c": "88226a90f058737f1308038bd6ae33f338865ea09f3b5a95b5a2743c042d766d",
+    "bench/poly_survey.c": "dc33b45f7cdf11e1692570dbd2475cf5701f490e80cc9ec6b37be131e13269ec",
+    "build/compare-poly": "bd71e9f02b0225fbbe41c6faa64b0bdb9f899993069c609d21a9870e26e6cf4a",
+    ".deps/flint/libflint.25.0.dylib": "31b9d75a502a408098b37990830d1f033a55fc5957e22ebf12cdaeb2a0fafe58"
+  }
+}

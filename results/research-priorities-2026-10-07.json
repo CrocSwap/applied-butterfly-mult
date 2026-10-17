@@ -1,0 +1,26 @@
+{
+  "decision": "Retain theta optimization as leading application candidate, per user instruction.",
+  "leading_candidate": {
+    "report": "docs/theta-context.md",
+    "patch": "patches/theta-direct-walsh.patch",
+    "attribution": "Theory-directed discovery using established mathematical ingredients; no specific new-construction dependence established."
+  },
+  "potential_next_screens": [
+    {
+      "name": "Shared work across theta evaluation points and duplication steps",
+      "evidence": [
+        ".deps/flint/src/acb_theta/ql_exact.c",
+        ".deps/flint/src/acb_theta/agm_mul_tight.c"
+      ],
+      "hypothesis": "Reuse common-input transforms and magnitude/error preparation at compatible precision; evaluate incrementally on top of the leading patch.",
+      "status": "Source-level opportunity; no implementation or measured gain yet."
+    },
+    {
+      "name": "Structured batches of Pauli observables and phase operations",
+      "prior_art": "https://arxiv.org/html/2512.24685v3",
+      "hypothesis": "Seek an actual workload where specific compatible-frame sharing helps beyond existing Walsh and Clifford methods.",
+      "status": "Exploratory; dense all-Pauli signed-product Walsh evaluation already has prior art; no qualified construction-dependent application yet."
+    }
+  ],
+  "requirement_for_direct_attribution": "Import an actual sister construction and compare with it disabled, retaining strong conventional controls and measuring the complete operation."
+}

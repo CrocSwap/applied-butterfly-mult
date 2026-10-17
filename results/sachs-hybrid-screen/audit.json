@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "historical_fingerprints_verified": 1945,
+  "serialized_programs": 187,
+  "output_forms": 5083,
+  "coefficient_equalities": 497488,
+  "synthesis_runs": 132,
+  "round_cap_hits": 0,
+  "extra_theory_supports_considered": 204,
+  "extra_theory_supports_selected": 0,
+  "addition_totals": {
+    "best_control": 970,
+    "best_carried": 970,
+    "best_ablation": 970
+  },
+  "by_table": [
+    {
+      "node": 5,
+      "extra_theory_considered": 26,
+      "extra_theory_selected": 0
+    },
+    {
+      "node": 10,
+      "extra_theory_considered": 11,
+      "extra_theory_selected": 0
+    },
+    {
+      "node": 8,
+      "extra_theory_considered": 17,
+      "extra_theory_selected": 0
+    },
+    {
+      "node": 7,
+      "extra_theory_considered": 9,
+      "extra_theory_selected": 0
+    },
+    {
+      "node": 4,
+      "extra_theory_considered": 19,
+      "extra_theory_selected": 0
+    },
+    {
+      "node": 2,
+      "extra_theory_considered": 12,
+      "extra_theory_selected": 0
+    },
+    {
+      "node": 6,
+      "extra_theory_considered": 26,
+      "extra_theory_selected": 0
+    },
+    {
+      "node": 1,
+      "extra_theory_considered": 7,
+      "extra_theory_selected": 0
+    },
+    {
+      "node": 0,
+      "extra_theory_considered": 17,
+      "extra_theory_selected": 0
+    },
+    {
+      "node": 3,
+      "extra_theory_considered": 26,
+      "extra_theory_selected": 0
+    },
+    {
+      "node": 9,
+      "extra_theory_considered": 34,
+      "extra_theory_selected": 0
+    }
+  ],
+  "scope": "Independent exact positive-circuit replay, resource counts, frozen corpus, theory proposal provenance, budgets, winner/gate selection, lower bounds and preservation chain. Not an optimality or runtime claim."
+}

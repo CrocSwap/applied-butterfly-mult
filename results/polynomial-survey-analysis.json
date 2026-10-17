@@ -1,0 +1,1136 @@
+{
+  "status": "PASS",
+  "cases": 128,
+  "supported": 119,
+  "unsupported": [
+    {
+      "dim": 2,
+      "length": 64,
+      "modulus": 1108307720798209,
+      "window": "middle"
+    },
+    {
+      "dim": 2,
+      "length": 1024,
+      "modulus": 65537,
+      "window": "middle"
+    },
+    {
+      "dim": 2,
+      "length": 32,
+      "modulus": 1000000007,
+      "window": "middle"
+    },
+    {
+      "dim": 2,
+      "length": 64,
+      "modulus": 65537,
+      "window": "middle"
+    },
+    {
+      "dim": 2,
+      "length": 64,
+      "modulus": 1000000007,
+      "window": "middle"
+    },
+    {
+      "dim": 4,
+      "length": 32,
+      "modulus": 65537,
+      "window": "middle"
+    },
+    {
+      "dim": 2,
+      "length": 32,
+      "modulus": 1108307720798209,
+      "window": "middle"
+    },
+    {
+      "dim": 2,
+      "length": 32,
+      "modulus": 65537,
+      "window": "middle"
+    },
+    {
+      "dim": 2,
+      "length": 256,
+      "modulus": 65537,
+      "window": "middle"
+    }
+  ],
+  "matrix_transformed_contexts": 83,
+  "correctness_pattern_comparisons": 714,
+  "warm_batches": 833,
+  "prior_delayed_reduction_hashes_unchanged": 34,
+  "profiles": [
+    {
+      "source": "results/polynomial-profiles/1x1-1024-1000000007-full.txt",
+      "samples": 63,
+      "functions": [
+        {
+          "function": "sd_fft_basecase_4_0",
+          "samples": 12
+        },
+        {
+          "function": "_crt_2_fn",
+          "samples": 8
+        },
+        {
+          "function": "sd_fft_basecase_8_0",
+          "samples": 8
+        },
+        {
+          "function": "sd_fft_basecase_6_0",
+          "samples": 6
+        },
+        {
+          "function": "sd_ifft_basecase_4_0",
+          "samples": 6
+        },
+        {
+          "function": "sd_fft_ctx_point_mul",
+          "samples": 5
+        },
+        {
+          "function": "sd_ifft_basecase_6_0",
+          "samples": 5
+        }
+      ],
+      "caveat": "Exclusive samples, approximate attribution. Inlined work and entries omitted below five samples remain other_or_inline. No separation of arithmetic and memory stalls.",
+      "case": {
+        "dim": 1,
+        "length": 1024,
+        "modulus": 1000000007,
+        "window": "full"
+      },
+      "accepted_for_attribution": false,
+      "survey_counts": {
+        "forward_fft": 26,
+        "export_crt_normalization": 8,
+        "inverse_fft": 11,
+        "pointwise": 5,
+        "other_or_inline": 13
+      },
+      "survey_percent": {
+        "export_crt_normalization": 12.7,
+        "forward_fft": 41.27,
+        "inverse_fft": 17.46,
+        "other_or_inline": 20.63,
+        "pointwise": 7.94
+      }
+    },
+    {
+      "source": "results/polynomial-profiles/2x2-1024-1000000007-full.txt",
+      "samples": 3363,
+      "functions": [
+        {
+          "function": "sd_fft_basecase_4_0",
+          "samples": 618
+        },
+        {
+          "function": "_point_addmul",
+          "samples": 392
+        },
+        {
+          "function": "_crt_2_fn",
+          "samples": 360
+        },
+        {
+          "function": "sd_fft_basecase_6_0",
+          "samples": 269
+        },
+        {
+          "function": "fft_small_op_mul",
+          "samples": 263
+        },
+        {
+          "function": "sd_ifft_basecase_4_0",
+          "samples": 258
+        },
+        {
+          "function": "sd_fft_no_trunc_block",
+          "samples": 201
+        },
+        {
+          "function": "sd_fft_basecase_8_0",
+          "samples": 183
+        },
+        {
+          "function": "sd_ifft_basecase_6_0",
+          "samples": 164
+        },
+        {
+          "function": "sd_ifft_basecase_8_0",
+          "samples": 99
+        },
+        {
+          "function": "_convert_block",
+          "samples": 97
+        },
+        {
+          "function": "sd_ifft_no_trunc_block",
+          "samples": 96
+        },
+        {
+          "function": "radix_4_moth_inv_trunc_block_2_2_0",
+          "samples": 95
+        },
+        {
+          "function": "_tpoly_invert_in_place",
+          "samples": 82
+        },
+        {
+          "function": "sd_fft_trunc_block",
+          "samples": 61
+        },
+        {
+          "function": "_mod",
+          "samples": 47
+        },
+        {
+          "function": "sd_fft_basecase_8_1",
+          "samples": 15
+        },
+        {
+          "function": "mach_absolute_time",
+          "samples": 13
+        },
+        {
+          "function": "sd_fft_trunc_internal",
+          "samples": 7
+        },
+        {
+          "function": "sd_fft_basecase_6_1",
+          "samples": 5
+        },
+        {
+          "function": "sd_ifft_basecase_8_1",
+          "samples": 5
+        }
+      ],
+      "caveat": "Exclusive samples, approximate attribution. Inlined work and entries omitted below five samples remain other_or_inline. No separation of arithmetic and memory stalls.",
+      "case": {
+        "dim": 2,
+        "length": 1024,
+        "modulus": 1000000007,
+        "window": "full"
+      },
+      "accepted_for_attribution": true,
+      "survey_counts": {
+        "forward_fft": 1359,
+        "pointwise": 655,
+        "export_crt_normalization": 539,
+        "inverse_fft": 717,
+        "input_conversion": 47,
+        "other_or_inline": 46
+      },
+      "survey_percent": {
+        "export_crt_normalization": 16.03,
+        "forward_fft": 40.41,
+        "input_conversion": 1.4,
+        "inverse_fft": 21.32,
+        "other_or_inline": 1.37,
+        "pointwise": 19.48
+      }
+    },
+    {
+      "source": "results/polynomial-profiles/4x4-256-1000000007-full.txt",
+      "samples": 3399,
+      "functions": [
+        {
+          "function": "_point_addmul",
+          "samples": 1029
+        },
+        {
+          "function": "sd_fft_basecase_4_0",
+          "samples": 523
+        },
+        {
+          "function": "_crt_2_fn",
+          "samples": 367
+        },
+        {
+          "function": "fft_small_op_mul",
+          "samples": 226
+        },
+        {
+          "function": "sd_ifft_basecase_4_0",
+          "samples": 223
+        },
+        {
+          "function": "sd_fft_basecase_6_0",
+          "samples": 209
+        },
+        {
+          "function": "sd_fft_basecase_8_0",
+          "samples": 106
+        },
+        {
+          "function": "sd_ifft_basecase_6_0",
+          "samples": 102
+        },
+        {
+          "function": "_convert_block",
+          "samples": 85
+        },
+        {
+          "function": "_tpoly_invert_in_place",
+          "samples": 83
+        },
+        {
+          "function": "radix_4_moth_inv_trunc_block_2_2_0",
+          "samples": 82
+        },
+        {
+          "function": "sd_fft_basecase_8_1",
+          "samples": 82
+        },
+        {
+          "function": "sd_ifft_basecase_8_0",
+          "samples": 64
+        },
+        {
+          "function": "_mod",
+          "samples": 46
+        },
+        {
+          "function": "sd_fft_trunc_block",
+          "samples": 34
+        },
+        {
+          "function": "sd_ifft_basecase_8_1",
+          "samples": 30
+        },
+        {
+          "function": "sd_fft_basecase_6_1",
+          "samples": 19
+        },
+        {
+          "function": "sd_fft_basecase_4_1",
+          "samples": 17
+        },
+        {
+          "function": "sd_ifft_basecase_6_1",
+          "samples": 13
+        },
+        {
+          "function": "n_gcdinv",
+          "samples": 6
+        },
+        {
+          "function": "sd_fft_trunc_internal",
+          "samples": 6
+        },
+        {
+          "function": "fft_small_fft_nmod",
+          "samples": 5
+        }
+      ],
+      "caveat": "Exclusive samples, approximate attribution. Inlined work and entries omitted below five samples remain other_or_inline. No separation of arithmetic and memory stalls.",
+      "case": {
+        "dim": 4,
+        "length": 256,
+        "modulus": 1000000007,
+        "window": "full"
+      },
+      "accepted_for_attribution": true,
+      "survey_counts": {
+        "pointwise": 1255,
+        "forward_fft": 996,
+        "export_crt_normalization": 535,
+        "inverse_fft": 514,
+        "input_conversion": 51,
+        "other_or_inline": 48
+      },
+      "survey_percent": {
+        "export_crt_normalization": 15.74,
+        "forward_fft": 29.3,
+        "input_conversion": 1.5,
+        "inverse_fft": 15.12,
+        "other_or_inline": 1.41,
+        "pointwise": 36.92
+      }
+    },
+    {
+      "source": "results/polynomial-profiles/8x8-256-1000000007-full.txt",
+      "samples": 3366,
+      "functions": [
+        {
+          "function": "_point_addmul",
+          "samples": 1617
+        },
+        {
+          "function": "sd_fft_basecase_4_0",
+          "samples": 440
+        },
+        {
+          "function": "_crt_2_fn",
+          "samples": 236
+        },
+        {
+          "function": "sd_ifft_basecase_4_0",
+          "samples": 160
+        },
+        {
+          "function": "sd_fft_basecase_6_0",
+          "samples": 155
+        },
+        {
+          "function": "fft_small_op_mul",
+          "samples": 154
+        },
+        {
+          "function": "sd_ifft_basecase_6_0",
+          "samples": 92
+        },
+        {
+          "function": "sd_fft_basecase_8_0",
+          "samples": 83
+        },
+        {
+          "function": "_tpoly_invert_in_place",
+          "samples": 56
+        },
+        {
+          "function": "_convert_block",
+          "samples": 55
+        },
+        {
+          "function": "radix_4_moth_inv_trunc_block_2_2_0",
+          "samples": 53
+        },
+        {
+          "function": "sd_fft_basecase_8_1",
+          "samples": 52
+        },
+        {
+          "function": "_mod",
+          "samples": 40
+        },
+        {
+          "function": "sd_fft_trunc_block",
+          "samples": 30
+        },
+        {
+          "function": "sd_ifft_basecase_8_0",
+          "samples": 30
+        },
+        {
+          "function": "sd_ifft_basecase_8_1",
+          "samples": 29
+        },
+        {
+          "function": "sd_fft_basecase_6_1",
+          "samples": 20
+        },
+        {
+          "function": "tpoly_addsubmul",
+          "samples": 8
+        },
+        {
+          "function": "sd_fft_basecase_4_1",
+          "samples": 7
+        },
+        {
+          "function": "sd_ifft_basecase_4_1",
+          "samples": 7
+        },
+        {
+          "function": "fft_small_fft_nmod",
+          "samples": 6
+        },
+        {
+          "function": "sd_fft_trunc_internal",
+          "samples": 6
+        },
+        {
+          "function": "_xzm_free_outlined",
+          "samples": 5
+        }
+      ],
+      "caveat": "Exclusive samples, approximate attribution. Inlined work and entries omitted below five samples remain other_or_inline. No separation of arithmetic and memory stalls.",
+      "case": {
+        "dim": 8,
+        "length": 256,
+        "modulus": 1000000007,
+        "window": "full"
+      },
+      "accepted_for_attribution": true,
+      "survey_counts": {
+        "pointwise": 1771,
+        "forward_fft": 793,
+        "export_crt_normalization": 347,
+        "inverse_fft": 371,
+        "input_conversion": 46,
+        "other_or_inline": 38
+      },
+      "survey_percent": {
+        "export_crt_normalization": 10.31,
+        "forward_fft": 23.56,
+        "input_conversion": 1.37,
+        "inverse_fft": 11.02,
+        "other_or_inline": 1.13,
+        "pointwise": 52.61
+      }
+    },
+    {
+      "source": "results/polynomial-profiles/8x8-1024-1000000007-full.txt",
+      "samples": 3365,
+      "functions": [
+        {
+          "function": "_point_addmul",
+          "samples": 1554
+        },
+        {
+          "function": "sd_fft_basecase_4_0",
+          "samples": 380
+        },
+        {
+          "function": "_crt_2_fn",
+          "samples": 228
+        },
+        {
+          "function": "sd_fft_basecase_6_0",
+          "samples": 158
+        },
+        {
+          "function": "fft_small_op_mul",
+          "samples": 155
+        },
+        {
+          "function": "sd_ifft_basecase_4_0",
+          "samples": 147
+        },
+        {
+          "function": "sd_fft_basecase_8_0",
+          "samples": 126
+        },
+        {
+          "function": "sd_fft_no_trunc_block",
+          "samples": 110
+        },
+        {
+          "function": "sd_ifft_basecase_6_0",
+          "samples": 85
+        },
+        {
+          "function": "_convert_block",
+          "samples": 74
+        },
+        {
+          "function": "radix_4_moth_inv_trunc_block_2_2_0",
+          "samples": 60
+        },
+        {
+          "function": "sd_fft_trunc_block",
+          "samples": 59
+        },
+        {
+          "function": "sd_ifft_basecase_8_0",
+          "samples": 58
+        },
+        {
+          "function": "sd_ifft_no_trunc_block",
+          "samples": 50
+        },
+        {
+          "function": "_tpoly_invert_in_place",
+          "samples": 40
+        },
+        {
+          "function": "_mod",
+          "samples": 35
+        },
+        {
+          "function": "sd_fft_basecase_8_1",
+          "samples": 14
+        },
+        {
+          "function": "fft_small_op_addmul",
+          "samples": 7
+        }
+      ],
+      "caveat": "Exclusive samples, approximate attribution. Inlined work and entries omitted below five samples remain other_or_inline. No separation of arithmetic and memory stalls.",
+      "case": {
+        "dim": 8,
+        "length": 1024,
+        "modulus": 1000000007,
+        "window": "full"
+      },
+      "accepted_for_attribution": true,
+      "survey_counts": {
+        "pointwise": 1716,
+        "forward_fft": 847,
+        "export_crt_normalization": 342,
+        "inverse_fft": 400,
+        "input_conversion": 35,
+        "other_or_inline": 25
+      },
+      "survey_percent": {
+        "export_crt_normalization": 10.16,
+        "forward_fft": 25.17,
+        "input_conversion": 1.04,
+        "inverse_fft": 11.89,
+        "other_or_inline": 0.74,
+        "pointwise": 51.0
+      }
+    },
+    {
+      "source": "results/polynomial-profiles/8x8-1024-1108307720798209-full.txt",
+      "samples": 3365,
+      "functions": [
+        {
+          "function": "_point_addmul",
+          "samples": 1666
+        },
+        {
+          "function": "sd_fft_basecase_4_0",
+          "samples": 397
+        },
+        {
+          "function": "sd_fft_basecase_6_0",
+          "samples": 174
+        },
+        {
+          "function": "sd_ifft_basecase_4_0",
+          "samples": 148
+        },
+        {
+          "function": "fft_small_op_mul",
+          "samples": 140
+        },
+        {
+          "function": "sd_fft_no_trunc_block",
+          "samples": 131
+        },
+        {
+          "function": "sd_fft_basecase_8_0",
+          "samples": 126
+        },
+        {
+          "function": "sd_ifft_basecase_6_0",
+          "samples": 107
+        },
+        {
+          "function": "sd_ifft_no_trunc_block",
+          "samples": 75
+        },
+        {
+          "function": "_convert_block",
+          "samples": 65
+        },
+        {
+          "function": "sd_ifft_basecase_8_0",
+          "samples": 62
+        },
+        {
+          "function": "radix_4_moth_inv_trunc_block_2_2_0",
+          "samples": 55
+        },
+        {
+          "function": "_tpoly_invert_in_place",
+          "samples": 52
+        },
+        {
+          "function": "_mod",
+          "samples": 41
+        },
+        {
+          "function": "sd_fft_trunc_block",
+          "samples": 38
+        },
+        {
+          "function": "sd_fft_basecase_8_1",
+          "samples": 16
+        },
+        {
+          "function": "sd_fft_basecase_4_1",
+          "samples": 7
+        },
+        {
+          "function": "_platform_memmove",
+          "samples": 6
+        },
+        {
+          "function": "sd_fft_basecase_6_1",
+          "samples": 6
+        },
+        {
+          "function": "sd_fft_trunc_internal",
+          "samples": 6
+        }
+      ],
+      "caveat": "Exclusive samples, approximate attribution. Inlined work and entries omitted below five samples remain other_or_inline. No separation of arithmetic and memory stalls.",
+      "case": {
+        "dim": 8,
+        "length": 1024,
+        "modulus": 1108307720798209,
+        "window": "full"
+      },
+      "accepted_for_attribution": true,
+      "survey_counts": {
+        "pointwise": 1806,
+        "forward_fft": 901,
+        "inverse_fft": 447,
+        "export_crt_normalization": 117,
+        "input_conversion": 41,
+        "other_or_inline": 53
+      },
+      "survey_percent": {
+        "export_crt_normalization": 3.48,
+        "forward_fft": 26.78,
+        "input_conversion": 1.22,
+        "inverse_fft": 13.28,
+        "other_or_inline": 1.58,
+        "pointwise": 53.67
+      }
+    },
+    {
+      "source": "results/polynomial-profiles/8x8-1024-1000000007-mid.txt",
+      "samples": 3363,
+      "functions": [
+        {
+          "function": "_point_addmul",
+          "samples": 1647
+        },
+        {
+          "function": "sd_fft_basecase_4_0",
+          "samples": 391
+        },
+        {
+          "function": "fft_small_op_mul",
+          "samples": 168
+        },
+        {
+          "function": "sd_fft_basecase_6_0",
+          "samples": 153
+        },
+        {
+          "function": "sd_fft_basecase_8_0",
+          "samples": 140
+        },
+        {
+          "function": "sd_ifft_basecase_4_0",
+          "samples": 140
+        },
+        {
+          "function": "_crt_2_fn",
+          "samples": 123
+        },
+        {
+          "function": "sd_fft_no_trunc_block",
+          "samples": 112
+        },
+        {
+          "function": "sd_ifft_basecase_6_0",
+          "samples": 78
+        },
+        {
+          "function": "sd_fft_trunc_block",
+          "samples": 64
+        },
+        {
+          "function": "sd_ifft_basecase_8_0",
+          "samples": 60
+        },
+        {
+          "function": "_tpoly_invert_in_place",
+          "samples": 56
+        },
+        {
+          "function": "sd_ifft_no_trunc_block",
+          "samples": 50
+        },
+        {
+          "function": "_mod",
+          "samples": 48
+        },
+        {
+          "function": "radix_4_moth_inv_trunc_block_2_2_0",
+          "samples": 42
+        },
+        {
+          "function": "_convert_block",
+          "samples": 24
+        },
+        {
+          "function": "sd_fft_basecase_8_1",
+          "samples": 15
+        },
+        {
+          "function": "mach_absolute_time",
+          "samples": 8
+        },
+        {
+          "function": "sd_ifft_basecase_8_1",
+          "samples": 7
+        },
+        {
+          "function": "sd_fft_no_trunc_internal",
+          "samples": 6
+        },
+        {
+          "function": "fft_small_op_addmul",
+          "samples": 5
+        }
+      ],
+      "caveat": "Exclusive samples, approximate attribution. Inlined work and entries omitted below five samples remain other_or_inline. No separation of arithmetic and memory stalls.",
+      "case": {
+        "dim": 8,
+        "length": 1024,
+        "modulus": 1000000007,
+        "window": "mid"
+      },
+      "accepted_for_attribution": true,
+      "survey_counts": {
+        "pointwise": 1820,
+        "forward_fft": 881,
+        "inverse_fft": 377,
+        "export_crt_normalization": 203,
+        "input_conversion": 48,
+        "other_or_inline": 34
+      },
+      "survey_percent": {
+        "export_crt_normalization": 6.04,
+        "forward_fft": 26.2,
+        "input_conversion": 1.43,
+        "inverse_fft": 11.21,
+        "other_or_inline": 1.01,
+        "pointwise": 54.12
+      }
+    },
+    {
+      "source": "results/polynomial-profile-1008/sample.txt",
+      "samples": 3369,
+      "functions": [
+        {
+          "function": "_point_addmul",
+          "samples": 1094
+        },
+        {
+          "function": "sd_fft_basecase_4_0",
+          "samples": 513
+        },
+        {
+          "function": "_crt_2_fn",
+          "samples": 296
+        },
+        {
+          "function": "sd_ifft_basecase_4_0",
+          "samples": 220
+        },
+        {
+          "function": "sd_fft_basecase_6_0",
+          "samples": 191
+        },
+        {
+          "function": "sd_fft_basecase_8_0",
+          "samples": 184
+        },
+        {
+          "function": "sd_fft_no_trunc_block",
+          "samples": 160
+        },
+        {
+          "function": "sd_ifft_basecase_6_0",
+          "samples": 115
+        },
+        {
+          "function": "fft_small_op_mul",
+          "samples": 112
+        },
+        {
+          "function": "sd_ifft_basecase_8_0",
+          "samples": 83
+        },
+        {
+          "function": "sd_ifft_no_trunc_block",
+          "samples": 74
+        },
+        {
+          "function": "_convert_block",
+          "samples": 72
+        },
+        {
+          "function": "_tpoly_invert_in_place",
+          "samples": 69
+        },
+        {
+          "function": "sd_fft_trunc_block",
+          "samples": 47
+        },
+        {
+          "function": "sd_ifft_no_trunc_block.cold.1",
+          "samples": 36
+        },
+        {
+          "function": "_mod",
+          "samples": 34
+        },
+        {
+          "function": "sd_fft_basecase_8_1",
+          "samples": 20
+        },
+        {
+          "function": "fft_small_op_addmul",
+          "samples": 6
+        },
+        {
+          "function": "sd_fft_basecase_6_1",
+          "samples": 6
+        },
+        {
+          "function": "sd_fft_trunc_internal",
+          "samples": 6
+        }
+      ],
+      "caveat": "Exclusive samples, approximate attribution. Inlined work and entries omitted below five samples remain other_or_inline. No separation of arithmetic and memory stalls.",
+      "case": {
+        "dim": 8,
+        "length": 1008,
+        "modulus": 1000000007,
+        "window": "full"
+      },
+      "commands": [
+        [
+          "/Users/colkitt/sith/toys/math/butterflyMult/build/poly-survey",
+          "8",
+          "1008",
+          "1000000007",
+          "full",
+          "0",
+          "16000"
+        ],
+        [
+          "sample",
+          "28958",
+          "4",
+          "1",
+          "-file",
+          "results/polynomial-profile-1008/sample.txt"
+        ]
+      ],
+      "sha256": {
+        "scripts/profile_polynomial_case.py": "4c9a21c25f08e8df155a857f669eedf55670f9c0488b2cc43867abaab50d35a4",
+        "build/poly-survey": "420348661aa267e7ebd13c5210d7dca97e2d6bd9e6c300b57910c745192a9299",
+        ".deps/flint/libflint.25.0.dylib": "31b9d75a502a408098b37990830d1f033a55fc5957e22ebf12cdaeb2a0fafe58"
+      },
+      "accepted_for_attribution": true,
+      "survey_counts": {
+        "pointwise": 1212,
+        "forward_fft": 1127,
+        "export_crt_normalization": 437,
+        "inverse_fft": 528,
+        "input_conversion": 34,
+        "other_or_inline": 31
+      },
+      "survey_percent": {
+        "export_crt_normalization": 12.97,
+        "forward_fft": 33.45,
+        "input_conversion": 1.01,
+        "inverse_fft": 15.67,
+        "other_or_inline": 0.92,
+        "pointwise": 35.98
+      }
+    },
+    {
+      "source": "results/polynomial-profile-1040/sample.txt",
+      "samples": 3366,
+      "functions": [
+        {
+          "function": "_point_addmul",
+          "samples": 1410
+        },
+        {
+          "function": "sd_fft_basecase_4_0",
+          "samples": 358
+        },
+        {
+          "function": "_crt_2_fn",
+          "samples": 196
+        },
+        {
+          "function": "sd_ifft_basecase_4_0",
+          "samples": 159
+        },
+        {
+          "function": "sd_fft_basecase_6_0",
+          "samples": 152
+        },
+        {
+          "function": "fft_small_op_mul",
+          "samples": 137
+        },
+        {
+          "function": "sd_fft_basecase_8_0",
+          "samples": 135
+        },
+        {
+          "function": "sd_fft_no_trunc_block",
+          "samples": 98
+        },
+        {
+          "function": "sd_ifft_basecase_6_0",
+          "samples": 89
+        },
+        {
+          "function": "sd_fft_trunc_block",
+          "samples": 67
+        },
+        {
+          "function": "radix_4_moth_inv_trunc_block_2_2_1",
+          "samples": 66
+        },
+        {
+          "function": "_tpoly_invert_in_place",
+          "samples": 64
+        },
+        {
+          "function": "sd_ifft_basecase_8_0",
+          "samples": 62
+        },
+        {
+          "function": "_mod",
+          "samples": 59
+        },
+        {
+          "function": "_convert_block",
+          "samples": 58
+        },
+        {
+          "function": "sd_ifft_no_trunc_block",
+          "samples": 52
+        },
+        {
+          "function": "sd_fft_moth_trunc_block_4_1_0",
+          "samples": 43
+        },
+        {
+          "function": "sd_fft_moth_trunc_block_2_3_1",
+          "samples": 40
+        },
+        {
+          "function": "radix_4_moth_inv_trunc_block_3_3_0",
+          "samples": 31
+        },
+        {
+          "function": "radix_4_moth_inv_trunc_block_1_4_0",
+          "samples": 25
+        },
+        {
+          "function": "sd_fft_trunc",
+          "samples": 13
+        },
+        {
+          "function": "sd_fft_basecase_8_1",
+          "samples": 11
+        },
+        {
+          "function": "sd_fft_trunc_internal",
+          "samples": 8
+        },
+        {
+          "function": "sd_ifft_basecase_8_1",
+          "samples": 6
+        },
+        {
+          "function": "_platform_memset",
+          "samples": 5
+        }
+      ],
+      "caveat": "Exclusive samples, approximate attribution. Inlined work and entries omitted below five samples remain other_or_inline. No separation of arithmetic and memory stalls.",
+      "case": {
+        "dim": 8,
+        "length": 1040,
+        "modulus": 1000000007,
+        "window": "full"
+      },
+      "commands": [
+        [
+          "/Users/colkitt/sith/toys/math/butterflyMult/build/poly-survey",
+          "8",
+          "1040",
+          "1000000007",
+          "full",
+          "0",
+          "16000"
+        ],
+        [
+          "sample",
+          "30400",
+          "4",
+          "1",
+          "-file",
+          "results/polynomial-profile-1040/sample.txt"
+        ]
+      ],
+      "sha256": {
+        "scripts/profile_polynomial_case.py": "4c9a21c25f08e8df155a857f669eedf55670f9c0488b2cc43867abaab50d35a4",
+        "build/poly-survey": "420348661aa267e7ebd13c5210d7dca97e2d6bd9e6c300b57910c745192a9299",
+        ".deps/flint/libflint.25.0.dylib": "31b9d75a502a408098b37990830d1f033a55fc5957e22ebf12cdaeb2a0fafe58"
+      },
+      "accepted_for_attribution": true,
+      "survey_counts": {
+        "pointwise": 1547,
+        "forward_fft": 925,
+        "export_crt_normalization": 318,
+        "inverse_fft": 490,
+        "input_conversion": 59,
+        "other_or_inline": 27
+      },
+      "survey_percent": {
+        "export_crt_normalization": 9.45,
+        "forward_fft": 27.48,
+        "input_conversion": 1.75,
+        "inverse_fft": 14.56,
+        "other_or_inline": 0.8,
+        "pointwise": 45.96
+      }
+    }
+  ],
+  "scope": "Baseline survey only. Counters establish dispatch, not time or bytes transferred from memory. Profiles use exclusive top-of-stack samples, with wrapper work and inlining limitations. Reject the 63-sample scalar profile for attribution.",
+  "sha256": {
+    "scripts/analyze_polynomial_survey.py": "22db6d6a62f6e8628dbb84cd8899d7b38cfff35089f959b74f92491d999ee6ad",
+    "results/polynomial-survey/summary.json": "719154cbe67c3c9a54c5737638d128a50ca2ff4e270749e4fcd4fecac8501348",
+    "results/polynomial-survey/timing.jsonl": "3925d49ed84a5ccf452b492d3196effcb71bb6e7002913a504ec3c273e654655",
+    "results/polynomial-survey/summary.csv": "cb9712a678578fef0fdb6ffab41ea83082b2b3e9d900f6346c7388965b742707",
+    "results/polynomial-survey/metadata.json": "6634da9f51099790f957e07e0490d7f55883e024f4bbd9034d3a999865fa845c",
+    "results/polynomial-survey/trace.jsonl": "43e7c068da22cb3769fcce1e8f6d610ae66130e917ab227b03f9685d35caf277",
+    "results/polynomial-neighbors/summary.json": "4059e51f38ef20eb903efa854618b062d1946d80e1cdba99647a2343cac36070",
+    "results/polynomial-neighbors/timing.jsonl": "a329264c0d8d7b297fb10b411e70c83cd69aeacfd823aacb26baf93d3edf9247",
+    "results/polynomial-neighbors/summary.csv": "616a6f799a837b8702b4c3001e8bd1e1404ed7f6a0b83b42624860c5566580cb",
+    "results/polynomial-neighbors/metadata.json": "c3410888ce77e4a8e36e8d8886ec7040e6e7a5aad10988e477981d9c5330a5d0",
+    "results/polynomial-neighbors/trace.jsonl": "4c2820ba1101c3ef4207deeaae63f31d85d4d72b6270801fcffcf8d99eed9252",
+    "results/polynomial-profile-1008/summary.json": "238b275f3f75a5887113c5456e113570e5394e29ab185a9c0fed9d44d8fe81b2",
+    "results/polynomial-profile-1008/sampler.log": "86e3a3c37e6339972ec62b849d2f9103022778f3195af549bd4f0ec39a850e1a",
+    "results/polynomial-profile-1008/operations.json": "f5703b3d83253c6d21816f7821dface4f7cb27f9ecb72b8b4b8f75806311b4da",
+    "results/polynomial-profile-1008/sample.txt": "50937dd990af2e293355adfdbaebdbbbc3c0eaacb491d402b4b34954f2246ffd",
+    "results/polynomial-profile-1040/summary.json": "4642da0e34f45b9eb310814a87c7a13cddf3b1dd83cc5459ef627dc77c20cf65",
+    "results/polynomial-profile-1040/sampler.log": "086d3ae1507abc721e2b7f95a405eaf9127db09f51ac29f86abf2c4f3c74eb8f",
+    "results/polynomial-profile-1040/operations.json": "39564f5a1c1beac11e395492e8aabac57053574bf6faaa23d7bb961f975d7fa0",
+    "results/polynomial-profile-1040/sample.txt": "967a59199a850802b577fbbf5ff8c1c940f58cbe461c8c1d5ddbfaf4adb72ba5",
+    "results/polynomial-profiles/8x8-1024-1000000007-mid-sampler.log": "64dae8dfb66f56a2cbbb6bf2c4e14512c5ae69fbf6fc02cc756d6f8838a27633",
+    "results/polynomial-profiles/summary.json": "d60d779d04c5fe6a46f4bf6bd7f090265f046ecebc1d8961412d108025c9c036",
+    "results/polynomial-profiles/4x4-256-1000000007-full.json": "8c9db538a021c4c4727814a5c491409ff2d978ac79378bb688ca25bb27dc8783",
+    "results/polynomial-profiles/2x2-1024-1000000007-full-sampler.log": "f101c9af5242552bd9742849542d0c0814407b5654391a0693c7b09a017fddbb",
+    "results/polynomial-profiles/8x8-256-1000000007-full.json": "bebfb17420324d2ac4190f91e3c327c27099176397e9f5b6507c8dba98765027",
+    "results/polynomial-profiles/8x8-256-1000000007-full.txt": "ac1de09611a7e1577489b90897d357c0cef0ae66b42cf7ae63faeac21e625288",
+    "results/polynomial-profiles/8x8-1024-1000000007-mid.json": "27f8c3c414e143c378c27447bea4db7493a3fdfae97a6299d3b07b6fa3e78e10",
+    "results/polynomial-profiles/8x8-1024-1108307720798209-full.txt": "0d87c56aba99f6396d7e633aa0bc6333473fc2d98baee45a1595ee1d8a27e4bf",
+    "results/polynomial-profiles/2x2-1024-1000000007-full.txt": "e90d67038cb234d176b23cb00413754f06ca5ae08b5b4757cf31649fafef511d",
+    "results/polynomial-profiles/1x1-1024-1000000007-full.txt": "3f0a3e27fbf10acbb08487c34eaa6ef4cab9ed7713a0f36ba72f77219122ac25",
+    "results/polynomial-profiles/4x4-256-1000000007-full-sampler.log": "5c255730f13d6451276d44037daf6d4d38a8ad888f514d64104569fb709841e9",
+    "results/polynomial-profiles/8x8-1024-1108307720798209-full.json": "d7bb2f22bfa193021e40e0e09f67e70c86de029184e43c27e63cfb048a969861",
+    "results/polynomial-profiles/8x8-1024-1000000007-full-sampler.log": "2b17c3f319bc405a1e332b05f35d8a98ed6a7bff367ae9dbcc0c6115eefa3c67",
+    "results/polynomial-profiles/1x1-1024-1000000007-full-sampler.log": "267557de9b666d4a1c118c7d30a82e123b7ba3eb3dc5f46840845cf355418a44",
+    "results/polynomial-profiles/manifest.json": "928cc163b1e8ea493d5c895b221a75de6a68294c5ca595cf781b74164991d5b7",
+    "results/polynomial-profiles/8x8-1024-1108307720798209-full-sampler.log": "fb7db933bffa2d3af4aa8c850588c6e3d716c6e225871fdf858d5c18e38649c3",
+    "results/polynomial-profiles/2x2-1024-1000000007-full.json": "d0d0da8cdc638434e85b9f91cf5fee01af63e6f028f7332e8cb14964eee14b5b",
+    "results/polynomial-profiles/8x8-256-1000000007-full-sampler.log": "973c0611ffd9ccd952abaf409cde2d8b0d7232bd656f2662b673762145551ef6",
+    "results/polynomial-profiles/8x8-1024-1000000007-mid.txt": "35a7f5d58df0a78b5387f0b32334d71a82dfdaaab3bb28e63aaf4431f5d2978b",
+    "results/polynomial-profiles/8x8-1024-1000000007-full.json": "47ab9bdf3d0200437319380944c48f9c0a41b3de74338f827cfa01f1c5ba283d",
+    "results/polynomial-profiles/4x4-256-1000000007-full.txt": "87cd133db5b16f9bff7cff60f30066f0d929d59359152e94a0c61bbbb8dc04fd",
+    "results/polynomial-profiles/1x1-1024-1000000007-full.json": "635fc54f70886f427c826da7dc5d15764fd3f90f2c9869dd13583c564fce6445",
+    "results/polynomial-profiles/8x8-1024-1000000007-full.txt": "a08d16acd306646dc40d191135daec4e6bbe9b26bd7a741be6c0d703e1d5f8d2"
+  }
+}

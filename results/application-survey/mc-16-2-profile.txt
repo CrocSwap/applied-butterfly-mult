@@ -1,0 +1,123 @@
+ Count  Overhead File                    Line Function
+ =====  ======== ====                    ==== ========
+     3         0 …src/vecunroll/fmap.jl     7 fmap
+     4         0 @HadaMAG/src/SRE.jl      147 mc_sre_β!(X::Vector{ComplexF64}, …
+     5         5 @Base/essentials.jl       13 getindex
+     6         0 …ionBase/src/static.jl    54 vsub_nsw
+     6         0 …_intrin/binary_ops.jl    48 vsub_nsw
+     6         6 …_intrin/binary_ops.jl    48 macro expansion
+     6         4 @Base/simdloop.jl         75 macro expansion
+     7         7 @Base/int.jl             353 &
+     8         0 @Base/operators.jl       276 !=
+     8         8 @Base/promotion.jl       521 ==
+     9         9 …econstruct_loopset.jl     ? macro expansion
+    13         0 …Base/src/base_defs.jl    91 add_fast
+    13         0 …src/vecunroll/fmap.jl   111 vadd_fast
+    13         0 …_intrin/binary_ops.jl   115 vadd_fast
+    17         0 …rc/modeling/graphs.jl   238 vcmpendzs
+    18         0 @HadaMAG/src/SRE.jl      129 macro expansion
+    18        18 @Base/int.jl             379 xor
+    24         0 …c/vecunroll/memory.jl   788 _vload
+    24         0 …c/vecunroll/memory.jl   659 _vload_unroll
+    28         0 …c/vecunroll/memory.jl  1826 _vstore!
+    28         0 …c/vecunroll/memory.jl  1473 _vstore_unroll!
+    31         0 …c/vecunroll/memory.jl  1803 _vstore!
+    31         0 …c/vecunroll/memory.jl  1174 _vstore_unroll!
+    36         0 @Base/simdloop.jl         78 macro expansion
+    36        36 @Base/int.jl              87 +
+    40         0 @HadaMAG/src/SRE.jl      200 compute_moments
+    41         0 @HadaMAG/src/SRE.jl      138 sample_mask!
+    43         0 …rs/stridedpointers.jl   198 _vstore!
+    43         0 …intrin/memory_addr.jl  1720 __vstore!
+    43        43 …intrin/memory_addr.jl  1720 macro expansion
+    47        47 @Base/range.jl           901 iterate
+    48         0 …Base/src/base_defs.jl    91 sub_fast
+    48         0 …src/vecunroll/fmap.jl   111 vsub_fast
+    48         0 …_intrin/binary_ops.jl   115 vsub_fast
+    49         2 …adaMAG/src/Helpers.jl    61 _fht_julia!(x::Vector{Float64})
+    52        52 @Base/array.jl          1021 setindex!
+    53         0 @HadaMAG/src/SRE.jl      131 macro expansion
+    59         0 …c/vecunroll/memory.jl   872 macro expansion
+    61         0 …rs/stridedpointers.jl   211 _vstore!
+    61         0 …intrin/memory_addr.jl  1905 __vstore!
+    61        61 …intrin/memory_addr.jl  1905 macro expansion
+    61         0 …src/vecunroll/fmap.jl    11 fmap
+    61        61 …_intrin/binary_ops.jl   115 macro expansion
+    67         0 …rs/stridedpointers.jl   104 _vload
+    67         0 …intrin/memory_addr.jl  1194 __vload
+    67        67 …intrin/memory_addr.jl  1194 macro expansion
+    68         0 …Base/src/promotion.jl   141 itosize
+    68         0 …Base/src/base_defs.jl   209 rem
+    68         0 …_intrin/conversion.jl   461 vrem
+    68         0 …Base/src/base_defs.jl   199 convert
+    68         0 …_intrin/conversion.jl   195 vconvert
+    68         0 …_intrin/vbroadcast.jl   121 _vbroadcast
+    68        68 …_intrin/vbroadcast.jl    94 macro expansion
+    75         0 @Base/simdloop.jl         77 macro expansion
+    77         0 …/llvm_intrin/masks.jl   729 vge
+    77        77 …/llvm_intrin/masks.jl   689 macro expansion
+    79         0 @HadaMAG/src/SRE.jl      136 sample_mask!
+    79         0 @HadaMAG/src/SRE.jl      128 blend_mask!
+   102         0 …rc/stridedpointers.jl   105 stridedpointer_preserve
+   102         0 …rc/stridedpointers.jl    18 memory_reference
+   102         0 …rc/stridedpointers.jl    22 memory_reference
+   102         0 @Base/abstractarray.jl  1236 pointer
+   102       102 @Base/pointer.jl          65 unsafe_convert
+   140         0 …c/vecunroll/memory.jl   771 _vload
+   140         0 …c/vecunroll/memory.jl   535 _vload_unroll
+   145         0 …/llvm_intrin/masks.jl   552 mask
+   145         0 …/llvm_intrin/masks.jl   519 _mask
+   145         0 …/llvm_intrin/masks.jl   519 macro expansion
+   145         0 …/llvm_intrin/masks.jl   508 _mask_cmp
+   145         0 …/llvm_intrin/masks.jl   499 macro expansion
+   145         0 …Base/src/base_defs.jl    93 >=
+   145         0 …/llvm_intrin/masks.jl   809 vge
+   158         0 …rs/stridedpointers.jl    94 _vload
+   158         0 …intrin/memory_addr.jl  1184 __vload
+   158       157 …intrin/memory_addr.jl  1184 macro expansion
+   164         0 …c/vecunroll/memory.jl    60 macro expansion
+   614        56 …econstruct_loopset.jl  1107 macro expansion
+   623         0 …econstruct_loopset.jl  1107 _turbo_!
+   727         0 …c/condense_loopset.jl  1179 macro expansion
+   728         0 …adaMAG/src/Helpers.jl    55 _fht_julia!(x::Vector{Float64})
+   777         0 …adaMAG/src/Helpers.jl    66 _julia_fn(vec::Vector{Float64}, L…
+   779         0 @HadaMAG/src/SRE.jl      137 sample_mask!
+   779         0 …adaMAG/src/Helpers.jl   153 call_fht!(vec::Vector{Float64}, L…
+   895         0 @HadaMAG/src/SRE.jl      172 mc_sre_β!(X::Vector{ComplexF64}, …
+   899         0 …-1-dot-10/src/jlapi.c   731 jl_repl_entrypoint
+   899         0 …-1-dot-10/src/jlapi.c   582 true_main
+   899         0 …-dot-10/src/./julia.h  1982 jl_apply
+   899         0 …ase-1-dot-10/src/gf.c  3077 ijl_apply_generic
+   899         1 …ase-1-dot-10/src/gf.c     ? _jl_invoke
+   899         0 …0/lib/julia/sys.dylib     ? jfptr__start_83057.1
+   899         0 @Base/client.jl          557 _start()
+   899         0 @Base/client.jl          323 exec_options(opts::Base.JLOptions)
+   899         0 …0/lib/julia/sys.dylib     ? jfptr_include_46577.1
+   899         0 @Base/Base.jl            495 include(mod::Module, _path::Strin…
+   899         0 @Base/loading.jl        2206 _include(mapexpr::Function, mod::…
+   899         0 @Base/loading.jl        2146 include_string(mapexpr::typeof(id…
+   899         0 @Base/boot.jl            385 eval
+   899         0 …dot-10/src/toplevel.c   985 ijl_toplevel_eval_in
+   899         0 …dot-10/src/toplevel.c   943 ijl_toplevel_eval
+   899         0 …dot-10/src/toplevel.c   877 jl_toplevel_eval_flex
+   899         0 …dot-10/src/toplevel.c   934 jl_toplevel_eval_flex
+   899         0 …-10/src/interpreter.c   775 jl_interpret_toplevel_thunk
+   899         0 …-10/src/interpreter.c     ? eval_body
+   899         0 …-10/src/interpreter.c   126 do_call
+   899         1 [any unknown stackframes]
+   899         0 …ch/hadamag_profile.jl   102 measure()
+   899         0 @Base/io.jl              393 open(::Function, ::String, ::Stri…
+   899         0 @Base/io.jl              396 open(::var"#13#14"{JSON3.Array{JS…
+   899         0 …ch/hadamag_profile.jl   120 (::var"#13#14"{JSON3.Array{JSON3.…
+   899         0 …ch/hadamag_profile.jl    74 sampled(psi::StateVec{ComplexF64,…
+   899         0 …rofile/src/Profile.jl    43 macro expansion
+   899         0 …ch/hadamag_profile.jl    75 macro expansion
+   899         0 …ch/hadamag_profile.jl    21 calculate(psi::StateVec{ComplexF6…
+   899         0 @HadaMAG/src/SRE.jl       33 MC_SRE
+   899         0 @HadaMAG/src/SRE.jl       42 MC_SRE(ψ::StateVec{ComplexF64, 2}…
+   899         0 …/Backends/Dispatch.jl    47 kwcall(::@NamedTuple{seed::Int64,…
+   899         0 …dot-10/src/builtins.c   768 do_apply
+   899         0 …/Backends/Dispatch.jl    47 _apply_backend(::HadaMAG.Serial, …
+   899         0 …rc/Backends/Serial.jl    53 kwcall(::@NamedTuple{seed::Int64,…
+   899         0 …rc/Backends/Serial.jl    88 MC_SRE(ψ::StateVec{ComplexF64, 2}…
+Total snapshots: 900. Utilization: 100% across all threads and tasks. Use the `groupby` kwarg to break down by thread and/or task.

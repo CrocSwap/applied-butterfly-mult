@@ -1,0 +1,162 @@
+--- a/src/arb_poly/evaluate2_rectangular.c
++++ b/src/arb_poly/evaluate2_rectangular.c
+@@ -16,9 +16,9 @@
+ _arb_poly_evaluate2_rectangular(arb_t y, arb_t z, arb_srcptr poly,
+     slong len, const arb_t x, slong prec)
+ {
+-    slong i, j, m, r;
+-    arb_ptr xs;
+-    arb_t s, t, c;
++    slong i, j, m, r, count;
++    arb_ptr xs, derivative;
++    arb_t s;
+ 
+     if (len < 3)
+     {
+@@ -42,14 +42,12 @@
+     }
+ 
+     m = n_sqrt(len) + 1;
+-    m *= 1;
+ 
+     r = (len + m - 1) / m;
+ 
+     xs = _arb_vec_init(m + 1);
+     arb_init(s);
+-    arb_init(t);
+-    arb_init(c);
++    derivative = _arb_vec_init(m);
+ 
+     _arb_vec_set_powers(xs, x, m + 1, prec);
+ 
+@@ -64,34 +62,31 @@
+         arb_add(y, y, s, prec);
+     }
+ 
+-    /* todo: rewrite using arb_dot */
++    /* Reuse one block of exactly scaled derivative coefficients.
++       A dot product avoids rounding and error accumulation per term. */
+     len -= 1;
+     r = (len + m - 1) / m;
+-    arb_mul_ui(z, poly + (r - 1) * m + 1, (r - 1) * m + 1, ARF_PREC_EXACT);
+-    for (j = 1; (r - 1) * m + j < len; j++)
++    for (i = r - 1; i >= 0; i--)
+     {
+-        arb_mul_ui(c, poly + (r - 1) * m + j + 1, (r - 1) * m + j + 1, ARF_PREC_EXACT);
+-        arb_addmul(z, xs + j, c, prec);
+-    }
++        count = FLINT_MIN(m, len - i * m);
++        for (j = 0; j < count; j++)
++            arb_mul_ui(derivative + j, poly + i * m + j + 1,
++                i * m + j + 1, ARF_PREC_EXACT);
+ 
+-    for (i = r - 2; i >= 0; i--)
+-    {
+-        arb_mul_ui(s, poly + i * m + 1, i * m + 1, ARF_PREC_EXACT);
+-
+-        for (j = 1; j < m; j++)
++        arb_dot(s, derivative, 0, xs + 1, 1, derivative + 1, 1,
++            count - 1, prec);
++        if (i == r - 1)
++            arb_set(z, s);
++        else
+         {
+-            arb_mul_ui(c, poly + i * m + j + 1, i * m + j + 1, ARF_PREC_EXACT);
+-            arb_addmul(s, xs + j, c, prec);
++            arb_mul(z, z, xs + m, prec);
++            arb_add(z, z, s, prec);
+         }
+-
+-        arb_mul(z, z, xs + m, prec);
+-        arb_add(z, z, s, prec);
+     }
+ 
+     _arb_vec_clear(xs, m + 1);
+     arb_clear(s);
+-    arb_clear(t);
+-    arb_clear(c);
++    _arb_vec_clear(derivative, m);
+ }
+ 
+ void
+--- a/src/acb_poly/evaluate2_rectangular.c
++++ b/src/acb_poly/evaluate2_rectangular.c
+@@ -16,9 +16,9 @@
+ _acb_poly_evaluate2_rectangular(acb_t y, acb_t z, acb_srcptr poly,
+     slong len, const acb_t x, slong prec)
+ {
+-    slong i, j, m, r;
+-    acb_ptr xs;
+-    acb_t s, t, c;
++    slong i, j, m, r, count;
++    acb_ptr xs, derivative;
++    acb_t s;
+ 
+     if (len < 3)
+     {
+@@ -42,14 +42,12 @@
+     }
+ 
+     m = n_sqrt(len) + 1;
+-    m *= 1;
+ 
+     r = (len + m - 1) / m;
+ 
+     xs = _acb_vec_init(m + 1);
+     acb_init(s);
+-    acb_init(t);
+-    acb_init(c);
++    derivative = _acb_vec_init(m);
+ 
+     _acb_vec_set_powers(xs, x, m + 1, prec);
+     acb_dot(y, poly + (r - 1) * m, 0, xs + 1, 1,
+@@ -63,34 +61,31 @@
+         acb_add(y, y, s, prec);
+     }
+ 
+-    /* todo: rewrite using acb_dot */
++    /* Reuse one block of exactly scaled derivative coefficients.
++       A dot product avoids rounding and error accumulation per term. */
+     len -= 1;
+     r = (len + m - 1) / m;
+-    acb_mul_ui(z, poly + (r - 1) * m + 1, (r - 1) * m + 1, ARF_PREC_EXACT);
+-    for (j = 1; (r - 1) * m + j < len; j++)
++    for (i = r - 1; i >= 0; i--)
+     {
+-        acb_mul_ui(c, poly + (r - 1) * m + j + 1, (r - 1) * m + j + 1, ARF_PREC_EXACT);
+-        acb_addmul(z, xs + j, c, prec);
+-    }
++        count = FLINT_MIN(m, len - i * m);
++        for (j = 0; j < count; j++)
++            acb_mul_ui(derivative + j, poly + i * m + j + 1,
++                i * m + j + 1, ARF_PREC_EXACT);
+ 
+-    for (i = r - 2; i >= 0; i--)
+-    {
+-        acb_mul_ui(s, poly + i * m + 1, i * m + 1, ARF_PREC_EXACT);
+-
+-        for (j = 1; j < m; j++)
++        acb_dot(s, derivative, 0, xs + 1, 1, derivative + 1, 1,
++            count - 1, prec);
++        if (i == r - 1)
++            acb_set(z, s);
++        else
+         {
+-            acb_mul_ui(c, poly + i * m + j + 1, i * m + j + 1, ARF_PREC_EXACT);
+-            acb_addmul(s, xs + j, c, prec);
++            acb_mul(z, z, xs + m, prec);
++            acb_add(z, z, s, prec);
+         }
+-
+-        acb_mul(z, z, xs + m, prec);
+-        acb_add(z, z, s, prec);
+     }
+ 
+     _acb_vec_clear(xs, m + 1);
+     acb_clear(s);
+-    acb_clear(t);
+-    acb_clear(c);
++    _acb_vec_clear(derivative, m);
+ }
+ 
+ void

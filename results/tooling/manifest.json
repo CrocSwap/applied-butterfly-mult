@@ -1,0 +1,18 @@
+{
+  "sha256": {
+    "build/compare": "54526744d43b9075ad01efb53343184446aee560502df2b285ab90a594bf7f4d",
+    "build/compare-qos": "a3927fddadad46a2e9543e138e43ea416f9f2708441a2684bc23dc2042ddea0e",
+    "build/compare-dual": "acf642e658ef1faf50b3639ae42f70ba565cc675ab60515ec24542ddb7ca3959",
+    "build/validate": "6532c6bfbee5ceff5991aed346854d2ab57f96db629417357f77e359557272fe",
+    "bench/compare.c": "d512ce40b39db49a5851fda602fa1a9d13707294002bf920f78776d146e357c0",
+    "results/tooling/compare-v1.c": "654a0a55aeb5ef576502d56ddc90202c8b6a43b4f63a4ddd55c8067d700f9a68",
+    "results/tooling/compare-v2.c": "afe89409baf0b1961c1fa49073b7c2986bd8ec59be367305879d70c3f5b93bb3"
+  },
+  "variants": {
+    "compare": "original v1, wall clock",
+    "compare-qos": "v2, wall clock, user-initiated QoS",
+    "compare-dual": "current source, thread CPU plus wall clocks, user-initiated QoS",
+    "validate": "v2 source, BF_VALIDATE_ONLY"
+  },
+  "build_script": "scripts/build_harness.sh"
+}

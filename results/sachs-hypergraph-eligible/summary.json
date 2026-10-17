@@ -1,0 +1,94 @@
+{
+  "tables": [
+    {
+      "table": 1,
+      "node": 5,
+      "unique_queries": 8,
+      "control": 33,
+      "carried": 53,
+      "ablation": 59
+    },
+    {
+      "table": 2,
+      "node": 6,
+      "unique_queries": 8,
+      "control": 33,
+      "carried": 52,
+      "ablation": 59
+    },
+    {
+      "table": 5,
+      "node": 0,
+      "unique_queries": 11,
+      "control": 76,
+      "carried": 156,
+      "ablation": 170
+    },
+    {
+      "table": 6,
+      "node": 3,
+      "unique_queries": 12,
+      "control": 120,
+      "carried": 203,
+      "ablation": 218
+    },
+    {
+      "table": 9,
+      "node": 9,
+      "unique_queries": 8,
+      "control": 37,
+      "carried": 70,
+      "ablation": 74
+    },
+    {
+      "table": 11,
+      "node": 10,
+      "unique_queries": 7,
+      "control": 72,
+      "carried": 114,
+      "ablation": 118
+    },
+    {
+      "table": 12,
+      "node": 8,
+      "unique_queries": 14,
+      "control": 103,
+      "carried": 162,
+      "ablation": 169
+    },
+    {
+      "table": 15,
+      "node": 7,
+      "unique_queries": 1,
+      "control": 36,
+      "carried": 36,
+      "ablation": 36
+    },
+    {
+      "table": 16,
+      "node": 4,
+      "unique_queries": 4,
+      "control": 62,
+      "carried": 103,
+      "ablation": 104
+    },
+    {
+      "table": 19,
+      "node": 2,
+      "unique_queries": 5,
+      "control": 60,
+      "carried": 103,
+      "ablation": 105
+    },
+    {
+      "table": 21,
+      "node": 1,
+      "unique_queries": 8,
+      "control": 67,
+      "carried": 100,
+      "ablation": 105
+    }
+  ],
+  "strict_carried_wins": 0,
+  "ties": 1
+}

@@ -1,0 +1,47 @@
+{
+  "utc": "2026-10-07T18:06:48.966342+00:00",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "cpu": "Apple M2",
+  "memory_bytes": 25769803776,
+  "compiler": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin",
+  "flint_commit": "657a2839cf0125164859ff102b1f124abcb87ce0",
+  "flint_diff": "",
+  "configure": "--with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --disable-static CC=clang 'CFLAGS=-O3 -g -mcpu=apple-m2 -fno-omit-frame-pointer'",
+  "libraries": "gmp 6.3.0\nmpfr 4.2.2",
+  "threads": 1,
+  "limb_bits": 64,
+  "sha256": {
+    "bench/mul.c": "db1b197d6ceb7ad656cc7b2911688a71fa0fb133da7935e03a9ad723c42d5650",
+    "build/mul": "7bd330396e41f2e81b9152fb1190cbbc718d15bdddd4fa31c11b90e757974b07",
+    ".deps/flint/libflint.25.0.dylib": "31b9d75a502a408098b37990830d1f033a55fc5957e22ebf12cdaeb2a0fafe58"
+  },
+  "method": "Two resident dylibs; 200ms combined warmup; equal iteration counts; alternating ABBA/BAAB quartets; 12 exact patterns per library per case",
+  "environment": {},
+  "arguments": {
+    "baseline": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/libflint.25.0.dylib",
+    "candidate": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/control/libflint-experiment.dylib",
+    "binary": "build/compare-dual",
+    "metric": "cpu",
+    "output": "results/ablation-control",
+    "sizes": [
+      4096,
+      8192,
+      16384
+    ],
+    "operations": [
+      "mul",
+      "sqr",
+      "unbalanced"
+    ],
+    "trials": 21,
+    "batch_ms": 10,
+    "seed": 71983
+  },
+  "comparison_sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/libflint.25.0.dylib": "31b9d75a502a408098b37990830d1f033a55fc5957e22ebf12cdaeb2a0fafe58",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/control/libflint-experiment.dylib": "119f22302ae43fb2c5e26f8a00d558c27b1762481d9ef801b11fef1551c5c970",
+    "build/compare-dual": "acf642e658ef1faf50b3639ae42f70ba565cc675ab60515ec24542ddb7ca3959",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/compare.c": "d512ce40b39db49a5851fda602fa1a9d13707294002bf920f78776d146e357c0"
+  }
+}

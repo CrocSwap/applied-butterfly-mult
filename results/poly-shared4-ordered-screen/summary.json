@@ -1,0 +1,152 @@
+[
+  {
+    "dim": 8,
+    "length": 256,
+    "modulus": 1000000007,
+    "window": "full",
+    "supported": true,
+    "cpu": {
+      "reduction_pct": 2.074801811908056,
+      "ci95_low_pct": 0.733176705491978,
+      "ci95_high_pct": 3.211485708366213,
+      "baseline_median_ns": 2131708.25,
+      "candidate_median_ns": 2061906.25,
+      "quartets": 15,
+      "bootstrap_block": 3
+    },
+    "wall": {
+      "reduction_pct": 1.9495870902924262,
+      "ci95_low_pct": -0.4731750752226205,
+      "ci95_high_pct": 3.821179888753201,
+      "baseline_median_ns": 2144000.0,
+      "candidate_median_ns": 2065750.0,
+      "quartets": 15,
+      "bootstrap_block": 3
+    }
+  },
+  {
+    "dim": 8,
+    "length": 1024,
+    "modulus": 1108307720798209,
+    "window": "full",
+    "supported": true,
+    "cpu": {
+      "reduction_pct": 2.8938594198227863,
+      "ci95_low_pct": 2.4693183096881066,
+      "ci95_high_pct": 3.3135797378478937,
+      "baseline_median_ns": 4165812.5,
+      "candidate_median_ns": 4037094.0,
+      "quartets": 15,
+      "bootstrap_block": 3
+    },
+    "wall": {
+      "reduction_pct": 3.0961666540026633,
+      "ci95_low_pct": 2.498215552632388,
+      "ci95_high_pct": 3.653986571499379,
+      "baseline_median_ns": 4184500.0,
+      "candidate_median_ns": 4045500.0,
+      "quartets": 15,
+      "bootstrap_block": 3
+    }
+  },
+  {
+    "dim": 8,
+    "length": 1008,
+    "modulus": 1000000007,
+    "window": "full",
+    "supported": true,
+    "cpu": {
+      "reduction_pct": 1.1444762821554266,
+      "ci95_low_pct": -0.366659178460238,
+      "ci95_high_pct": 2.69461192247773,
+      "baseline_median_ns": 5608792.0,
+      "candidate_median_ns": 5519812.5,
+      "quartets": 15,
+      "bootstrap_block": 3
+    },
+    "wall": {
+      "reduction_pct": 1.287670067826574,
+      "ci95_low_pct": -0.07305588583346179,
+      "ci95_high_pct": 2.7573483590003223,
+      "baseline_median_ns": 5616000.0,
+      "candidate_median_ns": 5519500.0,
+      "quartets": 15,
+      "bootstrap_block": 3
+    }
+  },
+  {
+    "dim": 8,
+    "length": 240,
+    "modulus": 1000000007,
+    "window": "full",
+    "supported": true,
+    "cpu": {
+      "reduction_pct": 3.656543064720641,
+      "ci95_low_pct": 2.6031819647102217,
+      "ci95_high_pct": 4.439212214315802,
+      "baseline_median_ns": 1150130.125,
+      "candidate_median_ns": 1101182.25,
+      "quartets": 15,
+      "bootstrap_block": 3
+    },
+    "wall": {
+      "reduction_pct": 3.415511745961164,
+      "ci95_low_pct": 1.9366620984110794,
+      "ci95_high_pct": 4.434486714977359,
+      "baseline_median_ns": 1151750.0,
+      "candidate_median_ns": 1101125.0,
+      "quartets": 15,
+      "bootstrap_block": 3
+    }
+  },
+  {
+    "dim": 4,
+    "length": 256,
+    "modulus": 1000000007,
+    "window": "full",
+    "supported": true,
+    "cpu": {
+      "reduction_pct": 1.8951923937150283,
+      "ci95_low_pct": -1.037144912441379,
+      "ci95_high_pct": 4.795317180735603,
+      "baseline_median_ns": 377958.34375,
+      "candidate_median_ns": 362736.96875,
+      "quartets": 15,
+      "bootstrap_block": 3
+    },
+    "wall": {
+      "reduction_pct": 1.8466469893267612,
+      "ci95_low_pct": -1.8518388537862807,
+      "ci95_high_pct": 5.25275668446038,
+      "baseline_median_ns": 380437.5,
+      "candidate_median_ns": 363156.25,
+      "quartets": 15,
+      "bootstrap_block": 3
+    }
+  },
+  {
+    "dim": 8,
+    "length": 1024,
+    "modulus": 1000000007,
+    "window": "full",
+    "supported": true,
+    "cpu": {
+      "reduction_pct": -1.4842887581159259,
+      "ci95_low_pct": -3.417899416455694,
+      "ci95_high_pct": -0.20579943789318378,
+      "baseline_median_ns": 8978187.5,
+      "candidate_median_ns": 9037396.0,
+      "quartets": 15,
+      "bootstrap_block": 3
+    },
+    "wall": {
+      "reduction_pct": -2.036767146183216,
+      "ci95_low_pct": -4.766111495665282,
+      "ci95_high_pct": -0.3210543740744809,
+      "baseline_median_ns": 8991500.0,
+      "candidate_median_ns": 9037500.0,
+      "quartets": 15,
+      "bootstrap_block": 3
+    }
+  }
+]

@@ -1,0 +1,455 @@
+{
+  "raw_sha256": "4f07f3c8fe82fc46e0a96727cb696a9dbbc1a1ee8cd1da0aca0ee4895e40143b",
+  "results": [
+    {
+      "case": {
+        "k": 256,
+        "n": 512,
+        "modulus": 1000000007,
+        "bytes_per_symbol": 3,
+        "mode": "batch16",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-2/k256-p1000000007.bin",
+        "candidate": "original",
+        "group": "unchanged_control"
+      },
+      "cpu": {
+        "reduction_pct": 0.17230103955885312,
+        "ci95_low_pct": -0.7063825230832377,
+        "ci95_high_pct": 1.0592901327508675,
+        "baseline_median_ns": 92516.21484375,
+        "candidate_median_ns": 92309.81396484375,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": -4.353773316647858,
+        "ci95_low_pct": -16.746918911736785,
+        "ci95_high_pct": 3.574697652246983,
+        "baseline_median_ns": 94205.078125,
+        "candidate_median_ns": 94146.484375,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 256,
+        "n": 512,
+        "modulus": 18446744073709551557,
+        "bytes_per_symbol": 7,
+        "mode": "changing",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-2/k256-p18446744073709551557.bin",
+        "candidate": "combined-v1",
+        "group": "active"
+      },
+      "cpu": {
+        "reduction_pct": 15.445426404209538,
+        "ci95_low_pct": 11.737828872872136,
+        "ci95_high_pct": 18.952382400621314,
+        "baseline_median_ns": 467433.349609375,
+        "candidate_median_ns": 399386.234375,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 15.53489978922019,
+        "ci95_low_pct": 9.266017539189786,
+        "ci95_high_pct": 21.546894496315893,
+        "baseline_median_ns": 502339.84375,
+        "candidate_median_ns": 415634.765625,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 256,
+        "n": 512,
+        "modulus": 18446744073709551557,
+        "bytes_per_symbol": 7,
+        "mode": "batch16",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-2/k256-p18446744073709551557.bin",
+        "candidate": "combined-v1",
+        "group": "active"
+      },
+      "cpu": {
+        "reduction_pct": 6.976647042967176,
+        "ci95_low_pct": 4.725321119616488,
+        "ci95_high_pct": 9.429105186972153,
+        "baseline_median_ns": 160433.67578125,
+        "candidate_median_ns": 147971.19140625,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 12.480912634090402,
+        "ci95_low_pct": 3.590483737421568,
+        "ci95_high_pct": 23.099840156410412,
+        "baseline_median_ns": 165541.015625,
+        "candidate_median_ns": 156814.453125,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 64,
+        "n": 128,
+        "modulus": 1000000007,
+        "bytes_per_symbol": 3,
+        "mode": "batch16",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-2/k64-p1000000007.bin",
+        "candidate": "combined-v1",
+        "group": "active"
+      },
+      "cpu": {
+        "reduction_pct": 11.329996840247835,
+        "ci95_low_pct": 9.21059609240511,
+        "ci95_high_pct": 13.101757077299903,
+        "baseline_median_ns": 11463.1397094725,
+        "candidate_median_ns": 10025.68566894525,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 11.8179539406424,
+        "ci95_low_pct": 8.8113325121981,
+        "ci95_high_pct": 14.952998671086137,
+        "baseline_median_ns": 11532.40966796875,
+        "candidate_median_ns": 10206.11572265625,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 64,
+        "n": 128,
+        "modulus": 1000000007,
+        "bytes_per_symbol": 3,
+        "mode": "changing",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-2/k64-p1000000007.bin",
+        "candidate": "combined-v1",
+        "group": "active"
+      },
+      "cpu": {
+        "reduction_pct": 23.206447409891652,
+        "ci95_low_pct": 21.93718317795692,
+        "ci95_high_pct": 24.320103760108392,
+        "baseline_median_ns": 31180.39428710925,
+        "candidate_median_ns": 23812.840820312624,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 21.823996199800078,
+        "ci95_low_pct": 16.17259815746013,
+        "ci95_high_pct": 26.368494955299482,
+        "baseline_median_ns": 31476.1962890625,
+        "candidate_median_ns": 24019.8974609375,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 512,
+        "n": 1024,
+        "modulus": 1000000007,
+        "bytes_per_symbol": 3,
+        "mode": "cached",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-2/k512-p1000000007.bin",
+        "candidate": "combined-v1",
+        "group": "active"
+      },
+      "cpu": {
+        "reduction_pct": 3.282306684987679,
+        "ci95_low_pct": -1.2941097874894503,
+        "ci95_high_pct": 6.573987096880862,
+        "baseline_median_ns": 141628.64208984375,
+        "candidate_median_ns": 134076.61962890625,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 4.657706532288575,
+        "ci95_low_pct": -2.0927766281854554,
+        "ci95_high_pct": 10.798801513302426,
+        "baseline_median_ns": 143322.75390625,
+        "candidate_median_ns": 135183.10546875,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 256,
+        "n": 512,
+        "modulus": 1000000007,
+        "bytes_per_symbol": 3,
+        "mode": "batch16",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-2/k256-p1000000007.bin",
+        "candidate": "combined-v1",
+        "group": "active"
+      },
+      "cpu": {
+        "reduction_pct": 5.791297933948092,
+        "ci95_low_pct": 4.030252200627338,
+        "ci95_high_pct": 7.783825657185672,
+        "baseline_median_ns": 58856.364501953125,
+        "candidate_median_ns": 55393.2392578125,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 8.637785551569621,
+        "ci95_low_pct": 4.660884540728327,
+        "ci95_high_pct": 12.825331699490716,
+        "baseline_median_ns": 59253.173828125,
+        "candidate_median_ns": 56194.3359375,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 64,
+        "n": 128,
+        "modulus": 1000000007,
+        "bytes_per_symbol": 3,
+        "mode": "cached",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-2/k64-p1000000007.bin",
+        "candidate": "combined-v1",
+        "group": "active"
+      },
+      "cpu": {
+        "reduction_pct": 10.54386232318485,
+        "ci95_low_pct": 8.711372100613623,
+        "ci95_high_pct": 12.259537358147654,
+        "baseline_median_ns": 7552.6289062498745,
+        "candidate_median_ns": 6806.842803955,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 11.367981384365711,
+        "ci95_low_pct": 8.758636262559483,
+        "ci95_high_pct": 14.2073799391909,
+        "baseline_median_ns": 7611.785888671875,
+        "candidate_median_ns": 6908.233642578125,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 256,
+        "n": 512,
+        "modulus": 1000000007,
+        "bytes_per_symbol": 3,
+        "mode": "cached",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-2/k256-p1000000007.bin",
+        "candidate": "original",
+        "group": "unchanged_control"
+      },
+      "cpu": {
+        "reduction_pct": 1.584935805730514,
+        "ci95_low_pct": 0.13429198424849131,
+        "ci95_high_pct": 2.8306170274066123,
+        "baseline_median_ns": 48453.481201171875,
+        "candidate_median_ns": 48068.0341796875,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 1.5832378955569881,
+        "ci95_low_pct": 0.03273291934827727,
+        "ci95_high_pct": 2.922372301393139,
+        "baseline_median_ns": 48813.720703125,
+        "candidate_median_ns": 48385.498046875,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 256,
+        "n": 512,
+        "modulus": 1000000007,
+        "bytes_per_symbol": 3,
+        "mode": "changing",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-2/k256-p1000000007.bin",
+        "candidate": "combined-v1",
+        "group": "active"
+      },
+      "cpu": {
+        "reduction_pct": 14.748211874701811,
+        "ci95_low_pct": 12.457854174301985,
+        "ci95_high_pct": 16.775606630873607,
+        "baseline_median_ns": 168443.7255859375,
+        "candidate_median_ns": 144519.75439453125,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 14.479947155126393,
+        "ci95_low_pct": 10.646472952308073,
+        "ci95_high_pct": 18.498072262103882,
+        "baseline_median_ns": 169708.0078125,
+        "candidate_median_ns": 145614.74609375,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 256,
+        "n": 512,
+        "modulus": 18446744073709551557,
+        "bytes_per_symbol": 7,
+        "mode": "cached",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-2/k256-p18446744073709551557.bin",
+        "candidate": "combined-v1",
+        "group": "active"
+      },
+      "cpu": {
+        "reduction_pct": -0.702009860095143,
+        "ci95_low_pct": -6.543095319373937,
+        "ci95_high_pct": 3.8636287386723533,
+        "baseline_median_ns": 85137.86865234375,
+        "candidate_median_ns": 82551.92041015625,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": -3.6728254558442863,
+        "ci95_low_pct": -16.459269748081006,
+        "ci95_high_pct": 6.633892017150589,
+        "baseline_median_ns": 85698.486328125,
+        "candidate_median_ns": 84162.353515625,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 256,
+        "n": 512,
+        "modulus": 1000000007,
+        "bytes_per_symbol": 3,
+        "mode": "cached",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-2/k256-p1000000007.bin",
+        "candidate": "combined-v1",
+        "group": "active"
+      },
+      "cpu": {
+        "reduction_pct": 3.229369035540597,
+        "ci95_low_pct": 0.7105432518025756,
+        "ci95_high_pct": 5.716002179398516,
+        "baseline_median_ns": 49133.87060546875,
+        "candidate_median_ns": 47812.9990234375,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": -4.323372853743956,
+        "ci95_low_pct": -13.152178314248463,
+        "ci95_high_pct": 5.183721540589826,
+        "baseline_median_ns": 50034.423828125,
+        "candidate_median_ns": 52661.376953125,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 256,
+        "n": 512,
+        "modulus": 1000000007,
+        "bytes_per_symbol": 3,
+        "mode": "changing",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-2/k256-p1000000007.bin",
+        "candidate": "original",
+        "group": "unchanged_control"
+      },
+      "cpu": {
+        "reduction_pct": 0.5693446131323721,
+        "ci95_low_pct": -1.7944459455238482,
+        "ci95_high_pct": 2.998830319606105,
+        "baseline_median_ns": 191973.7548828125,
+        "candidate_median_ns": 189161.3759765625,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 3.265842248385298,
+        "ci95_low_pct": -3.431262405493052,
+        "ci95_high_pct": 9.033038359139011,
+        "baseline_median_ns": 194182.6171875,
+        "candidate_median_ns": 191168.9453125,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 512,
+        "n": 1024,
+        "modulus": 1000000007,
+        "bytes_per_symbol": 3,
+        "mode": "changing",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-2/k512-p1000000007.bin",
+        "candidate": "combined-v1",
+        "group": "active"
+      },
+      "cpu": {
+        "reduction_pct": 8.810983504284186,
+        "ci95_low_pct": 6.702795292235086,
+        "ci95_high_pct": 11.130221724724898,
+        "baseline_median_ns": 487524.005859375,
+        "candidate_median_ns": 443643.064453125,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 8.497583451545799,
+        "ci95_low_pct": 4.093534700493596,
+        "ci95_high_pct": 13.321946959068743,
+        "baseline_median_ns": 500785.15625,
+        "candidate_median_ns": 460228.515625,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 512,
+        "n": 1024,
+        "modulus": 1000000007,
+        "bytes_per_symbol": 3,
+        "mode": "batch16",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-2/k512-p1000000007.bin",
+        "candidate": "combined-v1",
+        "group": "active"
+      },
+      "cpu": {
+        "reduction_pct": 4.513186666398806,
+        "ci95_low_pct": 2.230076785812407,
+        "ci95_high_pct": 6.392469573924108,
+        "baseline_median_ns": 202564.1689453125,
+        "candidate_median_ns": 195681.2744140625,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 3.440491830483039,
+        "ci95_low_pct": -16.62675764940822,
+        "ci95_high_pct": 18.675297491133303,
+        "baseline_median_ns": 216436.5234375,
+        "candidate_median_ns": 213209.9609375,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    }
+  ]
+}

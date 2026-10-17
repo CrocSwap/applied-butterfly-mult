@@ -1,0 +1,57 @@
+--- a/src/fft_small/sd_ifft.c
++++ b/src/fft_small/sd_ifft.c
+@@ -349,14 +349,48 @@
+     x3 = CAT(T, add)(Y2, Y3); \
+ }
+ 
++/* Delayed reductions in the even branch; see docs/delayed-reductions-m2.md.
++   Inputs and outputs remain strictly inside (-2p, 2p). All additions have
++   magnitude < 8p < 2^53. The two enlarged products stay below 4p^2.
++   The zero-twiddle macro and physical layout are unchanged. */
+ #define LENGTH8INV_ANY_J(T, x0, x1, x2, x3, x4, x5, x6, x7, n, ninv, w0, ww0, ww1, www0, www1, www2, www3) \
+ { \
+-    T A0 = x0, A1 = x1, A2 = x2, A3 = x3, A4 = x4, A5 = x5, A6 = x6, A7 = x7; \
+-    LENGTH2INV_ANY_J(T, A0,A1, n,ninv, www0) \
+-    LENGTH2INV_ANY_J(T, A2,A3, n,ninv, www1) \
+-    LENGTH2INV_ANY_J(T, A4,A5, n,ninv, www2) \
+-    LENGTH2INV_ANY_J(T, A6,A7, n,ninv, www3) \
+-    LENGTH4INV_ANY_J(T, A0,A2,A4,A6, n,ninv, w0,ww0,ww1) \
++    T A0=x0, A1=x1, A2=x2, A3=x3, A4=x4, A5=x5, A6=x6, A7=x7; \
++    { \
++        T S = CAT(T, add)(A0, A1); \
++        A1 = CAT(T, mulmod_fast)(CAT(T, sub)(A1, A0), www0, n, ninv); \
++        A0 = S; \
++    } \
++    { \
++        T S = CAT(T, add)(A2, A3); \
++        A3 = CAT(T, mulmod_fast)(CAT(T, sub)(A3, A2), www1, n, ninv); \
++        A2 = S; \
++    } \
++    { \
++        T S = CAT(T, add)(A4, A5); \
++        A5 = CAT(T, mulmod_fast)(CAT(T, sub)(A5, A4), www2, n, ninv); \
++        A4 = S; \
++    } \
++    { \
++        T S = CAT(T, add)(A6, A7); \
++        A7 = CAT(T, mulmod_fast)(CAT(T, sub)(A7, A6), www3, n, ninv); \
++        A6 = S; \
++    } \
++    { \
++        T B0 = CAT(T, add)(A0, A2); \
++        T B1 = CAT(T, add)(A4, A6); \
++        T B2 = CAT(T, sub)(A0, A2); \
++        T B3 = CAT(T, sub)(A6, A4); \
++        B0 = CAT(T, reduce_to_pm1n)(B0, n, ninv); \
++        B1 = CAT(T, reduce_to_pm1n)(B1, n, ninv); \
++        /* |B2|, |B3| < 8p: use full mulmod, not mulmod_fast. */ \
++        B2 = CAT(T, mulmod)(B2, ww0, n, ninv); \
++        B3 = CAT(T, mulmod)(B3, ww1, n, ninv); \
++        A0 = CAT(T, add)(B0, B1); \
++        A2 = CAT(T, reduce_to_pm1n)(CAT(T, sub)(B3, B2), n, ninv); \
++        A4 = CAT(T, mulmod_fast)(CAT(T, sub)(B1, B0), w0, n, ninv); \
++        A6 = CAT(T, mulmod_fast)(CAT(T, add)(B3, B2), w0, n, ninv); \
++    } \
+     LENGTH4INV_ANY_J(T, A1,A3,A5,A7, n,ninv, w0,ww0,ww1) \
+     x0 = A0; \
+     x1 = A1; \

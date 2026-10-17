@@ -1,0 +1,70 @@
+{
+  "created_utc": "2026-10-07T19:15:03.925405+00:00",
+  "candidate": "delayed-reduction",
+  "change": "Retiming reductions in the even branch of LENGTH8INV_ANY_J: four initial cuts plus one final cut replaced by Y0,Y1,Z1 cuts. Original 16/32 spectral frame; only nonzero inverse32 leaf changes. No earlier candidate combined.",
+  "range_contract": "p < 2^50, exact integer input magnitudes <2p, centered twiddles <p/2, FLINT checked mulmod bounds. All addition magnitudes <8p; output magnitudes <2p.",
+  "search": {
+    "schedules": 4096,
+    "minimum_reductions": 3,
+    "original_reductions": 5,
+    "scope": "One fixed even-branch arithmetic graph and conservative interval rules; not a lower bound over all FFT algorithms."
+  },
+  "assembly_gate": {
+    "inverse32_instructions": [
+      504,
+      490
+    ],
+    "inverse32_stack_references": [
+      22,
+      20
+    ],
+    "inverse16_unchanged": true
+  },
+  "sizes": [
+    4095,
+    4096,
+    4097,
+    6144,
+    8191,
+    8192,
+    8193,
+    12288,
+    16383,
+    16384,
+    16385
+  ],
+  "operations": [
+    "mul",
+    "sqr",
+    "unbalanced"
+  ],
+  "trials": 21,
+  "batch_ms": 10,
+  "runs": [
+    {
+      "name": "delayed-reduction-aa",
+      "candidate": "control",
+      "sizes": [
+        4096,
+        8192,
+        16384
+      ],
+      "seed": 71539
+    },
+    {
+      "name": "delayed-reduction-screen",
+      "candidate": "delayed-reduction",
+      "sizes": "all",
+      "seed": 93173
+    },
+    {
+      "name": "delayed-reduction-repeat",
+      "candidate": "delayed-reduction",
+      "sizes": "all",
+      "seed": 34719
+    }
+  ],
+  "baseline": "unmodified FLINT",
+  "primary_metric": "Thread CPU time. Equal weight across the nine cases inside 4096\u201316384 by shape. Retain CPU and wall per-case values and boundary cases.",
+  "decision": "Run both candidate passes irrespective of first pass. A practical win needs >=1% reduction and positive intervals in both passes, exceeding relink control. Otherwise retain as negative or unresolved and stop application/integration work. No post-hoc subset is a confirmation."
+}

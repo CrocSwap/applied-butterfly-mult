@@ -1,0 +1,118 @@
+{
+  "status": "PASS",
+  "preserved_fingerprints": 927,
+  "timed_batches": 9424,
+  "public_validation_outputs": 18706,
+  "minimum_accuracy_decreases": [],
+  "exact_check": {
+    "status": "PASS",
+    "calls": 768,
+    "exact_containments": 1060800,
+    "exact_odd_zeros": 259080,
+    "unchanged_coefficients": 536520
+  },
+  "campaigns": {
+    "initial": {
+      "current/mixed_batch": {
+        "cases": 4,
+        "median_cpu": 0.26250668326671667,
+        "positive_cpu": 1,
+        "positive_both": 0
+      },
+      "current/nonzero_control": {
+        "cases": 4,
+        "median_cpu": -0.19415123659753952,
+        "positive_cpu": 0,
+        "positive_both": 0
+      },
+      "current/ordinary_constants": {
+        "cases": 4,
+        "median_cpu": 0.6086762302979887,
+        "positive_cpu": 3,
+        "positive_both": 2
+      },
+      "current/rebuild_control": {
+        "cases": 4,
+        "median_cpu": 0.09127897977965205,
+        "positive_cpu": 0,
+        "positive_both": 0
+      },
+      "current/same_control": {
+        "cases": 2,
+        "median_cpu": -0.048418935058019974,
+        "positive_cpu": 0,
+        "positive_both": 0
+      },
+      "current/single_control": {
+        "cases": 2,
+        "median_cpu": -0.33488670191236247,
+        "positive_cpu": 0,
+        "positive_both": 0
+      },
+      "current/squared_constants": {
+        "cases": 18,
+        "median_cpu": 2.269378619600487,
+        "positive_cpu": 16,
+        "positive_both": 11
+      },
+      "original/squared_constants": {
+        "cases": 8,
+        "median_cpu": 5.5374344302525635,
+        "positive_cpu": 7,
+        "positive_both": 5
+      }
+    },
+    "confirmation": {
+      "current/nonzero_control": {
+        "cases": 4,
+        "median_cpu": -0.1916715651742118,
+        "positive_cpu": 0,
+        "positive_both": 0
+      },
+      "current/rebuild_control": {
+        "cases": 4,
+        "median_cpu": -0.14979305396059517,
+        "positive_cpu": 0,
+        "positive_both": 0
+      },
+      "current/same_control": {
+        "cases": 2,
+        "median_cpu": 0.029902915602419977,
+        "positive_cpu": 0,
+        "positive_both": 0
+      },
+      "current/single_control": {
+        "cases": 2,
+        "median_cpu": -0.5096491918063606,
+        "positive_cpu": 0,
+        "positive_both": 0
+      },
+      "current/squared_constants": {
+        "cases": 10,
+        "median_cpu": 1.367108755097518,
+        "positive_cpu": 10,
+        "positive_both": 9
+      },
+      "original/squared_constants": {
+        "cases": 8,
+        "median_cpu": 5.782828489158037,
+        "positive_cpu": 8,
+        "positive_both": 8
+      }
+    }
+  },
+  "note": "PASS verifies integrity, numerical checks and raw point estimates. It is not a claim of clean timing controls or general performance.",
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/audit_theta_equal.py": "c162d5679d6debc2f37cf4980236604479b09ad203c42632e3e35c642ad091f1",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-equal/summary.json": "b01ebf2024b490df7aad1c8a9a9776d0fe35160389706da19a3207647ed56cad",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-equal/confirmation/summary.json": "b1110c8e76e9cdd27de557bb4dccb230979be2c797e2f414a483aeaa99a38cef",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-equal/plan.json": "e0d63bd9125a09f8d97dfe6f6bdfe51bc876f9a1e9334c77bfaa3d9b40119616",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-equal/confirmation/plan.json": "ab81f962408846ded4f402629feaa962a5817430bede948be255fb3061421f1f",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-equal/validation.json": "1ad3e1e31b58c17419d3a017f10c550621333cef65a6250b0bf9026a4571935a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-equal/trace.json": "d854a2d429996f2d26e38c78645cbfd2cec053886900e50959001694605c1ec2",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/theta-batch/retained/libflint-experiment.dylib": "d91a06ba6d9b374a3fd38983945f1326f8b0b2ed841324e9406297e7deae176d",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/libflint.25.0.dylib": "31b9d75a502a408098b37990830d1f033a55fc5957e22ebf12cdaeb2a0fafe58",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/theta-batch/retained/ql_exact.lo": "5d8441b1782b52f6e23e84993bf0b870f9040579d2a4f4e68fd5c7df76301185",
+    "/Users/colkitt/sith/toys/math/butterflyMult/patches/theta-equal-bank.patch": "8bb2d6d94d6451a6062ec9139a106879e3231726bc33446cce291a1e8397d664"
+  }
+}

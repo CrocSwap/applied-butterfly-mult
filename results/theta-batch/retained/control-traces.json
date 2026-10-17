@@ -1,0 +1,34 @@
+[
+  {
+    "case": {
+      "g": 1,
+      "prec": 128,
+      "nb": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1
+    },
+    "calls": 0,
+    "first_preparation_ns": 0,
+    "total_ns": 541084,
+    "preparation_hits": 0,
+    "transform_hits": 0,
+    "transform_misses": 0
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 128,
+      "nb": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1
+    },
+    "calls": 0,
+    "first_preparation_ns": 0,
+    "total_ns": 340709,
+    "preparation_hits": 0,
+    "transform_hits": 0,
+    "transform_misses": 0
+  }
+]

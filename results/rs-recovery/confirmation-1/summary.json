@@ -1,0 +1,455 @@
+{
+  "raw_sha256": "2487cc61d3e67a1080d9198eb427350ce24349e41146dbb28f2f9fe81dcb968a",
+  "results": [
+    {
+      "case": {
+        "k": 256,
+        "n": 512,
+        "modulus": 18446744073709551557,
+        "bytes_per_symbol": 7,
+        "mode": "batch16",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p18446744073709551557.bin",
+        "candidate": "combined-v1",
+        "group": "active"
+      },
+      "cpu": {
+        "reduction_pct": 6.574124222247624,
+        "ci95_low_pct": 5.903173255474647,
+        "ci95_high_pct": 7.2372353998625405,
+        "baseline_median_ns": 58347.279541015625,
+        "candidate_median_ns": 54377.990478515625,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 6.57891121823817,
+        "ci95_low_pct": 5.885883152761218,
+        "ci95_high_pct": 7.254998870244034,
+        "baseline_median_ns": 58377.44140625,
+        "candidate_median_ns": 54423.583984375,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 512,
+        "n": 1024,
+        "modulus": 1000000007,
+        "bytes_per_symbol": 3,
+        "mode": "cached",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k512-p1000000007.bin",
+        "candidate": "combined-v1",
+        "group": "active"
+      },
+      "cpu": {
+        "reduction_pct": 4.089538244370328,
+        "ci95_low_pct": 3.0828326208799606,
+        "ci95_high_pct": 5.11390659066816,
+        "baseline_median_ns": 71371.39916992188,
+        "candidate_median_ns": 68680.51196289062,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 4.090116347605399,
+        "ci95_low_pct": 3.0577928113604824,
+        "ci95_high_pct": 5.1474170277341464,
+        "baseline_median_ns": 71437.01171875,
+        "candidate_median_ns": 68739.990234375,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 256,
+        "n": 512,
+        "modulus": 1000000007,
+        "bytes_per_symbol": 3,
+        "mode": "cached",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p1000000007.bin",
+        "candidate": "combined-v1",
+        "group": "active"
+      },
+      "cpu": {
+        "reduction_pct": 5.314251922972357,
+        "ci95_low_pct": 4.018888404022403,
+        "ci95_high_pct": 6.734192395155969,
+        "baseline_median_ns": 28703.221801757627,
+        "candidate_median_ns": 27035.797119140625,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 6.813241133673243,
+        "ci95_low_pct": 4.029057118745449,
+        "ci95_high_pct": 10.935576444097972,
+        "baseline_median_ns": 28773.5595703125,
+        "candidate_median_ns": 27064.3310546875,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 64,
+        "n": 128,
+        "modulus": 1000000007,
+        "bytes_per_symbol": 3,
+        "mode": "batch16",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k64-p1000000007.bin",
+        "candidate": "combined-v1",
+        "group": "active"
+      },
+      "cpu": {
+        "reduction_pct": 10.538435730150752,
+        "ci95_low_pct": 9.221722371947394,
+        "ci95_high_pct": 11.64400144463469,
+        "baseline_median_ns": 5003.898651123125,
+        "candidate_median_ns": 4458.813354492,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 9.111180885818747,
+        "ci95_low_pct": 4.09199561354,
+        "ci95_high_pct": 13.079503789507674,
+        "baseline_median_ns": 5032.16552734375,
+        "candidate_median_ns": 4470.04699707,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 256,
+        "n": 512,
+        "modulus": 1000000007,
+        "bytes_per_symbol": 3,
+        "mode": "cached",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p1000000007.bin",
+        "candidate": "original",
+        "group": "unchanged_control"
+      },
+      "cpu": {
+        "reduction_pct": 0.9812343869622042,
+        "ci95_low_pct": -0.990255285843511,
+        "ci95_high_pct": 3.6731442092322486,
+        "baseline_median_ns": 30313.781860351624,
+        "candidate_median_ns": 29705.159423828125,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 2.3079543541993264,
+        "ci95_low_pct": -1.1390025997314757,
+        "ci95_high_pct": 7.615400854211119,
+        "baseline_median_ns": 30503.90625,
+        "candidate_median_ns": 29884.6435546875,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 64,
+        "n": 128,
+        "modulus": 1000000007,
+        "bytes_per_symbol": 3,
+        "mode": "cached",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k64-p1000000007.bin",
+        "candidate": "combined-v1",
+        "group": "active"
+      },
+      "cpu": {
+        "reduction_pct": 8.685111253748701,
+        "ci95_low_pct": 7.5303407378776726,
+        "ci95_high_pct": 10.013225498491096,
+        "baseline_median_ns": 4477.861419677625,
+        "candidate_median_ns": 4050.0386657716253,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 6.972478211732181,
+        "ci95_low_pct": 3.4487802090739095,
+        "ci95_high_pct": 10.83619491731439,
+        "baseline_median_ns": 4503.60107421875,
+        "candidate_median_ns": 4067.596435547,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 256,
+        "n": 512,
+        "modulus": 1000000007,
+        "bytes_per_symbol": 3,
+        "mode": "changing",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p1000000007.bin",
+        "candidate": "combined-v1",
+        "group": "active"
+      },
+      "cpu": {
+        "reduction_pct": 16.34959742541674,
+        "ci95_low_pct": 15.141539630153744,
+        "ci95_high_pct": 17.62963276189756,
+        "baseline_median_ns": 114669.33203125,
+        "candidate_median_ns": 96855.65087890625,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 17.801741444662056,
+        "ci95_low_pct": 15.708908652946574,
+        "ci95_high_pct": 20.10201333022341,
+        "baseline_median_ns": 115278.80859375,
+        "candidate_median_ns": 97217.28515625,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 256,
+        "n": 512,
+        "modulus": 18446744073709551557,
+        "bytes_per_symbol": 7,
+        "mode": "changing",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p18446744073709551557.bin",
+        "candidate": "combined-v1",
+        "group": "active"
+      },
+      "cpu": {
+        "reduction_pct": 19.191396271024598,
+        "ci95_low_pct": 18.396527277249497,
+        "ci95_high_pct": 19.768400703935452,
+        "baseline_median_ns": 189151.490234375,
+        "candidate_median_ns": 152764.607421875,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 18.942236206544905,
+        "ci95_low_pct": 17.711163374850624,
+        "ci95_high_pct": 19.74227824848245,
+        "baseline_median_ns": 190007.8125,
+        "candidate_median_ns": 153475.09765625,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 256,
+        "n": 512,
+        "modulus": 1000000007,
+        "bytes_per_symbol": 3,
+        "mode": "batch16",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p1000000007.bin",
+        "candidate": "combined-v1",
+        "group": "active"
+      },
+      "cpu": {
+        "reduction_pct": 6.723137667620871,
+        "ci95_low_pct": 6.127928417270978,
+        "ci95_high_pct": 7.337376034971232,
+        "baseline_median_ns": 34799.8553466795,
+        "candidate_median_ns": 32655.954956054626,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 7.998629969744564,
+        "ci95_low_pct": 6.318484600150165,
+        "ci95_high_pct": 10.26470540849973,
+        "baseline_median_ns": 34983.642578125,
+        "candidate_median_ns": 32798.828125,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 256,
+        "n": 512,
+        "modulus": 1000000007,
+        "bytes_per_symbol": 3,
+        "mode": "batch16",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p1000000007.bin",
+        "candidate": "original",
+        "group": "unchanged_control"
+      },
+      "cpu": {
+        "reduction_pct": -0.8317533075315575,
+        "ci95_low_pct": -2.114392476659721,
+        "ci95_high_pct": 0.39073051668829795,
+        "baseline_median_ns": 34987.487792968874,
+        "candidate_median_ns": 34935.368774414004,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": -2.5087596670611223,
+        "ci95_low_pct": -5.058245504106784,
+        "ci95_high_pct": -0.14962352511525,
+        "baseline_median_ns": 35156.494140625,
+        "candidate_median_ns": 35084.1064453125,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 512,
+        "n": 1024,
+        "modulus": 1000000007,
+        "bytes_per_symbol": 3,
+        "mode": "batch16",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k512-p1000000007.bin",
+        "candidate": "combined-v1",
+        "group": "active"
+      },
+      "cpu": {
+        "reduction_pct": 5.970000675638188,
+        "ci95_low_pct": 5.394994178257151,
+        "ci95_high_pct": 6.550227439119338,
+        "baseline_median_ns": 89092.326171875,
+        "candidate_median_ns": 83848.591796875,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 5.887055207908343,
+        "ci95_low_pct": 5.128754535915192,
+        "ci95_high_pct": 6.596507350069302,
+        "baseline_median_ns": 89557.6171875,
+        "candidate_median_ns": 84248.53515625,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 512,
+        "n": 1024,
+        "modulus": 1000000007,
+        "bytes_per_symbol": 3,
+        "mode": "changing",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k512-p1000000007.bin",
+        "candidate": "combined-v1",
+        "group": "active"
+      },
+      "cpu": {
+        "reduction_pct": 11.75148062346576,
+        "ci95_low_pct": 10.99165612959675,
+        "ci95_high_pct": 12.47873546485252,
+        "baseline_median_ns": 294549.599609375,
+        "candidate_median_ns": 259006.2646484375,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 12.618287066396128,
+        "ci95_low_pct": 11.001061343668683,
+        "ci95_high_pct": 14.854117403798783,
+        "baseline_median_ns": 295683.59375,
+        "candidate_median_ns": 260152.34375,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 256,
+        "n": 512,
+        "modulus": 18446744073709551557,
+        "bytes_per_symbol": 7,
+        "mode": "cached",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p18446744073709551557.bin",
+        "candidate": "combined-v1",
+        "group": "active"
+      },
+      "cpu": {
+        "reduction_pct": 0.5387240434321927,
+        "ci95_low_pct": -1.293579410695278,
+        "ci95_high_pct": 2.26666469106106,
+        "baseline_median_ns": 52956.044189453125,
+        "candidate_median_ns": 52181.416748046875,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": -2.9403576654801533,
+        "ci95_low_pct": -7.507877931021856,
+        "ci95_high_pct": 1.2993444615531313,
+        "baseline_median_ns": 53204.58984375,
+        "candidate_median_ns": 52425.048828125,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 64,
+        "n": 128,
+        "modulus": 1000000007,
+        "bytes_per_symbol": 3,
+        "mode": "changing",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k64-p1000000007.bin",
+        "candidate": "combined-v1",
+        "group": "active"
+      },
+      "cpu": {
+        "reduction_pct": 24.221892474326246,
+        "ci95_low_pct": 23.387555802317962,
+        "ci95_high_pct": 25.11857673963026,
+        "baseline_median_ns": 17357.246398925752,
+        "candidate_median_ns": 13205.76477050775,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 22.434009510964724,
+        "ci95_low_pct": 19.22598100715629,
+        "ci95_high_pct": 24.96178526784828,
+        "baseline_median_ns": 17550.72021484375,
+        "candidate_median_ns": 13272.03369140625,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "case": {
+        "k": 256,
+        "n": 512,
+        "modulus": 1000000007,
+        "bytes_per_symbol": 3,
+        "mode": "changing",
+        "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p1000000007.bin",
+        "candidate": "original",
+        "group": "unchanged_control"
+      },
+      "cpu": {
+        "reduction_pct": -0.753561179629636,
+        "ci95_low_pct": -3.2946067829709103,
+        "ci95_high_pct": 1.3709658227288313,
+        "baseline_median_ns": 144394.00244140625,
+        "candidate_median_ns": 143624.064453125,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 0.4453378933196861,
+        "ci95_low_pct": -4.073459280540637,
+        "ci95_high_pct": 4.567915560930402,
+        "baseline_median_ns": 145169.921875,
+        "candidate_median_ns": 144496.58203125,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    }
+  ]
+}

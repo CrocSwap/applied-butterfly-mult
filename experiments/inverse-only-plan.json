@@ -1,0 +1,30 @@
+{
+  "scope": "Exploratory complete public inverse transforms, NOT integer multiplication or application confirmation.",
+  "sizes": [
+    128,
+    256,
+    512,
+    1024
+  ],
+  "trials": 41,
+  "batch_ms": 10,
+  "baseline": ".deps/flint/libflint.25.0.dylib",
+  "runs": [
+    {
+      "name": "inverse-only-aa",
+      "candidate": "control",
+      "seed": 98713
+    },
+    {
+      "name": "inverse-only-screen",
+      "candidate": "delayed-reduction",
+      "seed": 21893
+    },
+    {
+      "name": "inverse-only-repeat",
+      "candidate": "delayed-reduction",
+      "seed": 67139
+    }
+  ],
+  "decision": "Report every size. 128 and 512 execute the changed leaf; 256 and 1024 are inactive controls. Require a positive CPU interval in both candidate runs for a local speedup; no extrapolation to multiplication."
+}

@@ -1,0 +1,100 @@
+{
+  "started_utc": "2026-10-07T20:46:03.282889+00:00",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "plan": {
+    "cases": [
+      [
+        8,
+        240,
+        1000000007,
+        "full"
+      ],
+      [
+        8,
+        256,
+        1000000007,
+        "full"
+      ],
+      [
+        8,
+        1008,
+        1000000007,
+        "full"
+      ],
+      [
+        8,
+        1024,
+        1000000007,
+        "full"
+      ],
+      [
+        8,
+        1024,
+        1108307720798209,
+        "full"
+      ],
+      [
+        4,
+        256,
+        1000000007,
+        "full"
+      ]
+    ],
+    "trials": 15,
+    "batch_ms": 5,
+    "seed": 491811,
+    "scope": "Exploratory screen of fixed four-column tiles; choose a candidate only after correctness and assembly review. No confirmation claim from this run."
+  },
+  "seed": 491811,
+  "case_order": [
+    [
+      8,
+      256,
+      1000000007,
+      "full"
+    ],
+    [
+      8,
+      1024,
+      1108307720798209,
+      "full"
+    ],
+    [
+      8,
+      1008,
+      1000000007,
+      "full"
+    ],
+    [
+      8,
+      240,
+      1000000007,
+      "full"
+    ],
+    [
+      4,
+      256,
+      1000000007,
+      "full"
+    ],
+    [
+      8,
+      1024,
+      1000000007,
+      "full"
+    ]
+  ],
+  "baseline": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/libflint.25.0.dylib",
+  "candidate": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/poly-shared4-wide/libflint-experiment.dylib",
+  "method": "Two resident dylibs, one thread, independent KS checks, 100ms combined warmup, equal iterations, alternating ABBA/BAAB quartets. Complete warm public calls, including allocation and conversion. Circular block bootstrap across quartets.",
+  "sha256": {
+    ".deps/flint/libflint.25.0.dylib": "31b9d75a502a408098b37990830d1f033a55fc5957e22ebf12cdaeb2a0fafe58",
+    ".deps/experiments/poly-shared4-wide/libflint-experiment.dylib": "03e254abc30719b76f2cddf8ac1f491282b9e4f8f3f43b0ba910a0f4685b3d56",
+    "build/compare-poly": "bd71e9f02b0225fbbe41c6faa64b0bdb9f899993069c609d21a9870e26e6cf4a",
+    "bench/compare_poly.c": "88226a90f058737f1308038bd6ae33f338865ea09f3b5a95b5a2743c042d766d",
+    "bench/poly_survey.c": "dc33b45f7cdf11e1692570dbd2475cf5701f490e80cc9ec6b37be131e13269ec",
+    "scripts/compare_poly.py": "56e3a1578bff1042a2b055c33cf17b571d54854a28a6bf0a62efd46e4189b950",
+    "experiments/poly-kernel-screen-plan.json": "9a854085e9304ebcb3b02aa5189715e8f195dc644adce95c8c061db45151353d",
+    "scripts/compare.py": "d39062f684dc872dc37b895723a42e1d31add2dce640132a5d1114c24f203fac"
+  }
+}

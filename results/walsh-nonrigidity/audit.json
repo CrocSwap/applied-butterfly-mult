@@ -1,0 +1,199 @@
+{
+  "status": "PASS",
+  "verified_fingerprints": 970,
+  "timed_batches": 12224,
+  "retry_batches": 0,
+  "numerical_comparisons": 204,
+  "output_enclosures_checked": 217608,
+  "confirmation_groups": [
+    {
+      "target": 512,
+      "candidate": 2,
+      "cases": 8,
+      "median_cpu": 7.606154590263276,
+      "min_cpu": 2.8105030039978773,
+      "max_cpu": 12.71849851525002,
+      "positive_cpu": 8,
+      "positive_both": 8
+    },
+    {
+      "target": 512,
+      "candidate": 3,
+      "cases": 8,
+      "median_cpu": 6.658624685083931,
+      "min_cpu": 0.7266687542346051,
+      "max_cpu": 12.415275074973698,
+      "positive_cpu": 8,
+      "positive_both": 7
+    },
+    {
+      "target": 4096,
+      "candidate": 2,
+      "cases": 8,
+      "median_cpu": 10.176574271868605,
+      "min_cpu": 8.120148804108807,
+      "max_cpu": 12.487367412430872,
+      "positive_cpu": 8,
+      "positive_both": 8
+    },
+    {
+      "target": 4096,
+      "candidate": 3,
+      "cases": 8,
+      "median_cpu": 8.573383667790013,
+      "min_cpu": 3.8606486989501865,
+      "max_cpu": 11.187624157804931,
+      "positive_cpu": 8,
+      "positive_both": 8
+    },
+    {
+      "target": 32768,
+      "candidate": 2,
+      "cases": 8,
+      "median_cpu": -5.0431072461822986,
+      "min_cpu": -10.78832451142102,
+      "max_cpu": -1.6052206274224767,
+      "positive_cpu": 0,
+      "positive_both": 0
+    },
+    {
+      "target": 32768,
+      "candidate": 3,
+      "cases": 8,
+      "median_cpu": -29.856467236713748,
+      "min_cpu": -46.82145669842106,
+      "max_cpu": -20.79129985017696,
+      "positive_cpu": 0,
+      "positive_both": 0
+    }
+  ],
+  "controls": [
+    {
+      "case": {
+        "logn": 12,
+        "target": 4096,
+        "fixture": 0,
+        "base": 0,
+        "candidate": 0,
+        "trials": 31,
+        "control": true
+      },
+      "cpu": {
+        "reduction_pct": 0.020017191720944627,
+        "ci95_low_pct": -1.629897012774717,
+        "ci95_high_pct": 1.356830119383301,
+        "baseline_median_ns": 5593854.125,
+        "candidate_median_ns": 5520562.375,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": -0.1727171482316603,
+        "ci95_low_pct": -1.9770965281727948,
+        "ci95_high_pct": 1.299444718536491,
+        "baseline_median_ns": 5599500.0,
+        "candidate_median_ns": 5527875.0,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "logn": 6,
+        "target": 4096,
+        "fixture": 0,
+        "base": 0,
+        "candidate": 0,
+        "trials": 31,
+        "control": true
+      },
+      "cpu": {
+        "reduction_pct": 0.37180722261390686,
+        "ci95_low_pct": 0.05211243450590208,
+        "ci95_high_pct": 0.7075439531672556,
+        "baseline_median_ns": 30988.464500000002,
+        "candidate_median_ns": 31001.057500000003,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 0.48144901033824183,
+        "ci95_low_pct": -0.026572877184660726,
+        "ci95_high_pct": 1.0693000701308963,
+        "baseline_median_ns": 30998.047,
+        "candidate_median_ns": 31000.976499999997,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "logn": 12,
+        "target": 4096,
+        "fixture": 0,
+        "base": 2,
+        "candidate": 2,
+        "trials": 31,
+        "control": true
+      },
+      "cpu": {
+        "reduction_pct": -0.12084941921284287,
+        "ci95_low_pct": -0.4638596252714011,
+        "ci95_high_pct": 0.22071097364960712,
+        "baseline_median_ns": 3721453.125,
+        "candidate_median_ns": 3714523.4375,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": -0.20271022423725693,
+        "ci95_low_pct": -0.6133267292417477,
+        "ci95_high_pct": 0.162128521119409,
+        "baseline_median_ns": 3723625.0,
+        "candidate_median_ns": 3715937.5,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "logn": 6,
+        "target": 4096,
+        "fixture": 0,
+        "base": 2,
+        "candidate": 2,
+        "trials": 31,
+        "control": true
+      },
+      "cpu": {
+        "reduction_pct": 0.18422489096682204,
+        "ci95_low_pct": -0.056563454399749524,
+        "ci95_high_pct": 0.3884400987510528,
+        "baseline_median_ns": 25539.245499999997,
+        "candidate_median_ns": 25515.3805,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 0.13930998914561954,
+        "ci95_low_pct": -0.11327844868078696,
+        "ci95_high_pct": 0.35423205868329033,
+        "baseline_median_ns": 25559.082000000002,
+        "candidate_median_ns": 25538.574,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    }
+  ],
+  "note": "Integrity and numerical audit; marginal timing intervals are not simultaneous confidence bounds. No complete application is benchmarked.",
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/audit_walsh_nonrigidity.py": "8b9c040b3954745e03b45b9a945cc0f9049959d2824daef0187bcb6eddd0c5d7",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-nonrigidity/plan.json": "6fac7178cb6e2f6e6a47cd504f5b2121f8b83d31610172ee49e4f310eb5f6fc7",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-nonrigidity/raw.jsonl": "cd80bd5831cecdc32e47dd8d3848894104f1fe736cf3bcec37900ae0a99eaec8",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-nonrigidity/summary.json": "8e3d2bf57cbb25704838c7eb228e369481de0d8f813ab8fe72c6c427fde929ea",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-nonrigidity/confirmation/plan.json": "52942437e219c35a1cdd10dfd0cdf9ead1be6e7f84893db2910c1acdbc9291e7",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-nonrigidity/confirmation/raw.jsonl": "c74d9a3d8f02296259fcd09e911f50bc406b6a84cf1c78a31707e70aaa8646ac",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-nonrigidity/confirmation/summary.json": "99309221532b2fb0d2bfb8f66ca53a2b44e71b3e606d5f0d9127faaa7403e534",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-nonrigidity/validation.json": "dc2757b11276e089d066cfe9572b54ec8850756052b358389eb260194312390b"
+  }
+}

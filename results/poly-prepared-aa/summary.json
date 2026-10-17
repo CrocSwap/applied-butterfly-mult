@@ -1,0 +1,152 @@
+[
+  {
+    "dim": 8,
+    "length": 1024,
+    "modulus": 1108307720798209,
+    "window": "full",
+    "supported": true,
+    "cpu": {
+      "reduction_pct": -0.15079580477110888,
+      "ci95_low_pct": -0.7030373737346718,
+      "ci95_high_pct": 0.3377798745376359,
+      "baseline_median_ns": 2140854.125,
+      "candidate_median_ns": 2136903.625,
+      "quartets": 31,
+      "bootstrap_block": 5
+    },
+    "wall": {
+      "reduction_pct": -0.13665921046177587,
+      "ci95_low_pct": -0.663618046074621,
+      "ci95_high_pct": 0.3322452776999052,
+      "baseline_median_ns": 2140875.0,
+      "candidate_median_ns": 2136937.5,
+      "quartets": 31,
+      "bootstrap_block": 5
+    }
+  },
+  {
+    "dim": 8,
+    "length": 1024,
+    "modulus": 1000000007,
+    "window": "full",
+    "supported": true,
+    "cpu": {
+      "reduction_pct": 0.2209010726688332,
+      "ci95_low_pct": -0.1925325063700134,
+      "ci95_high_pct": 0.6600811282281516,
+      "baseline_median_ns": 4572765.5,
+      "candidate_median_ns": 4569234.375,
+      "quartets": 31,
+      "bootstrap_block": 5
+    },
+    "wall": {
+      "reduction_pct": 0.3699118014784064,
+      "ci95_low_pct": -0.13948703933464035,
+      "ci95_high_pct": 0.9548324359888283,
+      "baseline_median_ns": 4574000.0,
+      "candidate_median_ns": 4570125.0,
+      "quartets": 31,
+      "bootstrap_block": 5
+    }
+  },
+  {
+    "dim": 8,
+    "length": 1008,
+    "modulus": 1000000007,
+    "window": "full",
+    "supported": true,
+    "cpu": {
+      "reduction_pct": -0.18612646051403559,
+      "ci95_low_pct": -0.6965072880633194,
+      "ci95_high_pct": 0.3051159910084422,
+      "baseline_median_ns": 3343656.25,
+      "candidate_median_ns": 3354203.125,
+      "quartets": 31,
+      "bootstrap_block": 5
+    },
+    "wall": {
+      "reduction_pct": -0.16999146106453367,
+      "ci95_low_pct": -0.7162719138579021,
+      "ci95_high_pct": 0.35229382937519427,
+      "baseline_median_ns": 3345750.0,
+      "candidate_median_ns": 3354125.0,
+      "quartets": 31,
+      "bootstrap_block": 5
+    }
+  },
+  {
+    "dim": 8,
+    "length": 240,
+    "modulus": 1000000007,
+    "window": "full",
+    "supported": true,
+    "cpu": {
+      "reduction_pct": -0.4233791930405628,
+      "ci95_low_pct": -0.9509153013174343,
+      "ci95_high_pct": 0.08581050376242905,
+      "baseline_median_ns": 750975.25,
+      "candidate_median_ns": 753014.34375,
+      "quartets": 31,
+      "bootstrap_block": 5
+    },
+    "wall": {
+      "reduction_pct": -0.32851342888555735,
+      "ci95_low_pct": -0.8714880592738838,
+      "ci95_high_pct": 0.20954206711067958,
+      "baseline_median_ns": 750968.75,
+      "candidate_median_ns": 753031.25,
+      "quartets": 31,
+      "bootstrap_block": 5
+    }
+  },
+  {
+    "dim": 4,
+    "length": 256,
+    "modulus": 1000000007,
+    "window": "full",
+    "supported": true,
+    "cpu": {
+      "reduction_pct": -0.26332123543750807,
+      "ci95_low_pct": -0.7382770884128975,
+      "ci95_high_pct": 0.25477571884772177,
+      "baseline_median_ns": 192046.546875,
+      "candidate_median_ns": 193029.6171875,
+      "quartets": 31,
+      "bootstrap_block": 5
+    },
+    "wall": {
+      "reduction_pct": -0.32640311076874706,
+      "ci95_low_pct": -0.7446150624633052,
+      "ci95_high_pct": 0.12070630250519132,
+      "baseline_median_ns": 192062.5,
+      "candidate_median_ns": 193039.0625,
+      "quartets": 31,
+      "bootstrap_block": 5
+    }
+  },
+  {
+    "dim": 8,
+    "length": 256,
+    "modulus": 1000000007,
+    "window": "full",
+    "supported": true,
+    "cpu": {
+      "reduction_pct": -0.12398857701512167,
+      "ci95_low_pct": -0.5655519938890352,
+      "ci95_high_pct": 0.2860561123062433,
+      "baseline_median_ns": 1079377.59375,
+      "candidate_median_ns": 1077507.78125,
+      "quartets": 31,
+      "bootstrap_block": 5
+    },
+    "wall": {
+      "reduction_pct": 0.3280508625842393,
+      "ci95_low_pct": -0.411798157999943,
+      "ci95_high_pct": 1.191107947970449,
+      "baseline_median_ns": 1079875.0,
+      "candidate_median_ns": 1077593.75,
+      "quartets": 31,
+      "bootstrap_block": 5
+    }
+  }
+]

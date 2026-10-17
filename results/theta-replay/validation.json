@@ -1,0 +1,330 @@
+[
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 0,
+      "nb": 1,
+      "group": "constants"
+    },
+    "path": "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-replay/3-512-0-1-1.arb",
+    "capture": {
+      "status": "PASS",
+      "bitwise_equal_outputs": 64,
+      "working_precision": 512,
+      "attempts": 1
+    },
+    "replay": {
+      "status": "PASS",
+      "component_box_checks": 1184,
+      "transforms": 22,
+      "values": 148,
+      "zero_imaginary": 55,
+      "inexact_values": 92,
+      "precision_range": [
+        512,
+        2047
+      ],
+      "sites": [
+        8,
+        14
+      ],
+      "log_sizes": [
+        0,
+        0,
+        7,
+        15,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 1,
+      "nb": 1,
+      "group": "constants"
+    },
+    "path": "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-replay/3-512-1-1-1.arb",
+    "capture": {
+      "status": "PASS",
+      "bitwise_equal_outputs": 64,
+      "working_precision": 512,
+      "attempts": 1
+    },
+    "replay": {
+      "status": "PASS",
+      "component_box_checks": 1184,
+      "transforms": 22,
+      "values": 148,
+      "zero_imaginary": 57,
+      "inexact_values": 92,
+      "precision_range": [
+        512,
+        2138
+      ],
+      "sites": [
+        8,
+        14
+      ],
+      "log_sizes": [
+        0,
+        0,
+        7,
+        15,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "case": {
+      "g": 6,
+      "prec": 512,
+      "fixture": 0,
+      "nb": 1,
+      "group": "constants"
+    },
+    "path": "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-replay/6-512-0-1-1.arb",
+    "capture": {
+      "status": "PASS",
+      "bitwise_equal_outputs": 4096,
+      "working_precision": 512,
+      "attempts": 1
+    },
+    "replay": {
+      "status": "PASS",
+      "component_box_checks": 22784,
+      "transforms": 76,
+      "values": 2848,
+      "zero_imaginary": 305,
+      "inexact_values": 2464,
+      "precision_range": [
+        512,
+        2366
+      ],
+      "sites": [
+        64,
+        12
+      ],
+      "log_sizes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        63,
+        13
+      ]
+    }
+  },
+  {
+    "case": {
+      "g": 6,
+      "prec": 512,
+      "fixture": 1,
+      "nb": 1,
+      "group": "constants"
+    },
+    "path": "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-replay/6-512-1-1-1.arb",
+    "capture": {
+      "status": "PASS",
+      "bitwise_equal_outputs": 4096,
+      "working_precision": 512,
+      "attempts": 1
+    },
+    "replay": {
+      "status": "PASS",
+      "component_box_checks": 22784,
+      "transforms": 76,
+      "values": 2848,
+      "zero_imaginary": 304,
+      "inexact_values": 2464,
+      "precision_range": [
+        512,
+        2448
+      ],
+      "sites": [
+        64,
+        12
+      ],
+      "log_sizes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        63,
+        13
+      ]
+    }
+  },
+  {
+    "case": {
+      "g": 4,
+      "prec": 2048,
+      "fixture": 0,
+      "nb": 1,
+      "group": "constants"
+    },
+    "path": "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-replay/4-2048-0-1-1.arb",
+    "capture": {
+      "status": "PASS",
+      "bitwise_equal_outputs": 256,
+      "working_precision": 2048,
+      "attempts": 1
+    },
+    "replay": {
+      "status": "PASS",
+      "component_box_checks": 3392,
+      "transforms": 34,
+      "values": 424,
+      "zero_imaginary": 172,
+      "inexact_values": 280,
+      "precision_range": [
+        2048,
+        10532
+      ],
+      "sites": [
+        16,
+        18
+      ],
+      "log_sizes": [
+        0,
+        0,
+        0,
+        15,
+        19,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "case": {
+      "g": 4,
+      "prec": 2048,
+      "fixture": 1,
+      "nb": 1,
+      "group": "constants"
+    },
+    "path": "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-replay/4-2048-1-1-1.arb",
+    "capture": {
+      "status": "PASS",
+      "bitwise_equal_outputs": 256,
+      "working_precision": 2048,
+      "attempts": 1
+    },
+    "replay": {
+      "status": "PASS",
+      "component_box_checks": 3392,
+      "transforms": 34,
+      "values": 424,
+      "zero_imaginary": 173,
+      "inexact_values": 280,
+      "precision_range": [
+        2048,
+        10967
+      ],
+      "sites": [
+        16,
+        18
+      ],
+      "log_sizes": [
+        0,
+        0,
+        0,
+        15,
+        19,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 0,
+      "nb": 4,
+      "group": "mixed"
+    },
+    "path": "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-replay/3-512-0-1-4.arb",
+    "capture": {
+      "status": "PASS",
+      "bitwise_equal_outputs": 256,
+      "working_precision": 512,
+      "attempts": 1
+    },
+    "replay": {
+      "status": "PASS",
+      "component_box_checks": 5408,
+      "transforms": 88,
+      "values": 676,
+      "zero_imaginary": 221,
+      "inexact_values": 452,
+      "precision_range": [
+        512,
+        2052
+      ],
+      "sites": [
+        32,
+        56
+      ],
+      "log_sizes": [
+        0,
+        0,
+        7,
+        81,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 1,
+      "nb": 4,
+      "group": "mixed"
+    },
+    "path": "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-replay/3-512-1-1-4.arb",
+    "capture": {
+      "status": "PASS",
+      "bitwise_equal_outputs": 256,
+      "working_precision": 512,
+      "attempts": 1
+    },
+    "replay": {
+      "status": "PASS",
+      "component_box_checks": 5408,
+      "transforms": 88,
+      "values": 676,
+      "zero_imaginary": 223,
+      "inexact_values": 452,
+      "precision_range": [
+        512,
+        2140
+      ],
+      "sites": [
+        32,
+        56
+      ],
+      "log_sizes": [
+        0,
+        0,
+        7,
+        81,
+        0,
+        0,
+        0
+      ]
+    }
+  }
+]

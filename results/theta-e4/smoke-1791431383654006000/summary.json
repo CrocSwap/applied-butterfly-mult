@@ -1,0 +1,197 @@
+{
+  "kind": "synthetic infrastructure checks; no performance claim",
+  "checks": [
+    {
+      "matrix": "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-e4/smoke-1791431383654006000/diagonal-g1.tau",
+      "base": "original",
+      "status": "PASS",
+      "independent_oracle": true,
+      "g": 1,
+      "target_bits": 256,
+      "accuracy": [
+        505,
+        506
+      ],
+      "working_precision": [
+        512,
+        512
+      ],
+      "attempts": [
+        4,
+        4
+      ]
+    },
+    {
+      "matrix": "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-e4/smoke-1791431383654006000/diagonal-g1.tau",
+      "base": "current",
+      "status": "PASS",
+      "independent_oracle": true,
+      "g": 1,
+      "target_bits": 256,
+      "accuracy": [
+        506,
+        506
+      ],
+      "working_precision": [
+        512,
+        512
+      ],
+      "attempts": [
+        4,
+        4
+      ]
+    },
+    {
+      "matrix": "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-e4/smoke-1791431383654006000/diagonal-g2.tau",
+      "base": "original",
+      "status": "PASS",
+      "independent_oracle": true,
+      "g": 2,
+      "target_bits": 256,
+      "accuracy": [
+        499,
+        500
+      ],
+      "working_precision": [
+        512,
+        512
+      ],
+      "attempts": [
+        4,
+        4
+      ]
+    },
+    {
+      "matrix": "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-e4/smoke-1791431383654006000/diagonal-g2.tau",
+      "base": "current",
+      "status": "PASS",
+      "independent_oracle": true,
+      "g": 2,
+      "target_bits": 256,
+      "accuracy": [
+        500,
+        500
+      ],
+      "working_precision": [
+        512,
+        512
+      ],
+      "attempts": [
+        4,
+        4
+      ]
+    },
+    {
+      "matrix": "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-e4/smoke-1791431383654006000/diagonal-g6.tau",
+      "base": "original",
+      "status": "PASS",
+      "independent_oracle": true,
+      "g": 6,
+      "target_bits": 256,
+      "accuracy": [
+        470,
+        470
+      ],
+      "working_precision": [
+        512,
+        512
+      ],
+      "attempts": [
+        4,
+        4
+      ]
+    },
+    {
+      "matrix": "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-e4/smoke-1791431383654006000/diagonal-g6.tau",
+      "base": "current",
+      "status": "PASS",
+      "independent_oracle": true,
+      "g": 6,
+      "target_bits": 256,
+      "accuracy": [
+        470,
+        470
+      ],
+      "working_precision": [
+        512,
+        512
+      ],
+      "attempts": [
+        4,
+        4
+      ]
+    },
+    {
+      "matrix": "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-e4/smoke-1791431383654006000/coupled-g2.tau",
+      "base": "original",
+      "status": "PASS",
+      "independent_oracle": true,
+      "g": 2,
+      "target_bits": 256,
+      "accuracy": [
+        504,
+        504
+      ],
+      "working_precision": [
+        512,
+        512
+      ],
+      "attempts": [
+        4,
+        4
+      ]
+    },
+    {
+      "matrix": "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-e4/smoke-1791431383654006000/coupled-g2.tau",
+      "base": "current",
+      "status": "PASS",
+      "independent_oracle": true,
+      "g": 2,
+      "target_bits": 256,
+      "accuracy": [
+        504,
+        504
+      ],
+      "working_precision": [
+        512,
+        512
+      ],
+      "attempts": [
+        4,
+        4
+      ]
+    },
+    {
+      "check": "precision_cap",
+      "returncode": 3,
+      "result": {
+        "status": "accuracy_cap",
+        "accuracy": [
+          122,
+          122
+        ],
+        "attempts": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "check": "tagged_integer_export",
+      "status": "PASS"
+    }
+  ],
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-e4/theta-e4": "f7c380cd7bff770fc9875bf30899f709e2a8e938843a82d9bc5573bc00729cdd",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/theta_e4.c": "b97548865de130b4208b633ed961be65ef06adef5a99f3b783a1e066ca28e113",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/theta_e4.py": "7886649c8c1d57e47a393cff8f988dbaa70645f7310ed3f639c90c9ece839de9",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-e4/smoke-1791431383654006000/diagonal-g1.tau": "37637cab9a8bc99e0912497673cd3f05b0ff11e6e30fa3c28733e2fbec2e3da2",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-e4/smoke-1791431383654006000/diagonal-g2.tau": "423b05b63e4355bb04e09a1a286fd9d64a2b726dcffe7291983389475ecc6005",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-e4/smoke-1791431383654006000/diagonal-g6.tau": "faa226d344e1f7f05475addce6b25b05265a48b1dcd352b49d25b8cd1d7e1585",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-e4/smoke-1791431383654006000/coupled-g2.tau": "68fdeadece8e9242ec4e39cc2669c4ed8be3b1974b0e4eb292702a06f360359c",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/libflint.25.0.dylib": "31b9d75a502a408098b37990830d1f033a55fc5957e22ebf12cdaeb2a0fafe58",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/theta-batch/retained/libflint-experiment.dylib": "d91a06ba6d9b374a3fd38983945f1326f8b0b2ed841324e9406297e7deae176d",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/theta-equal/candidate/libflint-experiment.dylib": "798e34cdef1b6c64840b99de01fe241145ae2ef5022217beea0e608f2cbeef2f",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/theta-equal/rebuild/libflint-experiment.dylib": "0fdee88f6b78073e5b412780f2ac3013fbbf184214080bf2f30e96e1f96c63ea"
+  }
+}

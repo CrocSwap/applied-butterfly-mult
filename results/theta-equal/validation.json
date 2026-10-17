@@ -1,0 +1,494 @@
+[
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "fixture": 0,
+      "group": "squared_constants"
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "minimum_accuracy_baseline": 507,
+    "minimum_accuracy_candidate": 507,
+    "radius_sum_ratio": 0.758651986,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "fixture": 1,
+      "group": "squared_constants"
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "minimum_accuracy_baseline": 508,
+    "minimum_accuracy_candidate": 508,
+    "radius_sum_ratio": 0.771137884,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 2048,
+      "fixture": 0,
+      "group": "squared_constants"
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "minimum_accuracy_baseline": 2043,
+    "minimum_accuracy_candidate": 2043,
+    "radius_sum_ratio": 0.758638665,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 2048,
+      "fixture": 1,
+      "group": "squared_constants"
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "minimum_accuracy_baseline": 2043,
+    "minimum_accuracy_candidate": 2043,
+    "radius_sum_ratio": 0.747225992,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "fixture": 0,
+      "group": "squared_constants"
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 505,
+    "minimum_accuracy_candidate": 505,
+    "radius_sum_ratio": 0.827801144,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "fixture": 1,
+      "group": "squared_constants"
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 506,
+    "minimum_accuracy_candidate": 506,
+    "radius_sum_ratio": 0.842280596,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "fixture": 0,
+      "group": "squared_constants"
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 2043,
+    "minimum_accuracy_candidate": 2043,
+    "radius_sum_ratio": 0.829398101,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "fixture": 1,
+      "group": "squared_constants"
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 2043,
+    "minimum_accuracy_candidate": 2043,
+    "radius_sum_ratio": 0.841336198,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 0,
+      "group": "squared_constants"
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 495,
+    "minimum_accuracy_candidate": 495,
+    "radius_sum_ratio": 0.78611088,
+    "wider_outputs": 4
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 1,
+      "group": "squared_constants"
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 495,
+    "minimum_accuracy_candidate": 495,
+    "radius_sum_ratio": 0.8060242,
+    "wider_outputs": 5
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "fixture": 0,
+      "group": "squared_constants"
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 2030,
+    "minimum_accuracy_candidate": 2030,
+    "radius_sum_ratio": 0.786110451,
+    "wider_outputs": 5
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "fixture": 1,
+      "group": "squared_constants"
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 2030,
+    "minimum_accuracy_candidate": 2030,
+    "radius_sum_ratio": 0.806024306,
+    "wider_outputs": 9
+  },
+  {
+    "case": {
+      "g": 4,
+      "prec": 512,
+      "fixture": 0,
+      "group": "squared_constants"
+    },
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 494,
+    "minimum_accuracy_candidate": 494,
+    "radius_sum_ratio": 0.760465714,
+    "wider_outputs": 37
+  },
+  {
+    "case": {
+      "g": 4,
+      "prec": 512,
+      "fixture": 1,
+      "group": "squared_constants"
+    },
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 494,
+    "minimum_accuracy_candidate": 494,
+    "radius_sum_ratio": 0.782508571,
+    "wider_outputs": 42
+  },
+  {
+    "case": {
+      "g": 4,
+      "prec": 2048,
+      "fixture": 0,
+      "group": "squared_constants"
+    },
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 2029,
+    "minimum_accuracy_candidate": 2029,
+    "radius_sum_ratio": 0.76046542,
+    "wider_outputs": 37
+  },
+  {
+    "case": {
+      "g": 4,
+      "prec": 2048,
+      "fixture": 1,
+      "group": "squared_constants"
+    },
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 2029,
+    "minimum_accuracy_candidate": 2029,
+    "radius_sum_ratio": 0.782508605,
+    "wider_outputs": 38
+  },
+  {
+    "case": {
+      "g": 6,
+      "prec": 512,
+      "fixture": 0,
+      "group": "squared_constants"
+    },
+    "status": "PASS",
+    "outputs": 4096,
+    "minimum_accuracy_baseline": 482,
+    "minimum_accuracy_candidate": 482,
+    "radius_sum_ratio": 0.733183988,
+    "wider_outputs": 805
+  },
+  {
+    "case": {
+      "g": 6,
+      "prec": 512,
+      "fixture": 1,
+      "group": "squared_constants"
+    },
+    "status": "PASS",
+    "outputs": 4096,
+    "minimum_accuracy_baseline": 481,
+    "minimum_accuracy_candidate": 481,
+    "radius_sum_ratio": 0.75740263,
+    "wider_outputs": 769
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "fixture": 0,
+      "square": 0,
+      "group": "ordinary_constants"
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 256,
+    "minimum_accuracy_candidate": 256,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "fixture": 1,
+      "square": 0,
+      "group": "ordinary_constants"
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 256,
+    "minimum_accuracy_candidate": 256,
+    "radius_sum_ratio": 0.999999999,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 0,
+      "square": 0,
+      "group": "ordinary_constants"
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 250,
+    "minimum_accuracy_candidate": 250,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 1
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 1,
+      "square": 0,
+      "group": "ordinary_constants"
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 250,
+    "minimum_accuracy_candidate": 250,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 6,
+      "prec": 512,
+      "fixture": 0,
+      "square": 0,
+      "group": "ordinary_constants"
+    },
+    "status": "PASS",
+    "outputs": 4096,
+    "minimum_accuracy_baseline": 242,
+    "minimum_accuracy_candidate": 242,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 6,
+      "prec": 512,
+      "fixture": 1,
+      "square": 0,
+      "group": "ordinary_constants"
+    },
+    "status": "PASS",
+    "outputs": 4096,
+    "minimum_accuracy_baseline": 241,
+    "minimum_accuracy_candidate": 241,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "fixture": 0,
+      "nb": 4,
+      "group": "mixed_batch"
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 506,
+    "minimum_accuracy_candidate": 506,
+    "radius_sum_ratio": 0.966439832,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "fixture": 1,
+      "nb": 4,
+      "group": "mixed_batch"
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 506,
+    "minimum_accuracy_candidate": 506,
+    "radius_sum_ratio": 0.971009238,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 0,
+      "nb": 4,
+      "group": "mixed_batch"
+    },
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 500,
+    "minimum_accuracy_candidate": 500,
+    "radius_sum_ratio": 0.969219318,
+    "wider_outputs": 4
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 1,
+      "nb": 4,
+      "group": "mixed_batch"
+    },
+    "status": "PASS",
+    "outputs": 256,
+    "minimum_accuracy_baseline": 497,
+    "minimum_accuracy_candidate": 497,
+    "radius_sum_ratio": 0.956161642,
+    "wider_outputs": 5
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "fixture": 0,
+      "constant": 0,
+      "group": "nonzero_control"
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 505,
+    "minimum_accuracy_candidate": 505,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "fixture": 1,
+      "constant": 0,
+      "group": "nonzero_control"
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "minimum_accuracy_baseline": 505,
+    "minimum_accuracy_candidate": 505,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 0,
+      "constant": 0,
+      "group": "nonzero_control"
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 498,
+    "minimum_accuracy_candidate": 498,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "fixture": 1,
+      "constant": 0,
+      "group": "nonzero_control"
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "minimum_accuracy_baseline": 495,
+    "minimum_accuracy_candidate": 495,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "fixture": 0,
+      "all": 0,
+      "group": "single_control"
+    },
+    "status": "PASS",
+    "outputs": 1,
+    "minimum_accuracy_baseline": 505,
+    "minimum_accuracy_candidate": 505,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "fixture": 1,
+      "all": 0,
+      "group": "single_control"
+    },
+    "status": "PASS",
+    "outputs": 1,
+    "minimum_accuracy_baseline": 506,
+    "minimum_accuracy_candidate": 506,
+    "radius_sum_ratio": 1,
+    "wider_outputs": 0
+  }
+]

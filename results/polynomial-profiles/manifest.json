@@ -1,0 +1,54 @@
+{
+  "cases": [
+    [
+      1,
+      1024,
+      1000000007,
+      "full"
+    ],
+    [
+      2,
+      1024,
+      1000000007,
+      "full"
+    ],
+    [
+      4,
+      256,
+      1000000007,
+      "full"
+    ],
+    [
+      8,
+      256,
+      1000000007,
+      "full"
+    ],
+    [
+      8,
+      1024,
+      1000000007,
+      "full"
+    ],
+    [
+      8,
+      1024,
+      1108307720798209,
+      "full"
+    ],
+    [
+      8,
+      1024,
+      1000000007,
+      "mid"
+    ]
+  ],
+  "duration_seconds": 4,
+  "interval_ms": 1,
+  "note": "Profiles start only after correctness checks and warmup. One case at a time; no timing run concurrently.",
+  "sha256": {
+    "scripts/profile_polynomials.py": "c089846833925407017d749b6f58bb50bedf2d9c413e0ac4f3539285e2887472",
+    "build/poly-survey": "420348661aa267e7ebd13c5210d7dca97e2d6bd9e6c300b57910c745192a9299",
+    ".deps/flint/libflint.25.0.dylib": "31b9d75a502a408098b37990830d1f033a55fc5957e22ebf12cdaeb2a0fafe58"
+  }
+}

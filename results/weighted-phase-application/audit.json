@@ -1,0 +1,127 @@
+{
+  "status": "PASS",
+  "decision": "No direct weighted-frame transfer identified; retain conventional theta primitive patch as a practical research byproduct",
+  "timing_comparisons": 126,
+  "timed_batches": 10584,
+  "direct_cases": 20,
+  "direct_case_runs": 40,
+  "direct_cpu_reduction_range": [
+    49.30574795750995,
+    63.59214941907296
+  ],
+  "direct_cpu_and_wall_positive": 40,
+  "shared_cpu_reduction_range": [
+    24.34590755332543,
+    61.26955451282797
+  ],
+  "direct_vs_shared_positive": 35,
+  "controls_include_zero_cpu_and_wall": 6,
+  "prototype_coefficient_checks": 137088,
+  "integrated_coefficient_checks": 137088,
+  "exact_containment_checks_per_build": 102816,
+  "upstream_tests": 5,
+  "radius_sum_ratio_range": [
+    0.125155595,
+    0.922358727
+  ],
+  "wider_individual_outputs": 4,
+  "fingerprints_checked": 692,
+  "full_construction_even_h_screen": [
+    {
+      "h": 8,
+      "m": 512,
+      "positive_deficit": false
+    },
+    {
+      "h": 10,
+      "m": 1000,
+      "positive_deficit": false
+    },
+    {
+      "h": 12,
+      "m": 1728,
+      "positive_deficit": false
+    },
+    {
+      "h": 14,
+      "m": 2744,
+      "positive_deficit": false
+    },
+    {
+      "h": 16,
+      "m": 4096,
+      "positive_deficit": false
+    },
+    {
+      "h": 18,
+      "m": 5832,
+      "positive_deficit": false
+    },
+    {
+      "h": 20,
+      "m": 8000,
+      "positive_deficit": false
+    },
+    {
+      "h": 22,
+      "m": 10648,
+      "positive_deficit": true
+    },
+    {
+      "h": 24,
+      "m": 13824,
+      "positive_deficit": true
+    },
+    {
+      "h": 26,
+      "m": 17576,
+      "positive_deficit": true
+    },
+    {
+      "h": 28,
+      "m": 21952,
+      "positive_deficit": true
+    },
+    {
+      "h": 30,
+      "m": 27000,
+      "positive_deficit": true
+    },
+    {
+      "h": 32,
+      "m": 32768,
+      "positive_deficit": true
+    },
+    {
+      "h": 34,
+      "m": 39304,
+      "positive_deficit": true
+    },
+    {
+      "h": 36,
+      "m": 46656,
+      "positive_deficit": true
+    },
+    {
+      "h": 38,
+      "m": 54872,
+      "positive_deficit": true
+    },
+    {
+      "h": 40,
+      "m": 64000,
+      "positive_deficit": true
+    }
+  ],
+  "full_construction_limit": "For the current count formulas, positive deficit first occurs at h=22 (m=10648); this is not an exclusion of small local transfers.",
+  "timing_limit": "Screened prototype versus pinned library; rebuilt candidate library correctness-tested but not separately timed; no full theta-evaluation performance claim.",
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/audit_theta_phase.py": "a037fa9fad58cea17f1661561aaa1b96e0f0126be4ac6c3ce1d2fcb36ba3e93b",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/weighted-phase-application/theta/summary.json": "2108cd06709e01e2e2178bb9a89eb6a225194018a1c66a1d13e03b252b9a143a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/weighted-phase-application/theta/validation.json": "81ceb837a6b68db32d288776349944128111f82e845e6cafc960a8616302919e",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/weighted-phase-application/theta/plan.json": "caea4f55e9b707c175d900a5c0f443d9f9a327f545f31e16755f1c86cd2c9fb9",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/weighted-phase-application/theta/raw.jsonl": "333d8b34f17ddaf407f79198846e3088221ba4b45f3d8edfd2929e8bbe6352f8",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/weighted-phase-application/matching.json": "7cfa3415b48b64dfc848b861b0c830b25dd69c425c69f0c033547217411abfbc",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/weighted-phase-application/integration/build.json": "4ff093720144dd1b9275c87be6c83867d92836609670a242f8810d4b8a0146ce"
+  }
+}

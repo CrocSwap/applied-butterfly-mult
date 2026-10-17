@@ -1,0 +1,12 @@
+{
+  "urls": {
+    "hadamag-paper.html": "https://arxiv.org/html/2601.07824v3",
+    "clustering-paper.pdf": "https://arxiv.org/pdf/1310.1034",
+    "subset-fft.html": "https://arxiv.org/html/2404.18522v1",
+    "dpconv-paper.html": "https://arxiv.org/html/2409.08013v1"
+  },
+  "commits": {
+    "hadamag-survey": "68309e74b567c0ee71b80655153c09121c6dfd4e",
+    "dpconv-survey": "dc56bdc52c452bf86b3ac5c224b0176148c38757"
+  }
+}

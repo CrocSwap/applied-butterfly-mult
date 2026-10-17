@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "report_links_checked": true,
+  "prior_completion_evidence_preserved": true,
+  "decision": "Prepared input reductions are the preferred experimental matrix patch for the tested workloads; baseline unchanged.",
+  "sha256": {
+    "docs/prepared-inputs-m2.md": "4eab0f229e9fd8c298d33feaa98158e1c98b5b225591e576e7bb5fdd926cd905",
+    "README.md": "c9d38806fcffdfbaf8cbf835ca84f7c55b0c4dda635c8025ed7f52318f925476",
+    "results/poly-prepared-audit.json": "6d548469f364bfc0f4044156c1cbb0e1a0405709c1d6fdd375f4bdd73c807991",
+    "results/poly-prepared-doc-snapshots/README-before.md": "f3fa7eedfc8a2c9a5c9e7cb7318336f08fa6d97c97444178b0d2ebac635a2b98"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "repository": "quantumlib/Qualtran",
+  "commit": "585da53e92f1593d22e70b9fc6f05227319c22b2",
+  "sources": [
+    {
+      "path": "LICENSE",
+      "git_blob": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "url": "https://raw.githubusercontent.com/quantumlib/Qualtran/585da53e92f1593d22e70b9fc6f05227319c22b2/LICENSE"
+    },
+    {
+      "path": "qualtran/bloqs/data_loading/select_swap_qrom.py",
+      "git_blob": "0bfc92876f90b2bacca5f876b63a289a7f9eb9fc",
+      "url": "https://raw.githubusercontent.com/quantumlib/Qualtran/585da53e92f1593d22e70b9fc6f05227319c22b2/qualtran/bloqs/data_loading/select_swap_qrom.py"
+    },
+    {
+      "path": "qualtran/bloqs/data_loading/select_swap_qrom_test.py",
+      "git_blob": "028fa9ec0cc66698fe727988723be1cd8b8610de",
+      "url": "https://raw.githubusercontent.com/quantumlib/Qualtran/585da53e92f1593d22e70b9fc6f05227319c22b2/qualtran/bloqs/data_loading/select_swap_qrom_test.py"
+    },
+    {
+      "path": "qualtran/bloqs/data_loading/qrom.py",
+      "git_blob": "c4de2b20c4c4b8b55408ef5f23811537a68ca304",
+      "url": "https://raw.githubusercontent.com/quantumlib/Qualtran/585da53e92f1593d22e70b9fc6f05227319c22b2/qualtran/bloqs/data_loading/qrom.py"
+    },
+    {
+      "path": "qualtran/bloqs/swap_network/swap_with_zero.py",
+      "git_blob": "e8f04d0282d192af127ed2a0f13a32fad2a4bd96",
+      "url": "https://raw.githubusercontent.com/quantumlib/Qualtran/585da53e92f1593d22e70b9fc6f05227319c22b2/qualtran/bloqs/swap_network/swap_with_zero.py"
+    },
+    {
+      "path": "qualtran/bloqs/state_preparation/state_preparation_alias_sampling.py",
+      "git_blob": "ed27747bc03a5791d9196d8bb5359c46630edebb",
+      "url": "https://raw.githubusercontent.com/quantumlib/Qualtran/585da53e92f1593d22e70b9fc6f05227319c22b2/qualtran/bloqs/state_preparation/state_preparation_alias_sampling.py"
+    },
+    {
+      "path": "qualtran/bloqs/chemistry/thc/select_bloq.py",
+      "git_blob": "563ef40626062597b3e3e833930a767e5dc79473",
+      "url": "https://raw.githubusercontent.com/quantumlib/Qualtran/585da53e92f1593d22e70b9fc6f05227319c22b2/qualtran/bloqs/chemistry/thc/select_bloq.py"
+    },
+    {
+      "path": "qualtran/bloqs/chemistry/thc/prepare.py",
+      "git_blob": "d9ed5a252bd95e045b5f0c54cd5a2dc426e22aee",
+      "url": "https://raw.githubusercontent.com/quantumlib/Qualtran/585da53e92f1593d22e70b9fc6f05227319c22b2/qualtran/bloqs/chemistry/thc/prepare.py"
+    },
+    {
+      "path": "qualtran/bloqs/chemistry/df/double_factorization.py",
+      "git_blob": "48283fbf950d7af9d22b2e0b5f83102f7bf3291a",
+      "url": "https://raw.githubusercontent.com/quantumlib/Qualtran/585da53e92f1593d22e70b9fc6f05227319c22b2/qualtran/bloqs/chemistry/df/double_factorization.py"
+    }
+  ]
+}

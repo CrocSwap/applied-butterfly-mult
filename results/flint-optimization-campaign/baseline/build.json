@@ -1,0 +1,72 @@
+{
+  "commit": "26b9bc9df973206db15616d0849a4c8be9d22059",
+  "plan_sha256": "23bd777a79e27f41f573a407e9153a75855066da46593ba8315ba0ad5fb8346f",
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "init",
+        "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base"
+      ],
+      "cwd": "/Users/colkitt/sith/toys/math/butterflyMult"
+    },
+    {
+      "argv": [
+        "git",
+        "remote",
+        "add",
+        "origin",
+        "https://github.com/flintlib/flint.git"
+      ],
+      "cwd": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base"
+    },
+    {
+      "argv": [
+        "git",
+        "fetch",
+        "--depth",
+        "1",
+        "origin",
+        "26b9bc9df973206db15616d0849a4c8be9d22059"
+      ],
+      "cwd": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base"
+    },
+    {
+      "argv": [
+        "git",
+        "checkout",
+        "--detach",
+        "FETCH_HEAD"
+      ],
+      "cwd": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base"
+    },
+    {
+      "argv": [
+        "./bootstrap.sh"
+      ],
+      "cwd": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base"
+    },
+    {
+      "argv": [
+        "./configure",
+        "--with-gmp=/opt/homebrew/opt/gmp",
+        "--with-mpfr=/opt/homebrew/opt/mpfr",
+        "--disable-static",
+        "CC=clang",
+        "CFLAGS=-O3 -g -mcpu=apple-m2 -fno-omit-frame-pointer"
+      ],
+      "cwd": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base"
+    },
+    {
+      "argv": [
+        "make",
+        "-j4"
+      ],
+      "cwd": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base"
+    }
+  ],
+  "compiler": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\n",
+  "sha256": {
+    ".deps/flint-optimization-base/libflint.25.0.dylib": "a608ca2fe954c5d7bf30dfe6eee004635c69ac8beb37ce77bc7560f039033f67"
+  }
+}

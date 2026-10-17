@@ -1,0 +1,10 @@
+{
+  "current": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/theta-equal/candidate/libflint-experiment.dylib",
+  "iterative_per_transform": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/theta-nonrigidity/iterative/libflint-experiment.dylib",
+  "recursive_per_transform": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/theta-nonrigidity/recursive/libflint-experiment.dylib",
+  "iterative": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/theta-workspace/iterative/libflint-experiment.dylib",
+  "recursive": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/theta-workspace/recursive/libflint-experiment.dylib",
+  "h4": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/theta-workspace/h4/libflint-experiment.dylib",
+  "h8": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/theta-workspace/h8/libflint-experiment.dylib",
+  "iterative_rebuild": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/theta-workspace/iterative-rebuild/libflint-experiment.dylib"
+}

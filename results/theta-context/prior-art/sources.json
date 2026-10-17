@@ -1,0 +1,22 @@
+{
+  "history.json": {
+    "url": "https://api.github.com/repos/flintlib/flint/commits?path=src/acb_theta/agm_mul.c&per_page=100",
+    "sha256": "730a428209043cd62ce36ba74148ac464923d005b613ebcb89c7df5dbf2ec2f1"
+  },
+  "current-agm_mul.c": {
+    "url": "https://raw.githubusercontent.com/flintlib/flint/main/src/acb_theta/agm_mul.c",
+    "sha256": "acff4a13a80b447f2f5d29dcac5b2f1023d33ac53f4be1a18a9d2914e846d244"
+  },
+  "nuscap-2024.pdf": {
+    "url": "https://members.loria.fr/JKieffer/files/nuscap.pdf",
+    "sha256": "b098082a2ad82743917ac90a36b750b67c124c24b7ba9355553960f90550b631"
+  },
+  "issues-agm.json": {
+    "url": "https://api.github.com/search/issues?q=repo:flintlib/flint+agm_mul",
+    "sha256": "c9938edecb99d754b2d039ac9eec320a94c769b6a6417921e2dcbef9e2fe01a0"
+  },
+  "issues-theta-hadamard.json": {
+    "url": "https://api.github.com/search/issues?q=repo:flintlib/flint+theta+hadamard",
+    "sha256": "9a68567fd2ba35576920c9c97a98671fc2eea0979ae054d94f67524aa7ef0e89"
+  }
+}

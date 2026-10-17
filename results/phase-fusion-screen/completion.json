@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "decision": "Reject the direct phase-product substitution in the audited fft_small kernels",
+  "local_links_checked": 12,
+  "prior_evidence_unchanged": true,
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/docs/phase-fusion-screen.md": "8b2f5c0dbcc5b23f3228030db64bed3a65f48d884ff383da820d1d3f7decdc3b",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/phase-fusion-screen/summary.json": "0543112a316cb3f4f2d92053b37bbb32c02d82623c71d22ce470c19ddcf2ba13",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/phase-fusion-screen/barriers.json": "0d0e1236485cbd45d40a59e2817ed9566bf8c7c93b1a541715348e840e8cc4fa"
+  }
+}

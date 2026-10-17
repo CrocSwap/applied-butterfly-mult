@@ -1,0 +1,149 @@
+{
+  "source": "results/polynomial-profile-1040/sample.txt",
+  "samples": 3366,
+  "counts": {
+    "other_or_inline": 1893,
+    "forward_fft": 925,
+    "inverse_fft": 490,
+    "reconstruction": 58
+  },
+  "percent": {
+    "forward_fft": 27.48,
+    "inverse_fft": 14.56,
+    "other_or_inline": 56.24,
+    "reconstruction": 1.72
+  },
+  "functions": [
+    {
+      "function": "_point_addmul",
+      "samples": 1410
+    },
+    {
+      "function": "sd_fft_basecase_4_0",
+      "samples": 358
+    },
+    {
+      "function": "_crt_2_fn",
+      "samples": 196
+    },
+    {
+      "function": "sd_ifft_basecase_4_0",
+      "samples": 159
+    },
+    {
+      "function": "sd_fft_basecase_6_0",
+      "samples": 152
+    },
+    {
+      "function": "fft_small_op_mul",
+      "samples": 137
+    },
+    {
+      "function": "sd_fft_basecase_8_0",
+      "samples": 135
+    },
+    {
+      "function": "sd_fft_no_trunc_block",
+      "samples": 98
+    },
+    {
+      "function": "sd_ifft_basecase_6_0",
+      "samples": 89
+    },
+    {
+      "function": "sd_fft_trunc_block",
+      "samples": 67
+    },
+    {
+      "function": "radix_4_moth_inv_trunc_block_2_2_1",
+      "samples": 66
+    },
+    {
+      "function": "_tpoly_invert_in_place",
+      "samples": 64
+    },
+    {
+      "function": "sd_ifft_basecase_8_0",
+      "samples": 62
+    },
+    {
+      "function": "_mod",
+      "samples": 59
+    },
+    {
+      "function": "_convert_block",
+      "samples": 58
+    },
+    {
+      "function": "sd_ifft_no_trunc_block",
+      "samples": 52
+    },
+    {
+      "function": "sd_fft_moth_trunc_block_4_1_0",
+      "samples": 43
+    },
+    {
+      "function": "sd_fft_moth_trunc_block_2_3_1",
+      "samples": 40
+    },
+    {
+      "function": "radix_4_moth_inv_trunc_block_3_3_0",
+      "samples": 31
+    },
+    {
+      "function": "radix_4_moth_inv_trunc_block_1_4_0",
+      "samples": 25
+    },
+    {
+      "function": "sd_fft_trunc",
+      "samples": 13
+    },
+    {
+      "function": "sd_fft_basecase_8_1",
+      "samples": 11
+    },
+    {
+      "function": "sd_fft_trunc_internal",
+      "samples": 8
+    },
+    {
+      "function": "sd_ifft_basecase_8_1",
+      "samples": 6
+    },
+    {
+      "function": "_platform_memset",
+      "samples": 5
+    }
+  ],
+  "caveat": "Exclusive samples, approximate attribution. Inlined work and entries omitted below five samples remain other_or_inline. No separation of arithmetic and memory stalls.",
+  "case": {
+    "dim": 8,
+    "length": 1040,
+    "modulus": 1000000007,
+    "window": "full"
+  },
+  "commands": [
+    [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/poly-survey",
+      "8",
+      "1040",
+      "1000000007",
+      "full",
+      "0",
+      "16000"
+    ],
+    [
+      "sample",
+      "30400",
+      "4",
+      "1",
+      "-file",
+      "results/polynomial-profile-1040/sample.txt"
+    ]
+  ],
+  "sha256": {
+    "scripts/profile_polynomial_case.py": "4c9a21c25f08e8df155a857f669eedf55670f9c0488b2cc43867abaab50d35a4",
+    "build/poly-survey": "420348661aa267e7ebd13c5210d7dca97e2d6bd9e6c300b57910c745192a9299",
+    ".deps/flint/libflint.25.0.dylib": "31b9d75a502a408098b37990830d1f033a55fc5957e22ebf12cdaeb2a0fafe58"
+  }
+}

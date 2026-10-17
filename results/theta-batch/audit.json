@@ -1,0 +1,222 @@
+{
+  "status": "PASS",
+  "preserved_fingerprints": 847,
+  "timed_batches": 22048,
+  "campaigns": {
+    "retained": {
+      "comparisons": 132,
+      "groups": {
+        "leading_nb0": {
+          "cases": 48,
+          "median_cpu_reduction_pct": 2.4940306348804784,
+          "minimum_cpu_reduction_pct": -1.32785890420688,
+          "maximum_cpu_reduction_pct": 4.943155606291006,
+          "positive_cpu_intervals": 42,
+          "positive_cpu_and_wall_intervals": 31
+        },
+        "leading_nb1": {
+          "cases": 16,
+          "median_cpu_reduction_pct": 1.7513136397719176,
+          "minimum_cpu_reduction_pct": -1.32785890420688,
+          "maximum_cpu_reduction_pct": 3.1615431646223935,
+          "positive_cpu_intervals": 13,
+          "positive_cpu_and_wall_intervals": 8
+        },
+        "leading_nb4": {
+          "cases": 16,
+          "median_cpu_reduction_pct": 3.083567973598295,
+          "minimum_cpu_reduction_pct": 1.0356312425624403,
+          "maximum_cpu_reduction_pct": 3.815907496170212,
+          "positive_cpu_intervals": 15,
+          "positive_cpu_and_wall_intervals": 12
+        },
+        "leading_nb16": {
+          "cases": 16,
+          "median_cpu_reduction_pct": 3.0612626023146627,
+          "minimum_cpu_reduction_pct": 0.9051997064785544,
+          "maximum_cpu_reduction_pct": 4.943155606291006,
+          "positive_cpu_intervals": 14,
+          "positive_cpu_and_wall_intervals": 11
+        },
+        "original_nb0": {
+          "cases": 48,
+          "median_cpu_reduction_pct": 4.069083728856231,
+          "minimum_cpu_reduction_pct": 1.3758844345522658,
+          "maximum_cpu_reduction_pct": 7.284412165209265,
+          "positive_cpu_intervals": 47,
+          "positive_cpu_and_wall_intervals": 41
+        },
+        "original_nb1": {
+          "cases": 16,
+          "median_cpu_reduction_pct": 3.428235438271876,
+          "minimum_cpu_reduction_pct": 2.231006430870086,
+          "maximum_cpu_reduction_pct": 4.6451320936439,
+          "positive_cpu_intervals": 16,
+          "positive_cpu_and_wall_intervals": 13
+        },
+        "original_nb4": {
+          "cases": 16,
+          "median_cpu_reduction_pct": 4.414851183299234,
+          "minimum_cpu_reduction_pct": 2.9240414564135064,
+          "maximum_cpu_reduction_pct": 7.036470741929691,
+          "positive_cpu_intervals": 16,
+          "positive_cpu_and_wall_intervals": 14
+        },
+        "original_nb16": {
+          "cases": 16,
+          "median_cpu_reduction_pct": 5.0614073151864165,
+          "minimum_cpu_reduction_pct": 1.3758844345522658,
+          "maximum_cpu_reduction_pct": 7.284412165209265,
+          "positive_cpu_intervals": 15,
+          "positive_cpu_and_wall_intervals": 14
+        },
+        "prepared_nb0": {
+          "cases": 16,
+          "median_cpu_reduction_pct": 1.2021660414586244,
+          "minimum_cpu_reduction_pct": -0.2969864228190344,
+          "maximum_cpu_reduction_pct": 3.7218762211291168,
+          "positive_cpu_intervals": 10,
+          "positive_cpu_and_wall_intervals": 7
+        },
+        "prepared_nb16": {
+          "cases": 16,
+          "median_cpu_reduction_pct": 1.2021660414586244,
+          "minimum_cpu_reduction_pct": -0.2969864228190344,
+          "maximum_cpu_reduction_pct": 3.7218762211291168,
+          "positive_cpu_intervals": 10,
+          "positive_cpu_and_wall_intervals": 7
+        },
+        "shared_nb0": {
+          "cases": 16,
+          "median_cpu_reduction_pct": 0.538205903647665,
+          "minimum_cpu_reduction_pct": -0.1741375764595654,
+          "maximum_cpu_reduction_pct": 1.2062619883416503,
+          "positive_cpu_intervals": 5,
+          "positive_cpu_and_wall_intervals": 3
+        },
+        "shared_nb16": {
+          "cases": 16,
+          "median_cpu_reduction_pct": 0.538205903647665,
+          "minimum_cpu_reduction_pct": -0.1741375764595654,
+          "maximum_cpu_reduction_pct": 1.2062619883416503,
+          "positive_cpu_intervals": 5,
+          "positive_cpu_and_wall_intervals": 3
+        }
+      }
+    },
+    "confirmation": {
+      "comparisons": 68,
+      "groups": {
+        "leading_nb0": {
+          "cases": 24,
+          "median_cpu_reduction_pct": 2.4652440600689998,
+          "minimum_cpu_reduction_pct": 0.9141282695360409,
+          "maximum_cpu_reduction_pct": 4.60869629558559,
+          "positive_cpu_intervals": 24,
+          "positive_cpu_and_wall_intervals": 23
+        },
+        "leading_nb1": {
+          "cases": 8,
+          "median_cpu_reduction_pct": 1.8031099065420886,
+          "minimum_cpu_reduction_pct": 0.9141282695360409,
+          "maximum_cpu_reduction_pct": 2.431750503984742,
+          "positive_cpu_intervals": 8,
+          "positive_cpu_and_wall_intervals": 7
+        },
+        "leading_nb4": {
+          "cases": 8,
+          "median_cpu_reduction_pct": 2.6530144568739256,
+          "minimum_cpu_reduction_pct": 1.1466570550133004,
+          "maximum_cpu_reduction_pct": 3.6084935568009513,
+          "positive_cpu_intervals": 8,
+          "positive_cpu_and_wall_intervals": 8
+        },
+        "leading_nb16": {
+          "cases": 8,
+          "median_cpu_reduction_pct": 3.0540106759784913,
+          "minimum_cpu_reduction_pct": 1.0773239957914238,
+          "maximum_cpu_reduction_pct": 4.60869629558559,
+          "positive_cpu_intervals": 8,
+          "positive_cpu_and_wall_intervals": 8
+        },
+        "original_nb0": {
+          "cases": 24,
+          "median_cpu_reduction_pct": 4.007085721193226,
+          "minimum_cpu_reduction_pct": 2.8360410748774156,
+          "maximum_cpu_reduction_pct": 7.736005711202376,
+          "positive_cpu_intervals": 24,
+          "positive_cpu_and_wall_intervals": 23
+        },
+        "original_nb1": {
+          "cases": 8,
+          "median_cpu_reduction_pct": 3.6487514006007027,
+          "minimum_cpu_reduction_pct": 3.2618934762104757,
+          "maximum_cpu_reduction_pct": 4.055639886401408,
+          "positive_cpu_intervals": 8,
+          "positive_cpu_and_wall_intervals": 8
+        },
+        "original_nb4": {
+          "cases": 8,
+          "median_cpu_reduction_pct": 4.916934039154686,
+          "minimum_cpu_reduction_pct": 2.8360410748774156,
+          "maximum_cpu_reduction_pct": 5.971202797505349,
+          "positive_cpu_intervals": 8,
+          "positive_cpu_and_wall_intervals": 7
+        },
+        "original_nb16": {
+          "cases": 8,
+          "median_cpu_reduction_pct": 5.839580051908156,
+          "minimum_cpu_reduction_pct": 3.001052004315541,
+          "maximum_cpu_reduction_pct": 7.736005711202376,
+          "positive_cpu_intervals": 8,
+          "positive_cpu_and_wall_intervals": 8
+        },
+        "prepared_nb0": {
+          "cases": 8,
+          "median_cpu_reduction_pct": 1.2977849956561205,
+          "minimum_cpu_reduction_pct": 0.6315641007436645,
+          "maximum_cpu_reduction_pct": 1.761627671942756,
+          "positive_cpu_intervals": 8,
+          "positive_cpu_and_wall_intervals": 8
+        },
+        "prepared_nb16": {
+          "cases": 8,
+          "median_cpu_reduction_pct": 1.2977849956561205,
+          "minimum_cpu_reduction_pct": 0.6315641007436645,
+          "maximum_cpu_reduction_pct": 1.761627671942756,
+          "positive_cpu_intervals": 8,
+          "positive_cpu_and_wall_intervals": 8
+        },
+        "shared_nb0": {
+          "cases": 8,
+          "median_cpu_reduction_pct": 0.9126617703782092,
+          "minimum_cpu_reduction_pct": -0.06165421156183459,
+          "maximum_cpu_reduction_pct": 1.4729383712734134,
+          "positive_cpu_intervals": 6,
+          "positive_cpu_and_wall_intervals": 5
+        },
+        "shared_nb16": {
+          "cases": 8,
+          "median_cpu_reduction_pct": 0.9126617703782092,
+          "minimum_cpu_reduction_pct": -0.06165421156183459,
+          "maximum_cpu_reduction_pct": 1.4729383712734134,
+          "positive_cpu_intervals": 6,
+          "positive_cpu_and_wall_intervals": 5
+        }
+      }
+    },
+    "control-diagnostic": {
+      "comparisons": 8,
+      "groups": {}
+    }
+  },
+  "exact_precision_and_retained_variants_differ_only_in_cache_precision_condition": true,
+  "full_call_retained_validation_outputs": 13440,
+  "note": "PASS certifies evidence integrity and numerical checks. Performance scope and control anomalies are reported in docs/theta-batch.md.",
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/audit_theta_batch.py": "d5e7a5aa61c918f8e4743369c08f8ef471fb758c422bc1bc9165fd1650526a37",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-batch/retained/summary.json": "19c24ba9257fc7dcf6112a0f952f6f8050e25d319d06f6aebbaa6e871d8fe245",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-batch/confirmation/summary.json": "f0a6f298224a725eedad1acc5097b4f3e80df7919ce9a258acb780ec8fe2a0f8",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-batch/control-diagnostic/summary.json": "ef5ea4f1ecf870c7ab206af21aae958ef5f050239c97a73157e2a946b8be1cd9"
+  }
+}

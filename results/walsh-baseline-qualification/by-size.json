@@ -1,0 +1,202 @@
+[
+  {
+    "points": 8,
+    "target": 512,
+    "engine": "H4",
+    "fixtures": 2,
+    "cpu_min": -9.635124920657967,
+    "cpu_max": -4.268141069188691,
+    "positive_cpu": 0,
+    "positive_both": 0
+  },
+  {
+    "points": 8,
+    "target": 512,
+    "engine": "H8",
+    "fixtures": 2,
+    "cpu_min": -6.974065986107036,
+    "cpu_max": -3.373022240923862,
+    "positive_cpu": 0,
+    "positive_both": 0
+  },
+  {
+    "points": 64,
+    "target": 512,
+    "engine": "H4",
+    "fixtures": 2,
+    "cpu_min": 7.664323135057716,
+    "cpu_max": 7.797005892692443,
+    "positive_cpu": 2,
+    "positive_both": 2
+  },
+  {
+    "points": 64,
+    "target": 512,
+    "engine": "H8",
+    "fixtures": 2,
+    "cpu_min": 5.5221773686802145,
+    "cpu_max": 6.880211136171588,
+    "positive_cpu": 2,
+    "positive_both": 0
+  },
+  {
+    "points": 512,
+    "target": 512,
+    "engine": "H4",
+    "fixtures": 2,
+    "cpu_min": 5.87285202252299,
+    "cpu_max": 6.386644539794373,
+    "positive_cpu": 2,
+    "positive_both": 0
+  },
+  {
+    "points": 512,
+    "target": 512,
+    "engine": "H8",
+    "fixtures": 2,
+    "cpu_min": 2.0261563033805774,
+    "cpu_max": 6.1352907897215925,
+    "positive_cpu": 1,
+    "positive_both": 0
+  },
+  {
+    "points": 4096,
+    "target": 512,
+    "engine": "H4",
+    "fixtures": 2,
+    "cpu_min": 5.512238081583121,
+    "cpu_max": 9.002733445687072,
+    "positive_cpu": 2,
+    "positive_both": 1
+  },
+  {
+    "points": 4096,
+    "target": 512,
+    "engine": "H8",
+    "fixtures": 2,
+    "cpu_min": 1.606777827439665,
+    "cpu_max": 2.1083105063810725,
+    "positive_cpu": 2,
+    "positive_both": 0
+  },
+  {
+    "points": 8,
+    "target": 4096,
+    "engine": "H4",
+    "fixtures": 2,
+    "cpu_min": 2.5786239360301444,
+    "cpu_max": 2.940607908338466,
+    "positive_cpu": 2,
+    "positive_both": 0
+  },
+  {
+    "points": 8,
+    "target": 4096,
+    "engine": "H8",
+    "fixtures": 2,
+    "cpu_min": -3.565334849776014,
+    "cpu_max": 1.5940442788909603,
+    "positive_cpu": 0,
+    "positive_both": 0
+  },
+  {
+    "points": 64,
+    "target": 4096,
+    "engine": "H4",
+    "fixtures": 2,
+    "cpu_min": 7.803811383472348,
+    "cpu_max": 12.077683497054414,
+    "positive_cpu": 2,
+    "positive_both": 2
+  },
+  {
+    "points": 64,
+    "target": 4096,
+    "engine": "H8",
+    "fixtures": 2,
+    "cpu_min": 4.828428239719829,
+    "cpu_max": 6.383281349335313,
+    "positive_cpu": 2,
+    "positive_both": 0
+  },
+  {
+    "points": 512,
+    "target": 4096,
+    "engine": "H4",
+    "fixtures": 2,
+    "cpu_min": 9.377471827110462,
+    "cpu_max": 9.396155866224865,
+    "positive_cpu": 2,
+    "positive_both": 1
+  },
+  {
+    "points": 512,
+    "target": 4096,
+    "engine": "H8",
+    "fixtures": 2,
+    "cpu_min": 6.436269117058724,
+    "cpu_max": 6.6752463177173755,
+    "positive_cpu": 2,
+    "positive_both": 0
+  },
+  {
+    "points": 4096,
+    "target": 4096,
+    "engine": "H4",
+    "fixtures": 2,
+    "cpu_min": 9.06664192345369,
+    "cpu_max": 10.780135112137913,
+    "positive_cpu": 2,
+    "positive_both": 1
+  },
+  {
+    "points": 4096,
+    "target": 4096,
+    "engine": "H8",
+    "fixtures": 2,
+    "cpu_min": 4.658539124006511,
+    "cpu_max": 6.741859354038793,
+    "positive_cpu": 2,
+    "positive_both": 1
+  },
+  {
+    "points": 64,
+    "target": 32768,
+    "engine": "H4",
+    "fixtures": 1,
+    "cpu_min": 6.712128483849189,
+    "cpu_max": 6.712128483849189,
+    "positive_cpu": 1,
+    "positive_both": 0
+  },
+  {
+    "points": 64,
+    "target": 32768,
+    "engine": "H8",
+    "fixtures": 1,
+    "cpu_min": -10.617753602185353,
+    "cpu_max": -10.617753602185353,
+    "positive_cpu": 0,
+    "positive_both": 0
+  },
+  {
+    "points": 4096,
+    "target": 32768,
+    "engine": "H4",
+    "fixtures": 1,
+    "cpu_min": -1.5908904502666132,
+    "cpu_max": -1.5908904502666132,
+    "positive_cpu": 0,
+    "positive_both": 0
+  },
+  {
+    "points": 4096,
+    "target": 32768,
+    "engine": "H8",
+    "fixtures": 1,
+    "cpu_min": -11.569018449904632,
+    "cpu_max": -11.569018449904632,
+    "positive_cpu": 0,
+    "positive_both": 0
+  }
+]

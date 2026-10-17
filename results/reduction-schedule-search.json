@@ -1,0 +1,206 @@
+{
+  "schedules_checked": 4096,
+  "valid_schedules": 1384,
+  "invalid_reasons": {
+    "integer addition may exceed 2**53": 1216,
+    "output exceeds inverse interface bound": 1496
+  },
+  "minimum_reductions": 3,
+  "minimum_schedules": [
+    {
+      "valid": true,
+      "cuts": [
+        "Y0",
+        "Y1",
+        "Z1"
+      ],
+      "output_bounds": [
+        "2",
+        "1",
+        "1",
+        "1"
+      ],
+      "trace": {
+        "A0": {
+          "before": "4",
+          "after": "4"
+        },
+        "A1": {
+          "before": "4",
+          "after": "4"
+        },
+        "A2": {
+          "before": "4",
+          "after": "4"
+        },
+        "A3": {
+          "before": "4",
+          "after": "4"
+        },
+        "Y0": {
+          "before": "8",
+          "after": "1"
+        },
+        "Y1": {
+          "before": "8",
+          "after": "1"
+        },
+        "Y2": {
+          "before": "8",
+          "after": "8"
+        },
+        "Y3": {
+          "before": "8",
+          "after": "8"
+        },
+        "Z0": {
+          "before": "2",
+          "after": "2"
+        },
+        "Z1": {
+          "before": "3",
+          "after": "1"
+        },
+        "Z2": {
+          "before": "2",
+          "after": "2"
+        },
+        "Z3": {
+          "before": "3",
+          "after": "3"
+        }
+      }
+    }
+  ],
+  "original": {
+    "valid": true,
+    "cuts": [
+      "A0",
+      "A1",
+      "A2",
+      "A3",
+      "Z0"
+    ],
+    "output_bounds": [
+      "1",
+      "2",
+      "1",
+      "1"
+    ],
+    "trace": {
+      "A0": {
+        "before": "4",
+        "after": "1"
+      },
+      "A1": {
+        "before": "4",
+        "after": "1"
+      },
+      "A2": {
+        "before": "4",
+        "after": "1"
+      },
+      "A3": {
+        "before": "4",
+        "after": "1"
+      },
+      "Y0": {
+        "before": "2",
+        "after": "2"
+      },
+      "Y1": {
+        "before": "2",
+        "after": "2"
+      },
+      "Y2": {
+        "before": "2",
+        "after": "2"
+      },
+      "Y3": {
+        "before": "2",
+        "after": "2"
+      },
+      "Z0": {
+        "before": "4",
+        "after": "1"
+      },
+      "Z1": {
+        "before": "2",
+        "after": "2"
+      },
+      "Z2": {
+        "before": "4",
+        "after": "4"
+      },
+      "Z3": {
+        "before": "2",
+        "after": "2"
+      }
+    }
+  },
+  "selected": {
+    "valid": true,
+    "cuts": [
+      "Y0",
+      "Y1",
+      "Z1"
+    ],
+    "output_bounds": [
+      "2",
+      "1",
+      "1",
+      "1"
+    ],
+    "trace": {
+      "A0": {
+        "before": "4",
+        "after": "4"
+      },
+      "A1": {
+        "before": "4",
+        "after": "4"
+      },
+      "A2": {
+        "before": "4",
+        "after": "4"
+      },
+      "A3": {
+        "before": "4",
+        "after": "4"
+      },
+      "Y0": {
+        "before": "8",
+        "after": "1"
+      },
+      "Y1": {
+        "before": "8",
+        "after": "1"
+      },
+      "Y2": {
+        "before": "8",
+        "after": "8"
+      },
+      "Y3": {
+        "before": "8",
+        "after": "8"
+      },
+      "Z0": {
+        "before": "2",
+        "after": "2"
+      },
+      "Z1": {
+        "before": "3",
+        "after": "1"
+      },
+      "Z2": {
+        "before": "2",
+        "after": "2"
+      },
+      "Z3": {
+        "before": "3",
+        "after": "3"
+      }
+    }
+  },
+  "scope": "Exhaustive interval screen of cuts in the even branch of an inverse radix-8.\n\nBounds are strict multiples of p. The contract is p < 2**50, exact integer\ninputs |x| < 2p, centered twiddles |w| < p/2, and FLINT's checked mulmod bounds.\nThis checks one fixed arithmetic graph, not all inverse FFT algorithms.\n"
+}

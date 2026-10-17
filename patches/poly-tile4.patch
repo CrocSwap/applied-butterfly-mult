@@ -1,0 +1,239 @@
+--- a/src/gr/nmod_transformed_poly.c
++++ b/src/gr/nmod_transformed_poly.c
+@@ -703,6 +703,101 @@
+ tpoly_submul(gr_ptr res, gr_srcptr x, gr_srcptr y, gr_ctx_t ctx)
+ {
+     return tpoly_addsubmul(res, x, y, 1, ctx);
++}
++
++
++#define BF_SHARE 0
++/* Experimental ARM64 spectral dot product. BF_SHARE selects the ablation.
++   Inputs are distinct from four output buffers; k is in [1,16].
++   Original operand, product, and accumulator range contracts are retained. */
++static __attribute__((noinline)) void
++_bf_dot4(const sd_fft_ctx_struct *Q, double *z[4],
++         const double *ap[16], const double *bp[16][4], ulong npts, slong k)
++{
++    vec2d n=vec2d_set_d(Q->p), ni=vec2d_set_d(Q->pinv);
++    for (ulong f=0;f<npts;f+=2)
++    {
++        vec2d s0,s1,s2,s3;
++        for (slong l=0;l<k;l++)
++        {
++            vec2d x=vec2d_load(ap[l]+f), x0,x1,x2,x3;
++#if BF_SHARE
++            x0=vec2d_reduce_to_pm1n(x,n,ni);
++            x1=x2=x3=x0;
++#else
++            /* No emitted instructions: prevent CSE from silently turning the
++               repeated-reduction control into the shared candidate. */
++            x0=x1=x2=x3=x;
++            __asm__("" : "+w"(x0), "+w"(x1), "+w"(x2), "+w"(x3));
++            x0=vec2d_reduce_to_pm1n(x0,n,ni);
++            x1=vec2d_reduce_to_pm1n(x1,n,ni);
++            x2=vec2d_reduce_to_pm1n(x2,n,ni);
++            x3=vec2d_reduce_to_pm1n(x3,n,ni);
++#endif
++            x0=vec2d_mulmod(x0,vec2d_load(bp[l][0]+f),n,ni);
++            x1=vec2d_mulmod(x1,vec2d_load(bp[l][1]+f),n,ni);
++            x2=vec2d_mulmod(x2,vec2d_load(bp[l][2]+f),n,ni);
++            x3=vec2d_mulmod(x3,vec2d_load(bp[l][3]+f),n,ni);
++            if (l==0) {s0=x0;s1=x1;s2=x2;s3=x3;}
++            else {
++                s0=vec2d_reduce_to_pm1n(vec2d_add(s0,x0),n,ni);
++                s1=vec2d_reduce_to_pm1n(vec2d_add(s1,x1),n,ni);
++                s2=vec2d_reduce_to_pm1n(vec2d_add(s2,x2),n,ni);
++                s3=vec2d_reduce_to_pm1n(vec2d_add(s3,x3),n,ni);
++            }
++        }
++        vec2d_store(z[0]+f,s0);vec2d_store(z[1]+f,s1);
++        vec2d_store(z[2]+f,s2);vec2d_store(z[3]+f,s3);
++    }
++}
++
++/* Internal matrix-only helper. Declines before writing any output if a zero
++   operand or an unsupported metadata bound requires the generic path. */
++int _bf_tpoly_dot4(gr_ptr out, gr_srcptr left, gr_srcptr right,
++                  slong k, slong bc, gr_ctx_t ctx)
++{
++    tpoly_ctx_struct *T=TPOLY_CTX(ctx);
++    slong lens[4]={0,0,0,0};
++    ulong terms[4]={0,0,0,0}, depths[4]={0,0,0,0};
++    int negs[4]={0,0,0,0};
++    if (k<1 || k>16 || T->cyclic) return GR_UNABLE;
++    for (slong l=0;l<k;l++) for (slong j=0;j<4;j++)
++    {
++        const tpoly_struct *a=TPOLY(GR_ENTRY(left,l,ctx->sizeof_elem));
++        const tpoly_struct *b=TPOLY(GR_ENTRY(right,l*bc+j,ctx->sizeof_elem));
++        ulong t, sum;
++        if (!a->len || !b->len || a->op.domain!=FFT_SMALL_OP_PRIMAL ||
++            b->op.domain!=FFT_SMALL_OP_PRIMAL) return GR_UNABLE;
++        slong len=a->len+b->len-1;
++        if (len>T->N || !_mul_terms(&t,a,b,T->terms_bound)) return GR_UNABLE;
++        sum=terms[j]+t;
++        if (sum<t || sum>T->terms_bound || a->depth+b->depth>T->max_depth)
++            return GR_UNABLE;
++        terms[j]=sum;lens[j]=FLINT_MAX(lens[j],len);
++        depths[j]=FLINT_MAX(depths[j],a->depth+b->depth);
++        negs[j]|=a->negs|b->negs;
++    }
++    for (ulong pi=0;pi<T->P->np;pi++)
++    {
++        const double *ap[16], *bp[16][4]; double *zp[4];
++        ulong offset=pi*T->P->stride;
++        for (slong j=0;j<4;j++)
++            zp[j]=TPOLY(GR_ENTRY(out,j,ctx->sizeof_elem))->op.data+offset;
++        for (slong l=0;l<k;l++)
++        {
++            ap[l]=TPOLY(GR_ENTRY(left,l,ctx->sizeof_elem))->op.data+offset;
++            for (slong j=0;j<4;j++)
++                bp[l][j]=TPOLY(GR_ENTRY(right,l*bc+j,ctx->sizeof_elem))->op.data+offset;
++        }
++        _bf_dot4(T->P->ffts+T->P->offset+pi,zp,ap,bp,1UL<<T->P->depth,k);
++    }
++    for (slong j=0;j<4;j++)
++    {
++        tpoly_struct *z=TPOLY(GR_ENTRY(out,j,ctx->sizeof_elem));
++        z->op.domain=FFT_SMALL_OP_PRIMAL;z->len=lens[j];
++        z->terms=terms[j];z->depth=depths[j];z->negs=negs[j];
++    }
++    return GR_SUCCESS;
+ }
+ 
+ static gr_funcptr __tpoly_methods[GR_METHOD_TAB_SIZE];
+--- a/src/nmod_poly_mat/mulmid_fft_small.c
++++ b/src/nmod_poly_mat/mulmid_fft_small.c
+@@ -23,6 +23,8 @@
+ #include "gr_poly.h"
+ 
+ #if FLINT_HAVE_FFT_SMALL
++
++int _bf_tpoly_dot4(gr_ptr,gr_srcptr,gr_srcptr,slong,slong,gr_ctx_t);
+ 
+ /*
+     Windowed matrix product over a ring of transformed polynomials: the
+@@ -47,6 +49,7 @@
+     slong zl, hi, wlen;
+     slong tid, nthreads;
+     int share;
++    slong tile_width;
+     int status;
+ }
+ _mm_arg;
+@@ -73,39 +76,41 @@
+     }
+ }
+ 
++
+ static void _mm_phase2(void * varg)
+ {
+-    _mm_arg * a = (_mm_arg *) varg;
+-    slong nin = a->nA + a->nB;
+-    gr_ptr acc = _MM_TE(a, nin + a->tid);
+-    slong t, l;
+-
+-    for (t = a->tid; t < a->ar * a->bc; t += a->nthreads)
+-    {
+-        slong i = t / a->bc, j = t % a->bc;
+-        nmod_poly_struct * entry = nmod_poly_mat_entry(a->C, i, j);
+-
+-        a->status |= gr_mul(acc, _MM_TE(a, i * a->k),
+-                            a->share ? _MM_TE(a, j)
+-                                     : _MM_TE(a, a->nA + j), a->tctx);
+-        for (l = 1; l < a->k; l++)
+-            a->status |= gr_addmul(acc, _MM_TE(a, i * a->k + l),
+-                                   a->share ? _MM_TE(a, l * a->k + j)
+-                                            : _MM_TE(a, a->nA + l * a->bc + j),
+-                                   a->tctx);
+-
+-        nmod_poly_fit_length(entry, a->wlen);
+-        /* the accumulator is this thread's own and dead after the
+-           entry: convert it out in place, skipping the transform copy
+-           and the scratch allocation; the next entry's gr_mul rebuilds
+-           it as a full-write destination */
+-        a->status |= _gr_nmod_tpoly_get_gr_poly_window_destructive(
+-                entry->coeffs, acc, a->zl, a->hi, a->tctx);
+-        if (a->wlen > a->hi - a->zl)
+-            _nmod_vec_zero(entry->coeffs + (a->hi - a->zl),
+-                           a->wlen - (a->hi - a->zl));
+-        _nmod_poly_set_length(entry, a->wlen);
+-        _nmod_poly_normalise(entry);
++    _mm_arg *a=(_mm_arg *)varg;
++    slong nin=a->nA+a->nB, width=a->tile_width;
++    slong groups=(a->bc+width-1)/width;
++    for (slong t=a->tid;t<a->ar*groups;t+=a->nthreads)
++    {
++        slong i=t/groups, j=(t%groups)*width;
++        slong count=FLINT_MIN(width,a->bc-j);
++        gr_ptr acc=_MM_TE(a,nin+width*a->tid);
++        int fast=GR_UNABLE;
++        if (count==4)
++            fast=_bf_tpoly_dot4(acc,_MM_TE(a,i*a->k),
++                    a->share?_MM_TE(a,j):_MM_TE(a,a->nA+j),
++                    a->k,a->bc,a->tctx);
++        for (slong c=0;c<count;c++)
++        {
++            gr_ptr z=_MM_TE(a,nin+width*a->tid+c);
++            nmod_poly_struct *entry=nmod_poly_mat_entry(a->C,i,j+c);
++            if (fast!=GR_SUCCESS)
++            {
++                a->status|=gr_mul(z,_MM_TE(a,i*a->k),
++                        a->share?_MM_TE(a,j+c):_MM_TE(a,a->nA+j+c),a->tctx);
++                for (slong l=1;l<a->k;l++)
++                    a->status|=gr_addmul(z,_MM_TE(a,i*a->k+l),
++                        a->share?_MM_TE(a,l*a->k+j+c):_MM_TE(a,a->nA+l*a->bc+j+c),a->tctx);
++            }
++            nmod_poly_fit_length(entry,a->wlen);
++            a->status|=_gr_nmod_tpoly_get_gr_poly_window_destructive(
++                        entry->coeffs,z,a->zl,a->hi,a->tctx);
++            if (a->wlen>a->hi-a->zl)
++                _nmod_vec_zero(entry->coeffs+a->hi-a->zl,a->wlen-(a->hi-a->zl));
++            _nmod_poly_set_length(entry,a->wlen);_nmod_poly_normalise(entry);
++        }
+     }
+ }
+ 
+@@ -118,6 +123,7 @@
+     slong bc = B->c;
+     int share = (A == B);
+     slong nB;
++    slong tile_width=(bc>=4 && k<=16)?4:1;
+     slong i, j, l;
+     ulong amax, bmax, zn, terms, hi_prod, lo_prod;
+     nmod_t mod;
+@@ -187,7 +193,7 @@
+     wl->num_outputs = ar * bc;
+     /* the input transforms stay live throughout (a squaring keeps a
+        single pool), plus one accumulator per thread */
+-    wl->num_live = ar * k + nB + flint_get_num_available_threads();
++    wl->num_live = ar * k + nB + tile_width*flint_get_num_available_threads();
+     wl->mem_limit = 0;
+     wl->force = 0;
+ 
+@@ -201,7 +207,7 @@
+     nworkers = flint_request_threads(&handles, 8);
+     nthreads = nworkers + 1;
+ 
+-    GR_TMP_INIT_VEC(TE, ar * k + nB + nthreads, tctx);
++    GR_TMP_INIT_VEC(TE, ar * k + nB + tile_width*nthreads, tctx);
+ 
+     for (i = 0; i < nthreads; i++)
+     {
+@@ -211,6 +217,7 @@
+         args[i].nA = ar * k;
+         args[i].nB = nB;
+         args[i].share = share;
++        args[i].tile_width = tile_width;
+         args[i].zl = zl;
+         args[i].hi = FLINT_MIN(zh, (slong) zn);
+         args[i].wlen = zh - zl;
+@@ -237,7 +244,7 @@
+     for (i = 0; i < nthreads; i++)
+         status |= args[i].status;
+ 
+-    GR_TMP_CLEAR_VEC(TE, ar * k + nB + nthreads, tctx);
++    GR_TMP_CLEAR_VEC(TE, ar * k + nB + tile_width*nthreads, tctx);
+     gr_ctx_clear(tctx);
+     gr_ctx_clear(ctx);
+ 

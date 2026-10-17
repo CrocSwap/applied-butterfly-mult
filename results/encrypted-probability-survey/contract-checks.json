@@ -1,0 +1,142 @@
+{
+  "status": "PASS",
+  "xor_coordinate_checks": 18434,
+  "cyclic_diagonal_profiles": [
+    {
+      "slots": 2,
+      "xor_axis_nonzero_cyclic_diagonals": [
+        1
+      ],
+      "bit_reversal_cyclic_diagonals": 1,
+      "caveat": "Direct masked-diagonal representation, not a rotation lower bound over composed/BSGS algorithms. Full packing only."
+    },
+    {
+      "slots": 4,
+      "xor_axis_nonzero_cyclic_diagonals": [
+        2,
+        1
+      ],
+      "bit_reversal_cyclic_diagonals": 3,
+      "caveat": "Direct masked-diagonal representation, not a rotation lower bound over composed/BSGS algorithms. Full packing only."
+    },
+    {
+      "slots": 8,
+      "xor_axis_nonzero_cyclic_diagonals": [
+        2,
+        2,
+        1
+      ],
+      "bit_reversal_cyclic_diagonals": 3,
+      "caveat": "Direct masked-diagonal representation, not a rotation lower bound over composed/BSGS algorithms. Full packing only."
+    },
+    {
+      "slots": 16,
+      "xor_axis_nonzero_cyclic_diagonals": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "bit_reversal_cyclic_diagonals": 7,
+      "caveat": "Direct masked-diagonal representation, not a rotation lower bound over composed/BSGS algorithms. Full packing only."
+    },
+    {
+      "slots": 32,
+      "xor_axis_nonzero_cyclic_diagonals": [
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "bit_reversal_cyclic_diagonals": 9,
+      "caveat": "Direct masked-diagonal representation, not a rotation lower bound over composed/BSGS algorithms. Full packing only."
+    },
+    {
+      "slots": 64,
+      "xor_axis_nonzero_cyclic_diagonals": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "bit_reversal_cyclic_diagonals": 27,
+      "caveat": "Direct masked-diagonal representation, not a rotation lower bound over composed/BSGS algorithms. Full packing only."
+    },
+    {
+      "slots": 128,
+      "xor_axis_nonzero_cyclic_diagonals": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "bit_reversal_cyclic_diagonals": 27,
+      "caveat": "Direct masked-diagonal representation, not a rotation lower bound over composed/BSGS algorithms. Full packing only."
+    },
+    {
+      "slots": 256,
+      "xor_axis_nonzero_cyclic_diagonals": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "bit_reversal_cyclic_diagonals": 77,
+      "caveat": "Direct masked-diagonal representation, not a rotation lower bound over composed/BSGS algorithms. Full packing only."
+    },
+    {
+      "slots": 512,
+      "xor_axis_nonzero_cyclic_diagonals": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "bit_reversal_cyclic_diagonals": 81,
+      "caveat": "Direct masked-diagonal representation, not a rotation lower bound over composed/BSGS algorithms. Full packing only."
+    },
+    {
+      "slots": 1024,
+      "xor_axis_nonzero_cyclic_diagonals": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "bit_reversal_cyclic_diagonals": 235,
+      "caveat": "Direct masked-diagonal representation, not a rotation lower bound over composed/BSGS algorithms. Full packing only."
+    }
+  ],
+  "first_hit_coefficient_checks": 314078,
+  "pair_mapping_coefficient_checks": 74700,
+  "higher_arity_counterexample": {
+    "parent": 7,
+    "allowed": 7,
+    "required": 1,
+    "weight": 1,
+    "true_sum": 1,
+    "pair_only_sum": 0
+  },
+  "scope": "Exact index/support checks; no cryptographic execution, error certification, runtime speedup, or empirical query frequency follows from these fixtures."
+}

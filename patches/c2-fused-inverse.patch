@@ -1,0 +1,109 @@
+--- a/src/fft_small/sd_ifft.c
++++ b/src/fft_small/sd_ifft.c
+@@ -1534,3 +1534,65 @@
+         default: FLINT_ASSERT(0);
+     }
+ }
++
++/* Pointwise products and inverse transforms on cache-local full subtrees.
++   Called only by the two-prime path: scale remains in CRT reconstruction. */
++static void bf_pointwise_tile(const sd_fft_ctx_t Q, double *x, const double *y, ulong len)
++{
++    vec8d p = vec8d_set_d(Q->p), pinv = vec8d_set_d(Q->pinv);
++    for (ulong i = 0; i < len; i += 8)
++        vec8d_store(x+i, vec8d_mulmod(vec8d_load(x+i), vec8d_load(y+i), p, pinv));
++}
++
++static void bf_ifft_full_mul(const sd_fft_ctx_t Q, double *x, const double *y,
++                              ulong k, ulong j)
++{
++    if (k <= 2)
++    {
++        bf_pointwise_tile(Q, x, y, BLK_SZ*n_pow2(k));
++        sd_ifft_no_trunc_internal(Q, x, k, j);
++        return;
++    }
++    ulong k1 = k/2, k2 = k-k1, l1 = n_pow2(k1), l2 = n_pow2(k2);
++    for (ulong b = 0; b < l1; b++)
++        bf_ifft_full_mul(Q, x + BLK_SZ*(b<<k2), y + BLK_SZ*(b<<k2),
++                          k2, (j<<k1)+b);
++    for (ulong a = 0; a < l2; a++)
++        sd_ifft_no_trunc_block(Q, x + BLK_SZ*a, l2, k1, j);
++}
++
++void bf_sd_ifft_trunc_mul(sd_fft_ctx_t Q, double *x, const double *y,
++                          ulong L, ulong trunc)
++{
++    FLINT_ASSERT(L >= LG_BLK_SZ && trunc % BLK_SZ == 0);
++    FLINT_ASSERT(trunc > 0 && trunc <= n_pow2(L));
++    sd_fft_ctx_fit_depth(Q, L);
++    ulong k = L-LG_BLK_SZ, n = trunc/BLK_SZ;
++    if (k <= 2)
++    {
++        bf_pointwise_tile(Q, x, y, trunc);
++        sd_ifft_trunc(Q, x, L, trunc);
++        return;
++    }
++    if (n == n_pow2(k))
++    {
++        bf_ifft_full_mul(Q, x, y, k, 0);
++        return;
++    }
++    /* Same top-level schedule as sd_ifft_trunc_internal with z=n, f=0.
++       Full rows are disjoint. Multiply the raw partial row before the column
++       operations can mix it with reconstructed data; never multiply it again. */
++    ulong k1 = k/2, k2 = k-k1, l2 = n_pow2(k2);
++    ulong n1 = n>>k2, n2 = n & (l2-1), z2p = n_min(l2,n);
++    int fp = n2 > 0;
++    for (ulong b = 0; b < n1; b++)
++        bf_ifft_full_mul(Q, x+BLK_SZ*(b<<k2), y+BLK_SZ*(b<<k2), k2, b);
++    if (n2)
++        bf_pointwise_tile(Q, x+BLK_SZ*(n1<<k2), y+BLK_SZ*(n1<<k2), BLK_SZ*n2);
++    for (ulong a = n2; a < z2p; a++)
++        sd_ifft_trunc_block(Q, x+BLK_SZ*a, l2, k1, 0, n1, n1, fp);
++    if (fp)
++        sd_ifft_trunc_internal(Q, x+BLK_SZ*(n1<<k2), k2, n1, z2p, n2, 0);
++    for (ulong a = 0; a < n2; a++)
++        sd_ifft_trunc_block(Q, x+BLK_SZ*a, l2, k1, 0, n1+1, n1+1, 0);
++}
+--- a/src/fft_small/mpn_mul_np2.c
++++ b/src/fft_small/mpn_mul_np2.c
+@@ -243,6 +243,9 @@
+    excluded, so the deficit is the carry of a sum of values each
+    below 2^(64 zl) - under two ulps of limb zl, within the range
+    driver's documented min(an, bn, lo) bound. */
++void bf_sd_ifft_trunc_mul(sd_fft_ctx_t Q, double *x, const double *y,
++                          ulong L, ulong trunc);
++
+ void
+ _mpn_ctx_mpn_mul_window_np2(mpn_ctx_t R, nn_ptr z, ulong zl, ulong zh,
+                         nn_srcptr a, ulong an, nn_srcptr b, ulong bn)
+@@ -267,7 +270,6 @@
+     sd_fft_ctx_struct * Q0 = R->ffts + 0, * Q1 = R->ffts + 1;
+     ulong dsz = sd_fft_ctx_data_size(depth);
+     double * d0, * d1, * e0, * e1;
+-    ulong j;
+ 
+     FLINT_ASSERT(an >= bn && bn >= 1);
+ 
+@@ -292,18 +294,8 @@
+         e1 = d1;
+     }
+ 
+-    for (int k = 0; k < 2; k++)
+-    {
+-        sd_fft_ctx_struct * Q = k ? Q1 : Q0;
+-        vec8d n8 = vec8d_set_d(Q->p), ninv8 = vec8d_set_d(Q->pinv);
+-        double * X = k ? d1 : d0, * Y = k ? e1 : e0;
+-        for (j = 0; j < ztr; j += 8)
+-            vec8d_store(X + j, vec8d_mulmod(vec8d_load(X + j),
+-                                            vec8d_load(Y + j), n8, ninv8));
+-    }
+-
+-    sd_ifft_trunc(Q0, d0, depth, ztr);
+-    sd_ifft_trunc(Q1, d1, depth, ztr);
++    bf_sd_ifft_trunc_mul(Q0, d0, e0, depth, ztr);
++    bf_sd_ifft_trunc_mul(Q1, d1, e1, depth, ztr);
+ 
+     _fft_small_np2_crt_recompose(R, z, zl, zn, d0, d1, zlen,
+                                  (ulong) ztr, bits, depth);

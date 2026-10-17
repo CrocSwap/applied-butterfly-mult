@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "runs": {
+    "delayed-reduction-aa": {
+      "cases": 9,
+      "batches": 756
+    },
+    "delayed-reduction-screen": {
+      "cases": 33,
+      "batches": 2772
+    },
+    "delayed-reduction-repeat": {
+      "cases": 33,
+      "batches": 2772
+    },
+    "inverse-only-aa": {
+      "cases": 4,
+      "batches": 656
+    },
+    "inverse-only-screen": {
+      "cases": 4,
+      "batches": 656
+    },
+    "inverse-only-repeat": {
+      "cases": 4,
+      "batches": 656
+    }
+  },
+  "GMP_comparisons_per_library": 4056,
+  "direct_coefficient_and_range_checks": 3458048,
+  "multiplication_cases_executing_changed_leaf": 0,
+  "sha256": {
+    "scripts/reduction_schedule.py": "efcf4257b629fd7623e4c24e95a2abe492096d421faa313540f41a4efc6124d7",
+    "scripts/make_delayed_reduction.py": "6abd9b9bb3e3561629376e3dd74c55e89027f18b1229306135300fd56b001b5d",
+    "scripts/check_delayed_reduction.py": "d1b8b9b430f2b846204ae9ced61f77b15278990753eeb0a9a42936de03563873",
+    "scripts/audit_delayed_reduction.py": "8def460b855f8cd34d54b7238c120e765671e805ca9bc5015e152e9da6ece0e3",
+    "tests/test_reduction_schedule.py": "5cb7893c39f9ea60f54bee8da5efc2743ceaf0d006079580db8654bb2b0ae7d0",
+    "bench/test_delayed_reduction.c": "a96d040f45e33746da991349774ad25f63dd01c870cbeb56779bc03f9e91ae76",
+    "experiments/delayed-reduction-plan.json": "13d58baffabc80ba330354c2b2de5a8b7e56bc3efbbec22fb6a5e321db8fe3c3",
+    "results/reduction-schedule-search.json": "76f429849a1149a1932637d30521d14fbfded3e6be2af6db9af7a5a7de307fb4",
+    "results/delayed-reduction-assembly.json": "3495563e4410c43ba2a1842d8e008f4916eb11ce40ae8fdc3747c694a6a8e4cc",
+    "results/delayed-reduction-validation.json": "ad1d546b4a3b3822a0d5496db3c9a6ec9766f0de4402578355005bbd5dc865e1",
+    "results/delayed-reduction-analysis.json": "c0cbb945da41be29f01fd4e295f0079aa9af045490d3f93429882049ab6f7d3c",
+    "results/delayed-reduction-checks/tests.txt": "c3b68c1e6f8bf14ce55b976a501774e81dbd3a1d0bc8d15755daf370e179d25e",
+    "results/delayed-reduction-checks/direct-tests.txt": "b34e1efbfc8e6ceec58184e2d523d9208495aa347fdeb691b58e578a57a578f6",
+    "scripts/reduction_schedule16.py": "1bbacc117250d043918b9295fc085680f3ae408299e014e643a50ff1729f0f9d",
+    "results/reduction-schedule16-search.json": "a7fa03ba8bfd430539ba549c11bde6320f5ee13b2b8a4c011ae934187a454096",
+    "bench/trace_inverse_leaves.c": "f4783f85c2314291ac8ab61906a8e55fd58e3758c4c372f8c35d86c35af8e665",
+    "scripts/trace_delayed_reduction.py": "92d2dae0c48997411cebb22aeef1cd9023c1c4b4a2d0b89423a12f6a4617d1c0",
+    "results/delayed-reduction-checks/leaf-calls.jsonl": "f7b83bdac0ca531243bb9f159e625ac2fa717d2b6097130509b7d20095d38d2f",
+    "bench/compare_inverse.c": "a15691af41afa9cf12d92b5a64ce6611300cd8efa4b8f0de6dca43a26b53f64d",
+    "scripts/compare_inverse.py": "ebcd286e8b70cda067d4b4e9231472a4fb72071b3043f945c6c0786d170f763d",
+    "experiments/inverse-only-plan.json": "dec210bc03268a1aa148d550466df4be5256e963d24cabf8366c1f2c7d4a8a09",
+    "results/inverse-only-analysis.json": "73f13ce95c98bde62d51f9f57fdc548e6cde93cf886da953a4c63c14bebfb22d",
+    "results/delayed-reduction-aa/raw.jsonl": "29742302e2b9d4a346e0a63d32a5916668b29ce361ea0f7b84f00a15df64ef66",
+    "results/delayed-reduction-aa/metadata.json": "b3deed140cd06bb2f3c655ee7fee493c2dfe5f41effe390eab97de1ebe026747",
+    "results/delayed-reduction-screen/raw.jsonl": "0ebd5ff831229ac8ee1cf08dda0d003383f9ef712b901646c31140c5133e0013",
+    "results/delayed-reduction-screen/metadata.json": "a77ff17f78446326bcb992d9aebf1c0204f1723153c80c6691a6bb6b93f2c70a",
+    "results/delayed-reduction-repeat/raw.jsonl": "551a996b6f62c8b89c8697be9fa1109d0bd1b2360b0e9bb064bc51f3afeb9c28",
+    "results/delayed-reduction-repeat/metadata.json": "22641d8dd77e49f1f29a741af9568ced50d58ff736c4b9e7e9e1c9f06e18f56b",
+    "results/inverse-only-aa/raw.jsonl": "da31ae646e6e57cc3c0d0c01c0542daa659cf15788c97f786fd6c649433e75a8",
+    "results/inverse-only-aa/metadata.json": "4dd657ce4487b4950a068d4acef1af40f490237ab4fe317c1eff859c9dedbeaf",
+    "results/inverse-only-screen/raw.jsonl": "663facced7cfef5ec287b8d80486111c3c6e415deba8a0e252ad6d0e5a2ed368",
+    "results/inverse-only-screen/metadata.json": "53213a9f436c1a0601a79249f4a9b75ec112d7a9dddbfd95d339954134905b81",
+    "results/inverse-only-repeat/raw.jsonl": "7417c96352ee574c90a83f94ea911aba0d0eceb2b25dfe5f65194f7f6160411a",
+    "results/inverse-only-repeat/metadata.json": "35a5e70e98e6f744e4b846a86a175aa3a22f39d37742d1b71c53f7b8056bd3fa"
+  },
+  "scope": "Evidence integrity and coverage only; no speedup is required."
+}

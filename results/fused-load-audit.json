@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "runs": {
+    "fused-load-aa": {
+      "cases": 9,
+      "batches": 756
+    },
+    "fused-load-screen": {
+      "cases": 33,
+      "batches": 2772
+    },
+    "fused-load-repeat": {
+      "cases": 33,
+      "batches": 2772
+    }
+  },
+  "GMP_comparisons_per_library": 4056,
+  "sha256": {
+    "scripts/screen_fused_loads.py": "9b1d25c1d5eb82c73ba90d9501554dd94933f2e9adb0b451488d17317b613a39",
+    "scripts/audit_fused_loads.py": "5c3256dc7965f30f05275ee9dd8ce3d520c5fd145ee43476316619bc792667f3",
+    "scripts/build_experiment.py": "a361988bad20f107900b1896fa502c07acd542a199097783817e7ad419ec8bec",
+    "experiments/fused-load-plan.json": "eec2e2948c47f3394e5136442cb0f197d6cc9a57cf940712a19548d1912f4063",
+    "results/fused-load-assembly.json": "e7d06099be7e5fb1a0ea8991e422c9e4ddfc655765a535c6f7e5c438eab67729",
+    "results/fused-load-validation.json": "f14f5f9013e2ed55048c3abb6adfab7ebe28ef9741873de457928ef365993936",
+    "results/fused-load-analysis.json": "f870290b09e3ec3ed7f47398c0dc61aa29b6af0ba85dc14aa80b96a4d90c80b5",
+    "results/fused-load-aa/raw.jsonl": "b50880d190949eb99ea985c8f1789c6d5e483c2fcdb31cac356d1be24780c4b4",
+    "results/fused-load-aa/metadata.json": "763c4465a217dd584b837bab791b13765afed997682831a40b62c5347612726e",
+    "results/fused-load-screen/raw.jsonl": "e14de3810ebd641a42171f3e728edfacdb9e60fb9669ec29e41c05b15c583902",
+    "results/fused-load-screen/metadata.json": "c98d83b4e9ce2074ba503508a84053f769c8a5d8eb458c06c09af4068328efb3",
+    "results/fused-load-repeat/raw.jsonl": "2fb8ebb8a7f37787bcf08e940486636753505df7cfc2bc19d68b498401ffd73c",
+    "results/fused-load-repeat/metadata.json": "61ae34655565e1311427ad4286ac85f465f5fa908ea4340a2baadfe15ef1f28b"
+  },
+  "scope": "Evidence integrity and coverage; no speedup is required."
+}

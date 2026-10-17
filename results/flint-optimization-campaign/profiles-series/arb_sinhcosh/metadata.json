@@ -1,0 +1,26 @@
+{
+  "case": {
+    "kind": "arb_sinhcosh",
+    "size": 1024,
+    "length": 128,
+    "prec": 1024,
+    "modulus": 0,
+    "binary": "/Users/colkitt/sith/toys/math/butterflyMult/build/optimization-series-v2",
+    "seed": 91073
+  },
+  "command": [
+    "/Users/colkitt/sith/toys/math/butterflyMult/build/optimization-series-v2",
+    "arb_sinhcosh",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+    "1024",
+    "128",
+    "1024",
+    "0",
+    "91073",
+    "-1",
+    "6000"
+  ],
+  "binary_sha256": "fd82f183876c56c19b996237079470c69b68d31e659d0635532ff941ef465d54",
+  "library_sha256": "a608ca2fe954c5d7bf30dfe6eee004635c69ac8beb37ce77bc7560f039033f67"
+}

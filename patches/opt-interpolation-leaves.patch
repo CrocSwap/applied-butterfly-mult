@@ -1,0 +1,24 @@
+--- a/src/gr_poly/interpolate_fast.c
++++ b/src/gr_poly/interpolate_fast.c
+@@ -65,7 +65,20 @@
+ 
+     status |= _gr_vec_mul(poly, weights, ys, len, ctx);
+ 
+-    for (i = 0; i < FLINT_CLOG2(len); i++)
++    /* Leaves combine two scalars with monic linear factors. Avoid two
++       general polynomial products and their multiplications by one. */
++    for (i = 0; i + 1 < len; i += 2)
++    {
++        pa = GR_ENTRY(tree[0], 2 * i, sz);
++        pb = GR_ENTRY(poly, i, sz);
++        status |= gr_mul(t, pa, GR_ENTRY(pb, 1, sz), ctx);
++        status |= gr_mul(u, pb, GR_ENTRY(pa, 2, sz), ctx);
++        status |= gr_add(t, t, u, ctx);
++        status |= gr_add(GR_ENTRY(pb, 1, sz), GR_ENTRY(pb, 1, sz), pb, ctx);
++        status |= gr_set(pb, t, ctx);
++    }
++
++    for (i = 1; i < FLINT_CLOG2(len); i++)
+     {
+         pow = (WORD(1) << i);
+         pa = tree[i];

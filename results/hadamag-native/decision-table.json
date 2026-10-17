@@ -1,0 +1,410 @@
+[
+  {
+    "case": "exact-10-2",
+    "best_construction": "h4i",
+    "strong_ordinary": "i4",
+    "versus_julia": {
+      "case": "exact-10-2",
+      "baseline": "julia",
+      "candidate": "h4i",
+      "wall": {
+        "reduction_pct": 57.37718603849753,
+        "ci95_low_pct": 56.90329489237808,
+        "ci95_high_pct": 57.80903451878472,
+        "baseline_median_ns": 3959.4541015625,
+        "candidate_median_ns": 1675.1043146306818,
+        "quartets": 12,
+        "bootstrap_block": 3
+      },
+      "cpu": {
+        "reduction_pct": 57.49510808455608,
+        "ci95_low_pct": 57.030968169615385,
+        "ci95_high_pct": 57.94676591365337,
+        "baseline_median_ns": 3943.625710227273,
+        "candidate_median_ns": 1675.2485795454545,
+        "quartets": 12,
+        "bootstrap_block": 3
+      }
+    },
+    "versus_ordinary": {
+      "case": "exact-10-2",
+      "baseline": "i4",
+      "candidate": "h4i",
+      "wall": {
+        "reduction_pct": -92.11102354390151,
+        "ci95_low_pct": -93.53950062979388,
+        "ci95_high_pct": -90.65001483677271,
+        "baseline_median_ns": 857.9738311235171,
+        "candidate_median_ns": 1639.300200628053,
+        "quartets": 12,
+        "bootstrap_block": 3
+      },
+      "cpu": {
+        "reduction_pct": -92.1783778502014,
+        "ci95_low_pct": -93.52047824151835,
+        "ci95_high_pct": -90.77128616601809,
+        "baseline_median_ns": 857.990230286113,
+        "candidate_median_ns": 1638.8695045359386,
+        "quartets": 12,
+        "bootstrap_block": 3
+      }
+    }
+  },
+  {
+    "case": "exact-10-8",
+    "best_construction": "h4i",
+    "strong_ordinary": "i4",
+    "versus_julia": {
+      "case": "exact-10-8",
+      "baseline": "julia",
+      "candidate": "h4i",
+      "wall": {
+        "reduction_pct": 57.66126896252176,
+        "ci95_low_pct": 57.438911095643995,
+        "ci95_high_pct": 57.853252982434796,
+        "baseline_median_ns": 3847.7893758085384,
+        "candidate_median_ns": 1626.606969598965,
+        "quartets": 12,
+        "bootstrap_block": 3
+      },
+      "cpu": {
+        "reduction_pct": 57.70406651792107,
+        "ci95_low_pct": 57.54895096050359,
+        "ci95_high_pct": 57.86338364211261,
+        "baseline_median_ns": 3847.8331177231566,
+        "candidate_median_ns": 1626.7787839586028,
+        "quartets": 12,
+        "bootstrap_block": 3
+      }
+    },
+    "versus_ordinary": {
+      "case": "exact-10-8",
+      "baseline": "i4",
+      "candidate": "h4i",
+      "wall": {
+        "reduction_pct": -93.21274170167135,
+        "ci95_low_pct": -94.16491243589671,
+        "ci95_high_pct": -92.03052135776373,
+        "baseline_median_ns": 848.5455516705517,
+        "candidate_median_ns": 1644.9086538461538,
+        "quartets": 12,
+        "bootstrap_block": 3
+      },
+      "cpu": {
+        "reduction_pct": -92.95068695737643,
+        "ci95_low_pct": -93.90889526342481,
+        "ci95_high_pct": -91.7781637333096,
+        "baseline_median_ns": 848.6305361305361,
+        "candidate_median_ns": 1642.4825174825176,
+        "quartets": 12,
+        "bootstrap_block": 3
+      }
+    }
+  },
+  {
+    "case": "exact-12-2",
+    "best_construction": "h4i",
+    "strong_ordinary": "i4",
+    "versus_julia": {
+      "case": "exact-12-2",
+      "baseline": "julia",
+      "candidate": "h4i",
+      "wall": {
+        "reduction_pct": 56.28085193757446,
+        "ci95_low_pct": 55.83976855949875,
+        "ci95_high_pct": 56.68219118217006,
+        "baseline_median_ns": 16345.293787425151,
+        "candidate_median_ns": 7085.656437125748,
+        "quartets": 12,
+        "bootstrap_block": 3
+      },
+      "cpu": {
+        "reduction_pct": 56.23844618576407,
+        "ci95_low_pct": 55.76674197466887,
+        "ci95_high_pct": 56.63788152957617,
+        "baseline_median_ns": 16345.808383233532,
+        "candidate_median_ns": 7084.206586826347,
+        "quartets": 12,
+        "bootstrap_block": 3
+      }
+    },
+    "versus_ordinary": {
+      "case": "exact-12-2",
+      "baseline": "i4",
+      "candidate": "h4i",
+      "wall": {
+        "reduction_pct": -83.73772909973647,
+        "ci95_low_pct": -84.86450056194963,
+        "ci95_high_pct": -82.62909256048134,
+        "baseline_median_ns": 3913.7219626168226,
+        "candidate_median_ns": 7133.510124610591,
+        "quartets": 12,
+        "bootstrap_block": 3
+      },
+      "cpu": {
+        "reduction_pct": -83.44778958868957,
+        "ci95_low_pct": -84.44301571431514,
+        "ci95_high_pct": -82.43745477124136,
+        "baseline_median_ns": 3913.940809968847,
+        "candidate_median_ns": 7133.372274143302,
+        "quartets": 12,
+        "bootstrap_block": 3
+      }
+    }
+  },
+  {
+    "case": "exact-12-8",
+    "best_construction": "h4i",
+    "strong_ordinary": "i4",
+    "versus_julia": {
+      "case": "exact-12-8",
+      "baseline": "julia",
+      "candidate": "h4i",
+      "wall": {
+        "reduction_pct": 56.367625987418776,
+        "ci95_low_pct": 56.08155011319711,
+        "ci95_high_pct": 56.61575067633683,
+        "baseline_median_ns": 16539.55487804878,
+        "candidate_median_ns": 7199.520579268293,
+        "quartets": 12,
+        "bootstrap_block": 3
+      },
+      "cpu": {
+        "reduction_pct": 56.336249468609836,
+        "ci95_low_pct": 56.0610508495502,
+        "ci95_high_pct": 56.585294094628715,
+        "baseline_median_ns": 16540.77743902439,
+        "candidate_median_ns": 7200.076219512195,
+        "quartets": 12,
+        "bootstrap_block": 3
+      }
+    },
+    "versus_ordinary": {
+      "case": "exact-12-8",
+      "baseline": "i4",
+      "candidate": "h4i",
+      "wall": {
+        "reduction_pct": -81.74190236835457,
+        "ci95_low_pct": -87.81092961940497,
+        "ci95_high_pct": -75.42580354458472,
+        "baseline_median_ns": 3957.2916015624996,
+        "candidate_median_ns": 7130.5255859375,
+        "quartets": 12,
+        "bootstrap_block": 3
+      },
+      "cpu": {
+        "reduction_pct": -80.52745596524866,
+        "ci95_low_pct": -83.91802187306095,
+        "ci95_high_pct": -76.29791759210363,
+        "baseline_median_ns": 3957.421875,
+        "candidate_median_ns": 7130.6640625,
+        "quartets": 12,
+        "bootstrap_block": 3
+      }
+    }
+  },
+  {
+    "case": "exact-14-2",
+    "best_construction": "h4i",
+    "strong_ordinary": "i4",
+    "versus_julia": {
+      "case": "exact-14-2",
+      "baseline": "julia",
+      "candidate": "h4i",
+      "wall": {
+        "reduction_pct": 53.68083293292278,
+        "ci95_low_pct": 53.31498853148198,
+        "ci95_high_pct": 53.9752222611414,
+        "baseline_median_ns": 69457.8765625,
+        "candidate_median_ns": 32154.81875,
+        "quartets": 12,
+        "bootstrap_block": 3
+      },
+      "cpu": {
+        "reduction_pct": 53.63634554040757,
+        "ci95_low_pct": 53.23927292609862,
+        "ci95_high_pct": 53.92226753293554,
+        "baseline_median_ns": 69459.375,
+        "candidate_median_ns": 32156.25,
+        "quartets": 12,
+        "bootstrap_block": 3
+      }
+    },
+    "versus_ordinary": {
+      "case": "exact-14-2",
+      "baseline": "i4",
+      "candidate": "h4i",
+      "wall": {
+        "reduction_pct": -79.71516440105712,
+        "ci95_low_pct": -80.3965324961928,
+        "ci95_high_pct": -78.95828267910494,
+        "baseline_median_ns": 18638.59920634921,
+        "candidate_median_ns": 33565.02182539683,
+        "quartets": 12,
+        "bootstrap_block": 3
+      },
+      "cpu": {
+        "reduction_pct": -79.8760036704213,
+        "ci95_low_pct": -80.45298894324358,
+        "ci95_high_pct": -79.2670448512015,
+        "baseline_median_ns": 18639.880952380954,
+        "candidate_median_ns": 33564.48412698413,
+        "quartets": 12,
+        "bootstrap_block": 3
+      }
+    }
+  },
+  {
+    "case": "exact-14-8",
+    "best_construction": "h4i",
+    "strong_ordinary": "i4",
+    "versus_julia": {
+      "case": "exact-14-8",
+      "baseline": "julia",
+      "candidate": "h4i",
+      "wall": {
+        "reduction_pct": 51.585081576159155,
+        "ci95_low_pct": 51.04413624056503,
+        "ci95_high_pct": 52.158527738955186,
+        "baseline_median_ns": 69533.528125,
+        "candidate_median_ns": 33662.6953125,
+        "quartets": 12,
+        "bootstrap_block": 3
+      },
+      "cpu": {
+        "reduction_pct": 51.65078018949203,
+        "ci95_low_pct": 51.160080345019956,
+        "ci95_high_pct": 52.18879581384179,
+        "baseline_median_ns": 69532.8125,
+        "candidate_median_ns": 33662.5,
+        "quartets": 12,
+        "bootstrap_block": 3
+      }
+    },
+    "versus_ordinary": {
+      "case": "exact-14-8",
+      "baseline": "i4",
+      "candidate": "h4i",
+      "wall": {
+        "reduction_pct": -70.29338312003712,
+        "ci95_low_pct": -72.69891585344106,
+        "ci95_high_pct": -68.15793497203164,
+        "baseline_median_ns": 19441.598345588238,
+        "candidate_median_ns": 33245.44301470589,
+        "quartets": 12,
+        "bootstrap_block": 3
+      },
+      "cpu": {
+        "reduction_pct": -70.23697589353065,
+        "ci95_low_pct": -72.35075652777726,
+        "ci95_high_pct": -68.2594501048369,
+        "baseline_median_ns": 19438.41911764706,
+        "candidate_median_ns": 33225.18382352941,
+        "quartets": 12,
+        "bootstrap_block": 3
+      }
+    }
+  },
+  {
+    "case": "mc-16-2",
+    "best_construction": "h4i",
+    "strong_ordinary": "i8",
+    "versus_julia": {
+      "case": "mc-16-2",
+      "baseline": "julia",
+      "candidate": "h4i",
+      "wall": {
+        "reduction_pct": 52.17201192152058,
+        "ci95_low_pct": 44.90056952606529,
+        "ci95_high_pct": 57.371069507343634,
+        "baseline_median_ns": 376588.546875,
+        "candidate_median_ns": 170795.90625,
+        "quartets": 12,
+        "bootstrap_block": 3
+      },
+      "cpu": {
+        "reduction_pct": 53.97735161050539,
+        "ci95_low_pct": 53.61348820092257,
+        "ci95_high_pct": 54.281546021420866,
+        "baseline_median_ns": 363531.25,
+        "candidate_median_ns": 166593.75,
+        "quartets": 12,
+        "bootstrap_block": 3
+      }
+    },
+    "versus_ordinary": {
+      "case": "mc-16-2",
+      "baseline": "i8",
+      "candidate": "h4i",
+      "wall": {
+        "reduction_pct": -59.83487113969686,
+        "ci95_low_pct": -60.40744689311175,
+        "ci95_high_pct": -59.16458380031726,
+        "baseline_median_ns": 92999.19711538462,
+        "candidate_median_ns": 149226.96634615384,
+        "quartets": 12,
+        "bootstrap_block": 3
+      },
+      "cpu": {
+        "reduction_pct": -59.70424645455525,
+        "ci95_low_pct": -60.36067055610186,
+        "ci95_high_pct": -59.005929207340735,
+        "baseline_median_ns": 93004.80769230769,
+        "candidate_median_ns": 149230.76923076925,
+        "quartets": 12,
+        "bootstrap_block": 3
+      }
+    }
+  },
+  {
+    "case": "mc-16-8",
+    "best_construction": "h4i",
+    "strong_ordinary": "i8",
+    "versus_julia": {
+      "case": "mc-16-8",
+      "baseline": "julia",
+      "candidate": "h4i",
+      "wall": {
+        "reduction_pct": 54.47403517476248,
+        "ci95_low_pct": 53.92680638749032,
+        "ci95_high_pct": 55.03210271610134,
+        "baseline_median_ns": 329960.93055555556,
+        "candidate_median_ns": 150152.48611111112,
+        "quartets": 12,
+        "bootstrap_block": 3
+      },
+      "cpu": {
+        "reduction_pct": 54.44974685550551,
+        "ci95_low_pct": 53.896648453247174,
+        "ci95_high_pct": 55.00173021740673,
+        "baseline_median_ns": 329951.3888888889,
+        "candidate_median_ns": 150145.83333333334,
+        "quartets": 12,
+        "bootstrap_block": 3
+      }
+    },
+    "versus_ordinary": {
+      "case": "mc-16-8",
+      "baseline": "i8",
+      "candidate": "h4i",
+      "wall": {
+        "reduction_pct": -58.74354931810124,
+        "ci95_low_pct": -60.3762043993183,
+        "ci95_high_pct": -57.14538176150863,
+        "baseline_median_ns": 94066.59375,
+        "candidate_median_ns": 149567.14732142858,
+        "quartets": 12,
+        "bootstrap_block": 3
+      },
+      "cpu": {
+        "reduction_pct": -58.88416617507053,
+        "ci95_low_pct": -60.36637082076264,
+        "ci95_high_pct": -57.37086994912202,
+        "baseline_median_ns": 94062.5,
+        "candidate_median_ns": 149571.42857142858,
+        "quartets": 12,
+        "bootstrap_block": 3
+      }
+    }
+  }
+]

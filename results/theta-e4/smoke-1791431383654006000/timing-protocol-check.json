@@ -1,0 +1,18 @@
+{
+  "kind": "protocol check only, no performance claim",
+  "command": [
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-e4/theta-e4",
+    "measure",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/theta-batch/retained/libflint-experiment.dylib",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/theta-equal/candidate/libflint-experiment.dylib",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-e4/smoke-1791431383654006000/coupled-g2.tau",
+    "128",
+    "64",
+    "512",
+    "3",
+    "1"
+  ],
+  "returncode": 0,
+  "stdout": "{\"trial\":0,\"step\":0,\"engine\":0,\"reps\":32,\"ns_per_op\":754468.750,\"cpu_ns_per_op\":754447.938,\"working_precision\":256,\"attempts\":3,\"accuracy\":249}\n{\"trial\":0,\"step\":1,\"engine\":1,\"reps\":32,\"ns_per_op\":749781.250,\"cpu_ns_per_op\":749785.156,\"working_precision\":256,\"attempts\":3,\"accuracy\":249}\n{\"trial\":0,\"step\":2,\"engine\":1,\"reps\":32,\"ns_per_op\":755250.000,\"cpu_ns_per_op\":755234.375,\"working_precision\":256,\"attempts\":3,\"accuracy\":249}\n{\"trial\":0,\"step\":3,\"engine\":0,\"reps\":32,\"ns_per_op\":770000.000,\"cpu_ns_per_op\":769782.531,\"working_precision\":256,\"attempts\":3,\"accuracy\":249}\n{\"trial\":1,\"step\":0,\"engine\":1,\"reps\":32,\"ns_per_op\":779000.000,\"cpu_ns_per_op\":779015.625,\"working_precision\":256,\"attempts\":3,\"accuracy\":249}\n{\"trial\":1,\"step\":1,\"engine\":0,\"reps\":32,\"ns_per_op\":831031.250,\"cpu_ns_per_op\":830514.312,\"working_precision\":256,\"attempts\":3,\"accuracy\":249}\n{\"trial\":1,\"step\":2,\"engine\":0,\"reps\":32,\"ns_per_op\":819406.250,\"cpu_ns_per_op\":817007.812,\"working_precision\":256,\"attempts\":3,\"accuracy\":249}\n{\"trial\":1,\"step\":3,\"engine\":1,\"reps\":32,\"ns_per_op\":763468.750,\"cpu_ns_per_op\":763480.469,\"working_precision\":256,\"attempts\":3,\"accuracy\":249}\n{\"trial\":2,\"step\":0,\"engine\":0,\"reps\":32,\"ns_per_op\":775812.500,\"cpu_ns_per_op\":774751.312,\"working_precision\":256,\"attempts\":3,\"accuracy\":249}\n{\"trial\":2,\"step\":1,\"engine\":1,\"reps\":32,\"ns_per_op\":754812.500,\"cpu_ns_per_op\":754825.500,\"working_precision\":256,\"attempts\":3,\"accuracy\":249}\n{\"trial\":2,\"step\":2,\"engine\":1,\"reps\":32,\"ns_per_op\":765625.000,\"cpu_ns_per_op\":765542.969,\"working_precision\":256,\"attempts\":3,\"accuracy\":249}\n{\"trial\":2,\"step\":3,\"engine\":0,\"reps\":32,\"ns_per_op\":785000.000,\"cpu_ns_per_op\":777276.062,\"working_precision\":256,\"attempts\":3,\"accuracy\":249}\n",
+  "stderr": ""
+}

@@ -1,0 +1,25 @@
+{
+  "status": "complete",
+  "decision": "No strict iteration advantage in 77 cases; stopped before a numerical-solve/runtime prototype under the frozen gate.",
+  "historical_fingerprints_verified": 1679,
+  "inherited_manifest": "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-refresh-20261008/completion.json",
+  "inherited_manifest_sha256": "d38be8c911f87480435ce03f22aaac9c3ac246aada8bdaec959fbc0814a3b5b7",
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/docs/gaussian-bound-screen.md": "02b80509a26d03f3a75bebbcc0290ea8dff1706de45ccaf3e655f5252ae6e801",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/gaussian_bound_screen.py": "ea22d47a291fb9ab09b7d13235a382475ad58b7333c237d025a509a0182501c1",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/audit_gaussian_bound_screen.py": "6963e484dd074f157bb589be1e707c499fa62ca9c058c3550696a58490aa6340",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/gaussian-bound-screen/summary.json": "1008a47515224814754a0ef391c2c23b8a47be9aed67d5311435b30748cf57c4",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/gaussian-bound-screen/audit.json": "fb6626df034d865b2652ab65df364af2e4855d11d2a89fc8a06cf5a5a001630d",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/gaussian-bound-screen/rows.jsonl": "b168e1b5bedd894e7a3dc8da02510f004e2963a33ad5f7e37753afaddc1268bb",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/gaussian-bound-screen/plan.json": "3ce8204086fab9ce184b2d32c75c9a75cc60bba052098a1fe0530e76ac1d78e6",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/gaussian-bound-screen/screen.log": "87e01909e4f2016743a2e9abe235527db242a0358dfb17dac82e83b91b60afb3",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/gaussian-bound-screen/validation.json": "b94428f56899fbe9fc723bd42ff47b9b715ad4c3e1b0aa35ca0e7486976e6d64"
+  },
+  "theory_source_sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/gaussian_bound_screen.py": "ea22d47a291fb9ab09b7d13235a382475ad58b7333c237d025a509a0182501c1",
+    "/Users/colkitt/sith/toys/math/integerMult/notes/fast-gaussian-resampling.tex": "1a81e6b7f9228adace139ef891684db3a894e2a8b6f41b5234275627d25fe455",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-refresh-20261008/completion.json": "d38be8c911f87480435ce03f22aaac9c3ac246aada8bdaec959fbc0814a3b5b7",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/gaussian-bound-screen/validation.json": "b94428f56899fbe9fc723bd42ff47b9b715ad4c3e1b0aa35ca0e7486976e6d64"
+  },
+  "sister_head_at_completion": "56b66d58297deca1d7dd130247d720e960f77a37"
+}

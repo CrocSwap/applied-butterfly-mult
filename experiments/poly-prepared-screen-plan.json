@@ -1,0 +1,56 @@
+{
+  "cases": [
+    [
+      8,
+      240,
+      1000000007,
+      "full"
+    ],
+    [
+      8,
+      256,
+      1000000007,
+      "full"
+    ],
+    [
+      8,
+      1008,
+      1000000007,
+      "full"
+    ],
+    [
+      8,
+      1024,
+      1000000007,
+      "full"
+    ],
+    [
+      8,
+      1024,
+      1108307720798209,
+      "full"
+    ],
+    [
+      4,
+      256,
+      1000000007,
+      "full"
+    ],
+    [
+      8,
+      1024,
+      1000000007,
+      "mid"
+    ],
+    [
+      8,
+      1040,
+      1000000007,
+      "mid"
+    ]
+  ],
+  "trials": 15,
+  "batch_ms": 5,
+  "seed": 502791,
+  "scope": "First screen of fixed pre-normalization plus contiguous pointwise loops, charging the extra pass; includes previously regressing middle products."
+}

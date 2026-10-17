@@ -1,0 +1,1120 @@
+Analysis of sampling optimization-campaign (pid 5882) every 1 millisecond
+Process:         optimization-campaign [5882]
+Path:            /Users/USER/*/optimization-campaign
+Load Address:    0x100ae4000
+Identifier:      optimization-campaign
+Version:         0
+Code Type:       ARM64
+Platform:        macOS
+Parent Process:  Python [3334]
+Target Type:     live task
+
+Date/Time:       2026-10-12 23:50:59.331 -0400
+Launch Time:     2026-10-12 23:50:58.804 -0400
+OS Version:      macOS 26.6.2 (25G83)
+Report Version:  7
+Analysis Tool:   /usr/bin/sample
+
+Physical footprint:         1472K
+Physical footprint (peak):  1472K
+Idle exit:                  untracked
+----
+
+Call graph:
+    2537 Thread_49016115   DispatchQueue_1: com.apple.main-thread  (serial)
+      2537 start  (in dyld) + 6992  [0x18e3604e4]
+        2532 main  (in optimization-campaign) + 3672  [0x100ae54b8]  optimization_campaign.c:282
+        + 893 _arb_poly_evaluate2_rectangular  (in libflint.25.0.dylib) + 716  [0x102739c40]  evaluate2_rectangular.c:84
+        + ! 746 arb_addmul_arf  (in libflint.25.0.dylib) + 232  [0x1026d261c]  addmul.c:31
+        + ! : 400 arf_addmul  (in libflint.25.0.dylib) + 1184  [0x1026bd6d4]  addmul.c:0
+        + ! : | 121 _arf_add_mpn  (in libflint.25.0.dylib) + 4932  [0x1026bd0b0]  add_mpn.c:405
+        + ! : | + 16 _arf_set_round_mpn  (in libflint.25.0.dylib) + 836  [0x1026cb548]  set_round.c:246
+        + ! : | + ! 15 __gmpn_lshift  (in libgmp.10.dylib) + 224,80,...  [0x100bf0d90,0x100bf0d00,...]
+        + ! : | + ! 1 DYLD-STUB$$__gmpn_lshift  (in libflint.25.0.dylib) + 4  [0x102a37b2c]
+        + ! : | + 15 _arf_set_round_mpn  (in libflint.25.0.dylib) + 804,800,...  [0x1026cb528,0x1026cb524,...]  set_round.c:238
+        + ! : | + 12 _arf_set_round_mpn  (in libflint.25.0.dylib) + 540,548  [0x1026cb420,0x1026cb428]  set_round.c:185
+        + ! : | + 10 _arf_set_round_mpn  (in libflint.25.0.dylib) + 92  [0x1026cb260]  set_round.c:82
+        + ! : | + 8 _arf_set_round_mpn  (in libflint.25.0.dylib) + 1496,1396  [0x1026cb7dc,0x1026cb778]  set_round.c:0
+        + ! : | + 7 _arf_set_round_mpn  (in libflint.25.0.dylib) + 664,864,...  [0x1026cb49c,0x1026cb564,...]  set_round.c:233
+        + ! : | + 7 _arf_set_round_mpn  (in libflint.25.0.dylib) + 708  [0x1026cb4c8]  set_round.c:240
+        + ! : | + 7 _arf_set_round_mpn  (in libflint.25.0.dylib) + 136,128,...  [0x1026cb28c,0x1026cb284,...]  set_round.c:87
+        + ! : | + 6 _arf_set_round_mpn  (in libflint.25.0.dylib) + 736  [0x1026cb4e4]  set_round.c:0
+        + ! : | + ! 5 __gmpn_lshift  (in libgmp.10.dylib) + 0,224,...  [0x100bf0cb0,0x100bf0d90,...]
+        + ! : | + ! 1 DYLD-STUB$$__gmpn_lshift  (in libflint.25.0.dylib) + 4  [0x102a37b2c]
+        + ! : | + 6 _arf_set_round_mpn  (in libflint.25.0.dylib) + 1408,1404  [0x1026cb784,0x1026cb780]  set_round.c:259
+        + ! : | + 6 _arf_set_round_mpn  (in libflint.25.0.dylib) + 140  [0x1026cb290]  set_round.c:97
+        + ! : | + 5 _arf_set_round_mpn  (in libflint.25.0.dylib) + 260  [0x1026cb308]  set_round.c:136
+        + ! : | + 5 _arf_set_round_mpn  (in libflint.25.0.dylib) + 24,16,...  [0x1026cb21c,0x1026cb214,...]  set_round.c:64
+        + ! : | + 3 _arf_set_round_mpn  (in libflint.25.0.dylib) + 1388  [0x1026cb770]  mpn_extras.h:0
+        + ! : | + 3 _arf_set_round_mpn  (in libflint.25.0.dylib) + 280  [0x1026cb31c]  set_round.c:137
+        + ! : | + 2 _arf_set_round_mpn  (in libflint.25.0.dylib) + 108  [0x1026cb270]  set_round.c:75
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 160  [0x1026cb2a4]  set_round.c:100
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 848  [0x1026cb554]  set_round.c:247
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 112  [0x1026cb274]  set_round.c:84
+        + ! : | 84 _arf_add_mpn  (in libflint.25.0.dylib) + 592  [0x1026bbfbc]  add_mpn.c:274
+        + ! : | + 82 __gmpn_rshift  (in libgmp.10.dylib) + 224,80,...  [0x100bf0ea0,0x100bf0e10,...]
+        + ! : | + 2 DYLD-STUB$$__gmpn_rshift  (in libflint.25.0.dylib) + 4  [0x102a37bb0]
+        + ! : | 39 _arf_add_mpn  (in libflint.25.0.dylib) + 2832  [0x1026bc87c]  add_mpn.c:297
+        + ! : | + 37 __gmpn_add_n  (in libgmp.10.dylib) + 160,60,...  [0x100bf0158,0x100bf00f4,...]
+        + ! : | + 2 DYLD-STUB$$__gmpn_add_n  (in libflint.25.0.dylib) + 4  [0x102a37a78]
+        + ! : | 33 _arf_add_mpn  (in libflint.25.0.dylib) + 4664  [0x1026bcfa4]  add_mpn.c:362
+        + ! : | + 32 __gmpn_sub_n  (in libgmp.10.dylib) + 160,80,...  [0x100bf0388,0x100bf0338,...]
+        + ! : | + 1 DYLD-STUB$$__gmpn_sub_n  (in libflint.25.0.dylib) + 4  [0x102a37c04]
+        + ! : | 21 _arf_add_mpn  (in libflint.25.0.dylib) + 1484,1684,...  [0x1026bc338,0x1026bc400,...]  add_mpn.c:0
+        + ! : | 20 _arf_add_mpn  (in libflint.25.0.dylib) + 4632  [0x1026bcf84]  add_mpn.c:361
+        + ! : | + 13 __gmpn_neg  (in libgmp.10.dylib) + 56,8,...  [0x100bf05f0,0x100bf05c0,...]
+        + ! : | + 6 __gmpn_neg  (in libgmp.10.dylib) + 44  [0x100bf05e4]
+        + ! : | + ! 6 __gmpn_com  (in libgmp.10.dylib) + 100,0,...  [0x100bf0674,0x100bf0610,...]
+        + ! : | + 1 DYLD-STUB$$__gmpn_neg  (in libflint.25.0.dylib) + 4  [0x102a37b80]
+        + ! : | 15 _arf_add_mpn  (in libflint.25.0.dylib) + 4684  [0x1026bcfb8]  add_mpn.c:363
+        + ! : | + 9 DYLD-STUB$$__gmpn_sub_1  (in libflint.25.0.dylib) + 4  [0x102a37bf8]
+        + ! : | + 6 __gmpn_sub_1  (in libgmp.10.dylib) + 8,172,...  [0x100bf0234,0x100bf02d8,...]
+        + ! : | 14 _arf_set_round_mpn  (in libflint.25.0.dylib) + 1528,1512,...  [0x1026cb7fc,0x1026cb7ec,...]  set_round.c:266
+        + ! : | 13 _arf_add_mpn  (in libflint.25.0.dylib) + 516  [0x1026bbf70]  add_mpn.c:264
+        + ! : | 12 _arf_add_mpn  (in libflint.25.0.dylib) + 4980,4968,...  [0x1026bd0e0,0x1026bd0d4,...]  add_mpn.c:407
+        + ! : | 9 _arf_add_mpn  (in libflint.25.0.dylib) + 76,20  [0x1026bbdb8,0x1026bbd80]  add_mpn.c:30
+        + ! : | 5 _arf_add_mpn  (in libflint.25.0.dylib) + 1464,1376,...  [0x1026bc324,0x1026bc2cc,...]  add_mpn.c:272
+        + ! : | 4 _arf_add_mpn  (in libflint.25.0.dylib) + 4076,1736,...  [0x1026bcd58,0x1026bc434,...]  add_mpn.c:354
+        + ! : | 4 _arf_add_mpn  (in libflint.25.0.dylib) + 4876,4860  [0x1026bd078,0x1026bd068]  add_mpn.c:394
+        + ! : | 3 _arf_add_mpn  (in libflint.25.0.dylib) + 464  [0x1026bbf3c]  add_mpn.c:220
+        + ! : | 1 _arf_add_mpn  (in libflint.25.0.dylib) + 1504  [0x1026bc34c]  add_mpn.c:286
+        + ! : | 1 _arf_add_mpn  (in libflint.25.0.dylib) + 1700  [0x1026bc410]  add_mpn.c:330
+        + ! : | 1 _arf_add_mpn  (in libflint.25.0.dylib) + 80  [0x1026bbdbc]  add_mpn.c:41
+        + ! : 264 arf_addmul  (in libflint.25.0.dylib) + 816  [0x1026bd564]  addmul.c:62
+        + ! : | 212 flint_mpn_mul_3n  (in libflint.25.0.dylib) + 256,216,...  [0x102017090,0x102017068,...]
+        + ! : | 32 flint_mpn_mul_2  (in libflint.25.0.dylib) + 304,316,...  [0x102016eb0,0x102016ebc,...]
+        + ! : | 12 _flint_mpn_mul  (in libflint.25.0.dylib) + 8  [0x101fe662c]  mul.c:61
+        + ! : | 6 flint_mpn_mul  (in libflint.25.0.dylib) + 0  [0x1020b8c7c]  mpn_extras.h:539
+        + ! : | 2 _flint_mpn_mul  (in libflint.25.0.dylib) + 120  [0x101fe669c]  mul.c:67
+        + ! : 23 arf_addmul  (in libflint.25.0.dylib) + 1136,348,...  [0x1026bd6a4,0x1026bd390,...]  addmul.c:0
+        + ! : 9 arf_addmul  (in libflint.25.0.dylib) + 56,72,...  [0x1026bd26c,0x1026bd27c,...]  addmul.c:26
+        + ! : 9 arf_addmul  (in libflint.25.0.dylib) + 636,448,...  [0x1026bd4b0,0x1026bd3f4,...]  addmul.c:56
+        + ! : 8 arf_addmul  (in libflint.25.0.dylib) + 1360  [0x1026bd784]  addmul.c:0
+        + ! : | 3 _arf_add_mpn  (in libflint.25.0.dylib) + 4932  [0x1026bd0b0]  add_mpn.c:405
+        + ! : | + 2 _arf_set_round_mpn  (in libflint.25.0.dylib) + 800,804  [0x1026cb524,0x1026cb528]  set_round.c:238
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 1388  [0x1026cb770]  mpn_extras.h:0
+        + ! : | 1 _arf_add_mpn  (in libflint.25.0.dylib) + 1632  [0x1026bc3cc]  add_mpn.c:292
+        + ! : | 1 _arf_add_mpn  (in libflint.25.0.dylib) + 1660  [0x1026bc3e8]  add_mpn.c:293
+        + ! : | + 1 __gmpn_add_n  (in libgmp.10.dylib) + 176  [0x100bf0168]
+        + ! : | 1 _arf_add_mpn  (in libflint.25.0.dylib) + 76  [0x1026bbdb8]  add_mpn.c:30
+        + ! : | 1 _arf_add_mpn  (in libflint.25.0.dylib) + 4368  [0x1026bce7c]  add_mpn.c:336
+        + ! : | 1 _arf_add_mpn  (in libflint.25.0.dylib) + 5108  [0x1026bd160]  add_mpn.c:410
+        + ! : 7 arf_addmul  (in libflint.25.0.dylib) + 776  [0x1026bd53c]  addmul.c:62
+        + ! : 6 _flint_mpn_mul  (in libflint.25.0.dylib) + 156  [0x101fe66c0]  mul.c:68
+        + ! : 6 arf_addmul  (in libflint.25.0.dylib) + 396  [0x1026bd3c0]  addmul.c:55
+        + ! : 6 arf_addmul  (in libflint.25.0.dylib) + 1232  [0x1026bd704]  fmpz.h:0
+        + ! : 4 _arf_add_mpn  (in libflint.25.0.dylib) + 5204,5212  [0x1026bd1c0,0x1026bd1c8]  add_mpn.c:412
+        + ! : 2 arf_addmul  (in libflint.25.0.dylib) + 44,48  [0x1026bd260,0x1026bd264]  addmul.c:17
+        + ! : 1 arf_addmul  (in libflint.25.0.dylib) + 356  [0x1026bd398]  addmul.c:50
+        + ! : 1 arf_addmul  (in libflint.25.0.dylib) + 1144  [0x1026bd6ac]  addmul.c:68
+        + ! 45 arf_mag_fast_add_ulp  (in libflint.25.0.dylib) + 112,4,...  [0x1026d29c0,0x1026d2954,...]  arf.h:1127
+        + ! 22 arb_addmul_arf  (in libflint.25.0.dylib) + 208  [0x1026d2604]  addmul.c:30
+        + ! : 11 mag_fast_addmul  (in libflint.25.0.dylib) + 224  [0x1026d2948]  mag.h:392
+        + ! : 6 mag_fast_addmul  (in libflint.25.0.dylib) + 12,16  [0x1026d2874,0x1026d2878]  mag.h:360
+        + ! : 5 mag_fast_addmul  (in libflint.25.0.dylib) + 4  [0x1026d286c]  mag.h:0
+        + ! 21 arb_addmul_arf  (in libflint.25.0.dylib) + 68,132,...  [0x1026d2578,0x1026d25b8,...]  addmul.c:27
+        + ! 18 arb_addmul_arf  (in libflint.25.0.dylib) + 192  [0x1026d25f4]  addmul.c:29
+        + ! : 13 mag_fast_init_set_arf  (in libflint.25.0.dylib) + 80  [0x1026d2860]  arf.h:1120
+        + ! : 5 mag_fast_init_set_arf  (in libflint.25.0.dylib) + 8  [0x1026d2818]  arf.h:1115
+        + ! 10 arf_addmul  (in libflint.25.0.dylib) + 1272  [0x1026bd72c]  addmul.c:78
+        + ! 9 arb_addmul_arf  (in libflint.25.0.dylib) + 52  [0x1026d2568]  addmul.c:20
+        + ! 7 arb_addmul  (in libflint.25.0.dylib) + 60  [0x1026d2a14]  addmul.c:62
+        + ! 7 arb_addmul_arf  (in libflint.25.0.dylib) + 40,4  [0x1026d255c,0x1026d2538]  addmul.c:16
+        + ! 3 arb_addmul  (in libflint.25.0.dylib) + 468,456  [0x1026d2bac,0x1026d2ba0]  addmul.c:0
+        + ! 3 arb_addmul  (in libflint.25.0.dylib) + 52,48  [0x1026d2a0c,0x1026d2a08]  addmul.c:58
+        + ! 2 arb_addmul_arf  (in libflint.25.0.dylib) + 252  [0x1026d2630]  addmul.c:34
+        + 576 _arb_poly_evaluate2_rectangular  (in libflint.25.0.dylib) + 332  [0x102739ac0]  evaluate2_rectangular.c:61
+        + ! 431 arb_dot  (in libflint.25.0.dylib) + 2256  [0x1026e1c9c]  dot.c:859
+        + ! : 197 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 644  [0x1026e0eb8]  dot.c:236
+        + ! : | 195 flint_mpn_mul_2  (in libflint.25.0.dylib) + 304,316,...  [0x102016eb0,0x102016ebc,...]
+        + ! : | 2 _flint_mpn_mul  (in libflint.25.0.dylib) + 8  [0x101fe662c]  mul.c:61
+        + ! : 78 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 1116  [0x1026e1090]  dot.c:242
+        + ! : | 74 __gmpn_rshift  (in libgmp.10.dylib) + 224,264,...  [0x100bf0ea0,0x100bf0ec8,...]
+        + ! : | 4 DYLD-STUB$$__gmpn_rshift  (in libflint.25.0.dylib) + 4  [0x102a37bb0]
+        + ! : 37 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 1324  [0x1026e1160]  dot.c:274
+        + ! : | 35 __gmpn_add_n  (in libgmp.10.dylib) + 160,28,...  [0x100bf0158,0x100bf00d4,...]
+        + ! : | 2 DYLD-STUB$$__gmpn_add_n  (in libflint.25.0.dylib) + 0,4  [0x102a37a74,0x102a37a78]
+        + ! : 31 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 1236  [0x1026e1108]  dot.c:272
+        + ! : | 28 __gmpn_sub_n  (in libgmp.10.dylib) + 160,176,...  [0x100bf0388,0x100bf0398,...]
+        + ! : | 3 DYLD-STUB$$__gmpn_sub_n  (in libflint.25.0.dylib) + 0,4,...  [0x102a37c00,0x102a37c04,...]
+        + ! : 29 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 1232  [0x1026e1104]  dot.c:272
+        + ! : 10 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 60,68  [0x1026e0c70,0x1026e0c78]  dot.c:200
+        + ! : 9 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 1320  [0x1026e115c]  dot.c:274
+        + ! : 6 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 164  [0x1026e0cd8]  dot.c:218
+        + ! : 5 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 280,276  [0x1026e0d4c,0x1026e0d48]  dot.c:236
+        + ! : 5 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 1120  [0x1026e1094]  dot.c:244
+        + ! : 4 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 32,0  [0x1026e0c54,0x1026e0c34]  dot.c:171
+        + ! : 3 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 220  [0x1026e0d10]  dot.c:235
+        + ! : 3 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 1228  [0x1026e1100]  dot.c:271
+        + ! : 2 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 1200  [0x1026e10e4]  dot.c:0
+        + ! : 2 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 100  [0x1026e0c98]  dot.c:206
+        + ! : 2 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 644  [0x1026e0eb8]  dot.c:237
+        + ! : 2 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 1132  [0x1026e10a0]  dot.c:247
+        + ! : 2 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 1144  [0x1026e10ac]  dot.c:253
+        + ! : 2 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 1220  [0x1026e10f8]  dot.c:269
+        + ! : 1 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 56  [0x1026e0c6c]  dot.c:197
+        + ! : 1 _flint_mpn_mul  (in libflint.25.0.dylib) + 112  [0x101fe6694]  mul.c:66
+        + ! 23 arb_dot  (in libflint.25.0.dylib) + 3276,1724,...  [0x1026e2098,0x1026e1a88,...]  dot.c:0
+        + ! 23 arb_dot  (in libflint.25.0.dylib) + 500,548,...  [0x1026e15c0,0x1026e15f0,...]  dot.c:464
+        + ! 21 arb_dot  (in libflint.25.0.dylib) + 3448  [0x1026e2144]  dot.c:954
+        + ! : 10 _arf_set_round_mpn  (in libflint.25.0.dylib) + 836  [0x1026cb548]  set_round.c:246
+        + ! : | 9 __gmpn_lshift  (in libgmp.10.dylib) + 224,228,...  [0x100bf0d90,0x100bf0d94,...]
+        + ! : | 1 DYLD-STUB$$__gmpn_lshift  (in libflint.25.0.dylib) + 4  [0x102a37b2c]
+        + ! : 4 _arf_set_round_mpn  (in libflint.25.0.dylib) + 664,656  [0x1026cb49c,0x1026cb494]  set_round.c:233
+        + ! : 2 _arf_set_round_mpn  (in libflint.25.0.dylib) + 540,544  [0x1026cb420,0x1026cb424]  set_round.c:185
+        + ! : 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 296  [0x1026cb32c]  set_round.c:143
+        + ! : 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 708  [0x1026cb4c8]  set_round.c:240
+        + ! : 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 56  [0x1026cb23c]  set_round.c:64
+        + ! : 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 92  [0x1026cb260]  set_round.c:82
+        + ! : 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 140  [0x1026cb290]  set_round.c:97
+        + ! 10 arb_dot  (in libflint.25.0.dylib) + 1420  [0x1026e1958]  dot.c:631
+        + ! : 2 _arb_dot_add_generic  (in libflint.25.0.dylib) + 356  [0x1026e1360]  dot.c:361
+        + ! : | 2 __gmpn_add_n  (in libgmp.10.dylib) + 28,176  [0x100bf00d4,0x100bf0168]
+        + ! : 1 _arb_dot_add_generic  (in libflint.25.0.dylib) + 12  [0x1026e1208]  dot.c:296
+        + ! : 1 _arb_dot_add_generic  (in libflint.25.0.dylib) + 100  [0x1026e1260]  dot.c:302
+        + ! : 1 _arb_dot_add_generic  (in libflint.25.0.dylib) + 76  [0x1026e1248]  dot.c:307
+        + ! : 1 _arb_dot_add_generic  (in libflint.25.0.dylib) + 104  [0x1026e1264]  dot.c:320
+        + ! : 1 _arb_dot_add_generic  (in libflint.25.0.dylib) + 224  [0x1026e12dc]  dot.c:356
+        + ! : 1 _arb_dot_add_generic  (in libflint.25.0.dylib) + 240  [0x1026e12ec]  dot.c:359
+        + ! : | 1 DYLD-STUB$$__gmpn_sub_n  (in libflint.25.0.dylib) + 4  [0x102a37c04]
+        + ! : 1 _arb_dot_add_generic  (in libflint.25.0.dylib) + 236  [0x1026e12e8]  dot.c:359
+        + ! : 1 _arb_dot_add_generic  (in libflint.25.0.dylib) + 352  [0x1026e135c]  dot.c:361
+        + ! 9 arb_dot  (in libflint.25.0.dylib) + 624  [0x1026e163c]  dot.c:494
+        + ! 9 arb_dot  (in libflint.25.0.dylib) + 2880  [0x1026e1f0c]  dot.c:863
+        + ! 8 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 1356,1364  [0x1026e1180,0x1026e1188]  dot.c:290
+        + ! 5 arb_dot  (in libflint.25.0.dylib) + 1680,1672  [0x1026e1a5c,0x1026e1a54]  dot.c:658
+        + ! 3 arb_dot  (in libflint.25.0.dylib) + 20,32,...  [0x1026e13e0,0x1026e13ec,...]  dot.c:381
+        + ! 3 arb_dot  (in libflint.25.0.dylib) + 644  [0x1026e1650]  dot.c:499
+        + ! 3 arb_dot  (in libflint.25.0.dylib) + 1656  [0x1026e1a44]  dot.c:648
+        + ! 3 arb_dot  (in libflint.25.0.dylib) + 2196,2192  [0x1026e1c60,0x1026e1c5c]  dot.c:854
+        + ! 3 arb_dot  (in libflint.25.0.dylib) + 3400  [0x1026e2114]  dot.c:919
+        + ! : 3 __gmpn_com  (in libgmp.10.dylib) + 76,120  [0x100bf065c,0x100bf0688]
+        + ! 3 arb_dot  (in libflint.25.0.dylib) + 3464  [0x1026e2154]  dot.c:956
+        + ! 2 arb_dot  (in libflint.25.0.dylib) + 572  [0x1026e1608]  dot.c:480
+        + ! 2 arb_dot  (in libflint.25.0.dylib) + 1712  [0x1026e1a7c]  dot.c:668
+        + ! 2 arb_dot  (in libflint.25.0.dylib) + 2104  [0x1026e1c04]  dot.c:853
+        + ! 2 arb_dot  (in libflint.25.0.dylib) + 2884,2888  [0x1026e1f10,0x1026e1f14]  dot.c:865
+        + ! 2 arb_dot  (in libflint.25.0.dylib) + 3872  [0x1026e22ec]  dot.c:976
+        + ! 1 _arb_dot_add_generic  (in libflint.25.0.dylib) + 388  [0x1026e1380]  dot.c:377
+        + ! 1 arb_dot  (in libflint.25.0.dylib) + 136  [0x1026e1454]  dot.c:435
+        + ! 1 arb_dot  (in libflint.25.0.dylib) + 564  [0x1026e1600]  dot.c:476
+        + ! 1 arb_dot  (in libflint.25.0.dylib) + 1256  [0x1026e18b4]  dot.c:598
+        + ! 1 arb_dot  (in libflint.25.0.dylib) + 1256  [0x1026e18b4]  dot.c:607
+        + ! : 1 _platform_memset  (in libsystem_platform.dylib) + 140  [0x18e73511c]
+        + ! 1 arb_dot  (in libflint.25.0.dylib) + 2892  [0x1026e1f18]  dot.c:874
+        + ! 1 arb_dot  (in libflint.25.0.dylib) + 2896  [0x1026e1f1c]  dot.c:876
+        + ! 1 arb_dot  (in libflint.25.0.dylib) + 3304  [0x1026e20b4]  dot.c:951
+        + ! 1 arb_dot  (in libflint.25.0.dylib) + 3704  [0x1026e2244]  dot.c:979
+        + 275 _arb_poly_evaluate2_rectangular  (in libflint.25.0.dylib) + 696  [0x102739c2c]  evaluate2_rectangular.c:83
+        + ! 260 arb_mul_ui  (in libflint.25.0.dylib) + 80  [0x1026f8808]  mul.c:149
+        + ! : 219 arb_mul_arf  (in libflint.25.0.dylib) + 640  [0x1026f814c]  mul.c:22
+        + ! : | 173 arf_mul_rnd_down  (in libflint.25.0.dylib) + 952  [0x1026c796c]  mul_rnd_down.c:174
+        + ! : | + 36 _arf_set_round_mpn  (in libflint.25.0.dylib) + 708  [0x1026cb4c8]  set_round.c:240
+        + ! : | + 26 _arf_set_round_mpn  (in libflint.25.0.dylib) + 740,1544,...  [0x1026cb4e8,0x1026cb80c,...]  set_round.c:238
+        + ! : | + 19 _arf_set_round_mpn  (in libflint.25.0.dylib) + 92  [0x1026cb260]  set_round.c:82
+        + ! : | + 14 _arf_set_round_mpn  (in libflint.25.0.dylib) + 672,1496  [0x1026cb4a4,0x1026cb7dc]  set_round.c:0
+        + ! : | + 13 _arf_set_round_mpn  (in libflint.25.0.dylib) + 684  [0x1026cb4b0]  set_round.c:233
+        + ! : | + ! 7 _xzm_free  (in libsystem_malloc.dylib) + 28,64,...  [0x18e548134,0x18e548158,...]
+        + ! : | + ! 2 DYLD-STUB$$free  (in libflint.25.0.dylib) + 4  [0x102a38258]
+        + ! : | + ! 2 _free  (in libsystem_malloc.dylib) + 36,56  [0x18e557cf4,0x18e557d08]
+        + ! : | + ! 1 _arf_demote  (in libflint.25.0.dylib) + 0  [0x1026c7178]  memory_manager.c:73
+        + ! : | + ! 1 _xzm_free  (in libsystem_malloc.dylib) + 352  [0x18e548278]
+        + ! : | + !   1 _platform_memset  (in libsystem_platform.dylib) + 208  [0x18e735160]
+        + ! : | + 10 _arf_set_round_mpn  (in libflint.25.0.dylib) + 540,548  [0x1026cb420,0x1026cb428]  set_round.c:185
+        + ! : | + 9 _arf_set_round_mpn  (in libflint.25.0.dylib) + 664,636,...  [0x1026cb49c,0x1026cb480,...]  set_round.c:233
+        + ! : | + 8 _arf_set_round_mpn  (in libflint.25.0.dylib) + 736  [0x1026cb4e4]  set_round.c:0
+        + ! : | + ! 6 __gmpn_lshift  (in libgmp.10.dylib) + 232,20,...  [0x100bf0d98,0x100bf0cc4,...]
+        + ! : | + ! 2 DYLD-STUB$$__gmpn_lshift  (in libflint.25.0.dylib) + 4  [0x102a37b2c]
+        + ! : | + 8 _arf_set_round_mpn  (in libflint.25.0.dylib) + 700  [0x1026cb4c0]  set_round.c:234
+        + ! : | + 7 _arf_set_round_mpn  (in libflint.25.0.dylib) + 656  [0x1026cb494]  set_round.c:233
+        + ! : | + ! 7 _arf_promote  (in libflint.25.0.dylib) + 28  [0x1026c7168]  memory_manager.c:62
+        + ! : | + !   5 flint_malloc  (in libflint.25.0.dylib) + 28  [0x101facd8c]  memory_manager.c:81
+        + ! : | + !   : 3 <deduplicated_symbol>  (in libsystem_malloc.dylib) + 112,136  [0x18e5471cc,0x18e5471e4]
+        + ! : | + !   : 1 _malloc_zone_malloc  (in libsystem_malloc.dylib) + 56  [0x18e5570f4]
+        + ! : | + !   : 1 _xzm_xzone_malloc  (in libsystem_malloc.dylib) + 124  [0x18e5479cc]
+        + ! : | + !   1 flint_malloc  (in libflint.25.0.dylib) + 4  [0x101facd74]  memory_manager.c:80
+        + ! : | + !   1 flint_malloc  (in libflint.25.0.dylib) + 20  [0x101facd84]  memory_manager.c:81
+        + ! : | + 7 _arf_set_round_mpn  (in libflint.25.0.dylib) + 132  [0x1026cb288]  set_round.c:87
+        + ! : | + 6 _arf_set_round_mpn  (in libflint.25.0.dylib) + 1388  [0x1026cb770]  mpn_extras.h:0
+        + ! : | + 4 _xzm_free  (in libsystem_malloc.dylib) + 1564,1544,...  [0x18e548734,0x18e548720,...]
+        + ! : | + 3 _arf_set_round_mpn  (in libflint.25.0.dylib) + 16  [0x1026cb214]  set_round.c:64
+        + ! : | + 3 _arf_set_round_mpn  (in libflint.25.0.dylib) + 76  [0x1026cb250]  set_round.c:78
+        + ! : | 16 arf_mul_rnd_down  (in libflint.25.0.dylib) + 84,68  [0x1026c7608,0x1026c75f8]  mul_rnd_down.c:30
+        + ! : | 12 _arf_set_round_mpn  (in libflint.25.0.dylib) + 1528  [0x1026cb7fc]  set_round.c:266
+        + ! : | 7 arf_mul_rnd_down  (in libflint.25.0.dylib) + 1032,992  [0x1026c79bc,0x1026c7994]  mul_rnd_down.c:175
+        + ! : | 6 arf_mul_rnd_down  (in libflint.25.0.dylib) + 24,20  [0x1026c75cc,0x1026c75c8]  mul_rnd_down.c:17
+        + ! : | 3 arf_mul_rnd_down  (in libflint.25.0.dylib) + 352,92  [0x1026c7714,0x1026c7610]  mul_rnd_down.c:0
+        + ! : | 2 arf_mul_rnd_down  (in libflint.25.0.dylib) + 64  [0x1026c75f4]  mul_rnd_down.c:28
+        + ! : 16 arb_mul_arf  (in libflint.25.0.dylib) + 56,60,...  [0x1026f7f04,0x1026f7f08,...]  mul.c:20
+        + ! : 14 arf_mul_rnd_down  (in libflint.25.0.dylib) + 2112  [0x1026c7df4]  mul_rnd_down.c:205
+        + ! : 4 arb_mul_arf  (in libflint.25.0.dylib) + 584,592  [0x1026f8114,0x1026f811c]  mul.c:0
+        + ! : 4 arb_mul_arf  (in libflint.25.0.dylib) + 20,16  [0x1026f7ee0,0x1026f7edc]  mul.c:16
+        + ! : 3 arb_mul_arf  (in libflint.25.0.dylib) + 724,712  [0x1026f81a0,0x1026f8194]  mul.c:27
+        + ! 5 arb_mul_ui  (in libflint.25.0.dylib) + 92  [0x1026f8814]  mul.c:0
+        + ! 4 arb_mul_arf  (in libflint.25.0.dylib) + 612  [0x1026f8130]  mul.c:70
+        + ! 2 arb_mul_ui  (in libflint.25.0.dylib) + 24  [0x1026f87d0]  mul.c:146
+        + ! 2 arb_mul_ui  (in libflint.25.0.dylib) + 28  [0x1026f87d4]  mul.c:148
+        + ! 2 arb_mul_ui  (in libflint.25.0.dylib) + 104  [0x1026f8820]  mul.c:150
+        + 193 _arb_poly_evaluate2_rectangular  (in libflint.25.0.dylib) + 188  [0x102739a30]  evaluate2_rectangular.c:54
+        + ! 183 _arb_vec_set_powers  (in libflint.25.0.dylib) + 164  [0x10270a0a0]  vec_set_powers.c:0
+        + ! : 85 arb_mul  (in libflint.25.0.dylib) + 1096  [0x1026f86f8]  mul.c:96
+        + ! : | 54 arf_mul_rnd_down  (in libflint.25.0.dylib) + 2316  [0x1026c7ec0]  mul_rnd_down.c:197
+        + ! : | + 54 _flint_mpn_sqr  (in libflint.25.0.dylib) + 36  [0x101fe67a0]  mul.c:103
+        + ! : | +   41 __gmpn_sqr_basecase  (in libgmp.10.dylib) + 148  [0x100bf5dac]
+        + ! : | +   ! 41 __gmpn_addmul_1  (in libgmp.10.dylib) + 220,252,...  [0x100bf088c,0x100bf08ac,...]
+        + ! : | +   7 __gmpn_sqr_diag_addlsh1  (in libgmp.10.dylib) + 132,48,...  [0x100c18b04,0x100c18ab0,...]
+        + ! : | +   3 __gmpn_sqr_basecase  (in libgmp.10.dylib) + 96  [0x100bf5d78]
+        + ! : | +   ! 3 __gmpn_mul_1  (in libgmp.10.dylib) + 192  [0x100bf0768]
+        + ! : | +   2 __gmpn_sqr  (in libgmp.10.dylib) + 36  [0x100bf5aa4]
+        + ! : | +   1 DYLD-STUB$$__gmpn_sqr  (in libflint.25.0.dylib) + 4  [0x102a37bd4]
+        + ! : | 29 arf_mul_rnd_down  (in libflint.25.0.dylib) + 1880  [0x1026c7d0c]  mul_rnd_down.c:199
+        + ! : | + 10 _arf_set_round_mpn  (in libflint.25.0.dylib) + 656  [0x1026cb494]  set_round.c:233
+        + ! : | + ! 10 _arf_promote  (in libflint.25.0.dylib) + 28  [0x1026c7168]  memory_manager.c:62
+        + ! : | + !   8 flint_malloc  (in libflint.25.0.dylib) + 28  [0x101facd8c]  memory_manager.c:81
+        + ! : | + !   : 5 _xzm_xzone_malloc  (in libsystem_malloc.dylib) + 8,32,...  [0x18e547958,0x18e547970,...]
+        + ! : | + !   : 3 <deduplicated_symbol>  (in libsystem_malloc.dylib) + 112,212  [0x18e5471cc,0x18e547230]
+        + ! : | + !   1 flint_malloc  (in libflint.25.0.dylib) + 20  [0x101facd84]  memory_manager.c:81
+        + ! : | + !   1 flint_malloc  (in libflint.25.0.dylib) + 32  [0x101facd90]  memory_manager.c:86
+        + ! : | + 4 _arf_set_round_mpn  (in libflint.25.0.dylib) + 280  [0x1026cb31c]  set_round.c:137
+        + ! : | + 4 _arf_set_round_mpn  (in libflint.25.0.dylib) + 104,92  [0x1026cb26c,0x1026cb260]  set_round.c:82
+        + ! : | + 3 _arf_set_round_mpn  (in libflint.25.0.dylib) + 736  [0x1026cb4e4]  set_round.c:0
+        + ! : | + ! 3 __gmpn_lshift  (in libgmp.10.dylib) + 224,228,...  [0x100bf0d90,0x100bf0d94,...]
+        + ! : | + 3 _arf_set_round_mpn  (in libflint.25.0.dylib) + 836  [0x1026cb548]  set_round.c:246
+        + ! : | + ! 3 __gmpn_lshift  (in libgmp.10.dylib) + 224,228  [0x100bf0d90,0x100bf0d94]
+        + ! : | + 2 _arf_set_round_mpn  (in libflint.25.0.dylib) + 636,656  [0x1026cb480,0x1026cb494]  set_round.c:233
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 1388  [0x1026cb770]  mpn_extras.h:0
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 1496  [0x1026cb7dc]  set_round.c:0
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 136  [0x1026cb28c]  set_round.c:87
+        + ! : | 2 arf_mul_rnd_down  (in libflint.25.0.dylib) + 1740,2300  [0x1026c7c80,0x1026c7eb0]  mul_rnd_down.c:197
+        + ! : 85 arb_mul_arf  (in libflint.25.0.dylib) + 940  [0x1026f8278]  mul.c:36
+        + ! : | 69 arf_mul_rnd_down  (in libflint.25.0.dylib) + 1848  [0x1026c7cec]  mul_rnd_down.c:197
+        + ! : | + 68 _flint_mpn_mul  (in libflint.25.0.dylib) + 208  [0x101fe66f4]  mul.c:76
+        + ! : | + ! 20 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1132  [0x101fea2ac]  mul_toom22.c:198
+        + ! : | + ! : 20 flint_mpn_mul_9n  (in libflint.25.0.dylib) + 344,232,...  [0x102017730,0x1020176c0,...]
+        + ! : | + ! 18 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1228  [0x101fea30c]  mul_toom22.c:206
+        + ! : | + ! : 18 flint_mpn_mul_9n  (in libflint.25.0.dylib) + 344,316,...  [0x102017730,0x102017714,...]
+        + ! : | + ! 5 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1436  [0x101fea3dc]  mul_toom22.c:215
+        + ! : | + ! : 5 __gmpn_add_n  (in libgmp.10.dylib) + 160,176,...  [0x100bf0158,0x100bf0168,...]
+        + ! : | + ! 3 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1564  [0x101fea45c]  mul_toom22.c:223
+        + ! : | + ! : 3 __gmpn_sub_n  (in libgmp.10.dylib) + 160  [0x100bf0388]
+        + ! : | + ! 2 ???  (in <unknown binary>)  [0xffff96b1e1017c26]
+        + ! : | + ! : 2 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | + ! 2 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 52,60  [0x101fe9e74,0x101fe9e7c]  mul_toom22.c:115
+        + ! : | + ! 2 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1400  [0x101fea3b8]  mul_toom22.c:212
+        + ! : | + ! : 1 DYLD-STUB$$__gmpn_add_n  (in libflint.25.0.dylib) + 4  [0x102a37a78]
+        + ! : | + ! : 1 __gmpn_add_n  (in libgmp.10.dylib) + 180  [0x100bf016c]
+        + ! : | + ! 1 ???  (in <unknown binary>)  [0x17296a1d6bff]
+        + ! : | + ! : 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 188  [0x102017534]
+        + ! : | + ! 1 ???  (in <unknown binary>)  [0x227e98183e1a]
+        + ! : | + ! : 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 212  [0x10201754c]
+        + ! : | + ! 1 ???  (in <unknown binary>)  [0x244e99e5c829]
+        + ! : | + ! : 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 260  [0x10201757c]
+        + ! : | + ! 1 ???  (in <unknown binary>)  [0x36e5acefa78c]
+        + ! : | + ! : 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | + ! 1 ???  (in <unknown binary>)  [0x481dcc75047c]
+        + ! : | + ! : 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 188  [0x102017534]
+        + ! : | + ! 1 ???  (in <unknown binary>)  [0x5b40d0526b37]
+        + ! : | + ! : 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 212  [0x10201754c]
+        + ! : | + ! 1 ???  (in <unknown binary>)  [0x78a65bbb9996]
+        + ! : | + ! : 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 276  [0x10201758c]
+        + ! : | + ! 1 ???  (in <unknown binary>)  [0x7b67384f422e]
+        + ! : | + ! : 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 232  [0x102017560]
+        + ! : | + ! 1 ???  (in <unknown binary>)  [0xffff975afce4a8dc]
+        + ! : | + ! : 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | + ! 1 ???  (in <unknown binary>)  [0xfffff2f2164cecf5]
+        + ! : | + ! : 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 212  [0x10201754c]
+        + ! : | + ! 1 ???  (in <unknown binary>)  [0xfffffcb32f86828e]
+        + ! : | + ! : 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 252  [0x102017574]
+        + ! : | + ! 1 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 164  [0x101fe9ee4]  mul_toom22.c:117
+        + ! : | + ! : 1 ___chkstk_darwin  (in libsystem_pthread.dylib) + 52  [0x18e726c54]
+        + ! : | + ! 1 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 672  [0x101fea0e0]  mul_toom22.c:188
+        + ! : | + ! : 1 __gmpn_sub_n  (in libgmp.10.dylib) + 60  [0x100bf0324]
+        + ! : | + ! 1 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1076  [0x101fea274]  mul_toom22.c:188
+        + ! : | + ! 1 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1316  [0x101fea364]  mul_toom22.c:201
+        + ! : | + ! : 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 332  [0x1020175c4]
+        + ! : | + ! 1 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1376  [0x101fea3a0]  mul_toom22.c:209
+        + ! : | + !   1 __gmpn_add_n  (in libgmp.10.dylib) + 160  [0x100bf0158]
+        + ! : | + 1 _flint_mpn_mul  (in libflint.25.0.dylib) + 120  [0x101fe669c]  mul.c:67
+        + ! : | 12 arf_mul_rnd_down  (in libflint.25.0.dylib) + 1880  [0x1026c7d0c]  mul_rnd_down.c:199
+        + ! : | + 3 _arf_set_round_mpn  (in libflint.25.0.dylib) + 280  [0x1026cb31c]  set_round.c:137
+        + ! : | + 2 _arf_set_round_mpn  (in libflint.25.0.dylib) + 540  [0x1026cb420]  set_round.c:185
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 736  [0x1026cb4e4]  set_round.c:0
+        + ! : | + ! 1 __gmpn_lshift  (in libgmp.10.dylib) + 224  [0x100bf0d90]
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 296  [0x1026cb32c]  set_round.c:143
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 656  [0x1026cb494]  set_round.c:233
+        + ! : | + ! 1 _arf_promote  (in libflint.25.0.dylib) + 28  [0x1026c7168]  memory_manager.c:62
+        + ! : | + !   1 flint_malloc  (in libflint.25.0.dylib) + 28  [0x101facd8c]  memory_manager.c:81
+        + ! : | + !     1 _malloc_zone_malloc  (in libsystem_malloc.dylib) + 56  [0x18e5570f4]
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 708  [0x1026cb4c8]  set_round.c:240
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 836  [0x1026cb548]  set_round.c:246
+        + ! : | + ! 1 __gmpn_lshift  (in libgmp.10.dylib) + 188  [0x100bf0d6c]
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 104  [0x1026cb26c]  set_round.c:82
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 132  [0x1026cb288]  set_round.c:87
+        + ! : | 2 arf_mul_rnd_down  (in libflint.25.0.dylib) + 576,2080  [0x1026c77f4,0x1026c7dd4]  mul_rnd_down.c:0
+        + ! : | 1 arf_mul_rnd_down  (in libflint.25.0.dylib) + 1900  [0x1026c7d20]  mul_rnd_down.c:200
+        + ! : | 1 arf_mul_rnd_down  (in libflint.25.0.dylib) + 88  [0x1026c760c]  mul_rnd_down.c:37
+        + ! : 3 arb_mul  (in libflint.25.0.dylib) + 164,140  [0x1026f8354,0x1026f833c]  mul.c:86
+        + ! : 3 arb_mul_arf  (in libflint.25.0.dylib) + 964  [0x1026f8290]  mul.c:39
+        + ! : | 3 arf_mag_fast_add_ulp  (in libflint.25.0.dylib) + 112  [0x1026d29c0]  arf.h:1127
+        + ! : 2 arb_mul  (in libflint.25.0.dylib) + 244  [0x1026f83a4]  mul.c:89
+        + ! : | 2 mag_fast_init_set_arf  (in libflint.25.0.dylib) + 84  [0x1026d2864]  arf.h:1122
+        + ! : 2 arb_mul  (in libflint.25.0.dylib) + 1060  [0x1026f86d4]  mul.c:93
+        + ! : | 2 mag_fast_addmul  (in libflint.25.0.dylib) + 4  [0x1026d286c]  mag.h:0
+        + ! : 1 arb_mul  (in libflint.25.0.dylib) + 20  [0x1026f82c4]  mul.c:74
+        + ! : 1 arb_mul  (in libflint.25.0.dylib) + 252  [0x1026f83ac]  mul.c:92
+        + ! : 1 arb_mul  (in libflint.25.0.dylib) + 1076  [0x1026f86e4]  mul.c:94
+        + ! :   1 mag_fast_addmul  (in libflint.25.0.dylib) + 12  [0x1026d2874]  mag.h:360
+        + ! 5 _arb_vec_set_powers  (in libflint.25.0.dylib) + 80  [0x10270a04c]  vec_set_powers.c:24
+        + ! : 5 arb_set_round  (in libflint.25.0.dylib) + 56  [0x1026fdd2c]  set_round.c:19
+        + ! :   4 arf_set_round  (in libflint.25.0.dylib) + 136  [0x1026cb0ec]  set_round.c:53
+        + ! :   | 2 _arf_set_round_mpn  (in libflint.25.0.dylib) + 656  [0x1026cb494]  set_round.c:233
+        + ! :   | + 2 _arf_promote  (in libflint.25.0.dylib) + 32  [0x1026c716c]  memory_manager.c:64
+        + ! :   | 2 _arf_set_round_mpn  (in libflint.25.0.dylib) + 804  [0x1026cb528]  set_round.c:238
+        + ! :   1 arf_set_round  (in libflint.25.0.dylib) + 176  [0x1026cb114]  set_round.c:55
+        + ! 1 _arb_vec_set_powers  (in libflint.25.0.dylib) + 168  [0x10270a0a4]  vec_set_powers.c:0
+        + ! 1 _arb_vec_set_powers  (in libflint.25.0.dylib) + 80  [0x10270a04c]  vec_set_powers.c:19
+        + ! 1 _arb_vec_set_powers  (in libflint.25.0.dylib) + 96  [0x10270a05c]  vec_set_powers.c:21
+        + ! 1 arb_mul  (in libflint.25.0.dylib) + 640  [0x1026f8530]  mul.c:0
+        + ! 1 arb_mul  (in libflint.25.0.dylib) + 1020  [0x1026f86ac]  mul.c:134
+        + 167 _arb_poly_evaluate2_rectangular  (in libflint.25.0.dylib) + 352  [0x102739ad4]  evaluate2_rectangular.c:63
+        + ! 149 arb_mul  (in libflint.25.0.dylib) + 1096  [0x1026f86f8]  mul.c:96
+        + ! : 129 arf_mul_rnd_down  (in libflint.25.0.dylib) + 1768  [0x1026c7c9c]  mul_rnd_down.c:197
+        + ! : | 10 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 944  [0x101fea1f0]  mul_toom22.c:170
+        + ! : | + 9 __gmpn_sub_n  (in libgmp.10.dylib) + 160,0,...  [0x100bf0388,0x100bf02e8,...]
+        + ! : | + 1 DYLD-STUB$$__gmpn_sub_n  (in libflint.25.0.dylib) + 4  [0x102a37c04]
+        + ! : | 7 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1132  [0x101fea2ac]  mul_toom22.c:198
+        + ! : | + 7 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 112,192,...  [0x1020174e8,0x102017538,...]
+        + ! : | 7 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1440  [0x101fea3e0]  mul_toom22.c:215
+        + ! : | 5 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1228  [0x101fea30c]  mul_toom22.c:206
+        + ! : | + 5 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 332,112,...  [0x1020175c4,0x1020174e8,...]
+        + ! : | 4 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1532,208,...  [0x101fea43c,0x101fe9f10,...]  mul_toom22.c:0
+        + ! : | 4 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1400  [0x101fea3b8]  mul_toom22.c:212
+        + ! : | + 4 __gmpn_add_n  (in libgmp.10.dylib) + 140,176  [0x100bf0144,0x100bf0168]
+        + ! : | 3 ???  (in <unknown binary>)  [0xffff90bb5aee0aaa]
+        + ! : | + 3 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 204,256,...  [0x102017544,0x102017578,...]
+        + ! : | 3 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 164  [0x101fe9ee4]  mul_toom22.c:117
+        + ! : | + 3 ___chkstk_darwin  (in libsystem_pthread.dylib) + 44,8  [0x18e726c4c,0x18e726c28]
+        + ! : | 3 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1376  [0x101fea3a0]  mul_toom22.c:209
+        + ! : | + 2 DYLD-STUB$$__gmpn_add_n  (in libflint.25.0.dylib) + 4  [0x102a37a78]
+        + ! : | + 1 __gmpn_add_n  (in libgmp.10.dylib) + 160  [0x100bf0158]
+        + ! : | 3 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1524  [0x101fea434]  mul_toom22.c:219
+        + ! : | + 3 __gmpn_add_n  (in libgmp.10.dylib) + 0,160,...  [0x100bf00b8,0x100bf0158,...]
+        + ! : | 2 ???  (in <unknown binary>)  [0x301f7d83b8c5]
+        + ! : | + 2 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 184,232  [0x102017530,0x102017560]
+        + ! : | 2 ???  (in <unknown binary>)  [0x568c0979a2f5]
+        + ! : | + 2 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 220,256  [0x102017554,0x102017578]
+        + ! : | 2 ???  (in <unknown binary>)  [0xffffa052a7a9c53f]
+        + ! : | + 2 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 192,256  [0x102017538,0x102017578]
+        + ! : | 2 ???  (in <unknown binary>)  [0xffffa402549adca7]
+        + ! : | + 2 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 192,220  [0x102017538,0x102017554]
+        + ! : | 2 ???  (in <unknown binary>)  [0xffffc5aae597dc27]
+        + ! : | + 2 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 212,240  [0x10201754c,0x102017568]
+        + ! : | 2 ???  (in <unknown binary>)  [0xffffc773ef2e2de4]
+        + ! : | + 2 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 2 ???  (in <unknown binary>)  [0xffffd7a8debe82d8]
+        + ! : | + 2 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 212,256  [0x10201754c,0x102017578]
+        + ! : | 2 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 444  [0x101fe9ffc]  mul_toom22.c:148
+        + ! : | + 2 __gmpn_sub_n  (in libgmp.10.dylib) + 0,160  [0x100bf02e8,0x100bf0388]
+        + ! : | 2 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1564  [0x101fea45c]  mul_toom22.c:223
+        + ! : | + 2 __gmpn_sub_n  (in libgmp.10.dylib) + 80,160  [0x100bf0338,0x100bf0388]
+        + ! : | 1 ???  (in <unknown binary>)  [0xc97e6ddfc5]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 220  [0x102017554]
+        + ! : | 1 ???  (in <unknown binary>)  [0x73f9fca93cc]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0x77ca957149d]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 272  [0x102017588]
+        + ! : | 1 ???  (in <unknown binary>)  [0x9653b3ff8d3]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 240  [0x102017568]
+        + ! : | 1 ???  (in <unknown binary>)  [0xbc2392a5ae1]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0x10f40494c31f]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0x1c7deec88d4f]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0x20c623859100]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0x21c2e166b0cf]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 264  [0x102017580]
+        + ! : | 1 ???  (in <unknown binary>)  [0x27ab68a2d790]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0x2a22c8531600]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 236  [0x102017564]
+        + ! : | 1 ???  (in <unknown binary>)  [0x2d144268f951]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0x379f0435d1f7]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0x3c83141be5e4]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0x429289efd5ba]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 204  [0x102017544]
+        + ! : | 1 ???  (in <unknown binary>)  [0x4d9f88da4500]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0x4e8d2b9a26a0]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 272  [0x102017588]
+        + ! : | 1 ???  (in <unknown binary>)  [0x4f1b7249062e]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 200  [0x102017540]
+        + ! : | 1 ???  (in <unknown binary>)  [0x55c665101e34]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 200  [0x102017540]
+        + ! : | 1 ???  (in <unknown binary>)  [0x5af3c2f0e840]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 272  [0x102017588]
+        + ! : | 1 ???  (in <unknown binary>)  [0x5dd189ab8dd5]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 272  [0x102017588]
+        + ! : | 1 ???  (in <unknown binary>)  [0x5ed8d84e489d]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 232  [0x102017560]
+        + ! : | 1 ???  (in <unknown binary>)  [0x5f8a7ff97b06]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 184  [0x102017530]
+        + ! : | 1 ???  (in <unknown binary>)  [0x612f42ed528e]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0x65fa1e69131f]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0x67845a9d6063]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 180  [0x10201752c]
+        + ! : | 1 ???  (in <unknown binary>)  [0x6ca1feee565d]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0x6ea9150e279a]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0x7c057e81de04]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 212  [0x10201754c]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffff816d0a1bf464]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffff860a30b93959]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 212  [0x10201754c]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffff8996b34bfdd3]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffff8c760bc8cf5f]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 212  [0x10201754c]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffff8d7bed7cc54d]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 272  [0x102017588]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffff8fe2ecf21806]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffff95be91f27993]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffff9a8893d2320b]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffff9b13218d0c13]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffff9b5ec5c221cd]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 232  [0x102017560]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffff9bb2bca7ec3b]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffffa1e0c826ade7]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 240  [0x102017568]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffffa859e2eb4113]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 192  [0x102017538]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffffb769e875170a]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 232  [0x102017560]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffffc423b830645f]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 240  [0x102017568]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffffd7368091e174]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 272  [0x102017588]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffffe377cbb5b745]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 204  [0x102017544]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffffee1579c0e26a]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 272  [0x102017588]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffffee419c26574f]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffffeedb34440d37]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0xfffffade6cdf5097]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 272  [0x102017588]
+        + ! : | 1 ???  (in <unknown binary>)  [0xfffffdb2a1d7c5a8]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0xfffffea0e9deea1d]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 20  [0x101fe9e54]  mul_toom22.c:106
+        + ! : | 1 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 156  [0x101fe9edc]  mul_toom22.c:117
+        + ! : | 1 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 216  [0x101fe9f18]  mul_toom22.c:141
+        + ! : | 1 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 884  [0x101fea1b4]  mul_toom22.c:143
+        + ! : | 1 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 428  [0x101fe9fec]  mul_toom22.c:148
+        + ! : | 1 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 356  [0x101fe9fa4]  mul_toom22.c:168
+        + ! : | 1 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1188  [0x101fea2e4]  mul_toom22.c:203
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 84  [0x1020174cc]
+        + ! : | 1 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1144  [0x101fea2b8]  mul_toom22.c:203
+        + ! : | 1 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1204  [0x101fea2f4]  mul_toom22.c:206
+        + ! : | 1 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1436  [0x101fea3dc]  mul_toom22.c:215
+        + ! : |   1 __gmpn_add_n  (in libgmp.10.dylib) + 140  [0x100bf0144]
+        + ! : 14 arf_mul_rnd_down  (in libflint.25.0.dylib) + 1880  [0x1026c7d0c]  mul_rnd_down.c:199
+        + ! : | 3 _arf_set_round_mpn  (in libflint.25.0.dylib) + 280  [0x1026cb31c]  set_round.c:137
+        + ! : | 2 _arf_set_round_mpn  (in libflint.25.0.dylib) + 836  [0x1026cb548]  set_round.c:246
+        + ! : | + 2 __gmpn_lshift  (in libgmp.10.dylib) + 224,228  [0x100bf0d90,0x100bf0d94]
+        + ! : | 2 _arf_set_round_mpn  (in libflint.25.0.dylib) + 92  [0x1026cb260]  set_round.c:82
+        + ! : | 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 736  [0x1026cb4e4]  set_round.c:0
+        + ! : | + 1 __gmpn_lshift  (in libgmp.10.dylib) + 264  [0x100bf0db8]
+        + ! : | 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 1396  [0x1026cb778]  set_round.c:0
+        + ! : | 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 260  [0x1026cb308]  set_round.c:136
+        + ! : | 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 804  [0x1026cb528]  set_round.c:238
+        + ! : | 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 708  [0x1026cb4c8]  set_round.c:240
+        + ! : | 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 1408  [0x1026cb784]  set_round.c:259
+        + ! : | 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 132  [0x1026cb288]  set_round.c:87
+        + ! : 2 arf_mul_rnd_down  (in libflint.25.0.dylib) + 84  [0x1026c7608]  mul_rnd_down.c:30
+        + ! : 1 arf_mul_rnd_down  (in libflint.25.0.dylib) + 588  [0x1026c7800]  mul_rnd_down.c:178
+        + ! : 1 arf_mul_rnd_down  (in libflint.25.0.dylib) + 1360  [0x1026c7b04]  mul_rnd_down.c:197
+        + ! : 1 arf_mul_rnd_down  (in libflint.25.0.dylib) + 1900  [0x1026c7d20]  mul_rnd_down.c:200
+        + ! : 1 arf_mul_rnd_down  (in libflint.25.0.dylib) + 56  [0x1026c75ec]  mul_rnd_down.c:25
+        + ! 4 arb_mul  (in libflint.25.0.dylib) + 1076  [0x1026f86e4]  mul.c:94
+        + ! : 2 mag_fast_addmul  (in libflint.25.0.dylib) + 12,16  [0x1026d2874,0x1026d2878]  mag.h:360
+        + ! : 1 mag_fast_addmul  (in libflint.25.0.dylib) + 4  [0x1026d286c]  mag.h:0
+        + ! : 1 mag_fast_addmul  (in libflint.25.0.dylib) + 224  [0x1026d2948]  mag.h:392
+        + ! 4 arb_mul  (in libflint.25.0.dylib) + 1120  [0x1026f8710]  mul.c:99
+        + ! : 4 arf_mag_fast_add_ulp  (in libflint.25.0.dylib) + 4,112  [0x1026d2954,0x1026d29c0]  arf.h:1127
+        + ! 3 arb_mul  (in libflint.25.0.dylib) + 124,132,...  [0x1026f832c,0x1026f8334,...]  mul.c:86
+        + ! 3 arb_mul  (in libflint.25.0.dylib) + 1060  [0x1026f86d4]  mul.c:93
+        + ! : 2 mag_fast_addmul  (in libflint.25.0.dylib) + 224  [0x1026d2948]  mag.h:392
+        + ! : 1 mag_fast_addmul  (in libflint.25.0.dylib) + 4  [0x1026d286c]  mag.h:0
+        + ! 2 arb_mul  (in libflint.25.0.dylib) + 24,56  [0x1026f82c8,0x1026f82e8]  mul.c:74
+        + ! 2 arb_mul  (in libflint.25.0.dylib) + 244  [0x1026f83a4]  mul.c:89
+        + !   1 mag_fast_init_set_arf  (in libflint.25.0.dylib) + 0  [0x1026d2810]  arf.h:1106
+        + !   1 mag_fast_init_set_arf  (in libflint.25.0.dylib) + 80  [0x1026d2860]  arf.h:1120
+        + 166 _arb_poly_evaluate2_rectangular  (in libflint.25.0.dylib) + 756  [0x102739c68]  evaluate2_rectangular.c:87
+        + ! 153 arb_mul  (in libflint.25.0.dylib) + 1096  [0x1026f86f8]  mul.c:96
+        + ! : 133 arf_mul_rnd_down  (in libflint.25.0.dylib) + 1768  [0x1026c7c9c]  mul_rnd_down.c:197
+        + ! : | 9 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1376  [0x101fea3a0]  mul_toom22.c:209
+        + ! : | + 8 __gmpn_add_n  (in libgmp.10.dylib) + 160,176  [0x100bf0158,0x100bf0168]
+        + ! : | + 1 DYLD-STUB$$__gmpn_add_n  (in libflint.25.0.dylib) + 4  [0x102a37a78]
+        + ! : | 6 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 944  [0x101fea1f0]  mul_toom22.c:170
+        + ! : | + 5 __gmpn_sub_n  (in libgmp.10.dylib) + 160,80  [0x100bf0388,0x100bf0338]
+        + ! : | + 1 DYLD-STUB$$__gmpn_sub_n  (in libflint.25.0.dylib) + 4  [0x102a37c04]
+        + ! : | 6 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1436  [0x101fea3dc]  mul_toom22.c:215
+        + ! : | + 4 __gmpn_add_n  (in libgmp.10.dylib) + 0,80,...  [0x100bf00b8,0x100bf0108,...]
+        + ! : | + 2 DYLD-STUB$$__gmpn_add_n  (in libflint.25.0.dylib) + 4  [0x102a37a78]
+        + ! : | 6 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1564  [0x101fea45c]  mul_toom22.c:223
+        + ! : | + 5 __gmpn_sub_n  (in libgmp.10.dylib) + 160,0  [0x100bf0388,0x100bf02e8]
+        + ! : | + 1 DYLD-STUB$$__gmpn_sub_n  (in libflint.25.0.dylib) + 4  [0x102a37c04]
+        + ! : | 5 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 904  [0x101fea1c8]  mul_toom22.c:143
+        + ! : | + 4 __gmpn_sub_n  (in libgmp.10.dylib) + 160,176  [0x100bf0388,0x100bf0398]
+        + ! : | + 1 DYLD-STUB$$__gmpn_sub_n  (in libflint.25.0.dylib) + 4  [0x102a37c04]
+        + ! : | 4 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1228  [0x101fea30c]  mul_toom22.c:206
+        + ! : | + 4 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 184,56,...  [0x102017530,0x1020174b0,...]
+        + ! : | 4 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1440  [0x101fea3e0]  mul_toom22.c:215
+        + ! : | 4 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1524  [0x101fea434]  mul_toom22.c:219
+        + ! : | + 4 __gmpn_add_n  (in libgmp.10.dylib) + 160  [0x100bf0158]
+        + ! : | 3 ???  (in <unknown binary>)  [0x256171268da5]
+        + ! : | + 3 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256,192  [0x102017578,0x102017538]
+        + ! : | 3 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 208,1532,...  [0x101fe9f10,0x101fea43c,...]  mul_toom22.c:0
+        + ! : | 3 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1188  [0x101fea2e4]  mul_toom22.c:203
+        + ! : | + 3 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 108,332,...  [0x1020174e4,0x1020175c4,...]
+        + ! : | 3 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1400  [0x101fea3b8]  mul_toom22.c:212
+        + ! : | + 3 __gmpn_add_n  (in libgmp.10.dylib) + 140,160,...  [0x100bf0144,0x100bf0158,...]
+        + ! : | 2 ???  (in <unknown binary>)  [0x25f973f1cd51]
+        + ! : | + 2 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 2 ???  (in <unknown binary>)  [0x3624b8feb38e]
+        + ! : | + 2 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 232  [0x102017560]
+        + ! : | 2 ???  (in <unknown binary>)  [0x58fee2b5847b]
+        + ! : | + 2 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 2 ???  (in <unknown binary>)  [0x79a8d1959bdc]
+        + ! : | + 2 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 184,232  [0x102017530,0x102017560]
+        + ! : | 2 ???  (in <unknown binary>)  [0xffff88a236fe1951]
+        + ! : | + 2 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 232,256  [0x102017560,0x102017578]
+        + ! : | 2 ???  (in <unknown binary>)  [0xffffadaf76e3975a]
+        + ! : | + 2 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256,272  [0x102017578,0x102017588]
+        + ! : | 2 ???  (in <unknown binary>)  [0xfffff2d10717faaf]
+        + ! : | + 2 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 2 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 164  [0x101fe9ee4]  mul_toom22.c:117
+        + ! : | + 2 ___chkstk_darwin  (in libsystem_pthread.dylib) + 8,20  [0x18e726c28,0x18e726c34]
+        + ! : | 2 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 884  [0x101fea1b4]  mul_toom22.c:143
+        + ! : | 2 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1188,1204  [0x101fea2e4,0x101fea2f4]  mul_toom22.c:206
+        + ! : | 1 ???  (in <unknown binary>)  [0x2405776ee55]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 212  [0x10201754c]
+        + ! : | 1 ???  (in <unknown binary>)  [0xde999de929a]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0xf05d8f67a30]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 272  [0x102017588]
+        + ! : | 1 ???  (in <unknown binary>)  [0xf6386d42de8]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 272  [0x102017588]
+        + ! : | 1 ???  (in <unknown binary>)  [0x10001669ddaf]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 248  [0x102017570]
+        + ! : | 1 ???  (in <unknown binary>)  [0x16abcdcd6a16]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 204  [0x102017544]
+        + ! : | 1 ???  (in <unknown binary>)  [0x18ee87ab4466]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 204  [0x102017544]
+        + ! : | 1 ???  (in <unknown binary>)  [0x1ab64026a7ca]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 248  [0x102017570]
+        + ! : | 1 ???  (in <unknown binary>)  [0x1de6b6a89219]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 184  [0x102017530]
+        + ! : | 1 ???  (in <unknown binary>)  [0x1f66e94f123f]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 220  [0x102017554]
+        + ! : | 1 ???  (in <unknown binary>)  [0x21db4666cc47]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0x2522203d2c6b]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 192  [0x102017538]
+        + ! : | 1 ???  (in <unknown binary>)  [0x27675becb20d]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0x2f6166732c69]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0x453b16d15a56]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0x4765483391c5]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0x491fe603266d]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0x4a00e1eab229]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 212  [0x10201754c]
+        + ! : | 1 ???  (in <unknown binary>)  [0x53ec2f9b1870]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0x5599c62a864e]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0x58c47d9f6f4f]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0x660531f54caf]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 272  [0x102017588]
+        + ! : | 1 ???  (in <unknown binary>)  [0x66df28dbc59c]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0x68ecfdccb31c]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 192  [0x102017538]
+        + ! : | 1 ???  (in <unknown binary>)  [0x70a64f962239]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0x7179df103048]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 192  [0x102017538]
+        + ! : | 1 ???  (in <unknown binary>)  [0x72b20065b57b]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0x73fb205344c0]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 200  [0x102017540]
+        + ! : | 1 ???  (in <unknown binary>)  [0x7e324dcb5d8f]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffff829832f797f6]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffff8749c0b80125]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 184  [0x102017530]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffff87e13b623c83]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffff8e557d0dc540]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 272  [0x102017588]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffff8f766da57f0e]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 272  [0x102017588]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffff90426492b6dc]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffff92bc5bf4fcfd]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 220  [0x102017554]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffff9354141be485]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffff93605ae0823d]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffff94ad312c49d2]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 200  [0x102017540]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffff98290ad13c2b]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffff9cf38f5fefbc]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 220  [0x102017554]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffffa0e13ccdf062]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffffb9161fef6746]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 232  [0x102017560]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffffbcfe301475e9]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffffc4a73cce4184]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffffcd1517b5587f]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 232  [0x102017560]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffffd2a5814612be]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffffd3494c2c9e15]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 272  [0x102017588]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffffd48ea2e2eb0b]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 204  [0x102017544]
+        + ! : | 1 ???  (in <unknown binary>)  [0xffffdaadec7409bf]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 204  [0x102017544]
+        + ! : | 1 ???  (in <unknown binary>)  [0xfffff4359ee1391d]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 272  [0x102017588]
+        + ! : | 1 ???  (in <unknown binary>)  [0xfffffa4da775e2aa]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 ???  (in <unknown binary>)  [0xfffffc33372c3101]
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 256  [0x102017578]
+        + ! : | 1 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 60  [0x101fe9e7c]  mul_toom22.c:115
+        + ! : | 1 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 156  [0x101fe9edc]  mul_toom22.c:117
+        + ! : | 1 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1132  [0x101fea2ac]  mul_toom22.c:198
+        + ! : | + 1 flint_mpn_mul_8n  (in libflint.25.0.dylib) + 332  [0x1020175c4]
+        + ! : | 1 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1564  [0x101fea45c]  mul_toom22.c:223
+        + ! : 12 arf_mul_rnd_down  (in libflint.25.0.dylib) + 1880  [0x1026c7d0c]  mul_rnd_down.c:199
+        + ! : | 3 _arf_set_round_mpn  (in libflint.25.0.dylib) + 1496  [0x1026cb7dc]  set_round.c:0
+        + ! : | 3 _arf_set_round_mpn  (in libflint.25.0.dylib) + 804,740  [0x1026cb528,0x1026cb4e8]  set_round.c:238
+        + ! : | 3 _arf_set_round_mpn  (in libflint.25.0.dylib) + 836  [0x1026cb548]  set_round.c:246
+        + ! : | + 3 __gmpn_lshift  (in libgmp.10.dylib) + 228  [0x100bf0d94]
+        + ! : | 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 260  [0x1026cb308]  set_round.c:136
+        + ! : | 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 548  [0x1026cb428]  set_round.c:185
+        + ! : | 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 92  [0x1026cb260]  set_round.c:82
+        + ! : 2 arf_mul_rnd_down  (in libflint.25.0.dylib) + 72,84  [0x1026c75fc,0x1026c7608]  mul_rnd_down.c:30
+        + ! : 2 arf_mul_rnd_down  (in libflint.25.0.dylib) + 108  [0x1026c7620]  mul_rnd_down.c:44
+        + ! : 1 arf_mul_rnd_down  (in libflint.25.0.dylib) + 1336  [0x1026c7aec]  mul_rnd_down.c:0
+        + ! : 1 arf_mul_rnd_down  (in libflint.25.0.dylib) + 756  [0x1026c78a8]  mul_rnd_down.c:192
+        + ! : 1 arf_mul_rnd_down  (in libflint.25.0.dylib) + 1740  [0x1026c7c80]  mul_rnd_down.c:197
+        + ! : 1 flint_mpn_mul_toom22  (in libflint.25.0.dylib) + 1716  [0x101fea4f4]  mul_toom22.c:251
+        + ! 6 arb_mul  (in libflint.25.0.dylib) + 1060  [0x1026f86d4]  mul.c:93
+        + ! : 3 mag_fast_addmul  (in libflint.25.0.dylib) + 152  [0x1026d2900]  mag.h:381
+        + ! : 2 mag_fast_addmul  (in libflint.25.0.dylib) + 4  [0x1026d286c]  mag.h:0
+        + ! : 1 mag_fast_addmul  (in libflint.25.0.dylib) + 224  [0x1026d2948]  mag.h:392
+        + ! 2 arb_mul  (in libflint.25.0.dylib) + 232  [0x1026f8398]  mul.c:88
+        + ! : 1 mag_fast_init_set_arf  (in libflint.25.0.dylib) + 8  [0x1026d2818]  arf.h:1115
+        + ! : 1 mag_fast_init_set_arf  (in libflint.25.0.dylib) + 80  [0x1026d2860]  arf.h:1120
+        + ! 2 arb_mul  (in libflint.25.0.dylib) + 244  [0x1026f83a4]  mul.c:89
+        + ! : 2 mag_fast_init_set_arf  (in libflint.25.0.dylib) + 80  [0x1026d2860]  arf.h:1120
+        + ! 1 arb_mul  (in libflint.25.0.dylib) + 96  [0x1026f8310]  mul.c:86
+        + ! 1 arb_mul  (in libflint.25.0.dylib) + 252  [0x1026f83ac]  mul.c:92
+        + ! 1 arb_mul  (in libflint.25.0.dylib) + 1076  [0x1026f86e4]  mul.c:94
+        + !   1 mag_fast_addmul  (in libflint.25.0.dylib) + 4  [0x1026d286c]  mag.h:0
+        + 51 _arb_poly_evaluate2_rectangular  (in libflint.25.0.dylib) + 524  [0x102739b80]  evaluate2_rectangular.c:74
+        + ! 42 arb_addmul_arf  (in libflint.25.0.dylib) + 232  [0x1026d261c]  addmul.c:31
+        + ! : 24 arf_addmul  (in libflint.25.0.dylib) + 1184  [0x1026bd6d4]  addmul.c:0
+        + ! : | 9 _arf_add_mpn  (in libflint.25.0.dylib) + 4932  [0x1026bd0b0]  add_mpn.c:405
+        + ! : | + 3 _arf_set_round_mpn  (in libflint.25.0.dylib) + 736  [0x1026cb4e4]  set_round.c:0
+        + ! : | + ! 2 __gmpn_lshift  (in libgmp.10.dylib) + 224,240  [0x100bf0d90,0x100bf0da0]
+        + ! : | + ! 1 DYLD-STUB$$__gmpn_lshift  (in libflint.25.0.dylib) + 0  [0x102a37b28]
+        + ! : | + 2 _arf_set_round_mpn  (in libflint.25.0.dylib) + 836  [0x1026cb548]  set_round.c:246
+        + ! : | + ! 2 __gmpn_lshift  (in libgmp.10.dylib) + 224,264  [0x100bf0d90,0x100bf0db8]
+        + ! : | + 2 _arf_set_round_mpn  (in libflint.25.0.dylib) + 140  [0x1026cb290]  set_round.c:97
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 540  [0x1026cb420]  set_round.c:185
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 1408  [0x1026cb784]  set_round.c:259
+        + ! : | 4 _arf_add_mpn  (in libflint.25.0.dylib) + 4632  [0x1026bcf84]  add_mpn.c:361
+        + ! : | + 3 __gmpn_neg  (in libgmp.10.dylib) + 8  [0x100bf05c0]
+        + ! : | + 1 __gmpn_neg  (in libgmp.10.dylib) + 44  [0x100bf05e4]
+        + ! : | +   1 __gmpn_com  (in libgmp.10.dylib) + 104  [0x100bf0678]
+        + ! : | 3 _arf_set_round_mpn  (in libflint.25.0.dylib) + 1528,1524  [0x1026cb7fc,0x1026cb7f8]  set_round.c:266
+        + ! : | 2 _arf_add_mpn  (in libflint.25.0.dylib) + 20  [0x1026bbd80]  add_mpn.c:30
+        + ! : | 2 _arf_add_mpn  (in libflint.25.0.dylib) + 4980  [0x1026bd0e0]  add_mpn.c:407
+        + ! : | 1 _arf_add_mpn  (in libflint.25.0.dylib) + 516  [0x1026bbf70]  add_mpn.c:264
+        + ! : | 1 _arf_add_mpn  (in libflint.25.0.dylib) + 592  [0x1026bbfbc]  add_mpn.c:274
+        + ! : | + 1 __gmpn_rshift  (in libgmp.10.dylib) + 224  [0x100bf0ea0]
+        + ! : | 1 _arf_add_mpn  (in libflint.25.0.dylib) + 1736  [0x1026bc434]  add_mpn.c:354
+        + ! : | 1 _arf_add_mpn  (in libflint.25.0.dylib) + 4664  [0x1026bcfa4]  add_mpn.c:362
+        + ! : |   1 __gmpn_sub_n  (in libgmp.10.dylib) + 16  [0x100bf02f8]
+        + ! : 11 arf_addmul  (in libflint.25.0.dylib) + 816  [0x1026bd564]  addmul.c:62
+        + ! : | 9 flint_mpn_mul_3n  (in libflint.25.0.dylib) + 256,44,...  [0x102017090,0x102016fbc,...]
+        + ! : | 2 flint_mpn_mul  (in libflint.25.0.dylib) + 0  [0x1020b8c7c]  mpn_extras.h:539
+        + ! : 5 arf_addmul  (in libflint.25.0.dylib) + 1360  [0x1026bd784]  addmul.c:0
+        + ! : | 3 _arf_add_mpn  (in libflint.25.0.dylib) + 4932  [0x1026bd0b0]  add_mpn.c:405
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 804  [0x1026cb528]  set_round.c:238
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 92  [0x1026cb260]  set_round.c:82
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 140  [0x1026cb290]  set_round.c:97
+        + ! : | 1 _arf_add_mpn  (in libflint.25.0.dylib) + 592  [0x1026bbfbc]  add_mpn.c:274
+        + ! : | + 1 __gmpn_rshift  (in libgmp.10.dylib) + 224  [0x100bf0ea0]
+        + ! : | 1 _arf_add_mpn  (in libflint.25.0.dylib) + 4520  [0x1026bcf14]  add_mpn.c:339
+        + ! : |   1 __gmpn_sub_n  (in libgmp.10.dylib) + 32  [0x100bf0308]
+        + ! : 1 _arf_add_mpn  (in libflint.25.0.dylib) + 5212  [0x1026bd1c8]  add_mpn.c:412
+        + ! : 1 arf_addmul  (in libflint.25.0.dylib) + 396  [0x1026bd3c0]  addmul.c:55
+        + ! 2 arb_addmul_arf  (in libflint.25.0.dylib) + 192  [0x1026d25f4]  addmul.c:29
+        + ! : 1 mag_fast_init_set_arf  (in libflint.25.0.dylib) + 8  [0x1026d2818]  arf.h:1115
+        + ! : 1 mag_fast_init_set_arf  (in libflint.25.0.dylib) + 80  [0x1026d2860]  arf.h:1120
+        + ! 2 arf_mag_fast_add_ulp  (in libflint.25.0.dylib) + 4,96  [0x1026d2954,0x1026d29b0]  arf.h:1127
+        + ! 1 arb_addmul  (in libflint.25.0.dylib) + 52  [0x1026d2a0c]  addmul.c:58
+        + ! 1 arb_addmul_arf  (in libflint.25.0.dylib) + 4  [0x1026d2538]  addmul.c:16
+        + ! 1 arb_addmul_arf  (in libflint.25.0.dylib) + 52  [0x1026d2568]  addmul.c:20
+        + ! 1 arb_addmul_arf  (in libflint.25.0.dylib) + 132  [0x1026d25b8]  addmul.c:27
+        + ! 1 arb_addmul_arf  (in libflint.25.0.dylib) + 252  [0x1026d2630]  addmul.c:34
+        + 46 _arb_poly_evaluate2_rectangular  (in libflint.25.0.dylib) + 776  [0x102739c7c]  evaluate2_rectangular.c:88
+        + ! 39 arb_add  (in libflint.25.0.dylib) + 44  [0x1026d1d2c]  add.c:19
+        + ! : 36 arf_add  (in libflint.25.0.dylib) + 412  [0x1026bb34c]  add.c:73
+        + ! : | 10 _arf_add_mpn  (in libflint.25.0.dylib) + 4932  [0x1026bd0b0]  add_mpn.c:405
+        + ! : | + 3 _arf_set_round_mpn  (in libflint.25.0.dylib) + 864  [0x1026cb564]  set_round.c:233
+        + ! : | + 3 _arf_set_round_mpn  (in libflint.25.0.dylib) + 804,760  [0x1026cb528,0x1026cb4fc]  set_round.c:238
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 1388  [0x1026cb770]  mpn_extras.h:0
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 260  [0x1026cb308]  set_round.c:136
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 540  [0x1026cb420]  set_round.c:185
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 700  [0x1026cb4c0]  set_round.c:234
+        + ! : | 7 _arf_add_mpn  (in libflint.25.0.dylib) + 592  [0x1026bbfbc]  add_mpn.c:274
+        + ! : | + 6 __gmpn_rshift  (in libgmp.10.dylib) + 224,264  [0x100bf0ea0,0x100bf0ec8]
+        + ! : | + 1 DYLD-STUB$$__gmpn_rshift  (in libflint.25.0.dylib) + 4  [0x102a37bb0]
+        + ! : | 6 _arf_add_mpn  (in libflint.25.0.dylib) + 2832  [0x1026bc87c]  add_mpn.c:297
+        + ! : | + 5 __gmpn_add_n  (in libgmp.10.dylib) + 160,176  [0x100bf0158,0x100bf0168]
+        + ! : | + 1 DYLD-STUB$$__gmpn_add_n  (in libflint.25.0.dylib) + 4  [0x102a37a78]
+        + ! : | 4 _arf_add_mpn  (in libflint.25.0.dylib) + 516  [0x1026bbf70]  add_mpn.c:264
+        + ! : | 3 _arf_set_round_mpn  (in libflint.25.0.dylib) + 1528,1512  [0x1026cb7fc,0x1026cb7ec]  set_round.c:266
+        + ! : | 2 _arf_add_mpn  (in libflint.25.0.dylib) + 1512,5164  [0x1026bc354,0x1026bd198]  add_mpn.c:0
+        + ! : | 2 _arf_add_mpn  (in libflint.25.0.dylib) + 4632  [0x1026bcf84]  add_mpn.c:361
+        + ! : | + 1 DYLD-STUB$$__gmpn_neg  (in libflint.25.0.dylib) + 4  [0x102a37b80]
+        + ! : | + 1 __gmpn_neg  (in libgmp.10.dylib) + 20  [0x100bf05cc]
+        + ! : | 1 _arf_add_mpn  (in libflint.25.0.dylib) + 20  [0x1026bbd80]  add_mpn.c:30
+        + ! : | 1 _arf_add_mpn  (in libflint.25.0.dylib) + 2840  [0x1026bc884]  add_mpn.c:317
+        + ! : 1 arf_add  (in libflint.25.0.dylib) + 32  [0x1026bb1d0]  add.c:57
+        + ! : 1 arf_add  (in libflint.25.0.dylib) + 316  [0x1026bb2ec]  add.c:70
+        + ! : 1 arf_add  (in libflint.25.0.dylib) + 372  [0x1026bb324]  add.c:71
+        + ! 3 arb_add  (in libflint.25.0.dylib) + 64  [0x1026d1d40]  add.c:21
+        + ! : 2 mag_add  (in libflint.25.0.dylib) + 80  [0x1026b356c]  add.c:32
+        + ! : | 1 _fmpz_sub_small  (in libflint.25.0.dylib) + 16  [0x1026b375c]  fmpz_extras.h:119
+        + ! : | 1 _fmpz_sub_small  (in libflint.25.0.dylib) + 36  [0x1026b3770]  fmpz_extras.h:121
+        + ! : 1 mag_add  (in libflint.25.0.dylib) + 44  [0x1026b3548]  add.c:21
+        + ! 2 arf_mag_add_ulp  (in libflint.25.0.dylib) + 236  [0x1026d1e68]  arf.h:1139
+        + ! 1 arf_add  (in libflint.25.0.dylib) + 424  [0x1026bb358]  add.c:75
+        + ! 1 arf_mag_add_ulp  (in libflint.25.0.dylib) + 32  [0x1026d1d9c]  arf.h:1133
+        + 36 _arb_poly_evaluate2_rectangular  (in libflint.25.0.dylib) + 252  [0x102739a70]  evaluate2_rectangular.c:56
+        + ! 27 arb_dot  (in libflint.25.0.dylib) + 2256  [0x1026e1c9c]  dot.c:859
+        + ! : 10 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 644  [0x1026e0eb8]  dot.c:236
+        + ! : | 9 flint_mpn_mul_2  (in libflint.25.0.dylib) + 56,304,...  [0x102016db8,0x102016eb0,...]
+        + ! : | 1 _flint_mpn_mul  (in libflint.25.0.dylib) + 8  [0x101fe662c]  mul.c:61
+        + ! : 5 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 1116  [0x1026e1090]  dot.c:242
+        + ! : | 5 __gmpn_rshift  (in libgmp.10.dylib) + 224,232  [0x100bf0ea0,0x100bf0ea8]
+        + ! : 3 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 280,276  [0x1026e0d4c,0x1026e0d48]  dot.c:236
+        + ! : 3 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 1324  [0x1026e1160]  dot.c:274
+        + ! : | 3 __gmpn_add_n  (in libgmp.10.dylib) + 176,160  [0x100bf0168,0x100bf0158]
+        + ! : 2 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 60  [0x1026e0c70]  dot.c:200
+        + ! : 2 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 1236  [0x1026e1108]  dot.c:272
+        + ! : | 2 __gmpn_sub_n  (in libgmp.10.dylib) + 160  [0x100bf0388]
+        + ! : 1 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 1144  [0x1026e10ac]  dot.c:253
+        + ! : 1 _arb_dot_addmul_generic  (in libflint.25.0.dylib) + 1232  [0x1026e1104]  dot.c:272
+        + ! 2 arb_dot  (in libflint.25.0.dylib) + 624  [0x1026e163c]  dot.c:494
+        + ! 1 arb_dot  (in libflint.25.0.dylib) + 1420  [0x1026e1958]  dot.c:631
+        + ! : 1 _arb_dot_add_generic  (in libflint.25.0.dylib) + 208  [0x1026e12cc]  dot.c:353
+        + ! 1 arb_dot  (in libflint.25.0.dylib) + 2196  [0x1026e1c60]  dot.c:854
+        + ! 1 arb_dot  (in libflint.25.0.dylib) + 2880  [0x1026e1f0c]  dot.c:863
+        + ! 1 arb_dot  (in libflint.25.0.dylib) + 2892  [0x1026e1f18]  dot.c:874
+        + ! 1 arb_dot  (in libflint.25.0.dylib) + 3284  [0x1026e20a0]  dot.c:917
+        + ! 1 arb_dot  (in libflint.25.0.dylib) + 3448  [0x1026e2144]  dot.c:954
+        + ! : 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 140  [0x1026cb290]  set_round.c:97
+        + ! 1 arb_dot  (in libflint.25.0.dylib) + 3796  [0x1026e22a0]  dot.c:976
+        + 34 _arb_poly_evaluate2_rectangular  (in libflint.25.0.dylib) + 372  [0x102739ae8]  evaluate2_rectangular.c:64
+        + ! 23 arb_add  (in libflint.25.0.dylib) + 44  [0x1026d1d2c]  add.c:19
+        + ! : 21 arf_add  (in libflint.25.0.dylib) + 412  [0x1026bb34c]  add.c:73
+        + ! : | 6 _arf_add_mpn  (in libflint.25.0.dylib) + 592  [0x1026bbfbc]  add_mpn.c:274
+        + ! : | + 5 __gmpn_rshift  (in libgmp.10.dylib) + 224,84,...  [0x100bf0ea0,0x100bf0e14,...]
+        + ! : | + 1 DYLD-STUB$$__gmpn_rshift  (in libflint.25.0.dylib) + 4  [0x102a37bb0]
+        + ! : | 5 _arf_add_mpn  (in libflint.25.0.dylib) + 4932  [0x1026bd0b0]  add_mpn.c:405
+        + ! : | + 2 _arf_set_round_mpn  (in libflint.25.0.dylib) + 540  [0x1026cb420]  set_round.c:185
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 1388  [0x1026cb770]  mpn_extras.h:0
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 16  [0x1026cb214]  set_round.c:64
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 132  [0x1026cb288]  set_round.c:87
+        + ! : | 3 _arf_add_mpn  (in libflint.25.0.dylib) + 2832  [0x1026bc87c]  add_mpn.c:297
+        + ! : | + 3 __gmpn_add_n  (in libgmp.10.dylib) + 160,144  [0x100bf0158,0x100bf0148]
+        + ! : | 2 _arf_add_mpn  (in libflint.25.0.dylib) + 1484,1684  [0x1026bc338,0x1026bc400]  add_mpn.c:0
+        + ! : | 2 _arf_set_round_mpn  (in libflint.25.0.dylib) + 1512,1528  [0x1026cb7ec,0x1026cb7fc]  set_round.c:266
+        + ! : | 1 _arf_add_mpn  (in libflint.25.0.dylib) + 12  [0x1026bbd78]  add_mpn.c:30
+        + ! : | 1 _arf_add_mpn  (in libflint.25.0.dylib) + 4632  [0x1026bcf84]  add_mpn.c:361
+        + ! : | + 1 DYLD-STUB$$__gmpn_neg  (in libflint.25.0.dylib) + 4  [0x102a37b80]
+        + ! : | 1 _arf_add_mpn  (in libflint.25.0.dylib) + 5100  [0x1026bd158]  add_mpn.c:407
+        + ! : 1 _arf_add_mpn  (in libflint.25.0.dylib) + 5212  [0x1026bd1c8]  add_mpn.c:412
+        + ! : 1 arf_add  (in libflint.25.0.dylib) + 32  [0x1026bb1d0]  add.c:57
+        + ! 6 arb_add  (in libflint.25.0.dylib) + 64  [0x1026d1d40]  add.c:21
+        + ! : 3 mag_add  (in libflint.25.0.dylib) + 80  [0x1026b356c]  add.c:32
+        + ! : | 2 _fmpz_sub_small  (in libflint.25.0.dylib) + 0,16  [0x1026b374c,0x1026b375c]  fmpz_extras.h:119
+        + ! : | 1 _fmpz_sub_small  (in libflint.25.0.dylib) + 36  [0x1026b3770]  fmpz_extras.h:121
+        + ! : 2 mag_add  (in libflint.25.0.dylib) + 28  [0x1026b3538]  add.c:17
+        + ! : 1 mag_add  (in libflint.25.0.dylib) + 472  [0x1026b36f4]  add.c:61
+        + ! 2 arf_mag_add_ulp  (in libflint.25.0.dylib) + 208,236  [0x1026d1e4c,0x1026d1e68]  arf.h:1139
+        + ! 1 arf_mag_add_ulp  (in libflint.25.0.dylib) + 8  [0x1026d1d84]  arf.h:1132
+        + ! 1 arf_mag_add_ulp  (in libflint.25.0.dylib) + 32  [0x1026d1d9c]  arf.h:1133
+        + ! 1 mag_add  (in libflint.25.0.dylib) + 196  [0x1026b35e0]  add.c:63
+        + 33 _arb_poly_evaluate2_rectangular  (in libflint.25.0.dylib) + 1120  [0x102739dd4]  evaluate2_rectangular.c:91
+        + ! 25 _arb_vec_clear  (in libflint.25.0.dylib) + 44  [0x102709e04]  vec_clear.c:19
+        + ! : 20 arb_clear  (in libflint.25.0.dylib) + 80  [0x1026dc400]  clear.c:20
+        + ! : | 7 _xzm_free  (in libsystem_malloc.dylib) + 352  [0x18e548278]
+        + ! : | + 3 _platform_memset  (in libsystem_platform.dylib) + 160  [0x18e735130]
+        + ! : | + 2 DYLD-STUB$$_platform_bzero  (in libsystem_malloc.dylib) + 8  [0x18e55f878]
+        + ! : | + 2 __bzero  (in libsystem_platform.dylib) + 0  [0x18e735030]
+        + ! : | 5 _free  (in libsystem_malloc.dylib) + 104,0,...  [0x18e557d38,0x18e557cd0,...]
+        + ! : | 5 _xzm_free  (in libsystem_malloc.dylib) + 128,28,...  [0x18e548198,0x18e548134,...]
+        + ! : | 2 flint_free  (in libflint.25.0.dylib) + 4  [0x101face4c]  memory_manager.c:151
+        + ! : | 1 DYLD-STUB$$free  (in libflint.25.0.dylib) + 4  [0x102a38258]
+        + ! : 2 _xzm_free  (in libsystem_malloc.dylib) + 1560  [0x18e548730]
+        + ! : 2 arb_clear  (in libflint.25.0.dylib) + 20  [0x1026dc3c4]  clear.c:20
+        + ! : 1 arb_clear  (in libflint.25.0.dylib) + 80  [0x1026dc400]  clear.c:22
+        + ! 3 arb_clear  (in libflint.25.0.dylib) + 120  [0x1026dc428]  clear.c:27
+        + ! 2 _xzm_free  (in libsystem_malloc.dylib) + 1048  [0x18e548530]
+        + ! : 2 mach_absolute_time  (in libsystem_kernel.dylib) + 108,112  [0x18e6e810c,0x18e6e8110]
+        + ! 1 _arb_vec_clear  (in libflint.25.0.dylib) + 56  [0x102709e10]  vec_clear.c:20
+        + ! 1 _xzm_free  (in libsystem_malloc.dylib) + 352  [0x18e548278]
+        + ! : 1 _platform_memset  (in libsystem_platform.dylib) + 160  [0x18e735130]
+        + ! 1 _xzm_free  (in libsystem_malloc.dylib) + 720  [0x18e5483e8]
+        + 22 _arb_poly_evaluate2_rectangular  (in libflint.25.0.dylib) + 664  [0x102739c0c]  evaluate2_rectangular.c:79
+        + ! 18 arb_mul_ui  (in libflint.25.0.dylib) + 80  [0x1026f8808]  mul.c:149
+        + ! : 14 arb_mul_arf  (in libflint.25.0.dylib) + 640  [0x1026f814c]  mul.c:22
+        + ! : | 6 arf_mul_rnd_down  (in libflint.25.0.dylib) + 952  [0x1026c796c]  mul_rnd_down.c:174
+        + ! : | + 2 _arf_set_round_mpn  (in libflint.25.0.dylib) + 672  [0x1026cb4a4]  set_round.c:0
+        + ! : | + 2 _arf_set_round_mpn  (in libflint.25.0.dylib) + 684  [0x1026cb4b0]  set_round.c:233
+        + ! : | + ! 1 _arf_demote  (in libflint.25.0.dylib) + 0  [0x1026c7178]  memory_manager.c:73
+        + ! : | + ! 1 _xzm_free  (in libsystem_malloc.dylib) + 596  [0x18e54836c]
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 56  [0x1026cb23c]  set_round.c:64
+        + ! : | + 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 92  [0x1026cb260]  set_round.c:82
+        + ! : | 3 arf_mul_rnd_down  (in libflint.25.0.dylib) + 84  [0x1026c7608]  mul_rnd_down.c:30
+        + ! : | 2 arf_mul_rnd_down  (in libflint.25.0.dylib) + 24  [0x1026c75cc]  mul_rnd_down.c:17
+        + ! : | 1 arf_mul_rnd_down  (in libflint.25.0.dylib) + 352  [0x1026c7714]  mul_rnd_down.c:0
+        + ! : | 1 arf_mul_rnd_down  (in libflint.25.0.dylib) + 992  [0x1026c7994]  mul_rnd_down.c:175
+        + ! : | 1 arf_mul_rnd_down  (in libflint.25.0.dylib) + 88  [0x1026c760c]  mul_rnd_down.c:37
+        + ! : 3 arb_mul_arf  (in libflint.25.0.dylib) + 584  [0x1026f8114]  mul.c:0
+        + ! : 1 arb_mul_arf  (in libflint.25.0.dylib) + 20  [0x1026f7ee0]  mul.c:16
+        + ! 1 arb_mul_arf  (in libflint.25.0.dylib) + 612  [0x1026f8130]  mul.c:70
+        + ! 1 arb_mul_ui  (in libflint.25.0.dylib) + 92  [0x1026f8814]  mul.c:0
+        + ! 1 arb_mul_ui  (in libflint.25.0.dylib) + 24  [0x1026f87d0]  mul.c:146
+        + ! 1 arb_mul_ui  (in libflint.25.0.dylib) + 104  [0x1026f8820]  mul.c:150
+        + 10 _arb_poly_evaluate2_rectangular  (in libflint.25.0.dylib) + 504  [0x102739b6c]  evaluate2_rectangular.c:73
+        + ! 10 arb_mul_ui  (in libflint.25.0.dylib) + 80  [0x1026f8808]  mul.c:149
+        + !   9 arb_mul_arf  (in libflint.25.0.dylib) + 640  [0x1026f814c]  mul.c:22
+        + !   : 5 arf_mul_rnd_down  (in libflint.25.0.dylib) + 952  [0x1026c796c]  mul_rnd_down.c:174
+        + !   : | 2 _arf_set_round_mpn  (in libflint.25.0.dylib) + 656  [0x1026cb494]  set_round.c:233
+        + !   : | + 1 _arf_promote  (in libflint.25.0.dylib) + 28  [0x1026c7168]  memory_manager.c:62
+        + !   : | + ! 1 flint_malloc  (in libflint.25.0.dylib) + 28  [0x101facd8c]  memory_manager.c:81
+        + !   : | + !   1 _xzm_xzone_malloc  (in libsystem_malloc.dylib) + 132  [0x18e5479d4]
+        + !   : | + 1 flint_malloc  (in libflint.25.0.dylib) + 36  [0x101facd94]  memory_manager.c:86
+        + !   : | 1 _arf_promote  (in libflint.25.0.dylib) + 36  [0x1026c7170]  memory_manager.c:64
+        + !   : | 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 1388  [0x1026cb770]  mpn_extras.h:0
+        + !   : | 1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 864  [0x1026cb564]  set_round.c:233
+        + !   : 2 arf_mul_rnd_down  (in libflint.25.0.dylib) + 84  [0x1026c7608]  mul_rnd_down.c:30
+        + !   : 1 arf_mul_rnd_down  (in libflint.25.0.dylib) + 992  [0x1026c7994]  mul_rnd_down.c:175
+        + !   : 1 arf_mul_rnd_down  (in libflint.25.0.dylib) + 88  [0x1026c760c]  mul_rnd_down.c:37
+        + !   1 arb_mul_arf  (in libflint.25.0.dylib) + 584  [0x1026f8114]  mul.c:0
+        + 8 arb_poly_evaluate2  (in libflint.25.0.dylib) + 96  [0x102738d18]  evaluate2.c:36
+        + ! 8 _arb_vec_bits  (in libflint.25.0.dylib) + 132,244,...  [0x102709088,0x1027090f8,...]  vec.c:34
+        + 7 _arb_poly_evaluate2_rectangular  (in libflint.25.0.dylib) + 736  [0x102739c54]  evaluate2_rectangular.c:87
+        + 3 _arb_poly_evaluate2_rectangular  (in libflint.25.0.dylib) + 452  [0x102739b38]  evaluate2_rectangular.c:70
+        + ! 1 arb_mul_ui  (in libflint.25.0.dylib) + 92  [0x1026f8814]  mul.c:0
+        + ! 1 arb_mul_ui  (in libflint.25.0.dylib) + 24  [0x1026f87d0]  mul.c:146
+        + ! 1 arb_mul_ui  (in libflint.25.0.dylib) + 80  [0x1026f8808]  mul.c:149
+        + !   1 arb_mul_arf  (in libflint.25.0.dylib) + 640  [0x1026f814c]  mul.c:22
+        + !     1 _arf_set_round_mpn  (in libflint.25.0.dylib) + 1528  [0x1026cb7fc]  set_round.c:266
+        + 3 arb_mul  (in libflint.25.0.dylib) + 1028  [0x1026f86b4]  mul.c:134
+        + 2 _arb_poly_evaluate2_rectangular  (in libflint.25.0.dylib) + 716  [0x102739c40]  evaluate2_rectangular.c:81
+        + 1 _arb_poly_evaluate2_rectangular  (in libflint.25.0.dylib) + 144  [0x102739a04]  evaluate2_rectangular.c:49
+        + ! 1 _arb_vec_init  (in libflint.25.0.dylib) + 28  [0x102709fd4]  vec_init.c:18
+        + !   1 flint_malloc  (in libflint.25.0.dylib) + 28  [0x101facd8c]  memory_manager.c:81
+        + !     1 _malloc_zone_malloc  (in libsystem_malloc.dylib) + 100  [0x18e557120]
+        + 1 _arb_poly_evaluate2_rectangular  (in libflint.25.0.dylib) + 804  [0x102739c98]  evaluate2_rectangular.c:77
+        + 1 _arb_poly_evaluate2_rectangular  (in libflint.25.0.dylib) + 676  [0x102739c18]  evaluate2_rectangular.c:83
+        + 1 _arb_poly_evaluate2_rectangular  (in libflint.25.0.dylib) + 1144  [0x102739dec]  evaluate2_rectangular.c:94
+        + ! 1 arb_clear  (in libflint.25.0.dylib) + 80  [0x1026dc400]  clear.c:20
+        + !   1 _xzm_free  (in libsystem_malloc.dylib) + 352  [0x18e548278]
+        + 1 _arb_vec_set_powers  (in libflint.25.0.dylib) + 184  [0x10270a0b4]  vec_set_powers.c:0
+        + 1 arb_dot  (in libflint.25.0.dylib) + 4052  [0x1026e23a0]  dot.c:985
+        + 1 arf_mag_add_ulp  (in libflint.25.0.dylib) + 336  [0x1026d1ecc]  arf.h:1149
+        3 main  (in optimization-campaign) + 3520  [0x100ae5420]  optimization_campaign.c:281
+        + 1 DYLD-STUB$$clock_gettime  (in optimization-campaign) + 4  [0x100ae5ec4]
+        + 1 clock_gettime  (in libsystem_c.dylib) + 296  [0x18e5c7e4c]
+        + ! 1 _mach_boottime_usec  (in libsystem_c.dylib) + 64  [0x18e5ed4b0]
+        + !   1 gettimeofday  (in libsystem_c.dylib) + 56  [0x18e5bfdc0]
+        + !     1 __commpage_gettimeofday_internal  (in libsystem_kernel.dylib) + 44  [0x18e6e9c24]
+        + !       1 mach_absolute_time  (in libsystem_kernel.dylib) + 108  [0x18e6e810c]
+        + 1 clock_gettime  (in libsystem_c.dylib) + 0  [0x18e5c7d24]
+        1 main  (in optimization-campaign) + 3576  [0x100ae5458]  optimization_campaign.c:282
+        + 1 _platform_strcmp$VARIANT$Base  (in libsystem_platform.dylib) + 0  [0x18e736730]
+        1 main  (in optimization-campaign) + 3596  [0x100ae546c]  optimization_campaign.c:282
+          1 _platform_strcmp$VARIANT$Base  (in libsystem_platform.dylib) + 20  [0x18e736744]
+
+Total number in stack (recursive counted multiple, when >=5):
+        140       flint_mpn_mul_8n  (in libflint.25.0.dylib) + 0  [0x102017478]
+        18       __gmpn_add_n  (in libgmp.10.dylib) + 0  [0x100bf00b8]
+        13       __gmpn_lshift  (in libgmp.10.dylib) + 0  [0x100bf0cb0]
+        13       __gmpn_sub_n  (in libgmp.10.dylib) + 0  [0x100bf02e8]
+        9       _arf_set_round_mpn  (in libflint.25.0.dylib) + 0  [0x1026cb204]  set_round.c:82
+        8       _arf_set_round_mpn  (in libflint.25.0.dylib) + 0  [0x1026cb204]  set_round.c:185
+        8       _arf_set_round_mpn  (in libflint.25.0.dylib) + 0  [0x1026cb204]  set_round.c:238
+        7       DYLD-STUB$$__gmpn_add_n  (in libflint.25.0.dylib) + 0  [0x102a37a74]
+        7       DYLD-STUB$$__gmpn_sub_n  (in libflint.25.0.dylib) + 0  [0x102a37c00]
+        7       __gmpn_rshift  (in libgmp.10.dylib) + 0  [0x100bf0dc0]
+        7       _arf_set_round_mpn  (in libflint.25.0.dylib) + 0  [0x1026cb204]  mpn_extras.h:0
+        7       _arf_set_round_mpn  (in libflint.25.0.dylib) + 836  [0x1026cb548]  set_round.c:246
+        7       _xzm_free  (in libsystem_malloc.dylib) + 0  [0x18e548118]
+        6       _arf_add_mpn  (in libflint.25.0.dylib) + 4932  [0x1026bd0b0]  add_mpn.c:405
+        6       _arf_set_round_mpn  (in libflint.25.0.dylib) + 0  [0x1026cb204]  set_round.c:0
+        6       _arf_set_round_mpn  (in libflint.25.0.dylib) + 0  [0x1026cb204]  set_round.c:233
+        6       _arf_set_round_mpn  (in libflint.25.0.dylib) + 0  [0x1026cb204]  set_round.c:266
+        6       _arf_set_round_mpn  (in libflint.25.0.dylib) + 0  [0x1026cb204]  set_round.c:87
+        6       _arf_set_round_mpn  (in libflint.25.0.dylib) + 736  [0x1026cb4e4]  set_round.c:0
+        6       mag_fast_addmul  (in libflint.25.0.dylib) + 0  [0x1026d2868]  mag.h:0
+        5       DYLD-STUB$$__gmpn_lshift  (in libflint.25.0.dylib) + 0  [0x102a37b28]
+        5       _arf_add_mpn  (in libflint.25.0.dylib) + 0  [0x1026bbd6c]  add_mpn.c:30
+        5       _arf_add_mpn  (in libflint.25.0.dylib) + 592  [0x1026bbfbc]  add_mpn.c:274
+        5       _arf_set_round_mpn  (in libflint.25.0.dylib) + 0  [0x1026cb204]  set_round.c:240
+        5       _arf_set_round_mpn  (in libflint.25.0.dylib) + 0  [0x1026cb204]  set_round.c:64
+        5       _arf_set_round_mpn  (in libflint.25.0.dylib) + 0  [0x1026cb204]  set_round.c:97
+        5       _arf_set_round_mpn  (in libflint.25.0.dylib) + 656  [0x1026cb494]  set_round.c:233
+        5       arf_mul_rnd_down  (in libflint.25.0.dylib) + 0  [0x1026c75b4]  mul_rnd_down.c:30
+        5       flint_malloc  (in libflint.25.0.dylib) + 28  [0x101facd8c]  memory_manager.c:81
+        5       mag_fast_init_set_arf  (in libflint.25.0.dylib) + 0  [0x1026d2810]  arf.h:1120
+
+Sort by top of stack, same collapsed (when >= 5):
+        _arf_set_round_mpn  (in libflint.25.0.dylib)        362
+        flint_mpn_mul_2  (in libflint.25.0.dylib)        236
+        flint_mpn_mul_3n  (in libflint.25.0.dylib)        221
+        __gmpn_rshift  (in libgmp.10.dylib)        174
+        flint_mpn_mul_8n  (in libflint.25.0.dylib)        174
+        __gmpn_add_n  (in libgmp.10.dylib)        121
+        arb_dot  (in libflint.25.0.dylib)        109
+        _arb_dot_addmul_generic  (in libflint.25.0.dylib)        102
+        _arf_add_mpn  (in libflint.25.0.dylib)        102
+        __gmpn_sub_n  (in libgmp.10.dylib)        95
+        arf_mul_rnd_down  (in libflint.25.0.dylib)        79
+        arf_addmul  (in libflint.25.0.dylib)        75
+        arf_mag_fast_add_ulp  (in libflint.25.0.dylib)        54
+        __gmpn_lshift  (in libgmp.10.dylib)        53
+        arb_addmul_arf  (in libflint.25.0.dylib)        43
+        __gmpn_addmul_1  (in libgmp.10.dylib)        41
+        mag_fast_addmul  (in libflint.25.0.dylib)        39
+        flint_mpn_mul_9n  (in libflint.25.0.dylib)        38
+        arb_mul_arf  (in libflint.25.0.dylib)        37
+        flint_mpn_mul_toom22  (in libflint.25.0.dylib)        37
+        mag_fast_init_set_arf  (in libflint.25.0.dylib)        28
+        _flint_mpn_mul  (in libflint.25.0.dylib)        25
+        _xzm_free  (in libsystem_malloc.dylib)        21
+        __gmpn_neg  (in libgmp.10.dylib)        17
+        arb_mul  (in libflint.25.0.dylib)        17
+        arb_mul_ui  (in libflint.25.0.dylib)        16
+        arb_addmul  (in libflint.25.0.dylib)        14
+        DYLD-STUB$$__gmpn_add_n  (in libflint.25.0.dylib)        11
+        _arb_poly_evaluate2_rectangular  (in libflint.25.0.dylib)        11
+        __gmpn_com  (in libgmp.10.dylib)        10
+        DYLD-STUB$$__gmpn_sub_1  (in libflint.25.0.dylib)        9
+        DYLD-STUB$$__gmpn_sub_n  (in libflint.25.0.dylib)        9
+        _arb_dot_add_generic  (in libflint.25.0.dylib)        9
+        DYLD-STUB$$__gmpn_rshift  (in libflint.25.0.dylib)        8
+        _arb_vec_bits  (in libflint.25.0.dylib)        8
+        arf_mag_add_ulp  (in libflint.25.0.dylib)        8
+        flint_mpn_mul  (in libflint.25.0.dylib)        8
+        __gmpn_sqr_diag_addlsh1  (in libgmp.10.dylib)        7
+        _free  (in libsystem_malloc.dylib)        7
+        _xzm_xzone_malloc  (in libsystem_malloc.dylib)        7
+        <deduplicated_symbol>  (in libsystem_malloc.dylib)        6
+        DYLD-STUB$$__gmpn_lshift  (in libflint.25.0.dylib)        6
+        ___chkstk_darwin  (in libsystem_pthread.dylib)        6
+        __gmpn_sub_1  (in libgmp.10.dylib)        6
+        _platform_memset  (in libsystem_platform.dylib)        6
+        arb_clear  (in libflint.25.0.dylib)        6
+        _fmpz_sub_small  (in libflint.25.0.dylib)        5
+        arf_add  (in libflint.25.0.dylib)        5
+        flint_malloc  (in libflint.25.0.dylib)        5
+        mag_add  (in libflint.25.0.dylib)        5
+
+Binary Images:
+       0x100ae4000 -        0x100ae6293 +optimization-campaign (0) <69F2DFBE-13C9-35C0-8C92-69DBC8263B1E> /Users/*/optimization-campaign
+       0x100b64000 -        0x100bbbbd7 +libmpfr.6.dylib (0) <52900495-C806-30A1-B740-BFBB152F39FE> /opt/homebrew/*/libmpfr.6.dylib
+       0x100bd8000 -        0x100c2cf67 +libgmp.10.dylib (0) <61CFD8B8-214C-314F-96F5-0489BF7A8F45> /opt/homebrew/*/libgmp.10.dylib
+       0x101fa4000 -        0x102b56f2f +libflint.25.0.dylib (0) <9D0466B0-4E65-3642-AEDB-C7604186CE3C> /Users/*/libflint.25.0.dylib
+       0x18e2b8000 -        0x18e30ab4b  libobjc.A.dylib (951.7) <03BD9E32-CF0A-37B0-898A-3CE8DE06D842> /usr/lib/libobjc.A.dylib
+       0x18e30b000 -        0x18e33fd58  libdyld.dylib (1387) <957F93B3-8805-39C7-9C51-EDD1715F550E> /usr/lib/system/libdyld.dylib
+       0x18e340000 -        0x18e3f34ff  dyld (1.0.0 - 1387) <74E52480-C2BD-3C8D-812D-95FE2B74A096> /usr/lib/dyld
+       0x18e3f4000 -        0x18e3f7228  libsystem_blocks.dylib (96) <E0AC1231-27AA-3A13-8FAC-41D5802B1F3C> /usr/lib/system/libsystem_blocks.dylib
+       0x18e3f8000 -        0x18e44c55f  libxpc.dylib (3102.160.5) <33E44C2D-D65E-37A6-B85F-1A4CF524A050> /usr/lib/system/libxpc.dylib
+       0x18e44d000 -        0x18e46d9ff  libsystem_trace.dylib (1861.160.4) <93F1DD8C-6CD9-32B9-B222-D23DA5D161B4> /usr/lib/system/libsystem_trace.dylib
+       0x18e46e000 -        0x18e51c5f7  libcorecrypto.dylib (1922.160.10) <0642DDAD-4771-3C82-805C-E7C6701C1461> /usr/lib/system/libcorecrypto.dylib
+       0x18e51d000 -        0x18e56d257  libsystem_malloc.dylib (812.160.5) <D969A907-3E43-3951-9365-8C2DB3812E9D> /usr/lib/system/libsystem_malloc.dylib
+       0x18e56e000 -        0x18e5b523f  libdispatch.dylib (1542.160.2) <B2000CD5-F580-314A-A141-E036719D854E> /usr/lib/system/libdispatch.dylib
+       0x18e5b6000 -        0x18e5b8ffb  libsystem_featureflags.dylib (103) <FEE12F9C-344B-33B3-8EDD-283580EF1C67> /usr/lib/system/libsystem_featureflags.dylib
+       0x18e5b9000 -        0x18e63a1e7  libsystem_c.dylib (1752.160.4) <D77CEB62-AFF6-3CEC-BA9B-4F057FBE2EB5> /usr/lib/system/libsystem_c.dylib
+       0x18e63b000 -        0x18e6cbae7  libc++.1.dylib (2100.43) <F0FD393C-15BC-3C75-A19D-897F7B225C78> /usr/lib/libc++.1.dylib
+       0x18e6cc000 -        0x18e6e675f  libc++abi.dylib (2100.43) <F38A9C58-22AB-3798-BBAE-8DCD9CC0CE27> /usr/lib/libc++abi.dylib
+       0x18e6e7000 -        0x18e7242e7  libsystem_kernel.dylib (12377.161.14) <C6A4A4CB-92E6-3BAF-AAE0-E8306259209A> /usr/lib/system/libsystem_kernel.dylib
+       0x18e725000 -        0x18e731b3b  libsystem_pthread.dylib (539.100.4) <A373F0B0-9880-326A-88B4-DD8BE4E33072> /usr/lib/system/libsystem_pthread.dylib
+       0x18e732000 -        0x18e73a963  libsystem_platform.dylib (375.120.2) <EDB83A19-EC17-32DE-9350-6145970A85D6> /usr/lib/system/libsystem_platform.dylib
+       0x18e73b000 -        0x18e76a6eb  libsystem_info.dylib (600) <9B5FB84B-31AD-3EA7-8F89-8C700D369DC8> /usr/lib/system/libsystem_info.dylib
+       0x192708000 -        0x192711e5f  libsystem_darwin.dylib (1752.160.4) <8E07D22E-CE5A-38A0-B091-5B0338C326F5> /usr/lib/system/libsystem_darwin.dylib
+       0x192b73000 -        0x192b851b6  libsystem_notify.dylib (348.160.3) <15799128-6CBD-30D6-A2BB-B9D02B4470C0> /usr/lib/system/libsystem_notify.dylib
+       0x194e44000 -        0x194e5ef7b  libsystem_networkextension.dylib (2226.161.1) <9C7B1EEB-47BE-3791-93A9-CFC693CB9417> /usr/lib/system/libsystem_networkextension.dylib
+       0x194ee1000 -        0x194ef8fdf  libsystem_asl.dylib (406) <54439739-33EE-3273-839F-CBA67D7F5CB1> /usr/lib/system/libsystem_asl.dylib
+       0x196a9a000 -        0x196aa2387  libsystem_symptoms.dylib (2169.160.3) <229122B9-B8B1-3F2F-870E-8650AE3C4FB5> /usr/lib/system/libsystem_symptoms.dylib
+       0x19ad3f000 -        0x19ad775b7  libsystem_containermanager.dylib (725.160.3) <14B2A47F-19C8-392F-8FDB-FE8AE375DD41> /usr/lib/system/libsystem_containermanager.dylib
+       0x19c151000 -        0x19c1555d7  libsystem_configuration.dylib (1405.160.3) <D8D6280B-783D-3550-BDBA-2861AE40604F> /usr/lib/system/libsystem_configuration.dylib
+       0x19c156000 -        0x19c15c99f  libsystem_sandbox.dylib (2680.160.6) <54688162-B50D-3D31-A1E8-7B9766D3530D> /usr/lib/system/libsystem_sandbox.dylib
+       0x19d7b1000 -        0x19d7b41fb  libquarantine.dylib (196.160.2) <EEE5AADB-52E1-3C4C-881A-70405770B1F1> /usr/lib/system/libquarantine.dylib
+       0x19df50000 -        0x19df56d03  libsystem_coreservices.dylib (191.5.1) <D4ACD2AC-5702-3C45-85A0-300B2C2D19E1> /usr/lib/system/libsystem_coreservices.dylib
+       0x19e4df000 -        0x19e51ca77  libsystem_m.dylib (3312.100.1) <B54FBE99-DB0B-32C7-ABDD-C2206DF606A4> /usr/lib/system/libsystem_m.dylib
+       0x19e51e000 -        0x19e521527  libmacho.dylib (1387) <949131E5-BDA2-39BA-AA50-62651BB51802> /usr/lib/system/libmacho.dylib
+       0x19e53b000 -        0x19e5483a7  libcommonCrypto.dylib (600035) <3B110564-5278-3CB0-85F1-2CE8431FF935> /usr/lib/system/libcommonCrypto.dylib
+       0x19e549000 -        0x19e552ca3  libunwind.dylib (2100.2) <05FD0014-55B1-3B8A-A6BA-6C7A389C4123> /usr/lib/system/libunwind.dylib
+       0x19e55b000 -        0x19e565bef  libcopyfile.dylib (240.160.2.0.1) <D0009B8A-8ECC-3D56-9206-7E1839707F93> /usr/lib/system/libcopyfile.dylib
+       0x19e566000 -        0x19e569987  libcompiler_rt.dylib (103.3) <6FB345CA-7F5C-3263-A23F-143F7539FD8A> /usr/lib/system/libcompiler_rt.dylib
+       0x19e56a000 -        0x19e56e78b  libsystem_collections.dylib (1752.160.4) <C8160BD2-5941-3DC0-BB40-F8C2B8156EC4> /usr/lib/system/libsystem_collections.dylib
+       0x19e56f000 -        0x19e5724cf  libsystem_secinit.dylib (168.100.7) <ECABC024-8F02-374A-BB7E-29437CEA2ABD> /usr/lib/system/libsystem_secinit.dylib
+       0x19e573000 -        0x19e575bf7  libremovefile.dylib (85.100.6) <7460B5AE-469A-36A0-A7EC-6C7D69628E86> /usr/lib/system/libremovefile.dylib
+       0x19e576000 -        0x19e576f27  libkeymgr.dylib (31) <7E863FCA-F3FF-32C7-8A8C-F983E946AFC3> /usr/lib/system/libkeymgr.dylib
+       0x19e577000 -        0x19e57fe37  libsystem_dnssd.dylib (2881.160.4) <305F4398-E688-3384-B351-02D865EC8A04> /usr/lib/system/libsystem_dnssd.dylib
+       0x19e580000 -        0x19e58509b  libcache.dylib (95) <9CD7B1E1-3E47-339C-A193-2392E3E0ED23> /usr/lib/system/libcache.dylib
+       0x19e586000 -        0x19e587ce3  libSystem.B.dylib (1356) <4FED5EE2-5D3E-35B1-A170-9859C4B683BB> /usr/lib/libSystem.B.dylib
+       0x292549000 -        0x292550349  libRosetta.dylib (367.9) <0C7397C6-D747-31F2-8BC1-4096213BDE5C> /usr/lib/libRosetta.dylib
+       0x29415c000 -        0x29415fa4b  libsystem_darwindirectory.dylib (122) <971A4F65-493D-39F3-846D-0D33FA2769FD> /usr/lib/system/libsystem_darwindirectory.dylib
+       0x294160000 -        0x29416a39b  libsystem_eligibility.dylib (319.160.17) <750CA446-92EA-3A56-9A7B-CC0841686C50> /usr/lib/system/libsystem_eligibility.dylib
+       0x29416b000 -        0x29417288b  libsystem_sanitizers.dylib (26.1) <D88EC709-9AA8-3083-B22B-D3CB39678D71> /usr/lib/system/libsystem_sanitizers.dylib
+       0x294173000 -        0x294173bb7  libsystem_trial.dylib (474.2.18.2) <7194FF5B-A6C5-3D67-B00A-90209F10D603> /usr/lib/system/libsystem_trial.dylib

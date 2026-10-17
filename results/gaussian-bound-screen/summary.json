@@ -1,0 +1,1070 @@
+{
+  "cases": 77,
+  "strict_wins": 0,
+  "ties": 30,
+  "ordinary_strict_wins": 47,
+  "eligible": [],
+  "previous_examples": [
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 512,
+      "alpha": 8,
+      "H": 1,
+      "retained_edges": 2062,
+      "tail_bound_bits": 1065,
+      "power_target_bits": 515,
+      "older_theory_terms": 34,
+      "simplified_theory_terms": 7,
+      "sharp_lemma_terms": 3,
+      "theory_terms": 3,
+      "ordinary_one_step_terms": 4,
+      "rounded_one_step_terms": 4,
+      "block_terms": {
+        "2": 3
+      },
+      "finite_power_terms": 3,
+      "ordinary_best_terms": 3,
+      "strict_term_advantage": false,
+      "power_certificate_bits": [
+        139,
+        418,
+        837
+      ],
+      "resampling_window_width_proxy": 369,
+      "correctness": "For ||b||inf<=1, ||E||<1/2. Gaussian omission <=2^(-p-4), inverse perturbation <=2^(-p-2), series error <=2^(-p-2). Reserve 2^(-p-1) for numerical arithmetic; no numerical solve performed.",
+      "diagnostic_screen_seconds": 0.005820875056087971
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 4096,
+      "alpha": 16,
+      "H": 1,
+      "retained_edges": 2062,
+      "tail_bound_bits": 4269,
+      "power_target_bits": 4099,
+      "older_theory_terms": 67,
+      "simplified_theory_terms": 9,
+      "sharp_lemma_terms": 5,
+      "theory_terms": 5,
+      "ordinary_one_step_terms": 8,
+      "rounded_one_step_terms": 8,
+      "block_terms": {
+        "2": 6,
+        "4": 4
+      },
+      "finite_power_terms": 4,
+      "ordinary_best_terms": 4,
+      "strict_term_advantage": false,
+      "power_certificate_bits": [
+        560,
+        1680,
+        3360,
+        4557
+      ],
+      "resampling_window_width_proxy": 2049,
+      "correctness": "For ||b||inf<=1, ||E||<1/2. Gaussian omission <=2^(-p-4), inverse perturbation <=2^(-p-2), series error <=2^(-p-2). Reserve 2^(-p-1) for numerical arithmetic; no numerical solve performed.",
+      "diagnostic_screen_seconds": 0.005434499587863684
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 16384,
+      "alpha": 24,
+      "H": 2,
+      "retained_edges": 4124,
+      "tail_bound_bits": 26481,
+      "power_target_bits": 16387,
+      "older_theory_terms": 118,
+      "simplified_theory_terms": 12,
+      "sharp_lemma_terms": 7,
+      "theory_terms": 7,
+      "ordinary_one_step_terms": 13,
+      "rounded_one_step_terms": 13,
+      "block_terms": {
+        "2": 9,
+        "4": 7
+      },
+      "finite_power_terms": 6,
+      "ordinary_best_terms": 6,
+      "strict_term_advantage": false,
+      "power_certificate_bits": [
+        1262,
+        3784,
+        7567,
+        10260,
+        14043,
+        16736
+      ],
+      "resampling_window_width_proxy": 6145,
+      "correctness": "For ||b||inf<=1, ||E||<1/2. Gaussian omission <=2^(-p-4), inverse perturbation <=2^(-p-2), series error <=2^(-p-2). Reserve 2^(-p-1) for numerical arithmetic; no numerical solve performed.",
+      "diagnostic_screen_seconds": 0.02349625015631318
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 65536,
+      "alpha": 32,
+      "H": 3,
+      "retained_edges": 6186,
+      "tail_bound_bits": 91380,
+      "power_target_bits": 65539,
+      "older_theory_terms": 266,
+      "simplified_theory_terms": 21,
+      "sharp_lemma_terms": 13,
+      "theory_terms": 13,
+      "ordinary_one_step_terms": 30,
+      "rounded_one_step_terms": 30,
+      "block_terms": {
+        "2": 20,
+        "4": 15,
+        "8": 13
+      },
+      "finite_power_terms": 13,
+      "ordinary_best_terms": 13,
+      "strict_term_advantage": false,
+      "power_certificate_bits": [
+        2244,
+        6729,
+        13455,
+        18245,
+        24971,
+        29761,
+        36487,
+        41277,
+        48003,
+        52793,
+        59519,
+        64309,
+        71035
+      ],
+      "resampling_window_width_proxy": 16385,
+      "correctness": "For ||b||inf<=1, ||E||<1/2. Gaussian omission <=2^(-p-4), inverse perturbation <=2^(-p-2), series error <=2^(-p-2). Reserve 2^(-p-1) for numerical arithmetic; no numerical solve performed.",
+      "diagnostic_screen_seconds": 0.032270750030875206
+    }
+  ],
+  "pareto_proxies": [
+    {
+      "s": 31,
+      "t": 36,
+      "p": 512,
+      "method": "theory_terms",
+      "points": [
+        [
+          369,
+          186,
+          8
+        ],
+        [
+          553,
+          124,
+          12
+        ]
+      ]
+    },
+    {
+      "s": 31,
+      "t": 36,
+      "p": 512,
+      "method": "ordinary_best_terms",
+      "points": [
+        [
+          369,
+          124,
+          8
+        ],
+        [
+          553,
+          62,
+          12
+        ]
+      ]
+    },
+    {
+      "s": 31,
+      "t": 36,
+      "p": 4096,
+      "method": "theory_terms",
+      "points": [
+        [
+          1665,
+          744,
+          13
+        ],
+        [
+          2561,
+          186,
+          20
+        ],
+        [
+          3329,
+          124,
+          26
+        ]
+      ]
+    },
+    {
+      "s": 31,
+      "t": 36,
+      "p": 4096,
+      "method": "ordinary_best_terms",
+      "points": [
+        [
+          1665,
+          620,
+          13
+        ],
+        [
+          2561,
+          186,
+          20
+        ],
+        [
+          3329,
+          124,
+          26
+        ],
+        [
+          4993,
+          62,
+          39
+        ],
+        [
+          6657,
+          0,
+          52
+        ]
+      ]
+    },
+    {
+      "s": 31,
+      "t": 36,
+      "p": 16384,
+      "method": "theory_terms",
+      "points": [
+        [
+          4609,
+          2046,
+          18
+        ],
+        [
+          6913,
+          744,
+          27
+        ],
+        [
+          9217,
+          248,
+          36
+        ],
+        [
+          13825,
+          124,
+          54
+        ]
+      ]
+    },
+    {
+      "s": 31,
+      "t": 36,
+      "p": 16384,
+      "method": "ordinary_best_terms",
+      "points": [
+        [
+          4609,
+          1860,
+          18
+        ],
+        [
+          6913,
+          620,
+          27
+        ],
+        [
+          9217,
+          186,
+          36
+        ],
+        [
+          13825,
+          124,
+          54
+        ],
+        [
+          18433,
+          62,
+          72
+        ]
+      ]
+    },
+    {
+      "s": 31,
+      "t": 36,
+      "p": 65536,
+      "method": "theory_terms",
+      "points": [
+        [
+          13313,
+          4960,
+          26
+        ],
+        [
+          19969,
+          1674,
+          39
+        ],
+        [
+          26625,
+          744,
+          52
+        ],
+        [
+          39937,
+          186,
+          78
+        ],
+        [
+          53249,
+          124,
+          104
+        ]
+      ]
+    },
+    {
+      "s": 31,
+      "t": 36,
+      "p": 65536,
+      "method": "ordinary_best_terms",
+      "points": [
+        [
+          13313,
+          4712,
+          26
+        ],
+        [
+          19969,
+          1674,
+          39
+        ],
+        [
+          26625,
+          620,
+          52
+        ],
+        [
+          39937,
+          186,
+          78
+        ],
+        [
+          53249,
+          124,
+          104
+        ]
+      ]
+    },
+    {
+      "s": 127,
+      "t": 144,
+      "p": 512,
+      "method": "theory_terms",
+      "points": [
+        [
+          369,
+          762,
+          8
+        ],
+        [
+          553,
+          508,
+          12
+        ]
+      ]
+    },
+    {
+      "s": 127,
+      "t": 144,
+      "p": 512,
+      "method": "ordinary_best_terms",
+      "points": [
+        [
+          369,
+          762,
+          8
+        ],
+        [
+          553,
+          254,
+          12
+        ]
+      ]
+    },
+    {
+      "s": 127,
+      "t": 144,
+      "p": 4096,
+      "method": "theory_terms",
+      "points": [
+        [
+          1793,
+          3048,
+          14
+        ],
+        [
+          2689,
+          762,
+          21
+        ],
+        [
+          5377,
+          508,
+          42
+        ]
+      ]
+    },
+    {
+      "s": 127,
+      "t": 144,
+      "p": 4096,
+      "method": "ordinary_best_terms",
+      "points": [
+        [
+          1793,
+          2540,
+          14
+        ],
+        [
+          2689,
+          762,
+          21
+        ],
+        [
+          3585,
+          508,
+          28
+        ],
+        [
+          5377,
+          254,
+          42
+        ]
+      ]
+    },
+    {
+      "s": 127,
+      "t": 144,
+      "p": 16384,
+      "method": "theory_terms",
+      "points": [
+        [
+          4865,
+          7620,
+          19
+        ],
+        [
+          7425,
+          2540,
+          29
+        ],
+        [
+          9729,
+          1016,
+          38
+        ],
+        [
+          14593,
+          762,
+          57
+        ],
+        [
+          19457,
+          508,
+          76
+        ]
+      ]
+    },
+    {
+      "s": 127,
+      "t": 144,
+      "p": 16384,
+      "method": "ordinary_best_terms",
+      "points": [
+        [
+          4865,
+          7620,
+          19
+        ],
+        [
+          7425,
+          2540,
+          29
+        ],
+        [
+          9729,
+          762,
+          38
+        ],
+        [
+          14593,
+          508,
+          57
+        ],
+        [
+          19457,
+          254,
+          76
+        ]
+      ]
+    },
+    {
+      "s": 127,
+      "t": 144,
+      "p": 65536,
+      "method": "theory_terms",
+      "points": [
+        [
+          13825,
+          19304,
+          27
+        ],
+        [
+          20993,
+          6858,
+          41
+        ],
+        [
+          27649,
+          3048,
+          54
+        ],
+        [
+          41473,
+          1016,
+          81
+        ],
+        [
+          55297,
+          762,
+          108
+        ]
+      ]
+    },
+    {
+      "s": 127,
+      "t": 144,
+      "p": 65536,
+      "method": "ordinary_best_terms",
+      "points": [
+        [
+          13825,
+          19304,
+          27
+        ],
+        [
+          20993,
+          6858,
+          41
+        ],
+        [
+          27649,
+          2540,
+          54
+        ],
+        [
+          41473,
+          762,
+          81
+        ],
+        [
+          55297,
+          508,
+          108
+        ]
+      ]
+    },
+    {
+      "s": 1031,
+      "t": 1152,
+      "p": 512,
+      "method": "theory_terms",
+      "points": [
+        [
+          415,
+          6186,
+          9
+        ],
+        [
+          645,
+          4124,
+          14
+        ]
+      ]
+    },
+    {
+      "s": 1031,
+      "t": 1152,
+      "p": 512,
+      "method": "ordinary_best_terms",
+      "points": [
+        [
+          415,
+          6186,
+          9
+        ],
+        [
+          645,
+          2062,
+          14
+        ]
+      ]
+    },
+    {
+      "s": 1031,
+      "t": 1152,
+      "p": 4096,
+      "method": "theory_terms",
+      "points": [
+        [
+          1793,
+          24744,
+          14
+        ],
+        [
+          2689,
+          8248,
+          21
+        ],
+        [
+          3585,
+          6186,
+          28
+        ],
+        [
+          5377,
+          4124,
+          42
+        ]
+      ]
+    },
+    {
+      "s": 1031,
+      "t": 1152,
+      "p": 4096,
+      "method": "ordinary_best_terms",
+      "points": [
+        [
+          1793,
+          24744,
+          14
+        ],
+        [
+          2689,
+          6186,
+          21
+        ],
+        [
+          3585,
+          4124,
+          28
+        ],
+        [
+          5377,
+          2062,
+          42
+        ]
+      ]
+    },
+    {
+      "s": 1031,
+      "t": 1152,
+      "p": 16384,
+      "method": "theory_terms",
+      "points": [
+        [
+          5121,
+          61860,
+          20
+        ],
+        [
+          7681,
+          20620,
+          30
+        ],
+        [
+          10241,
+          8248,
+          40
+        ],
+        [
+          15361,
+          6186,
+          60
+        ],
+        [
+          20481,
+          4124,
+          80
+        ]
+      ]
+    },
+    {
+      "s": 1031,
+      "t": 1152,
+      "p": 16384,
+      "method": "ordinary_best_terms",
+      "points": [
+        [
+          5121,
+          55674,
+          20
+        ],
+        [
+          7681,
+          20620,
+          30
+        ],
+        [
+          10241,
+          6186,
+          40
+        ],
+        [
+          15361,
+          4124,
+          60
+        ],
+        [
+          20481,
+          2062,
+          80
+        ]
+      ]
+    },
+    {
+      "s": 1031,
+      "t": 1152,
+      "p": 65536,
+      "method": "theory_terms",
+      "points": [
+        [
+          14337,
+          148464,
+          28
+        ],
+        [
+          21505,
+          55674,
+          42
+        ],
+        [
+          28673,
+          24744,
+          56
+        ],
+        [
+          43009,
+          8248,
+          84
+        ],
+        [
+          57345,
+          6186,
+          112
+        ]
+      ]
+    },
+    {
+      "s": 1031,
+      "t": 1152,
+      "p": 65536,
+      "method": "ordinary_best_terms",
+      "points": [
+        [
+          14337,
+          148464,
+          28
+        ],
+        [
+          21505,
+          55674,
+          42
+        ],
+        [
+          28673,
+          24744,
+          56
+        ],
+        [
+          43009,
+          6186,
+          84
+        ],
+        [
+          57345,
+          4124,
+          112
+        ]
+      ]
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 512,
+      "method": "theory_terms",
+      "points": [
+        [
+          323,
+          6186,
+          7
+        ],
+        [
+          369,
+          4124,
+          8
+        ],
+        [
+          507,
+          2062,
+          11
+        ]
+      ]
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 512,
+      "method": "ordinary_best_terms",
+      "points": [
+        [
+          323,
+          4124,
+          7
+        ],
+        [
+          507,
+          2062,
+          11
+        ],
+        [
+          967,
+          0,
+          21
+        ]
+      ]
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 4096,
+      "method": "theory_terms",
+      "points": [
+        [
+          1537,
+          24744,
+          12
+        ],
+        [
+          2049,
+          8248,
+          16
+        ],
+        [
+          2305,
+          6186,
+          18
+        ],
+        [
+          3073,
+          4124,
+          24
+        ],
+        [
+          4609,
+          2062,
+          36
+        ]
+      ]
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 4096,
+      "method": "ordinary_best_terms",
+      "points": [
+        [
+          1537,
+          20620,
+          12
+        ],
+        [
+          2049,
+          6186,
+          16
+        ],
+        [
+          2305,
+          4124,
+          18
+        ],
+        [
+          4609,
+          2062,
+          36
+        ],
+        [
+          6145,
+          0,
+          48
+        ]
+      ]
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 16384,
+      "method": "theory_terms",
+      "points": [
+        [
+          4353,
+          68046,
+          17
+        ],
+        [
+          6145,
+          24744,
+          24
+        ],
+        [
+          6657,
+          20620,
+          26
+        ],
+        [
+          8705,
+          6186,
+          34
+        ],
+        [
+          13057,
+          4124,
+          51
+        ],
+        [
+          17409,
+          2062,
+          68
+        ]
+      ]
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 16384,
+      "method": "ordinary_best_terms",
+      "points": [
+        [
+          4353,
+          61860,
+          17
+        ],
+        [
+          6145,
+          20620,
+          24
+        ],
+        [
+          6657,
+          16496,
+          26
+        ],
+        [
+          8705,
+          6186,
+          34
+        ],
+        [
+          13057,
+          2062,
+          51
+        ]
+      ]
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 65536,
+      "method": "theory_terms",
+      "points": [
+        [
+          11777,
+          189704,
+          23
+        ],
+        [
+          16385,
+          74232,
+          32
+        ],
+        [
+          17921,
+          61860,
+          35
+        ],
+        [
+          23553,
+          24744,
+          46
+        ],
+        [
+          35329,
+          6186,
+          69
+        ],
+        [
+          47105,
+          4124,
+          92
+        ]
+      ]
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 65536,
+      "method": "ordinary_best_terms",
+      "points": [
+        [
+          11777,
+          181456,
+          23
+        ],
+        [
+          16385,
+          74232,
+          32
+        ],
+        [
+          17921,
+          61860,
+          35
+        ],
+        [
+          23553,
+          24744,
+          46
+        ],
+        [
+          35329,
+          6186,
+          69
+        ],
+        [
+          47105,
+          4124,
+          92
+        ]
+      ]
+    }
+  ]
+}

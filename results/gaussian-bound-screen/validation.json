@@ -1,0 +1,5 @@
+{
+  "status": "PASS",
+  "exact_checks": 923,
+  "scope": "Outward dyadic sums, independent exponent construction, exact small matrix powers, finite tail checks; infinite tail also requires the geometric proof."
+}

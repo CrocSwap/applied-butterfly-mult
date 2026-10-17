@@ -1,0 +1,2 @@
+FLINT exception (General error):
+    Could not find test function for mul

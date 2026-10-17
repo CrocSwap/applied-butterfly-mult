@@ -1,0 +1,28 @@
+{
+  "source": "/Users/colkitt/sith/toys/math/butterflyMult/results/joint-workload-survey/programs.jsonl",
+  "source_sha256": "7a211a5405a15481b418dc7c9bff5e22e778bec379f566f4b8cf251c1f56b903",
+  "script_sha256": "f13508237f0abf82e8b7d34dfc3a2f0b3cc7c6b8c7e8587cb162c0a2171d634d",
+  "cases": [
+    "10+4 encode",
+    "10+4 decode"
+  ],
+  "schedules": [
+    "fused",
+    "scheduled"
+  ],
+  "cuts": "Every internal instruction boundary",
+  "priorities": [
+    "uses",
+    "next",
+    "weight",
+    "recent"
+  ],
+  "retention": "Greedy independent live values after mandatory outputs; ordinary top-q with same q and q=0, floor(m/4), floor(m/2), floor(3m/4), m",
+  "modes": [
+    "original-DAG rematerialization",
+    "same plus one/two-array identities",
+    "same plus general GF(2) basis reconstruction"
+  ],
+  "gate": "Not weakly dominated by any ordinary candidate; dominates matched sparse ablation strictly; versus original scheduled program at least 10% less scratch OR 5% fewer XORs OR 5% fewer accesses, with no increase in all six charged resources.",
+  "scope": "Single cut, existing retained rows, fixed suffix order, fused reconstruction; no global optimality or novelty claim"
+}

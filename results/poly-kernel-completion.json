@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "report_links_checked": true,
+  "baseline_source_unchanged": true,
+  "decision": "Keep the fixed shared spectral kernel experimental; report workload-specific gains and regressions.",
+  "sha256": {
+    "docs/shared-matrix-kernel-m2.md": "b410f135ea522c069498b50c9b186c5e2e1368750c5d47c66483a5bdaf736a9b",
+    "docs/polynomial-survey-m2.md": "73fe9e9529eb922a9ff8453ba61a4adb40d2652a005d576fd1fb0301afff4f5f",
+    "README.md": "f3fa7eedfc8a2c9a5c9e7cb7318336f08fa6d97c97444178b0d2ebac635a2b98",
+    "results/poly-kernel-audit.json": "6acb5d8f15d128298bfbb668274ba6fb0d1470167e79c8f3d9397d6d2a654525",
+    "results/poly-kernel-harness-build.json": "75bdbfa9bef11044486e69051a8daeadb1ab06da5101d1a5788464dcbfff9357"
+  }
+}

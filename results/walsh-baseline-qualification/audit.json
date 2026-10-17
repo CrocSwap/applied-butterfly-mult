@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "validation_comparisons": 434,
+  "enclosure_checks": 434952,
+  "timed_batches": 11352,
+  "retry_batches": 0,
+  "confirmation_controls": 8,
+  "controls_both_include_zero": 6,
+  "scope": "Frozen file hashes, full cell/confirmation coverage, fastest ordinary selection, exact-enclosure validation records, ABBA/BAAB ordering, equal repetitions, precision retries, independent raw CPU/wall point estimates and controls. Bootstrap algorithm is the existing frozen shared method."
+}

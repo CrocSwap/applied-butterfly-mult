@@ -1,0 +1,1 @@
+PASS 906 fused/reference cases, 35859968 coefficients compared bit-for-bit

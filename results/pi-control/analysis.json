@@ -1,0 +1,81 @@
+{
+  "cases": [
+    {
+      "precision_bits": 1048576,
+      "cpu": {
+        "reduction_pct": -0.08091077484317921,
+        "ci95_low_pct": -0.3603410542945662,
+        "ci95_high_pct": 0.21875832084660152,
+        "baseline_median_ns": 35915646.5,
+        "candidate_median_ns": 35941646.0,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": -0.03908360149729173,
+        "ci95_low_pct": -0.3796069080137521,
+        "ci95_high_pct": 0.305564144461723,
+        "baseline_median_ns": 35949500.0,
+        "candidate_median_ns": 35943500.0,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "precision_bits": 524288,
+      "cpu": {
+        "reduction_pct": -0.11408659285663258,
+        "ci95_low_pct": -0.33324476615719245,
+        "ci95_high_pct": 0.11135651307039307,
+        "baseline_median_ns": 15239573.0,
+        "candidate_median_ns": 15268187.25,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": -0.13515002396558007,
+        "ci95_low_pct": -0.33238782740365735,
+        "ci95_high_pct": 0.0827723859255447,
+        "baseline_median_ns": 15239500.0,
+        "candidate_median_ns": 15268750.0,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "precision_bits": 262144,
+      "cpu": {
+        "reduction_pct": -0.18996373531747768,
+        "ci95_low_pct": -0.5297620909592515,
+        "ci95_high_pct": 0.1386370662291081,
+        "baseline_median_ns": 6103229.125,
+        "candidate_median_ns": 6071546.875,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": -0.14030659674915125,
+        "ci95_low_pct": -0.5015554301423419,
+        "ci95_high_pct": 0.22432636972421482,
+        "baseline_median_ns": 6132625.0,
+        "candidate_median_ns": 6074125.0,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    }
+  ],
+  "aggregate": {
+    "cpu": {
+      "cases": 3,
+      "reduction_pct": -0.12830996544666018,
+      "ci95_low_pct": -0.28904863829384286,
+      "ci95_high_pct": 0.03549983802731971
+    },
+    "wall": {
+      "cases": 3,
+      "reduction_pct": -0.10483591559817818,
+      "ci95_low_pct": -0.27988418207318677,
+      "ci95_high_pct": 0.07373456228834119
+    }
+  }
+}

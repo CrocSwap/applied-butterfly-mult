@@ -1,0 +1,12 @@
+test_bad_quartet_is_rejected (test_analysis.AnalysisTests.test_bad_quartet_is_rejected) ... ok
+test_fixed_case_aggregation (test_analysis.AnalysisTests.test_fixed_case_aggregation) ... ok
+test_known_reduction (test_analysis.AnalysisTests.test_known_reduction) ... ok
+test_null_and_drift (test_analysis.AnalysisTests.test_null_and_drift) ... ok
+test_dropping_basis_change_is_not_valid (test_network_frames.NetworkFrameTests.test_dropping_basis_change_is_not_valid) ... ok
+test_entire_bilinear_cyclic_convolution (test_network_frames.NetworkFrameTests.test_entire_bilinear_cyclic_convolution) ... ok
+test_full_linear_maps_against_dense_dft (test_network_frames.NetworkFrameTests.test_full_linear_maps_against_dense_dft) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.514s
+
+OK

@@ -1,0 +1,559 @@
+{
+  "status": "PASS",
+  "fingerprints_checked": 71,
+  "exported_plans": [
+    {
+      "path": "results/theory-paths-screen/paired-64.bin",
+      "n": 64,
+      "nodes": 19155,
+      "outputs": 2016
+    },
+    {
+      "path": "results/theory-paths-screen/interval-64.bin",
+      "n": 64,
+      "nodes": 24457,
+      "outputs": 2016
+    },
+    {
+      "path": "results/theory-paths-screen/interval-49.bin",
+      "n": 49,
+      "nodes": 13957,
+      "outputs": 1176
+    },
+    {
+      "path": "results/theory-paths-screen/paired-49.bin",
+      "n": 49,
+      "nodes": 10990,
+      "outputs": 1176
+    },
+    {
+      "path": "results/theory-paths-screen/interval-8.bin",
+      "n": 8,
+      "nodes": 181,
+      "outputs": 28
+    },
+    {
+      "path": "results/theory-paths-screen/sergeev-4.bin",
+      "n": 4,
+      "nodes": 7,
+      "outputs": 6
+    },
+    {
+      "path": "results/theory-paths-screen/paired-4.bin",
+      "n": 4,
+      "nodes": 7,
+      "outputs": 6
+    },
+    {
+      "path": "results/theory-paths-screen/interval-16.bin",
+      "n": 16,
+      "nodes": 1153,
+      "outputs": 120
+    },
+    {
+      "path": "results/theory-paths-screen/paired-5.bin",
+      "n": 5,
+      "nodes": 31,
+      "outputs": 10
+    },
+    {
+      "path": "results/theory-paths-screen/sergeev-5.bin",
+      "n": 5,
+      "nodes": 31,
+      "outputs": 10
+    },
+    {
+      "path": "results/theory-paths-screen/sergeev-7.bin",
+      "n": 7,
+      "nodes": 114,
+      "outputs": 21
+    },
+    {
+      "path": "results/theory-paths-screen/paired-16.bin",
+      "n": 16,
+      "nodes": 963,
+      "outputs": 120
+    },
+    {
+      "path": "results/theory-paths-screen/paired-7.bin",
+      "n": 7,
+      "nodes": 112,
+      "outputs": 21
+    },
+    {
+      "path": "results/theory-paths-screen/paired-6.bin",
+      "n": 6,
+      "nodes": 67,
+      "outputs": 15
+    },
+    {
+      "path": "results/theory-paths-screen/sergeev-32.bin",
+      "n": 32,
+      "nodes": 4939,
+      "outputs": 496
+    },
+    {
+      "path": "results/theory-paths-screen/sergeev-6.bin",
+      "n": 6,
+      "nodes": 67,
+      "outputs": 15
+    },
+    {
+      "path": "results/theory-paths-screen/paired-32.bin",
+      "n": 32,
+      "nodes": 4467,
+      "outputs": 496
+    },
+    {
+      "path": "results/theory-paths-screen/sergeev-16.bin",
+      "n": 16,
+      "nodes": 1047,
+      "outputs": 120
+    },
+    {
+      "path": "results/theory-paths-screen/sergeev-8.bin",
+      "n": 8,
+      "nodes": 173,
+      "outputs": 28
+    },
+    {
+      "path": "results/theory-paths-screen/paired-8.bin",
+      "n": 8,
+      "nodes": 171,
+      "outputs": 28
+    },
+    {
+      "path": "results/theory-paths-screen/interval-32.bin",
+      "n": 32,
+      "nodes": 5593,
+      "outputs": 496
+    },
+    {
+      "path": "results/theory-paths-screen/interval-4.bin",
+      "n": 4,
+      "nodes": 7,
+      "outputs": 6
+    },
+    {
+      "path": "results/theory-paths-screen/interval-5.bin",
+      "n": 5,
+      "nodes": 31,
+      "outputs": 10
+    },
+    {
+      "path": "results/theory-paths-screen/interval-7.bin",
+      "n": 7,
+      "nodes": 118,
+      "outputs": 21
+    },
+    {
+      "path": "results/theory-paths-screen/interval-6.bin",
+      "n": 6,
+      "nodes": 68,
+      "outputs": 15
+    },
+    {
+      "path": "results/theory-paths-screen/sergeev-49.bin",
+      "n": 49,
+      "nodes": 12200,
+      "outputs": 1176
+    },
+    {
+      "path": "results/theory-paths-screen/sergeev-64.bin",
+      "n": 64,
+      "nodes": 21267,
+      "outputs": 2016
+    },
+    {
+      "path": "results/theory-paths-confirm/separate_weights-16.bin",
+      "n": 16,
+      "nodes": 1033,
+      "outputs": 120
+    },
+    {
+      "path": "results/theory-paths-confirm/separate_weights-12.bin",
+      "n": 12,
+      "nodes": 513,
+      "outputs": 66
+    },
+    {
+      "path": "results/theory-paths-confirm/paired-12.bin",
+      "n": 12,
+      "nodes": 481,
+      "outputs": 66
+    },
+    {
+      "path": "results/theory-paths-confirm/sergeev-20.bin",
+      "n": 20,
+      "nodes": 1752,
+      "outputs": 190
+    },
+    {
+      "path": "results/theory-paths-confirm/sergeev-24.bin",
+      "n": 24,
+      "nodes": 2638,
+      "outputs": 276
+    },
+    {
+      "path": "results/theory-paths-confirm/paired-16.bin",
+      "n": 16,
+      "nodes": 963,
+      "outputs": 120
+    },
+    {
+      "path": "results/theory-paths-confirm/sergeev-16.bin",
+      "n": 16,
+      "nodes": 1047,
+      "outputs": 120
+    },
+    {
+      "path": "results/theory-paths-confirm/sergeev-8.bin",
+      "n": 8,
+      "nodes": 173,
+      "outputs": 28
+    },
+    {
+      "path": "results/theory-paths-confirm/paired-8.bin",
+      "n": 8,
+      "nodes": 171,
+      "outputs": 28
+    },
+    {
+      "path": "results/theory-paths-confirm/paired-24.bin",
+      "n": 24,
+      "nodes": 2389,
+      "outputs": 276
+    },
+    {
+      "path": "results/theory-paths-confirm/paired-20.bin",
+      "n": 20,
+      "nodes": 1593,
+      "outputs": 190
+    },
+    {
+      "path": "results/theory-paths-confirm/separate_weights-8.bin",
+      "n": 8,
+      "nodes": 171,
+      "outputs": 28
+    },
+    {
+      "path": "results/theory-paths-confirm/sergeev-12.bin",
+      "n": 12,
+      "nodes": 520,
+      "outputs": 66
+    },
+    {
+      "path": "results/theory-paths-confirm/separate_weights-20.bin",
+      "n": 20,
+      "nodes": 1731,
+      "outputs": 190
+    },
+    {
+      "path": "results/theory-paths-confirm/separate_weights-24.bin",
+      "n": 24,
+      "nodes": 2601,
+      "outputs": 276
+    }
+  ],
+  "case_runs": 198,
+  "timed_batches": 18408,
+  "confirmation_table": [
+    {
+      "vertices": 11,
+      "control": "sergeev",
+      "comparisons": 6,
+      "cpu": {
+        "min_pct": -3.698232270856683,
+        "max_pct": -2.9971240417710376,
+        "positive_intervals": 0,
+        "negative_intervals": 6
+      },
+      "wall": {
+        "min_pct": -3.7597037709858228,
+        "max_pct": -2.8441697104874653,
+        "positive_intervals": 0,
+        "negative_intervals": 6
+      }
+    },
+    {
+      "vertices": 11,
+      "control": "failure_tree",
+      "comparisons": 6,
+      "cpu": {
+        "min_pct": 32.51354486315125,
+        "max_pct": 36.56170275834001,
+        "positive_intervals": 6,
+        "negative_intervals": 0
+      },
+      "wall": {
+        "min_pct": 32.4382022999372,
+        "max_pct": 36.5716022501093,
+        "positive_intervals": 6,
+        "negative_intervals": 0
+      }
+    },
+    {
+      "vertices": 11,
+      "control": "separate_weights",
+      "comparisons": 6,
+      "cpu": {
+        "min_pct": -2.3754699375311494,
+        "max_pct": -1.8116849807634727,
+        "positive_intervals": 0,
+        "negative_intervals": 6
+      },
+      "wall": {
+        "min_pct": -2.42877717203005,
+        "max_pct": -1.7989995614273058,
+        "positive_intervals": 0,
+        "negative_intervals": 6
+      }
+    },
+    {
+      "vertices": 11,
+      "control": "paired_aa",
+      "comparisons": 6,
+      "cpu": {
+        "min_pct": -0.5279912518780128,
+        "max_pct": 0.032206603187334704,
+        "positive_intervals": 0,
+        "negative_intervals": 1
+      },
+      "wall": {
+        "min_pct": -0.5278842813573492,
+        "max_pct": 0.05094297744421272,
+        "positive_intervals": 0,
+        "negative_intervals": 1
+      }
+    },
+    {
+      "vertices": 15,
+      "control": "sergeev",
+      "comparisons": 6,
+      "cpu": {
+        "min_pct": 5.370515958845634,
+        "max_pct": 6.488832189810689,
+        "positive_intervals": 6,
+        "negative_intervals": 0
+      },
+      "wall": {
+        "min_pct": 5.359238260140142,
+        "max_pct": 6.388126894451851,
+        "positive_intervals": 6,
+        "negative_intervals": 0
+      }
+    },
+    {
+      "vertices": 15,
+      "control": "failure_tree",
+      "comparisons": 6,
+      "cpu": {
+        "min_pct": 23.457115353505355,
+        "max_pct": 26.18344275372063,
+        "positive_intervals": 6,
+        "negative_intervals": 0
+      },
+      "wall": {
+        "min_pct": 23.35286527857746,
+        "max_pct": 26.212833236484244,
+        "positive_intervals": 6,
+        "negative_intervals": 0
+      }
+    },
+    {
+      "vertices": 15,
+      "control": "separate_weights",
+      "comparisons": 6,
+      "cpu": {
+        "min_pct": 1.8946206507237218,
+        "max_pct": 3.772566165225233,
+        "positive_intervals": 6,
+        "negative_intervals": 0
+      },
+      "wall": {
+        "min_pct": 1.8258130370083836,
+        "max_pct": 3.903682791897445,
+        "positive_intervals": 6,
+        "negative_intervals": 0
+      }
+    },
+    {
+      "vertices": 19,
+      "control": "sergeev",
+      "comparisons": 6,
+      "cpu": {
+        "min_pct": 8.14928893624105,
+        "max_pct": 10.562951875555903,
+        "positive_intervals": 6,
+        "negative_intervals": 0
+      },
+      "wall": {
+        "min_pct": 7.995431238987338,
+        "max_pct": 10.614433381406386,
+        "positive_intervals": 6,
+        "negative_intervals": 0
+      }
+    },
+    {
+      "vertices": 19,
+      "control": "failure_tree",
+      "comparisons": 6,
+      "cpu": {
+        "min_pct": 14.020578060642164,
+        "max_pct": 18.059838315886367,
+        "positive_intervals": 6,
+        "negative_intervals": 0
+      },
+      "wall": {
+        "min_pct": 13.996756265744736,
+        "max_pct": 18.00953782569792,
+        "positive_intervals": 6,
+        "negative_intervals": 0
+      }
+    },
+    {
+      "vertices": 19,
+      "control": "separate_weights",
+      "comparisons": 6,
+      "cpu": {
+        "min_pct": 1.9976313849709437,
+        "max_pct": 2.242441823195551,
+        "positive_intervals": 6,
+        "negative_intervals": 0
+      },
+      "wall": {
+        "min_pct": 1.8974520856423038,
+        "max_pct": 2.2849915169279256,
+        "positive_intervals": 6,
+        "negative_intervals": 0
+      }
+    },
+    {
+      "vertices": 19,
+      "control": "paired_aa",
+      "comparisons": 6,
+      "cpu": {
+        "min_pct": -0.2085007042429199,
+        "max_pct": 0.5226951009684067,
+        "positive_intervals": 0,
+        "negative_intervals": 0
+      },
+      "wall": {
+        "min_pct": -0.25012508526680577,
+        "max_pct": 0.6403945262649313,
+        "positive_intervals": 1,
+        "negative_intervals": 0
+      }
+    },
+    {
+      "vertices": 23,
+      "control": "sergeev",
+      "comparisons": 6,
+      "cpu": {
+        "min_pct": 15.451924907295368,
+        "max_pct": 15.924458279699305,
+        "positive_intervals": 6,
+        "negative_intervals": 0
+      },
+      "wall": {
+        "min_pct": 15.440540964743132,
+        "max_pct": 15.917733083705432,
+        "positive_intervals": 6,
+        "negative_intervals": 0
+      }
+    },
+    {
+      "vertices": 23,
+      "control": "failure_tree",
+      "comparisons": 6,
+      "cpu": {
+        "min_pct": 14.705480942353788,
+        "max_pct": 19.071784014200677,
+        "positive_intervals": 6,
+        "negative_intervals": 0
+      },
+      "wall": {
+        "min_pct": 11.144778142025869,
+        "max_pct": 18.990262735383133,
+        "positive_intervals": 6,
+        "negative_intervals": 0
+      }
+    },
+    {
+      "vertices": 23,
+      "control": "separate_weights",
+      "comparisons": 6,
+      "cpu": {
+        "min_pct": 3.6086149208520046,
+        "max_pct": 4.083894820939838,
+        "positive_intervals": 6,
+        "negative_intervals": 0
+      },
+      "wall": {
+        "min_pct": 3.6029814412676386,
+        "max_pct": 4.086703231417388,
+        "positive_intervals": 6,
+        "negative_intervals": 0
+      }
+    },
+    {
+      "vertices": 27,
+      "control": "sergeev",
+      "comparisons": 6,
+      "cpu": {
+        "min_pct": 16.51305549809029,
+        "max_pct": 19.99093706637376,
+        "positive_intervals": 6,
+        "negative_intervals": 0
+      },
+      "wall": {
+        "min_pct": 16.589833389317942,
+        "max_pct": 19.994127224017298,
+        "positive_intervals": 6,
+        "negative_intervals": 0
+      }
+    },
+    {
+      "vertices": 27,
+      "control": "failure_tree",
+      "comparisons": 6,
+      "cpu": {
+        "min_pct": 6.003794473815727,
+        "max_pct": 16.247509870912282,
+        "positive_intervals": 6,
+        "negative_intervals": 0
+      },
+      "wall": {
+        "min_pct": 6.042293693767043,
+        "max_pct": 16.26420449854489,
+        "positive_intervals": 6,
+        "negative_intervals": 0
+      }
+    },
+    {
+      "vertices": 27,
+      "control": "separate_weights",
+      "comparisons": 6,
+      "cpu": {
+        "min_pct": 3.1399520143694515,
+        "max_pct": 4.686056537336536,
+        "positive_intervals": 6,
+        "negative_intervals": 0
+      },
+      "wall": {
+        "min_pct": 3.136797288575277,
+        "max_pct": 4.67251609260223,
+        "positive_intervals": 6,
+        "negative_intervals": 0
+      }
+    }
+  ],
+  "baseline_flint_library_unchanged": true,
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-transfer-screen.json": "8c6e17c8dead29eb585331bd8e6b6ec5f3df9c658a8a41a63fe91745827b8b94",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/audit_theory_transfer.py": "de5ca3598289bb02b2632715281db3632fe91aad68624d719615e1a21ae00dcc",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/summary.json": "2a6947a745d8a316efe138753f7f89352538f35f1c4c9e88a6b1cb0cc6a7891f",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-control/summary.json": "d5272b819bf1a73e7cefee085400e806f9fc2bca1e35ab56a398c114e49f576e",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/summary.json": "d87c1c0d7ca6cab328ea783e7c97b3adf7c56adc4d9a5216cc63f294ae418fb2"
+  }
+}

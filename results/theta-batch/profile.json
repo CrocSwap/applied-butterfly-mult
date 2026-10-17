@@ -1,0 +1,362 @@
+[
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 1,
+      "square": 0,
+      "fixture": 0
+    },
+    "calls": 36,
+    "first_preparation_ns": 48253,
+    "total_ns": 2688958,
+    "preparation_hits": 0,
+    "transform_hits": 0,
+    "transform_misses": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 1,
+      "square": 1,
+      "fixture": 0
+    },
+    "calls": 30,
+    "first_preparation_ns": 44956,
+    "total_ns": 2155625,
+    "preparation_hits": 0,
+    "transform_hits": 0,
+    "transform_misses": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 4,
+      "square": 0,
+      "fixture": 0
+    },
+    "calls": 90,
+    "first_preparation_ns": 123377,
+    "total_ns": 7343584,
+    "preparation_hits": 0,
+    "transform_hits": 0,
+    "transform_misses": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 4,
+      "square": 1,
+      "fixture": 0
+    },
+    "calls": 75,
+    "first_preparation_ns": 101792,
+    "total_ns": 4987458,
+    "preparation_hits": 0,
+    "transform_hits": 0,
+    "transform_misses": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 16,
+      "square": 0,
+      "fixture": 0
+    },
+    "calls": 306,
+    "first_preparation_ns": 393333,
+    "total_ns": 24104208,
+    "preparation_hits": 0,
+    "transform_hits": 0,
+    "transform_misses": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "nb": 16,
+      "square": 1,
+      "fixture": 0
+    },
+    "calls": 255,
+    "first_preparation_ns": 325925,
+    "total_ns": 15869000,
+    "preparation_hits": 0,
+    "transform_hits": 0,
+    "transform_misses": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 1,
+      "square": 0,
+      "fixture": 0
+    },
+    "calls": 48,
+    "first_preparation_ns": 69711,
+    "total_ns": 4455833,
+    "preparation_hits": 0,
+    "transform_hits": 0,
+    "transform_misses": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 1,
+      "square": 1,
+      "fixture": 0
+    },
+    "calls": 42,
+    "first_preparation_ns": 62460,
+    "total_ns": 3635875,
+    "preparation_hits": 0,
+    "transform_hits": 0,
+    "transform_misses": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 4,
+      "square": 0,
+      "fixture": 0
+    },
+    "calls": 120,
+    "first_preparation_ns": 163049,
+    "total_ns": 11306792,
+    "preparation_hits": 0,
+    "transform_hits": 0,
+    "transform_misses": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 4,
+      "square": 1,
+      "fixture": 0
+    },
+    "calls": 105,
+    "first_preparation_ns": 141960,
+    "total_ns": 8532791,
+    "preparation_hits": 0,
+    "transform_hits": 0,
+    "transform_misses": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 16,
+      "square": 0,
+      "fixture": 0
+    },
+    "calls": 408,
+    "first_preparation_ns": 538783,
+    "total_ns": 38736875,
+    "preparation_hits": 0,
+    "transform_hits": 0,
+    "transform_misses": 0
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "nb": 16,
+      "square": 1,
+      "fixture": 0
+    },
+    "calls": 357,
+    "first_preparation_ns": 480371,
+    "total_ns": 28338125,
+    "preparation_hits": 0,
+    "transform_hits": 0,
+    "transform_misses": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 1,
+      "square": 0,
+      "fixture": 0
+    },
+    "calls": 48,
+    "first_preparation_ns": 136002,
+    "total_ns": 14242625,
+    "preparation_hits": 0,
+    "transform_hits": 0,
+    "transform_misses": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 1,
+      "square": 1,
+      "fixture": 0
+    },
+    "calls": 42,
+    "first_preparation_ns": 114753,
+    "total_ns": 8447334,
+    "preparation_hits": 0,
+    "transform_hits": 0,
+    "transform_misses": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 4,
+      "square": 0,
+      "fixture": 0
+    },
+    "calls": 120,
+    "first_preparation_ns": 310830,
+    "total_ns": 43399458,
+    "preparation_hits": 0,
+    "transform_hits": 0,
+    "transform_misses": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 4,
+      "square": 1,
+      "fixture": 0
+    },
+    "calls": 105,
+    "first_preparation_ns": 266043,
+    "total_ns": 18306625,
+    "preparation_hits": 0,
+    "transform_hits": 0,
+    "transform_misses": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 16,
+      "square": 0,
+      "fixture": 0
+    },
+    "calls": 408,
+    "first_preparation_ns": 1046790,
+    "total_ns": 158990542,
+    "preparation_hits": 0,
+    "transform_hits": 0,
+    "transform_misses": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "nb": 16,
+      "square": 1,
+      "fixture": 0
+    },
+    "calls": 357,
+    "first_preparation_ns": 928285,
+    "total_ns": 61382417,
+    "preparation_hits": 0,
+    "transform_hits": 0,
+    "transform_misses": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 1,
+      "square": 0,
+      "fixture": 0
+    },
+    "calls": 60,
+    "first_preparation_ns": 163964,
+    "total_ns": 18845375,
+    "preparation_hits": 0,
+    "transform_hits": 0,
+    "transform_misses": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 1,
+      "square": 1,
+      "fixture": 0
+    },
+    "calls": 54,
+    "first_preparation_ns": 149000,
+    "total_ns": 11717041,
+    "preparation_hits": 0,
+    "transform_hits": 0,
+    "transform_misses": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 4,
+      "square": 0,
+      "fixture": 0
+    },
+    "calls": 150,
+    "first_preparation_ns": 409829,
+    "total_ns": 55397083,
+    "preparation_hits": 0,
+    "transform_hits": 0,
+    "transform_misses": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 4,
+      "square": 1,
+      "fixture": 0
+    },
+    "calls": 135,
+    "first_preparation_ns": 355161,
+    "total_ns": 28177417,
+    "preparation_hits": 0,
+    "transform_hits": 0,
+    "transform_misses": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 16,
+      "square": 0,
+      "fixture": 0
+    },
+    "calls": 510,
+    "first_preparation_ns": 1395698,
+    "total_ns": 210760333,
+    "preparation_hits": 0,
+    "transform_hits": 0,
+    "transform_misses": 0
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "nb": 16,
+      "square": 1,
+      "fixture": 0
+    },
+    "calls": 459,
+    "first_preparation_ns": 1245491,
+    "total_ns": 99080625,
+    "preparation_hits": 0,
+    "transform_hits": 0,
+    "transform_misses": 0
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "programs": 40432,
+  "coefficient_equalities": 103505920,
+  "max_fanin": 55,
+  "qualified_programs_including_duplicates": 0,
+  "uncovered_basis_programs_including_duplicates": 320,
+  "scope": "Independent coefficients vs pinned matrices, source immutability by SSA syntax, forward live-value peaks vs backward allocation, every charged operation/resource, frontier coverage and gate. Not hardware traffic/timing or a global optimization proof."
+}

@@ -1,0 +1,271 @@
+{
+  "results": [
+    {
+      "case": {
+        "id": "exact-10-2",
+        "kind": "exact",
+        "n": 10,
+        "depth": 2,
+        "seed": 810112,
+        "state_path": "/Users/colkitt/sith/toys/math/butterflyMult/results/application-survey/exact-10-2.complex64",
+        "state_sha256": "8036fe931299de1a275b0c5c094bfe4b77979862c613103ec5249ca9b6123029"
+      },
+      "answer": [
+        5.4138490293288974,
+        1.5543122344752192e-15
+      ],
+      "allocated_bytes": 85592,
+      "full_wall_ms": 4.873646,
+      "full_cpu_ms": 4.8615,
+      "transform_fraction_median": 0.7914866013637128,
+      "transform_fraction_range": [
+        0.7893146632383153,
+        0.7927563914041741
+      ],
+      "instrumentation_overhead_pct": -0.016671297012549324,
+      "transforms_per_call": 1024,
+      "sampling": {
+        "samples": 1036,
+        "fht_samples": 771,
+        "blend_samples": 186,
+        "moment_samples": 71,
+        "other_samples": 8,
+        "calls": 259,
+        "fht_fraction": 0.7442084942084942
+      }
+    },
+    {
+      "case": {
+        "id": "exact-10-8",
+        "kind": "exact",
+        "n": 10,
+        "depth": 8,
+        "seed": 810118,
+        "state_path": "/Users/colkitt/sith/toys/math/butterflyMult/results/application-survey/exact-10-8.complex64",
+        "state_sha256": "b2d9148d743468f1e740cba63e86e36a1a8e844137163726fac672c3d526e287"
+      },
+      "answer": [
+        7.614589327297418,
+        3.1086244689504383e-15
+      ],
+      "allocated_bytes": 85592,
+      "full_wall_ms": 4.900896,
+      "full_cpu_ms": 4.89,
+      "transform_fraction_median": 0.7921560368499829,
+      "transform_fraction_range": [
+        0.7917245759220871,
+        0.7940952601183224
+      ],
+      "instrumentation_overhead_pct": -0.18194632165220437,
+      "transforms_per_call": 1024,
+      "sampling": {
+        "samples": 1003,
+        "fht_samples": 759,
+        "blend_samples": 156,
+        "moment_samples": 59,
+        "other_samples": 29,
+        "calls": 239,
+        "fht_fraction": 0.7567298105682951
+      }
+    },
+    {
+      "case": {
+        "id": "exact-12-2",
+        "kind": "exact",
+        "n": 12,
+        "depth": 2,
+        "seed": 810114,
+        "state_path": "/Users/colkitt/sith/toys/math/butterflyMult/results/application-survey/exact-12-2.complex64",
+        "state_sha256": "d8d78a39c15b29b8e232bf4371a01f0febd3dd27f80144bb0b574535aeef7b07"
+      },
+      "answer": [
+        6.7862556918542225,
+        1.887379141862766e-15
+      ],
+      "allocated_bytes": 329272,
+      "full_wall_ms": 82.625771,
+      "full_cpu_ms": 82.591,
+      "transform_fraction_median": 0.7884764290148503,
+      "transform_fraction_range": [
+        0.7866357815022701,
+        0.789895941405372
+      ],
+      "instrumentation_overhead_pct": 1.2461808071963398,
+      "transforms_per_call": 4096,
+      "sampling": {
+        "samples": 1067,
+        "fht_samples": 846,
+        "blend_samples": 156,
+        "moment_samples": 59,
+        "other_samples": 6,
+        "calls": 16,
+        "fht_fraction": 0.7928772258669166
+      }
+    },
+    {
+      "case": {
+        "id": "exact-12-8",
+        "kind": "exact",
+        "n": 12,
+        "depth": 8,
+        "seed": 810120,
+        "state_path": "/Users/colkitt/sith/toys/math/butterflyMult/results/application-survey/exact-12-8.complex64",
+        "state_sha256": "3c0e565c20a5a74d4575d86d0ff718c8baff79f7ed90ee23a5acd7e3e329e229"
+      },
+      "answer": [
+        9.574254116210353,
+        6.5503158452884236e-15
+      ],
+      "allocated_bytes": 329272,
+      "full_wall_ms": 81.8375,
+      "full_cpu_ms": 81.8275,
+      "transform_fraction_median": 0.7879011639256921,
+      "transform_fraction_range": [
+        0.7855805602336814,
+        0.7884202479675663
+      ],
+      "instrumentation_overhead_pct": 0.1191898579502082,
+      "transforms_per_call": 4096,
+      "sampling": {
+        "samples": 1053,
+        "fht_samples": 842,
+        "blend_samples": 150,
+        "moment_samples": 59,
+        "other_samples": 2,
+        "calls": 16,
+        "fht_fraction": 0.7996201329534662
+      }
+    },
+    {
+      "case": {
+        "id": "exact-14-2",
+        "kind": "exact",
+        "n": 14,
+        "depth": 2,
+        "seed": 810116,
+        "state_path": "/Users/colkitt/sith/toys/math/butterflyMult/results/application-survey/exact-14-2.complex64",
+        "state_sha256": "649d474d3ecd67fc2a2c5323c973c0876b29447b948168da8ba64baa5fe9a6cd"
+      },
+      "answer": [
+        7.745953013558554,
+        1.5543122344752192e-15
+      ],
+      "allocated_bytes": 1312312,
+      "full_wall_ms": 1368.8493755,
+      "full_cpu_ms": 1368.1655,
+      "transform_fraction_median": 0.7951356249418737,
+      "transform_fraction_range": [
+        0.7942602387797255,
+        0.7954000659677671
+      ],
+      "instrumentation_overhead_pct": -0.21539992294060673,
+      "transforms_per_call": 16384,
+      "sampling": {
+        "samples": 1087,
+        "fht_samples": 873,
+        "blend_samples": 141,
+        "moment_samples": 73,
+        "other_samples": 0,
+        "calls": 1,
+        "fht_fraction": 0.8031278748850046
+      }
+    },
+    {
+      "case": {
+        "id": "exact-14-8",
+        "kind": "exact",
+        "n": 14,
+        "depth": 8,
+        "seed": 810122,
+        "state_path": "/Users/colkitt/sith/toys/math/butterflyMult/results/application-survey/exact-14-8.complex64",
+        "state_sha256": "5e8f1bdae281cfd00981f3406f4094d5eeca25d4e6bef56f1e2eb72e1deac21b"
+      },
+      "answer": [
+        11.629584280228555,
+        9.2148511043888e-15
+      ],
+      "allocated_bytes": 1312312,
+      "full_wall_ms": 1369.085958,
+      "full_cpu_ms": 1368.3875,
+      "transform_fraction_median": 0.7950642196482121,
+      "transform_fraction_range": [
+        0.7938219762196586,
+        0.795725103637395
+      ],
+      "instrumentation_overhead_pct": -0.0402822771482958,
+      "transforms_per_call": 16384,
+      "sampling": {
+        "samples": 969,
+        "fht_samples": 784,
+        "blend_samples": 138,
+        "moment_samples": 43,
+        "other_samples": 4,
+        "calls": 1,
+        "fht_fraction": 0.8090815273477813
+      }
+    },
+    {
+      "case": {
+        "id": "mc-16-2",
+        "kind": "mc",
+        "n": 16,
+        "depth": 2,
+        "seed": 810118,
+        "state_path": "/Users/colkitt/sith/toys/math/butterflyMult/results/application-survey/mc-16-2.complex64",
+        "state_sha256": "f63c7b88b87e5d9b7677209a1377a2b758690a9d3da76530c9043a55a51eb2d6"
+      },
+      "answer": 8.377094098415057,
+      "allocated_bytes": 2762056,
+      "full_wall_ms": 1268.4825415,
+      "full_cpu_ms": 1266.6895,
+      "transform_fraction_median": 0.8469641196848507,
+      "transform_fraction_range": [
+        0.8463194622423359,
+        0.848399701111066
+      ],
+      "instrumentation_overhead_pct": -0.027618314682176237,
+      "transforms_per_call": 3341,
+      "sampling": {
+        "samples": 900,
+        "fht_samples": 777,
+        "blend_samples": 79,
+        "moment_samples": 40,
+        "other_samples": 4,
+        "calls": 1,
+        "fht_fraction": 0.8633333333333333
+      }
+    },
+    {
+      "case": {
+        "id": "mc-16-8",
+        "kind": "mc",
+        "n": 16,
+        "depth": 8,
+        "seed": 810124,
+        "state_path": "/Users/colkitt/sith/toys/math/butterflyMult/results/application-survey/mc-16-8.complex64",
+        "state_sha256": "33d83f33af71b94f8975eddbb371a7dd2d227bdae1f95722ec6652b222ada64b"
+      },
+      "answer": 13.495845531695048,
+      "allocated_bytes": 2786184,
+      "full_wall_ms": 1304.7272705,
+      "full_cpu_ms": 1296.9735,
+      "transform_fraction_median": 0.8458340032627504,
+      "transform_fraction_range": [
+        0.8079200889636898,
+        0.8470799215186576
+      ],
+      "instrumentation_overhead_pct": 2.7821539658697603,
+      "transforms_per_call": 3341,
+      "sampling": {
+        "samples": 1778,
+        "fht_samples": 1493,
+        "blend_samples": 189,
+        "moment_samples": 90,
+        "other_samples": 6,
+        "calls": 2,
+        "fht_fraction": 0.8397075365579303
+      }
+    }
+  ],
+  "raw_sha256": "b7c22c78b0e367c7700758a7ad1193031a4049593829a69596f41ee587645263"
+}

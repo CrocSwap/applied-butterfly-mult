@@ -1,0 +1,81 @@
+{
+  "cases": [
+    {
+      "precision_bits": 524288,
+      "cpu": {
+        "reduction_pct": 1.047642279573846,
+        "ci95_low_pct": 0.5108477981804693,
+        "ci95_high_pct": 1.5693290901900747,
+        "baseline_median_ns": 18257906.25,
+        "candidate_median_ns": 17866385.25,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 1.113078280226909,
+        "ci95_low_pct": 0.4528909266328651,
+        "ci95_high_pct": 1.7908370782059646,
+        "baseline_median_ns": 18313500.0,
+        "candidate_median_ns": 17936500.0,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "precision_bits": 1048576,
+      "cpu": {
+        "reduction_pct": 0.39135486463903746,
+        "ci95_low_pct": -0.5794062192883143,
+        "ci95_high_pct": 1.3603543351646041,
+        "baseline_median_ns": 42682083.0,
+        "candidate_median_ns": 42112375.0,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": -0.02930879222855509,
+        "ci95_low_pct": -2.0007626311778104,
+        "ci95_high_pct": 1.6184931026698712,
+        "baseline_median_ns": 42963500.0,
+        "candidate_median_ns": 42227000.0,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "precision_bits": 262144,
+      "cpu": {
+        "reduction_pct": -0.18434386662202762,
+        "ci95_low_pct": -1.0521397735514082,
+        "ci95_high_pct": 0.5708279195754784,
+        "baseline_median_ns": 6794526.0,
+        "candidate_median_ns": 6760145.875,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": -0.18078656397120252,
+        "ci95_low_pct": -1.116366977133998,
+        "ci95_high_pct": 0.6208536311325008,
+        "baseline_median_ns": 6803250.0,
+        "candidate_median_ns": 6763625.0,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    }
+  ],
+  "aggregate": {
+    "cpu": {
+      "cases": 3,
+      "reduction_pct": 0.41949006635710884,
+      "ci95_low_pct": -0.05862627246886465,
+      "ci95_high_pct": 0.8896028051229354
+    },
+    "wall": {
+      "cases": 3,
+      "reduction_pct": 0.302671527351539,
+      "ci95_low_pct": -0.49152895567261545,
+      "ci95_high_pct": 0.9811750646532835
+    }
+  }
+}

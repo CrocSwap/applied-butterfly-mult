@@ -1,0 +1,78 @@
+{
+  "utc": "2026-10-07T19:26:50.260893+00:00",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "cpu": "Apple M2",
+  "memory_bytes": 25769803776,
+  "compiler": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin",
+  "flint_commit": "657a2839cf0125164859ff102b1f124abcb87ce0",
+  "flint_diff": "",
+  "configure": "--with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --disable-static CC=clang 'CFLAGS=-O3 -g -mcpu=apple-m2 -fno-omit-frame-pointer'",
+  "libraries": "gmp 6.3.0\nmpfr 4.2.2",
+  "threads": 1,
+  "limb_bits": 64,
+  "sha256": {
+    ".deps/flint/libflint.25.0.dylib": "31b9d75a502a408098b37990830d1f033a55fc5957e22ebf12cdaeb2a0fafe58",
+    ".deps/experiments/delayed-reduction/libflint-experiment.dylib": "50322e33ea37352bce4c398975763e2b4440677434858b889ec04e087a4e8545",
+    "build/compare-inverse": "e25988a1ce3b67d750436042f461938eab497103355dbceb52253c459f2376ae",
+    "bench/compare_inverse.c": "a15691af41afa9cf12d92b5a64ce6611300cd8efa4b8f0de6dca43a26b53f64d"
+  },
+  "method": "warm fixed random operands; AB/BA batches; four exact input-pattern checks per case",
+  "environment": {},
+  "plan": {
+    "scope": "Exploratory complete public inverse transforms, NOT integer multiplication or application confirmation.",
+    "sizes": [
+      128,
+      256,
+      512,
+      1024
+    ],
+    "trials": 41,
+    "batch_ms": 10,
+    "baseline": ".deps/flint/libflint.25.0.dylib",
+    "runs": [
+      {
+        "name": "inverse-only-aa",
+        "candidate": "control",
+        "seed": 98713
+      },
+      {
+        "name": "inverse-only-screen",
+        "candidate": "delayed-reduction",
+        "seed": 21893
+      },
+      {
+        "name": "inverse-only-repeat",
+        "candidate": "delayed-reduction",
+        "seed": 67139
+      }
+    ],
+    "decision": "Report every size. 128 and 512 execute the changed leaf; 256 and 1024 are inactive controls. Require a positive CPU interval in both candidate runs for a local speedup; no extrapolation to multiplication."
+  },
+  "run": {
+    "name": "inverse-only-screen",
+    "candidate": "delayed-reduction",
+    "seed": 21893
+  },
+  "compile_command": [
+    "clang",
+    "-std=gnu23",
+    "-O3",
+    "-g",
+    "-mcpu=apple-m2",
+    "-fno-omit-frame-pointer",
+    "-I/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/src",
+    "-I/opt/homebrew/opt/gmp/include",
+    "-I/opt/homebrew/opt/mpfr/include",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/compare_inverse.c",
+    "-L/opt/homebrew/opt/gmp/lib",
+    "-L/opt/homebrew/opt/mpfr/lib",
+    "-Wl,-rpath,/opt/homebrew/opt/gmp/lib",
+    "-Wl,-rpath,/opt/homebrew/opt/mpfr/lib",
+    "-pthread",
+    "-lmpfr",
+    "-lgmp",
+    "-o",
+    "/Users/colkitt/sith/toys/math/butterflyMult/build/compare-inverse"
+  ]
+}

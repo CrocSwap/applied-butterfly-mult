@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "ablation_GMP_comparisons_per_library": 12168,
+  "upstream_tests_per_ablation": 4,
+  "runs": {
+    "ablation-no-fusion-1": {
+      "cases": 33,
+      "batches": 2772
+    },
+    "ablation-no-fusion-2": {
+      "cases": 33,
+      "batches": 2772
+    },
+    "ablation-scalar-conversion-1": {
+      "cases": 33,
+      "batches": 2772
+    },
+    "ablation-scalar-conversion-2": {
+      "cases": 33,
+      "batches": 2772
+    },
+    "ablation-general-carry-1": {
+      "cases": 33,
+      "batches": 2772
+    },
+    "ablation-general-carry-2": {
+      "cases": 33,
+      "batches": 2772
+    },
+    "ablation-control": {
+      "cases": 9,
+      "batches": 756
+    },
+    "ablation-retained-check": {
+      "cases": 9,
+      "batches": 756
+    },
+    "pi-control": {
+      "cases": 3,
+      "batches": 372
+    },
+    "pi-confirm-1": {
+      "cases": 3,
+      "batches": 372
+    },
+    "pi-confirm-2": {
+      "cases": 3,
+      "batches": 372
+    }
+  },
+  "note": "This validates evidence integrity and coverage, not a required performance outcome.",
+  "application_branch_reachability": [
+    {
+      "precision_bits": 262144,
+      "fused_calls": 9,
+      "fused_coefficients": 35663,
+      "np2_window_calls": 17,
+      "accuracy_bits": 262142
+    },
+    {
+      "precision_bits": 524288,
+      "fused_calls": 23,
+      "fused_coefficients": 134664,
+      "np2_window_calls": 33,
+      "accuracy_bits": 524286
+    },
+    {
+      "precision_bits": 1048576,
+      "fused_calls": 57,
+      "fused_coefficients": 440511,
+      "np2_window_calls": 68,
+      "accuracy_bits": 1048574
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+[
+    {
+        "id": "exact-10-2",
+        "n": 10,
+        "path": "/Users/colkitt/sith/toys/math/butterflyMult/results/hadamag-native/exact-10-2.f64",
+        "sha256": "2e17ee73cee4739255ee9736aeddd679f9d946de7c253845e449b22dbc9d3382",
+        "ordinals": [
+            1,
+            147,
+            293,
+            439,
+            586,
+            732,
+            878,
+            1024
+        ],
+        "total_calls": 1024,
+        "answer": [
+            5.4138490293288974,
+            1.5543122344752192e-15
+        ],
+        "source": {
+            "id": "exact-10-2",
+            "kind": "exact",
+            "n": 10,
+            "depth": 2,
+            "seed": 810112,
+            "state_path": "/Users/colkitt/sith/toys/math/butterflyMult/results/application-survey/exact-10-2.complex64",
+            "state_sha256": "8036fe931299de1a275b0c5c094bfe4b77979862c613103ec5249ca9b6123029"
+        }
+    },
+    {
+        "id": "exact-10-8",
+        "n": 10,
+        "path": "/Users/colkitt/sith/toys/math/butterflyMult/results/hadamag-native/exact-10-8.f64",
+        "sha256": "f5bc56a57d02af00f9c0a1b0baee48964eed175dd23fc1e68024e423cd23a0dc",
+        "ordinals": [
+            1,
+            147,
+            293,
+            439,
+            586,
+            732,
+            878,
+            1024
+        ],
+        "total_calls": 1024,
+        "answer": [
+            7.614589327297418,
+            3.1086244689504383e-15
+        ],
+        "source": {
+            "id": "exact-10-8",
+            "kind": "exact",
+            "n": 10,
+            "depth": 8,
+            "seed": 810118,
+            "state_path": "/Users/colkitt/sith/toys/math/butterflyMult/results/application-survey/exact-10-8.complex64",
+            "state_sha256": "b2d9148d743468f1e740cba63e86e36a1a8e844137163726fac672c3d526e287"
+        }
+    },
+    {
+        "id": "exact-12-2",
+        "n": 12,
+        "path": "/Users/colkitt/sith/toys/math/butterflyMult/results/hadamag-native/exact-12-2.f64",
+        "sha256": "ae8a79f5cad6d3965ca5e627145f2fdaa6b7bafac76ba33c0964a11b3c6279fd",
+        "ordinals": [
+            1,
+            586,
+            1171,
+            1756,
+            2341,
+            2926,
+            3511,
+            4096
+        ],
+        "total_calls": 4096,
+        "answer": [
+            6.7862556918542225,
+            1.887379141862766e-15
+        ],
+        "source": {
+            "id": "exact-12-2",
+            "kind": "exact",
+            "n": 12,
+            "depth": 2,
+            "seed": 810114,
+            "state_path": "/Users/colkitt/sith/toys/math/butterflyMult/results/application-survey/exact-12-2.complex64",
+            "state_sha256": "d8d78a39c15b29b8e232bf4371a01f0febd3dd27f80144bb0b574535aeef7b07"
+        }
+    },
+    {
+        "id": "exact-12-8",
+        "n": 12,
+        "path": "/Users/colkitt/sith/toys/math/butterflyMult/results/hadamag-native/exact-12-8.f64",
+        "sha256": "b5c14a09b258cc3b76839d88c4d04091d9945329fcd42464d6ae7e2cb4c3ac9d",
+        "ordinals": [
+            1,
+            586,
+            1171,
+            1756,
+            2341,
+            2926,
+            3511,
+            4096
+        ],
+        "total_calls": 4096,
+        "answer": [
+            9.574254116210353,
+            6.5503158452884236e-15
+        ],
+        "source": {
+            "id": "exact-12-8",
+            "kind": "exact",
+            "n": 12,
+            "depth": 8,
+            "seed": 810120,
+            "state_path": "/Users/colkitt/sith/toys/math/butterflyMult/results/application-survey/exact-12-8.complex64",
+            "state_sha256": "3c0e565c20a5a74d4575d86d0ff718c8baff79f7ed90ee23a5acd7e3e329e229"
+        }
+    },
+    {
+        "id": "exact-14-2",
+        "n": 14,
+        "path": "/Users/colkitt/sith/toys/math/butterflyMult/results/hadamag-native/exact-14-2.f64",
+        "sha256": "dad3f84da9364a3bda00f757be5c0e9a799e9558eec030b7cbaf3450f4c15b65",
+        "ordinals": [
+            1,
+            2341,
+            4682,
+            7022,
+            9363,
+            11703,
+            14044,
+            16384
+        ],
+        "total_calls": 16384,
+        "answer": [
+            7.745953013558554,
+            1.5543122344752192e-15
+        ],
+        "source": {
+            "id": "exact-14-2",
+            "kind": "exact",
+            "n": 14,
+            "depth": 2,
+            "seed": 810116,
+            "state_path": "/Users/colkitt/sith/toys/math/butterflyMult/results/application-survey/exact-14-2.complex64",
+            "state_sha256": "649d474d3ecd67fc2a2c5323c973c0876b29447b948168da8ba64baa5fe9a6cd"
+        }
+    },
+    {
+        "id": "exact-14-8",
+        "n": 14,
+        "path": "/Users/colkitt/sith/toys/math/butterflyMult/results/hadamag-native/exact-14-8.f64",
+        "sha256": "268f9939d2d9a157b9f6aca0bcc3c16227bf4d530e5aa1bb9665531b23639479",
+        "ordinals": [
+            1,
+            2341,
+            4682,
+            7022,
+            9363,
+            11703,
+            14044,
+            16384
+        ],
+        "total_calls": 16384,
+        "answer": [
+            11.629584280228555,
+            9.2148511043888e-15
+        ],
+        "source": {
+            "id": "exact-14-8",
+            "kind": "exact",
+            "n": 14,
+            "depth": 8,
+            "seed": 810122,
+            "state_path": "/Users/colkitt/sith/toys/math/butterflyMult/results/application-survey/exact-14-8.complex64",
+            "state_sha256": "5e8f1bdae281cfd00981f3406f4094d5eeca25d4e6bef56f1e2eb72e1deac21b"
+        }
+    },
+    {
+        "id": "mc-16-2",
+        "n": 16,
+        "path": "/Users/colkitt/sith/toys/math/butterflyMult/results/hadamag-native/mc-16-2.f64",
+        "sha256": "2fd8a246731f0e3f00996a5ed53ca53c6b446ff49898964315a980232fbe3142",
+        "ordinals": [
+            1,
+            478,
+            955,
+            1432,
+            1910,
+            2387,
+            2864,
+            3341
+        ],
+        "total_calls": 3341,
+        "answer": 8.377094098415057,
+        "source": {
+            "id": "mc-16-2",
+            "kind": "mc",
+            "n": 16,
+            "depth": 2,
+            "seed": 810118,
+            "state_path": "/Users/colkitt/sith/toys/math/butterflyMult/results/application-survey/mc-16-2.complex64",
+            "state_sha256": "f63c7b88b87e5d9b7677209a1377a2b758690a9d3da76530c9043a55a51eb2d6"
+        }
+    },
+    {
+        "id": "mc-16-8",
+        "n": 16,
+        "path": "/Users/colkitt/sith/toys/math/butterflyMult/results/hadamag-native/mc-16-8.f64",
+        "sha256": "20f550e70b6fddf39300d5a9159ab639d9b068fac0b493634b81daf6170dddfa",
+        "ordinals": [
+            1,
+            478,
+            955,
+            1432,
+            1910,
+            2387,
+            2864,
+            3341
+        ],
+        "total_calls": 3341,
+        "answer": 13.495845531695048,
+        "source": {
+            "id": "mc-16-8",
+            "kind": "mc",
+            "n": 16,
+            "depth": 8,
+            "seed": 810124,
+            "state_path": "/Users/colkitt/sith/toys/math/butterflyMult/results/application-survey/mc-16-8.complex64",
+            "state_sha256": "33d83f33af71b94f8975eddbb371a7dd2d227bdae1f95722ec6652b222ada64b"
+        }
+    }
+]

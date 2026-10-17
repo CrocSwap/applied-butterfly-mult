@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-e4/theta-e4",
+    "validate",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/theta-batch/retained/libflint-experiment.dylib",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/experiments/theta-equal/candidate/libflint-experiment.dylib",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-e4/smoke-1791431383654006000/diagonal-g2.tau",
+    "256",
+    "64",
+    "2048",
+    "31",
+    "0"
+  ],
+  "returncode": 0,
+  "stdout": "{\"status\":\"PASS\",\"independent_oracle\":true,\"g\":2,\"target_bits\":256,\"accuracy\":[500,500],\"working_precision\":[512,512],\"attempts\":[4,4]}\n",
+  "stderr": ""
+}

@@ -1,0 +1,67 @@
+{
+  "reason": "Baseline-only profile: >1 second per public call and <0.1% runtime in eligible kernel. Retain numerical qualification; omit costly repeated timing with negligible opportunity.",
+  "criteria": {
+    "max_call_ns": 1000000000,
+    "min_kernel_fraction": 0.001
+  },
+  "removed": [
+    {
+      "case": {
+        "g": 6,
+        "prec": 512,
+        "fixture": 1,
+        "square": 0,
+        "group": "ordinary_constants"
+      },
+      "base": "current",
+      "candidate": "candidate"
+    },
+    {
+      "case": {
+        "g": 6,
+        "prec": 512,
+        "fixture": 0,
+        "square": 0,
+        "group": "ordinary_constants"
+      },
+      "base": "current",
+      "candidate": "candidate"
+    }
+  ],
+  "profiles": [
+    {
+      "case": {
+        "g": 6,
+        "prec": 512,
+        "fixture": 0,
+        "square": 0,
+        "group": "ordinary_constants"
+      },
+      "variant": "trace",
+      "evaluations": 3,
+      "all_calls": 3,
+      "equal_calls": 3,
+      "all_ns": 11707208,
+      "equal_ns": 11707208,
+      "total_ns": 31788972791
+    },
+    {
+      "case": {
+        "g": 6,
+        "prec": 512,
+        "fixture": 1,
+        "square": 0,
+        "group": "ordinary_constants"
+      },
+      "variant": "trace",
+      "evaluations": 3,
+      "all_calls": 3,
+      "equal_calls": 3,
+      "all_ns": 12510417,
+      "equal_ns": 12510417,
+      "total_ns": 28254680334
+    }
+  ],
+  "timing_started": false,
+  "applies_to": "Initial screen; predefined confirmation already excludes ordinary constants."
+}

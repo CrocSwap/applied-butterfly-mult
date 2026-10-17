@@ -1,0 +1,1142 @@
+[
+  {
+    "case": {
+      "g": 1,
+      "prec": 128,
+      "constant": 0,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "min_rel_one_accuracy_bits": 123
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 128,
+      "constant": 0,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "min_rel_one_accuracy_bits": 123
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 128,
+      "constant": 0,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "min_rel_one_accuracy_bits": 122
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 128,
+      "constant": 0,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "min_rel_one_accuracy_bits": 123
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 128,
+      "constant": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "min_rel_one_accuracy_bits": 124
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 128,
+      "constant": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "min_rel_one_accuracy_bits": 124
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 128,
+      "constant": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "min_rel_one_accuracy_bits": 123
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 128,
+      "constant": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "min_rel_one_accuracy_bits": 123
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "min_rel_one_accuracy_bits": 507
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "min_rel_one_accuracy_bits": 507
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "constant": 0,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "min_rel_one_accuracy_bits": 507
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "constant": 0,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "min_rel_one_accuracy_bits": 507
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "constant": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "min_rel_one_accuracy_bits": 507
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "constant": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "min_rel_one_accuracy_bits": 507
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "constant": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "min_rel_one_accuracy_bits": 507
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 512,
+      "constant": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "min_rel_one_accuracy_bits": 508
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 2048,
+      "constant": 0,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "min_rel_one_accuracy_bits": 2045
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 2048,
+      "constant": 0,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "min_rel_one_accuracy_bits": 2045
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 2048,
+      "constant": 0,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "min_rel_one_accuracy_bits": 2043
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 2048,
+      "constant": 0,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "min_rel_one_accuracy_bits": 2043
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 2048,
+      "constant": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "min_rel_one_accuracy_bits": 2046
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 2048,
+      "constant": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "min_rel_one_accuracy_bits": 2046
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 2048,
+      "constant": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "min_rel_one_accuracy_bits": 2043
+  },
+  {
+    "case": {
+      "g": 1,
+      "prec": 2048,
+      "constant": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 4,
+    "min_rel_one_accuracy_bits": 2043
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 128,
+      "constant": 0,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "min_rel_one_accuracy_bits": 123
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 128,
+      "constant": 0,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "min_rel_one_accuracy_bits": 122
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 128,
+      "constant": 0,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "min_rel_one_accuracy_bits": 120
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 128,
+      "constant": 0,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "min_rel_one_accuracy_bits": 120
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 128,
+      "constant": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "min_rel_one_accuracy_bits": 63
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 128,
+      "constant": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "min_rel_one_accuracy_bits": 63
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 128,
+      "constant": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "min_rel_one_accuracy_bits": 120
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 128,
+      "constant": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "min_rel_one_accuracy_bits": 120
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "min_rel_one_accuracy_bits": 508
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "min_rel_one_accuracy_bits": 507
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 0,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "min_rel_one_accuracy_bits": 505
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 0,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "min_rel_one_accuracy_bits": 506
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "min_rel_one_accuracy_bits": 256
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "min_rel_one_accuracy_bits": 256
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "min_rel_one_accuracy_bits": 505
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "min_rel_one_accuracy_bits": 506
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "constant": 0,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "min_rel_one_accuracy_bits": 2045
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "constant": 0,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "min_rel_one_accuracy_bits": 2044
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "constant": 0,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "min_rel_one_accuracy_bits": 2042
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "constant": 0,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "min_rel_one_accuracy_bits": 2043
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "constant": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "min_rel_one_accuracy_bits": 1026
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "constant": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "min_rel_one_accuracy_bits": 1025
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "constant": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "min_rel_one_accuracy_bits": 2043
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 2048,
+      "constant": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "min_rel_one_accuracy_bits": 2043
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 128,
+      "constant": 0,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "min_rel_one_accuracy_bits": 117
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 128,
+      "constant": 0,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "min_rel_one_accuracy_bits": 116
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 128,
+      "constant": 0,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "min_rel_one_accuracy_bits": 109
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 128,
+      "constant": 0,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "min_rel_one_accuracy_bits": 114
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 128,
+      "constant": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "min_rel_one_accuracy_bits": 59
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 128,
+      "constant": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "min_rel_one_accuracy_bits": 58
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 128,
+      "constant": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "min_rel_one_accuracy_bits": 113
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 128,
+      "constant": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "min_rel_one_accuracy_bits": 112
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "min_rel_one_accuracy_bits": 500
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "min_rel_one_accuracy_bits": 499
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "constant": 0,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "min_rel_one_accuracy_bits": 499
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "constant": 0,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "min_rel_one_accuracy_bits": 497
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "constant": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "min_rel_one_accuracy_bits": 250
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "constant": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "min_rel_one_accuracy_bits": 250
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "constant": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "min_rel_one_accuracy_bits": 495
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 512,
+      "constant": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "min_rel_one_accuracy_bits": 495
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "constant": 0,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "min_rel_one_accuracy_bits": 2035
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "constant": 0,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "min_rel_one_accuracy_bits": 2033
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "constant": 0,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "min_rel_one_accuracy_bits": 2034
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "constant": 0,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "min_rel_one_accuracy_bits": 2032
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "constant": 1,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "min_rel_one_accuracy_bits": 1017
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "constant": 1,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "min_rel_one_accuracy_bits": 1017
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "constant": 1,
+      "square": 1,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "min_rel_one_accuracy_bits": 2030
+  },
+  {
+    "case": {
+      "g": 3,
+      "prec": 2048,
+      "constant": 1,
+      "square": 1,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 64,
+    "min_rel_one_accuracy_bits": 2030
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 0,
+      "all": 0,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 1,
+    "min_rel_one_accuracy_bits": 506
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 0,
+      "all": 1,
+      "trials": 21,
+      "same": 1
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "min_rel_one_accuracy_bits": 508
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 1,
+      "all": 0,
+      "trials": 21,
+      "same": 0
+    },
+    "status": "PASS",
+    "outputs": 1,
+    "min_rel_one_accuracy_bits": 506
+  },
+  {
+    "case": {
+      "g": 2,
+      "prec": 512,
+      "constant": 0,
+      "square": 0,
+      "fixture": 1,
+      "all": 1,
+      "trials": 21,
+      "same": 1
+    },
+    "status": "PASS",
+    "outputs": 16,
+    "min_rel_one_accuracy_bits": 507
+  }
+]

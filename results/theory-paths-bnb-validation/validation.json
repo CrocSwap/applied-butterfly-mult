@@ -1,0 +1,1712 @@
+{
+  "status": "PASS",
+  "networkx_version": "3.4.2",
+  "python": "3.14.6 (main, Jun 10 2026, 10:03:53) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "compile": [
+    "clang",
+    "-std=gnu23",
+    "-O3",
+    "-g",
+    "-mcpu=apple-m2",
+    "-I",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-bnb-validation/trace.c",
+    "-o",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-bnb-validation/trace"
+  ],
+  "oracle_checks": [
+    {
+      "vertices": 7,
+      "seed": 2700019,
+      "kind": 0,
+      "method": 1,
+      "six_edge_paths_enumerated": 120,
+      "optimum": 0,
+      "count": 120,
+      "visits": 197,
+      "budget": 196,
+      "fallback": 1
+    },
+    {
+      "vertices": 7,
+      "seed": 2700019,
+      "kind": 0,
+      "method": 2,
+      "six_edge_paths_enumerated": 120,
+      "optimum": 0,
+      "count": 120,
+      "visits": 197,
+      "budget": 196,
+      "fallback": 1
+    },
+    {
+      "vertices": 7,
+      "seed": 2700019,
+      "kind": 1,
+      "method": 1,
+      "six_edge_paths_enumerated": 120,
+      "optimum": 4470,
+      "count": 1,
+      "visits": 9,
+      "budget": 196,
+      "fallback": 0
+    },
+    {
+      "vertices": 7,
+      "seed": 2700019,
+      "kind": 1,
+      "method": 2,
+      "six_edge_paths_enumerated": 120,
+      "optimum": 4470,
+      "count": 1,
+      "visits": 9,
+      "budget": 196,
+      "fallback": 0
+    },
+    {
+      "vertices": 7,
+      "seed": 2700019,
+      "kind": 2,
+      "method": 1,
+      "six_edge_paths_enumerated": 120,
+      "optimum": 7,
+      "count": 1,
+      "visits": 67,
+      "budget": 196,
+      "fallback": 0
+    },
+    {
+      "vertices": 7,
+      "seed": 2700019,
+      "kind": 2,
+      "method": 2,
+      "six_edge_paths_enumerated": 120,
+      "optimum": 7,
+      "count": 1,
+      "visits": 65,
+      "budget": 196,
+      "fallback": 0
+    },
+    {
+      "vertices": 7,
+      "seed": 2700019,
+      "kind": 3,
+      "method": 1,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 1,
+      "budget": 196,
+      "fallback": 0
+    },
+    {
+      "vertices": 7,
+      "seed": 2700019,
+      "kind": 3,
+      "method": 2,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 1,
+      "budget": 196,
+      "fallback": 0
+    },
+    {
+      "vertices": 7,
+      "seed": 2700019,
+      "kind": 4,
+      "method": 1,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 1,
+      "budget": 196,
+      "fallback": 0
+    },
+    {
+      "vertices": 7,
+      "seed": 2700019,
+      "kind": 4,
+      "method": 2,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 1,
+      "budget": 196,
+      "fallback": 0
+    },
+    {
+      "vertices": 7,
+      "seed": 4300039,
+      "kind": 0,
+      "method": 1,
+      "six_edge_paths_enumerated": 120,
+      "optimum": 0,
+      "count": 120,
+      "visits": 197,
+      "budget": 196,
+      "fallback": 1
+    },
+    {
+      "vertices": 7,
+      "seed": 4300039,
+      "kind": 0,
+      "method": 2,
+      "six_edge_paths_enumerated": 120,
+      "optimum": 0,
+      "count": 120,
+      "visits": 197,
+      "budget": 196,
+      "fallback": 1
+    },
+    {
+      "vertices": 7,
+      "seed": 4300039,
+      "kind": 1,
+      "method": 1,
+      "six_edge_paths_enumerated": 120,
+      "optimum": 3341,
+      "count": 1,
+      "visits": 31,
+      "budget": 196,
+      "fallback": 0
+    },
+    {
+      "vertices": 7,
+      "seed": 4300039,
+      "kind": 1,
+      "method": 2,
+      "six_edge_paths_enumerated": 120,
+      "optimum": 3341,
+      "count": 1,
+      "visits": 23,
+      "budget": 196,
+      "fallback": 0
+    },
+    {
+      "vertices": 7,
+      "seed": 4300039,
+      "kind": 2,
+      "method": 1,
+      "six_edge_paths_enumerated": 120,
+      "optimum": 6,
+      "count": 1,
+      "visits": 118,
+      "budget": 196,
+      "fallback": 0
+    },
+    {
+      "vertices": 7,
+      "seed": 4300039,
+      "kind": 2,
+      "method": 2,
+      "six_edge_paths_enumerated": 120,
+      "optimum": 6,
+      "count": 1,
+      "visits": 100,
+      "budget": 196,
+      "fallback": 0
+    },
+    {
+      "vertices": 7,
+      "seed": 4300039,
+      "kind": 3,
+      "method": 1,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 4,
+      "budget": 196,
+      "fallback": 0
+    },
+    {
+      "vertices": 7,
+      "seed": 4300039,
+      "kind": 3,
+      "method": 2,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 4,
+      "budget": 196,
+      "fallback": 0
+    },
+    {
+      "vertices": 7,
+      "seed": 4300039,
+      "kind": 4,
+      "method": 1,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 1,
+      "budget": 196,
+      "fallback": 0
+    },
+    {
+      "vertices": 7,
+      "seed": 4300039,
+      "kind": 4,
+      "method": 2,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 1,
+      "budget": 196,
+      "fallback": 0
+    },
+    {
+      "vertices": 8,
+      "seed": 2700019,
+      "kind": 0,
+      "method": 1,
+      "six_edge_paths_enumerated": 720,
+      "optimum": 0,
+      "count": 720,
+      "visits": 257,
+      "budget": 256,
+      "fallback": 1
+    },
+    {
+      "vertices": 8,
+      "seed": 2700019,
+      "kind": 0,
+      "method": 2,
+      "six_edge_paths_enumerated": 720,
+      "optimum": 0,
+      "count": 720,
+      "visits": 257,
+      "budget": 256,
+      "fallback": 1
+    },
+    {
+      "vertices": 8,
+      "seed": 2700019,
+      "kind": 1,
+      "method": 1,
+      "six_edge_paths_enumerated": 720,
+      "optimum": 4220,
+      "count": 1,
+      "visits": 32,
+      "budget": 256,
+      "fallback": 0
+    },
+    {
+      "vertices": 8,
+      "seed": 2700019,
+      "kind": 1,
+      "method": 2,
+      "six_edge_paths_enumerated": 720,
+      "optimum": 4220,
+      "count": 1,
+      "visits": 20,
+      "budget": 256,
+      "fallback": 0
+    },
+    {
+      "vertices": 8,
+      "seed": 2700019,
+      "kind": 2,
+      "method": 1,
+      "six_edge_paths_enumerated": 720,
+      "optimum": 9,
+      "count": 4,
+      "visits": 76,
+      "budget": 256,
+      "fallback": 0
+    },
+    {
+      "vertices": 8,
+      "seed": 2700019,
+      "kind": 2,
+      "method": 2,
+      "six_edge_paths_enumerated": 720,
+      "optimum": 9,
+      "count": 4,
+      "visits": 63,
+      "budget": 256,
+      "fallback": 0
+    },
+    {
+      "vertices": 8,
+      "seed": 2700019,
+      "kind": 3,
+      "method": 1,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 5,
+      "budget": 256,
+      "fallback": 0
+    },
+    {
+      "vertices": 8,
+      "seed": 2700019,
+      "kind": 3,
+      "method": 2,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 5,
+      "budget": 256,
+      "fallback": 0
+    },
+    {
+      "vertices": 8,
+      "seed": 2700019,
+      "kind": 4,
+      "method": 1,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 1,
+      "budget": 256,
+      "fallback": 0
+    },
+    {
+      "vertices": 8,
+      "seed": 2700019,
+      "kind": 4,
+      "method": 2,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 1,
+      "budget": 256,
+      "fallback": 0
+    },
+    {
+      "vertices": 8,
+      "seed": 4300039,
+      "kind": 0,
+      "method": 1,
+      "six_edge_paths_enumerated": 720,
+      "optimum": 0,
+      "count": 720,
+      "visits": 257,
+      "budget": 256,
+      "fallback": 1
+    },
+    {
+      "vertices": 8,
+      "seed": 4300039,
+      "kind": 0,
+      "method": 2,
+      "six_edge_paths_enumerated": 720,
+      "optimum": 0,
+      "count": 720,
+      "visits": 257,
+      "budget": 256,
+      "fallback": 1
+    },
+    {
+      "vertices": 8,
+      "seed": 4300039,
+      "kind": 1,
+      "method": 1,
+      "six_edge_paths_enumerated": 720,
+      "optimum": 2952,
+      "count": 1,
+      "visits": 31,
+      "budget": 256,
+      "fallback": 0
+    },
+    {
+      "vertices": 8,
+      "seed": 4300039,
+      "kind": 1,
+      "method": 2,
+      "six_edge_paths_enumerated": 720,
+      "optimum": 2952,
+      "count": 1,
+      "visits": 31,
+      "budget": 256,
+      "fallback": 0
+    },
+    {
+      "vertices": 8,
+      "seed": 4300039,
+      "kind": 2,
+      "method": 1,
+      "six_edge_paths_enumerated": 720,
+      "optimum": 8,
+      "count": 3,
+      "visits": 50,
+      "budget": 256,
+      "fallback": 0
+    },
+    {
+      "vertices": 8,
+      "seed": 4300039,
+      "kind": 2,
+      "method": 2,
+      "six_edge_paths_enumerated": 720,
+      "optimum": 8,
+      "count": 3,
+      "visits": 41,
+      "budget": 256,
+      "fallback": 0
+    },
+    {
+      "vertices": 8,
+      "seed": 4300039,
+      "kind": 3,
+      "method": 1,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 12,
+      "budget": 256,
+      "fallback": 0
+    },
+    {
+      "vertices": 8,
+      "seed": 4300039,
+      "kind": 3,
+      "method": 2,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 12,
+      "budget": 256,
+      "fallback": 0
+    },
+    {
+      "vertices": 8,
+      "seed": 4300039,
+      "kind": 4,
+      "method": 1,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 1,
+      "budget": 256,
+      "fallback": 0
+    },
+    {
+      "vertices": 8,
+      "seed": 4300039,
+      "kind": 4,
+      "method": 2,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 1,
+      "budget": 256,
+      "fallback": 0
+    },
+    {
+      "vertices": 9,
+      "seed": 2700019,
+      "kind": 0,
+      "method": 1,
+      "six_edge_paths_enumerated": 2520,
+      "optimum": 0,
+      "count": 2520,
+      "visits": 325,
+      "budget": 324,
+      "fallback": 1
+    },
+    {
+      "vertices": 9,
+      "seed": 2700019,
+      "kind": 0,
+      "method": 2,
+      "six_edge_paths_enumerated": 2520,
+      "optimum": 0,
+      "count": 2520,
+      "visits": 325,
+      "budget": 324,
+      "fallback": 1
+    },
+    {
+      "vertices": 9,
+      "seed": 2700019,
+      "kind": 1,
+      "method": 1,
+      "six_edge_paths_enumerated": 2520,
+      "optimum": 4463,
+      "count": 1,
+      "visits": 16,
+      "budget": 324,
+      "fallback": 0
+    },
+    {
+      "vertices": 9,
+      "seed": 2700019,
+      "kind": 1,
+      "method": 2,
+      "six_edge_paths_enumerated": 2520,
+      "optimum": 4463,
+      "count": 1,
+      "visits": 15,
+      "budget": 324,
+      "fallback": 0
+    },
+    {
+      "vertices": 9,
+      "seed": 2700019,
+      "kind": 2,
+      "method": 1,
+      "six_edge_paths_enumerated": 2520,
+      "optimum": 9,
+      "count": 1,
+      "visits": 29,
+      "budget": 324,
+      "fallback": 0
+    },
+    {
+      "vertices": 9,
+      "seed": 2700019,
+      "kind": 2,
+      "method": 2,
+      "six_edge_paths_enumerated": 2520,
+      "optimum": 9,
+      "count": 1,
+      "visits": 25,
+      "budget": 324,
+      "fallback": 0
+    },
+    {
+      "vertices": 9,
+      "seed": 2700019,
+      "kind": 3,
+      "method": 1,
+      "six_edge_paths_enumerated": 3,
+      "optimum": 3,
+      "count": 1,
+      "visits": 6,
+      "budget": 324,
+      "fallback": 0
+    },
+    {
+      "vertices": 9,
+      "seed": 2700019,
+      "kind": 3,
+      "method": 2,
+      "six_edge_paths_enumerated": 3,
+      "optimum": 3,
+      "count": 1,
+      "visits": 6,
+      "budget": 324,
+      "fallback": 0
+    },
+    {
+      "vertices": 9,
+      "seed": 2700019,
+      "kind": 4,
+      "method": 1,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 1,
+      "budget": 324,
+      "fallback": 0
+    },
+    {
+      "vertices": 9,
+      "seed": 2700019,
+      "kind": 4,
+      "method": 2,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 1,
+      "budget": 324,
+      "fallback": 0
+    },
+    {
+      "vertices": 9,
+      "seed": 4300039,
+      "kind": 0,
+      "method": 1,
+      "six_edge_paths_enumerated": 2520,
+      "optimum": 0,
+      "count": 2520,
+      "visits": 325,
+      "budget": 324,
+      "fallback": 1
+    },
+    {
+      "vertices": 9,
+      "seed": 4300039,
+      "kind": 0,
+      "method": 2,
+      "six_edge_paths_enumerated": 2520,
+      "optimum": 0,
+      "count": 2520,
+      "visits": 325,
+      "budget": 324,
+      "fallback": 1
+    },
+    {
+      "vertices": 9,
+      "seed": 4300039,
+      "kind": 1,
+      "method": 1,
+      "six_edge_paths_enumerated": 2520,
+      "optimum": 3945,
+      "count": 1,
+      "visits": 36,
+      "budget": 324,
+      "fallback": 0
+    },
+    {
+      "vertices": 9,
+      "seed": 4300039,
+      "kind": 1,
+      "method": 2,
+      "six_edge_paths_enumerated": 2520,
+      "optimum": 3945,
+      "count": 1,
+      "visits": 42,
+      "budget": 324,
+      "fallback": 0
+    },
+    {
+      "vertices": 9,
+      "seed": 4300039,
+      "kind": 2,
+      "method": 1,
+      "six_edge_paths_enumerated": 2520,
+      "optimum": 10,
+      "count": 1,
+      "visits": 34,
+      "budget": 324,
+      "fallback": 0
+    },
+    {
+      "vertices": 9,
+      "seed": 4300039,
+      "kind": 2,
+      "method": 2,
+      "six_edge_paths_enumerated": 2520,
+      "optimum": 10,
+      "count": 1,
+      "visits": 30,
+      "budget": 324,
+      "fallback": 0
+    },
+    {
+      "vertices": 9,
+      "seed": 4300039,
+      "kind": 3,
+      "method": 1,
+      "six_edge_paths_enumerated": 1,
+      "optimum": -1,
+      "count": 1,
+      "visits": 6,
+      "budget": 324,
+      "fallback": 0
+    },
+    {
+      "vertices": 9,
+      "seed": 4300039,
+      "kind": 3,
+      "method": 2,
+      "six_edge_paths_enumerated": 1,
+      "optimum": -1,
+      "count": 1,
+      "visits": 6,
+      "budget": 324,
+      "fallback": 0
+    },
+    {
+      "vertices": 9,
+      "seed": 4300039,
+      "kind": 4,
+      "method": 1,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 1,
+      "budget": 324,
+      "fallback": 0
+    },
+    {
+      "vertices": 9,
+      "seed": 4300039,
+      "kind": 4,
+      "method": 2,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 1,
+      "budget": 324,
+      "fallback": 0
+    },
+    {
+      "vertices": 10,
+      "seed": 2700019,
+      "kind": 0,
+      "method": 1,
+      "six_edge_paths_enumerated": 6720,
+      "optimum": 0,
+      "count": 6720,
+      "visits": 401,
+      "budget": 400,
+      "fallback": 1
+    },
+    {
+      "vertices": 10,
+      "seed": 2700019,
+      "kind": 0,
+      "method": 2,
+      "six_edge_paths_enumerated": 6720,
+      "optimum": 0,
+      "count": 6720,
+      "visits": 401,
+      "budget": 400,
+      "fallback": 1
+    },
+    {
+      "vertices": 10,
+      "seed": 2700019,
+      "kind": 1,
+      "method": 1,
+      "six_edge_paths_enumerated": 6720,
+      "optimum": 5044,
+      "count": 1,
+      "visits": 6,
+      "budget": 400,
+      "fallback": 0
+    },
+    {
+      "vertices": 10,
+      "seed": 2700019,
+      "kind": 1,
+      "method": 2,
+      "six_edge_paths_enumerated": 6720,
+      "optimum": 5044,
+      "count": 1,
+      "visits": 6,
+      "budget": 400,
+      "fallback": 0
+    },
+    {
+      "vertices": 10,
+      "seed": 2700019,
+      "kind": 2,
+      "method": 1,
+      "six_edge_paths_enumerated": 6720,
+      "optimum": 11,
+      "count": 1,
+      "visits": 46,
+      "budget": 400,
+      "fallback": 0
+    },
+    {
+      "vertices": 10,
+      "seed": 2700019,
+      "kind": 2,
+      "method": 2,
+      "six_edge_paths_enumerated": 6720,
+      "optimum": 11,
+      "count": 1,
+      "visits": 31,
+      "budget": 400,
+      "fallback": 0
+    },
+    {
+      "vertices": 10,
+      "seed": 2700019,
+      "kind": 3,
+      "method": 1,
+      "six_edge_paths_enumerated": 6,
+      "optimum": 0,
+      "count": 1,
+      "visits": 30,
+      "budget": 400,
+      "fallback": 0
+    },
+    {
+      "vertices": 10,
+      "seed": 2700019,
+      "kind": 3,
+      "method": 2,
+      "six_edge_paths_enumerated": 6,
+      "optimum": 0,
+      "count": 1,
+      "visits": 27,
+      "budget": 400,
+      "fallback": 0
+    },
+    {
+      "vertices": 10,
+      "seed": 2700019,
+      "kind": 4,
+      "method": 1,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 1,
+      "budget": 400,
+      "fallback": 0
+    },
+    {
+      "vertices": 10,
+      "seed": 2700019,
+      "kind": 4,
+      "method": 2,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 1,
+      "budget": 400,
+      "fallback": 0
+    },
+    {
+      "vertices": 10,
+      "seed": 4300039,
+      "kind": 0,
+      "method": 1,
+      "six_edge_paths_enumerated": 6720,
+      "optimum": 0,
+      "count": 6720,
+      "visits": 401,
+      "budget": 400,
+      "fallback": 1
+    },
+    {
+      "vertices": 10,
+      "seed": 4300039,
+      "kind": 0,
+      "method": 2,
+      "six_edge_paths_enumerated": 6720,
+      "optimum": 0,
+      "count": 6720,
+      "visits": 401,
+      "budget": 400,
+      "fallback": 1
+    },
+    {
+      "vertices": 10,
+      "seed": 4300039,
+      "kind": 1,
+      "method": 1,
+      "six_edge_paths_enumerated": 6720,
+      "optimum": 4442,
+      "count": 1,
+      "visits": 14,
+      "budget": 400,
+      "fallback": 0
+    },
+    {
+      "vertices": 10,
+      "seed": 4300039,
+      "kind": 1,
+      "method": 2,
+      "six_edge_paths_enumerated": 6720,
+      "optimum": 4442,
+      "count": 1,
+      "visits": 13,
+      "budget": 400,
+      "fallback": 0
+    },
+    {
+      "vertices": 10,
+      "seed": 4300039,
+      "kind": 2,
+      "method": 1,
+      "six_edge_paths_enumerated": 6720,
+      "optimum": 10,
+      "count": 7,
+      "visits": 44,
+      "budget": 400,
+      "fallback": 0
+    },
+    {
+      "vertices": 10,
+      "seed": 4300039,
+      "kind": 2,
+      "method": 2,
+      "six_edge_paths_enumerated": 6720,
+      "optimum": 10,
+      "count": 7,
+      "visits": 44,
+      "budget": 400,
+      "fallback": 0
+    },
+    {
+      "vertices": 10,
+      "seed": 4300039,
+      "kind": 3,
+      "method": 1,
+      "six_edge_paths_enumerated": 3,
+      "optimum": 3,
+      "count": 1,
+      "visits": 6,
+      "budget": 400,
+      "fallback": 0
+    },
+    {
+      "vertices": 10,
+      "seed": 4300039,
+      "kind": 3,
+      "method": 2,
+      "six_edge_paths_enumerated": 3,
+      "optimum": 3,
+      "count": 1,
+      "visits": 6,
+      "budget": 400,
+      "fallback": 0
+    },
+    {
+      "vertices": 10,
+      "seed": 4300039,
+      "kind": 4,
+      "method": 1,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 1,
+      "budget": 400,
+      "fallback": 0
+    },
+    {
+      "vertices": 10,
+      "seed": 4300039,
+      "kind": 4,
+      "method": 2,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 1,
+      "budget": 400,
+      "fallback": 0
+    },
+    {
+      "vertices": 11,
+      "seed": 2700019,
+      "kind": 0,
+      "method": 1,
+      "six_edge_paths_enumerated": 15120,
+      "optimum": 0,
+      "count": 15120,
+      "visits": 485,
+      "budget": 484,
+      "fallback": 1
+    },
+    {
+      "vertices": 11,
+      "seed": 2700019,
+      "kind": 0,
+      "method": 2,
+      "six_edge_paths_enumerated": 15120,
+      "optimum": 0,
+      "count": 15120,
+      "visits": 485,
+      "budget": 484,
+      "fallback": 1
+    },
+    {
+      "vertices": 11,
+      "seed": 2700019,
+      "kind": 1,
+      "method": 1,
+      "six_edge_paths_enumerated": 15120,
+      "optimum": 4978,
+      "count": 1,
+      "visits": 14,
+      "budget": 484,
+      "fallback": 0
+    },
+    {
+      "vertices": 11,
+      "seed": 2700019,
+      "kind": 1,
+      "method": 2,
+      "six_edge_paths_enumerated": 15120,
+      "optimum": 4978,
+      "count": 1,
+      "visits": 12,
+      "budget": 484,
+      "fallback": 0
+    },
+    {
+      "vertices": 11,
+      "seed": 2700019,
+      "kind": 2,
+      "method": 1,
+      "six_edge_paths_enumerated": 15120,
+      "optimum": 10,
+      "count": 10,
+      "visits": 44,
+      "budget": 484,
+      "fallback": 0
+    },
+    {
+      "vertices": 11,
+      "seed": 2700019,
+      "kind": 2,
+      "method": 2,
+      "six_edge_paths_enumerated": 15120,
+      "optimum": 10,
+      "count": 10,
+      "visits": 46,
+      "budget": 484,
+      "fallback": 0
+    },
+    {
+      "vertices": 11,
+      "seed": 2700019,
+      "kind": 3,
+      "method": 1,
+      "six_edge_paths_enumerated": 51,
+      "optimum": 4,
+      "count": 1,
+      "visits": 26,
+      "budget": 484,
+      "fallback": 0
+    },
+    {
+      "vertices": 11,
+      "seed": 2700019,
+      "kind": 3,
+      "method": 2,
+      "six_edge_paths_enumerated": 51,
+      "optimum": 4,
+      "count": 1,
+      "visits": 26,
+      "budget": 484,
+      "fallback": 0
+    },
+    {
+      "vertices": 11,
+      "seed": 2700019,
+      "kind": 4,
+      "method": 1,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 1,
+      "budget": 484,
+      "fallback": 0
+    },
+    {
+      "vertices": 11,
+      "seed": 2700019,
+      "kind": 4,
+      "method": 2,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 1,
+      "budget": 484,
+      "fallback": 0
+    },
+    {
+      "vertices": 11,
+      "seed": 4300039,
+      "kind": 0,
+      "method": 1,
+      "six_edge_paths_enumerated": 15120,
+      "optimum": 0,
+      "count": 15120,
+      "visits": 485,
+      "budget": 484,
+      "fallback": 1
+    },
+    {
+      "vertices": 11,
+      "seed": 4300039,
+      "kind": 0,
+      "method": 2,
+      "six_edge_paths_enumerated": 15120,
+      "optimum": 0,
+      "count": 15120,
+      "visits": 485,
+      "budget": 484,
+      "fallback": 1
+    },
+    {
+      "vertices": 11,
+      "seed": 4300039,
+      "kind": 1,
+      "method": 1,
+      "six_edge_paths_enumerated": 15120,
+      "optimum": 4088,
+      "count": 1,
+      "visits": 6,
+      "budget": 484,
+      "fallback": 0
+    },
+    {
+      "vertices": 11,
+      "seed": 4300039,
+      "kind": 1,
+      "method": 2,
+      "six_edge_paths_enumerated": 15120,
+      "optimum": 4088,
+      "count": 1,
+      "visits": 6,
+      "budget": 484,
+      "fallback": 0
+    },
+    {
+      "vertices": 11,
+      "seed": 4300039,
+      "kind": 2,
+      "method": 1,
+      "six_edge_paths_enumerated": 15120,
+      "optimum": 11,
+      "count": 1,
+      "visits": 6,
+      "budget": 484,
+      "fallback": 0
+    },
+    {
+      "vertices": 11,
+      "seed": 4300039,
+      "kind": 2,
+      "method": 2,
+      "six_edge_paths_enumerated": 15120,
+      "optimum": 11,
+      "count": 1,
+      "visits": 6,
+      "budget": 484,
+      "fallback": 0
+    },
+    {
+      "vertices": 11,
+      "seed": 4300039,
+      "kind": 3,
+      "method": 1,
+      "six_edge_paths_enumerated": 3,
+      "optimum": 0,
+      "count": 2,
+      "visits": 11,
+      "budget": 484,
+      "fallback": 0
+    },
+    {
+      "vertices": 11,
+      "seed": 4300039,
+      "kind": 3,
+      "method": 2,
+      "six_edge_paths_enumerated": 3,
+      "optimum": 0,
+      "count": 2,
+      "visits": 11,
+      "budget": 484,
+      "fallback": 0
+    },
+    {
+      "vertices": 11,
+      "seed": 4300039,
+      "kind": 4,
+      "method": 1,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 1,
+      "budget": 484,
+      "fallback": 0
+    },
+    {
+      "vertices": 11,
+      "seed": 4300039,
+      "kind": 4,
+      "method": 2,
+      "six_edge_paths_enumerated": 0,
+      "optimum": -2305843009213693952,
+      "count": 0,
+      "visits": 1,
+      "budget": 484,
+      "fallback": 0
+    }
+  ],
+  "performance_traces": [
+    {
+      "vertices": 27,
+      "seed": 2700019,
+      "method": 1,
+      "answer": [
+        5595,
+        1
+      ],
+      "visits": 6,
+      "budget": 2916,
+      "fallback": 0
+    },
+    {
+      "vertices": 11,
+      "seed": 2700019,
+      "method": 2,
+      "answer": [
+        4978,
+        1
+      ],
+      "visits": 12,
+      "budget": 484,
+      "fallback": 0
+    },
+    {
+      "vertices": 19,
+      "seed": 10100039,
+      "method": 2,
+      "answer": [
+        5439,
+        1
+      ],
+      "visits": 6,
+      "budget": 1444,
+      "fallback": 0
+    },
+    {
+      "vertices": 19,
+      "seed": 9400033,
+      "method": 1,
+      "answer": [
+        5140,
+        1
+      ],
+      "visits": 6,
+      "budget": 1444,
+      "fallback": 0
+    },
+    {
+      "vertices": 15,
+      "seed": 10100039,
+      "method": 1,
+      "answer": [
+        5472,
+        1
+      ],
+      "visits": 6,
+      "budget": 900,
+      "fallback": 0
+    },
+    {
+      "vertices": 27,
+      "seed": 9400033,
+      "method": 2,
+      "answer": [
+        5162,
+        1
+      ],
+      "visits": 12,
+      "budget": 2916,
+      "fallback": 0
+    },
+    {
+      "vertices": 15,
+      "seed": 2700019,
+      "method": 2,
+      "answer": [
+        5063,
+        1
+      ],
+      "visits": 20,
+      "budget": 900,
+      "fallback": 0
+    },
+    {
+      "vertices": 23,
+      "seed": 9400033,
+      "method": 2,
+      "answer": [
+        5241,
+        1
+      ],
+      "visits": 24,
+      "budget": 2116,
+      "fallback": 0
+    },
+    {
+      "vertices": 23,
+      "seed": 9400033,
+      "method": 1,
+      "answer": [
+        5241,
+        1
+      ],
+      "visits": 26,
+      "budget": 2116,
+      "fallback": 0
+    },
+    {
+      "vertices": 19,
+      "seed": 8100011,
+      "method": 2,
+      "answer": [
+        5079,
+        1
+      ],
+      "visits": 16,
+      "budget": 1444,
+      "fallback": 0
+    },
+    {
+      "vertices": 19,
+      "seed": 10100039,
+      "method": 1,
+      "answer": [
+        5439,
+        1
+      ],
+      "visits": 6,
+      "budget": 1444,
+      "fallback": 0
+    },
+    {
+      "vertices": 11,
+      "seed": 10100039,
+      "method": 2,
+      "answer": [
+        5050,
+        1
+      ],
+      "visits": 24,
+      "budget": 484,
+      "fallback": 0
+    },
+    {
+      "vertices": 15,
+      "seed": 9400033,
+      "method": 1,
+      "answer": [
+        4629,
+        1
+      ],
+      "visits": 6,
+      "budget": 900,
+      "fallback": 0
+    },
+    {
+      "vertices": 27,
+      "seed": 10100039,
+      "method": 1,
+      "answer": [
+        5287,
+        1
+      ],
+      "visits": 6,
+      "budget": 2916,
+      "fallback": 0
+    },
+    {
+      "vertices": 11,
+      "seed": 2700019,
+      "method": 1,
+      "answer": [
+        4978,
+        1
+      ],
+      "visits": 14,
+      "budget": 484,
+      "fallback": 0
+    },
+    {
+      "vertices": 23,
+      "seed": 8100011,
+      "method": 2,
+      "answer": [
+        5260,
+        1
+      ],
+      "visits": 16,
+      "budget": 2116,
+      "fallback": 0
+    },
+    {
+      "vertices": 15,
+      "seed": 10100039,
+      "method": 2,
+      "answer": [
+        5472,
+        1
+      ],
+      "visits": 6,
+      "budget": 900,
+      "fallback": 0
+    },
+    {
+      "vertices": 15,
+      "seed": 9400033,
+      "method": 2,
+      "answer": [
+        4629,
+        1
+      ],
+      "visits": 6,
+      "budget": 900,
+      "fallback": 0
+    },
+    {
+      "vertices": 27,
+      "seed": 8100011,
+      "method": 1,
+      "answer": [
+        5410,
+        1
+      ],
+      "visits": 6,
+      "budget": 2916,
+      "fallback": 0
+    },
+    {
+      "vertices": 15,
+      "seed": 8100011,
+      "method": 1,
+      "answer": [
+        5007,
+        1
+      ],
+      "visits": 6,
+      "budget": 900,
+      "fallback": 0
+    },
+    {
+      "vertices": 11,
+      "seed": 8100011,
+      "method": 1,
+      "answer": [
+        4410,
+        1
+      ],
+      "visits": 39,
+      "budget": 484,
+      "fallback": 0
+    },
+    {
+      "vertices": 27,
+      "seed": 8100011,
+      "method": 2,
+      "answer": [
+        5410,
+        1
+      ],
+      "visits": 6,
+      "budget": 2916,
+      "fallback": 0
+    },
+    {
+      "vertices": 15,
+      "seed": 2700019,
+      "method": 1,
+      "answer": [
+        5063,
+        1
+      ],
+      "visits": 31,
+      "budget": 900,
+      "fallback": 0
+    },
+    {
+      "vertices": 19,
+      "seed": 8100011,
+      "method": 1,
+      "answer": [
+        5079,
+        1
+      ],
+      "visits": 19,
+      "budget": 1444,
+      "fallback": 0
+    },
+    {
+      "vertices": 11,
+      "seed": 10100039,
+      "method": 1,
+      "answer": [
+        5050,
+        1
+      ],
+      "visits": 36,
+      "budget": 484,
+      "fallback": 0
+    },
+    {
+      "vertices": 23,
+      "seed": 2700019,
+      "method": 1,
+      "answer": [
+        5178,
+        1
+      ],
+      "visits": 6,
+      "budget": 2116,
+      "fallback": 0
+    },
+    {
+      "vertices": 11,
+      "seed": 9400033,
+      "method": 2,
+      "answer": [
+        4570,
+        1
+      ],
+      "visits": 9,
+      "budget": 484,
+      "fallback": 0
+    },
+    {
+      "vertices": 19,
+      "seed": 2700019,
+      "method": 2,
+      "answer": [
+        5321,
+        1
+      ],
+      "visits": 6,
+      "budget": 1444,
+      "fallback": 0
+    },
+    {
+      "vertices": 23,
+      "seed": 2700019,
+      "method": 2,
+      "answer": [
+        5178,
+        1
+      ],
+      "visits": 6,
+      "budget": 2116,
+      "fallback": 0
+    },
+    {
+      "vertices": 11,
+      "seed": 8100011,
+      "method": 2,
+      "answer": [
+        4410,
+        1
+      ],
+      "visits": 35,
+      "budget": 484,
+      "fallback": 0
+    },
+    {
+      "vertices": 23,
+      "seed": 10100039,
+      "method": 1,
+      "answer": [
+        5622,
+        1
+      ],
+      "visits": 6,
+      "budget": 2116,
+      "fallback": 0
+    },
+    {
+      "vertices": 23,
+      "seed": 8100011,
+      "method": 1,
+      "answer": [
+        5260,
+        1
+      ],
+      "visits": 18,
+      "budget": 2116,
+      "fallback": 0
+    },
+    {
+      "vertices": 27,
+      "seed": 9400033,
+      "method": 1,
+      "answer": [
+        5162,
+        1
+      ],
+      "visits": 22,
+      "budget": 2916,
+      "fallback": 0
+    },
+    {
+      "vertices": 19,
+      "seed": 9400033,
+      "method": 2,
+      "answer": [
+        5140,
+        1
+      ],
+      "visits": 6,
+      "budget": 1444,
+      "fallback": 0
+    },
+    {
+      "vertices": 19,
+      "seed": 2700019,
+      "method": 1,
+      "answer": [
+        5321,
+        1
+      ],
+      "visits": 6,
+      "budget": 1444,
+      "fallback": 0
+    },
+    {
+      "vertices": 11,
+      "seed": 9400033,
+      "method": 1,
+      "answer": [
+        4570,
+        1
+      ],
+      "visits": 16,
+      "budget": 484,
+      "fallback": 0
+    },
+    {
+      "vertices": 23,
+      "seed": 10100039,
+      "method": 2,
+      "answer": [
+        5622,
+        1
+      ],
+      "visits": 6,
+      "budget": 2116,
+      "fallback": 0
+    },
+    {
+      "vertices": 15,
+      "seed": 8100011,
+      "method": 2,
+      "answer": [
+        5007,
+        1
+      ],
+      "visits": 6,
+      "budget": 900,
+      "fallback": 0
+    },
+    {
+      "vertices": 27,
+      "seed": 2700019,
+      "method": 2,
+      "answer": [
+        5595,
+        1
+      ],
+      "visits": 6,
+      "budget": 2916,
+      "fallback": 0
+    },
+    {
+      "vertices": 27,
+      "seed": 10100039,
+      "method": 2,
+      "answer": [
+        5287,
+        1
+      ],
+      "visits": 6,
+      "budget": 2916,
+      "fallback": 0
+    }
+  ],
+  "scope": "Untimed validation and trace only",
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/theory_paths_bnb.c": "9368ef346b382c8b6017bdd6809f4cf38815fcc96b283227a2834636fdefca2b",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/theory_paths_control.c": "f7b88f38b097d43c5e68b3b16a2d97e209bc81e8671e5c1df0f395bbb827e89a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/validate_theory_paths_bnb.py": "4c32b9c7e17b74e323d71d8561db3c0938a26c8765ee65058462adc6fc30b921",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-bnb-validation/trace.c": "a0aab03c1bebba34533e0e0e0e6b14778cc4fd34cd879f4ad61b1096e8ec894f",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-bnb-validation/trace": "fd42e160588ccc2bb0c54bc46e6d37862b63d954129c77922ae00b5005b68470",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/theory-paths-qualification-venv/lib/python3.14/site-packages/networkx/algorithms/simple_paths.py": "2c5745365b69b7ead123de31ec7543428a0d6e09bebab9331900b15477c84794",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/theory-paths-qualification-venv/lib/python3.14/site-packages/networkx/__init__.py": "bd5f9b6329a5f492b9395f0873f75cb4be59191e4dab01787f37789ac4766fd5",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-bnb/summary.json": "e5a7ca6d59208fc084ac4e5d8ce303a0a599fb1f7c688311659a0f2aeeb28e40"
+  }
+}

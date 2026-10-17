@@ -1,0 +1,1447 @@
+Analysis of sampling mul (pid 53666) every 1 millisecond
+Process:         mul [53666]
+Path:            /Users/USER/*/mul
+Load Address:    0x1043a0000
+Identifier:      mul
+Version:         0
+Code Type:       ARM64
+Platform:        macOS
+Parent Process:  Python [53459]
+Target Type:     live task
+
+Date/Time:       2026-10-07 12:57:33.775 -0400
+Launch Time:     2026-10-07 12:57:32.725 -0400
+OS Version:      macOS 26.6.2 (25G83)
+Report Version:  7
+Analysis Tool:   /usr/bin/sample
+
+Physical footprint:         141.1M
+Physical footprint (peak):  141.1M
+Idle exit:                  untracked
+----
+
+Call graph:
+    7652 Thread_337933549   DispatchQueue_1: com.apple.main-thread  (serial)
+      7652 start  (in dyld) + 6992  [0x18fad44e4]
+        7652 main  (in mul) + 1936  [0x1043a0dd0]  mul.c:97
+          7652 _flint_mpn_mul  (in libflint.25.0.dylib) + 260  [0x10559a60c]  mul.c:80
+            5543 _mpn_ctx_mpn_mul_range  (in libflint.25.0.dylib) + 2788  [0x1059ab650]  mpn_mul.c:1808
+            + 1796 fft_worker_func  (in libflint.25.0.dylib) + 100  [0x1059abc58]  mpn_mul.c:1525
+            + ! 1333 sd_fft_trunc_internal  (in libflint.25.0.dylib) + 284  [0x1059d0868]  sd_fft.c:1188
+            + ! : 1065 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 160  [0x1059d1c3c]  sd_fft.c:987
+            + ! : | 951 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 160  [0x1059d1c3c]  sd_fft.c:987
+            + ! : | + 198 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 1332  [0x1059d20d0]  sd_fft.c:998
+            + ! : | + ! 49 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 728,792,...  [0x1059d69ec,0x1059d6a2c,...]  sd_fft.c:719
+            + ! : | + ! 45 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 856  [0x1059d6a6c]  sd_fft.c:719
+            + ! : | + ! : 16 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 512,640,...  [0x1059d6cb4,0x1059d6d34,...]  sd_fft.c:717
+            + ! : | + ! : 7 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : | 5 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 76,144,...  [0x1059d6ea0,0x1059d6ee4,...]  sd_fft.c:559
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 528,584  [0x1059d7064,0x1059d709c]  sd_fft.c:567
+            + ! : | + ! : 7 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : | 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 200,300  [0x1059d6f1c,0x1059d6f80]  sd_fft.c:559
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 528,712  [0x1059d7064,0x1059d711c]  sd_fft.c:567
+            + ! : | + ! : 6 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 592,676,...  [0x1059d70a4,0x1059d70f8,...]  sd_fft.c:567
+            + ! : | + ! : 3 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 328  [0x1059d6f9c]  sd_fft.c:559
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 488  [0x1059d703c]  sd_fft.c:567
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 744  [0x1059d713c]  sd_fft.c:571
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 144  [0x1059d6ee4]  sd_fft.c:559
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 744  [0x1059d713c]  sd_fft.c:571
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 380  [0x1059d6fd0]  sd_fft.c:561
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! 39 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 880  [0x1059d6a84]  sd_fft.c:719
+            + ! : | + ! : 14 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : | 8 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 528,444,...  [0x1059d7064,0x1059d7010,...]  sd_fft.c:567
+            + ! : | + ! : | 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 228,104,...  [0x1059d6f38,0x1059d6ebc,...]  sd_fft.c:559
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 48  [0x1059d6e84]  sd_fft.c:558
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 360  [0x1059d6fbc]  sd_fft.c:561
+            + ! : | + ! : 11 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 332,352,...  [0x1059d6c00,0x1059d6c14,...]  sd_fft.c:717
+            + ! : | + ! : 4 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : | 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 228,76,...  [0x1059d6f38,0x1059d6ea0,...]  sd_fft.c:559
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 116,272  [0x1059d6ec8,0x1059d6f64]  sd_fft.c:559
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 548,648  [0x1059d7078,0x1059d70dc]  sd_fft.c:567
+            + ! : | + ! : 2 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:0
+            + ! : | + ! : 2 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 352  [0x1059d6fb4]  sd_fft.c:559
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 712  [0x1059d711c]  sd_fft.c:567
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 360  [0x1059d6fbc]  sd_fft.c:561
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 744  [0x1059d713c]  sd_fft.c:571
+            + ! : | + ! 28 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 832  [0x1059d6a54]  sd_fft.c:719
+            + ! : | + ! : 11 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 88,132,...  [0x1059d6b0c,0x1059d6b38,...]  sd_fft.c:717
+            + ! : | + ! : 4 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 248  [0x1059d6f4c]  sd_fft.c:559
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 580,680  [0x1059d7098,0x1059d70fc]  sd_fft.c:567
+            + ! : | + ! : 4 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 488,560  [0x1059d703c,0x1059d7084]  sd_fft.c:567
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 260  [0x1059d6f58]  sd_fft.c:559
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 204,276,...  [0x1059d6f20,0x1059d6f68,...]  sd_fft.c:559
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 580,680  [0x1059d7098,0x1059d70fc]  sd_fft.c:567
+            + ! : | + ! : 2 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828,852  [0x1059d6df0,0x1059d6e08]  sd_fft.c:0
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 48  [0x1059d6e84]  sd_fft.c:558
+            + ! : | + ! : 1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! :   1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 676  [0x1059d70f8]  sd_fft.c:567
+            + ! : | + ! 13 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 68,92,...  [0x1059d6af8,0x1059d6b10,...]  sd_fft.c:717
+            + ! : | + ! 8 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : 7 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 612,656,...  [0x1059d70b8,0x1059d70e4,...]  sd_fft.c:567
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 180  [0x1059d6f08]  sd_fft.c:559
+            + ! : | + ! 6 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 228,328  [0x1059d6f38,0x1059d6f9c]  sd_fft.c:559
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 444,472  [0x1059d7010,0x1059d702c]  sd_fft.c:567
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 744  [0x1059d713c]  sd_fft.c:571
+            + ! : | + ! 5 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 144,328  [0x1059d6ee4,0x1059d6f9c]  sd_fft.c:559
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 472,556  [0x1059d702c,0x1059d7080]  sd_fft.c:567
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 244,344  [0x1059d6f48,0x1059d6fac]  sd_fft.c:559
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 360  [0x1059d6fbc]  sd_fft.c:561
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 648  [0x1059d70dc]  sd_fft.c:567
+            + ! : | + ! 1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:0
+            + ! : | + 195 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 300  [0x1059d1cc8]  sd_fft.c:997
+            + ! : | + ! 41 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 832  [0x1059d6a54]  sd_fft.c:719
+            + ! : | + ! : 11 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : | 8 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 588,612,...  [0x1059d70a0,0x1059d70b8,...]  sd_fft.c:567
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 172,304  [0x1059d6f00,0x1059d6f84]  sd_fft.c:559
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! : 10 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : | 5 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 432,588,...  [0x1059d7004,0x1059d70a0,...]  sd_fft.c:567
+            + ! : | + ! : | 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 80,108,...  [0x1059d6ea4,0x1059d6ec0,...]  sd_fft.c:559
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 48  [0x1059d6e84]  sd_fft.c:558
+            + ! : | + ! : 8 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 180,352,...  [0x1059d6b68,0x1059d6c14,...]  sd_fft.c:717
+            + ! : | + ! : 6 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 48  [0x1059d6e84]  sd_fft.c:558
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 200,292  [0x1059d6f1c,0x1059d6f78]  sd_fft.c:559
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 748  [0x1059d7140]  sd_fft.c:572
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 76,244,...  [0x1059d6ea0,0x1059d6f48,...]  sd_fft.c:559
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 620,720  [0x1059d70c0,0x1059d7124]  sd_fft.c:567
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! 41 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 856  [0x1059d6a6c]  sd_fft.c:719
+            + ! : | + ! : 12 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 132,688,...  [0x1059d6b38,0x1059d6d64,...]  sd_fft.c:717
+            + ! : | + ! : 11 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : | 6 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 104,144,...  [0x1059d6ebc,0x1059d6ee4,...]  sd_fft.c:559
+            + ! : | + ! : | 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 528,444,...  [0x1059d7064,0x1059d7010,...]  sd_fft.c:567
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! : 7 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : | 5 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 556,656,...  [0x1059d7080,0x1059d70e4,...]  sd_fft.c:567
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 172  [0x1059d6f00]  sd_fft.c:559
+            + ! : | + ! : 5 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 492,592,...  [0x1059d7040,0x1059d70a4,...]  sd_fft.c:567
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 116,244  [0x1059d6ec8,0x1059d6f48]  sd_fft.c:559
+            + ! : | + ! : 2 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 356  [0x1059d6fb8]  sd_fft.c:559
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 484  [0x1059d7038]  sd_fft.c:567
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 360  [0x1059d6fbc]  sd_fft.c:561
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! 41 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 880  [0x1059d6a84]  sd_fft.c:719
+            + ! : | + ! : 10 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 132,276,...  [0x1059d6b38,0x1059d6bc8,...]  sd_fft.c:717
+            + ! : | + ! : 8 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : | 5 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 144,172,...  [0x1059d6ee4,0x1059d6f00,...]  sd_fft.c:559
+            + ! : | + ! : | 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 472,712  [0x1059d702c,0x1059d711c]  sd_fft.c:567
+            + ! : | + ! : 7 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : | 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 484,656,...  [0x1059d7038,0x1059d70e4,...]  sd_fft.c:567
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 168,196  [0x1059d6efc,0x1059d6f18]  sd_fft.c:559
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 428  [0x1059d7000]  sd_fft.c:566
+            + ! : | + ! : 6 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 172,328  [0x1059d6f00,0x1059d6f9c]  sd_fft.c:559
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 360  [0x1059d6fbc]  sd_fft.c:561
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 444,472  [0x1059d7010,0x1059d702c]  sd_fft.c:567
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 492,720  [0x1059d7040,0x1059d7124]  sd_fft.c:567
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 172,216  [0x1059d6f00,0x1059d6f2c]  sd_fft.c:559
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 744  [0x1059d713c]  sd_fft.c:571
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 32  [0x1059d6e74]  sd_fft.c:556
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! : 1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:0
+            + ! : | + ! 38 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 728,792,...  [0x1059d69ec,0x1059d6a2c,...]  sd_fft.c:719
+            + ! : | + ! 11 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : 7 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 200,144,...  [0x1059d6f1c,0x1059d6ee4,...]  sd_fft.c:559
+            + ! : | + ! : 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 444,528,...  [0x1059d7010,0x1059d7064,...]  sd_fft.c:567
+            + ! : | + ! 7 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 212,256,...  [0x1059d6b88,0x1059d6bb4,...]  sd_fft.c:717
+            + ! : | + ! 6 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 104,144  [0x1059d6ebc,0x1059d6ee4]  sd_fft.c:559
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 528,556,...  [0x1059d7064,0x1059d7080,...]  sd_fft.c:567
+            + ! : | + ! 4 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 472,684,...  [0x1059d702c,0x1059d7100,...]  sd_fft.c:567
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 208  [0x1059d6f24]  sd_fft.c:559
+            + ! : | + ! 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 88,300  [0x1059d6eac,0x1059d6f80]  sd_fft.c:559
+            + ! : | + ! 2 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 832,856  [0x1059d6a54,0x1059d6a6c]  sd_fft.c:0
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 676  [0x1059d70f8]  sd_fft.c:567
+            + ! : | + 188 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 252  [0x1059d1c98]  sd_fft.c:996
+            + ! : | + ! 187 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 252  [0x1059d1c98]  sd_fft.c:996
+            + ! : | + ! : 185 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 216,860,...  [0x1059d2ba0,0x1059d2e24,...]  sd_fft.c:928
+            + ! : | + ! : 1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 904  [0x1059d2e50]  sd_fft.c:929
+            + ! : | + ! : 1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 920  [0x1059d2e60]  sd_fft.c:930
+            + ! : | + ! 1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2344  [0x1059d33f0]  sd_fft.c:961
+            + ! : | + 163 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 1368  [0x1059d20f4]  sd_fft.c:999
+            + ! : | + ! 39 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 856  [0x1059d6a6c]  sd_fft.c:719
+            + ! : | + ! : 11 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : | 5 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 352,104,...  [0x1059d6fb4,0x1059d6ebc,...]  sd_fft.c:559
+            + ! : | + ! : | 5 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 584,656,...  [0x1059d709c,0x1059d70e4,...]  sd_fft.c:567
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 400  [0x1059d6fe4]  sd_fft.c:566
+            + ! : | + ! : 9 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 380,564,...  [0x1059d6c30,0x1059d6ce8,...]  sd_fft.c:717
+            + ! : | + ! : 8 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : | 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 228,144  [0x1059d6f38,0x1059d6ee4]  sd_fft.c:559
+            + ! : | + ! : | 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 444,472,...  [0x1059d7010,0x1059d702c,...]  sd_fft.c:567
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 48  [0x1059d6e84]  sd_fft.c:558
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 744  [0x1059d713c]  sd_fft.c:571
+            + ! : | + ! : 5 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : | 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 528,556,...  [0x1059d7064,0x1059d7080,...]  sd_fft.c:567
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 104  [0x1059d6ebc]  sd_fft.c:559
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 116,272  [0x1059d6ec8,0x1059d6f64]  sd_fft.c:559
+            + ! : | + ! : 2 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828,852  [0x1059d6df0,0x1059d6e08]  sd_fft.c:0
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 48  [0x1059d6e84]  sd_fft.c:558
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 380  [0x1059d6fd0]  sd_fft.c:561
+            + ! : | + ! 33 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 832  [0x1059d6a54]  sd_fft.c:719
+            + ! : | + ! : 14 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 356,732,...  [0x1059d6c18,0x1059d6d90,...]  sd_fft.c:717
+            + ! : | + ! : 4 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 248  [0x1059d6f4c]  sd_fft.c:559
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 712  [0x1059d711c]  sd_fft.c:567
+            + ! : | + ! : 4 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : | 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 144,300,...  [0x1059d6ee4,0x1059d6f80,...]  sd_fft.c:559
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! : 4 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 144,200  [0x1059d6ee4,0x1059d6f1c]  sd_fft.c:559
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 584,712  [0x1059d709c,0x1059d711c]  sd_fft.c:567
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 88,116  [0x1059d6eac,0x1059d6ec8]  sd_fft.c:559
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 548,592,...  [0x1059d7078,0x1059d70a4,...]  sd_fft.c:567
+            + ! : | + ! : 1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:0
+            + ! : | + ! 31 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 460,728,...  [0x1059d68e0,0x1059d69ec,...]  sd_fft.c:719
+            + ! : | + ! 27 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 880  [0x1059d6a84]  sd_fft.c:719
+            + ! : | + ! : 11 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 304,352,...  [0x1059d6be4,0x1059d6c14,...]  sd_fft.c:717
+            + ! : | + ! : 6 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : | 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 444,528,...  [0x1059d7010,0x1059d7064,...]  sd_fft.c:567
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 200  [0x1059d6f1c]  sd_fft.c:559
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 360  [0x1059d6fbc]  sd_fft.c:561
+            + ! : | + ! : 3 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 272  [0x1059d6f64]  sd_fft.c:559
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 556  [0x1059d7080]  sd_fft.c:567
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 216,344  [0x1059d6f2c,0x1059d6fac]  sd_fft.c:559
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 464,592  [0x1059d7024,0x1059d70a4]  sd_fft.c:567
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 48  [0x1059d6e84]  sd_fft.c:558
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! : 1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! :   1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 584  [0x1059d709c]  sd_fft.c:567
+            + ! : | + ! 10 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 568,756,...  [0x1059d6cec,0x1059d6da8,...]  sd_fft.c:717
+            + ! : | + ! 5 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 612,712  [0x1059d70b8,0x1059d711c]  sd_fft.c:567
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 24  [0x1059d6e6c]  sd_fft.c:553
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 308  [0x1059d6f88]  sd_fft.c:559
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! 5 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 172,328  [0x1059d6f00,0x1059d6f9c]  sd_fft.c:559
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 444,684  [0x1059d7010,0x1059d7100]  sd_fft.c:567
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 360  [0x1059d6fbc]  sd_fft.c:561
+            + ! : | + ! 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 520,548,...  [0x1059d705c,0x1059d7078,...]  sd_fft.c:567
+            + ! : | + ! 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 116,216,...  [0x1059d6ec8,0x1059d6f2c,...]  sd_fft.c:559
+            + ! : | + ! 2 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 880  [0x1059d6a84]  sd_fft.c:0
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! 1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:0
+            + ! : | + ! 1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 444  [0x1059d7010]  sd_fft.c:567
+            + ! : | + ! 1 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 1368  [0x1059d20f4]  sd_fft.c:999
+            + ! : | + 43 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 856  [0x1059d6a6c]  sd_fft.c:719
+            + ! : | + ! 14 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 132,212,...  [0x1059d6b38,0x1059d6b88,...]  sd_fft.c:717
+            + ! : | + ! 9 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : 5 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 656,444,...  [0x1059d70e4,0x1059d7010,...]  sd_fft.c:567
+            + ! : | + ! : 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 104,144,...  [0x1059d6ebc,0x1059d6ee4,...]  sd_fft.c:559
+            + ! : | + ! 8 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : 5 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 460,516,...  [0x1059d7020,0x1059d7058,...]  sd_fft.c:567
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 156,200,...  [0x1059d6ef0,0x1059d6f1c,...]  sd_fft.c:559
+            + ! : | + ! 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 492,548,...  [0x1059d7040,0x1059d7078,...]  sd_fft.c:567
+            + ! : | + ! 3 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 656,472  [0x1059d70e4,0x1059d702c]  sd_fft.c:567
+            + ! : | + ! 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 88,344  [0x1059d6eac,0x1059d6fac]  sd_fft.c:559
+            + ! : | + ! 2 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828,852  [0x1059d6df0,0x1059d6e08]  sd_fft.c:0
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 380  [0x1059d6fd0]  sd_fft.c:561
+            + ! : | + 37 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 832  [0x1059d6a54]  sd_fft.c:719
+            + ! : | + ! 10 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 324,152,...  [0x1059d6bf8,0x1059d6b4c,...]  sd_fft.c:717
+            + ! : | + ! 8 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 132,232,...  [0x1059d6ed8,0x1059d6f3c,...]  sd_fft.c:559
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 488,560,...  [0x1059d703c,0x1059d7084,...]  sd_fft.c:567
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 360  [0x1059d6fbc]  sd_fft.c:561
+            + ! : | + ! 6 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 108,208,...  [0x1059d6ec0,0x1059d6f24,...]  sd_fft.c:559
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 48  [0x1059d6e84]  sd_fft.c:558
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 464  [0x1059d7024]  sd_fft.c:567
+            + ! : | + ! 5 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 444,524,...  [0x1059d7010,0x1059d7060,...]  sd_fft.c:567
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 276,304  [0x1059d6f68,0x1059d6f84]  sd_fft.c:559
+            + ! : | + ! 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 444  [0x1059d7010]  sd_fft.c:567
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 304  [0x1059d6f84]  sd_fft.c:559
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 372  [0x1059d6fc8]  sd_fft.c:562
+            + ! : | + 36 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 728,196,...  [0x1059d69ec,0x1059d67d8,...]  sd_fft.c:719
+            + ! : | + 35 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 880  [0x1059d6a84]  sd_fft.c:719
+            + ! : | + ! 11 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 360,132,...  [0x1059d6c1c,0x1059d6b38,...]  sd_fft.c:717
+            + ! : | + ! 8 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 104,172,...  [0x1059d6ebc,0x1059d6f00,...]  sd_fft.c:559
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 472,528,...  [0x1059d702c,0x1059d7064,...]  sd_fft.c:567
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 48  [0x1059d6e84]  sd_fft.c:558
+            + ! : | + ! 7 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 612,656,...  [0x1059d70b8,0x1059d70e4,...]  sd_fft.c:567
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 24  [0x1059d6e6c]  sd_fft.c:553
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 196  [0x1059d6f18]  sd_fft.c:559
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 380  [0x1059d6fd0]  sd_fft.c:561
+            + ! : | + ! 7 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 104,144  [0x1059d6ebc,0x1059d6ee4]  sd_fft.c:559
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 444,528,...  [0x1059d7010,0x1059d7064,...]  sd_fft.c:567
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 744  [0x1059d713c]  sd_fft.c:571
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 520  [0x1059d705c]  sd_fft.c:567
+            + ! : | + 14 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! 7 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 444,656,...  [0x1059d7010,0x1059d70e4,...]  sd_fft.c:567
+            + ! : | + ! 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 228,272,...  [0x1059d6f38,0x1059d6f64,...]  sd_fft.c:559
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 24  [0x1059d6e6c]  sd_fft.c:553
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 360  [0x1059d6fbc]  sd_fft.c:561
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + 12 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! 5 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 76,180,...  [0x1059d6ea0,0x1059d6f08,...]  sd_fft.c:559
+            + ! : | + ! 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 684,712  [0x1059d7100,0x1059d711c]  sd_fft.c:567
+            + ! : | + ! 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 744  [0x1059d713c]  sd_fft.c:571
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 48  [0x1059d6e84]  sd_fft.c:558
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + 10 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 68,88,...  [0x1059d6af8,0x1059d6b0c,...]  sd_fft.c:717
+            + ! : | + 8 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 328,76,...  [0x1059d6f9c,0x1059d6ea0,...]  sd_fft.c:559
+            + ! : | + ! 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 612  [0x1059d70b8]  sd_fft.c:567
+            + ! : | + 4 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852,876  [0x1059d6e08,0x1059d6e20]  sd_fft.c:0
+            + ! : | + 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 272  [0x1059d6f64]  sd_fft.c:559
+            + ! : | + 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 16  [0x1059d6e64]  sd_fft.c:551
+            + ! : | + 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 676  [0x1059d70f8]  sd_fft.c:567
+            + ! : | + 1 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 172  [0x1059d1c48]  sd_fft.c:1011
+            + ! : | + 1 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 0  [0x1059d1b9c]  sd_fft.c:972
+            + ! : | + 1 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 56  [0x1059d1bd4]  sd_fft.c:973
+            + ! : | + 1 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 160  [0x1059d1c3c]  sd_fft.c:987
+            + ! : | +   1 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 56  [0x1059d1bd4]  sd_fft.c:973
+            + ! : | 103 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 112  [0x1059d1c0c]  sd_fft.c:981
+            + ! : | + 100 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 112  [0x1059d1c0c]  sd_fft.c:981
+            + ! : | + ! 76 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1984,1956,...  [0x1059d3288,0x1059d326c,...]  sd_fft.c:957
+            + ! : | + ! 24 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2092  [0x1059d32f4]  sd_fft.c:958
+            + ! : | + 2 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2348  [0x1059d33f4]  sd_fft.c:961
+            + ! : | + 1 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 124  [0x1059d1c18]  sd_fft.c:0
+            + ! : | 3 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 300  [0x1059d1cc8]  sd_fft.c:997
+            + ! : | + 1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 528  [0x1059d7064]  sd_fft.c:567
+            + ! : | + 1 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 880  [0x1059d6a84]  sd_fft.c:719
+            + ! : | + ! 1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + !   1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 528  [0x1059d7064]  sd_fft.c:567
+            + ! : | + 1 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 768  [0x1059d6a14]  sd_fft.c:719
+            + ! : | 2 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 1332  [0x1059d20d0]  sd_fft.c:998
+            + ! : | + 1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 356  [0x1059d6c18]  sd_fft.c:717
+            + ! : | + 1 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 648  [0x1059d699c]  sd_fft.c:719
+            + ! : | 1 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 856  [0x1059d6a6c]  sd_fft.c:719
+            + ! : | + 1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | +   1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 328  [0x1059d6f9c]  sd_fft.c:559
+            + ! : | 1 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 880  [0x1059d6a84]  sd_fft.c:719
+            + ! : | + 1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 636  [0x1059d6d30]  sd_fft.c:717
+            + ! : | 1 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 728  [0x1059d69ec]  sd_fft.c:719
+            + ! : | 1 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 16  [0x1059d1bac]  sd_fft.c:972
+            + ! : | 1 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 252  [0x1059d1c98]  sd_fft.c:996
+            + ! : | + 1 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 252  [0x1059d1c98]  sd_fft.c:996
+            + ! : | +   1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 552  [0x1059d2cf0]  sd_fft.c:928
+            + ! : | 1 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 1368  [0x1059d20f4]  sd_fft.c:999
+            + ! : |   1 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 880  [0x1059d6a84]  sd_fft.c:719
+            + ! : |     1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : |       1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 328  [0x1059d6f9c]  sd_fft.c:559
+            + ! : 268 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 112  [0x1059d1c0c]  sd_fft.c:981
+            + ! :   180 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 112  [0x1059d1c0c]  sd_fft.c:981
+            + ! :   + 171 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 216,324,...  [0x1059d2ba0,0x1059d2c0c,...]  sd_fft.c:928
+            + ! :   + 6 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1132,1232,...  [0x1059d2f34,0x1059d2f98,...]  sd_fft.c:915
+            + ! :   + 1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 88  [0x1059d2b20]  sd_fft.c:878
+            + ! :   + 1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 112  [0x1059d2b38]  sd_fft.c:897
+            + ! :   + 1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 912  [0x1059d2e58]  sd_fft.c:929
+            + ! :   52 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1664  [0x1059d3148]  sd_fft.c:939
+            + ! :   + 24 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1664  [0x1059d3148]  sd_fft.c:939
+            + ! :   + ! 18 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1956,2048,...  [0x1059d326c,0x1059d32c8,...]  sd_fft.c:957
+            + ! :   + ! 6 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2092  [0x1059d32f4]  sd_fft.c:958
+            + ! :   + 20 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1956,1968,...  [0x1059d326c,0x1059d3278,...]  sd_fft.c:957
+            + ! :   + 8 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2092  [0x1059d32f4]  sd_fft.c:958
+            + ! :   19 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1628  [0x1059d3124]  sd_fft.c:939
+            + ! :   + 19 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1628  [0x1059d3124]  sd_fft.c:939
+            + ! :   +   12 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2020,1968,...  [0x1059d32ac,0x1059d3278,...]  sd_fft.c:957
+            + ! :   +   7 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2092  [0x1059d32f4]  sd_fft.c:958
+            + ! :   17 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1592  [0x1059d3100]  sd_fft.c:939
+            + ! :     17 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1592  [0x1059d3100]  sd_fft.c:939
+            + ! :       16 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1956,2084,...  [0x1059d326c,0x1059d32ec,...]  sd_fft.c:957
+            + ! :       1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2092  [0x1059d32f4]  sd_fft.c:958
+            + ! 463 sd_fft_trunc_internal  (in libflint.25.0.dylib) + 200  [0x1059d0814]  sd_fft.c:1184
+            + !   238 sd_fft_trunc_block  (in libflint.25.0.dylib) + 1116  [0x1059d287c]  sd_fft.c:1085
+            + !   | 159 sd_fft_trunc_block  (in libflint.25.0.dylib) + 1116  [0x1059d287c]  sd_fft.c:1085
+            + !   | + 110 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 216,584,...  [0x1059d2ba0,0x1059d2d10,...]  sd_fft.c:928
+            + !   | + 47 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1024,1088,...  [0x1059d2ec8,0x1059d2f08,...]  sd_fft.c:915
+            + !   | + 1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 912  [0x1059d2e58]  sd_fft.c:929
+            + !   | + 1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 920  [0x1059d2e60]  sd_fft.c:930
+            + !   | 35 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1664  [0x1059d3148]  sd_fft.c:939
+            + !   | + 18 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1664  [0x1059d3148]  sd_fft.c:939
+            + !   | + ! 14 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1984,1928,...  [0x1059d3288,0x1059d3250,...]  sd_fft.c:957
+            + !   | + ! 4 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2092  [0x1059d32f4]  sd_fft.c:958
+            + !   | + 12 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1956,1984,...  [0x1059d326c,0x1059d3288,...]  sd_fft.c:957
+            + !   | + 4 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2092  [0x1059d32f4]  sd_fft.c:958
+            + !   | + 1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 36  [0x1059d2aec]  sd_fft.c:875
+            + !   | 22 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1628  [0x1059d3124]  sd_fft.c:939
+            + !   | + 22 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1628  [0x1059d3124]  sd_fft.c:939
+            + !   | +   14 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1928,1984,...  [0x1059d3250,0x1059d3288,...]  sd_fft.c:957
+            + !   | +   7 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2092  [0x1059d32f4]  sd_fft.c:958
+            + !   | +   1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 88  [0x1059d2b20]  sd_fft.c:878
+            + !   | 21 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1592  [0x1059d3100]  sd_fft.c:939
+            + !   | + 21 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1592  [0x1059d3100]  sd_fft.c:939
+            + !   | +   10 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1960,1940,...  [0x1059d3270,0x1059d325c,...]  sd_fft.c:957
+            + !   | +   4 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2228,2256,...  [0x1059d337c,0x1059d3398,...]  sd_fft.c:950
+            + !   | +   4 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2092  [0x1059d32f4]  sd_fft.c:958
+            + !   | +   2 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2300  [0x1059d33c4]  sd_fft.c:951
+            + !   | +   1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2316  [0x1059d33d4]  sd_fft.c:961
+            + !   | 1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2344  [0x1059d33f0]  sd_fft.c:961
+            + !   204 sd_fft_trunc_block  (in libflint.25.0.dylib) + 1024  [0x1059d2820]  sd_fft.c:1081
+            + !   | 135 sd_fft_moth_trunc_block_2_4_1  (in libflint.25.0.dylib) + 356,276,...  [0x1059d48a8,0x1059d4858,...]  sd_fft.c:852
+            + !   | 36 sd_fft_trunc_block  (in libflint.25.0.dylib) + 1024  [0x1059d2820]  sd_fft.c:1081
+            + !   | + 32 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1956,2064,...  [0x1059d326c,0x1059d32d8,...]  sd_fft.c:957
+            + !   | + 3 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2092  [0x1059d32f4]  sd_fft.c:958
+            + !   | + 1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1832  [0x1059d31f0]  sd_fft.c:942
+            + !   | 15 sd_fft_trunc_block  (in libflint.25.0.dylib) + 848,108,...  [0x1059d2770,0x1059d248c,...]  sd_fft.c:1052
+            + !   | 12 sd_fft_trunc_block  (in libflint.25.0.dylib) + 164,184,...  [0x1059d24c4,0x1059d24d8,...]  sd_fft.c:1051
+            + !   | 5 sd_fft_trunc_block  (in libflint.25.0.dylib) + 1464,1560,...  [0x1059d29d8,0x1059d2a38,...]  sd_fft.c:1131
+            + !   | 1 sd_fft_trunc_block  (in libflint.25.0.dylib) + 24  [0x1059d2438]  sd_fft.c:1022
+            + !   14 sd_fft_moth_trunc_block_4_2_0  (in libflint.25.0.dylib) + 228,384,...  [0x1059d5a34,0x1059d5ad0,...]  sd_fft.c:858
+            + !   4 sd_fft_moth_trunc_block_4_3_0  (in libflint.25.0.dylib) + 176,368,...  [0x1059d5d88,0x1059d5e48,...]  sd_fft.c:859
+            + !   2 sd_fft_trunc_block  (in libflint.25.0.dylib) + 1408  [0x1059d29a0]  sd_fft.c:1110
+            + !   1 sd_fft_trunc_block  (in libflint.25.0.dylib) + 1024  [0x1059d2820]  sd_fft.c:0
+            + 1784 fft_worker_func  (in libflint.25.0.dylib) + 116  [0x1059abc68]  mpn_mul.c:1527
+            + ! 1312 sd_fft_trunc_internal  (in libflint.25.0.dylib) + 284  [0x1059d0868]  sd_fft.c:1188
+            + ! : 1030 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 160  [0x1059d1c3c]  sd_fft.c:987
+            + ! : | 911 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 160  [0x1059d1c3c]  sd_fft.c:987
+            + ! : | + 193 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 1332  [0x1059d20d0]  sd_fft.c:998
+            + ! : | + ! 42 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 792,728,...  [0x1059d6a2c,0x1059d69ec,...]  sd_fft.c:719
+            + ! : | + ! 41 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 880  [0x1059d6a84]  sd_fft.c:719
+            + ! : | + ! : 9 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : | 5 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 200,104,...  [0x1059d6f1c,0x1059d6ebc,...]  sd_fft.c:559
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 584,612  [0x1059d709c,0x1059d70b8]  sd_fft.c:567
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 24  [0x1059d6e6c]  sd_fft.c:553
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 360  [0x1059d6fbc]  sd_fft.c:561
+            + ! : | + ! : 9 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 184,280,...  [0x1059d6b6c,0x1059d6bcc,...]  sd_fft.c:717
+            + ! : | + ! : 8 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : | 6 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 656,472,...  [0x1059d70e4,0x1059d702c,...]  sd_fft.c:567
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 200  [0x1059d6f1c]  sd_fft.c:559
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 744  [0x1059d713c]  sd_fft.c:571
+            + ! : | + ! : 6 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : | 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 428,400  [0x1059d7000,0x1059d6fe4]  sd_fft.c:566
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 484,684  [0x1059d7038,0x1059d7100]  sd_fft.c:567
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 224  [0x1059d6f34]  sd_fft.c:559
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 12  [0x1059d6e60]  sd_fft.c:548
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 172,272  [0x1059d6f00,0x1059d6f64]  sd_fft.c:559
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 464,548,...  [0x1059d7024,0x1059d7078,...]  sd_fft.c:567
+            + ! : | + ! 40 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 856  [0x1059d6a6c]  sd_fft.c:719
+            + ! : | + ! : 12 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 340,720,...  [0x1059d6c08,0x1059d6d84,...]  sd_fft.c:717
+            + ! : | + ! : 10 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : | 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 528,556,...  [0x1059d7064,0x1059d7080,...]  sd_fft.c:567
+            + ! : | + ! : | 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 328,200  [0x1059d6f9c,0x1059d6f1c]  sd_fft.c:559
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 360  [0x1059d6fbc]  sd_fft.c:561
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 24  [0x1059d6e6c]  sd_fft.c:553
+            + ! : | + ! : 7 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : | 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 528,556,...  [0x1059d7064,0x1059d7080,...]  sd_fft.c:567
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 104,228  [0x1059d6ebc,0x1059d6f38]  sd_fft.c:559
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 360  [0x1059d6fbc]  sd_fft.c:561
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! : 4 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : | 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 356,328  [0x1059d6fb8,0x1059d6f9c]  sd_fft.c:559
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 688  [0x1059d7104]  sd_fft.c:567
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 492,520,...  [0x1059d7040,0x1059d705c,...]  sd_fft.c:567
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 12  [0x1059d6e60]  sd_fft.c:548
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 272  [0x1059d6f64]  sd_fft.c:559
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 744  [0x1059d713c]  sd_fft.c:571
+            + ! : | + ! : 1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:0
+            + ! : | + ! 29 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 832  [0x1059d6a54]  sd_fft.c:719
+            + ! : | + ! : 10 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : | 5 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 204,120,...  [0x1059d6f20,0x1059d6ecc,...]  sd_fft.c:559
+            + ! : | + ! : | 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 552,652  [0x1059d707c,0x1059d70e0]  sd_fft.c:567
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 48  [0x1059d6e84]  sd_fft.c:558
+            + ! : | + ! : 7 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 280,452,...  [0x1059d6bcc,0x1059d6c78,...]  sd_fft.c:717
+            + ! : | + ! : 5 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : | 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 616,432,...  [0x1059d70bc,0x1059d7004,...]  sd_fft.c:567
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 260  [0x1059d6f58]  sd_fft.c:559
+            + ! : | + ! : 4 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 136,164  [0x1059d6edc,0x1059d6ef8]  sd_fft.c:559
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 380  [0x1059d6fd0]  sd_fft.c:561
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 492  [0x1059d7040]  sd_fft.c:567
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 580,624  [0x1059d7098,0x1059d70c4]  sd_fft.c:567
+            + ! : | + ! : 1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:0
+            + ! : | + ! 11 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : 7 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 104,144,...  [0x1059d6ebc,0x1059d6ee4,...]  sd_fft.c:559
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 528,656  [0x1059d7064,0x1059d70e4]  sd_fft.c:567
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 360  [0x1059d6fbc]  sd_fft.c:561
+            + ! : | + ! 7 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 332,432,...  [0x1059d6c00,0x1059d6c64,...]  sd_fft.c:717
+            + ! : | + ! 6 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 76,172,...  [0x1059d6ea0,0x1059d6f00,...]  sd_fft.c:559
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 444,612,...  [0x1059d7010,0x1059d70b8,...]  sd_fft.c:567
+            + ! : | + ! 5 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 216,88,...  [0x1059d6f2c,0x1059d6eac,...]  sd_fft.c:559
+            + ! : | + ! 5 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 720,444,...  [0x1059d7124,0x1059d7010,...]  sd_fft.c:567
+            + ! : | + ! 3 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876,828  [0x1059d6e20,0x1059d6df0]  sd_fft.c:0
+            + ! : | + ! 3 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 472,584  [0x1059d702c,0x1059d709c]  sd_fft.c:567
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 104  [0x1059d6ebc]  sd_fft.c:559
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + 188 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 300  [0x1059d1cc8]  sd_fft.c:997
+            + ! : | + ! 41 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 832  [0x1059d6a54]  sd_fft.c:719
+            + ! : | + ! : 10 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : | 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 204,228,...  [0x1059d6f20,0x1059d6f38,...]  sd_fft.c:559
+            + ! : | + ! : | 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 360,380  [0x1059d6fbc,0x1059d6fd0]  sd_fft.c:561
+            + ! : | + ! : | 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 460,584,...  [0x1059d7020,0x1059d709c,...]  sd_fft.c:567
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 744  [0x1059d713c]  sd_fft.c:571
+            + ! : | + ! : 10 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 328,104,...  [0x1059d6bfc,0x1059d6b1c,...]  sd_fft.c:717
+            + ! : | + ! : 8 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : | 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 204,208,...  [0x1059d6f20,0x1059d6f24,...]  sd_fft.c:559
+            + ! : | + ! : | 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 520,556,...  [0x1059d705c,0x1059d7080,...]  sd_fft.c:567
+            + ! : | + ! : 7 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : | 6 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 580,444,...  [0x1059d7098,0x1059d7010,...]  sd_fft.c:567
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 24  [0x1059d6e6c]  sd_fft.c:553
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 216,304  [0x1059d6f2c,0x1059d6f84]  sd_fft.c:559
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 676,708  [0x1059d70f8,0x1059d7118]  sd_fft.c:567
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! : 1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:0
+            + ! : | + ! 39 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 728,792,...  [0x1059d69ec,0x1059d6a2c,...]  sd_fft.c:719
+            + ! : | + ! 36 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 880  [0x1059d6a84]  sd_fft.c:719
+            + ! : | + ! : 8 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : | 5 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 172,104,...  [0x1059d6f00,0x1059d6ebc,...]  sd_fft.c:559
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 528  [0x1059d7064]  sd_fft.c:567
+            + ! : | + ! : 7 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : | 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 196,224,...  [0x1059d6f18,0x1059d6f34,...]  sd_fft.c:559
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 24  [0x1059d6e6c]  sd_fft.c:553
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 380  [0x1059d6fd0]  sd_fft.c:561
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 484  [0x1059d7038]  sd_fft.c:567
+            + ! : | + ! : 7 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : | 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 200,172,...  [0x1059d6f1c,0x1059d6f00,...]  sd_fft.c:559
+            + ! : | + ! : | 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 584,656  [0x1059d709c,0x1059d70e4]  sd_fft.c:567
+            + ! : | + ! : 7 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 304,212,...  [0x1059d6be4,0x1059d6b88,...]  sd_fft.c:717
+            + ! : | + ! : 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 464,620,...  [0x1059d7024,0x1059d70c0,...]  sd_fft.c:567
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 88,172  [0x1059d6eac,0x1059d6f00]  sd_fft.c:559
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 32  [0x1059d6e74]  sd_fft.c:556
+            + ! : | + ! 32 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 856  [0x1059d6a6c]  sd_fft.c:719
+            + ! : | + ! : 7 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : | 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 104,200,...  [0x1059d6ebc,0x1059d6f1c,...]  sd_fft.c:559
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 360  [0x1059d6fbc]  sd_fft.c:561
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 712  [0x1059d711c]  sd_fft.c:567
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 744  [0x1059d713c]  sd_fft.c:571
+            + ! : | + ! : 7 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : | 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 300,272  [0x1059d6f80,0x1059d6f64]  sd_fft.c:559
+            + ! : | + ! : | 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 584,528  [0x1059d709c,0x1059d7064]  sd_fft.c:567
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! : 5 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : | 5 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 456,460,...  [0x1059d701c,0x1059d7020,...]  sd_fft.c:567
+            + ! : | + ! : 5 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 364,408,...  [0x1059d6c20,0x1059d6c4c,...]  sd_fft.c:717
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 172,216,...  [0x1059d6f00,0x1059d6f2c,...]  sd_fft.c:559
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 464,592,...  [0x1059d7024,0x1059d70a4,...]  sd_fft.c:567
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 360  [0x1059d6fbc]  sd_fft.c:561
+            + ! : | + ! 16 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 560,432,...  [0x1059d6ce4,0x1059d6c64,...]  sd_fft.c:717
+            + ! : | + ! 7 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 76,152,...  [0x1059d6ea0,0x1059d6eec,...]  sd_fft.c:559
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 656,712  [0x1059d70e4,0x1059d711c]  sd_fft.c:567
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 24  [0x1059d6e6c]  sd_fft.c:553
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 744  [0x1059d713c]  sd_fft.c:571
+            + ! : | + ! 6 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 104,144,...  [0x1059d6ebc,0x1059d6ee4,...]  sd_fft.c:559
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 712  [0x1059d711c]  sd_fft.c:567
+            + ! : | + ! 4 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 172,376  [0x1059d6f00,0x1059d6fcc]  sd_fft.c:559
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 712  [0x1059d711c]  sd_fft.c:567
+            + ! : | + ! 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 592  [0x1059d70a4]  sd_fft.c:567
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 32  [0x1059d6e74]  sd_fft.c:556
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 344  [0x1059d6fac]  sd_fft.c:559
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 360  [0x1059d6fbc]  sd_fft.c:561
+            + ! : | + ! 1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:0
+            + ! : | + ! 1 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 300  [0x1059d1cc8]  sd_fft.c:997
+            + ! : | + 188 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 1368  [0x1059d20f4]  sd_fft.c:999
+            + ! : | + ! 43 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 880  [0x1059d6a84]  sd_fft.c:719
+            + ! : | + ! : 12 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : | 7 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 456,556,...  [0x1059d701c,0x1059d7080,...]  sd_fft.c:567
+            + ! : | + ! : | 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 168,132,...  [0x1059d6efc,0x1059d6ed8,...]  sd_fft.c:559
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 428  [0x1059d7000]  sd_fft.c:566
+            + ! : | + ! : 12 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : | 5 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 144,104,...  [0x1059d6ee4,0x1059d6ebc,...]  sd_fft.c:559
+            + ! : | + ! : | 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! : | 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 472,556,...  [0x1059d702c,0x1059d7080,...]  sd_fft.c:567
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 744  [0x1059d713c]  sd_fft.c:571
+            + ! : | + ! : 8 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : | 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 76,172,...  [0x1059d6ea0,0x1059d6f00,...]  sd_fft.c:559
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 48  [0x1059d6e84]  sd_fft.c:558
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 556,656  [0x1059d7080,0x1059d70e4]  sd_fft.c:567
+            + ! : | + ! : 7 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 68,212,...  [0x1059d6af8,0x1059d6b88,...]  sd_fft.c:717
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 88,172  [0x1059d6eac,0x1059d6f00]  sd_fft.c:559
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! : 1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:0
+            + ! : | + ! 43 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 396,432,...  [0x1059d68a0,0x1059d68c4,...]  sd_fft.c:719
+            + ! : | + ! 31 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 856  [0x1059d6a6c]  sd_fft.c:719
+            + ! : | + ! : 10 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 432,280,...  [0x1059d6c64,0x1059d6bcc,...]  sd_fft.c:717
+            + ! : | + ! : 7 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : | 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 656,684  [0x1059d70e4,0x1059d7100]  sd_fft.c:567
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 400,428  [0x1059d6fe4,0x1059d7000]  sd_fft.c:566
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 48  [0x1059d6e84]  sd_fft.c:558
+            + ! : | + ! : 6 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : | 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 104,144,...  [0x1059d6ebc,0x1059d6ee4,...]  sd_fft.c:559
+            + ! : | + ! : | 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 444,712  [0x1059d7010,0x1059d711c]  sd_fft.c:567
+            + ! : | + ! : 5 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : | 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 172,200,...  [0x1059d6f00,0x1059d6f1c,...]  sd_fft.c:559
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 556,584  [0x1059d7080,0x1059d709c]  sd_fft.c:567
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 648,724  [0x1059d70dc,0x1059d7128]  sd_fft.c:567
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! 28 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 832  [0x1059d6a54]  sd_fft.c:719
+            + ! : | + ! : 8 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 400,376,...  [0x1059d6c44,0x1059d6c2c,...]  sd_fft.c:717
+            + ! : | + ! : 7 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : | 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 444,528,...  [0x1059d7010,0x1059d7064,...]  sd_fft.c:567
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 76,164  [0x1059d6ea0,0x1059d6ef8]  sd_fft.c:559
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 744  [0x1059d713c]  sd_fft.c:571
+            + ! : | + ! : 6 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 472,612  [0x1059d702c,0x1059d70b8]  sd_fft.c:567
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 48  [0x1059d6e84]  sd_fft.c:558
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 200  [0x1059d6f1c]  sd_fft.c:559
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! : | 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 744  [0x1059d713c]  sd_fft.c:571
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 464,620  [0x1059d7024,0x1059d70c0]  sd_fft.c:567
+            + ! : | + ! : 2 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852,876  [0x1059d6e08,0x1059d6e20]  sd_fft.c:0
+            + ! : | + ! : 2 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : | 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 528  [0x1059d7064]  sd_fft.c:567
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 32  [0x1059d6e74]  sd_fft.c:556
+            + ! : | + ! 13 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : 7 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 556,472,...  [0x1059d7080,0x1059d702c,...]  sd_fft.c:567
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 160,280,...  [0x1059d6ef4,0x1059d6f6c,...]  sd_fft.c:559
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 360  [0x1059d6fbc]  sd_fft.c:561
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 744  [0x1059d713c]  sd_fft.c:571
+            + ! : | + ! 13 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 812,920,...  [0x1059d6de0,0x1059d6e4c,...]  sd_fft.c:717
+            + ! : | + ! 10 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : 5 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 444,472,...  [0x1059d7010,0x1059d702c,...]  sd_fft.c:567
+            + ! : | + ! : 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 272,172,...  [0x1059d6f64,0x1059d6f00,...]  sd_fft.c:559
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! 4 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 656,712  [0x1059d70e4,0x1059d711c]  sd_fft.c:567
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 48  [0x1059d6e84]  sd_fft.c:558
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 104  [0x1059d6ebc]  sd_fft.c:559
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 216  [0x1059d6f2c]  sd_fft.c:559
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 380  [0x1059d6fd0]  sd_fft.c:561
+            + ! : | + ! 1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:0
+            + ! : | + 159 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 252  [0x1059d1c98]  sd_fft.c:996
+            + ! : | + ! 159 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 252  [0x1059d1c98]  sd_fft.c:996
+            + ! : | + !   158 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 216,860,...  [0x1059d2ba0,0x1059d2e24,...]  sd_fft.c:928
+            + ! : | + !   1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 64  [0x1059d2b08]  sd_fft.c:875
+            + ! : | + 41 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 856  [0x1059d6a6c]  sd_fft.c:719
+            + ! : | + ! 11 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 520,132,...  [0x1059d6cbc,0x1059d6b38,...]  sd_fft.c:717
+            + ! : | + ! 9 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 100,188,...  [0x1059d6eb8,0x1059d6f10,...]  sd_fft.c:559
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 560,588,...  [0x1059d7084,0x1059d70a0,...]  sd_fft.c:567
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 380  [0x1059d6fd0]  sd_fft.c:561
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 744  [0x1059d713c]  sd_fft.c:571
+            + ! : | + ! 5 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 244,144,...  [0x1059d6f48,0x1059d6ee4,...]  sd_fft.c:559
+            + ! : | + ! 5 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 144,200,...  [0x1059d6ee4,0x1059d6f1c,...]  sd_fft.c:559
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 472,712  [0x1059d702c,0x1059d711c]  sd_fft.c:567
+            + ! : | + ! 5 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 24  [0x1059d6e6c]  sd_fft.c:553
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 584,712  [0x1059d709c,0x1059d711c]  sd_fft.c:567
+            + ! : | + ! 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 492,548,...  [0x1059d7040,0x1059d7078,...]  sd_fft.c:567
+            + ! : | + ! 2 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:0
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 32  [0x1059d6e74]  sd_fft.c:556
+            + ! : | + 37 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 832  [0x1059d6a54]  sd_fft.c:719
+            + ! : | + ! 10 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 580,680  [0x1059d7098,0x1059d70fc]  sd_fft.c:567
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 28  [0x1059d6e70]  sd_fft.c:554
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 48  [0x1059d6e84]  sd_fft.c:558
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 148  [0x1059d6ee8]  sd_fft.c:559
+            + ! : | + ! 9 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 252,280,...  [0x1059d6bb0,0x1059d6bcc,...]  sd_fft.c:717
+            + ! : | + ! 7 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 548,592,...  [0x1059d7078,0x1059d70a4,...]  sd_fft.c:567
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 136,164,...  [0x1059d6edc,0x1059d6ef8,...]  sd_fft.c:559
+            + ! : | + ! 6 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 488,516,...  [0x1059d703c,0x1059d7058,...]  sd_fft.c:567
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 204  [0x1059d6f20]  sd_fft.c:559
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 380  [0x1059d6fd0]  sd_fft.c:561
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 744  [0x1059d713c]  sd_fft.c:571
+            + ! : | + ! 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 496,552  [0x1059d7044,0x1059d707c]  sd_fft.c:567
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 332  [0x1059d6fa0]  sd_fft.c:559
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! 1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:0
+            + ! : | + 33 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 424,448,...  [0x1059d68bc,0x1059d68d4,...]  sd_fft.c:719
+            + ! : | + 31 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 880  [0x1059d6a84]  sd_fft.c:719
+            + ! : | + ! 9 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! : 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 76,104,...  [0x1059d6ea0,0x1059d6ebc,...]  sd_fft.c:559
+            + ! : | + ! : 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 528,472,...  [0x1059d7064,0x1059d702c,...]  sd_fft.c:567
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 360  [0x1059d6fbc]  sd_fft.c:561
+            + ! : | + ! 9 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 88,616,...  [0x1059d6b0c,0x1059d6d1c,...]  sd_fft.c:717
+            + ! : | + ! 6 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 300,228  [0x1059d6f80,0x1059d6f38]  sd_fft.c:559
+            + ! : | + ! : 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 612,584  [0x1059d70b8,0x1059d709c]  sd_fft.c:567
+            + ! : | + ! 3 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! : 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 296,352  [0x1059d6f7c,0x1059d6fb4]  sd_fft.c:559
+            + ! : | + ! : 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 712  [0x1059d711c]  sd_fft.c:567
+            + ! : | + ! 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059d6ff4]  sd_fft.c:566
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 380  [0x1059d6fd0]  sd_fft.c:561
+            + ! : | + ! 1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:0
+            + ! : | + 10 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 180,212,...  [0x1059d6b68,0x1059d6b88,...]  sd_fft.c:717
+            + ! : | + 9 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + ! : | + ! 7 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 104,144,...  [0x1059d6ebc,0x1059d6ee4,...]  sd_fft.c:559
+            + ! : | + ! 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 556,684  [0x1059d7080,0x1059d7100]  sd_fft.c:567
+            + ! : | + 6 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + ! 3 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 444,584,...  [0x1059d7010,0x1059d709c,...]  sd_fft.c:567
+            + ! : | + ! 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 360  [0x1059d6fbc]  sd_fft.c:561
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 308  [0x1059d6f88]  sd_fft.c:559
+            + ! : | + 6 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! 4 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 444,472,...  [0x1059d7010,0x1059d702c,...]  sd_fft.c:567
+            + ! : | + ! 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 144,200  [0x1059d6ee4,0x1059d6f1c]  sd_fft.c:559
+            + ! : | + 2 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 520,648  [0x1059d705c,0x1059d70dc]  sd_fft.c:567
+            + ! : | + 2 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 832,880  [0x1059d6a54,0x1059d6a84]  sd_fft.c:0
+            + ! : | + 2 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 136  [0x1059d1c24]  sd_fft.c:987
+            + ! : | + 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 116  [0x1059d6ec8]  sd_fft.c:559
+            + ! : | + 1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:0
+            + ! : | + 1 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 1416  [0x1059d2124]  sd_fft.c:0
+            + ! : | + 1 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 160  [0x1059d1c3c]  sd_fft.c:988
+            + ! : | 107 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 112  [0x1059d1c0c]  sd_fft.c:981
+            + ! : | + 105 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 112  [0x1059d1c0c]  sd_fft.c:981
+            + ! : | + ! 88 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1956,1984,...  [0x1059d326c,0x1059d3288,...]  sd_fft.c:957
+            + ! : | + ! 17 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2092  [0x1059d32f4]  sd_fft.c:958
+            + ! : | + 1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2348  [0x1059d33f4]  sd_fft.c:961
+            + ! : | + 1 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 88  [0x1059d1bf4]  sd_fft.c:981
+            + ! : | 3 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 856  [0x1059d6a6c]  sd_fft.c:719
+            + ! : | + 2 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 152,268  [0x1059d6b4c,0x1059d6bc0]  sd_fft.c:717
+            + ! : | + 1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | +   1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 528  [0x1059d7064]  sd_fft.c:567
+            + ! : | 3 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 252  [0x1059d1c98]  sd_fft.c:996
+            + ! : | + 3 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 252  [0x1059d1c98]  sd_fft.c:996
+            + ! : | +   3 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 528,628,...  [0x1059d2cd8,0x1059d2d3c,...]  sd_fft.c:928
+            + ! : | 2 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 832  [0x1059d6a54]  sd_fft.c:719
+            + ! : | + 1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | + ! 1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 516  [0x1059d7058]  sd_fft.c:567
+            + ! : | + 1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 272  [0x1059d6bc4]  sd_fft.c:717
+            + ! : | 2 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 300  [0x1059d1cc8]  sd_fft.c:997
+            + ! : | + 1 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 832  [0x1059d6a54]  sd_fft.c:719
+            + ! : | + ! 1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+            + ! : | + !   1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 152  [0x1059d6eec]  sd_fft.c:559
+            + ! : | + 1 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 856  [0x1059d6a6c]  sd_fft.c:719
+            + ! : | +   1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+            + ! : | +     1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 200  [0x1059d6f1c]  sd_fft.c:559
+            + ! : | 1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 756  [0x1059d6da8]  sd_fft.c:717
+            + ! : | 1 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 448  [0x1059d68d4]  sd_fft.c:719
+            + ! : 282 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 112  [0x1059d1c0c]  sd_fft.c:981
+            + ! :   162 sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 112  [0x1059d1c0c]  sd_fft.c:981
+            + ! :   + 158 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 216,528,...  [0x1059d2ba0,0x1059d2cd8,...]  sd_fft.c:928
+            + ! :   + 3 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1024,1388,...  [0x1059d2ec8,0x1059d3034,...]  sd_fft.c:915
+            + ! :   + 1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 920  [0x1059d2e60]  sd_fft.c:930
+            + ! :   68 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1664  [0x1059d3148]  sd_fft.c:939
+            + ! :   + 30 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1664  [0x1059d3148]  sd_fft.c:939
+            + ! :   + ! 22 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2048,1956,...  [0x1059d32c8,0x1059d326c,...]  sd_fft.c:957
+            + ! :   + ! 8 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2092  [0x1059d32f4]  sd_fft.c:958
+            + ! :   + 29 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1956,1900,...  [0x1059d326c,0x1059d3234,...]  sd_fft.c:957
+            + ! :   + 8 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2092  [0x1059d32f4]  sd_fft.c:958
+            + ! :   + 1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2348  [0x1059d33f4]  sd_fft.c:961
+            + ! :   27 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1628  [0x1059d3124]  sd_fft.c:939
+            + ! :   + 27 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1628  [0x1059d3124]  sd_fft.c:939
+            + ! :   +   25 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1956,2044,...  [0x1059d326c,0x1059d32c4,...]  sd_fft.c:957
+            + ! :   +   1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 88  [0x1059d2b20]  sd_fft.c:878
+            + ! :   +   1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2092  [0x1059d32f4]  sd_fft.c:958
+            + ! :   25 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1592  [0x1059d3100]  sd_fft.c:939
+            + ! :     25 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1592  [0x1059d3100]  sd_fft.c:939
+            + ! :       15 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1956,1984,...  [0x1059d326c,0x1059d3288,...]  sd_fft.c:957
+            + ! :       7 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2092  [0x1059d32f4]  sd_fft.c:958
+            + ! :       1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 88  [0x1059d2b20]  sd_fft.c:878
+            + ! :       1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1832  [0x1059d31f0]  sd_fft.c:942
+            + ! :       1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2228  [0x1059d337c]  sd_fft.c:950
+            + ! 471 sd_fft_trunc_internal  (in libflint.25.0.dylib) + 200  [0x1059d0814]  sd_fft.c:1184
+            + ! : 243 sd_fft_trunc_block  (in libflint.25.0.dylib) + 1116  [0x1059d287c]  sd_fft.c:1085
+            + ! : | 154 sd_fft_trunc_block  (in libflint.25.0.dylib) + 1116  [0x1059d287c]  sd_fft.c:1085
+            + ! : | + 109 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 216,520,...  [0x1059d2ba0,0x1059d2cd0,...]  sd_fft.c:928
+            + ! : | + 41 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1024,1448,...  [0x1059d2ec8,0x1059d3070,...]  sd_fft.c:915
+            + ! : | + 1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 88  [0x1059d2b20]  sd_fft.c:878
+            + ! : | + 1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1520  [0x1059d30b8]  sd_fft.c:916
+            + ! : | + 1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 904  [0x1059d2e50]  sd_fft.c:929
+            + ! : | + 1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 920  [0x1059d2e60]  sd_fft.c:930
+            + ! : | 44 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1664  [0x1059d3148]  sd_fft.c:939
+            + ! : | + 23 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1664  [0x1059d3148]  sd_fft.c:939
+            + ! : | + ! 17 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2064,2084,...  [0x1059d32d8,0x1059d32ec,...]  sd_fft.c:957
+            + ! : | + ! 6 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2092  [0x1059d32f4]  sd_fft.c:958
+            + ! : | + 10 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1984,1932,...  [0x1059d3288,0x1059d3254,...]  sd_fft.c:957
+            + ! : | + 10 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2092  [0x1059d32f4]  sd_fft.c:958
+            + ! : | + 1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 36  [0x1059d2aec]  sd_fft.c:875
+            + ! : | 28 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1592  [0x1059d3100]  sd_fft.c:939
+            + ! : | + 27 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1592  [0x1059d3100]  sd_fft.c:939
+            + ! : | + ! 11 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1928,1984,...  [0x1059d3250,0x1059d3288,...]  sd_fft.c:957
+            + ! : | + ! 8 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2092  [0x1059d32f4]  sd_fft.c:958
+            + ! : | + ! 5 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2300  [0x1059d33c4]  sd_fft.c:951
+            + ! : | + ! 3 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2228,2256,...  [0x1059d337c,0x1059d3398,...]  sd_fft.c:950
+            + ! : | + 1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2344  [0x1059d33f0]  sd_fft.c:961
+            + ! : | 17 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1628  [0x1059d3124]  sd_fft.c:939
+            + ! : |   17 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1628  [0x1059d3124]  sd_fft.c:939
+            + ! : |     11 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1968,2064,...  [0x1059d3278,0x1059d32d8,...]  sd_fft.c:957
+            + ! : |     5 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2092  [0x1059d32f4]  sd_fft.c:958
+            + ! : |     1 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 88  [0x1059d2b20]  sd_fft.c:878
+            + ! : 211 sd_fft_trunc_block  (in libflint.25.0.dylib) + 1024  [0x1059d2820]  sd_fft.c:1081
+            + ! : | 146 sd_fft_moth_trunc_block_2_4_1  (in libflint.25.0.dylib) + 356,276,...  [0x1059d48a8,0x1059d4858,...]  sd_fft.c:852
+            + ! : | 24 sd_fft_trunc_block  (in libflint.25.0.dylib) + 204,284,...  [0x1059d24ec,0x1059d253c,...]  sd_fft.c:1052
+            + ! : | 19 sd_fft_trunc_block  (in libflint.25.0.dylib) + 1024  [0x1059d2820]  sd_fft.c:1081
+            + ! : | + 16 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2032,1984,...  [0x1059d32b8,0x1059d3288,...]  sd_fft.c:957
+            + ! : | + 3 sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 2092  [0x1059d32f4]  sd_fft.c:958
+            + ! : | 18 sd_fft_trunc_block  (in libflint.25.0.dylib) + 184,164,...  [0x1059d24d8,0x1059d24c4,...]  sd_fft.c:1051
+            + ! : | 3 sd_fft_trunc_block  (in libflint.25.0.dylib) + 1612,1572  [0x1059d2a6c,0x1059d2a44]  sd_fft.c:1131
+            + ! : | 1 sd_fft_trunc_block  (in libflint.25.0.dylib) + 24  [0x1059d2438]  sd_fft.c:1022
+            + ! : 12 sd_fft_moth_trunc_block_4_2_0  (in libflint.25.0.dylib) + 340,544,...  [0x1059d5aa4,0x1059d5b70,...]  sd_fft.c:858
+            + ! : 2 sd_fft_moth_trunc_block_4_3_0  (in libflint.25.0.dylib) + 344,540  [0x1059d5e30,0x1059d5ef4]  sd_fft.c:859
+            + ! : 1 sd_fft_trunc_block  (in libflint.25.0.dylib) + 1024  [0x1059d2820]  sd_fft.c:0
+            + ! : 1 sd_fft_trunc_block  (in libflint.25.0.dylib) + 1416  [0x1059d29a8]  sd_fft.c:1110
+            + ! : 1 sd_fft_trunc_block  (in libflint.25.0.dylib) + 1596  [0x1059d2a5c]  sd_fft.c:1131
+            + ! 1 sd_fft_trunc_internal  (in libflint.25.0.dylib) + 524  [0x1059d0958]  sd_fft.c:1200
+            + !   1 sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 832  [0x1059d6a54]  sd_fft.c:719
+            + !     1 sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+            + !       1 sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 172  [0x1059d6f00]  sd_fft.c:559
+            + 1710 fft_worker_func  (in libflint.25.0.dylib) + 64  [0x1059abc34]  mpn_mul.c:1536
+            + ! 1277 sd_ifft_trunc_internal  (in libflint.25.0.dylib) + 236  [0x1059d7d28]  sd_ifft.c:1458
+            + ! : 1005 sd_ifft_no_trunc_internal  (in libflint.25.0.dylib) + 100  [0x1059d93c8]  sd_ifft.c:1293
+            + ! : | 889 sd_ifft_no_trunc_internal  (in libflint.25.0.dylib) + 100  [0x1059d93c8]  sd_ifft.c:1293
+            + ! : | + 187 sd_ifft_no_trunc_internal  (in libflint.25.0.dylib) + 1384  [0x1059d98cc]  sd_ifft.c:1309
+            + ! : | + ! 45 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 536,264,...  [0x1059dc89c,0x1059dc78c,...]  sd_ifft.c:609
+            + ! : | + ! 38 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 68  [0x1059dc6c8]  sd_ifft.c:609
+            + ! : | + ! : 16 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 160  [0x1059dcac8]  sd_ifft.c:607
+            + ! : | + ! : | 11 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 572,300,...  [0x1059dcc64,0x1059dcb54,...]  sd_ifft.c:607
+            + ! : | + ! : | 3 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 136,180,...  [0x1059dce68,0x1059dce94,...]  sd_ifft.c:459
+            + ! : | + ! : | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 500,600  [0x1059dcfd4,0x1059dd038]  sd_ifft.c:465
+            + ! : | + ! : 12 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 104  [0x1059dca90]  sd_ifft.c:607
+            + ! : | + ! : | 7 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 340,92,...  [0x1059dcf34,0x1059dce3c,...]  sd_ifft.c:459
+            + ! : | + ! : | 4 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 500,692,...  [0x1059dcfd4,0x1059dd094,...]  sd_ifft.c:465
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059dcf80]  sd_ifft.c:460
+            + ! : | + ! : 6 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 76  [0x1059dca74]  sd_ifft.c:607
+            + ! : | + ! : | 3 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 120,136,...  [0x1059dce58,0x1059dce68,...]  sd_ifft.c:459
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 32  [0x1059dce00]  sd_ifft.c:453
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 628  [0x1059dd054]  sd_ifft.c:465
+            + ! : | + ! : | 1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 76  [0x1059dca74]  sd_ifft.c:607
+            + ! : | + ! : 4 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 136  [0x1059dcab0]  sd_ifft.c:607
+            + ! : | + ! :   4 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 264,180,...  [0x1059dcee8,0x1059dce94,...]  sd_ifft.c:459
+            + ! : | + ! 37 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 136  [0x1059dc70c]  sd_ifft.c:609
+            + ! : | + ! : 20 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 160  [0x1059dcac8]  sd_ifft.c:607
+            + ! : | + ! : | 16 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 448,188,...  [0x1059dcbe8,0x1059dcae4,...]  sd_ifft.c:607
+            + ! : | + ! : | 3 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 324,192  [0x1059dcf24,0x1059dcea0]  sd_ifft.c:459
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 704  [0x1059dd0a0]  sd_ifft.c:465
+            + ! : | + ! : 7 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 104  [0x1059dca90]  sd_ifft.c:607
+            + ! : | + ! : | 4 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 196,224,...  [0x1059dcea4,0x1059dcec0,...]  sd_ifft.c:459
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 24  [0x1059dcdf8]  sd_ifft.c:450
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 424  [0x1059dcf88]  sd_ifft.c:460
+            + ! : | + ! : | 1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 104  [0x1059dca90]  sd_ifft.c:607
+            + ! : | + ! : 6 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 76  [0x1059dca74]  sd_ifft.c:607
+            + ! : | + ! : | 4 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 568,612,...  [0x1059dd018,0x1059dd044,...]  sd_ifft.c:465
+            + ! : | + ! : | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 316,372  [0x1059dcf1c,0x1059dcf54]  sd_ifft.c:459
+            + ! : | + ! : 4 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 136  [0x1059dcab0]  sd_ifft.c:607
+            + ! : | + ! :   2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 260,344  [0x1059dcee4,0x1059dcf38]  sd_ifft.c:459
+            + ! : | + ! :   2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 636,708  [0x1059dd05c,0x1059dd0a4]  sd_ifft.c:465
+            + ! : | + ! 34 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 92  [0x1059dc6e0]  sd_ifft.c:609
+            + ! : | + ! : 17 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 160  [0x1059dcac8]  sd_ifft.c:607
+            + ! : | + ! : | 13 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 788,912,...  [0x1059dcd3c,0x1059dcdb8,...]  sd_ifft.c:607
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 136  [0x1059dce68]  sd_ifft.c:459
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 444  [0x1059dcf9c]  sd_ifft.c:464
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 544  [0x1059dd000]  sd_ifft.c:465
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 764  [0x1059dd0dc]  sd_ifft.c:469
+            + ! : | + ! : 9 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 104  [0x1059dca90]  sd_ifft.c:607
+            + ! : | + ! : | 4 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 472,500,...  [0x1059dcfb8,0x1059dcfd4,...]  sd_ifft.c:465
+            + ! : | + ! : | 3 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 264,320  [0x1059dcee8,0x1059dcf20]  sd_ifft.c:459
+            + ! : | + ! : | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 52,56  [0x1059dce14,0x1059dce18]  sd_ifft.c:455
+            + ! : | + ! : 4 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 76  [0x1059dca74]  sd_ifft.c:607
+            + ! : | + ! : | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 524,608  [0x1059dcfec,0x1059dd040]  sd_ifft.c:465
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 52  [0x1059dce14]  sd_ifft.c:455
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 132  [0x1059dce64]  sd_ifft.c:459
+            + ! : | + ! : 3 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 136  [0x1059dcab0]  sd_ifft.c:607
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 252  [0x1059dcedc]  sd_ifft.c:459
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 660  [0x1059dd074]  sd_ifft.c:465
+            + ! : | + ! : | 1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 136  [0x1059dcab0]  sd_ifft.c:607
+            + ! : | + ! : 1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 948  [0x1059dcddc]  sd_ifft.c:607
+            + ! : | + ! 33 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 116  [0x1059dc6f8]  sd_ifft.c:609
+            + ! : | + !   17 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 160  [0x1059dcac8]  sd_ifft.c:607
+            + ! : | + !   | 9 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 356,788,...  [0x1059dcb8c,0x1059dcd3c,...]  sd_ifft.c:607
+            + ! : | + !   | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 212,336  [0x1059dceb4,0x1059dcf30]  sd_ifft.c:459
+            + ! : | + !   | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 24  [0x1059dcdf8]  sd_ifft.c:450
+            + ! : | + !   | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 60  [0x1059dce1c]  sd_ifft.c:455
+            + ! : | + !   | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059dcf80]  sd_ifft.c:460
+            + ! : | + !   | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 436  [0x1059dcf94]  sd_ifft.c:462
+            + ! : | + !   | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 688  [0x1059dd090]  sd_ifft.c:465
+            + ! : | + !   | 1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 160  [0x1059dcac8]  sd_ifft.c:0
+            + ! : | + !   7 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 76  [0x1059dca74]  sd_ifft.c:607
+            + ! : | + !   | 4 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 528,564,...  [0x1059dcff0,0x1059dd014,...]  sd_ifft.c:465
+            + ! : | + !   | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 240,340  [0x1059dced0,0x1059dcf34]  sd_ifft.c:459
+            + ! : | + !   | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 16  [0x1059dcdf0]  sd_ifft.c:448
+            + ! : | + !   5 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 136  [0x1059dcab0]  sd_ifft.c:607
+            + ! : | + !   | 3 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 212,368  [0x1059dceb4,0x1059dcf50]  sd_ifft.c:459
+            + ! : | + !   | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 720  [0x1059dd0b0]  sd_ifft.c:465
+            + ! : | + !   | 1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 136  [0x1059dcab0]  sd_ifft.c:607
+            + ! : | + !   4 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 104  [0x1059dca90]  sd_ifft.c:607
+            + ! : | + !     2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 516,660  [0x1059dcfe4,0x1059dd074]  sd_ifft.c:465
+            + ! : | + !     1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 24  [0x1059dcdf8]  sd_ifft.c:450
+            + ! : | + !     1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 92  [0x1059dce3c]  sd_ifft.c:459
+            + ! : | + 184 sd_ifft_no_trunc_internal  (in libflint.25.0.dylib) + 1428  [0x1059d98f8]  sd_ifft.c:1310
+            + ! : | + ! 49 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 116  [0x1059dc6f8]  sd_ifft.c:609
+            + ! : | + ! : 24 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 160  [0x1059dcac8]  sd_ifft.c:607
+            + ! : | + ! : | 8 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 140,168,...  [0x1059dce6c,0x1059dce88,...]  sd_ifft.c:459
+            + ! : | + ! : | 7 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 188,512,...  [0x1059dcae4,0x1059dcc28,...]  sd_ifft.c:607
+            + ! : | + ! : | 6 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 548,620,...  [0x1059dd004,0x1059dd04c,...]  sd_ifft.c:465
+            + ! : | + ! : | 2 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 160  [0x1059dcac8]  sd_ifft.c:0
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 764  [0x1059dd0dc]  sd_ifft.c:469
+            + ! : | + ! : 9 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 76  [0x1059dca74]  sd_ifft.c:607
+            + ! : | + ! : | 5 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 92,228,...  [0x1059dce3c,0x1059dcec4,...]  sd_ifft.c:459
+            + ! : | + ! : | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 616,768  [0x1059dd048,0x1059dd0e0]  sd_ifft.c:465
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 60  [0x1059dce1c]  sd_ifft.c:455
+            + ! : | + ! : | 1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 76  [0x1059dca74]  sd_ifft.c:607
+            + ! : | + ! : 9 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 104  [0x1059dca90]  sd_ifft.c:607
+            + ! : | + ! : | 5 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 208,92,...  [0x1059dceb0,0x1059dce3c,...]  sd_ifft.c:459
+            + ! : | + ! : | 4 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 544,604,...  [0x1059dd000,0x1059dd03c,...]  sd_ifft.c:465
+            + ! : | + ! : 6 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 136  [0x1059dcab0]  sd_ifft.c:607
+            + ! : | + ! : | 3 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 92,300,...  [0x1059dce3c,0x1059dcf0c,...]  sd_ifft.c:459
+            + ! : | + ! : | 3 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 472,680,...  [0x1059dcfb8,0x1059dd088,...]  sd_ifft.c:465
+            + ! : | + ! : 1 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 116  [0x1059dc6f8]  sd_ifft.c:609
+            + ! : | + ! :   1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 64  [0x1059dca68]  sd_ifft.c:607
+            + ! : | + ! 48 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 592,532,...  [0x1059dc8d4,0x1059dc898,...]  sd_ifft.c:609
+            + ! : | + ! 34 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 68  [0x1059dc6c8]  sd_ifft.c:609
+            + ! : | + ! : 14 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 160  [0x1059dcac8]  sd_ifft.c:607
+            + ! : | + ! : | 10 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 760,788,...  [0x1059dcd20,0x1059dcd3c,...]  sd_ifft.c:607
+            + ! : | + ! : | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 136,140  [0x1059dce68,0x1059dce6c]  sd_ifft.c:459
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 592  [0x1059dd030]  sd_ifft.c:465
+            + ! : | + ! : | 1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 160  [0x1059dcac8]  sd_ifft.c:0
+            + ! : | + ! : 11 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 76  [0x1059dca74]  sd_ifft.c:607
+            + ! : | + ! : | 5 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 92,200,...  [0x1059dce3c,0x1059dcea8,...]  sd_ifft.c:459
+            + ! : | + ! : | 3 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 496,552,...  [0x1059dcfd0,0x1059dd008,...]  sd_ifft.c:465
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 52  [0x1059dce14]  sd_ifft.c:455
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 436  [0x1059dcf94]  sd_ifft.c:462
+            + ! : | + ! : | 1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 76  [0x1059dca74]  sd_ifft.c:607
+            + ! : | + ! : 5 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 104  [0x1059dca90]  sd_ifft.c:607
+            + ! : | + ! : | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 236,364  [0x1059dcecc,0x1059dcf4c]  sd_ifft.c:459
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 436  [0x1059dcf94]  sd_ifft.c:462
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 744  [0x1059dd0c8]  sd_ifft.c:465
+            + ! : | + ! : | 1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 104  [0x1059dca90]  sd_ifft.c:607
+            + ! : | + ! : 4 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 136  [0x1059dcab0]  sd_ifft.c:607
+            + ! : | + ! :   3 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 552,608,...  [0x1059dd008,0x1059dd040,...]  sd_ifft.c:465
+            + ! : | + ! :   1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 320  [0x1059dcf20]  sd_ifft.c:459
+            + ! : | + ! 31 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 92  [0x1059dc6e0]  sd_ifft.c:609
+            + ! : | + ! : 19 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 160  [0x1059dcac8]  sd_ifft.c:607
+            + ! : | + ! : | 11 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 440,188,...  [0x1059dcbe0,0x1059dcae4,...]  sd_ifft.c:607
+            + ! : | + ! : | 3 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 316,208  [0x1059dcf1c,0x1059dceb0]  sd_ifft.c:459
+            + ! : | + ! : | 3 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 472,568,...  [0x1059dcfb8,0x1059dd018,...]  sd_ifft.c:465
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 52  [0x1059dce14]  sd_ifft.c:455
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 444  [0x1059dcf9c]  sd_ifft.c:464
+            + ! : | + ! : 7 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 76  [0x1059dca74]  sd_ifft.c:607
+            + ! : | + ! : | 4 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 92,180,...  [0x1059dce3c,0x1059dce94,...]  sd_ifft.c:459
+            + ! : | + ! : | 3 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 596,472  [0x1059dd034,0x1059dcfb8]  sd_ifft.c:465
+            + ! : | + ! : 3 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 104  [0x1059dca90]  sd_ifft.c:607
+            + ! : | + ! : | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 588  [0x1059dd02c]  sd_ifft.c:465
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 24  [0x1059dcdf8]  sd_ifft.c:450
+            + ! : | + ! : 2 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 136  [0x1059dcab0]  sd_ifft.c:607
+            + ! : | + ! :   1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 20  [0x1059dcdf4]  sd_ifft.c:449
+            + ! : | + ! :   1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 368  [0x1059dcf50]  sd_ifft.c:459
+            + ! : | + ! 22 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 136  [0x1059dc70c]  sd_ifft.c:609
+            + ! : | + !   9 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 160  [0x1059dcac8]  sd_ifft.c:607
+            + ! : | + !   | 6 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 488,540,...  [0x1059dcc10,0x1059dcc44,...]  sd_ifft.c:607
+            + ! : | + !   | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 292,392  [0x1059dcf04,0x1059dcf68]  sd_ifft.c:459
+            + ! : | + !   | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 620  [0x1059dd04c]  sd_ifft.c:465
+            + ! : | + !   6 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 136  [0x1059dcab0]  sd_ifft.c:607
+            + ! : | + !   | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 92,320  [0x1059dce3c,0x1059dcf20]  sd_ifft.c:459
+            + ! : | + !   | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 472,620  [0x1059dcfb8,0x1059dd04c]  sd_ifft.c:465
+            + ! : | + !   | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 420  [0x1059dcf84]  sd_ifft.c:460
+            + ! : | + !   | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 760  [0x1059dd0d8]  sd_ifft.c:468
+            + ! : | + !   4 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 76  [0x1059dca74]  sd_ifft.c:607
+            + ! : | + !   | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 220,344  [0x1059dcebc,0x1059dcf38]  sd_ifft.c:459
+            + ! : | + !   | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 544,600  [0x1059dd000,0x1059dd038]  sd_ifft.c:465
+            + ! : | + !   3 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 104  [0x1059dca90]  sd_ifft.c:607
+            + ! : | + !     2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 256,380  [0x1059dcee0,0x1059dcf5c]  sd_ifft.c:459
+            + ! : | + !     1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 580  [0x1059dd024]  sd_ifft.c:465
+            + ! : | + 180 sd_ifft_no_trunc_internal  (in libflint.25.0.dylib) + 1344  [0x1059d98a4]  sd_ifft.c:1308
+            + ! : | + ! 51 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 880,536,...  [0x1059dc9f4,0x1059dc89c,...]  sd_ifft.c:609
+            + ! : | + ! 36 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 92  [0x1059dc6e0]  sd_ifft.c:609
+            + ! : | + ! : 13 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 160  [0x1059dcac8]  sd_ifft.c:607
+            + ! : | + ! : | 9 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 220,232,...  [0x1059dcb04,0x1059dcb10,...]  sd_ifft.c:607
+            + ! : | + ! : | 3 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 164,280,...  [0x1059dce84,0x1059dcef8,...]  sd_ifft.c:459
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 516  [0x1059dcfe4]  sd_ifft.c:465
+            + ! : | + ! : 10 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 104  [0x1059dca90]  sd_ifft.c:607
+            + ! : | + ! : | 5 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 136,208,...  [0x1059dce68,0x1059dceb0,...]  sd_ifft.c:459
+            + ! : | + ! : | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 516,600  [0x1059dcfe4,0x1059dd038]  sd_ifft.c:465
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 420  [0x1059dcf84]  sd_ifft.c:460
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 444  [0x1059dcf9c]  sd_ifft.c:464
+            + ! : | + ! : | 1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 104  [0x1059dca90]  sd_ifft.c:607
+            + ! : | + ! : 7 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 136  [0x1059dcab0]  sd_ifft.c:607
+            + ! : | + ! : | 4 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 448,632,...  [0x1059dcfa0,0x1059dd058,...]  sd_ifft.c:465
+            + ! : | + ! : | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 156,288  [0x1059dce7c,0x1059dcf00]  sd_ifft.c:459
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 52  [0x1059dce14]  sd_ifft.c:455
+            + ! : | + ! : 6 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 76  [0x1059dca74]  sd_ifft.c:607
+            + ! : | + ! :   4 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 128,184,...  [0x1059dce60,0x1059dce98,...]  sd_ifft.c:459
+            + ! : | + ! :   1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 500  [0x1059dcfd4]  sd_ifft.c:465
+            + ! : | + ! :   1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 76  [0x1059dca74]  sd_ifft.c:607
+            + ! : | + ! 35 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 116  [0x1059dc6f8]  sd_ifft.c:609
+            + ! : | + ! : 18 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 160  [0x1059dcac8]  sd_ifft.c:607
+            + ! : | + ! : | 11 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 384,328,...  [0x1059dcba8,0x1059dcb70,...]  sd_ifft.c:607
+            + ! : | + ! : | 5 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 120,208,...  [0x1059dce58,0x1059dceb0,...]  sd_ifft.c:459
+            + ! : | + ! : | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 532,568  [0x1059dcff4,0x1059dd018]  sd_ifft.c:465
+            + ! : | + ! : 8 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 104  [0x1059dca90]  sd_ifft.c:607
+            + ! : | + ! : | 6 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 500,532,...  [0x1059dcfd4,0x1059dcff4,...]  sd_ifft.c:465
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 24  [0x1059dcdf8]  sd_ifft.c:450
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 444  [0x1059dcf9c]  sd_ifft.c:464
+            + ! : | + ! : 5 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 76  [0x1059dca74]  sd_ifft.c:607
+            + ! : | + ! : | 3 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 148,212,...  [0x1059dce74,0x1059dceb4,...]  sd_ifft.c:459
+            + ! : | + ! : | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 528,620  [0x1059dcff0,0x1059dd04c]  sd_ifft.c:465
+            + ! : | + ! : 4 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 136  [0x1059dcab0]  sd_ifft.c:607
+            + ! : | + ! :   2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 152,212  [0x1059dce78,0x1059dceb4]  sd_ifft.c:459
+            + ! : | + ! :   2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 492,720  [0x1059dcfcc,0x1059dd0b0]  sd_ifft.c:465
+            + ! : | + ! 35 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 136  [0x1059dc70c]  sd_ifft.c:609
+            + ! : | + ! : 19 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 160  [0x1059dcac8]  sd_ifft.c:607
+            + ! : | + ! : | 12 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 520,292,...  [0x1059dcc30,0x1059dcb4c,...]  sd_ifft.c:607
+            + ! : | + ! : | 3 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 516,472  [0x1059dcfe4,0x1059dcfb8]  sd_ifft.c:465
+            + ! : | + ! : | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 296,348  [0x1059dcf08,0x1059dcf3c]  sd_ifft.c:459
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 420  [0x1059dcf84]  sd_ifft.c:460
+            + ! : | + ! : | 1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 160  [0x1059dcac8]  sd_ifft.c:0
+            + ! : | + ! : 7 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 104  [0x1059dca90]  sd_ifft.c:607
+            + ! : | + ! : | 4 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 472,480,...  [0x1059dcfb8,0x1059dcfc0,...]  sd_ifft.c:465
+            + ! : | + ! : | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 96,140  [0x1059dce40,0x1059dce6c]  sd_ifft.c:459
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 24  [0x1059dcdf8]  sd_ifft.c:450
+            + ! : | + ! : 6 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 76  [0x1059dca74]  sd_ifft.c:607
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 20  [0x1059dcdf4]  sd_ifft.c:449
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 28  [0x1059dcdfc]  sd_ifft.c:451
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 0  [0x1059dcde0]  sd_ifft.c:453
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 284  [0x1059dcefc]  sd_ifft.c:459
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 764  [0x1059dd0dc]  sd_ifft.c:469
+            + ! : | + ! : | 1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 76  [0x1059dca74]  sd_ifft.c:607
+            + ! : | + ! : 3 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 136  [0x1059dcab0]  sd_ifft.c:607
+            + ! : | + ! :   2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 628,728  [0x1059dd054,0x1059dd0b8]  sd_ifft.c:465
+            + ! : | + ! :   1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 760  [0x1059dd0d8]  sd_ifft.c:468
+            + ! : | + ! 22 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 68  [0x1059dc6c8]  sd_ifft.c:609
+            + ! : | + ! : 14 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 160  [0x1059dcac8]  sd_ifft.c:607
+            + ! : | + ! : | 8 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 276,436,...  [0x1059dcb3c,0x1059dcbdc,...]  sd_ifft.c:607
+            + ! : | + ! : | 3 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 616,688  [0x1059dd048,0x1059dd090]  sd_ifft.c:465
+            + ! : | + ! : | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 240,280  [0x1059dced0,0x1059dcef8]  sd_ifft.c:459
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 436  [0x1059dcf94]  sd_ifft.c:462
+            + ! : | + ! : 4 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 136  [0x1059dcab0]  sd_ifft.c:607
+            + ! : | + ! : | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 528,728  [0x1059dcff0,0x1059dd0b8]  sd_ifft.c:465
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 52  [0x1059dce14]  sd_ifft.c:455
+            + ! : | + ! : | 1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 136  [0x1059dcab0]  sd_ifft.c:607
+            + ! : | + ! : 3 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 76  [0x1059dca74]  sd_ifft.c:607
+            + ! : | + ! : | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 500,588  [0x1059dcfd4,0x1059dd02c]  sd_ifft.c:465
+            + ! : | + ! : | 1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 76  [0x1059dca74]  sd_ifft.c:607
+            + ! : | + ! : 1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 0  [0x1059dca28]  sd_ifft.c:607
+            + ! : | + ! 1 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 92  [0x1059dc6e0]  sd_ifft.c:0
+            + ! : | + 179 sd_ifft_no_trunc_internal  (in libflint.25.0.dylib) + 264  [0x1059d946c]  sd_ifft.c:1307
+            + ! : | + ! 47 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 136  [0x1059dc70c]  sd_ifft.c:609
+            + ! : | + ! : 21 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 160  [0x1059dcac8]  sd_ifft.c:607
+            + ! : | + ! : | 15 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 484,336,...  [0x1059dcc0c,0x1059dcb78,...]  sd_ifft.c:607
+            + ! : | + ! : | 4 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 520,672,...  [0x1059dcfe8,0x1059dd080,...]  sd_ifft.c:465
+            + ! : | + ! : | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 92,236  [0x1059dce3c,0x1059dcecc]  sd_ifft.c:459
+            + ! : | + ! : 12 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 76  [0x1059dca74]  sd_ifft.c:607
+            + ! : | + ! : | 9 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 500,496,...  [0x1059dcfd4,0x1059dcfd0,...]  sd_ifft.c:465
+            + ! : | + ! : | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 396  [0x1059dcf6c]  sd_ifft.c:460
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 92  [0x1059dce3c]  sd_ifft.c:459
+            + ! : | + ! : 7 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 104  [0x1059dca90]  sd_ifft.c:607
+            + ! : | + ! : | 4 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 336,208,...  [0x1059dcf30,0x1059dceb0,...]  sd_ifft.c:459
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 436  [0x1059dcf94]  sd_ifft.c:462
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 532  [0x1059dcff4]  sd_ifft.c:465
+            + ! : | + ! : | 1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 104  [0x1059dca90]  sd_ifft.c:607
+            + ! : | + ! : 7 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 136  [0x1059dcab0]  sd_ifft.c:607
+            + ! : | + ! :   2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 84,92  [0x1059dce34,0x1059dce3c]  sd_ifft.c:459
+            + ! : | + ! :   2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 548,768  [0x1059dd004,0x1059dd0e0]  sd_ifft.c:465
+            + ! : | + ! :   1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 20  [0x1059dcdf4]  sd_ifft.c:449
+            + ! : | + ! :   1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 436  [0x1059dcf94]  sd_ifft.c:462
+            + ! : | + ! :   1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 772  [0x1059dd0e4]  sd_ifft.c:470
+            + ! : | + ! 43 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 208,880,...  [0x1059dc754,0x1059dc9f4,...]  sd_ifft.c:609
+            + ! : | + ! 34 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 116  [0x1059dc6f8]  sd_ifft.c:609
+            + ! : | + ! : 21 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 160  [0x1059dcac8]  sd_ifft.c:607
+            + ! : | + ! : | 12 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 264,336,...  [0x1059dcb30,0x1059dcb78,...]  sd_ifft.c:607
+            + ! : | + ! : | 4 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 472,540,...  [0x1059dcfb8,0x1059dcffc,...]  sd_ifft.c:465
+            + ! : | + ! : | 3 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 188,212,...  [0x1059dce9c,0x1059dceb4,...]  sd_ifft.c:459
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059dcf80]  sd_ifft.c:460
+            + ! : | + ! : | 1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 160  [0x1059dcac8]  sd_ifft.c:0
+            + ! : | + ! : 6 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 136  [0x1059dcab0]  sd_ifft.c:607
+            + ! : | + ! : | 4 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 540,596,...  [0x1059dcffc,0x1059dd034,...]  sd_ifft.c:465
+            + ! : | + ! : | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 144,244  [0x1059dce70,0x1059dced4]  sd_ifft.c:459
+            + ! : | + ! : 4 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 104  [0x1059dca90]  sd_ifft.c:607
+            + ! : | + ! : | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 532,716  [0x1059dcff4,0x1059dd0ac]  sd_ifft.c:465
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 760  [0x1059dd0d8]  sd_ifft.c:468
+            + ! : | + ! : | 1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 104  [0x1059dca90]  sd_ifft.c:607
+            + ! : | + ! : 3 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 76  [0x1059dca74]  sd_ifft.c:607
+            + ! : | + ! :   1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 344  [0x1059dcf38]  sd_ifft.c:459
+            + ! : | + ! :   1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 700  [0x1059dd09c]  sd_ifft.c:465
+            + ! : | + ! :   1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 76  [0x1059dca74]  sd_ifft.c:607
+            + ! : | + ! 29 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 68  [0x1059dc6c8]  sd_ifft.c:609
+            + ! : | + ! : 16 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 160  [0x1059dcac8]  sd_ifft.c:607
+            + ! : | + ! : | 8 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 220,388,...  [0x1059dcb04,0x1059dcbac,...]  sd_ifft.c:607
+            + ! : | + ! : | 4 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 120,240,...  [0x1059dce58,0x1059dced0,...]  sd_ifft.c:459
+            + ! : | + ! : | 4 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 520,548,...  [0x1059dcfe8,0x1059dd004,...]  sd_ifft.c:465
+            + ! : | + ! : 6 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 76  [0x1059dca74]  sd_ifft.c:607
+            + ! : | + ! : | 3 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 192,220,...  [0x1059dcea0,0x1059dcebc,...]  sd_ifft.c:459
+            + ! : | + ! : | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 576,628  [0x1059dd020,0x1059dd054]  sd_ifft.c:465
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 416  [0x1059dcf80]  sd_ifft.c:460
+            + ! : | + ! : 5 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 104  [0x1059dca90]  sd_ifft.c:607
+            + ! : | + ! : | 4 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 188,260,...  [0x1059dce9c,0x1059dcee4,...]  sd_ifft.c:459
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 700  [0x1059dd09c]  sd_ifft.c:465
+            + ! : | + ! : 1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 136  [0x1059dcab0]  sd_ifft.c:607
+            + ! : | + ! : | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 340  [0x1059dcf34]  sd_ifft.c:459
+            + ! : | + ! : 1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 944  [0x1059dcdd8]  sd_ifft.c:607
+            + ! : | + ! 26 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 92  [0x1059dc6e0]  sd_ifft.c:609
+            + ! : | + !   18 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 160  [0x1059dcac8]  sd_ifft.c:607
+            + ! : | + !   | 12 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 760,188,...  [0x1059dcd20,0x1059dcae4,...]  sd_ifft.c:607
+            + ! : | + !   | 3 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 268,340  [0x1059dceec,0x1059dcf34]  sd_ifft.c:459
+            + ! : | + !   | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 472,548  [0x1059dcfb8,0x1059dd004]  sd_ifft.c:465
+            + ! : | + !   | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 24  [0x1059dcdf8]  sd_ifft.c:450
+            + ! : | + !   3 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 104  [0x1059dca90]  sd_ifft.c:607
+            + ! : | + !   | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 208,264  [0x1059dceb0,0x1059dcee8]  sd_ifft.c:459
+            + ! : | + !   | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 528  [0x1059dcff0]  sd_ifft.c:465
+            + ! : | + !   3 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 136  [0x1059dcab0]  sd_ifft.c:607
+            + ! : | + !   | 2 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 172,300  [0x1059dce8c,0x1059dcf0c]  sd_ifft.c:459
+            + ! : | + !   | 1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 608  [0x1059dd040]  sd_ifft.c:465
+            + ! : | + !   2 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 76  [0x1059dca74]  sd_ifft.c:607
+            + ! : | + !     1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 300  [0x1059dcf0c]  sd_ifft.c:459
+            + ! : | + !     1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 496  [0x1059dcfd0]  sd_ifft.c:465
+            + ! : | + 153 sd_ifft_no_trunc_internal  (in libflint.25.0.dylib) + 100  [0x1059d93c8]  sd_ifft.c:1293
+            + ! : | + ! 150 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 308,368,...  [0x1059da058,0x1059da094,...]  sd_ifft.c:1255
+            + ! : | + ! 1 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 56  [0x1059d9f5c]  sd_ifft.c:1216
+            + ! : | + ! 1 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 216  [0x1059d9ffc]  sd_ifft.c:1236
+            + ! : | + ! 1 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 1756  [0x1059da600]  sd_ifft.c:1248
+            + ! : | + 3 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 928  [0x1059dca24]  sd_ifft.c:609
+            + ! : | + 2 sd_ifft_no_trunc_internal  (in libflint.25.0.dylib) + 1296  [0x1059d9874]  sd_ifft.c:1307
+            + ! : | + ! 1 sd_ifft_basecase_8_1  (in libflint.25.0.dylib) + 52  [0x1059d9128]  sd_ifft.c:609
+            + ! : | + ! : 1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 136  [0x1059dcab0]  sd_ifft.c:607
+            + ! : | + ! :   1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 672  [0x1059dd080]  sd_ifft.c:465
+            + ! : | + ! 1 sd_ifft_basecase_8_1  (in libflint.25.0.dylib) + 72  [0x1059d913c]  sd_ifft.c:609
+            + ! : | + !   1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 160  [0x1059dcac8]  sd_ifft.c:607
+            + ! : | + !     1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 300  [0x1059dcb54]  sd_ifft.c:607
+            + ! : | + 1 sd_ifft_no_trunc_internal  (in libflint.25.0.dylib) + 0  [0x1059d9364]  sd_ifft.c:1285
+            + ! : | 113 sd_ifft_no_trunc_internal  (in libflint.25.0.dylib) + 148  [0x1059d93f8]  sd_ifft.c:1298
+            + ! : | + 113 sd_ifft_no_trunc_internal  (in libflint.25.0.dylib) + 148  [0x1059d93f8]  sd_ifft.c:1298
+            + ! : | +   91 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 1152,1096,...  [0x1059da3a4,0x1059da36c,...]  sd_ifft.c:1274
+            + ! : | +   22 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 1280  [0x1059da424]  sd_ifft.c:1275
+            + ! : | 1 sd_ifft_no_trunc_internal  (in libflint.25.0.dylib) + 112  [0x1059d93d4]  sd_ifft.c:0
+            + ! : | 1 sd_ifft_no_trunc_internal  (in libflint.25.0.dylib) + 28  [0x1059d9380]  sd_ifft.c:1285
+            + ! : | 1 sd_ifft_no_trunc_internal  (in libflint.25.0.dylib) + 76  [0x1059d93b0]  sd_ifft.c:1293
+            + ! : 272 sd_ifft_no_trunc_internal  (in libflint.25.0.dylib) + 148  [0x1059d93f8]  sd_ifft.c:1298
+            + ! :   168 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 116  [0x1059d9f98]  sd_ifft.c:1224
+            + ! :   + 167 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 116  [0x1059d9f98]  sd_ifft.c:1224
+            + ! :   + ! 165 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 308,368,...  [0x1059da058,0x1059da094,...]  sd_ifft.c:1255
+            + ! :   + ! 1 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 216  [0x1059d9ffc]  sd_ifft.c:1236
+            + ! :   + ! 1 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 1524  [0x1059da518]  sd_ifft.c:1248
+            + ! :   + 1 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 12  [0x1059d9f30]  sd_ifft.c:1213
+            + ! :   104 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 164  [0x1059d9fc8]  sd_ifft.c:1230
+            + ! :     101 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 164  [0x1059d9fc8]  sd_ifft.c:1230
+            + ! :     ! 80 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 1096,1152,...  [0x1059da36c,0x1059da3a4,...]  sd_ifft.c:1274
+            + ! :     ! 21 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 1280  [0x1059da424]  sd_ifft.c:1275
+            + ! :     2 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 1848  [0x1059da65c]  sd_ifft.c:1265
+            + ! :     ! 2 sd_ifft_no_trunc_block.cold.1  (in libflint.25.0.dylib) + 112,140  [0x105fce67c,0x105fce698]  sd_ifft.c:1267
+            + ! :     1 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 12  [0x1059d9f30]  sd_ifft.c:1213
+            + ! 296 sd_ifft_trunc_internal  (in libflint.25.0.dylib) + 364  [0x1059d7da8]  sd_ifft.c:1462
+            + ! : 158 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 412  [0x1059d9d54]  sd_ifft.c:1387
+            + ! : | 96 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 116  [0x1059d9f98]  sd_ifft.c:1224
+            + ! : | + 96 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 116  [0x1059d9f98]  sd_ifft.c:1224
+            + ! : | +   87 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 308,368,...  [0x1059da058,0x1059da094,...]  sd_ifft.c:1255
+            + ! : | +   8 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 1380,1512,...  [0x1059da488,0x1059da50c,...]  sd_ifft.c:1248
+            + ! : | +   1 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 224  [0x1059da004]  sd_ifft.c:1236
+            + ! : | 61 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 164  [0x1059d9fc8]  sd_ifft.c:1230
+            + ! : | + 47 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 164  [0x1059d9fc8]  sd_ifft.c:1230
+            + ! : | + ! 33 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 1096,1140,...  [0x1059da36c,0x1059da398,...]  sd_ifft.c:1274
+            + ! : | + ! 12 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 1280  [0x1059da424]  sd_ifft.c:1275
+            + ! : | + ! 1 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 56  [0x1059d9f5c]  sd_ifft.c:1216
+            + ! : | + ! 1 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 212  [0x1059d9ff8]  sd_ifft.c:1236
+            + ! : | + 14 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 1848  [0x1059da65c]  sd_ifft.c:1265
+            + ! : | +   8 sd_ifft_no_trunc_block.cold.1  (in libflint.25.0.dylib) + 84,96,...  [0x105fce660,0x105fce66c,...]  sd_ifft.c:1267
+            + ! : | +   6 sd_ifft_no_trunc_block.cold.1  (in libflint.25.0.dylib) + 176  [0x105fce6bc]  sd_ifft.c:1268
+            + ! : | 1 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 412  [0x1059d9d54]  sd_ifft.c:1387
+            + ! : |   1 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 64  [0x1059d9f64]  sd_ifft.c:0
+            + ! : 51 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 680  [0x1059d9e60]  sd_ifft.c:1395
+            + ! : | 18 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 564  [0x1059d9dec]  sd_ifft.c:1391
+            + ! : | + 7 radix_2_moth_inv_trunc_block_1_2_1  (in libflint.25.0.dylib) + 316,288,...  [0x1059dc57c,0x1059dc560,...]  sd_ifft.c:120
+            + ! : | + 5 radix_2_moth_inv_trunc_block_1_2_1  (in libflint.25.0.dylib) + 112,88,...  [0x1059dc4b0,0x1059dc498,...]  sd_ifft.c:116
+            + ! : | + 3 radix_2_moth_inv_trunc_block_1_2_1  (in libflint.25.0.dylib) + 344  [0x1059dc598]  sd_ifft.c:123
+            + ! : | + 2 radix_2_moth_inv_trunc_block_1_2_1  (in libflint.25.0.dylib) + 244,268  [0x1059dc534,0x1059dc54c]  sd_ifft.c:119
+            + ! : | + 1 radix_2_moth_inv_trunc_block_1_2_1  (in libflint.25.0.dylib) + 216  [0x1059dc518]  sd_ifft.c:118
+            + ! : | 15 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 680  [0x1059d9e60]  sd_ifft.c:1395
+            + ! : | + 3 radix_4_moth_inv_trunc_block_1_4_1  (in libflint.25.0.dylib) + 304,312,...  [0x105fce0b4,0x105fce0bc,...]  sd_ifft.c:1084
+            + ! : | + 2 radix_4_moth_inv_trunc_block_1_4_1  (in libflint.25.0.dylib) + 144  [0x105fce014]  sd_ifft.c:1076
+            + ! : | + 2 radix_4_moth_inv_trunc_block_1_4_1  (in libflint.25.0.dylib) + 256  [0x105fce084]  sd_ifft.c:1082
+            + ! : | + 2 radix_4_moth_inv_trunc_block_1_4_1  (in libflint.25.0.dylib) + 372  [0x105fce0f8]  sd_ifft.c:1085
+            + ! : | + 1 radix_4_moth_inv_trunc_block_1_4_1  (in libflint.25.0.dylib) + 296  [0x105fce0ac]  sd_ifft.c:1083
+            + ! : | + 1 radix_4_moth_inv_trunc_block_1_4_1  (in libflint.25.0.dylib) + 360  [0x105fce0ec]  sd_ifft.c:1086
+            + ! : | + 1 radix_4_moth_inv_trunc_block_1_4_1  (in libflint.25.0.dylib) + 392  [0x105fce10c]  sd_ifft.c:1087
+            + ! : | + 1 radix_4_moth_inv_trunc_block_1_4_1  (in libflint.25.0.dylib) + 408  [0x105fce11c]  sd_ifft.c:1088
+            + ! : | + 1 radix_4_moth_inv_trunc_block_1_4_1  (in libflint.25.0.dylib) + 416  [0x105fce124]  sd_ifft.c:1089
+            + ! : | + 1 radix_4_moth_inv_trunc_block_1_4_1  (in libflint.25.0.dylib) + 428  [0x105fce130]  sd_ifft.c:1090
+            + ! : | 13 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 412  [0x1059d9d54]  sd_ifft.c:1387
+            + ! : | + 13 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 412  [0x1059d9d54]  sd_ifft.c:1387
+            + ! : | +   13 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 324,436,...  [0x1059da068,0x1059da0d8,...]  sd_ifft.c:1255
+            + ! : | 4 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 736  [0x1059d9e98]  sd_ifft.c:1399
+            + ! : | + 4 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 736  [0x1059d9e98]  sd_ifft.c:1399
+            + ! : | +   3 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 1152,1204,...  [0x1059da3a4,0x1059da3d8,...]  sd_ifft.c:1274
+            + ! : | +   1 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 1280  [0x1059da424]  sd_ifft.c:1275
+            + ! : | 1 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 212  [0x1059d9c8c]  sd_ifft.c:1363
+            + ! : 50 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 736  [0x1059d9e98]  sd_ifft.c:1399
+            + ! : | 50 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 736  [0x1059d9e98]  sd_ifft.c:1399
+            + ! : |   50 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 1364,1572,...  [0x1059da478,0x1059da548,...]  sd_ifft.c:1248
+            + ! : 36 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 564  [0x1059d9dec]  sd_ifft.c:1391
+            + ! : | 11 radix_4_moth_inv_trunc_block_3_3_1  (in libflint.25.0.dylib) + 300,208,...  [0x1059dbde4,0x1059dbd88,...]  sd_ifft.c:828
+            + ! : | 8 radix_4_moth_inv_trunc_block_3_3_1  (in libflint.25.0.dylib) + 608,616,...  [0x1059dbf18,0x1059dbf20,...]  sd_ifft.c:836
+            + ! : | 4 radix_4_moth_inv_trunc_block_3_3_1  (in libflint.25.0.dylib) + 408,400,...  [0x1059dbe50,0x1059dbe48,...]  sd_ifft.c:830
+            + ! : | 3 radix_4_moth_inv_trunc_block_3_3_1  (in libflint.25.0.dylib) + 548,464  [0x1059dbedc,0x1059dbe88]  sd_ifft.c:831
+            + ! : | 2 radix_4_moth_inv_trunc_block_3_3_1  (in libflint.25.0.dylib) + 552  [0x1059dbee0]  sd_ifft.c:833
+            + ! : | 2 radix_4_moth_inv_trunc_block_3_3_1  (in libflint.25.0.dylib) + 580  [0x1059dbefc]  sd_ifft.c:835
+            + ! : | 2 radix_4_moth_inv_trunc_block_3_3_1  (in libflint.25.0.dylib) + 724,728  [0x1059dbf8c,0x1059dbf90]  sd_ifft.c:838
+            + ! : | 2 radix_4_moth_inv_trunc_block_3_3_1  (in libflint.25.0.dylib) + 732  [0x1059dbf94]  sd_ifft.c:839
+            + ! : | 1 radix_4_moth_inv_trunc_block_3_3_1  (in libflint.25.0.dylib) + 296  [0x1059dbde0]  sd_ifft.c:829
+            + ! : | 1 radix_4_moth_inv_trunc_block_3_3_1  (in libflint.25.0.dylib) + 536  [0x1059dbed0]  sd_ifft.c:832
+            + ! : 1 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 8  [0x1059d9bc0]  sd_ifft.c:1332
+            + ! 115 sd_ifft_trunc_internal  (in libflint.25.0.dylib) + 504  [0x1059d7e34]  sd_ifft.c:1470
+            + ! : 49 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 412  [0x1059d9d54]  sd_ifft.c:1387
+            + ! : | 30 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 116  [0x1059d9f98]  sd_ifft.c:1224
+            + ! : | + 30 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 116  [0x1059d9f98]  sd_ifft.c:1224
+            + ! : | +   23 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 368,616,...  [0x1059da094,0x1059da18c,...]  sd_ifft.c:1255
+            + ! : | +   7 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 1364,1536,...  [0x1059da478,0x1059da524,...]  sd_ifft.c:1248
+            + ! : | 19 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 164  [0x1059d9fc8]  sd_ifft.c:1230
+            + ! : |   12 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 164  [0x1059d9fc8]  sd_ifft.c:1230
+            + ! : |   ! 8 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 1172,1248,...  [0x1059da3b8,0x1059da404,...]  sd_ifft.c:1274
+            + ! : |   ! 2 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 1280  [0x1059da424]  sd_ifft.c:1275
+            + ! : |   ! 1 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 56  [0x1059d9f5c]  sd_ifft.c:1216
+            + ! : |   ! 1 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 212  [0x1059d9ff8]  sd_ifft.c:1236
+            + ! : |   6 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 1848  [0x1059da65c]  sd_ifft.c:1265
+            + ! : |   ! 4 sd_ifft_no_trunc_block.cold.1  (in libflint.25.0.dylib) + 160,56,...  [0x105fce6ac,0x105fce644,...]  sd_ifft.c:1267
+            + ! : |   ! 2 sd_ifft_no_trunc_block.cold.1  (in libflint.25.0.dylib) + 176  [0x105fce6bc]  sd_ifft.c:1268
+            + ! : |   1 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 16  [0x1059d9f34]  sd_ifft.c:1213
+            + ! : 26 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 736  [0x1059d9e98]  sd_ifft.c:1399
+            + ! : | 26 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 736  [0x1059d9e98]  sd_ifft.c:1399
+            + ! : |   26 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 1380,1600,...  [0x1059da488,0x1059da564,...]  sd_ifft.c:1248
+            + ! : 22 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 680  [0x1059d9e60]  sd_ifft.c:1395
+            + ! : | 9 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 412  [0x1059d9d54]  sd_ifft.c:1387
+            + ! : | + 9 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 412  [0x1059d9d54]  sd_ifft.c:1387
+            + ! : | +   9 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 452,532,...  [0x1059da0e8,0x1059da138,...]  sd_ifft.c:1255
+            + ! : | 5 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 564  [0x1059d9dec]  sd_ifft.c:1391
+            + ! : | + 3 radix_2_moth_inv_trunc_block_1_2_1  (in libflint.25.0.dylib) + 112,188,...  [0x1059dc4b0,0x1059dc4fc,...]  sd_ifft.c:116
+            + ! : | + 1 radix_2_moth_inv_trunc_block_1_2_1  (in libflint.25.0.dylib) + 216  [0x1059dc518]  sd_ifft.c:118
+            + ! : | + 1 radix_2_moth_inv_trunc_block_1_2_1  (in libflint.25.0.dylib) + 288  [0x1059dc560]  sd_ifft.c:120
+            + ! : | 5 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 680  [0x1059d9e60]  sd_ifft.c:1395
+            + ! : | + 2 radix_4_moth_inv_trunc_block_2_4_0  (in libflint.25.0.dylib) + 624  [0x105fce3c4]  sd_ifft.c:979
+            + ! : | + 1 radix_4_moth_inv_trunc_block_2_4_0  (in libflint.25.0.dylib) + 368  [0x105fce2c4]  sd_ifft.c:970
+            + ! : | + 1 radix_4_moth_inv_trunc_block_2_4_0  (in libflint.25.0.dylib) + 404  [0x105fce2e8]  sd_ifft.c:972
+            + ! : | + 1 radix_4_moth_inv_trunc_block_2_4_0  (in libflint.25.0.dylib) + 472  [0x105fce32c]  sd_ifft.c:974
+            + ! : | 3 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 736  [0x1059d9e98]  sd_ifft.c:1399
+            + ! : |   3 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 736  [0x1059d9e98]  sd_ifft.c:1399
+            + ! : |     3 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 1168,1180,...  [0x1059da3b4,0x1059da3c0,...]  sd_ifft.c:1274
+            + ! : 16 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 564  [0x1059d9dec]  sd_ifft.c:1391
+            + ! : | 3 radix_4_moth_inv_trunc_block_3_3_1  (in libflint.25.0.dylib) + 236,300  [0x1059dbda4,0x1059dbde4]  sd_ifft.c:828
+            + ! : | 3 radix_4_moth_inv_trunc_block_3_3_1  (in libflint.25.0.dylib) + 608,684,...  [0x1059dbf18,0x1059dbf64,...]  sd_ifft.c:836
+            + ! : | 3 radix_4_moth_inv_trunc_block_3_3_1  (in libflint.25.0.dylib) + 732  [0x1059dbf94]  sd_ifft.c:839
+            + ! : | 2 radix_4_moth_inv_trunc_block_3_3_1  (in libflint.25.0.dylib) + 160  [0x1059dbd58]  sd_ifft.c:826
+            + ! : | 2 radix_4_moth_inv_trunc_block_3_3_1  (in libflint.25.0.dylib) + 392,400  [0x1059dbe40,0x1059dbe48]  sd_ifft.c:830
+            + ! : | 1 radix_4_moth_inv_trunc_block_3_3_1  (in libflint.25.0.dylib) + 296  [0x1059dbde0]  sd_ifft.c:829
+            + ! : | 1 radix_4_moth_inv_trunc_block_3_3_1  (in libflint.25.0.dylib) + 492  [0x1059dbea4]  sd_ifft.c:832
+            + ! : | 1 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 24  [0x1059d9bd0]  sd_ifft.c:1332
+            + ! : 1 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 100  [0x1059d9c1c]  sd_ifft.c:1344
+            + ! : 1 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 752  [0x1059d9ea8]  sd_ifft.c:1398
+            + ! 21 sd_ifft_trunc_internal  (in libflint.25.0.dylib) + 460  [0x1059d7e08]  sd_ifft.c:1466
+            + ! : 11 sd_ifft_trunc_internal  (in libflint.25.0.dylib) + 236  [0x1059d7d28]  sd_ifft.c:1458
+            + ! : | 10 sd_ifft_no_trunc_internal  (in libflint.25.0.dylib) + 100  [0x1059d93c8]  sd_ifft.c:1293
+            + ! : | + 3 sd_ifft_no_trunc_internal  (in libflint.25.0.dylib) + 100  [0x1059d93c8]  sd_ifft.c:1293
+            + ! : | + ! 3 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 480,564,...  [0x1059da104,0x1059da158,...]  sd_ifft.c:1255
+            + ! : | + 3 sd_ifft_no_trunc_internal  (in libflint.25.0.dylib) + 264  [0x1059d946c]  sd_ifft.c:1307
+            + ! : | + ! 3 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 92  [0x1059dc6e0]  sd_ifft.c:609
+            + ! : | + !   2 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 160  [0x1059dcac8]  sd_ifft.c:607
+            + ! : | + !   : 2 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 344,728  [0x1059dcb80,0x1059dcd00]  sd_ifft.c:607
+            + ! : | + !   1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 76  [0x1059dca74]  sd_ifft.c:607
+            + ! : | + !     1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 116  [0x1059dce54]  sd_ifft.c:459
+            + ! : | + 3 sd_ifft_no_trunc_internal  (in libflint.25.0.dylib) + 1384  [0x1059d98cc]  sd_ifft.c:1309
+            + ! : | + ! 1 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 92  [0x1059dc6e0]  sd_ifft.c:609
+            + ! : | + ! : 1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 136  [0x1059dcab0]  sd_ifft.c:607
+            + ! : | + ! :   1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 732  [0x1059dd0bc]  sd_ifft.c:465
+            + ! : | + ! 1 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 136  [0x1059dc70c]  sd_ifft.c:609
+            + ! : | + ! : 1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 948  [0x1059dcddc]  sd_ifft.c:607
+            + ! : | + ! 1 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 864  [0x1059dc9e4]  sd_ifft.c:609
+            + ! : | + 1 sd_ifft_no_trunc_internal  (in libflint.25.0.dylib) + 1344  [0x1059d98a4]  sd_ifft.c:1308
+            + ! : | +   1 sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 136  [0x1059dc70c]  sd_ifft.c:609
+            + ! : | +     1 sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 104  [0x1059dca90]  sd_ifft.c:607
+            + ! : | +       1 sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 248  [0x1059dced8]  sd_ifft.c:459
+            + ! : | 1 sd_ifft_no_trunc_internal  (in libflint.25.0.dylib) + 148  [0x1059d93f8]  sd_ifft.c:1298
+            + ! : |   1 sd_ifft_no_trunc_internal  (in libflint.25.0.dylib) + 148  [0x1059d93f8]  sd_ifft.c:1298
+            + ! : |     1 sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 1280  [0x1059da424]  sd_ifft.c:1275
+            + ! : 8 sd_ifft_trunc_internal  (in libflint.25.0.dylib) + 364  [0x1059d7da8]  sd_ifft.c:1462
+            + ! : | 4 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 680  [0x1059d9e60]  sd_ifft.c:1395
+            + ! : | + 2 radix_4_moth_inv_trunc_block_2_4_1  (in libflint.25.0.dylib) + 648,684  [0x1059db978,0x1059db99c]  sd_ifft.c:939
+            + ! : | + 1 radix_4_moth_inv_trunc_block_2_4_1  (in libflint.25.0.dylib) + 408  [0x1059db888]  sd_ifft.c:929
+            + ! : | + 1 radix_4_moth_inv_trunc_block_2_4_1  (in libflint.25.0.dylib) + 432  [0x1059db8a0]  sd_ifft.c:931
+            + ! : | 3 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 564  [0x1059d9dec]  sd_ifft.c:1391
+            + ! : | + 1 radix_2_moth_inv_trunc_block_0_2_1  (in libflint.25.0.dylib) + 204  [0x1059dc190]  sd_ifft.c:200
+            + ! : | + 1 radix_2_moth_inv_trunc_block_0_2_1  (in libflint.25.0.dylib) + 316  [0x1059dc200]  sd_ifft.c:202
+            + ! : | + 1 radix_2_moth_inv_trunc_block_0_2_1  (in libflint.25.0.dylib) + 340  [0x1059dc218]  sd_ifft.c:203
+            + ! : | 1 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 736  [0x1059d9e98]  sd_ifft.c:1399
+            + ! : |   1 radix_2_moth_inv_trunc_block_1_2_0  (in libflint.25.0.dylib) + 188  [0x1059dc3cc]  sd_ifft.c:141
+            + ! : 1 sd_ifft_trunc_internal  (in libflint.25.0.dylib) + 460  [0x1059d7e08]  sd_ifft.c:1466
+            + ! : | 1 sd_ifft_trunc_internal  (in libflint.25.0.dylib) + 364  [0x1059d7da8]  sd_ifft.c:1462
+            + ! : |   1 radix_2_moth_inv_trunc_block_0_2_1  (in libflint.25.0.dylib) + 324  [0x1059dc208]  sd_ifft.c:202
+            + ! : 1 sd_ifft_trunc_internal  (in libflint.25.0.dylib) + 504  [0x1059d7e34]  sd_ifft.c:1470
+            + ! :   1 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 736  [0x1059d9e98]  sd_ifft.c:1399
+            + ! :     1 radix_2_moth_inv_trunc_block_1_2_0  (in libflint.25.0.dylib) + 288  [0x1059dc430]  sd_ifft.c:145
+            + ! 1 sd_ifft_trunc_block  (in libflint.25.0.dylib) + 856  [0x1059d9f10]  sd_ifft.c:1418
+            + 253 fft_worker_func  (in libflint.25.0.dylib) + 48  [0x1059abc24]  mpn_mul.c:1534
+            +   63 sd_fft_ctx_point_mul  (in libflint.25.0.dylib) + 240,216,...  [0x1059aa804,0x1059aa7ec,...]  mpn_mul.c:1427
+            +   63 sd_fft_ctx_point_mul  (in libflint.25.0.dylib) + 324,376,...  [0x1059aa858,0x1059aa88c,...]  mpn_mul.c:1428
+            +   47 sd_fft_ctx_point_mul  (in libflint.25.0.dylib) + 440,424,...  [0x1059aa8cc,0x1059aa8bc,...]  mpn_mul.c:1429
+            +   32 sd_fft_ctx_point_mul  (in libflint.25.0.dylib) + 104,132,...  [0x1059aa77c,0x1059aa798,...]  mpn_mul.c:1426
+            +   25 sd_fft_ctx_point_mul  (in libflint.25.0.dylib) + 48  [0x1059aa744]  mpn_mul.c:1422
+            +   10 sd_fft_ctx_point_mul  (in libflint.25.0.dylib) + 64  [0x1059aa754]  mpn_mul.c:1424
+            +   7 sd_fft_ctx_point_mul  (in libflint.25.0.dylib) + 540,536  [0x1059aa930,0x1059aa92c]  mpn_mul.c:1431
+            +   6 sd_fft_ctx_point_mul  (in libflint.25.0.dylib) + 528,524  [0x1059aa924,0x1059aa920]  mpn_mul.c:1430
+            1465 _mpn_ctx_mpn_mul_range  (in libflint.25.0.dylib) + 3524  [0x1059ab930]  mpn_mul.c:1930
+            + 1303 _mpn_from_ffts_6  (in libflint.25.0.dylib) + 1980,1932,...  [0x1059aeb98,0x1059aeb68,...]  mpn_mul.c:990
+            + 150 _mpn_from_ffts_6  (in libflint.25.0.dylib) + 1220  [0x1059ae8a0]  mpn_mul.c:990
+            + ! 36 _convert_block  (in libflint.25.0.dylib) + 148,120,...  [0x10599b8d4,0x10599b8b8,...]  mpn_helpers.c:37
+            + ! 29 _convert_block  (in libflint.25.0.dylib) + 244,240,...  [0x10599b934,0x10599b930,...]  mpn_helpers.c:39
+            + ! 24 _convert_block  (in libflint.25.0.dylib) + 176,164,...  [0x10599b8f0,0x10599b8e4,...]  mpn_helpers.c:38
+            + ! 17 _convert_block  (in libflint.25.0.dylib) + 92,112  [0x10599b89c,0x10599b8b0]  mpn_helpers.c:36
+            + ! 14 _convert_block  (in libflint.25.0.dylib) + 52  [0x10599b874]  mpn_helpers.c:32
+            + ! 10 _convert_block  (in libflint.25.0.dylib) + 292  [0x10599b964]  mpn_helpers.c:45
+            + ! 6 _convert_block  (in libflint.25.0.dylib) + 300  [0x10599b96c]  mpn_helpers.c:46
+            + ! 5 _convert_block  (in libflint.25.0.dylib) + 256,260  [0x10599b940,0x10599b944]  mpn_helpers.c:40
+            + ! 3 _convert_block  (in libflint.25.0.dylib) + 264  [0x10599b948]  mpn_helpers.c:44
+            + ! 3 _convert_block  (in libflint.25.0.dylib) + 304  [0x10599b970]  mpn_helpers.c:47
+            + ! 1 _convert_block  (in libflint.25.0.dylib) + 64  [0x10599b880]  mpn_helpers.c:35
+            + ! 1 _convert_block  (in libflint.25.0.dylib) + 280  [0x10599b958]  mpn_helpers.c:42
+            + ! 1 _convert_block  (in libflint.25.0.dylib) + 288  [0x10599b960]  mpn_helpers.c:43
+            + 12 _mpn_from_ffts_6  (in libflint.25.0.dylib) + 1128  [0x1059ae844]  mpn_mul.c:990
+            +   12 __bzero  (in libsystem_platform.dylib) + 68  [0x18fea9074]
+            325 _mpn_ctx_mpn_mul_range  (in libflint.25.0.dylib) + 2480  [0x1059ab51c]  mpn_mul.c:1783
+            + 325 mpn_to_ffts_6_140  (in libflint.25.0.dylib) + 3552,156,...  [0x1059a1dac,0x1059a1068,...]  mpn_mul.c:680
+            318 _mpn_ctx_mpn_mul_range  (in libflint.25.0.dylib) + 2428  [0x1059ab4e8]  mpn_mul.c:1783
+            + 318 mpn_to_ffts_6_140  (in libflint.25.0.dylib) + 156,2772,...  [0x1059a1068,0x1059a1aa0,...]  mpn_mul.c:680
+            1 _mpn_ctx_mpn_mul_range  (in libflint.25.0.dylib) + 956  [0x1059aaf28]  mpn_mul.c:1674
+              1 flint_malloc  (in libflint.25.0.dylib) + 28  [0x105560d7c]  memory_manager.c:81
+                1 _xzm_xzone_malloc_freelist_outlined  (in libsystem_malloc.dylib) + 324  [0x18fcc27e4]
+                  1 _xzm_xzone_find_and_malloc_from_freelist_chunk  (in libsystem_malloc.dylib) + 620  [0x18fcc31e8]
+                    1 _xzm_xzone_malloc_from_empty_freelist_chunk  (in libsystem_malloc.dylib) + 112  [0x18fcc3a40]
+
+Total number in stack (recursive counted multiple, when >=5):
+        125       sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 0  [0x1059d6e54]  sd_fft.c:567
+        119       sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 0  [0x1059d6e54]  sd_fft.c:559
+        60       sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 0  [0x1059dcde0]  sd_ifft.c:465
+        59       sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 0  [0x1059dcde0]  sd_ifft.c:459
+        42       sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 0  [0x1059d6e54]  sd_fft.c:566
+        38       sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 0  [0x1059dca28]  sd_ifft.c:607
+        37       sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 0  [0x1059d6ab4]  sd_fft.c:717
+        36       sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 852  [0x1059d6e08]  sd_fft.c:717
+        36       sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 876  [0x1059d6e20]  sd_fft.c:717
+        33       sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 828  [0x1059d6df0]  sd_fft.c:717
+        30       sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 0  [0x1059d6e54]  sd_fft.c:561
+        21       sd_fft_basecase_6_0  (in libflint.25.0.dylib) + 0  [0x1059d6ab4]  sd_fft.c:0
+        20       sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 0  [0x1059d2ac8]  sd_fft.c:957
+        20       sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 0  [0x1059d2ac8]  sd_fft.c:958
+        19       sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 0  [0x1059d6e54]  sd_fft.c:571
+        18       sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 136  [0x1059dcab0]  sd_ifft.c:607
+        18       sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 160  [0x1059dcac8]  sd_ifft.c:607
+        17       sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 76  [0x1059dca74]  sd_ifft.c:607
+        16       sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 0  [0x1059d6e54]  sd_fft.c:558
+        16       sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 104  [0x1059dca90]  sd_ifft.c:607
+        12       sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 0  [0x1059d6714]  sd_fft.c:719
+        11       sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 832  [0x1059d6a54]  sd_fft.c:719
+        11       sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 856  [0x1059d6a6c]  sd_fft.c:719
+        11       sd_fft_basecase_8_0  (in libflint.25.0.dylib) + 880  [0x1059d6a84]  sd_fft.c:719
+        10       sd_ifft_trunc_block  (in libflint.25.0.dylib) + 736  [0x1059d9e98]  sd_ifft.c:1399
+        9       sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 0  [0x1059d6e54]  sd_fft.c:553
+        9       sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 0  [0x1059dcde0]  sd_ifft.c:460
+        8       sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 0  [0x1059d2ac8]  sd_fft.c:928
+        8       sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1592  [0x1059d3100]  sd_fft.c:939
+        8       sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1628  [0x1059d3124]  sd_fft.c:939
+        8       sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 1664  [0x1059d3148]  sd_fft.c:939
+        8       sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 112  [0x1059d1c0c]  sd_fft.c:981
+        8       sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 252  [0x1059d1c98]  sd_fft.c:996
+        8       sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 0  [0x1059dcde0]  sd_ifft.c:455
+        7       sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 0  [0x1059d2ac8]  sd_fft.c:961
+        7       sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 0  [0x1059dcde0]  sd_ifft.c:450
+        7       sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 0  [0x1059d9f24]  sd_ifft.c:1255
+        7       sd_ifft_trunc_block  (in libflint.25.0.dylib) + 412  [0x1059d9d54]  sd_ifft.c:1387
+        6       sd_fft_no_trunc_block  (in libflint.25.0.dylib) + 0  [0x1059d2ac8]  sd_fft.c:878
+        6       sd_ifft_basecase_4_0  (in libflint.25.0.dylib) + 0  [0x1059dcde0]  sd_ifft.c:462
+        6       sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 0  [0x1059dc684]  sd_ifft.c:609
+        6       sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 136  [0x1059dc70c]  sd_ifft.c:609
+        6       sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 92  [0x1059dc6e0]  sd_ifft.c:609
+        6       sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 0  [0x1059d9f24]  sd_ifft.c:1248
+        6       sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 0  [0x1059d9f24]  sd_ifft.c:1274
+        6       sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 0  [0x1059d9f24]  sd_ifft.c:1275
+        6       sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 116  [0x1059d9f98]  sd_ifft.c:1224
+        6       sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 164  [0x1059d9fc8]  sd_ifft.c:1230
+        5       sd_fft_basecase_4_0  (in libflint.25.0.dylib) + 0  [0x1059d6e54]  sd_fft.c:556
+        5       sd_fft_no_trunc_internal  (in libflint.25.0.dylib) + 160  [0x1059d1c3c]  sd_fft.c:987
+        5       sd_ifft_basecase_6_0  (in libflint.25.0.dylib) + 0  [0x1059dca28]  sd_ifft.c:0
+        5       sd_ifft_basecase_8_0  (in libflint.25.0.dylib) + 116  [0x1059dc6f8]  sd_ifft.c:609
+        5       sd_ifft_no_trunc_block  (in libflint.25.0.dylib) + 0  [0x1059d9f24]  sd_ifft.c:1236
+        5       sd_ifft_no_trunc_internal  (in libflint.25.0.dylib) + 100  [0x1059d93c8]  sd_ifft.c:1293
+        5       sd_ifft_no_trunc_internal  (in libflint.25.0.dylib) + 148  [0x1059d93f8]  sd_ifft.c:1298
+        5       sd_ifft_trunc_block  (in libflint.25.0.dylib) + 564  [0x1059d9dec]  sd_ifft.c:1391
+        5       sd_ifft_trunc_block  (in libflint.25.0.dylib) + 680  [0x1059d9e60]  sd_ifft.c:1395
+
+Sort by top of stack, same collapsed (when >= 5):
+        sd_fft_no_trunc_block  (in libflint.25.0.dylib)        1645
+        _mpn_from_ffts_6  (in libflint.25.0.dylib)        1303
+        sd_fft_basecase_4_0  (in libflint.25.0.dylib)        838
+        sd_ifft_no_trunc_block  (in libflint.25.0.dylib)        832
+        mpn_to_ffts_6_140  (in libflint.25.0.dylib)        643
+        sd_fft_basecase_6_0  (in libflint.25.0.dylib)        365
+        sd_ifft_basecase_4_0  (in libflint.25.0.dylib)        351
+        sd_fft_basecase_8_0  (in libflint.25.0.dylib)        321
+        sd_fft_moth_trunc_block_2_4_1  (in libflint.25.0.dylib)        281
+        sd_fft_ctx_point_mul  (in libflint.25.0.dylib)        253
+        sd_ifft_basecase_6_0  (in libflint.25.0.dylib)        199
+        sd_ifft_basecase_8_0  (in libflint.25.0.dylib)        192
+        _convert_block  (in libflint.25.0.dylib)        150
+        sd_fft_trunc_block  (in libflint.25.0.dylib)        85
+        radix_4_moth_inv_trunc_block_3_3_1  (in libflint.25.0.dylib)        51
+        sd_fft_moth_trunc_block_4_2_0  (in libflint.25.0.dylib)        26
+        radix_2_moth_inv_trunc_block_1_2_1  (in libflint.25.0.dylib)        23
+        sd_ifft_no_trunc_block.cold.1  (in libflint.25.0.dylib)        22
+        radix_4_moth_inv_trunc_block_1_4_1  (in libflint.25.0.dylib)        15
+        sd_fft_no_trunc_internal  (in libflint.25.0.dylib)        13
+        __bzero  (in libsystem_platform.dylib)        12
+        sd_fft_moth_trunc_block_4_3_0  (in libflint.25.0.dylib)        6
+        sd_ifft_trunc_block  (in libflint.25.0.dylib)        6
+        radix_4_moth_inv_trunc_block_2_4_0  (in libflint.25.0.dylib)        5
+
+Binary Images:
+       0x1043a0000 -        0x1043a13bb +mul (0) <5ADDC7AA-F803-3963-ABDC-393A8B513F54> /Users/*/mul
+       0x104420000 -        0x104474f67 +libgmp.10.dylib (0) <61CFD8B8-214C-314F-96F5-0489BF7A8F45> /opt/homebrew/*/libgmp.10.dylib
+       0x104550000 -        0x1045a7bd7 +libmpfr.6.dylib (0) <52900495-C806-30A1-B740-BFBB152F39FE> /opt/homebrew/*/libmpfr.6.dylib
+       0x105558000 -        0x1060ec55f +libflint.25.0.dylib (0) <36D841A8-97CF-35A1-AD11-BBA6559BAE07> /Users/*/libflint.25.0.dylib
+       0x18fa2c000 -        0x18fa7eb4b  libobjc.A.dylib (951.7) <03BD9E32-CF0A-37B0-898A-3CE8DE06D842> /usr/lib/libobjc.A.dylib
+       0x18fa7f000 -        0x18fab3d58  libdyld.dylib (1387) <957F93B3-8805-39C7-9C51-EDD1715F550E> /usr/lib/system/libdyld.dylib
+       0x18fab4000 -        0x18fb674ff  dyld (1.0.0 - 1387) <74E52480-C2BD-3C8D-812D-95FE2B74A096> /usr/lib/dyld
+       0x18fb68000 -        0x18fb6b228  libsystem_blocks.dylib (96) <E0AC1231-27AA-3A13-8FAC-41D5802B1F3C> /usr/lib/system/libsystem_blocks.dylib
+       0x18fb6c000 -        0x18fbc055f  libxpc.dylib (3102.160.5) <33E44C2D-D65E-37A6-B85F-1A4CF524A050> /usr/lib/system/libxpc.dylib
+       0x18fbc1000 -        0x18fbe19ff  libsystem_trace.dylib (1861.160.4) <93F1DD8C-6CD9-32B9-B222-D23DA5D161B4> /usr/lib/system/libsystem_trace.dylib
+       0x18fbe2000 -        0x18fc905f7  libcorecrypto.dylib (1922.160.10) <0642DDAD-4771-3C82-805C-E7C6701C1461> /usr/lib/system/libcorecrypto.dylib
+       0x18fc91000 -        0x18fce1257  libsystem_malloc.dylib (812.160.5) <D969A907-3E43-3951-9365-8C2DB3812E9D> /usr/lib/system/libsystem_malloc.dylib
+       0x18fce2000 -        0x18fd2923f  libdispatch.dylib (1542.160.2) <B2000CD5-F580-314A-A141-E036719D854E> /usr/lib/system/libdispatch.dylib
+       0x18fd2a000 -        0x18fd2cffb  libsystem_featureflags.dylib (103) <FEE12F9C-344B-33B3-8EDD-283580EF1C67> /usr/lib/system/libsystem_featureflags.dylib
+       0x18fd2d000 -        0x18fdae1e7  libsystem_c.dylib (1752.160.4) <D77CEB62-AFF6-3CEC-BA9B-4F057FBE2EB5> /usr/lib/system/libsystem_c.dylib
+       0x18fdaf000 -        0x18fe3fae7  libc++.1.dylib (2100.43) <F0FD393C-15BC-3C75-A19D-897F7B225C78> /usr/lib/libc++.1.dylib
+       0x18fe40000 -        0x18fe5a75f  libc++abi.dylib (2100.43) <F38A9C58-22AB-3798-BBAE-8DCD9CC0CE27> /usr/lib/libc++abi.dylib
+       0x18fe5b000 -        0x18fe982e7  libsystem_kernel.dylib (12377.161.14) <C6A4A4CB-92E6-3BAF-AAE0-E8306259209A> /usr/lib/system/libsystem_kernel.dylib
+       0x18fe99000 -        0x18fea5b3b  libsystem_pthread.dylib (539.100.4) <A373F0B0-9880-326A-88B4-DD8BE4E33072> /usr/lib/system/libsystem_pthread.dylib
+       0x18fea6000 -        0x18feae963  libsystem_platform.dylib (375.120.2) <EDB83A19-EC17-32DE-9350-6145970A85D6> /usr/lib/system/libsystem_platform.dylib
+       0x18feaf000 -        0x18fede6eb  libsystem_info.dylib (600) <9B5FB84B-31AD-3EA7-8F89-8C700D369DC8> /usr/lib/system/libsystem_info.dylib
+       0x193e7c000 -        0x193e85e5f  libsystem_darwin.dylib (1752.160.4) <8E07D22E-CE5A-38A0-B091-5B0338C326F5> /usr/lib/system/libsystem_darwin.dylib
+       0x1942e7000 -        0x1942f91b6  libsystem_notify.dylib (348.160.3) <15799128-6CBD-30D6-A2BB-B9D02B4470C0> /usr/lib/system/libsystem_notify.dylib
+       0x1965b8000 -        0x1965d2f7b  libsystem_networkextension.dylib (2226.161.1) <9C7B1EEB-47BE-3791-93A9-CFC693CB9417> /usr/lib/system/libsystem_networkextension.dylib
+       0x196655000 -        0x19666cfdf  libsystem_asl.dylib (406) <54439739-33EE-3273-839F-CBA67D7F5CB1> /usr/lib/system/libsystem_asl.dylib
+       0x19820e000 -        0x198216387  libsystem_symptoms.dylib (2169.160.3) <229122B9-B8B1-3F2F-870E-8650AE3C4FB5> /usr/lib/system/libsystem_symptoms.dylib
+       0x19c4b3000 -        0x19c4eb5b7  libsystem_containermanager.dylib (725.160.3) <14B2A47F-19C8-392F-8FDB-FE8AE375DD41> /usr/lib/system/libsystem_containermanager.dylib
+       0x19d8c5000 -        0x19d8c95d7  libsystem_configuration.dylib (1405.160.3) <D8D6280B-783D-3550-BDBA-2861AE40604F> /usr/lib/system/libsystem_configuration.dylib
+       0x19d8ca000 -        0x19d8d099f  libsystem_sandbox.dylib (2680.160.6) <54688162-B50D-3D31-A1E8-7B9766D3530D> /usr/lib/system/libsystem_sandbox.dylib
+       0x19ef25000 -        0x19ef281fb  libquarantine.dylib (196.160.2) <EEE5AADB-52E1-3C4C-881A-70405770B1F1> /usr/lib/system/libquarantine.dylib
+       0x19f6c4000 -        0x19f6cad03  libsystem_coreservices.dylib (191.5.1) <D4ACD2AC-5702-3C45-85A0-300B2C2D19E1> /usr/lib/system/libsystem_coreservices.dylib
+       0x19fc53000 -        0x19fc90a77  libsystem_m.dylib (3312.100.1) <B54FBE99-DB0B-32C7-ABDD-C2206DF606A4> /usr/lib/system/libsystem_m.dylib
+       0x19fc92000 -        0x19fc95527  libmacho.dylib (1387) <949131E5-BDA2-39BA-AA50-62651BB51802> /usr/lib/system/libmacho.dylib
+       0x19fcaf000 -        0x19fcbc3a7  libcommonCrypto.dylib (600035) <3B110564-5278-3CB0-85F1-2CE8431FF935> /usr/lib/system/libcommonCrypto.dylib
+       0x19fcbd000 -        0x19fcc6ca3  libunwind.dylib (2100.2) <05FD0014-55B1-3B8A-A6BA-6C7A389C4123> /usr/lib/system/libunwind.dylib
+       0x19fccf000 -        0x19fcd9bef  libcopyfile.dylib (240.160.2.0.1) <D0009B8A-8ECC-3D56-9206-7E1839707F93> /usr/lib/system/libcopyfile.dylib
+       0x19fcda000 -        0x19fcdd987  libcompiler_rt.dylib (103.3) <6FB345CA-7F5C-3263-A23F-143F7539FD8A> /usr/lib/system/libcompiler_rt.dylib
+       0x19fcde000 -        0x19fce278b  libsystem_collections.dylib (1752.160.4) <C8160BD2-5941-3DC0-BB40-F8C2B8156EC4> /usr/lib/system/libsystem_collections.dylib
+       0x19fce3000 -        0x19fce64cf  libsystem_secinit.dylib (168.100.7) <ECABC024-8F02-374A-BB7E-29437CEA2ABD> /usr/lib/system/libsystem_secinit.dylib
+       0x19fce7000 -        0x19fce9bf7  libremovefile.dylib (85.100.6) <7460B5AE-469A-36A0-A7EC-6C7D69628E86> /usr/lib/system/libremovefile.dylib
+       0x19fcea000 -        0x19fceaf27  libkeymgr.dylib (31) <7E863FCA-F3FF-32C7-8A8C-F983E946AFC3> /usr/lib/system/libkeymgr.dylib
+       0x19fceb000 -        0x19fcf3e37  libsystem_dnssd.dylib (2881.160.4) <305F4398-E688-3384-B351-02D865EC8A04> /usr/lib/system/libsystem_dnssd.dylib
+       0x19fcf4000 -        0x19fcf909b  libcache.dylib (95) <9CD7B1E1-3E47-339C-A193-2392E3E0ED23> /usr/lib/system/libcache.dylib
+       0x19fcfa000 -        0x19fcfbce3  libSystem.B.dylib (1356) <4FED5EE2-5D3E-35B1-A170-9859C4B683BB> /usr/lib/libSystem.B.dylib
+       0x293cbd000 -        0x293cc4349  libRosetta.dylib (367.9) <0C7397C6-D747-31F2-8BC1-4096213BDE5C> /usr/lib/libRosetta.dylib
+       0x2958d0000 -        0x2958d3a4b  libsystem_darwindirectory.dylib (122) <971A4F65-493D-39F3-846D-0D33FA2769FD> /usr/lib/system/libsystem_darwindirectory.dylib
+       0x2958d4000 -        0x2958de39b  libsystem_eligibility.dylib (319.160.17) <750CA446-92EA-3A56-9A7B-CC0841686C50> /usr/lib/system/libsystem_eligibility.dylib
+       0x2958df000 -        0x2958e688b  libsystem_sanitizers.dylib (26.1) <D88EC709-9AA8-3083-B22B-D3CB39678D71> /usr/lib/system/libsystem_sanitizers.dylib
+       0x2958e7000 -        0x2958e7bb7  libsystem_trial.dylib (474.2.18.2) <7194FF5B-A6C5-3D67-B00A-90209F10D603> /usr/lib/system/libsystem_trial.dylib

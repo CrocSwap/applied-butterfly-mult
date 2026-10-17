@@ -1,0 +1,379 @@
+--- a/src/acb_theta/agm_mul.c
++++ b/src/acb_theta/agm_mul.c
+@@ -12,42 +12,104 @@
+ #include "acb.h"
+ #include "acb_theta.h"
+ 
+-static void
+-acb_theta_agm_hadamard(acb_ptr res, acb_srcptr a, slong g, slong prec)
+-{
+-    acb_ptr v;
+-    slong half;
+-
+-    if (g == 0)
+-    {
+-        acb_set(&res[0], &a[0]);
+-    }
+-    else
+-    {
+-        half = 1 << (g - 1);
+-        v = _acb_vec_init(1 << g);
+-
+-        acb_theta_agm_hadamard(v, a, g - 1, prec);
+-        acb_theta_agm_hadamard(v + half, a + half, g - 1, prec);
+-        _acb_vec_add(res, v, v + half, half, prec);
+-        _acb_vec_sub(res + half, v, v + half, half, prec);
+-
+-        _acb_vec_clear(v, 1 << g);
+-    }
+-}
++/* Alman--Rao, arXiv:2211.06459v2, Algorithms 9 and 5.
++   Independent Acb implementation. Natural binary output order, no normalization.
++   Distinct input/output arrays; caller owns reusable scratch (1, 1, 6, 16 balls).
++   All input scaling is included, fused with the input-to-output copy. */
++#include "acb.h"
++
++static void tn_pair(acb_ptr a, acb_ptr b, acb_ptr s, slong p) {
++    acb_add(s,a,b,p); acb_sub(b,a,b,p); acb_swap(a,s);
++}
++static void tn_iter_inner(acb_ptr y, slong l, slong p, acb_ptr s) {
++    slong n=1L<<l;
++    for(slong half=1;half<n;half*=2)
++        for(slong i=0;i<n;i+=2*half)
++            for(slong j=0;j<half;j++) tn_pair(y+i+j,y+i+j+half,s,p);
++}
++static void tn_iter(acb_ptr y, acb_srcptr x, slong l, slong p, acb_ptr s) {
++    _acb_vec_set(y,x,1L<<l); tn_iter_inner(y,l,p,s);
++}
++static void tn_recursive(acb_ptr y, acb_srcptr x, slong l, slong p, acb_ptr s) {
++    if(!l) {acb_set(y,x);return;}
++    slong h=1L<<(l-1);
++    tn_recursive(y,x,l-1,p,s);tn_recursive(y+h,x+h,l-1,p,s);
++    for(slong j=0;j<h;j++) tn_pair(y+j,y+j+h,s,p);
++}
++static void tn_h4_rec(acb_ptr y, acb_srcptr x, slong l, slong k, slong p, acb_ptr s) {
++    if(l<2) {
++        for(slong i=0;i<(1L<<l);i++) acb_mul_2exp_si(y+i,x+i,k);
++        tn_iter_inner(y,l,p,s);return;
++    }
++    slong h=1L<<(l-2);
++    for(slong j=0;j<4;j++) tn_h4_rec(y+j*h,x+j*h,l-2,k+(j!=0),p,s);
++    for(slong i=0;i<h;i++) {
++        acb_ptr a=y+i,b=a+h,c=b+h,d=c+h;
++        acb_add(s,b,c,p);acb_add(s,s,d,p);acb_mul_2exp_si(s,s,-1);
++        acb_sub(s+1,a,s,p);
++        acb_add(s+2,a,s,p);acb_add(s+3,s+1,c,p);
++        acb_add(s+4,s+1,b,p);acb_add(s+5,s+1,d,p);
++        for(slong j=0;j<4;j++) acb_swap(a+j*h,s+2+j);
++    }
++}
++static void tn_h4(acb_ptr y, acb_srcptr x, slong l, slong p, acb_ptr s) {
++    tn_h4_rec(y,x,l,0,p,s);
++}
++static void tn_h8_rec(acb_ptr y, acb_srcptr x, slong l, slong k, slong p, acb_ptr s) {
++    if(l<3) {
++        for(slong i=0;i<(1L<<l);i++) acb_mul_2exp_si(y+i,x+i,k);
++        tn_iter_inner(y,l,p,s);return;
++    }
++    slong h=1L<<(l-3);
++    for(slong j=0;j<8;j++) tn_h8_rec(y+j*h,x+j*h,l-3,k+(j!=0),p,s);
++    for(slong i=0;i<h;i++) {
++        acb_ptr a=y+i,b=a+h,c=b+h,d=c+h,e=d+h,f=e+h,g=f+h,v=g+h;
++        acb_add(s,b,c,p);acb_add(s+1,d,v,p);acb_add(s+2,f,g,p);
++        acb_add(s+3,s,s+1,p);acb_add(s+3,s+3,s+2,p);acb_add(s+3,s+3,e,p);
++        acb_mul_2exp_si(s+3,s+3,-1);acb_sub(s+4,a,s+3,p);
++        acb_add(s+5,s+4,d,p);acb_add(s+6,s+4,e,p);acb_add(s+7,s+4,v,p);
++        acb_add(s+8,a,s+3,p);
++        acb_add(s+9,s+6,c,p);acb_add(s+9,s+9,g,p);
++        acb_add(s+10,s+6,b,p);acb_add(s+10,s+10,f,p);
++        acb_add(s+11,s+6,s+1,p);acb_add(s+12,s+5,s,p);
++        acb_add(s+13,s+7,c,p);acb_add(s+13,s+13,f,p);
++        acb_add(s+14,s+7,b,p);acb_add(s+14,s+14,g,p);
++        acb_add(s+15,s+5,s+2,p);
++        for(slong j=0;j<8;j++) acb_swap(a+j*h,s+8+j);
++    }
++}
++static void tn_h8(acb_ptr y, acb_srcptr x, slong l, slong p, acb_ptr s) {
++    tn_h8_rec(y,x,l,0,p,s);
++}
++typedef void (*tn_fn)(acb_ptr,acb_srcptr,slong,slong,acb_ptr);
++static tn_fn tn_functions[]={tn_iter,tn_recursive,tn_h4,tn_h8};
++static const slong tn_scratch[]={1,1,6,16};
++
++/* Private workspace, explicitly owned by the calling AGM or batch context.
++   It retains allocation across precision changes, never mathematical inputs. */
++#define TW_ENGINE 2
++#define TW_SCRATCH 6
++static void tw_hadamard(acb_ptr y,acb_srcptr x,slong g,slong p,acb_ptr scratch)
++{
++    int e=TW_ENGINE;
++    if(e>=2 && (p>4096 || g<(e==2?2:3))) e=1;
++    tn_functions[e](y,x,g,p,scratch);
++}
++void bf_theta_agm_mul_ws(acb_ptr,acb_srcptr,acb_srcptr,slong,int,slong,acb_ptr);
++
+ 
+ /* Equal-bank specialization for the all-characteristic AGM product.
+    Insert after acb_theta_agm_hadamard in the experimental FLINT source.
+    The surrounding file retains FLINT's LGPL-3.0-or-later notice. */
+ static void
+-acb_theta_agm_mul_equal(acb_ptr res, acb_srcptr x, slong g, slong prec)
++acb_theta_agm_mul_equal(acb_ptr res, acb_srcptr x, slong g, slong prec, acb_ptr scratch)
+ {
+     slong n = 1L << g;
+     acb_ptr w = _acb_vec_init(n);
+ 
+     for (slong b = 0; b < n; b++)
+         acb_sqr(w + b, x + b, prec);
+-    acb_theta_agm_hadamard(res, w, g, prec);
++    tw_hadamard(res, w, g, prec, scratch);
+ 
+     for (slong k = 1; k < n; k++)
+     {
+@@ -60,7 +122,7 @@
+             slong b = (t & mask) | ((t & ~mask) << 1);
+             acb_mul(w + t, x + (b ^ k), x + b, prec);
+         }
+-        acb_theta_agm_hadamard(w + n / 2, w, g - 1, prec);
++        tw_hadamard(w + n / 2, w, g - 1, prec, scratch);
+ 
+         /* Characters with a.k odd vanish. For each character on the
+            quotient there is one a with a.k even; its coefficient is
+@@ -78,7 +140,7 @@
+ }
+ 
+ static void
+-acb_theta_agm_mul_one(acb_ptr res, acb_srcptr a1, acb_srcptr a2, slong g, slong prec)
++acb_theta_agm_mul_one(acb_ptr res, acb_srcptr a1, acb_srcptr a2, slong g, slong prec, acb_ptr scratch)
+ {
+     acb_ptr v;
+     slong n = 1 << g;
+@@ -86,7 +148,7 @@
+ 
+     v = _acb_vec_init(2 * n);
+ 
+-    acb_theta_agm_hadamard(v, a1, g, prec);
++    tw_hadamard(v, a1, g, prec, scratch);
+ 
+     if (a1 == a2)
+     {
+@@ -97,25 +159,25 @@
+     }
+     else
+     {
+-        acb_theta_agm_hadamard(v + n, a2, g, prec);
++        tw_hadamard(v + n, a2, g, prec, scratch);
+         for (k = 0; k < n; k++)
+         {
+             acb_mul(&v[k], &v[k], &v[k + n], prec);
+         }
+     }
+ 
+-    acb_theta_agm_hadamard(res, v, g, prec);
++    tw_hadamard(res, v, g, prec, scratch);
+     _acb_vec_scalar_mul_2exp_si(res, res, n, -g);
+ 
+     _acb_vec_clear(v, 2 * n);
+ }
+ 
+ void
+-acb_theta_agm_mul(acb_ptr res, acb_srcptr a1, acb_srcptr a2, slong g, int all, slong prec)
++bf_theta_agm_mul_ws(acb_ptr res, acb_srcptr a1, acb_srcptr a2, slong g, int all, slong prec, acb_ptr scratch)
+ {
+     if (all && a1 == a2)
+     {
+-        acb_theta_agm_mul_equal(res, a1, g, prec);
++        acb_theta_agm_mul_equal(res, a1, g, prec, scratch);
+     }
+     else if (all)
+     {
+@@ -127,12 +189,20 @@
+         acb_ptr w = _acb_vec_init(n);
+         for (slong k=0;k<n;k++) {
+             for (slong b=0;b<n;b++) acb_mul(w+b,a1+(b^k),a2+b,prec);
+-            acb_theta_agm_hadamard(res+k*n,w,g,prec);
++            tw_hadamard(res+k*n,w,g,prec, scratch);
+         }
+         _acb_vec_clear(w,n);
+     }
+     else
+     {
+-        acb_theta_agm_mul_one(res, a1, a2, g, prec);
+-    }
+-}
++        acb_theta_agm_mul_one(res, a1, a2, g, prec, scratch);
++    }
++}
++
++void
++acb_theta_agm_mul(acb_ptr res,acb_srcptr a1,acb_srcptr a2,slong g,int all,slong prec)
++{
++    acb_ptr scratch=_acb_vec_init(TW_SCRATCH);
++    bf_theta_agm_mul_ws(res,a1,a2,g,all,prec,scratch);
++    _acb_vec_clear(scratch,TW_SCRATCH);
++}
+--- a/src/acb_theta/ql_exact.c
++++ b/src/acb_theta/ql_exact.c
+@@ -375,29 +375,91 @@
+     flint_free(new_pattern);
+ }
+ 
+-static void
+-bf_hadamard(acb_ptr res, acb_srcptr a, slong g, slong prec)
+-{
+-    acb_ptr v;
+-    slong half;
+-
+-    if (g == 0)
+-    {
+-        acb_set(&res[0], &a[0]);
+-    }
+-    else
+-    {
+-        half = 1 << (g - 1);
+-        v = _acb_vec_init(1 << g);
+-
+-        bf_hadamard(v, a, g - 1, prec);
+-        bf_hadamard(v + half, a + half, g - 1, prec);
+-        _acb_vec_add(res, v, v + half, half, prec);
+-        _acb_vec_sub(res + half, v, v + half, half, prec);
+-
+-        _acb_vec_clear(v, 1 << g);
+-    }
+-}
++/* Alman--Rao, arXiv:2211.06459v2, Algorithms 9 and 5.
++   Independent Acb implementation. Natural binary output order, no normalization.
++   Distinct input/output arrays; caller owns reusable scratch (1, 1, 6, 16 balls).
++   All input scaling is included, fused with the input-to-output copy. */
++#include "acb.h"
++
++static void tn_pair(acb_ptr a, acb_ptr b, acb_ptr s, slong p) {
++    acb_add(s,a,b,p); acb_sub(b,a,b,p); acb_swap(a,s);
++}
++static void tn_iter_inner(acb_ptr y, slong l, slong p, acb_ptr s) {
++    slong n=1L<<l;
++    for(slong half=1;half<n;half*=2)
++        for(slong i=0;i<n;i+=2*half)
++            for(slong j=0;j<half;j++) tn_pair(y+i+j,y+i+j+half,s,p);
++}
++static void tn_iter(acb_ptr y, acb_srcptr x, slong l, slong p, acb_ptr s) {
++    _acb_vec_set(y,x,1L<<l); tn_iter_inner(y,l,p,s);
++}
++static void tn_recursive(acb_ptr y, acb_srcptr x, slong l, slong p, acb_ptr s) {
++    if(!l) {acb_set(y,x);return;}
++    slong h=1L<<(l-1);
++    tn_recursive(y,x,l-1,p,s);tn_recursive(y+h,x+h,l-1,p,s);
++    for(slong j=0;j<h;j++) tn_pair(y+j,y+j+h,s,p);
++}
++static void tn_h4_rec(acb_ptr y, acb_srcptr x, slong l, slong k, slong p, acb_ptr s) {
++    if(l<2) {
++        for(slong i=0;i<(1L<<l);i++) acb_mul_2exp_si(y+i,x+i,k);
++        tn_iter_inner(y,l,p,s);return;
++    }
++    slong h=1L<<(l-2);
++    for(slong j=0;j<4;j++) tn_h4_rec(y+j*h,x+j*h,l-2,k+(j!=0),p,s);
++    for(slong i=0;i<h;i++) {
++        acb_ptr a=y+i,b=a+h,c=b+h,d=c+h;
++        acb_add(s,b,c,p);acb_add(s,s,d,p);acb_mul_2exp_si(s,s,-1);
++        acb_sub(s+1,a,s,p);
++        acb_add(s+2,a,s,p);acb_add(s+3,s+1,c,p);
++        acb_add(s+4,s+1,b,p);acb_add(s+5,s+1,d,p);
++        for(slong j=0;j<4;j++) acb_swap(a+j*h,s+2+j);
++    }
++}
++static void tn_h4(acb_ptr y, acb_srcptr x, slong l, slong p, acb_ptr s) {
++    tn_h4_rec(y,x,l,0,p,s);
++}
++static void tn_h8_rec(acb_ptr y, acb_srcptr x, slong l, slong k, slong p, acb_ptr s) {
++    if(l<3) {
++        for(slong i=0;i<(1L<<l);i++) acb_mul_2exp_si(y+i,x+i,k);
++        tn_iter_inner(y,l,p,s);return;
++    }
++    slong h=1L<<(l-3);
++    for(slong j=0;j<8;j++) tn_h8_rec(y+j*h,x+j*h,l-3,k+(j!=0),p,s);
++    for(slong i=0;i<h;i++) {
++        acb_ptr a=y+i,b=a+h,c=b+h,d=c+h,e=d+h,f=e+h,g=f+h,v=g+h;
++        acb_add(s,b,c,p);acb_add(s+1,d,v,p);acb_add(s+2,f,g,p);
++        acb_add(s+3,s,s+1,p);acb_add(s+3,s+3,s+2,p);acb_add(s+3,s+3,e,p);
++        acb_mul_2exp_si(s+3,s+3,-1);acb_sub(s+4,a,s+3,p);
++        acb_add(s+5,s+4,d,p);acb_add(s+6,s+4,e,p);acb_add(s+7,s+4,v,p);
++        acb_add(s+8,a,s+3,p);
++        acb_add(s+9,s+6,c,p);acb_add(s+9,s+9,g,p);
++        acb_add(s+10,s+6,b,p);acb_add(s+10,s+10,f,p);
++        acb_add(s+11,s+6,s+1,p);acb_add(s+12,s+5,s,p);
++        acb_add(s+13,s+7,c,p);acb_add(s+13,s+13,f,p);
++        acb_add(s+14,s+7,b,p);acb_add(s+14,s+14,g,p);
++        acb_add(s+15,s+5,s+2,p);
++        for(slong j=0;j<8;j++) acb_swap(a+j*h,s+8+j);
++    }
++}
++static void tn_h8(acb_ptr y, acb_srcptr x, slong l, slong p, acb_ptr s) {
++    tn_h8_rec(y,x,l,0,p,s);
++}
++typedef void (*tn_fn)(acb_ptr,acb_srcptr,slong,slong,acb_ptr);
++static tn_fn tn_functions[]={tn_iter,tn_recursive,tn_h4,tn_h8};
++static const slong tn_scratch[]={1,1,6,16};
++
++/* Private workspace, explicitly owned by the calling AGM or batch context.
++   It retains allocation across precision changes, never mathematical inputs. */
++#define TW_ENGINE 2
++#define TW_SCRATCH 6
++static void tw_hadamard(acb_ptr y,acb_srcptr x,slong g,slong p,acb_ptr scratch)
++{
++    int e=TW_ENGINE;
++    if(e>=2 && (p>4096 || g<(e==2?2:3))) e=1;
++    tn_functions[e](y,x,g,p,scratch);
++}
++void bf_theta_agm_mul_ws(acb_ptr,acb_srcptr,acb_srcptr,slong,int,slong,acb_ptr);
++
+ 
+ static void
+ bf_rel_mag_err(arf_t m, arf_t eps, acb_srcptr a, arb_srcptr d,
+@@ -462,6 +524,7 @@
+ typedef struct {
+     bf_batch_slot slot[2];
+     acb_ptr work;
++    acb_ptr transform_scratch;
+     arf_t mag, eps, error;
+     arb_t bound;
+     slong n;
+@@ -478,6 +541,7 @@
+         arf_init(s->mag);arf_init(s->eps);
+     }
+     c->work=_acb_vec_init(2*n);
++    c->transform_scratch=_acb_vec_init(TW_SCRATCH);
+     arf_init(c->mag);arf_init(c->eps);arf_init(c->error);arb_init(c->bound);
+ }
+ 
+@@ -496,6 +560,7 @@
+         arf_clear(s->mag);arf_clear(s->eps);
+     }
+     _acb_vec_clear(c->work,2*c->n);
++    _acb_vec_clear(c->transform_scratch,TW_SCRATCH);
+     arf_clear(c->mag);arf_clear(c->eps);arf_clear(c->error);arb_clear(c->bound);
+ }
+ 
+@@ -530,19 +595,19 @@
+         /* A cached rigorous enclosure at higher precision remains valid.
+            Recompute whenever a caller requires MORE precision. */
+         if(s->hat_prec<hprec) {
+-            bf_hadamard(s->hat,s->mid,g,hprec);s->hat_prec=hprec;BF_COUNT(4);
++            tw_hadamard(s->hat,s->mid,g,hprec,c->transform_scratch);s->hat_prec=hprec;BF_COUNT(4);
+         } else {BF_COUNT(3);}
+         acb_ptr v=c->work+n;
+         if(a0==a) {
+             for(slong k=0;k<n;k++) acb_sqr(v+k,s->hat+k,hprec);
+         } else {
+-            bf_hadamard(v,c->work,g,hprec);
++            tw_hadamard(v,c->work,g,hprec,c->transform_scratch);
+             for(slong k=0;k<n;k++) acb_mul(v+k,s->hat+k,v+k,hprec);
+         }
+-        bf_hadamard(res,v,g,hprec);
++        tw_hadamard(res,v,g,hprec,c->transform_scratch);
+         _acb_vec_scalar_mul_2exp_si(res,res,n,-g);
+     } else {
+-        acb_theta_agm_mul(res,s->mid,a0==a?s->mid:c->work,g,all,hprec);
++        bf_theta_agm_mul_ws(res,s->mid,a0==a?s->mid:c->work,g,all,hprec,c->transform_scratch);
+     }
+     /* Preserve the existing directed-rounding error formula, operation by operation. */
+     arf_mul(c->error,s->mag,c->eps,lp,ARF_RND_CEIL);

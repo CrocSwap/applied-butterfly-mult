@@ -1,0 +1,67 @@
+{
+  "status": "COMPLETE",
+  "objective": "Implement and qualify the equal-bank theta specialization against the existing combined theta patch.",
+  "decision": "Retain as an experimental candidate for squared theta constants; no broad mixed-batch gain or regression-free claim.",
+  "confirmed_scope": "Two well-conditioned fixtures each, genus 1/2/3/4/6, 512-bit working precision, all squared constants, complete public calls on one Apple M2.",
+  "confirmation": {
+    "current/nonzero_control": {
+      "cases": 4,
+      "median_cpu": -0.1916715651742118,
+      "positive_cpu": 0,
+      "positive_both": 0
+    },
+    "current/rebuild_control": {
+      "cases": 4,
+      "median_cpu": -0.14979305396059517,
+      "positive_cpu": 0,
+      "positive_both": 0
+    },
+    "current/same_control": {
+      "cases": 2,
+      "median_cpu": 0.029902915602419977,
+      "positive_cpu": 0,
+      "positive_both": 0
+    },
+    "current/single_control": {
+      "cases": 2,
+      "median_cpu": -0.5096491918063606,
+      "positive_cpu": 0,
+      "positive_both": 0
+    },
+    "current/squared_constants": {
+      "cases": 10,
+      "median_cpu": 1.367108755097518,
+      "positive_cpu": 10,
+      "positive_both": 9
+    },
+    "original/squared_constants": {
+      "cases": 8,
+      "median_cpu": 5.782828489158037,
+      "positive_cpu": 8,
+      "positive_both": 8
+    }
+  },
+  "numerical_checks": "PASS",
+  "preserved_fingerprints": 927,
+  "timed_batches": 9424,
+  "control_limitation": "An unchanged-source rebuild control remains significant at approximately -0.44% CPU in confirmation; initial campaign has larger control variability. Precise subpercent attribution remains limited.",
+  "next": "Reproduce the published genus-six E4 stage with actual application inputs and accuracy targets. This application has not been measured yet.",
+  "report": "/Users/colkitt/sith/toys/math/butterflyMult/docs/theta-equal.md",
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/docs/theta-equal.md": "9063b1ae8b949ef55705487cbb58d0afbff5fe5cbed4debee5a624db458f0948",
+    "/Users/colkitt/sith/toys/math/butterflyMult/patches/theta-equal-bank.patch": "8bb2d6d94d6451a6062ec9139a106879e3231726bc33446cce291a1e8397d664",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/theta_equal_kernel.h": "aebea1d96ea5d9c3849aa4d99b55defbf41a0cf5d98aaef0cd4e3b59947443e0",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/theta_equal.c": "a5f2e53c40b5ba2cee93a912a9330e61223be7ecf8c446b2ba143d915b6690d5",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/theta_equal_check.c": "1f5dfd5f00c259b39474fc5a92560264eca8d0f16e100243c9858fcc917efccd",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/theta_equal.py": "a985575a6def2136bf4f21c503359071349527f31ded4daee36797a2e70029f2",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/limit_theta_equal.py": "63958c249c8eaf5017e702deb445fe037035b300b543964c11383fe951128167",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/audit_theta_equal.py": "c162d5679d6debc2f37cf4980236604479b09ad203c42632e3e35c642ad091f1",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-equal/audit.json": "55c2271f6e01cdff90bcde8b2946ec4532ca091c79b05185b0cdc33394a534d3",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-equal/raw.jsonl": "c0434b839430db81d3ea649746f6edce24a381bcb6969018f2824502b769d5ac",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-equal/confirmation/raw.jsonl": "6a9bfc3291e136364ae0e2c1c44a2f9b359e7ed6337d9742196cf0378bd6fb8f",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-equal/plan.json": "e0d63bd9125a09f8d97dfe6f6bdfe51bc876f9a1e9334c77bfaa3d9b40119616",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-equal/confirmation/plan.json": "ab81f962408846ded4f402629feaa962a5817430bede948be255fb3061421f1f",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-equal/summary.json": "b01ebf2024b490df7aad1c8a9a9776d0fe35160389706da19a3207647ed56cad",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-equal/confirmation/summary.json": "b1110c8e76e9cdd27de557bb4dccb230979be2c797e2f414a483aeaa99a38cef"
+  }
+}

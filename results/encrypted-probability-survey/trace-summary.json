@@ -1,0 +1,914 @@
+[
+  {
+    "case": {
+      "data": "asia1k",
+      "pruning": 0,
+      "seed": 81009
+    },
+    "output_files_identical": [
+      "asia1k_gibby_dags_R81009_FBM-REV-MBRrev.txt",
+      "asia1k_gibby_scores_R81009_FBM-REV-MBRrev.txt"
+    ],
+    "total_queries": 4674,
+    "nonempty_table_queries": 2694,
+    "queries_accepting_higher_than_pairs": 2201,
+    "exact_pair_table_two_exclusion_queries": 0,
+    "candidate_distinct_queries_by_fixed_table_and_L": [],
+    "tables": [
+      {
+        "id": 0,
+        "node": 3,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 1,
+        "node": 3,
+        "n": 8,
+        "rows": 128,
+        "max_arity": 7
+      },
+      {
+        "id": 2,
+        "node": 6,
+        "n": 8,
+        "rows": 128,
+        "max_arity": 7
+      },
+      {
+        "id": 3,
+        "node": 6,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 4,
+        "node": 5,
+        "n": 8,
+        "rows": 128,
+        "max_arity": 7
+      },
+      {
+        "id": 5,
+        "node": 5,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 6,
+        "node": 0,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 7,
+        "node": 0,
+        "n": 8,
+        "rows": 128,
+        "max_arity": 7
+      },
+      {
+        "id": 8,
+        "node": 2,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 9,
+        "node": 2,
+        "n": 8,
+        "rows": 128,
+        "max_arity": 7
+      },
+      {
+        "id": 10,
+        "node": 1,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 11,
+        "node": 1,
+        "n": 8,
+        "rows": 128,
+        "max_arity": 7
+      },
+      {
+        "id": 12,
+        "node": 4,
+        "n": 8,
+        "rows": 128,
+        "max_arity": 7
+      },
+      {
+        "id": 13,
+        "node": 4,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 14,
+        "node": 7,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 15,
+        "node": 7,
+        "n": 8,
+        "rows": 128,
+        "max_arity": 7
+      }
+    ],
+    "query_shape_histogram": [
+      {
+        "excluded": 0,
+        "required_size": 0,
+        "count": 146
+      },
+      {
+        "excluded": 0,
+        "required_size": 1,
+        "count": 524
+      },
+      {
+        "excluded": 1,
+        "required_size": 0,
+        "count": 146
+      },
+      {
+        "excluded": 1,
+        "required_size": 1,
+        "count": 259
+      },
+      {
+        "excluded": 2,
+        "required_size": 0,
+        "count": 242
+      },
+      {
+        "excluded": 2,
+        "required_size": 1,
+        "count": 239
+      },
+      {
+        "excluded": 3,
+        "required_size": 0,
+        "count": 238
+      },
+      {
+        "excluded": 3,
+        "required_size": 1,
+        "count": 171
+      },
+      {
+        "excluded": 4,
+        "required_size": 0,
+        "count": 130
+      },
+      {
+        "excluded": 4,
+        "required_size": 1,
+        "count": 106
+      },
+      {
+        "excluded": 5,
+        "required_size": 0,
+        "count": 242
+      },
+      {
+        "excluded": 5,
+        "required_size": 1,
+        "count": 61
+      },
+      {
+        "excluded": 6,
+        "required_size": 0,
+        "count": 134
+      },
+      {
+        "excluded": 6,
+        "required_size": 1,
+        "count": 14
+      },
+      {
+        "excluded": 7,
+        "required_size": 0,
+        "count": 42
+      }
+    ]
+  },
+  {
+    "case": {
+      "data": "asia1k",
+      "pruning": 2,
+      "seed": 81009
+    },
+    "output_files_identical": [
+      "asia1k_gibby_dags_R81009_FBM-REV-MBRrev.txt",
+      "asia1k_gibby_scores_R81009_FBM-REV-MBRrev.txt"
+    ],
+    "total_queries": 4706,
+    "nonempty_table_queries": 2726,
+    "queries_accepting_higher_than_pairs": 2291,
+    "exact_pair_table_two_exclusion_queries": 0,
+    "candidate_distinct_queries_by_fixed_table_and_L": [],
+    "tables": [
+      {
+        "id": 0,
+        "node": 3,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 1,
+        "node": 3,
+        "n": 8,
+        "rows": 126,
+        "max_arity": 7
+      },
+      {
+        "id": 2,
+        "node": 6,
+        "n": 8,
+        "rows": 102,
+        "max_arity": 5
+      },
+      {
+        "id": 3,
+        "node": 6,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 4,
+        "node": 5,
+        "n": 8,
+        "rows": 128,
+        "max_arity": 7
+      },
+      {
+        "id": 5,
+        "node": 5,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 6,
+        "node": 0,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 7,
+        "node": 0,
+        "n": 8,
+        "rows": 128,
+        "max_arity": 7
+      },
+      {
+        "id": 8,
+        "node": 2,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 9,
+        "node": 2,
+        "n": 8,
+        "rows": 113,
+        "max_arity": 6
+      },
+      {
+        "id": 10,
+        "node": 1,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 11,
+        "node": 1,
+        "n": 8,
+        "rows": 127,
+        "max_arity": 7
+      },
+      {
+        "id": 12,
+        "node": 4,
+        "n": 8,
+        "rows": 112,
+        "max_arity": 6
+      },
+      {
+        "id": 13,
+        "node": 4,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 14,
+        "node": 7,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 15,
+        "node": 7,
+        "n": 8,
+        "rows": 114,
+        "max_arity": 6
+      }
+    ],
+    "query_shape_histogram": [
+      {
+        "excluded": 0,
+        "required_size": 0,
+        "count": 122
+      },
+      {
+        "excluded": 0,
+        "required_size": 1,
+        "count": 544
+      },
+      {
+        "excluded": 1,
+        "required_size": 0,
+        "count": 130
+      },
+      {
+        "excluded": 1,
+        "required_size": 1,
+        "count": 256
+      },
+      {
+        "excluded": 2,
+        "required_size": 0,
+        "count": 262
+      },
+      {
+        "excluded": 2,
+        "required_size": 1,
+        "count": 263
+      },
+      {
+        "excluded": 3,
+        "required_size": 0,
+        "count": 244
+      },
+      {
+        "excluded": 3,
+        "required_size": 1,
+        "count": 148
+      },
+      {
+        "excluded": 4,
+        "required_size": 0,
+        "count": 192
+      },
+      {
+        "excluded": 4,
+        "required_size": 1,
+        "count": 130
+      },
+      {
+        "excluded": 5,
+        "required_size": 0,
+        "count": 208
+      },
+      {
+        "excluded": 5,
+        "required_size": 1,
+        "count": 51
+      },
+      {
+        "excluded": 6,
+        "required_size": 0,
+        "count": 120
+      },
+      {
+        "excluded": 6,
+        "required_size": 1,
+        "count": 14
+      },
+      {
+        "excluded": 7,
+        "required_size": 0,
+        "count": 42
+      }
+    ]
+  },
+  {
+    "case": {
+      "data": "sachs1k",
+      "pruning": 0,
+      "seed": 81009
+    },
+    "output_files_identical": [
+      "sachs1k_gibby_dags_R81009_FBM-REV-MBRrev.txt",
+      "sachs1k_gibby_scores_R81009_FBM-REV-MBRrev.txt"
+    ],
+    "total_queries": 4858,
+    "nonempty_table_queries": 2878,
+    "queries_accepting_higher_than_pairs": 2878,
+    "exact_pair_table_two_exclusion_queries": 0,
+    "candidate_distinct_queries_by_fixed_table_and_L": [],
+    "tables": [
+      {
+        "id": 0,
+        "node": 5,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 1,
+        "node": 5,
+        "n": 11,
+        "rows": 1024,
+        "max_arity": 10
+      },
+      {
+        "id": 2,
+        "node": 6,
+        "n": 11,
+        "rows": 1024,
+        "max_arity": 10
+      },
+      {
+        "id": 3,
+        "node": 6,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 4,
+        "node": 0,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 5,
+        "node": 0,
+        "n": 11,
+        "rows": 1024,
+        "max_arity": 10
+      },
+      {
+        "id": 6,
+        "node": 3,
+        "n": 11,
+        "rows": 1024,
+        "max_arity": 10
+      },
+      {
+        "id": 7,
+        "node": 3,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 8,
+        "node": 9,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 9,
+        "node": 9,
+        "n": 11,
+        "rows": 1024,
+        "max_arity": 10
+      },
+      {
+        "id": 10,
+        "node": 10,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 11,
+        "node": 10,
+        "n": 11,
+        "rows": 1024,
+        "max_arity": 10
+      },
+      {
+        "id": 12,
+        "node": 8,
+        "n": 11,
+        "rows": 1024,
+        "max_arity": 10
+      },
+      {
+        "id": 13,
+        "node": 8,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 14,
+        "node": 7,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 15,
+        "node": 7,
+        "n": 11,
+        "rows": 1024,
+        "max_arity": 10
+      },
+      {
+        "id": 16,
+        "node": 4,
+        "n": 11,
+        "rows": 1024,
+        "max_arity": 10
+      },
+      {
+        "id": 17,
+        "node": 4,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 18,
+        "node": 2,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 19,
+        "node": 2,
+        "n": 11,
+        "rows": 1024,
+        "max_arity": 10
+      },
+      {
+        "id": 20,
+        "node": 1,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 21,
+        "node": 1,
+        "n": 11,
+        "rows": 1024,
+        "max_arity": 10
+      }
+    ],
+    "query_shape_histogram": [
+      {
+        "excluded": 0,
+        "required_size": 0,
+        "count": 128
+      },
+      {
+        "excluded": 0,
+        "required_size": 1,
+        "count": 669
+      },
+      {
+        "excluded": 1,
+        "required_size": 0,
+        "count": 190
+      },
+      {
+        "excluded": 1,
+        "required_size": 1,
+        "count": 285
+      },
+      {
+        "excluded": 2,
+        "required_size": 0,
+        "count": 290
+      },
+      {
+        "excluded": 2,
+        "required_size": 1,
+        "count": 118
+      },
+      {
+        "excluded": 3,
+        "required_size": 0,
+        "count": 68
+      },
+      {
+        "excluded": 3,
+        "required_size": 1,
+        "count": 113
+      },
+      {
+        "excluded": 4,
+        "required_size": 0,
+        "count": 26
+      },
+      {
+        "excluded": 4,
+        "required_size": 1,
+        "count": 87
+      },
+      {
+        "excluded": 5,
+        "required_size": 0,
+        "count": 184
+      },
+      {
+        "excluded": 5,
+        "required_size": 1,
+        "count": 157
+      },
+      {
+        "excluded": 6,
+        "required_size": 0,
+        "count": 214
+      },
+      {
+        "excluded": 6,
+        "required_size": 1,
+        "count": 129
+      },
+      {
+        "excluded": 7,
+        "required_size": 0,
+        "count": 220
+      }
+    ]
+  },
+  {
+    "case": {
+      "data": "sachs1k",
+      "pruning": 2,
+      "seed": 81009
+    },
+    "output_files_identical": [
+      "sachs1k_gibby_dags_R81009_FBM-REV-MBRrev.txt",
+      "sachs1k_gibby_scores_R81009_FBM-REV-MBRrev.txt"
+    ],
+    "total_queries": 4858,
+    "nonempty_table_queries": 2878,
+    "queries_accepting_higher_than_pairs": 1642,
+    "exact_pair_table_two_exclusion_queries": 0,
+    "candidate_distinct_queries_by_fixed_table_and_L": [],
+    "tables": [
+      {
+        "id": 0,
+        "node": 5,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 1,
+        "node": 5,
+        "n": 11,
+        "rows": 32,
+        "max_arity": 3
+      },
+      {
+        "id": 2,
+        "node": 6,
+        "n": 11,
+        "rows": 32,
+        "max_arity": 3
+      },
+      {
+        "id": 3,
+        "node": 6,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 4,
+        "node": 0,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 5,
+        "node": 0,
+        "n": 11,
+        "rows": 68,
+        "max_arity": 3
+      },
+      {
+        "id": 6,
+        "node": 3,
+        "n": 11,
+        "rows": 108,
+        "max_arity": 4
+      },
+      {
+        "id": 7,
+        "node": 3,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 8,
+        "node": 9,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 9,
+        "node": 9,
+        "n": 11,
+        "rows": 36,
+        "max_arity": 3
+      },
+      {
+        "id": 10,
+        "node": 10,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 11,
+        "node": 10,
+        "n": 11,
+        "rows": 67,
+        "max_arity": 3
+      },
+      {
+        "id": 12,
+        "node": 8,
+        "n": 11,
+        "rows": 95,
+        "max_arity": 3
+      },
+      {
+        "id": 13,
+        "node": 8,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 14,
+        "node": 7,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 15,
+        "node": 7,
+        "n": 11,
+        "rows": 163,
+        "max_arity": 4
+      },
+      {
+        "id": 16,
+        "node": 4,
+        "n": 11,
+        "rows": 61,
+        "max_arity": 3
+      },
+      {
+        "id": 17,
+        "node": 4,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 18,
+        "node": 2,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 19,
+        "node": 2,
+        "n": 11,
+        "rows": 59,
+        "max_arity": 3
+      },
+      {
+        "id": 20,
+        "node": 1,
+        "n": 0,
+        "rows": 0,
+        "max_arity": 0
+      },
+      {
+        "id": 21,
+        "node": 1,
+        "n": 11,
+        "rows": 65,
+        "max_arity": 3
+      }
+    ],
+    "query_shape_histogram": [
+      {
+        "excluded": 0,
+        "required_size": 0,
+        "count": 128
+      },
+      {
+        "excluded": 0,
+        "required_size": 1,
+        "count": 669
+      },
+      {
+        "excluded": 1,
+        "required_size": 0,
+        "count": 190
+      },
+      {
+        "excluded": 1,
+        "required_size": 1,
+        "count": 285
+      },
+      {
+        "excluded": 2,
+        "required_size": 0,
+        "count": 290
+      },
+      {
+        "excluded": 2,
+        "required_size": 1,
+        "count": 118
+      },
+      {
+        "excluded": 3,
+        "required_size": 0,
+        "count": 68
+      },
+      {
+        "excluded": 3,
+        "required_size": 1,
+        "count": 113
+      },
+      {
+        "excluded": 4,
+        "required_size": 0,
+        "count": 26
+      },
+      {
+        "excluded": 4,
+        "required_size": 1,
+        "count": 87
+      },
+      {
+        "excluded": 5,
+        "required_size": 0,
+        "count": 184
+      },
+      {
+        "excluded": 5,
+        "required_size": 1,
+        "count": 157
+      },
+      {
+        "excluded": 6,
+        "required_size": 0,
+        "count": 214
+      },
+      {
+        "excluded": 6,
+        "required_size": 1,
+        "count": 129
+      },
+      {
+        "excluded": 7,
+        "required_size": 0,
+        "count": 220
+      }
+    ]
+  }
+]

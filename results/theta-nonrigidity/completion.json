@@ -1,0 +1,69 @@
+{
+  "status": "COMPLETE_EXPERIMENT",
+  "decision": "Do not promote non-rigidity integration; preserve ordinary memory cleanup as a conventional candidate with timing-control caveats.",
+  "construction_specific_application_gain": false,
+  "confirmation": {
+    "ordinary/constants": {
+      "cases": 14,
+      "median_cpu": 1.00938615887895,
+      "positive_cpu": 9,
+      "positive_both": 9,
+      "negative_cpu": 0
+    },
+    "ordinary/nonzero": {
+      "cases": 4,
+      "median_cpu": 1.4026307779140712,
+      "positive_cpu": 4,
+      "positive_both": 4,
+      "negative_cpu": 0
+    },
+    "ordinary/mixed": {
+      "cases": 2,
+      "median_cpu": 1.2014517135181424,
+      "positive_cpu": 2,
+      "positive_both": 2,
+      "negative_cpu": 0
+    },
+    "h4/active": {
+      "cases": 20,
+      "median_cpu": -0.4337175568988272,
+      "positive_cpu": 0,
+      "positive_both": 0,
+      "negative_cpu": 7
+    },
+    "h8/active": {
+      "cases": 14,
+      "median_cpu": -0.6419595968913283,
+      "positive_cpu": 0,
+      "positive_both": 0,
+      "negative_cpu": 8
+    }
+  },
+  "timed_batches": 16072,
+  "exact_containments": 4243200,
+  "public_outputs": 40864,
+  "verified_fingerprints": 1288,
+  "next": "Capture real theta intermediates and compare persistent versus per-transform scratch before any further full application sweep.",
+  "report": "/Users/colkitt/sith/toys/math/butterflyMult/docs/theta-nonrigidity.md",
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/docs/theta-nonrigidity.md": "a1f040c2d8655099668c1ffbea0b8a0ebd6f53c6c33c5eb9756de7d7d9510714",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/theta_nonrigidity.c": "407619b79866409e20cb27a25da99f24383582a7ef69772a7bd9661316fe11b3",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/theta_nonrigidity_kernel.h": "f3585d666592088cbbcb27b7aff8056512d50e3b10e915f4d34669d19fe6a8ff",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/theta_nonrigidity_check.c": "a4d26b6739ab4267d47b99d8add8471d0801333efbced573ce06a29d8cec8613",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/theta_nonrigidity.py": "e011b5526467310d0813f159199989c7b4f54e4ff5a20595aa487981157ec4fd",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/audit_theta_nonrigidity.py": "e3a4bb7fa04afc2efeb065e41c0039291632f4ec8e10cd0ba03af16fe4566c38",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-nonrigidity/audit.json": "c2c0cc9464745a9fd224ab49bcac41884ce4d0c406decce3c60049cc48999f70",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-nonrigidity/plan.json": "781a2b898e39cb51493d91437e2142725cf087ee82220665fa97aad94d145a25",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-nonrigidity/raw.jsonl": "888302b1a06b3b19c06781aff0ccf561821d8f6f9aa683ff6ee2e1e958070a09",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-nonrigidity/summary.json": "2adf22d78a49a8f16ef1dd170b14631fc3f6d3ddf2deccb9dfc0f66fdd79c11d",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-nonrigidity/confirmation/plan.json": "46ce13b82fed96609a6c0eb2befc17654d74869d52c76a14f59598f7762f426f",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-nonrigidity/confirmation/raw.jsonl": "076736e52d2efed8ffd2be5ab77310e92b6a6e28415cd46e824672c5ac46939d",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-nonrigidity/confirmation/summary.json": "d0c2365c933b9a4252114646a1062b63eb6ec27789b7e579581f0758718f09f4",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-nonrigidity/validation.json": "dc0e19ac1e7e8eb6b4ffc7a3f2535c9c14883ba7df4348746745a73179f79085",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-nonrigidity/trace.json": "46a874b49d4b4c92b7a985e0c41aa3a7c3d5f968682848047bf8e788d55739da",
+    "/Users/colkitt/sith/toys/math/butterflyMult/patches/theta-transform-iterative.patch": "fd8a9da5b0c8bf97124237393ff56b9fe50472845c0c441314924ca1b72e5e17",
+    "/Users/colkitt/sith/toys/math/butterflyMult/patches/theta-transform-recursive.patch": "b7de93ff5a5f5a35e6b8f66e053c2d2aa8defcc19f870bceb2bffc1efecd8b89",
+    "/Users/colkitt/sith/toys/math/butterflyMult/patches/theta-transform-h4.patch": "118e49ccb6649d50cc04580ccaa9e3d422c8c67d626cc1a3d9e454bf71156d7e",
+    "/Users/colkitt/sith/toys/math/butterflyMult/patches/theta-transform-h8.patch": "0584a6b8c24f989b9354fc362188c1e5903a9250675cb034944eced1abcac7c2"
+  }
+}

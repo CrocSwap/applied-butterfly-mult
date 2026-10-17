@@ -1,0 +1,88 @@
+{
+  "status": "COMPLETE_KERNEL_EXPERIMENT",
+  "decision": "Retain H4 and H8 for bounded complete-call testing at moderate precision; reject unconditional/highest-precision dispatch.",
+  "application_benchmarked": false,
+  "attribution": "Direct implementation of older Alman\u2013Rao non-rigidity circuits; not a new OpenAI construction.",
+  "confirmation_groups": [
+    {
+      "target": 512,
+      "candidate": 2,
+      "cases": 8,
+      "median_cpu": 7.606154590263276,
+      "min_cpu": 2.8105030039978773,
+      "max_cpu": 12.71849851525002,
+      "positive_cpu": 8,
+      "positive_both": 8
+    },
+    {
+      "target": 512,
+      "candidate": 3,
+      "cases": 8,
+      "median_cpu": 6.658624685083931,
+      "min_cpu": 0.7266687542346051,
+      "max_cpu": 12.415275074973698,
+      "positive_cpu": 8,
+      "positive_both": 7
+    },
+    {
+      "target": 4096,
+      "candidate": 2,
+      "cases": 8,
+      "median_cpu": 10.176574271868605,
+      "min_cpu": 8.120148804108807,
+      "max_cpu": 12.487367412430872,
+      "positive_cpu": 8,
+      "positive_both": 8
+    },
+    {
+      "target": 4096,
+      "candidate": 3,
+      "cases": 8,
+      "median_cpu": 8.573383667790013,
+      "min_cpu": 3.8606486989501865,
+      "max_cpu": 11.187624157804931,
+      "positive_cpu": 8,
+      "positive_both": 8
+    },
+    {
+      "target": 32768,
+      "candidate": 2,
+      "cases": 8,
+      "median_cpu": -5.0431072461822986,
+      "min_cpu": -10.78832451142102,
+      "max_cpu": -1.6052206274224767,
+      "positive_cpu": 0,
+      "positive_both": 0
+    },
+    {
+      "target": 32768,
+      "candidate": 3,
+      "cases": 8,
+      "median_cpu": -29.856467236713748,
+      "min_cpu": -46.82145669842106,
+      "max_cpu": -20.79129985017696,
+      "positive_cpu": 0,
+      "positive_both": 0
+    }
+  ],
+  "timed_batches": 12224,
+  "output_checks": 217608,
+  "verified_fingerprints": 970,
+  "next": "Complex-ball theta integration, with an equally optimized conventional butterfly as attribution control and whole-call accuracy/time measurement.",
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/docs/walsh-nonrigidity.md": "480f304407006f40a4a11197a1051e0d5a912e5e67737061e8f25081cd2084e7",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/walsh_nonrigidity.h": "0b6a5e9bbf4187381af0d94a659ba6762712bbd4a746bcc9196943607da90143",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/walsh_nonrigidity.c": "c99ba42c833f9b87854a4eb5cb536e00e69f45cbdf9456065300f964374845ca",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/walsh_nonrigidity.py": "33d7afd61f428cf816cba7dda24b883832465794973643f59e241290b59d2f42",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/audit_walsh_nonrigidity.py": "8b9c040b3954745e03b45b9a945cc0f9049959d2824daef0187bcb6eddd0c5d7",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-nonrigidity/audit.json": "0d3d9a421e56698b4b0096d7049c6281dbb58884e1bf71d4afc83247af545ef2",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-nonrigidity/operation-counts.json": "4de185a32a6aec4e03bb1b78a5c3d24e17c248a3f44e222d86e1f1a181565e31",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-nonrigidity/validation.json": "dc2757b11276e089d066cfe9572b54ec8850756052b358389eb260194312390b",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-nonrigidity/plan.json": "6fac7178cb6e2f6e6a47cd504f5b2121f8b83d31610172ee49e4f310eb5f6fc7",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-nonrigidity/summary.json": "8e3d2bf57cbb25704838c7eb228e369481de0d8f813ab8fe72c6c427fde929ea",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-nonrigidity/raw.jsonl": "cd80bd5831cecdc32e47dd8d3848894104f1fe736cf3bcec37900ae0a99eaec8",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-nonrigidity/confirmation/plan.json": "52942437e219c35a1cdd10dfd0cdf9ead1be6e7f84893db2910c1acdbc9291e7",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-nonrigidity/confirmation/summary.json": "99309221532b2fb0d2bfb8f66ca53a2b44e71b3e606d5f0d9127faaa7403e534",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-nonrigidity/confirmation/raw.jsonl": "c74d9a3d8f02296259fcd09e911f50bc406b6a84cf1c78a31707e70aaa8646ac"
+  }
+}

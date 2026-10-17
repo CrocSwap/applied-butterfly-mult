@@ -1,0 +1,190 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "kind": "complete_equal",
+      "oracle": {
+        "weight": 0,
+        "count": 15120,
+        "enumerated_paths": 15120
+      },
+      "engines": [
+        {
+          "engine": 0,
+          "weight": 0,
+          "count": 15120,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": 0,
+          "count": 15120,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": 0,
+          "count": 15120,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": 0,
+          "count": 15120,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": 0,
+          "count": 15120,
+          "visits": 485,
+          "fallback": 1
+        },
+        {
+          "engine": 5,
+          "weight": 0,
+          "count": 15120,
+          "visits": 485,
+          "fallback": 1
+        },
+        {
+          "engine": 6,
+          "weight": 0,
+          "count": 15120,
+          "visits": 18730,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "kind": "empty",
+      "oracle": {
+        "weight": -2305843009213693952,
+        "count": 0,
+        "enumerated_paths": 0
+      },
+      "engines": [
+        {
+          "engine": 0,
+          "weight": -2305843009213693952,
+          "count": 0,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": -2305843009213693952,
+          "count": 0,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": -2305843009213693952,
+          "count": 0,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": -2305843009213693952,
+          "count": 0,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": -2305843009213693952,
+          "count": 0,
+          "visits": 1,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": -2305843009213693952,
+          "count": 0,
+          "visits": 1,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": -2305843009213693952,
+          "count": 0,
+          "visits": 1,
+          "fallback": 0
+        }
+      ]
+    },
+    {
+      "kind": "one_six_edge_path",
+      "oracle": {
+        "weight": -42,
+        "count": 1,
+        "enumerated_paths": 1
+      },
+      "engines": [
+        {
+          "engine": 0,
+          "weight": -42,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 1,
+          "weight": -42,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 2,
+          "weight": -42,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 3,
+          "weight": -42,
+          "count": 1,
+          "visits": 0,
+          "fallback": 0
+        },
+        {
+          "engine": 4,
+          "weight": -42,
+          "count": 1,
+          "visits": 6,
+          "fallback": 0
+        },
+        {
+          "engine": 5,
+          "weight": -42,
+          "count": 1,
+          "visits": 6,
+          "fallback": 0
+        },
+        {
+          "engine": 6,
+          "weight": -42,
+          "count": 1,
+          "visits": 6,
+          "fallback": 0
+        }
+      ]
+    }
+  ],
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/check_theory_paths_hard_fallback.py": "a88eea96b702ae97f9973e16709d5a5c7b802b2b3e023f35630d790be9202484",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/validation.json": "c3197416d34efaa5ed39fd932c1c0a89bf52a941fb7bfad50f9ed5f8682f4d89",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/theory-paths-hard": "8b0db28ed47c55ad645e9f8c832bcacf6e0212e5300708190f03b90db8808fa5",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/fallback-checks/empty.txt": "e54b20c22b4b2fb7dccbf5d062949bbf2d70eaf961ae9e29696788d66a312bba",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/fallback-checks/complete_equal.txt": "e9bbcbe7906cefd3f117835c475a8a3b1dae07d1a2b8a7f8b231c4e9fec2e17b",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/fallback-checks/one_six_edge_path.txt": "d1b39091c56f725ef483294b59a0aa658507ae85a4de5d7d399f4c1f9294815a"
+  }
+}

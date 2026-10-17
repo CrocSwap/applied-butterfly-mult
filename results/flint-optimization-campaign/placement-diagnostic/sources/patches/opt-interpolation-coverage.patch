@@ -1,0 +1,60 @@
+--- a/src/nmod_poly/test/t-interpolate_nmod_vec_fast.c
++++ b/src/nmod_poly/test/t-interpolate_nmod_vec_fast.c
+@@ -61,5 +61,57 @@
+         _nmod_vec_clear(y);
+     }
+ 
++
++    /* Shuffled affine point sets, tree boundaries and composite moduli.
++       All point differences are units; values use scalar evaluation. */
++    {
++        const ulong mods[] = {1, 2, 17, 257 * 263, 1000000007,
++                              UWORD_MAX_PRIME};
++        const slong lengths[] = {0, 1, 2, 3, 7, 8, 15, 16, 17,
++                                 31, 32, 33, 63, 64, 65, 127, 128, 129};
++        slong mi, li, j, n;
++
++        for (mi = 0; mi < 6; mi++)
++        for (li = 0; li < 18; li++)
++        {
++            nmod_poly_t f, g;
++            nn_ptr xs, ys;
++            ulong mod = mods[mi], step = 1, offset;
++
++            n = lengths[li];
++            if ((mod == 1 && n > 1) || (mod != 1 && n > mod))
++                continue;
++            if (mod > 1)
++                do { step = 1 + n_randint(state, mod - 1); }
++                while (n_gcd(step, mod) != 1);
++            offset = n_randint(state, mod);
++            nmod_poly_init(f, mod);
++            nmod_poly_init(g, mod);
++            nmod_poly_randtest(f, state, n);
++            xs = _nmod_vec_init(n);
++            ys = _nmod_vec_init(n);
++            for (j = 0; j < n; j++)
++                xs[j] = nmod_add(nmod_mul(step % mod, j % mod, f->mod),
++                                 offset, f->mod);
++            for (j = n - 1; j > 0; j--)
++            {
++                slong k = n_randint(state, j + 1);
++                ulong t = xs[j]; xs[j] = xs[k]; xs[k] = t;
++            }
++            for (j = 0; j < n; j++)
++                ys[j] = nmod_poly_evaluate_nmod(f, xs[j]);
++            nmod_poly_interpolate_nmod_vec_fast(g, xs, ys, n);
++            if (!nmod_poly_equal(f, g))
++                TEST_FUNCTION_FAIL("fast recovery: mod=%wu n=%wd\n", mod, n);
++            nmod_poly_interpolate_nmod_vec(g, xs, ys, n);
++            if (!nmod_poly_equal(f, g))
++                TEST_FUNCTION_FAIL("automatic recovery: mod=%wu n=%wd\n", mod, n);
++            _nmod_vec_clear(xs);
++            _nmod_vec_clear(ys);
++            nmod_poly_clear(f);
++            nmod_poly_clear(g);
++        }
++    }
++
+     TEST_FUNCTION_END(state);
+ }

@@ -1,0 +1,10 @@
+{
+  "dimensions": [1, 2, 4, 8],
+  "lengths": [32, 64, 256, 1024],
+  "moduli": [65537, 1000000007, 1108307720798209],
+  "windows": ["full", "mid"],
+  "samples": 7,
+  "batch_ms": 10,
+  "seed": 490176,
+  "scope": "Dense equal-length square polynomial matrices; dimension 1 uses scalar dispatch. Full matrix multiplication uses automatic dispatch; matrix middle product explicitly uses fft_small and records unsupported cases. Middle interval is [length/2, 3*length/2). No performance comparison or speedup claim."
+}

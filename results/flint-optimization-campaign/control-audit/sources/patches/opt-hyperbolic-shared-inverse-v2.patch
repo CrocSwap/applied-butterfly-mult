@@ -1,0 +1,164 @@
+--- a/src/arb_poly/exp_series.c
++++ b/src/arb_poly/exp_series.c
+@@ -161,6 +161,47 @@
+     }
+ }
+ 
++/* Private paired operation for a zero-constant input of length n.
++   The three vectors must be disjoint. */
++void
++_arb_poly_exp_inv_series(arb_ptr f, arb_ptr g,
++    arb_srcptr h, slong n, slong prec)
++{
++    slong cutoff;
++
++    FLINT_ASSERT(n > 0);
++    FLINT_ASSERT(arb_is_zero(h));
++
++    if (arb_poly_newton_exp_cutoff != 0)
++        cutoff = arb_poly_newton_exp_cutoff;
++    else if (prec <= 256)
++        cutoff = 750;
++    else
++        cutoff = 1e5 / pow(log(prec), 3);
++
++    if (n <= cutoff || n < 3)
++    {
++        _arb_poly_exp_series(f, h, n, n, prec);
++        _arb_poly_inv_series(g, f, n, n, prec);
++    }
++    else if (_arb_vec_is_zero(h + 1, n - 2))
++    {
++        /* h = b*x^(n-1): exp(+/-h) = 1 +/- h modulo x^n. */
++        arb_one(f);
++        arb_one(g);
++        _arb_vec_zero(f + 1, n - 2);
++        _arb_vec_zero(g + 1, n - 2);
++        arb_set_round(f + n - 1, h + n - 1, prec);
++        arb_neg(g + n - 1, f + n - 1);
++    }
++    else
++    {
++        /* The Newton loop already has exp(-h) through half the length.
++           Extend that inverse instead of computing it again from scratch. */
++        _arb_poly_exp_series_newton(f, g, h, n, prec, 1, cutoff);
++    }
++}
++
+ void
+ arb_poly_exp_series(arb_poly_t f, const arb_poly_t h, slong n, slong prec)
+ {
+--- a/src/arb_poly/sinh_cosh_series_exponential.c
++++ b/src/arb_poly/sinh_cosh_series_exponential.c
+@@ -36,12 +36,10 @@
+ 
+     arb_sinh_cosh(s0, c0, h, prec);
+ 
+-    _arb_vec_set(t + 1, h + 1, hlen - 1);
+-    _arb_poly_exp_series(t, t, len, len, prec);
+-
+-    /* todo: part of the inverse could be avoided since exp computes
+-       it internally to half the length */
+-    _arb_poly_inv_series(u, t, len, len, prec);
++    /* Keep the zero-constant input separate from both outputs. The
++       existing third buffer is available until the final linear combination. */
++    _arb_vec_set(v + 1, h + 1, hlen - 1);
++    _arb_poly_exp_inv_series(t, u, v, len, prec);
+ 
+     /* hyperbolic sine */
+     _arb_vec_sub(s, t, u, len, prec);
+--- a/src/arb_poly.h
++++ b/src/arb_poly.h
+@@ -529,6 +529,10 @@
+ 
+ void _arb_poly_exp_series_basecase(arb_ptr f, arb_srcptr h, slong hlen, slong n, slong prec);
+ void arb_poly_exp_series_basecase(arb_poly_t f, const arb_poly_t h, slong n, slong prec);
++/* Internal: h has n coefficients, h[0] = 0, and f, g, h are disjoint. */
++void _arb_poly_exp_inv_series(arb_ptr f, arb_ptr g,
++    arb_srcptr h, slong n, slong prec);
++
+ void _arb_poly_exp_series(arb_ptr f, arb_srcptr h, slong hlen, slong n, slong prec);
+ void arb_poly_exp_series(arb_poly_t f, const arb_poly_t h, slong n, slong prec);
+ 
+--- a/src/acb_poly/exp_series.c
++++ b/src/acb_poly/exp_series.c
+@@ -162,6 +162,47 @@
+     }
+ }
+ 
++/* Private paired operation for a zero-constant input of length n.
++   The three vectors must be disjoint. */
++void
++_acb_poly_exp_inv_series(acb_ptr f, acb_ptr g,
++    acb_srcptr h, slong n, slong prec)
++{
++    slong cutoff;
++
++    FLINT_ASSERT(n > 0);
++    FLINT_ASSERT(acb_is_zero(h));
++
++    if (acb_poly_newton_exp_cutoff != 0)
++        cutoff = acb_poly_newton_exp_cutoff;
++    else if (prec <= 256)
++        cutoff = 750;
++    else
++        cutoff = 1e5 / pow(log(prec), 3);
++
++    if (n <= cutoff || n < 3)
++    {
++        _acb_poly_exp_series(f, h, n, n, prec);
++        _acb_poly_inv_series(g, f, n, n, prec);
++    }
++    else if (_acb_vec_is_zero(h + 1, n - 2))
++    {
++        /* h = b*x^(n-1): exp(+/-h) = 1 +/- h modulo x^n. */
++        acb_one(f);
++        acb_one(g);
++        _acb_vec_zero(f + 1, n - 2);
++        _acb_vec_zero(g + 1, n - 2);
++        acb_set_round(f + n - 1, h + n - 1, prec);
++        acb_neg(g + n - 1, f + n - 1);
++    }
++    else
++    {
++        /* The Newton loop already has exp(-h) through half the length.
++           Extend that inverse instead of computing it again from scratch. */
++        _acb_poly_exp_series_newton(f, g, h, n, prec, 1, cutoff);
++    }
++}
++
+ void
+ acb_poly_exp_series(acb_poly_t f, const acb_poly_t h, slong n, slong prec)
+ {
+--- a/src/acb_poly/sinh_cosh_series_exponential.c
++++ b/src/acb_poly/sinh_cosh_series_exponential.c
+@@ -36,12 +36,10 @@
+ 
+     acb_sinh_cosh(s0, c0, h, prec);
+ 
+-    _acb_vec_set(t + 1, h + 1, hlen - 1);
+-    _acb_poly_exp_series(t, t, len, len, prec);
+-
+-    /* todo: part of the inverse could be avoided since exp computes
+-       it internally to half the length */
+-    _acb_poly_inv_series(u, t, len, len, prec);
++    /* Keep the zero-constant input separate from both outputs. The
++       existing third buffer is available until the final linear combination. */
++    _acb_vec_set(v + 1, h + 1, hlen - 1);
++    _acb_poly_exp_inv_series(t, u, v, len, prec);
+ 
+     /* hyperbolic sine */
+     _acb_vec_sub(s, t, u, len, prec);
+--- a/src/acb_poly.h
++++ b/src/acb_poly.h
+@@ -544,6 +544,10 @@
+ 
+ void _acb_poly_exp_series_basecase(acb_ptr f, acb_srcptr h, slong hlen, slong n, slong prec);
+ void acb_poly_exp_series_basecase(acb_poly_t f, const acb_poly_t h, slong n, slong prec);
++/* Internal: h has n coefficients, h[0] = 0, and f, g, h are disjoint. */
++void _acb_poly_exp_inv_series(acb_ptr f, acb_ptr g,
++    acb_srcptr h, slong n, slong prec);
++
+ void _acb_poly_exp_series(acb_ptr f, acb_srcptr h, slong hlen, slong n, slong prec);
+ void acb_poly_exp_series(acb_poly_t f, const acb_poly_t h, slong n, slong prec);
+ 

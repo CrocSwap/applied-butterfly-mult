@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "physical_programs": 164,
+  "coefficient_equalities": 419840,
+  "scope": "Saved literal physical programs replayed from arbitrary scratch against the pinned matrices; every arithmetic and read/write count cross-checked against emitted instructions; output positions fixed."
+}

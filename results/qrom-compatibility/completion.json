@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "decision": "Real dirty-qubit contract; no concrete competitive sister-compiler mapping. Park performance port.",
+  "inherited_manifest": "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hybrid-screen/completion.json",
+  "inherited_manifest_sha256": "469a96b4018a200bc6220dd9c490e8ef1e01d2dfaef9b32588719c609f236134",
+  "historical_fingerprints_verified": 1963,
+  "qualified_for_performance_prototype": 0,
+  "source_sha256": {
+    "/Users/colkitt/sith/toys/math/integerMult/research/joint-dual/PROOF.md": "ef87781965cd6d509150c6423525671a7c7d1734f334a6a3c39cc7bffdbae33a",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/experiments/binary_frame_compiler.py": "bc6910c8bbe8224285164323d3c06e9035ad3eaa55416abc2867ae0066454a0c",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/experiments/joint_dual_reclaim_compiler.py": "9984aaccf880e4840402322d76678bfddb33ce7e494af78430a43429f51b85fd"
+  },
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/qrom-compatibility/checks.json": "ba292b84606d95e60e8a0394f5c6deff1b3e2f44bea20df702c4556ca6925800",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/qrom-compatibility/sources/qualtran/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/qrom-compatibility/sources/qualtran/qualtran/bloqs/chemistry/df/double_factorization.py": "87bcd499fc94ad4172b0158eee0aadfee3075fccc820d534c5050844340a2858",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/qrom-compatibility/sources/qualtran/qualtran/bloqs/chemistry/thc/prepare.py": "847ba48b134c835d722d28afcd228e0cfb39a0034f85405e43cb76dd160b91df",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/qrom-compatibility/sources/qualtran/qualtran/bloqs/chemistry/thc/select_bloq.py": "e781ded20e26911a15e9eb9ba6273c65cedb10a314c69bb5f8f71304ed676f18",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/qrom-compatibility/sources/qualtran/qualtran/bloqs/data_loading/qrom.py": "ae176db9e41c8b199ff127a4d0c5e0084ef807b4a70a63545bec491628837d52",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/qrom-compatibility/sources/qualtran/qualtran/bloqs/data_loading/select_swap_qrom.py": "1dd5d2aee856779c85fc1720329e4167c0d7716809c5951e8cc0ad288f9e3950",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/qrom-compatibility/sources/qualtran/qualtran/bloqs/data_loading/select_swap_qrom_test.py": "9804d119f71725b4af51aa92407a7bbbaa05b08535289ecd254b1396612d543e",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/qrom-compatibility/sources/qualtran/qualtran/bloqs/state_preparation/state_preparation_alias_sampling.py": "b1878b92c26506747a81874e3d21f2d13e4dd485c9d5bd5b2230b9fedc024e5d",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/qrom-compatibility/sources/qualtran/qualtran/bloqs/swap_network/swap_with_zero.py": "1c416926149daa941e9372b78a71ee1c5bc762c1cdd14e5c5ecd6341989ff8c5",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/qrom-compatibility/sources/qualtran.json": "a848c3ba76413a61d298ed148a49a0276fdd12bc29b0c0349cbd81ecdf5a697f",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/qrom_compatibility.py": "b79710609dcdd64edb25ff5b1d1c979a0fc6330b560b1cf6125245e2793074e5",
+    "/Users/colkitt/sith/toys/math/butterflyMult/docs/qrom-compatibility.md": "607f887f9b77ba05610a8531c354693ee8a31b1ec7fcb5048c7d5153a3c7d8d0"
+  }
+}

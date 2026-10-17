@@ -1,0 +1,23 @@
+{
+  "status": "PREPARED_AWAITING_APPLICATION_INPUT",
+  "application_benchmarked": false,
+  "new_performance_claim": false,
+  "verified": "8 independent numerical comparisons, precision cap rejection, integer-export round trip, 12-batch timing protocol check",
+  "historical_fingerprints_unchanged": 933,
+  "magma_export_executed": false,
+  "next": "Acquire the actual base period matrix, qualify output accuracy, then run the frozen paired E4 comparison. Orbit and precision lifting remain separate work.",
+  "report": "/Users/colkitt/sith/toys/math/butterflyMult/docs/theta-e4.md",
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/theta_e4.c": "b97548865de130b4208b633ed961be65ef06adef5a99f3b783a1e066ca28e113",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/theta_e4.py": "7886649c8c1d57e47a393cff8f988dbaa70645f7310ed3f639c90c9ece839de9",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/export_theta_e4.m": "285ef1d70d86a0e3272f3fb07c306eb0ef1d4e3b299102279e24f0fb9251302d",
+    "/Users/colkitt/sith/toys/math/butterflyMult/docs/theta-e4.md": "de01fd94cd8dfb746d3555d10905642b0920d60b4432471040a49c942099b8b5",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-e4/theta-e4": "f7c380cd7bff770fc9875bf30899f709e2a8e938843a82d9bc5573bc00729cdd",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-e4/smoke-1791431383654006000/summary.json": "d063a878f89084ec57dba9113071b81f0cbf6c28e5b5aca08d6b550504414b20",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-e4/smoke-1791431383654006000/timing-protocol-check.json": "eb50548cdd00c0b3673fa6488ce3579c06c11c9c861f6aea8f3a7e1ed8beb0b6",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-e4/sources/author-repos.json": "85bb2dedb58eee62ee118bd2da6f4be3a2bcda333787d9cb1f0719023a289d66",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-e4/sources/paper-source.tar": "05758857ab9d2a314c60e9d7fc71d46804b63cd868ac667a7aba310cd69ecd2b",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-e4/sources/paper.tex": "bf9d72ca1cdf194d6857773f6b0da38d8dc78996b2825c9e7fc80a2e83c348b5",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theta-e4/sources/theta-tree.json": "01f1b2b8fffb513e6f9967b1c2d1fe7cca69170c37b91975d0a71265e96b78cd"
+  }
+}

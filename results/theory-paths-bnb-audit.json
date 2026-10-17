@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "decision": "Do not promote the six-edge optimum/count application candidate",
+  "earlier_artifacts_unchanged": true,
+  "baseline_flint_unchanged": true,
+  "hashes_checked": 89,
+  "cases": 40,
+  "batches": 2400,
+  "networkx_checks": 100,
+  "table": [
+    {
+      "vertices": 11,
+      "comparisons": 8,
+      "paired_over_bnb_cpu_ratio_min": 3.7772230514671743,
+      "paired_over_bnb_cpu_ratio_max": 6.750791328486576,
+      "search_visits_min": 9,
+      "search_visits_max": 39
+    },
+    {
+      "vertices": 15,
+      "comparisons": 8,
+      "paired_over_bnb_cpu_ratio_min": 9.553826902328025,
+      "paired_over_bnb_cpu_ratio_max": 15.06569732573207,
+      "search_visits_min": 6,
+      "search_visits_max": 31
+    },
+    {
+      "vertices": 19,
+      "comparisons": 8,
+      "paired_over_bnb_cpu_ratio_min": 18.903990630715434,
+      "paired_over_bnb_cpu_ratio_max": 24.985997867253417,
+      "search_visits_min": 6,
+      "search_visits_max": 19
+    },
+    {
+      "vertices": 23,
+      "comparisons": 8,
+      "paired_over_bnb_cpu_ratio_min": 23.77356577247972,
+      "paired_over_bnb_cpu_ratio_max": 32.87965759409943,
+      "search_visits_min": 6,
+      "search_visits_max": 26
+    },
+    {
+      "vertices": 27,
+      "comparisons": 8,
+      "paired_over_bnb_cpu_ratio_min": 38.120925788198996,
+      "paired_over_bnb_cpu_ratio_max": 46.82192570482983,
+      "search_visits_min": 6,
+      "search_visits_max": 22
+    }
+  ],
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/audit_theory_paths_bnb.py": "34354b179aa0cf6b3bfc786fcf557b8e16b36139cb7ebeeb70f6e1db2dd001bf",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-bnb/summary.json": "e5a7ca6d59208fc084ac4e5d8ce303a0a599fb1f7c688311659a0f2aeeb28e40",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-bnb-validation/validation.json": "0ea58717235c4277cada77e4f95948948a52abc7c8d422ef45f0ed2317256f98",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-transfer-completion.json": "1c2289a7cfaf7ed314aa5aa0440a595be9c62446d5c36ba5c56baf25180fa36d"
+  }
+}

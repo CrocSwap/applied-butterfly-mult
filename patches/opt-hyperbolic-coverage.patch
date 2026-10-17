@@ -1,0 +1,210 @@
+--- a/src/arb_poly/test/t-sinh_cosh_series.c
++++ b/src/arb_poly/test/t-sinh_cosh_series.c
+@@ -10,6 +10,9 @@
+ */
+ 
+ #include "test_helpers.h"
++#include "fmpq_poly.h"
++
++FLINT_DLL extern slong arb_poly_newton_exp_cutoff;
+ #include "arb_poly.h"
+ 
+ TEST_FUNCTION_START(arb_poly_sinh_cosh_series, state)
+@@ -124,5 +127,91 @@
+         arb_poly_clear(e);
+     }
+ 
++
++    /* Force Newton steps at small odd/even lengths and compare against
++       exact rational series, including sparse and shortened inputs. */
++    {
++        const slong lengths[] = {0, 1, 2, 3, 4, 5, 7, 8, 9,
++                                 15, 16, 17, 31, 32, 33, 64, 65, 128, 129};
++        slong saved = arb_poly_newton_exp_cutoff;
++        slong li, fixture, j, n, hlen;
++        fmpq_poly_t hq, sq, cq;
++        arb_poly_t h, s, c, a, b;
++        arb_poly_newton_exp_cutoff = 4;
++        fmpq_poly_init(hq); fmpq_poly_init(sq); fmpq_poly_init(cq);
++        arb_poly_init(h); arb_poly_init(s); arb_poly_init(c);
++        arb_poly_init(a); arb_poly_init(b);
++        for (li = 0; li < 19; li++)
++        for (fixture = 0; fixture < 3; fixture++)
++        {
++            n = lengths[li];
++            hlen = fixture == 1 ? (n + 1) / 2 : n;
++            fmpq_poly_zero(hq);
++            for (j = 1; j < hlen; j++)
++                if (fixture != 2 || j == hlen - 1)
++                    fmpq_poly_set_coeff_si(hq, j, (7 * j) % 11 - 5);
++            fmpq_poly_scalar_div_ui(hq, hq, 16);
++            fmpq_poly_sinh_cosh_series(sq, cq, hq, n);
++            arb_poly_set_fmpq_poly(h, hq, 128);
++            arb_poly_sinh_cosh_series_exponential(s, c, h, n, 128);
++            if (!arb_poly_contains_fmpq_poly(s, sq) ||
++                !arb_poly_contains_fmpq_poly(c, cq))
++                TEST_FUNCTION_FAIL("exact series: n=%wd fixture=%wd\n", n, fixture);
++            arb_poly_set(a, h);
++            arb_poly_sinh_cosh_series_exponential(a, b, a, n, 128);
++            if (!arb_poly_equal(a, s) || !arb_poly_equal(b, c))
++                TEST_FUNCTION_FAIL("sinh aliases input\n");
++            arb_poly_set(b, h);
++            arb_poly_sinh_cosh_series_exponential(a, b, b, n, 128);
++            if (!arb_poly_equal(a, s) || !arb_poly_equal(b, c))
++                TEST_FUNCTION_FAIL("cosh aliases input\n");
++        }
++        fmpq_poly_clear(hq); fmpq_poly_clear(sq); fmpq_poly_clear(cq);
++        arb_poly_clear(h); arb_poly_clear(s); arb_poly_clear(c);
++        arb_poly_clear(a); arb_poly_clear(b);
++        arb_poly_newton_exp_cutoff = saved;
++    }
++
++    /* Nonzero constants and genuine ball inputs, with a high-precision
++       basecase reference and both public input/output aliases. */
++    {
++        slong saved = arb_poly_newton_exp_cutoff;
++        slong j, n, prec;
++        arb_poly_t h, s, c, a, b;
++        arb_t coefficient;
++        arb_poly_init(h); arb_poly_init(s); arb_poly_init(c);
++        arb_poly_init(a); arb_poly_init(b); arb_init(coefficient);
++        arb_poly_newton_exp_cutoff = 4;
++        for (n = 31; n <= 257; n = 2 * n + 3)
++        for (prec = 256; prec <= 1024; prec *= 4)
++        {
++            arb_poly_zero(h);
++            for (j = 0; j < n; j++)
++            {
++                arb_set_si(coefficient, (7 * j) % 11 - 5);
++                arb_mul_2exp_si(coefficient, coefficient, -5);
++                arb_add_error_2exp_si(coefficient, -prec - 16);
++                arb_poly_set_coeff_arb(h, j, coefficient);
++            }
++            arb_poly_sinh_cosh_series_basecase(a, b, h, n, 2 * prec + 64);
++            arb_poly_sinh_cosh_series_exponential(s, c, h, n, prec);
++            if (!arb_poly_overlaps(s, a) || !arb_poly_overlaps(c, b) ||
++                !arb_poly_is_finite(s) || !arb_poly_is_finite(c))
++                TEST_FUNCTION_FAIL("ball series reference\n");
++            arb_poly_sinh_cosh_series(s, c, h, n, prec);
++            arb_poly_set(a, h);
++            arb_poly_sinh_cosh_series(a, b, a, n, prec);
++            if (!arb_poly_equal(a, s) || !arb_poly_equal(b, c))
++                TEST_FUNCTION_FAIL("public sinh alias\n");
++            arb_poly_set(b, h);
++            arb_poly_sinh_cosh_series(a, b, b, n, prec);
++            if (!arb_poly_equal(a, s) || !arb_poly_equal(b, c))
++                TEST_FUNCTION_FAIL("public cosh alias\n");
++        }
++        arb_poly_clear(h); arb_poly_clear(s); arb_poly_clear(c);
++        arb_poly_clear(a); arb_poly_clear(b); arb_clear(coefficient);
++        arb_poly_newton_exp_cutoff = saved;
++    }
++
+     TEST_FUNCTION_END(state);
+ }
+--- a/src/acb_poly/test/t-sinh_cosh_series.c
++++ b/src/acb_poly/test/t-sinh_cosh_series.c
+@@ -10,6 +10,9 @@
+ */
+ 
+ #include "test_helpers.h"
++#include "fmpq_poly.h"
++
++FLINT_DLL extern slong acb_poly_newton_exp_cutoff;
+ #include "acb_poly.h"
+ 
+ TEST_FUNCTION_START(acb_poly_sinh_cosh_series, state)
+@@ -124,5 +127,93 @@
+         acb_poly_clear(e);
+     }
+ 
++
++    /* Force Newton steps at small odd/even lengths and compare against
++       exact rational series, including sparse and shortened inputs. */
++    {
++        const slong lengths[] = {0, 1, 2, 3, 4, 5, 7, 8, 9,
++                                 15, 16, 17, 31, 32, 33, 64, 65, 128, 129};
++        slong saved = acb_poly_newton_exp_cutoff;
++        slong li, fixture, j, n, hlen;
++        fmpq_poly_t hq, sq, cq;
++        acb_poly_t h, s, c, a, b;
++        acb_poly_newton_exp_cutoff = 4;
++        fmpq_poly_init(hq); fmpq_poly_init(sq); fmpq_poly_init(cq);
++        acb_poly_init(h); acb_poly_init(s); acb_poly_init(c);
++        acb_poly_init(a); acb_poly_init(b);
++        for (li = 0; li < 19; li++)
++        for (fixture = 0; fixture < 3; fixture++)
++        {
++            n = lengths[li];
++            hlen = fixture == 1 ? (n + 1) / 2 : n;
++            fmpq_poly_zero(hq);
++            for (j = 1; j < hlen; j++)
++                if (fixture != 2 || j == hlen - 1)
++                    fmpq_poly_set_coeff_si(hq, j, (7 * j) % 11 - 5);
++            fmpq_poly_scalar_div_ui(hq, hq, 16);
++            fmpq_poly_sinh_cosh_series(sq, cq, hq, n);
++            acb_poly_set_fmpq_poly(h, hq, 128);
++            acb_poly_sinh_cosh_series_exponential(s, c, h, n, 128);
++            if (!acb_poly_contains_fmpq_poly(s, sq) ||
++                !acb_poly_contains_fmpq_poly(c, cq))
++                TEST_FUNCTION_FAIL("exact series: n=%wd fixture=%wd\n", n, fixture);
++            acb_poly_set(a, h);
++            acb_poly_sinh_cosh_series_exponential(a, b, a, n, 128);
++            if (!acb_poly_equal(a, s) || !acb_poly_equal(b, c))
++                TEST_FUNCTION_FAIL("sinh aliases input\n");
++            acb_poly_set(b, h);
++            acb_poly_sinh_cosh_series_exponential(a, b, b, n, 128);
++            if (!acb_poly_equal(a, s) || !acb_poly_equal(b, c))
++                TEST_FUNCTION_FAIL("cosh aliases input\n");
++        }
++        fmpq_poly_clear(hq); fmpq_poly_clear(sq); fmpq_poly_clear(cq);
++        acb_poly_clear(h); acb_poly_clear(s); acb_poly_clear(c);
++        acb_poly_clear(a); acb_poly_clear(b);
++        acb_poly_newton_exp_cutoff = saved;
++    }
++
++    /* Nonzero constants and genuine ball inputs, with a high-precision
++       basecase reference and both public input/output aliases. */
++    {
++        slong saved = acb_poly_newton_exp_cutoff;
++        slong j, n, prec;
++        acb_poly_t h, s, c, a, b;
++        acb_t coefficient;
++        acb_poly_init(h); acb_poly_init(s); acb_poly_init(c);
++        acb_poly_init(a); acb_poly_init(b); acb_init(coefficient);
++        acb_poly_newton_exp_cutoff = 4;
++        for (n = 31; n <= 257; n = 2 * n + 3)
++        for (prec = 256; prec <= 1024; prec *= 4)
++        {
++            acb_poly_zero(h);
++            for (j = 0; j < n; j++)
++            {
++                arb_set_si(acb_realref(coefficient), (7 * j) % 11 - 5);
++                arb_set_si(acb_imagref(coefficient), (5 * j) % 7 - 3);
++                acb_mul_2exp_si(coefficient, coefficient, -5);
++                arb_add_error_2exp_si(acb_realref(coefficient), -prec - 16);
++                arb_add_error_2exp_si(acb_imagref(coefficient), -prec - 16);
++                acb_poly_set_coeff_acb(h, j, coefficient);
++            }
++            acb_poly_sinh_cosh_series_basecase(a, b, h, n, 2 * prec + 64);
++            acb_poly_sinh_cosh_series_exponential(s, c, h, n, prec);
++            if (!acb_poly_overlaps(s, a) || !acb_poly_overlaps(c, b) ||
++                !acb_poly_is_finite(s) || !acb_poly_is_finite(c))
++                TEST_FUNCTION_FAIL("ball series reference\n");
++            acb_poly_sinh_cosh_series(s, c, h, n, prec);
++            acb_poly_set(a, h);
++            acb_poly_sinh_cosh_series(a, b, a, n, prec);
++            if (!acb_poly_equal(a, s) || !acb_poly_equal(b, c))
++                TEST_FUNCTION_FAIL("public sinh alias\n");
++            acb_poly_set(b, h);
++            acb_poly_sinh_cosh_series(a, b, b, n, prec);
++            if (!acb_poly_equal(a, s) || !acb_poly_equal(b, c))
++                TEST_FUNCTION_FAIL("public cosh alias\n");
++        }
++        acb_poly_clear(h); acb_poly_clear(s); acb_poly_clear(c);
++        acb_poly_clear(a); acb_poly_clear(b); acb_clear(coefficient);
++        acb_poly_newton_exp_cutoff = saved;
++    }
++
+     TEST_FUNCTION_END(state);
+ }

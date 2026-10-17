@@ -1,0 +1,25 @@
+{
+  "case": {
+    "kind": "nmod_interp",
+    "size": 128,
+    "length": 128,
+    "prec": 0,
+    "modulus": 18446744073709551557,
+    "seed": 91073
+  },
+  "command": [
+    "/Users/colkitt/sith/toys/math/butterflyMult/build/optimization-campaign",
+    "nmod_interp",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+    "128",
+    "128",
+    "0",
+    "18446744073709551557",
+    "91073",
+    "-1",
+    "6000"
+  ],
+  "binary_sha256": "94a5d235bc5993c17684bd3e9ed9a7ee48b08ac55bed29473ffb43611d7b0851",
+  "library_sha256": "a608ca2fe954c5d7bf30dfe6eee004635c69ac8beb37ce77bc7560f039033f67"
+}

@@ -1,0 +1,21 @@
+{
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "architecture": "arm64",
+  "cpu_query": {
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+  },
+  "compiler": {
+    "returncode": 0,
+    "stdout": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin",
+    "stderr": ""
+  },
+  "flint_commit": {
+    "returncode": 0,
+    "stdout": "657a2839cf0125164859ff102b1f124abcb87ce0",
+    "stderr": ""
+  },
+  "threads": 1,
+  "cpu_note": "This workspace was previously identified as Apple M2. Current brand query is sandbox-restricted; record its failure rather than substitute a fresh observation."
+}

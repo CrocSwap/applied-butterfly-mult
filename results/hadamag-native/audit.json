@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "fingerprints": 1660,
+  "timed_batches": 11136,
+  "pairs": 232,
+  "quartets": 12,
+  "raw_sha256": "9c9cf3bd0d7c8ec9f1380add82e5106d9ed870d41e6fab4b3421ef2121183a58"
+}

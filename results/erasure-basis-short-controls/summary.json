@@ -1,0 +1,7847 @@
+{
+  "controls": 164,
+  "coefficient_equalities": 419840,
+  "physical_and_liveness_checks": "PASS",
+  "recipe_changes_by_size": {
+    "3": 835,
+    "4": 305
+  },
+  "covered": 129,
+  "surviving_basis_points": [
+    {
+      "id": 6435,
+      "op": "encode",
+      "schedule": "fused",
+      "mode": "basis",
+      "cut": 118,
+      "retention": "top-q",
+      "priority": "next",
+      "retained": [
+        2,
+        5,
+        8,
+        14,
+        19,
+        20,
+        23,
+        27,
+        32,
+        39,
+        46,
+        50,
+        54,
+        57,
+        62,
+        64,
+        68,
+        74,
+        83,
+        87,
+        94,
+        99,
+        101,
+        102,
+        103,
+        108,
+        114
+      ],
+      "dropped": 81,
+      "xors": 650,
+      "accesses": 864,
+      "input_reads": 588,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 107,
+      "slots": 40,
+      "scratch": 8
+    },
+    {
+      "id": 6450,
+      "op": "encode",
+      "schedule": "fused",
+      "mode": "basis",
+      "cut": 118,
+      "retention": "top-q",
+      "priority": "weight",
+      "retained": [
+        20,
+        32,
+        44,
+        50,
+        58,
+        62,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        92,
+        94,
+        96,
+        98,
+        99,
+        101,
+        103,
+        106,
+        107,
+        114
+      ],
+      "dropped": 81,
+      "xors": 591,
+      "accesses": 859,
+      "input_reads": 533,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 134,
+      "slots": 42,
+      "scratch": 10
+    },
+    {
+      "id": 6498,
+      "op": "encode",
+      "schedule": "fused",
+      "mode": "basis",
+      "cut": 119,
+      "retention": "top-q",
+      "priority": "next",
+      "retained": [
+        2,
+        5,
+        8,
+        14,
+        19,
+        20,
+        23,
+        27,
+        32,
+        39,
+        50,
+        57,
+        62,
+        64,
+        68,
+        74,
+        83,
+        87,
+        94,
+        99,
+        101,
+        102,
+        103,
+        108,
+        111,
+        114,
+        118
+      ],
+      "dropped": 81,
+      "xors": 655,
+      "accesses": 871,
+      "input_reads": 599,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 108,
+      "slots": 39,
+      "scratch": 7
+    },
+    {
+      "id": 6513,
+      "op": "encode",
+      "schedule": "fused",
+      "mode": "basis",
+      "cut": 119,
+      "retention": "top-q",
+      "priority": "weight",
+      "retained": [
+        20,
+        32,
+        50,
+        58,
+        62,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        92,
+        94,
+        96,
+        98,
+        99,
+        101,
+        103,
+        106,
+        107,
+        114,
+        118
+      ],
+      "dropped": 81,
+      "xors": 594,
+      "accesses": 862,
+      "input_reads": 540,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 134,
+      "slots": 41,
+      "scratch": 9
+    },
+    {
+      "id": 11221,
+      "op": "encode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 64,
+      "retention": "top-q",
+      "priority": "uses",
+      "retained": [
+        1,
+        2,
+        5,
+        8,
+        14,
+        19,
+        20,
+        21,
+        22,
+        24,
+        26,
+        30,
+        31,
+        32,
+        33,
+        37,
+        39,
+        41,
+        42,
+        44,
+        46,
+        48,
+        49,
+        52,
+        54,
+        55,
+        57,
+        58,
+        60,
+        63
+      ],
+      "dropped": 30,
+      "xors": 466,
+      "accesses": 744,
+      "input_reads": 352,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 139,
+      "slots": 78,
+      "scratch": 46
+    },
+    {
+      "id": 11281,
+      "op": "encode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 65,
+      "retention": "top-q",
+      "priority": "uses",
+      "retained": [
+        1,
+        2,
+        5,
+        8,
+        14,
+        19,
+        20,
+        21,
+        22,
+        24,
+        26,
+        30,
+        31,
+        32,
+        33,
+        37,
+        39,
+        41,
+        42,
+        44,
+        46,
+        48,
+        49,
+        52,
+        54,
+        55,
+        57,
+        58,
+        60,
+        63
+      ],
+      "dropped": 30,
+      "xors": 469,
+      "accesses": 745,
+      "input_reads": 353,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 138,
+      "slots": 77,
+      "scratch": 45
+    },
+    {
+      "id": 11566,
+      "op": "encode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 70,
+      "retention": "top-q",
+      "priority": "uses",
+      "retained": [
+        8,
+        14,
+        20,
+        21,
+        22,
+        26,
+        30,
+        33,
+        39,
+        42,
+        46,
+        52,
+        54,
+        55,
+        58,
+        65,
+        66
+      ],
+      "dropped": 48,
+      "xors": 523,
+      "accesses": 757,
+      "input_reads": 438,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 117,
+      "slots": 65,
+      "scratch": 33
+    },
+    {
+      "id": 11569,
+      "op": "encode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 70,
+      "retention": "top-q",
+      "priority": "uses",
+      "retained": [
+        4,
+        5,
+        8,
+        10,
+        14,
+        19,
+        20,
+        21,
+        22,
+        26,
+        28,
+        29,
+        30,
+        32,
+        33,
+        37,
+        39,
+        41,
+        42,
+        44,
+        46,
+        48,
+        49,
+        50,
+        52,
+        54,
+        55,
+        58,
+        60,
+        63,
+        65,
+        66,
+        68
+      ],
+      "dropped": 32,
+      "xors": 478,
+      "accesses": 756,
+      "input_reads": 356,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 139,
+      "slots": 76,
+      "scratch": 44
+    },
+    {
+      "id": 11626,
+      "op": "encode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 71,
+      "retention": "top-q",
+      "priority": "uses",
+      "retained": [
+        4,
+        5,
+        8,
+        10,
+        14,
+        19,
+        20,
+        21,
+        22,
+        26,
+        28,
+        29,
+        30,
+        32,
+        33,
+        37,
+        39,
+        41,
+        42,
+        44,
+        46,
+        48,
+        49,
+        52,
+        54,
+        55,
+        58,
+        60,
+        63,
+        65,
+        66,
+        68,
+        70
+      ],
+      "dropped": 33,
+      "xors": 479,
+      "accesses": 755,
+      "input_reads": 358,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 138,
+      "slots": 75,
+      "scratch": 43
+    },
+    {
+      "id": 11743,
+      "op": "encode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 73,
+      "retention": "top-q",
+      "priority": "uses",
+      "retained": [
+        8,
+        14,
+        20,
+        21,
+        22,
+        26,
+        33,
+        39,
+        42,
+        46,
+        52,
+        54,
+        55,
+        58,
+        65,
+        66,
+        70
+      ],
+      "dropped": 51,
+      "xors": 528,
+      "accesses": 758,
+      "input_reads": 446,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 115,
+      "slots": 64,
+      "scratch": 32
+    },
+    {
+      "id": 30177,
+      "op": "decode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 39,
+      "retention": "top-q",
+      "priority": "uses",
+      "retained": [
+        3,
+        5,
+        6,
+        7,
+        10,
+        16,
+        18,
+        19,
+        20,
+        22,
+        23,
+        26,
+        28,
+        31,
+        32,
+        33,
+        34,
+        35,
+        37
+      ],
+      "dropped": 20,
+      "xors": 551,
+      "accesses": 941,
+      "input_reads": 343,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 195,
+      "slots": 122,
+      "scratch": 90
+    },
+    {
+      "id": 30285,
+      "op": "decode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 41,
+      "retention": "top-q",
+      "priority": "uses",
+      "retained": [
+        3,
+        5,
+        6,
+        7,
+        10,
+        16,
+        18,
+        19,
+        20,
+        22,
+        23,
+        26,
+        28,
+        31,
+        32,
+        33,
+        34,
+        35,
+        37,
+        39
+      ],
+      "dropped": 21,
+      "xors": 552,
+      "accesses": 940,
+      "input_reads": 345,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 194,
+      "slots": 121,
+      "scratch": 89
+    },
+    {
+      "id": 32295,
+      "op": "decode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 74,
+      "retention": "top-q",
+      "priority": "weight",
+      "retained": [
+        17,
+        18,
+        19,
+        25,
+        26,
+        39,
+        41,
+        47,
+        51,
+        54,
+        58,
+        59,
+        61,
+        65,
+        68,
+        70,
+        71,
+        73
+      ],
+      "dropped": 54,
+      "xors": 610,
+      "accesses": 956,
+      "input_reads": 440,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 173,
+      "slots": 99,
+      "scratch": 67
+    },
+    {
+      "id": 32358,
+      "op": "decode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 75,
+      "retention": "top-q",
+      "priority": "weight",
+      "retained": [
+        17,
+        18,
+        19,
+        25,
+        26,
+        39,
+        41,
+        47,
+        51,
+        54,
+        58,
+        59,
+        61,
+        65,
+        68,
+        70,
+        71,
+        73
+      ],
+      "dropped": 55,
+      "xors": 611,
+      "accesses": 955,
+      "input_reads": 442,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 172,
+      "slots": 99,
+      "scratch": 67
+    },
+    {
+      "id": 32421,
+      "op": "decode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 76,
+      "retention": "top-q",
+      "priority": "weight",
+      "retained": [
+        17,
+        18,
+        19,
+        25,
+        26,
+        39,
+        41,
+        47,
+        51,
+        54,
+        58,
+        59,
+        61,
+        65,
+        68,
+        70,
+        71,
+        73
+      ],
+      "dropped": 56,
+      "xors": 613,
+      "accesses": 955,
+      "input_reads": 446,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 171,
+      "slots": 98,
+      "scratch": 66
+    },
+    {
+      "id": 32484,
+      "op": "decode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 77,
+      "retention": "top-q",
+      "priority": "weight",
+      "retained": [
+        17,
+        18,
+        19,
+        25,
+        26,
+        39,
+        41,
+        51,
+        54,
+        58,
+        59,
+        61,
+        65,
+        68,
+        70,
+        71,
+        73,
+        76
+      ],
+      "dropped": 57,
+      "xors": 616,
+      "accesses": 958,
+      "input_reads": 451,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 171,
+      "slots": 97,
+      "scratch": 65
+    },
+    {
+      "id": 34917,
+      "op": "decode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 116,
+      "retention": "top-q",
+      "priority": "weight",
+      "retained": [
+        17,
+        19,
+        58,
+        61,
+        65,
+        68,
+        71,
+        73,
+        77,
+        81,
+        82,
+        91,
+        92,
+        93,
+        98,
+        99,
+        100,
+        101,
+        102,
+        104,
+        105,
+        110,
+        111,
+        112,
+        113,
+        114
+      ],
+      "dropped": 80,
+      "xors": 686,
+      "accesses": 1012,
+      "input_reads": 559,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 163,
+      "slots": 72,
+      "scratch": 40
+    },
+    {
+      "id": 34980,
+      "op": "decode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 117,
+      "retention": "top-q",
+      "priority": "weight",
+      "retained": [
+        19,
+        58,
+        61,
+        65,
+        68,
+        71,
+        73,
+        77,
+        81,
+        82,
+        91,
+        92,
+        93,
+        98,
+        99,
+        100,
+        101,
+        102,
+        104,
+        105,
+        110,
+        111,
+        112,
+        113,
+        114,
+        116
+      ],
+      "dropped": 81,
+      "xors": 690,
+      "accesses": 1016,
+      "input_reads": 561,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 163,
+      "slots": 71,
+      "scratch": 39
+    },
+    {
+      "id": 35043,
+      "op": "decode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 118,
+      "retention": "top-q",
+      "priority": "weight",
+      "retained": [
+        19,
+        58,
+        61,
+        65,
+        68,
+        71,
+        73,
+        77,
+        81,
+        82,
+        91,
+        92,
+        93,
+        98,
+        99,
+        100,
+        101,
+        102,
+        104,
+        105,
+        110,
+        111,
+        112,
+        113,
+        114,
+        116,
+        117
+      ],
+      "dropped": 81,
+      "xors": 690,
+      "accesses": 1018,
+      "input_reads": 560,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 164,
+      "slots": 71,
+      "scratch": 39
+    },
+    {
+      "id": 35169,
+      "op": "decode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 120,
+      "retention": "top-q",
+      "priority": "weight",
+      "retained": [
+        19,
+        58,
+        61,
+        65,
+        68,
+        71,
+        73,
+        77,
+        81,
+        82,
+        91,
+        92,
+        93,
+        98,
+        99,
+        100,
+        101,
+        102,
+        104,
+        105,
+        110,
+        111,
+        112,
+        113,
+        114,
+        116,
+        117
+      ],
+      "dropped": 82,
+      "xors": 693,
+      "accesses": 1017,
+      "input_reads": 566,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 162,
+      "slots": 70,
+      "scratch": 38
+    },
+    {
+      "id": 35232,
+      "op": "decode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 121,
+      "retention": "top-q",
+      "priority": "weight",
+      "retained": [
+        58,
+        61,
+        65,
+        68,
+        71,
+        73,
+        77,
+        81,
+        82,
+        91,
+        92,
+        93,
+        98,
+        99,
+        100,
+        101,
+        102,
+        104,
+        105,
+        110,
+        111,
+        112,
+        113,
+        114,
+        116,
+        117,
+        120
+      ],
+      "dropped": 83,
+      "xors": 696,
+      "accesses": 1018,
+      "input_reads": 572,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 161,
+      "slots": 69,
+      "scratch": 37
+    },
+    {
+      "id": 35358,
+      "op": "decode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 123,
+      "retention": "top-q",
+      "priority": "weight",
+      "retained": [
+        58,
+        61,
+        65,
+        68,
+        71,
+        73,
+        77,
+        81,
+        82,
+        91,
+        92,
+        93,
+        98,
+        99,
+        100,
+        101,
+        102,
+        104,
+        105,
+        110,
+        111,
+        112,
+        113,
+        114,
+        116,
+        117,
+        120,
+        121
+      ],
+      "dropped": 84,
+      "xors": 700,
+      "accesses": 1024,
+      "input_reads": 578,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 162,
+      "slots": 68,
+      "scratch": 36
+    },
+    {
+      "id": 35421,
+      "op": "decode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 124,
+      "retention": "top-q",
+      "priority": "weight",
+      "retained": [
+        58,
+        61,
+        65,
+        68,
+        71,
+        73,
+        77,
+        81,
+        82,
+        91,
+        92,
+        93,
+        98,
+        99,
+        100,
+        101,
+        102,
+        104,
+        105,
+        110,
+        111,
+        112,
+        113,
+        114,
+        116,
+        117,
+        120,
+        121
+      ],
+      "dropped": 85,
+      "xors": 703,
+      "accesses": 1025,
+      "input_reads": 582,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 161,
+      "slots": 67,
+      "scratch": 35
+    },
+    {
+      "id": 35484,
+      "op": "decode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 125,
+      "retention": "top-q",
+      "priority": "weight",
+      "retained": [
+        58,
+        61,
+        65,
+        68,
+        71,
+        73,
+        77,
+        81,
+        82,
+        91,
+        92,
+        93,
+        98,
+        99,
+        100,
+        101,
+        102,
+        104,
+        105,
+        110,
+        111,
+        112,
+        113,
+        114,
+        117,
+        120,
+        121,
+        124
+      ],
+      "dropped": 86,
+      "xors": 709,
+      "accesses": 1031,
+      "input_reads": 590,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 161,
+      "slots": 66,
+      "scratch": 34
+    },
+    {
+      "id": 35547,
+      "op": "decode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 126,
+      "retention": "top-q",
+      "priority": "weight",
+      "retained": [
+        58,
+        61,
+        65,
+        68,
+        71,
+        73,
+        77,
+        81,
+        82,
+        91,
+        92,
+        93,
+        98,
+        99,
+        100,
+        101,
+        102,
+        104,
+        105,
+        110,
+        111,
+        113,
+        114,
+        117,
+        120,
+        121,
+        124,
+        125
+      ],
+      "dropped": 87,
+      "xors": 707,
+      "accesses": 1031,
+      "input_reads": 595,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 162,
+      "slots": 65,
+      "scratch": 33
+    },
+    {
+      "id": 35862,
+      "op": "decode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 131,
+      "retention": "top-q",
+      "priority": "weight",
+      "retained": [
+        58,
+        61,
+        65,
+        71,
+        73,
+        77,
+        81,
+        82,
+        91,
+        92,
+        93,
+        99,
+        100,
+        101,
+        102,
+        104,
+        105,
+        110,
+        111,
+        112,
+        113,
+        114,
+        120,
+        124,
+        125,
+        127,
+        128,
+        129,
+        130
+      ],
+      "dropped": 89,
+      "xors": 722,
+      "accesses": 1046,
+      "input_reads": 608,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 162,
+      "slots": 64,
+      "scratch": 32
+    },
+    {
+      "id": 36177,
+      "op": "decode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 136,
+      "retention": "top-q",
+      "priority": "weight",
+      "retained": [
+        58,
+        61,
+        71,
+        73,
+        77,
+        81,
+        82,
+        91,
+        92,
+        93,
+        99,
+        100,
+        101,
+        102,
+        104,
+        110,
+        111,
+        113,
+        114,
+        120,
+        124,
+        125,
+        127,
+        128,
+        129,
+        131,
+        132,
+        133,
+        134,
+        135
+      ],
+      "dropped": 93,
+      "xors": 729,
+      "accesses": 1055,
+      "input_reads": 624,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 163,
+      "slots": 63,
+      "scratch": 31
+    },
+    {
+      "id": 36243,
+      "op": "decode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 137,
+      "retention": "top-q",
+      "priority": "weight",
+      "retained": [
+        8,
+        12,
+        14,
+        17,
+        19,
+        23,
+        25,
+        26,
+        41,
+        44,
+        48,
+        53,
+        54,
+        57,
+        58,
+        61,
+        62,
+        63,
+        66,
+        71,
+        72,
+        73,
+        77,
+        81,
+        82,
+        83,
+        84,
+        87,
+        91,
+        92,
+        93,
+        99,
+        100,
+        101,
+        102,
+        104,
+        105,
+        106,
+        107,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        120,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136
+      ],
+      "dropped": 62,
+      "xors": 614,
+      "accesses": 1000,
+      "input_reads": 426,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 193,
+      "slots": 88,
+      "scratch": 56
+    },
+    {
+      "id": 36300,
+      "op": "decode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 138,
+      "retention": "independent",
+      "priority": "weight",
+      "retained": [
+        1,
+        2,
+        4,
+        8,
+        9,
+        14,
+        17,
+        19,
+        21,
+        23,
+        25,
+        26,
+        27,
+        29,
+        35,
+        36,
+        37,
+        38,
+        40,
+        41,
+        44,
+        48,
+        50,
+        53,
+        54,
+        57,
+        58,
+        61,
+        62,
+        63,
+        66,
+        71,
+        72,
+        73,
+        76,
+        77,
+        78,
+        81,
+        82,
+        83,
+        84,
+        87,
+        91,
+        92,
+        93,
+        95,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        119,
+        120,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        131,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "dropped": 45,
+      "xors": 585,
+      "accesses": 997,
+      "input_reads": 372,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 206,
+      "slots": 104,
+      "scratch": 72
+    },
+    {
+      "id": 36306,
+      "op": "decode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 138,
+      "retention": "top-q",
+      "priority": "weight",
+      "retained": [
+        8,
+        14,
+        17,
+        19,
+        23,
+        25,
+        26,
+        41,
+        44,
+        48,
+        53,
+        54,
+        57,
+        58,
+        61,
+        62,
+        63,
+        66,
+        71,
+        72,
+        73,
+        77,
+        81,
+        82,
+        83,
+        84,
+        87,
+        91,
+        92,
+        93,
+        99,
+        100,
+        101,
+        102,
+        104,
+        105,
+        106,
+        107,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        120,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "dropped": 63,
+      "xors": 616,
+      "accesses": 1002,
+      "input_reads": 430,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 193,
+      "slots": 87,
+      "scratch": 55
+    },
+    {
+      "id": 36366,
+      "op": "decode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 139,
+      "retention": "top-q",
+      "priority": "weight",
+      "retained": [
+        58,
+        61,
+        71,
+        73,
+        77,
+        81,
+        82,
+        91,
+        92,
+        93,
+        99,
+        100,
+        101,
+        102,
+        104,
+        110,
+        111,
+        113,
+        114,
+        120,
+        124,
+        125,
+        127,
+        128,
+        129,
+        131,
+        133,
+        134,
+        136,
+        137,
+        138
+      ],
+      "dropped": 94,
+      "xors": 729,
+      "accesses": 1057,
+      "input_reads": 623,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 164,
+      "slots": 63,
+      "scratch": 31
+    },
+    {
+      "id": 36498,
+      "op": "decode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 141,
+      "retention": "top-q",
+      "priority": "weight",
+      "retained": [
+        1,
+        2,
+        4,
+        8,
+        9,
+        14,
+        17,
+        19,
+        21,
+        23,
+        25,
+        26,
+        27,
+        29,
+        30,
+        35,
+        41,
+        44,
+        48,
+        53,
+        57,
+        58,
+        61,
+        62,
+        63,
+        66,
+        71,
+        72,
+        73,
+        76,
+        77,
+        81,
+        82,
+        83,
+        84,
+        87,
+        91,
+        92,
+        93,
+        95,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        119,
+        120,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140
+      ],
+      "dropped": 47,
+      "xors": 585,
+      "accesses": 991,
+      "input_reads": 383,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 203,
+      "slots": 101,
+      "scratch": 69
+    },
+    {
+      "id": 36624,
+      "op": "decode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 143,
+      "retention": "top-q",
+      "priority": "weight",
+      "retained": [
+        1,
+        2,
+        4,
+        8,
+        9,
+        14,
+        17,
+        19,
+        21,
+        23,
+        25,
+        26,
+        27,
+        29,
+        30,
+        35,
+        41,
+        44,
+        48,
+        53,
+        57,
+        58,
+        61,
+        62,
+        63,
+        66,
+        71,
+        72,
+        73,
+        76,
+        77,
+        81,
+        82,
+        83,
+        84,
+        87,
+        91,
+        92,
+        93,
+        95,
+        98,
+        99,
+        100,
+        101,
+        102,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        119,
+        120,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142
+      ],
+      "dropped": 49,
+      "xors": 589,
+      "accesses": 997,
+      "input_reads": 391,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 204,
+      "slots": 100,
+      "scratch": 68
+    },
+    {
+      "id": 37569,
+      "op": "decode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 158,
+      "retention": "top-q",
+      "priority": "weight",
+      "retained": [
+        1,
+        2,
+        4,
+        8,
+        9,
+        17,
+        23,
+        25,
+        26,
+        41,
+        44,
+        48,
+        53,
+        57,
+        58,
+        61,
+        63,
+        66,
+        71,
+        72,
+        73,
+        77,
+        81,
+        83,
+        84,
+        87,
+        91,
+        92,
+        93,
+        98,
+        99,
+        100,
+        101,
+        102,
+        104,
+        105,
+        106,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        119,
+        120,
+        123,
+        125,
+        127,
+        128,
+        129,
+        130,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157
+      ],
+      "dropped": 60,
+      "xors": 603,
+      "accesses": 1005,
+      "input_reads": 412,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 201,
+      "slots": 91,
+      "scratch": 59
+    },
+    {
+      "id": 37896,
+      "op": "decode",
+      "schedule": "scheduled",
+      "mode": "basis",
+      "cut": 163,
+      "retention": "top-q",
+      "priority": "recent",
+      "retained": [
+        81,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        105,
+        106,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        125,
+        127,
+        128,
+        129,
+        130,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162
+      ],
+      "dropped": 69,
+      "xors": 662,
+      "accesses": 1036,
+      "input_reads": 514,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 187,
+      "slots": 77,
+      "scratch": 45
+    }
+  ],
+  "coverage": [
+    {
+      "candidate_id": 6183,
+      "control": {
+        "id": 3,
+        "candidate_id": 6450,
+        "op": "encode",
+        "schedule": "fused",
+        "cut": 118,
+        "changes": {
+          "3": 9,
+          "4": 5
+        },
+        "xors": 573,
+        "accesses": 841,
+        "input_reads": 511,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 134,
+        "slots": 44,
+        "scratch": 12
+      }
+    },
+    {
+      "candidate_id": 6198,
+      "control": {
+        "id": 3,
+        "candidate_id": 6450,
+        "op": "encode",
+        "schedule": "fused",
+        "cut": 118,
+        "changes": {
+          "3": 9,
+          "4": 5
+        },
+        "xors": 573,
+        "accesses": 841,
+        "input_reads": 511,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 134,
+        "slots": 44,
+        "scratch": 12
+      }
+    },
+    {
+      "candidate_id": 6564,
+      "control": {
+        "id": 6,
+        "candidate_id": 6564,
+        "op": "encode",
+        "schedule": "fused",
+        "cut": 120,
+        "changes": {
+          "3": 1,
+          "4": 3
+        },
+        "xors": 529,
+        "accesses": 785,
+        "input_reads": 404,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 128,
+        "slots": 63,
+        "scratch": 31
+      }
+    },
+    {
+      "candidate_id": 6627,
+      "control": {
+        "id": 7,
+        "candidate_id": 6627,
+        "op": "encode",
+        "schedule": "fused",
+        "cut": 121,
+        "changes": {
+          "3": 1,
+          "4": 3
+        },
+        "xors": 531,
+        "accesses": 787,
+        "input_reads": 406,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 128,
+        "slots": 62,
+        "scratch": 30
+      }
+    },
+    {
+      "candidate_id": 6879,
+      "control": {
+        "id": 8,
+        "candidate_id": 6879,
+        "op": "encode",
+        "schedule": "fused",
+        "cut": 125,
+        "changes": {
+          "3": 2,
+          "4": 3
+        },
+        "xors": 538,
+        "accesses": 796,
+        "input_reads": 410,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 129,
+        "slots": 60,
+        "scratch": 28
+      }
+    },
+    {
+      "candidate_id": 6942,
+      "control": {
+        "id": 8,
+        "candidate_id": 6879,
+        "op": "encode",
+        "schedule": "fused",
+        "cut": 125,
+        "changes": {
+          "3": 2,
+          "4": 3
+        },
+        "xors": 538,
+        "accesses": 796,
+        "input_reads": 410,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 129,
+        "slots": 60,
+        "scratch": 28
+      }
+    },
+    {
+      "candidate_id": 7065,
+      "control": {
+        "id": 10,
+        "candidate_id": 7065,
+        "op": "encode",
+        "schedule": "fused",
+        "cut": 128,
+        "changes": {
+          "3": 4,
+          "4": 4
+        },
+        "xors": 653,
+        "accesses": 863,
+        "input_reads": 578,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 105,
+        "slots": 40,
+        "scratch": 8
+      }
+    },
+    {
+      "candidate_id": 11023,
+      "control": {
+        "id": 11,
+        "candidate_id": 11023,
+        "op": "encode",
+        "schedule": "scheduled",
+        "cut": 60,
+        "changes": {
+          "3": 1
+        },
+        "xors": 423,
+        "accesses": 739,
+        "input_reads": 276,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 158,
+        "slots": 100,
+        "scratch": 68
+      }
+    },
+    {
+      "candidate_id": 11278,
+      "control": {
+        "id": 13,
+        "candidate_id": 11278,
+        "op": "encode",
+        "schedule": "scheduled",
+        "cut": 65,
+        "changes": {
+          "3": 1,
+          "4": 1
+        },
+        "xors": 515,
+        "accesses": 747,
+        "input_reads": 432,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 116,
+        "slots": 69,
+        "scratch": 37
+      }
+    },
+    {
+      "candidate_id": 11395,
+      "control": {
+        "id": 15,
+        "candidate_id": 11395,
+        "op": "encode",
+        "schedule": "scheduled",
+        "cut": 67,
+        "changes": {
+          "3": 1
+        },
+        "xors": 476,
+        "accesses": 752,
+        "input_reads": 360,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 138,
+        "slots": 76,
+        "scratch": 44
+      }
+    },
+    {
+      "candidate_id": 12262,
+      "control": {
+        "id": 20,
+        "candidate_id": 12262,
+        "op": "encode",
+        "schedule": "scheduled",
+        "cut": 81,
+        "changes": {
+          "3": 3,
+          "4": 2
+        },
+        "xors": 508,
+        "accesses": 766,
+        "input_reads": 426,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 129,
+        "slots": 65,
+        "scratch": 33
+      }
+    },
+    {
+      "candidate_id": 12325,
+      "control": {
+        "id": 20,
+        "candidate_id": 12262,
+        "op": "encode",
+        "schedule": "scheduled",
+        "cut": 81,
+        "changes": {
+          "3": 3,
+          "4": 2
+        },
+        "xors": 508,
+        "accesses": 766,
+        "input_reads": 426,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 129,
+        "slots": 65,
+        "scratch": 33
+      }
+    },
+    {
+      "candidate_id": 12451,
+      "control": {
+        "id": 21,
+        "candidate_id": 12325,
+        "op": "encode",
+        "schedule": "scheduled",
+        "cut": 82,
+        "changes": {
+          "3": 2,
+          "4": 2
+        },
+        "xors": 508,
+        "accesses": 766,
+        "input_reads": 427,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 129,
+        "slots": 64,
+        "scratch": 32
+      }
+    },
+    {
+      "candidate_id": 13270,
+      "control": {
+        "id": 23,
+        "candidate_id": 13270,
+        "op": "encode",
+        "schedule": "scheduled",
+        "cut": 97,
+        "changes": {
+          "3": 3,
+          "4": 3
+        },
+        "xors": 525,
+        "accesses": 785,
+        "input_reads": 448,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 130,
+        "slots": 57,
+        "scratch": 25
+      }
+    },
+    {
+      "candidate_id": 13333,
+      "control": {
+        "id": 23,
+        "candidate_id": 13270,
+        "op": "encode",
+        "schedule": "scheduled",
+        "cut": 97,
+        "changes": {
+          "3": 3,
+          "4": 3
+        },
+        "xors": 525,
+        "accesses": 785,
+        "input_reads": 448,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 130,
+        "slots": 57,
+        "scratch": 25
+      }
+    },
+    {
+      "candidate_id": 13522,
+      "control": {
+        "id": 25,
+        "candidate_id": 13522,
+        "op": "encode",
+        "schedule": "scheduled",
+        "cut": 101,
+        "changes": {
+          "3": 3,
+          "4": 3
+        },
+        "xors": 531,
+        "accesses": 793,
+        "input_reads": 458,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 131,
+        "slots": 55,
+        "scratch": 23
+      }
+    },
+    {
+      "candidate_id": 13837,
+      "control": {
+        "id": 25,
+        "candidate_id": 13522,
+        "op": "encode",
+        "schedule": "scheduled",
+        "cut": 101,
+        "changes": {
+          "3": 3,
+          "4": 3
+        },
+        "xors": 531,
+        "accesses": 793,
+        "input_reads": 458,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 131,
+        "slots": 55,
+        "scratch": 23
+      }
+    },
+    {
+      "candidate_id": 14215,
+      "control": {
+        "id": 27,
+        "candidate_id": 14215,
+        "op": "encode",
+        "schedule": "scheduled",
+        "cut": 112,
+        "changes": {
+          "3": 4,
+          "4": 3
+        },
+        "xors": 539,
+        "accesses": 813,
+        "input_reads": 464,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 137,
+        "slots": 53,
+        "scratch": 21
+      }
+    },
+    {
+      "candidate_id": 14278,
+      "control": {
+        "id": 28,
+        "candidate_id": 14278,
+        "op": "encode",
+        "schedule": "scheduled",
+        "cut": 113,
+        "changes": {
+          "3": 3,
+          "4": 3
+        },
+        "xors": 540,
+        "accesses": 812,
+        "input_reads": 466,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 136,
+        "slots": 52,
+        "scratch": 20
+      }
+    },
+    {
+      "candidate_id": 14341,
+      "control": {
+        "id": 28,
+        "candidate_id": 14278,
+        "op": "encode",
+        "schedule": "scheduled",
+        "cut": 113,
+        "changes": {
+          "3": 3,
+          "4": 3
+        },
+        "xors": 540,
+        "accesses": 812,
+        "input_reads": 466,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 136,
+        "slots": 52,
+        "scratch": 20
+      }
+    },
+    {
+      "candidate_id": 14404,
+      "control": {
+        "id": 27,
+        "candidate_id": 14215,
+        "op": "encode",
+        "schedule": "scheduled",
+        "cut": 112,
+        "changes": {
+          "3": 4,
+          "4": 3
+        },
+        "xors": 539,
+        "accesses": 813,
+        "input_reads": 464,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 137,
+        "slots": 53,
+        "scratch": 21
+      }
+    },
+    {
+      "candidate_id": 14719,
+      "control": {
+        "id": 31,
+        "candidate_id": 14719,
+        "op": "encode",
+        "schedule": "scheduled",
+        "cut": 120,
+        "changes": {
+          "3": 3,
+          "4": 3
+        },
+        "xors": 537,
+        "accesses": 821,
+        "input_reads": 463,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 142,
+        "slots": 50,
+        "scratch": 18
+      }
+    },
+    {
+      "candidate_id": 14908,
+      "control": {
+        "id": 32,
+        "candidate_id": 14908,
+        "op": "encode",
+        "schedule": "scheduled",
+        "cut": 123,
+        "changes": {
+          "3": 3,
+          "4": 3
+        },
+        "xors": 540,
+        "accesses": 824,
+        "input_reads": 469,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 142,
+        "slots": 49,
+        "scratch": 17
+      }
+    },
+    {
+      "candidate_id": 15355,
+      "control": {
+        "id": 33,
+        "candidate_id": 15355,
+        "op": "encode",
+        "schedule": "scheduled",
+        "cut": 130,
+        "changes": {
+          "4": 2
+        },
+        "xors": 495,
+        "accesses": 795,
+        "input_reads": 393,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 150,
+        "slots": 64,
+        "scratch": 32
+      }
+    },
+    {
+      "candidate_id": 15418,
+      "control": {
+        "id": 34,
+        "candidate_id": 15418,
+        "op": "encode",
+        "schedule": "scheduled",
+        "cut": 131,
+        "changes": {
+          "4": 2
+        },
+        "xors": 496,
+        "accesses": 796,
+        "input_reads": 394,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 150,
+        "slots": 63,
+        "scratch": 31
+      }
+    },
+    {
+      "candidate_id": 15592,
+      "control": {
+        "id": 35,
+        "candidate_id": 15592,
+        "op": "encode",
+        "schedule": "scheduled",
+        "cut": 134,
+        "changes": {
+          "4": 2
+        },
+        "xors": 494,
+        "accesses": 798,
+        "input_reads": 390,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 152,
+        "slots": 64,
+        "scratch": 32
+      }
+    },
+    {
+      "candidate_id": 26531,
+      "control": {
+        "id": 36,
+        "candidate_id": 26531,
+        "op": "decode",
+        "schedule": "fused",
+        "cut": 172,
+        "changes": {
+          "3": 6,
+          "4": 3
+        },
+        "xors": 836,
+        "accesses": 1166,
+        "input_reads": 758,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 165,
+        "slots": 50,
+        "scratch": 18
+      }
+    },
+    {
+      "candidate_id": 26594,
+      "control": {
+        "id": 36,
+        "candidate_id": 26531,
+        "op": "decode",
+        "schedule": "fused",
+        "cut": 172,
+        "changes": {
+          "3": 6,
+          "4": 3
+        },
+        "xors": 836,
+        "accesses": 1166,
+        "input_reads": 758,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 165,
+        "slots": 50,
+        "scratch": 18
+      }
+    },
+    {
+      "candidate_id": 26657,
+      "control": {
+        "id": 38,
+        "candidate_id": 26657,
+        "op": "decode",
+        "schedule": "fused",
+        "cut": 174,
+        "changes": {
+          "3": 7,
+          "4": 3
+        },
+        "xors": 835,
+        "accesses": 1167,
+        "input_reads": 757,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 166,
+        "slots": 49,
+        "scratch": 17
+      }
+    },
+    {
+      "candidate_id": 26783,
+      "control": {
+        "id": 38,
+        "candidate_id": 26657,
+        "op": "decode",
+        "schedule": "fused",
+        "cut": 174,
+        "changes": {
+          "3": 7,
+          "4": 3
+        },
+        "xors": 835,
+        "accesses": 1167,
+        "input_reads": 757,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 166,
+        "slots": 49,
+        "scratch": 17
+      }
+    },
+    {
+      "candidate_id": 26843,
+      "control": {
+        "id": 38,
+        "candidate_id": 26657,
+        "op": "decode",
+        "schedule": "fused",
+        "cut": 174,
+        "changes": {
+          "3": 7,
+          "4": 3
+        },
+        "xors": 835,
+        "accesses": 1167,
+        "input_reads": 757,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 166,
+        "slots": 49,
+        "scratch": 17
+      }
+    },
+    {
+      "candidate_id": 29118,
+      "control": {
+        "id": 41,
+        "candidate_id": 29118,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 17,
+        "changes": {
+          "3": 1
+        },
+        "xors": 531,
+        "accesses": 937,
+        "input_reads": 310,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 203,
+        "slots": 133,
+        "scratch": 101
+      }
+    },
+    {
+      "candidate_id": 31881,
+      "control": {
+        "id": 44,
+        "candidate_id": 31881,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 68,
+        "changes": {
+          "3": 1
+        },
+        "xors": 531,
+        "accesses": 945,
+        "input_reads": 302,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 207,
+        "slots": 134,
+        "scratch": 102
+      }
+    },
+    {
+      "candidate_id": 31899,
+      "control": {
+        "id": 45,
+        "candidate_id": 31899,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 68,
+        "changes": {
+          "3": 1
+        },
+        "xors": 532,
+        "accesses": 940,
+        "input_reads": 304,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 204,
+        "slots": 133,
+        "scratch": 101
+      }
+    },
+    {
+      "candidate_id": 32673,
+      "control": {
+        "id": 50,
+        "candidate_id": 32673,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 80,
+        "changes": {
+          "3": 3,
+          "4": 1
+        },
+        "xors": 618,
+        "accesses": 958,
+        "input_reads": 449,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 170,
+        "slots": 96,
+        "scratch": 64
+      }
+    },
+    {
+      "candidate_id": 32736,
+      "control": {
+        "id": 51,
+        "candidate_id": 32736,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 81,
+        "changes": {
+          "3": 3,
+          "4": 1
+        },
+        "xors": 621,
+        "accesses": 961,
+        "input_reads": 453,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 170,
+        "slots": 95,
+        "scratch": 63
+      }
+    },
+    {
+      "candidate_id": 32799,
+      "control": {
+        "id": 52,
+        "candidate_id": 32799,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 82,
+        "changes": {
+          "3": 4,
+          "4": 1
+        },
+        "xors": 624,
+        "accesses": 964,
+        "input_reads": 456,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 170,
+        "slots": 94,
+        "scratch": 62
+      }
+    },
+    {
+      "candidate_id": 32862,
+      "control": {
+        "id": 52,
+        "candidate_id": 32799,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 82,
+        "changes": {
+          "3": 4,
+          "4": 1
+        },
+        "xors": 624,
+        "accesses": 964,
+        "input_reads": 456,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 170,
+        "slots": 94,
+        "scratch": 62
+      }
+    },
+    {
+      "candidate_id": 32988,
+      "control": {
+        "id": 54,
+        "candidate_id": 32988,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 85,
+        "changes": {
+          "3": 4,
+          "4": 1
+        },
+        "xors": 627,
+        "accesses": 965,
+        "input_reads": 462,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 169,
+        "slots": 93,
+        "scratch": 61
+      }
+    },
+    {
+      "candidate_id": 33051,
+      "control": {
+        "id": 55,
+        "candidate_id": 33051,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 86,
+        "changes": {
+          "3": 4,
+          "4": 1
+        },
+        "xors": 629,
+        "accesses": 965,
+        "input_reads": 466,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 168,
+        "slots": 92,
+        "scratch": 60
+      }
+    },
+    {
+      "candidate_id": 33114,
+      "control": {
+        "id": 56,
+        "candidate_id": 33114,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 87,
+        "changes": {
+          "3": 4,
+          "4": 1
+        },
+        "xors": 632,
+        "accesses": 966,
+        "input_reads": 472,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 167,
+        "slots": 91,
+        "scratch": 59
+      }
+    },
+    {
+      "candidate_id": 33129,
+      "control": {
+        "id": 57,
+        "candidate_id": 33129,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 87,
+        "changes": {
+          "3": 2
+        },
+        "xors": 658,
+        "accesses": 974,
+        "input_reads": 518,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 158,
+        "slots": 87,
+        "scratch": 55
+      }
+    },
+    {
+      "candidate_id": 33192,
+      "control": {
+        "id": 58,
+        "candidate_id": 33192,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 88,
+        "changes": {
+          "3": 2
+        },
+        "xors": 656,
+        "accesses": 976,
+        "input_reads": 514,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 160,
+        "slots": 87,
+        "scratch": 55
+      }
+    },
+    {
+      "candidate_id": 33240,
+      "control": {
+        "id": 59,
+        "candidate_id": 33240,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 89,
+        "changes": {
+          "3": 5,
+          "4": 1
+        },
+        "xors": 633,
+        "accesses": 969,
+        "input_reads": 474,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 168,
+        "slots": 90,
+        "scratch": 58
+      }
+    },
+    {
+      "candidate_id": 33303,
+      "control": {
+        "id": 60,
+        "candidate_id": 33303,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 90,
+        "changes": {
+          "3": 5,
+          "4": 1
+        },
+        "xors": 634,
+        "accesses": 968,
+        "input_reads": 476,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 167,
+        "slots": 89,
+        "scratch": 57
+      }
+    },
+    {
+      "candidate_id": 33369,
+      "control": {
+        "id": 61,
+        "candidate_id": 33369,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 91,
+        "changes": {
+          "3": 2
+        },
+        "xors": 572,
+        "accesses": 948,
+        "input_reads": 378,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 188,
+        "slots": 109,
+        "scratch": 77
+      }
+    },
+    {
+      "candidate_id": 33429,
+      "control": {
+        "id": 62,
+        "candidate_id": 33429,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 92,
+        "changes": {
+          "3": 6,
+          "4": 1
+        },
+        "xors": 639,
+        "accesses": 967,
+        "input_reads": 482,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 164,
+        "slots": 88,
+        "scratch": 56
+      }
+    },
+    {
+      "candidate_id": 33555,
+      "control": {
+        "id": 63,
+        "candidate_id": 33555,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 94,
+        "changes": {
+          "3": 5,
+          "4": 3
+        },
+        "xors": 645,
+        "accesses": 977,
+        "input_reads": 486,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 166,
+        "slots": 87,
+        "scratch": 55
+      }
+    },
+    {
+      "candidate_id": 33618,
+      "control": {
+        "id": 64,
+        "candidate_id": 33618,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 95,
+        "changes": {
+          "3": 5,
+          "4": 3
+        },
+        "xors": 648,
+        "accesses": 978,
+        "input_reads": 492,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 165,
+        "slots": 86,
+        "scratch": 54
+      }
+    },
+    {
+      "candidate_id": 33681,
+      "control": {
+        "id": 65,
+        "candidate_id": 33681,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 96,
+        "changes": {
+          "3": 5,
+          "4": 3
+        },
+        "xors": 650,
+        "accesses": 978,
+        "input_reads": 495,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 164,
+        "slots": 85,
+        "scratch": 53
+      }
+    },
+    {
+      "candidate_id": 33744,
+      "control": {
+        "id": 66,
+        "candidate_id": 33744,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 97,
+        "changes": {
+          "3": 5,
+          "4": 3
+        },
+        "xors": 653,
+        "accesses": 981,
+        "input_reads": 499,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 164,
+        "slots": 84,
+        "scratch": 52
+      }
+    },
+    {
+      "candidate_id": 33933,
+      "control": {
+        "id": 67,
+        "candidate_id": 33933,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 100,
+        "changes": {
+          "3": 6,
+          "4": 3
+        },
+        "xors": 655,
+        "accesses": 983,
+        "input_reads": 500,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 164,
+        "slots": 83,
+        "scratch": 51
+      }
+    },
+    {
+      "candidate_id": 33996,
+      "control": {
+        "id": 68,
+        "candidate_id": 33996,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 101,
+        "changes": {
+          "3": 6,
+          "4": 3
+        },
+        "xors": 657,
+        "accesses": 983,
+        "input_reads": 505,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 163,
+        "slots": 82,
+        "scratch": 50
+      }
+    },
+    {
+      "candidate_id": 34059,
+      "control": {
+        "id": 69,
+        "candidate_id": 34059,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 102,
+        "changes": {
+          "3": 6,
+          "4": 2
+        },
+        "xors": 656,
+        "accesses": 982,
+        "input_reads": 507,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 163,
+        "slots": 81,
+        "scratch": 49
+      }
+    },
+    {
+      "candidate_id": 34185,
+      "control": {
+        "id": 70,
+        "candidate_id": 34185,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 104,
+        "changes": {
+          "3": 6,
+          "4": 2
+        },
+        "xors": 655,
+        "accesses": 983,
+        "input_reads": 507,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 164,
+        "slots": 80,
+        "scratch": 48
+      }
+    },
+    {
+      "candidate_id": 34311,
+      "control": {
+        "id": 71,
+        "candidate_id": 34311,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 106,
+        "changes": {
+          "3": 6,
+          "4": 2
+        },
+        "xors": 661,
+        "accesses": 991,
+        "input_reads": 516,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 165,
+        "slots": 79,
+        "scratch": 47
+      }
+    },
+    {
+      "candidate_id": 34374,
+      "control": {
+        "id": 72,
+        "candidate_id": 34374,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 107,
+        "changes": {
+          "3": 6,
+          "4": 3
+        },
+        "xors": 664,
+        "accesses": 992,
+        "input_reads": 519,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 164,
+        "slots": 78,
+        "scratch": 46
+      }
+    },
+    {
+      "candidate_id": 34437,
+      "control": {
+        "id": 71,
+        "candidate_id": 34311,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 106,
+        "changes": {
+          "3": 6,
+          "4": 2
+        },
+        "xors": 661,
+        "accesses": 991,
+        "input_reads": 516,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 165,
+        "slots": 79,
+        "scratch": 47
+      }
+    },
+    {
+      "candidate_id": 34500,
+      "control": {
+        "id": 72,
+        "candidate_id": 34374,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 107,
+        "changes": {
+          "3": 6,
+          "4": 3
+        },
+        "xors": 664,
+        "accesses": 992,
+        "input_reads": 519,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 164,
+        "slots": 78,
+        "scratch": 46
+      }
+    },
+    {
+      "candidate_id": 34503,
+      "control": {
+        "id": 82,
+        "candidate_id": 34794,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 114,
+        "changes": {
+          "4": 1,
+          "3": 2
+        },
+        "xors": 591,
+        "accesses": 965,
+        "input_reads": 399,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 187,
+        "slots": 98,
+        "scratch": 66
+      }
+    },
+    {
+      "candidate_id": 34557,
+      "control": {
+        "id": 76,
+        "candidate_id": 34557,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 110,
+        "changes": {
+          "3": 7,
+          "4": 3
+        },
+        "xors": 668,
+        "accesses": 994,
+        "input_reads": 520,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 163,
+        "slots": 77,
+        "scratch": 45
+      }
+    },
+    {
+      "candidate_id": 34608,
+      "control": {
+        "id": 77,
+        "candidate_id": 34608,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 111,
+        "changes": {
+          "3": 8,
+          "4": 3
+        },
+        "xors": 676,
+        "accesses": 1004,
+        "input_reads": 530,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 164,
+        "slots": 76,
+        "scratch": 44
+      }
+    },
+    {
+      "candidate_id": 34728,
+      "control": {
+        "id": 78,
+        "candidate_id": 34728,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 113,
+        "changes": {
+          "3": 6,
+          "4": 3
+        },
+        "xors": 677,
+        "accesses": 1005,
+        "input_reads": 538,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 164,
+        "slots": 74,
+        "scratch": 42
+      }
+    },
+    {
+      "candidate_id": 34731,
+      "control": {
+        "id": 79,
+        "candidate_id": 34731,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 113,
+        "changes": {
+          "4": 1,
+          "3": 2
+        },
+        "xors": 590,
+        "accesses": 962,
+        "input_reads": 403,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 186,
+        "slots": 98,
+        "scratch": 66
+      }
+    },
+    {
+      "candidate_id": 34785,
+      "control": {
+        "id": 80,
+        "candidate_id": 34785,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 114,
+        "changes": {
+          "3": 2
+        },
+        "xors": 556,
+        "accesses": 956,
+        "input_reads": 335,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 200,
+        "slots": 117,
+        "scratch": 85
+      }
+    },
+    {
+      "candidate_id": 34791,
+      "control": {
+        "id": 78,
+        "candidate_id": 34728,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 113,
+        "changes": {
+          "3": 6,
+          "4": 3
+        },
+        "xors": 677,
+        "accesses": 1005,
+        "input_reads": 538,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 164,
+        "slots": 74,
+        "scratch": 42
+      }
+    },
+    {
+      "candidate_id": 34794,
+      "control": {
+        "id": 82,
+        "candidate_id": 34794,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 114,
+        "changes": {
+          "4": 1,
+          "3": 2
+        },
+        "xors": 591,
+        "accesses": 965,
+        "input_reads": 399,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 187,
+        "slots": 98,
+        "scratch": 66
+      }
+    },
+    {
+      "candidate_id": 34854,
+      "control": {
+        "id": 83,
+        "candidate_id": 34854,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 115,
+        "changes": {
+          "3": 6,
+          "4": 3
+        },
+        "xors": 684,
+        "accesses": 1012,
+        "input_reads": 543,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 164,
+        "slots": 73,
+        "scratch": 41
+      }
+    },
+    {
+      "candidate_id": 35511,
+      "control": {
+        "id": 120,
+        "candidate_id": 36549,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 142,
+        "changes": {
+          "3": 3
+        },
+        "xors": 563,
+        "accesses": 965,
+        "input_reads": 337,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 201,
+        "slots": 111,
+        "scratch": 79
+      }
+    },
+    {
+      "candidate_id": 35556,
+      "control": {
+        "id": 94,
+        "candidate_id": 35556,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 126,
+        "changes": {
+          "3": 2
+        },
+        "xors": 554,
+        "accesses": 970,
+        "input_reads": 330,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 208,
+        "slots": 117,
+        "scratch": 85
+      }
+    },
+    {
+      "candidate_id": 36078,
+      "control": {
+        "id": 102,
+        "candidate_id": 36204,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 137,
+        "changes": {
+          "3": 7,
+          "4": 2
+        },
+        "xors": 585,
+        "accesses": 987,
+        "input_reads": 348,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 201,
+        "slots": 107,
+        "scratch": 75
+      }
+    },
+    {
+      "candidate_id": 36117,
+      "control": {
+        "id": 97,
+        "candidate_id": 36117,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 135,
+        "changes": {
+          "3": 5,
+          "4": 1
+        },
+        "xors": 600,
+        "accesses": 986,
+        "input_reads": 413,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 193,
+        "slots": 91,
+        "scratch": 59
+      }
+    },
+    {
+      "candidate_id": 36141,
+      "control": {
+        "id": 106,
+        "candidate_id": 36300,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 138,
+        "changes": {
+          "4": 2,
+          "3": 6
+        },
+        "xors": 578,
+        "accesses": 990,
+        "input_reads": 363,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 206,
+        "slots": 105,
+        "scratch": 73
+      }
+    },
+    {
+      "candidate_id": 36171,
+      "control": {
+        "id": 99,
+        "candidate_id": 36171,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 136,
+        "changes": {
+          "3": 2
+        },
+        "xors": 561,
+        "accesses": 963,
+        "input_reads": 336,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 201,
+        "slots": 114,
+        "scratch": 82
+      }
+    },
+    {
+      "candidate_id": 36180,
+      "control": {
+        "id": 101,
+        "candidate_id": 36180,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 136,
+        "changes": {
+          "3": 6,
+          "4": 1
+        },
+        "xors": 604,
+        "accesses": 990,
+        "input_reads": 417,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 193,
+        "slots": 90,
+        "scratch": 58
+      }
+    },
+    {
+      "candidate_id": 36204,
+      "control": {
+        "id": 106,
+        "candidate_id": 36300,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 138,
+        "changes": {
+          "4": 2,
+          "3": 6
+        },
+        "xors": 578,
+        "accesses": 990,
+        "input_reads": 363,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 206,
+        "slots": 105,
+        "scratch": 73
+      }
+    },
+    {
+      "candidate_id": 36219,
+      "control": {
+        "id": 118,
+        "candidate_id": 36534,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 142,
+        "changes": {
+          "3": 4
+        },
+        "xors": 556,
+        "accesses": 976,
+        "input_reads": 324,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 210,
+        "slots": 113,
+        "scratch": 81
+      }
+    },
+    {
+      "candidate_id": 36246,
+      "control": {
+        "id": 114,
+        "candidate_id": 36435,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 140,
+        "changes": {
+          "3": 4,
+          "4": 1
+        },
+        "xors": 577,
+        "accesses": 983,
+        "input_reads": 373,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 203,
+        "slots": 104,
+        "scratch": 72
+      }
+    },
+    {
+      "candidate_id": 36309,
+      "control": {
+        "id": 117,
+        "candidate_id": 36498,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 141,
+        "changes": {
+          "3": 4,
+          "4": 1
+        },
+        "xors": 578,
+        "accesses": 984,
+        "input_reads": 373,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 203,
+        "slots": 103,
+        "scratch": 71
+      }
+    },
+    {
+      "candidate_id": 36330,
+      "control": {
+        "id": 112,
+        "candidate_id": 36393,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 140,
+        "changes": {
+          "3": 7,
+          "4": 2
+        },
+        "xors": 588,
+        "accesses": 992,
+        "input_reads": 356,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 202,
+        "slots": 103,
+        "scratch": 71
+      }
+    },
+    {
+      "candidate_id": 36342,
+      "control": {
+        "id": 113,
+        "candidate_id": 36420,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 140,
+        "changes": {
+          "3": 6,
+          "4": 1
+        },
+        "xors": 594,
+        "accesses": 980,
+        "input_reads": 369,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 193,
+        "slots": 99,
+        "scratch": 67
+      }
+    },
+    {
+      "candidate_id": 36393,
+      "control": {
+        "id": 113,
+        "candidate_id": 36420,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 140,
+        "changes": {
+          "3": 6,
+          "4": 1
+        },
+        "xors": 594,
+        "accesses": 980,
+        "input_reads": 369,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 193,
+        "slots": 99,
+        "scratch": 67
+      }
+    },
+    {
+      "candidate_id": 36420,
+      "control": {
+        "id": 113,
+        "candidate_id": 36420,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 140,
+        "changes": {
+          "3": 6,
+          "4": 1
+        },
+        "xors": 594,
+        "accesses": 980,
+        "input_reads": 369,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 193,
+        "slots": 99,
+        "scratch": 67
+      }
+    },
+    {
+      "candidate_id": 36435,
+      "control": {
+        "id": 123,
+        "candidate_id": 36624,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 143,
+        "changes": {
+          "3": 5,
+          "4": 1
+        },
+        "xors": 582,
+        "accesses": 990,
+        "input_reads": 379,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 204,
+        "slots": 102,
+        "scratch": 70
+      }
+    },
+    {
+      "candidate_id": 36456,
+      "control": {
+        "id": 113,
+        "candidate_id": 36420,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 140,
+        "changes": {
+          "3": 6,
+          "4": 1
+        },
+        "xors": 594,
+        "accesses": 980,
+        "input_reads": 369,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 193,
+        "slots": 99,
+        "scratch": 67
+      }
+    },
+    {
+      "candidate_id": 36483,
+      "control": {
+        "id": 116,
+        "candidate_id": 36483,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 141,
+        "changes": {
+          "3": 6,
+          "4": 1
+        },
+        "xors": 595,
+        "accesses": 981,
+        "input_reads": 370,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 193,
+        "slots": 98,
+        "scratch": 66
+      }
+    },
+    {
+      "candidate_id": 36534,
+      "control": {
+        "id": 118,
+        "candidate_id": 36534,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 142,
+        "changes": {
+          "3": 4
+        },
+        "xors": 556,
+        "accesses": 976,
+        "input_reads": 324,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 210,
+        "slots": 113,
+        "scratch": 81
+      }
+    },
+    {
+      "candidate_id": 36537,
+      "control": {
+        "id": 113,
+        "candidate_id": 36420,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 140,
+        "changes": {
+          "3": 6,
+          "4": 1
+        },
+        "xors": 594,
+        "accesses": 980,
+        "input_reads": 369,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 193,
+        "slots": 99,
+        "scratch": 67
+      }
+    },
+    {
+      "candidate_id": 36549,
+      "control": {
+        "id": 120,
+        "candidate_id": 36549,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 142,
+        "changes": {
+          "3": 3
+        },
+        "xors": 563,
+        "accesses": 965,
+        "input_reads": 337,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 201,
+        "slots": 111,
+        "scratch": 79
+      }
+    },
+    {
+      "candidate_id": 36600,
+      "control": {
+        "id": 116,
+        "candidate_id": 36483,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 141,
+        "changes": {
+          "3": 6,
+          "4": 1
+        },
+        "xors": 595,
+        "accesses": 981,
+        "input_reads": 370,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 193,
+        "slots": 98,
+        "scratch": 66
+      }
+    },
+    {
+      "candidate_id": 36609,
+      "control": {
+        "id": 122,
+        "candidate_id": 36609,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 143,
+        "changes": {
+          "3": 6,
+          "4": 1
+        },
+        "xors": 597,
+        "accesses": 983,
+        "input_reads": 374,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 193,
+        "slots": 97,
+        "scratch": 65
+      }
+    },
+    {
+      "candidate_id": 36645,
+      "control": {
+        "id": 116,
+        "candidate_id": 36483,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 141,
+        "changes": {
+          "3": 6,
+          "4": 1
+        },
+        "xors": 595,
+        "accesses": 981,
+        "input_reads": 370,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 193,
+        "slots": 98,
+        "scratch": 66
+      }
+    },
+    {
+      "candidate_id": 36684,
+      "control": {
+        "id": 147,
+        "candidate_id": 37566,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 158,
+        "changes": {
+          "3": 12,
+          "4": 2
+        },
+        "xors": 610,
+        "accesses": 1006,
+        "input_reads": 422,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 198,
+        "slots": 85,
+        "scratch": 53
+      }
+    },
+    {
+      "candidate_id": 36687,
+      "control": {
+        "id": 134,
+        "candidate_id": 37065,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 150,
+        "changes": {
+          "3": 7,
+          "4": 1
+        },
+        "xors": 590,
+        "accesses": 994,
+        "input_reads": 390,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 202,
+        "slots": 99,
+        "scratch": 67
+      }
+    },
+    {
+      "candidate_id": 36723,
+      "control": {
+        "id": 127,
+        "candidate_id": 36723,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 145,
+        "changes": {
+          "3": 4
+        },
+        "xors": 557,
+        "accesses": 977,
+        "input_reads": 322,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 210,
+        "slots": 116,
+        "scratch": 84
+      }
+    },
+    {
+      "candidate_id": 36783,
+      "control": {
+        "id": 116,
+        "candidate_id": 36483,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 141,
+        "changes": {
+          "3": 6,
+          "4": 1
+        },
+        "xors": 595,
+        "accesses": 981,
+        "input_reads": 370,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 193,
+        "slots": 98,
+        "scratch": 66
+      }
+    },
+    {
+      "candidate_id": 36798,
+      "control": {
+        "id": 129,
+        "candidate_id": 36798,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 146,
+        "changes": {
+          "3": 7,
+          "4": 1
+        },
+        "xors": 600,
+        "accesses": 986,
+        "input_reads": 377,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 193,
+        "slots": 96,
+        "scratch": 64
+      }
+    },
+    {
+      "candidate_id": 36810,
+      "control": {
+        "id": 147,
+        "candidate_id": 37566,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 158,
+        "changes": {
+          "3": 12,
+          "4": 2
+        },
+        "xors": 610,
+        "accesses": 1006,
+        "input_reads": 422,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 198,
+        "slots": 85,
+        "scratch": 53
+      }
+    },
+    {
+      "candidate_id": 36876,
+      "control": {
+        "id": 136,
+        "candidate_id": 37128,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 151,
+        "changes": {
+          "3": 7,
+          "4": 1
+        },
+        "xors": 591,
+        "accesses": 993,
+        "input_reads": 392,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 201,
+        "slots": 98,
+        "scratch": 66
+      }
+    },
+    {
+      "candidate_id": 36972,
+      "control": {
+        "id": 122,
+        "candidate_id": 36609,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 143,
+        "changes": {
+          "3": 6,
+          "4": 1
+        },
+        "xors": 597,
+        "accesses": 983,
+        "input_reads": 374,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 193,
+        "slots": 97,
+        "scratch": 65
+      }
+    },
+    {
+      "candidate_id": 37041,
+      "control": {
+        "id": 129,
+        "candidate_id": 36798,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 146,
+        "changes": {
+          "3": 7,
+          "4": 1
+        },
+        "xors": 600,
+        "accesses": 986,
+        "input_reads": 377,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 193,
+        "slots": 96,
+        "scratch": 64
+      }
+    },
+    {
+      "candidate_id": 37065,
+      "control": {
+        "id": 138,
+        "candidate_id": 37317,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 154,
+        "changes": {
+          "3": 8,
+          "4": 1
+        },
+        "xors": 594,
+        "accesses": 994,
+        "input_reads": 394,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 200,
+        "slots": 96,
+        "scratch": 64
+      }
+    },
+    {
+      "candidate_id": 37104,
+      "control": {
+        "id": 129,
+        "candidate_id": 36798,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 146,
+        "changes": {
+          "3": 7,
+          "4": 1
+        },
+        "xors": 600,
+        "accesses": 986,
+        "input_reads": 377,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 193,
+        "slots": 96,
+        "scratch": 64
+      }
+    },
+    {
+      "candidate_id": 37128,
+      "control": {
+        "id": 140,
+        "candidate_id": 37380,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 155,
+        "changes": {
+          "3": 8,
+          "4": 1
+        },
+        "xors": 595,
+        "accesses": 997,
+        "input_reads": 395,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 201,
+        "slots": 95,
+        "scratch": 63
+      }
+    },
+    {
+      "candidate_id": 37191,
+      "control": {
+        "id": 148,
+        "candidate_id": 37569,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 158,
+        "changes": {
+          "3": 8
+        },
+        "xors": 596,
+        "accesses": 998,
+        "input_reads": 402,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 201,
+        "slots": 92,
+        "scratch": 60
+      }
+    },
+    {
+      "candidate_id": 37317,
+      "control": {
+        "id": 148,
+        "candidate_id": 37569,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 158,
+        "changes": {
+          "3": 8
+        },
+        "xors": 596,
+        "accesses": 998,
+        "input_reads": 402,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 201,
+        "slots": 92,
+        "scratch": 60
+      }
+    },
+    {
+      "candidate_id": 37368,
+      "control": {
+        "id": 139,
+        "candidate_id": 37368,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 155,
+        "changes": {
+          "3": 3
+        },
+        "xors": 566,
+        "accesses": 966,
+        "input_reads": 337,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 200,
+        "slots": 110,
+        "scratch": 78
+      }
+    },
+    {
+      "candidate_id": 37380,
+      "control": {
+        "id": 148,
+        "candidate_id": 37569,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 158,
+        "changes": {
+          "3": 8
+        },
+        "xors": 596,
+        "accesses": 998,
+        "input_reads": 402,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 201,
+        "slots": 92,
+        "scratch": 60
+      }
+    },
+    {
+      "candidate_id": 37392,
+      "control": {
+        "id": 72,
+        "candidate_id": 34374,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 107,
+        "changes": {
+          "3": 6,
+          "4": 3
+        },
+        "xors": 664,
+        "accesses": 992,
+        "input_reads": 519,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 164,
+        "slots": 78,
+        "scratch": 46
+      }
+    },
+    {
+      "candidate_id": 37431,
+      "control": {
+        "id": 120,
+        "candidate_id": 36549,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 142,
+        "changes": {
+          "3": 3
+        },
+        "xors": 563,
+        "accesses": 965,
+        "input_reads": 337,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 201,
+        "slots": 111,
+        "scratch": 79
+      }
+    },
+    {
+      "candidate_id": 37437,
+      "control": {
+        "id": 143,
+        "candidate_id": 37437,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 156,
+        "changes": {
+          "3": 9,
+          "4": 4
+        },
+        "xors": 759,
+        "accesses": 1091,
+        "input_reads": 658,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 166,
+        "slots": 56,
+        "scratch": 24
+      }
+    },
+    {
+      "candidate_id": 37440,
+      "control": {
+        "id": 153,
+        "candidate_id": 37629,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 159,
+        "changes": {
+          "3": 10,
+          "4": 2
+        },
+        "xors": 613,
+        "accesses": 1009,
+        "input_reads": 429,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 198,
+        "slots": 84,
+        "scratch": 52
+      }
+    },
+    {
+      "candidate_id": 37509,
+      "control": {
+        "id": 145,
+        "candidate_id": 37509,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 157,
+        "changes": {
+          "3": 3
+        },
+        "xors": 554,
+        "accesses": 972,
+        "input_reads": 329,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 209,
+        "slots": 112,
+        "scratch": 80
+      }
+    },
+    {
+      "candidate_id": 37518,
+      "control": {
+        "id": 72,
+        "candidate_id": 34374,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 107,
+        "changes": {
+          "3": 6,
+          "4": 3
+        },
+        "xors": 664,
+        "accesses": 992,
+        "input_reads": 519,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 164,
+        "slots": 78,
+        "scratch": 46
+      }
+    },
+    {
+      "candidate_id": 37566,
+      "control": {
+        "id": 156,
+        "candidate_id": 37755,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 161,
+        "changes": {
+          "3": 11,
+          "4": 1
+        },
+        "xors": 614,
+        "accesses": 1010,
+        "input_reads": 433,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 198,
+        "slots": 82,
+        "scratch": 50
+      }
+    },
+    {
+      "candidate_id": 37572,
+      "control": {
+        "id": 149,
+        "candidate_id": 37572,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 158,
+        "changes": {
+          "3": 3
+        },
+        "xors": 554,
+        "accesses": 972,
+        "input_reads": 331,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 209,
+        "slots": 111,
+        "scratch": 79
+      }
+    },
+    {
+      "candidate_id": 37575,
+      "control": {
+        "id": 107,
+        "candidate_id": 36306,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 138,
+        "changes": {
+          "3": 6,
+          "4": 1
+        },
+        "xors": 606,
+        "accesses": 992,
+        "input_reads": 421,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 193,
+        "slots": 89,
+        "scratch": 57
+      }
+    },
+    {
+      "candidate_id": 37620,
+      "control": {
+        "id": 151,
+        "candidate_id": 37620,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 159,
+        "changes": {
+          "3": 3,
+          "4": 2
+        },
+        "xors": 572,
+        "accesses": 972,
+        "input_reads": 336,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 200,
+        "slots": 109,
+        "scratch": 77
+      }
+    },
+    {
+      "candidate_id": 37626,
+      "control": {
+        "id": 143,
+        "candidate_id": 37437,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 156,
+        "changes": {
+          "3": 9,
+          "4": 4
+        },
+        "xors": 759,
+        "accesses": 1091,
+        "input_reads": 658,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 166,
+        "slots": 56,
+        "scratch": 24
+      }
+    },
+    {
+      "candidate_id": 37629,
+      "control": {
+        "id": 156,
+        "candidate_id": 37755,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 161,
+        "changes": {
+          "3": 11,
+          "4": 1
+        },
+        "xors": 614,
+        "accesses": 1010,
+        "input_reads": 433,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 198,
+        "slots": 82,
+        "scratch": 50
+      }
+    },
+    {
+      "candidate_id": 37689,
+      "control": {
+        "id": 159,
+        "candidate_id": 37941,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 164,
+        "changes": {
+          "3": 9,
+          "4": 1
+        },
+        "xors": 744,
+        "accesses": 1104,
+        "input_reads": 634,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 180,
+        "slots": 54,
+        "scratch": 22
+      }
+    },
+    {
+      "candidate_id": 37692,
+      "control": {
+        "id": 160,
+        "candidate_id": 37944,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 164,
+        "changes": {
+          "3": 10,
+          "4": 1
+        },
+        "xors": 612,
+        "accesses": 1010,
+        "input_reads": 430,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 199,
+        "slots": 80,
+        "scratch": 48
+      }
+    },
+    {
+      "candidate_id": 37755,
+      "control": {
+        "id": 160,
+        "candidate_id": 37944,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 164,
+        "changes": {
+          "3": 10,
+          "4": 1
+        },
+        "xors": 612,
+        "accesses": 1010,
+        "input_reads": 430,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 199,
+        "slots": 80,
+        "scratch": 48
+      }
+    },
+    {
+      "candidate_id": 37758,
+      "control": {
+        "id": 107,
+        "candidate_id": 36306,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 138,
+        "changes": {
+          "3": 6,
+          "4": 1
+        },
+        "xors": 606,
+        "accesses": 992,
+        "input_reads": 421,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 193,
+        "slots": 89,
+        "scratch": 57
+      }
+    },
+    {
+      "candidate_id": 37941,
+      "control": {
+        "id": 159,
+        "candidate_id": 37941,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 164,
+        "changes": {
+          "3": 9,
+          "4": 1
+        },
+        "xors": 744,
+        "accesses": 1104,
+        "input_reads": 634,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 180,
+        "slots": 54,
+        "scratch": 22
+      }
+    },
+    {
+      "candidate_id": 37944,
+      "control": {
+        "id": 160,
+        "candidate_id": 37944,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 164,
+        "changes": {
+          "3": 10,
+          "4": 1
+        },
+        "xors": 612,
+        "accesses": 1010,
+        "input_reads": 430,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 199,
+        "slots": 80,
+        "scratch": 48
+      }
+    },
+    {
+      "candidate_id": 37947,
+      "control": {
+        "id": 147,
+        "candidate_id": 37566,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 158,
+        "changes": {
+          "3": 12,
+          "4": 2
+        },
+        "xors": 610,
+        "accesses": 1006,
+        "input_reads": 422,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 198,
+        "slots": 85,
+        "scratch": 53
+      }
+    },
+    {
+      "candidate_id": 38067,
+      "control": {
+        "id": 154,
+        "candidate_id": 37689,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 160,
+        "changes": {
+          "3": 8,
+          "4": 4
+        },
+        "xors": 744,
+        "accesses": 1100,
+        "input_reads": 630,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 178,
+        "slots": 56,
+        "scratch": 24
+      }
+    },
+    {
+      "candidate_id": 38205,
+      "control": {
+        "id": 147,
+        "candidate_id": 37566,
+        "op": "decode",
+        "schedule": "scheduled",
+        "cut": 158,
+        "changes": {
+          "3": 12,
+          "4": 2
+        },
+        "xors": 610,
+        "accesses": 1006,
+        "input_reads": 422,
+        "copies": 0,
+        "zero_writes": 0,
+        "statements": 198,
+        "slots": 85,
+        "scratch": 53
+      }
+    }
+  ],
+  "rows": [
+    {
+      "id": 0,
+      "candidate_id": 6183,
+      "op": "encode",
+      "schedule": "fused",
+      "cut": 114,
+      "changes": {
+        "3": 3,
+        "4": 4
+      },
+      "xors": 639,
+      "accesses": 857,
+      "input_reads": 567,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 109,
+      "slots": 44,
+      "scratch": 12
+    },
+    {
+      "id": 1,
+      "candidate_id": 6198,
+      "op": "encode",
+      "schedule": "fused",
+      "cut": 114,
+      "changes": {
+        "3": 8,
+        "4": 5
+      },
+      "xors": 571,
+      "accesses": 845,
+      "input_reads": 511,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 137,
+      "slots": 46,
+      "scratch": 14
+    },
+    {
+      "id": 2,
+      "candidate_id": 6435,
+      "op": "encode",
+      "schedule": "fused",
+      "cut": 118,
+      "changes": {
+        "3": 4,
+        "4": 4
+      },
+      "xors": 645,
+      "accesses": 859,
+      "input_reads": 581,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 107,
+      "slots": 42,
+      "scratch": 10
+    },
+    {
+      "id": 3,
+      "candidate_id": 6450,
+      "op": "encode",
+      "schedule": "fused",
+      "cut": 118,
+      "changes": {
+        "3": 9,
+        "4": 5
+      },
+      "xors": 573,
+      "accesses": 841,
+      "input_reads": 511,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 134,
+      "slots": 44,
+      "scratch": 12
+    },
+    {
+      "id": 4,
+      "candidate_id": 6498,
+      "op": "encode",
+      "schedule": "fused",
+      "cut": 119,
+      "changes": {
+        "3": 4,
+        "4": 3
+      },
+      "xors": 650,
+      "accesses": 866,
+      "input_reads": 592,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 108,
+      "slots": 41,
+      "scratch": 9
+    },
+    {
+      "id": 5,
+      "candidate_id": 6513,
+      "op": "encode",
+      "schedule": "fused",
+      "cut": 119,
+      "changes": {
+        "3": 8,
+        "4": 6
+      },
+      "xors": 576,
+      "accesses": 844,
+      "input_reads": 518,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 134,
+      "slots": 43,
+      "scratch": 11
+    },
+    {
+      "id": 6,
+      "candidate_id": 6564,
+      "op": "encode",
+      "schedule": "fused",
+      "cut": 120,
+      "changes": {
+        "3": 1,
+        "4": 3
+      },
+      "xors": 529,
+      "accesses": 785,
+      "input_reads": 404,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 128,
+      "slots": 63,
+      "scratch": 31
+    },
+    {
+      "id": 7,
+      "candidate_id": 6627,
+      "op": "encode",
+      "schedule": "fused",
+      "cut": 121,
+      "changes": {
+        "3": 1,
+        "4": 3
+      },
+      "xors": 531,
+      "accesses": 787,
+      "input_reads": 406,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 128,
+      "slots": 62,
+      "scratch": 30
+    },
+    {
+      "id": 8,
+      "candidate_id": 6879,
+      "op": "encode",
+      "schedule": "fused",
+      "cut": 125,
+      "changes": {
+        "3": 2,
+        "4": 3
+      },
+      "xors": 538,
+      "accesses": 796,
+      "input_reads": 410,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 129,
+      "slots": 60,
+      "scratch": 28
+    },
+    {
+      "id": 9,
+      "candidate_id": 6942,
+      "op": "encode",
+      "schedule": "fused",
+      "cut": 126,
+      "changes": {
+        "3": 1,
+        "4": 4
+      },
+      "xors": 542,
+      "accesses": 798,
+      "input_reads": 415,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 128,
+      "slots": 59,
+      "scratch": 27
+    },
+    {
+      "id": 10,
+      "candidate_id": 7065,
+      "op": "encode",
+      "schedule": "fused",
+      "cut": 128,
+      "changes": {
+        "3": 4,
+        "4": 4
+      },
+      "xors": 653,
+      "accesses": 863,
+      "input_reads": 578,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 105,
+      "slots": 40,
+      "scratch": 8
+    },
+    {
+      "id": 11,
+      "candidate_id": 11023,
+      "op": "encode",
+      "schedule": "scheduled",
+      "cut": 60,
+      "changes": {
+        "3": 1
+      },
+      "xors": 423,
+      "accesses": 739,
+      "input_reads": 276,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 158,
+      "slots": 100,
+      "scratch": 68
+    },
+    {
+      "id": 12,
+      "candidate_id": 11221,
+      "op": "encode",
+      "schedule": "scheduled",
+      "cut": 64,
+      "changes": {
+        "3": 2
+      },
+      "xors": 466,
+      "accesses": 744,
+      "input_reads": 350,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 139,
+      "slots": 79,
+      "scratch": 47
+    },
+    {
+      "id": 13,
+      "candidate_id": 11278,
+      "op": "encode",
+      "schedule": "scheduled",
+      "cut": 65,
+      "changes": {
+        "3": 1,
+        "4": 1
+      },
+      "xors": 515,
+      "accesses": 747,
+      "input_reads": 432,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 116,
+      "slots": 69,
+      "scratch": 37
+    },
+    {
+      "id": 14,
+      "candidate_id": 11281,
+      "op": "encode",
+      "schedule": "scheduled",
+      "cut": 65,
+      "changes": {
+        "3": 2,
+        "4": 1
+      },
+      "xors": 469,
+      "accesses": 745,
+      "input_reads": 351,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 138,
+      "slots": 78,
+      "scratch": 46
+    },
+    {
+      "id": 15,
+      "candidate_id": 11395,
+      "op": "encode",
+      "schedule": "scheduled",
+      "cut": 67,
+      "changes": {
+        "3": 1
+      },
+      "xors": 476,
+      "accesses": 752,
+      "input_reads": 360,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 138,
+      "slots": 76,
+      "scratch": 44
+    },
+    {
+      "id": 16,
+      "candidate_id": 11566,
+      "op": "encode",
+      "schedule": "scheduled",
+      "cut": 70,
+      "changes": {
+        "3": 1,
+        "4": 1
+      },
+      "xors": 525,
+      "accesses": 759,
+      "input_reads": 442,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 117,
+      "slots": 65,
+      "scratch": 33
+    },
+    {
+      "id": 17,
+      "candidate_id": 11569,
+      "op": "encode",
+      "schedule": "scheduled",
+      "cut": 70,
+      "changes": {
+        "4": 1,
+        "3": 1
+      },
+      "xors": 484,
+      "accesses": 762,
+      "input_reads": 368,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 139,
+      "slots": 76,
+      "scratch": 44
+    },
+    {
+      "id": 18,
+      "candidate_id": 11626,
+      "op": "encode",
+      "schedule": "scheduled",
+      "cut": 71,
+      "changes": {
+        "4": 1,
+        "3": 1
+      },
+      "xors": 485,
+      "accesses": 761,
+      "input_reads": 370,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 138,
+      "slots": 75,
+      "scratch": 43
+    },
+    {
+      "id": 19,
+      "candidate_id": 11743,
+      "op": "encode",
+      "schedule": "scheduled",
+      "cut": 73,
+      "changes": {
+        "3": 2,
+        "4": 1
+      },
+      "xors": 530,
+      "accesses": 760,
+      "input_reads": 448,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 115,
+      "slots": 64,
+      "scratch": 32
+    },
+    {
+      "id": 20,
+      "candidate_id": 12262,
+      "op": "encode",
+      "schedule": "scheduled",
+      "cut": 81,
+      "changes": {
+        "3": 3,
+        "4": 2
+      },
+      "xors": 508,
+      "accesses": 766,
+      "input_reads": 426,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 129,
+      "slots": 65,
+      "scratch": 33
+    },
+    {
+      "id": 21,
+      "candidate_id": 12325,
+      "op": "encode",
+      "schedule": "scheduled",
+      "cut": 82,
+      "changes": {
+        "3": 2,
+        "4": 2
+      },
+      "xors": 508,
+      "accesses": 766,
+      "input_reads": 427,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 129,
+      "slots": 64,
+      "scratch": 32
+    },
+    {
+      "id": 22,
+      "candidate_id": 12451,
+      "op": "encode",
+      "schedule": "scheduled",
+      "cut": 84,
+      "changes": {
+        "3": 2,
+        "4": 2
+      },
+      "xors": 512,
+      "accesses": 766,
+      "input_reads": 433,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 127,
+      "slots": 63,
+      "scratch": 31
+    },
+    {
+      "id": 23,
+      "candidate_id": 13270,
+      "op": "encode",
+      "schedule": "scheduled",
+      "cut": 97,
+      "changes": {
+        "3": 3,
+        "4": 3
+      },
+      "xors": 525,
+      "accesses": 785,
+      "input_reads": 448,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 130,
+      "slots": 57,
+      "scratch": 25
+    },
+    {
+      "id": 24,
+      "candidate_id": 13333,
+      "op": "encode",
+      "schedule": "scheduled",
+      "cut": 98,
+      "changes": {
+        "3": 3,
+        "4": 3
+      },
+      "xors": 524,
+      "accesses": 788,
+      "input_reads": 447,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 132,
+      "slots": 57,
+      "scratch": 25
+    },
+    {
+      "id": 25,
+      "candidate_id": 13522,
+      "op": "encode",
+      "schedule": "scheduled",
+      "cut": 101,
+      "changes": {
+        "3": 3,
+        "4": 3
+      },
+      "xors": 531,
+      "accesses": 793,
+      "input_reads": 458,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 131,
+      "slots": 55,
+      "scratch": 23
+    },
+    {
+      "id": 26,
+      "candidate_id": 13837,
+      "op": "encode",
+      "schedule": "scheduled",
+      "cut": 106,
+      "changes": {
+        "3": 3,
+        "4": 3
+      },
+      "xors": 527,
+      "accesses": 803,
+      "input_reads": 454,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 138,
+      "slots": 54,
+      "scratch": 22
+    },
+    {
+      "id": 27,
+      "candidate_id": 14215,
+      "op": "encode",
+      "schedule": "scheduled",
+      "cut": 112,
+      "changes": {
+        "3": 4,
+        "4": 3
+      },
+      "xors": 539,
+      "accesses": 813,
+      "input_reads": 464,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 137,
+      "slots": 53,
+      "scratch": 21
+    },
+    {
+      "id": 28,
+      "candidate_id": 14278,
+      "op": "encode",
+      "schedule": "scheduled",
+      "cut": 113,
+      "changes": {
+        "3": 3,
+        "4": 3
+      },
+      "xors": 540,
+      "accesses": 812,
+      "input_reads": 466,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 136,
+      "slots": 52,
+      "scratch": 20
+    },
+    {
+      "id": 29,
+      "candidate_id": 14341,
+      "op": "encode",
+      "schedule": "scheduled",
+      "cut": 114,
+      "changes": {
+        "3": 3,
+        "4": 3
+      },
+      "xors": 539,
+      "accesses": 815,
+      "input_reads": 464,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 138,
+      "slots": 52,
+      "scratch": 20
+    },
+    {
+      "id": 30,
+      "candidate_id": 14404,
+      "op": "encode",
+      "schedule": "scheduled",
+      "cut": 115,
+      "changes": {
+        "3": 3,
+        "4": 3
+      },
+      "xors": 538,
+      "accesses": 816,
+      "input_reads": 463,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 139,
+      "slots": 53,
+      "scratch": 21
+    },
+    {
+      "id": 31,
+      "candidate_id": 14719,
+      "op": "encode",
+      "schedule": "scheduled",
+      "cut": 120,
+      "changes": {
+        "3": 3,
+        "4": 3
+      },
+      "xors": 537,
+      "accesses": 821,
+      "input_reads": 463,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 142,
+      "slots": 50,
+      "scratch": 18
+    },
+    {
+      "id": 32,
+      "candidate_id": 14908,
+      "op": "encode",
+      "schedule": "scheduled",
+      "cut": 123,
+      "changes": {
+        "3": 3,
+        "4": 3
+      },
+      "xors": 540,
+      "accesses": 824,
+      "input_reads": 469,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 142,
+      "slots": 49,
+      "scratch": 17
+    },
+    {
+      "id": 33,
+      "candidate_id": 15355,
+      "op": "encode",
+      "schedule": "scheduled",
+      "cut": 130,
+      "changes": {
+        "4": 2
+      },
+      "xors": 495,
+      "accesses": 795,
+      "input_reads": 393,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 150,
+      "slots": 64,
+      "scratch": 32
+    },
+    {
+      "id": 34,
+      "candidate_id": 15418,
+      "op": "encode",
+      "schedule": "scheduled",
+      "cut": 131,
+      "changes": {
+        "4": 2
+      },
+      "xors": 496,
+      "accesses": 796,
+      "input_reads": 394,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 150,
+      "slots": 63,
+      "scratch": 31
+    },
+    {
+      "id": 35,
+      "candidate_id": 15592,
+      "op": "encode",
+      "schedule": "scheduled",
+      "cut": 134,
+      "changes": {
+        "4": 2
+      },
+      "xors": 494,
+      "accesses": 798,
+      "input_reads": 390,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 152,
+      "slots": 64,
+      "scratch": 32
+    },
+    {
+      "id": 36,
+      "candidate_id": 26531,
+      "op": "decode",
+      "schedule": "fused",
+      "cut": 172,
+      "changes": {
+        "3": 6,
+        "4": 3
+      },
+      "xors": 836,
+      "accesses": 1166,
+      "input_reads": 758,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 165,
+      "slots": 50,
+      "scratch": 18
+    },
+    {
+      "id": 37,
+      "candidate_id": 26594,
+      "op": "decode",
+      "schedule": "fused",
+      "cut": 173,
+      "changes": {
+        "3": 7,
+        "4": 3
+      },
+      "xors": 834,
+      "accesses": 1168,
+      "input_reads": 755,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 167,
+      "slots": 50,
+      "scratch": 18
+    },
+    {
+      "id": 38,
+      "candidate_id": 26657,
+      "op": "decode",
+      "schedule": "fused",
+      "cut": 174,
+      "changes": {
+        "3": 7,
+        "4": 3
+      },
+      "xors": 835,
+      "accesses": 1167,
+      "input_reads": 757,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 166,
+      "slots": 49,
+      "scratch": 17
+    },
+    {
+      "id": 39,
+      "candidate_id": 26783,
+      "op": "decode",
+      "schedule": "fused",
+      "cut": 176,
+      "changes": {
+        "3": 7,
+        "4": 3
+      },
+      "xors": 836,
+      "accesses": 1164,
+      "input_reads": 760,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 164,
+      "slots": 49,
+      "scratch": 17
+    },
+    {
+      "id": 40,
+      "candidate_id": 26843,
+      "op": "decode",
+      "schedule": "fused",
+      "cut": 177,
+      "changes": {
+        "3": 7,
+        "4": 3
+      },
+      "xors": 837,
+      "accesses": 1163,
+      "input_reads": 762,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 163,
+      "slots": 49,
+      "scratch": 17
+    },
+    {
+      "id": 41,
+      "candidate_id": 29118,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 17,
+      "changes": {
+        "3": 1
+      },
+      "xors": 531,
+      "accesses": 937,
+      "input_reads": 310,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 203,
+      "slots": 133,
+      "scratch": 101
+    },
+    {
+      "id": 42,
+      "candidate_id": 30177,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 39,
+      "changes": {
+        "3": 3,
+        "4": 1
+      },
+      "xors": 551,
+      "accesses": 941,
+      "input_reads": 335,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 195,
+      "slots": 123,
+      "scratch": 91
+    },
+    {
+      "id": 43,
+      "candidate_id": 30285,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 41,
+      "changes": {
+        "3": 3,
+        "4": 1
+      },
+      "xors": 552,
+      "accesses": 940,
+      "input_reads": 337,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 194,
+      "slots": 122,
+      "scratch": 90
+    },
+    {
+      "id": 44,
+      "candidate_id": 31881,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 68,
+      "changes": {
+        "3": 1
+      },
+      "xors": 531,
+      "accesses": 945,
+      "input_reads": 302,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 207,
+      "slots": 134,
+      "scratch": 102
+    },
+    {
+      "id": 45,
+      "candidate_id": 31899,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 68,
+      "changes": {
+        "3": 1
+      },
+      "xors": 532,
+      "accesses": 940,
+      "input_reads": 304,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 204,
+      "slots": 133,
+      "scratch": 101
+    },
+    {
+      "id": 46,
+      "candidate_id": 32295,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 74,
+      "changes": {
+        "3": 3,
+        "4": 1
+      },
+      "xors": 610,
+      "accesses": 956,
+      "input_reads": 434,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 173,
+      "slots": 100,
+      "scratch": 68
+    },
+    {
+      "id": 47,
+      "candidate_id": 32358,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 75,
+      "changes": {
+        "3": 3,
+        "4": 1
+      },
+      "xors": 611,
+      "accesses": 955,
+      "input_reads": 436,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 172,
+      "slots": 100,
+      "scratch": 68
+    },
+    {
+      "id": 48,
+      "candidate_id": 32421,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 76,
+      "changes": {
+        "3": 3,
+        "4": 1
+      },
+      "xors": 613,
+      "accesses": 955,
+      "input_reads": 440,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 171,
+      "slots": 99,
+      "scratch": 67
+    },
+    {
+      "id": 49,
+      "candidate_id": 32484,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 77,
+      "changes": {
+        "3": 3,
+        "4": 1
+      },
+      "xors": 616,
+      "accesses": 958,
+      "input_reads": 445,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 171,
+      "slots": 98,
+      "scratch": 66
+    },
+    {
+      "id": 50,
+      "candidate_id": 32673,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 80,
+      "changes": {
+        "3": 3,
+        "4": 1
+      },
+      "xors": 618,
+      "accesses": 958,
+      "input_reads": 449,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 170,
+      "slots": 96,
+      "scratch": 64
+    },
+    {
+      "id": 51,
+      "candidate_id": 32736,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 81,
+      "changes": {
+        "3": 3,
+        "4": 1
+      },
+      "xors": 621,
+      "accesses": 961,
+      "input_reads": 453,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 170,
+      "slots": 95,
+      "scratch": 63
+    },
+    {
+      "id": 52,
+      "candidate_id": 32799,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 82,
+      "changes": {
+        "3": 4,
+        "4": 1
+      },
+      "xors": 624,
+      "accesses": 964,
+      "input_reads": 456,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 170,
+      "slots": 94,
+      "scratch": 62
+    },
+    {
+      "id": 53,
+      "candidate_id": 32862,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 83,
+      "changes": {
+        "3": 4,
+        "4": 1
+      },
+      "xors": 623,
+      "accesses": 965,
+      "input_reads": 456,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 171,
+      "slots": 94,
+      "scratch": 62
+    },
+    {
+      "id": 54,
+      "candidate_id": 32988,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 85,
+      "changes": {
+        "3": 4,
+        "4": 1
+      },
+      "xors": 627,
+      "accesses": 965,
+      "input_reads": 462,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 169,
+      "slots": 93,
+      "scratch": 61
+    },
+    {
+      "id": 55,
+      "candidate_id": 33051,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 86,
+      "changes": {
+        "3": 4,
+        "4": 1
+      },
+      "xors": 629,
+      "accesses": 965,
+      "input_reads": 466,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 168,
+      "slots": 92,
+      "scratch": 60
+    },
+    {
+      "id": 56,
+      "candidate_id": 33114,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 87,
+      "changes": {
+        "3": 4,
+        "4": 1
+      },
+      "xors": 632,
+      "accesses": 966,
+      "input_reads": 472,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 167,
+      "slots": 91,
+      "scratch": 59
+    },
+    {
+      "id": 57,
+      "candidate_id": 33129,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 87,
+      "changes": {
+        "3": 2
+      },
+      "xors": 658,
+      "accesses": 974,
+      "input_reads": 518,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 158,
+      "slots": 87,
+      "scratch": 55
+    },
+    {
+      "id": 58,
+      "candidate_id": 33192,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 88,
+      "changes": {
+        "3": 2
+      },
+      "xors": 656,
+      "accesses": 976,
+      "input_reads": 514,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 160,
+      "slots": 87,
+      "scratch": 55
+    },
+    {
+      "id": 59,
+      "candidate_id": 33240,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 89,
+      "changes": {
+        "3": 5,
+        "4": 1
+      },
+      "xors": 633,
+      "accesses": 969,
+      "input_reads": 474,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 168,
+      "slots": 90,
+      "scratch": 58
+    },
+    {
+      "id": 60,
+      "candidate_id": 33303,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 90,
+      "changes": {
+        "3": 5,
+        "4": 1
+      },
+      "xors": 634,
+      "accesses": 968,
+      "input_reads": 476,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 167,
+      "slots": 89,
+      "scratch": 57
+    },
+    {
+      "id": 61,
+      "candidate_id": 33369,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 91,
+      "changes": {
+        "3": 2
+      },
+      "xors": 572,
+      "accesses": 948,
+      "input_reads": 378,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 188,
+      "slots": 109,
+      "scratch": 77
+    },
+    {
+      "id": 62,
+      "candidate_id": 33429,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 92,
+      "changes": {
+        "3": 6,
+        "4": 1
+      },
+      "xors": 639,
+      "accesses": 967,
+      "input_reads": 482,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 164,
+      "slots": 88,
+      "scratch": 56
+    },
+    {
+      "id": 63,
+      "candidate_id": 33555,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 94,
+      "changes": {
+        "3": 5,
+        "4": 3
+      },
+      "xors": 645,
+      "accesses": 977,
+      "input_reads": 486,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 166,
+      "slots": 87,
+      "scratch": 55
+    },
+    {
+      "id": 64,
+      "candidate_id": 33618,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 95,
+      "changes": {
+        "3": 5,
+        "4": 3
+      },
+      "xors": 648,
+      "accesses": 978,
+      "input_reads": 492,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 165,
+      "slots": 86,
+      "scratch": 54
+    },
+    {
+      "id": 65,
+      "candidate_id": 33681,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 96,
+      "changes": {
+        "3": 5,
+        "4": 3
+      },
+      "xors": 650,
+      "accesses": 978,
+      "input_reads": 495,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 164,
+      "slots": 85,
+      "scratch": 53
+    },
+    {
+      "id": 66,
+      "candidate_id": 33744,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 97,
+      "changes": {
+        "3": 5,
+        "4": 3
+      },
+      "xors": 653,
+      "accesses": 981,
+      "input_reads": 499,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 164,
+      "slots": 84,
+      "scratch": 52
+    },
+    {
+      "id": 67,
+      "candidate_id": 33933,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 100,
+      "changes": {
+        "3": 6,
+        "4": 3
+      },
+      "xors": 655,
+      "accesses": 983,
+      "input_reads": 500,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 164,
+      "slots": 83,
+      "scratch": 51
+    },
+    {
+      "id": 68,
+      "candidate_id": 33996,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 101,
+      "changes": {
+        "3": 6,
+        "4": 3
+      },
+      "xors": 657,
+      "accesses": 983,
+      "input_reads": 505,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 163,
+      "slots": 82,
+      "scratch": 50
+    },
+    {
+      "id": 69,
+      "candidate_id": 34059,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 102,
+      "changes": {
+        "3": 6,
+        "4": 2
+      },
+      "xors": 656,
+      "accesses": 982,
+      "input_reads": 507,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 163,
+      "slots": 81,
+      "scratch": 49
+    },
+    {
+      "id": 70,
+      "candidate_id": 34185,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 104,
+      "changes": {
+        "3": 6,
+        "4": 2
+      },
+      "xors": 655,
+      "accesses": 983,
+      "input_reads": 507,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 164,
+      "slots": 80,
+      "scratch": 48
+    },
+    {
+      "id": 71,
+      "candidate_id": 34311,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 106,
+      "changes": {
+        "3": 6,
+        "4": 2
+      },
+      "xors": 661,
+      "accesses": 991,
+      "input_reads": 516,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 165,
+      "slots": 79,
+      "scratch": 47
+    },
+    {
+      "id": 72,
+      "candidate_id": 34374,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 107,
+      "changes": {
+        "3": 6,
+        "4": 3
+      },
+      "xors": 664,
+      "accesses": 992,
+      "input_reads": 519,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 164,
+      "slots": 78,
+      "scratch": 46
+    },
+    {
+      "id": 73,
+      "candidate_id": 34437,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 108,
+      "changes": {
+        "3": 6,
+        "4": 3
+      },
+      "xors": 663,
+      "accesses": 989,
+      "input_reads": 513,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 163,
+      "slots": 79,
+      "scratch": 47
+    },
+    {
+      "id": 74,
+      "candidate_id": 34500,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 109,
+      "changes": {
+        "3": 7,
+        "4": 3
+      },
+      "xors": 667,
+      "accesses": 995,
+      "input_reads": 519,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 164,
+      "slots": 78,
+      "scratch": 46
+    },
+    {
+      "id": 75,
+      "candidate_id": 34503,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 109,
+      "changes": {
+        "3": 3,
+        "4": 1
+      },
+      "xors": 588,
+      "accesses": 964,
+      "input_reads": 394,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 188,
+      "slots": 101,
+      "scratch": 69
+    },
+    {
+      "id": 76,
+      "candidate_id": 34557,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 110,
+      "changes": {
+        "3": 7,
+        "4": 3
+      },
+      "xors": 668,
+      "accesses": 994,
+      "input_reads": 520,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 163,
+      "slots": 77,
+      "scratch": 45
+    },
+    {
+      "id": 77,
+      "candidate_id": 34608,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 111,
+      "changes": {
+        "3": 8,
+        "4": 3
+      },
+      "xors": 676,
+      "accesses": 1004,
+      "input_reads": 530,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 164,
+      "slots": 76,
+      "scratch": 44
+    },
+    {
+      "id": 78,
+      "candidate_id": 34728,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 113,
+      "changes": {
+        "3": 6,
+        "4": 3
+      },
+      "xors": 677,
+      "accesses": 1005,
+      "input_reads": 538,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 164,
+      "slots": 74,
+      "scratch": 42
+    },
+    {
+      "id": 79,
+      "candidate_id": 34731,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 113,
+      "changes": {
+        "4": 1,
+        "3": 2
+      },
+      "xors": 590,
+      "accesses": 962,
+      "input_reads": 403,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 186,
+      "slots": 98,
+      "scratch": 66
+    },
+    {
+      "id": 80,
+      "candidate_id": 34785,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 114,
+      "changes": {
+        "3": 2
+      },
+      "xors": 556,
+      "accesses": 956,
+      "input_reads": 335,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 200,
+      "slots": 117,
+      "scratch": 85
+    },
+    {
+      "id": 81,
+      "candidate_id": 34791,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 114,
+      "changes": {
+        "3": 6,
+        "4": 3
+      },
+      "xors": 677,
+      "accesses": 1007,
+      "input_reads": 532,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 165,
+      "slots": 74,
+      "scratch": 42
+    },
+    {
+      "id": 82,
+      "candidate_id": 34794,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 114,
+      "changes": {
+        "4": 1,
+        "3": 2
+      },
+      "xors": 591,
+      "accesses": 965,
+      "input_reads": 399,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 187,
+      "slots": 98,
+      "scratch": 66
+    },
+    {
+      "id": 83,
+      "candidate_id": 34854,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 115,
+      "changes": {
+        "3": 6,
+        "4": 3
+      },
+      "xors": 684,
+      "accesses": 1012,
+      "input_reads": 543,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 164,
+      "slots": 73,
+      "scratch": 41
+    },
+    {
+      "id": 84,
+      "candidate_id": 34917,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 116,
+      "changes": {
+        "3": 6,
+        "4": 4
+      },
+      "xors": 687,
+      "accesses": 1013,
+      "input_reads": 545,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 163,
+      "slots": 72,
+      "scratch": 40
+    },
+    {
+      "id": 85,
+      "candidate_id": 34980,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 117,
+      "changes": {
+        "3": 6,
+        "4": 4
+      },
+      "xors": 691,
+      "accesses": 1017,
+      "input_reads": 552,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 163,
+      "slots": 71,
+      "scratch": 39
+    },
+    {
+      "id": 86,
+      "candidate_id": 35043,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 118,
+      "changes": {
+        "3": 6,
+        "4": 4
+      },
+      "xors": 691,
+      "accesses": 1019,
+      "input_reads": 551,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 164,
+      "slots": 71,
+      "scratch": 39
+    },
+    {
+      "id": 87,
+      "candidate_id": 35169,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 120,
+      "changes": {
+        "3": 7,
+        "4": 4
+      },
+      "xors": 694,
+      "accesses": 1018,
+      "input_reads": 555,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 162,
+      "slots": 70,
+      "scratch": 38
+    },
+    {
+      "id": 88,
+      "candidate_id": 35232,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 121,
+      "changes": {
+        "3": 7,
+        "4": 4
+      },
+      "xors": 699,
+      "accesses": 1021,
+      "input_reads": 565,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 161,
+      "slots": 69,
+      "scratch": 37
+    },
+    {
+      "id": 89,
+      "candidate_id": 35358,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 123,
+      "changes": {
+        "3": 7,
+        "4": 4
+      },
+      "xors": 703,
+      "accesses": 1027,
+      "input_reads": 571,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 162,
+      "slots": 68,
+      "scratch": 36
+    },
+    {
+      "id": 90,
+      "candidate_id": 35421,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 124,
+      "changes": {
+        "3": 7,
+        "4": 4
+      },
+      "xors": 706,
+      "accesses": 1028,
+      "input_reads": 575,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 161,
+      "slots": 67,
+      "scratch": 35
+    },
+    {
+      "id": 91,
+      "candidate_id": 35484,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 125,
+      "changes": {
+        "3": 7,
+        "4": 4
+      },
+      "xors": 712,
+      "accesses": 1034,
+      "input_reads": 583,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 161,
+      "slots": 66,
+      "scratch": 34
+    },
+    {
+      "id": 92,
+      "candidate_id": 35511,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 126,
+      "changes": {
+        "4": 1,
+        "3": 3
+      },
+      "xors": 565,
+      "accesses": 971,
+      "input_reads": 331,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 203,
+      "slots": 114,
+      "scratch": 82
+    },
+    {
+      "id": 93,
+      "candidate_id": 35547,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 126,
+      "changes": {
+        "3": 7,
+        "4": 3
+      },
+      "xors": 710,
+      "accesses": 1034,
+      "input_reads": 588,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 162,
+      "slots": 65,
+      "scratch": 33
+    },
+    {
+      "id": 94,
+      "candidate_id": 35556,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 126,
+      "changes": {
+        "3": 2
+      },
+      "xors": 554,
+      "accesses": 970,
+      "input_reads": 330,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 208,
+      "slots": 117,
+      "scratch": 85
+    },
+    {
+      "id": 95,
+      "candidate_id": 35862,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 131,
+      "changes": {
+        "3": 9,
+        "4": 4
+      },
+      "xors": 721,
+      "accesses": 1045,
+      "input_reads": 598,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 162,
+      "slots": 65,
+      "scratch": 33
+    },
+    {
+      "id": 96,
+      "candidate_id": 36078,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 135,
+      "changes": {
+        "3": 7,
+        "4": 3
+      },
+      "xors": 580,
+      "accesses": 982,
+      "input_reads": 341,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 201,
+      "slots": 109,
+      "scratch": 77
+    },
+    {
+      "id": 97,
+      "candidate_id": 36117,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 135,
+      "changes": {
+        "3": 5,
+        "4": 1
+      },
+      "xors": 600,
+      "accesses": 986,
+      "input_reads": 413,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 193,
+      "slots": 91,
+      "scratch": 59
+    },
+    {
+      "id": 98,
+      "candidate_id": 36141,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 136,
+      "changes": {
+        "3": 7,
+        "4": 2
+      },
+      "xors": 583,
+      "accesses": 987,
+      "input_reads": 347,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 202,
+      "slots": 108,
+      "scratch": 76
+    },
+    {
+      "id": 99,
+      "candidate_id": 36171,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 136,
+      "changes": {
+        "3": 2
+      },
+      "xors": 561,
+      "accesses": 963,
+      "input_reads": 336,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 201,
+      "slots": 114,
+      "scratch": 82
+    },
+    {
+      "id": 100,
+      "candidate_id": 36177,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 136,
+      "changes": {
+        "3": 10,
+        "4": 2
+      },
+      "xors": 728,
+      "accesses": 1054,
+      "input_reads": 616,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 163,
+      "slots": 64,
+      "scratch": 32
+    },
+    {
+      "id": 101,
+      "candidate_id": 36180,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 136,
+      "changes": {
+        "3": 6,
+        "4": 1
+      },
+      "xors": 604,
+      "accesses": 990,
+      "input_reads": 417,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 193,
+      "slots": 90,
+      "scratch": 58
+    },
+    {
+      "id": 102,
+      "candidate_id": 36204,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 137,
+      "changes": {
+        "3": 7,
+        "4": 2
+      },
+      "xors": 585,
+      "accesses": 987,
+      "input_reads": 348,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 201,
+      "slots": 107,
+      "scratch": 75
+    },
+    {
+      "id": 103,
+      "candidate_id": 36219,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 137,
+      "changes": {
+        "3": 5
+      },
+      "xors": 556,
+      "accesses": 976,
+      "input_reads": 320,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 210,
+      "slots": 117,
+      "scratch": 85
+    },
+    {
+      "id": 104,
+      "candidate_id": 36243,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 137,
+      "changes": {
+        "3": 6,
+        "4": 1
+      },
+      "xors": 604,
+      "accesses": 990,
+      "input_reads": 417,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 193,
+      "slots": 90,
+      "scratch": 58
+    },
+    {
+      "id": 105,
+      "candidate_id": 36246,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 137,
+      "changes": {
+        "3": 4,
+        "4": 1
+      },
+      "xors": 574,
+      "accesses": 982,
+      "input_reads": 367,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 204,
+      "slots": 106,
+      "scratch": 74
+    },
+    {
+      "id": 106,
+      "candidate_id": 36300,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 138,
+      "changes": {
+        "4": 2,
+        "3": 6
+      },
+      "xors": 578,
+      "accesses": 990,
+      "input_reads": 363,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 206,
+      "slots": 105,
+      "scratch": 73
+    },
+    {
+      "id": 107,
+      "candidate_id": 36306,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 138,
+      "changes": {
+        "3": 6,
+        "4": 1
+      },
+      "xors": 606,
+      "accesses": 992,
+      "input_reads": 421,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 193,
+      "slots": 89,
+      "scratch": 57
+    },
+    {
+      "id": 108,
+      "candidate_id": 36309,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 138,
+      "changes": {
+        "3": 4,
+        "4": 1
+      },
+      "xors": 576,
+      "accesses": 984,
+      "input_reads": 371,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 204,
+      "slots": 105,
+      "scratch": 73
+    },
+    {
+      "id": 109,
+      "candidate_id": 36330,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 139,
+      "changes": {
+        "3": 8,
+        "4": 2
+      },
+      "xors": 588,
+      "accesses": 990,
+      "input_reads": 353,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 201,
+      "slots": 104,
+      "scratch": 72
+    },
+    {
+      "id": 110,
+      "candidate_id": 36342,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 139,
+      "changes": {
+        "3": 6,
+        "4": 1
+      },
+      "xors": 595,
+      "accesses": 999,
+      "input_reads": 370,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 202,
+      "slots": 103,
+      "scratch": 71
+    },
+    {
+      "id": 111,
+      "candidate_id": 36366,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 139,
+      "changes": {
+        "3": 10,
+        "4": 2
+      },
+      "xors": 728,
+      "accesses": 1056,
+      "input_reads": 615,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 164,
+      "slots": 64,
+      "scratch": 32
+    },
+    {
+      "id": 112,
+      "candidate_id": 36393,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 140,
+      "changes": {
+        "3": 7,
+        "4": 2
+      },
+      "xors": 588,
+      "accesses": 992,
+      "input_reads": 356,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 202,
+      "slots": 103,
+      "scratch": 71
+    },
+    {
+      "id": 113,
+      "candidate_id": 36420,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 140,
+      "changes": {
+        "3": 6,
+        "4": 1
+      },
+      "xors": 594,
+      "accesses": 980,
+      "input_reads": 369,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 193,
+      "slots": 99,
+      "scratch": 67
+    },
+    {
+      "id": 114,
+      "candidate_id": 36435,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 140,
+      "changes": {
+        "3": 4,
+        "4": 1
+      },
+      "xors": 577,
+      "accesses": 983,
+      "input_reads": 373,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 203,
+      "slots": 104,
+      "scratch": 72
+    },
+    {
+      "id": 115,
+      "candidate_id": 36456,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 141,
+      "changes": {
+        "3": 7,
+        "4": 2
+      },
+      "xors": 589,
+      "accesses": 993,
+      "input_reads": 357,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 202,
+      "slots": 103,
+      "scratch": 71
+    },
+    {
+      "id": 116,
+      "candidate_id": 36483,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 141,
+      "changes": {
+        "3": 6,
+        "4": 1
+      },
+      "xors": 595,
+      "accesses": 981,
+      "input_reads": 370,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 193,
+      "slots": 98,
+      "scratch": 66
+    },
+    {
+      "id": 117,
+      "candidate_id": 36498,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 141,
+      "changes": {
+        "3": 4,
+        "4": 1
+      },
+      "xors": 578,
+      "accesses": 984,
+      "input_reads": 373,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 203,
+      "slots": 103,
+      "scratch": 71
+    },
+    {
+      "id": 118,
+      "candidate_id": 36534,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 142,
+      "changes": {
+        "3": 4
+      },
+      "xors": 556,
+      "accesses": 976,
+      "input_reads": 324,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 210,
+      "slots": 113,
+      "scratch": 81
+    },
+    {
+      "id": 119,
+      "candidate_id": 36537,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 142,
+      "changes": {
+        "3": 3,
+        "4": 2
+      },
+      "xors": 606,
+      "accesses": 1000,
+      "input_reads": 375,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 197,
+      "slots": 99,
+      "scratch": 67
+    },
+    {
+      "id": 120,
+      "candidate_id": 36549,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 142,
+      "changes": {
+        "3": 3
+      },
+      "xors": 563,
+      "accesses": 965,
+      "input_reads": 337,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 201,
+      "slots": 111,
+      "scratch": 79
+    },
+    {
+      "id": 121,
+      "candidate_id": 36600,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 143,
+      "changes": {
+        "3": 3,
+        "4": 2
+      },
+      "xors": 607,
+      "accesses": 1001,
+      "input_reads": 377,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 197,
+      "slots": 98,
+      "scratch": 66
+    },
+    {
+      "id": 122,
+      "candidate_id": 36609,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 143,
+      "changes": {
+        "3": 6,
+        "4": 1
+      },
+      "xors": 597,
+      "accesses": 983,
+      "input_reads": 374,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 193,
+      "slots": 97,
+      "scratch": 65
+    },
+    {
+      "id": 123,
+      "candidate_id": 36624,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 143,
+      "changes": {
+        "3": 5,
+        "4": 1
+      },
+      "xors": 582,
+      "accesses": 990,
+      "input_reads": 379,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 204,
+      "slots": 102,
+      "scratch": 70
+    },
+    {
+      "id": 124,
+      "candidate_id": 36645,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 144,
+      "changes": {
+        "3": 5,
+        "4": 2
+      },
+      "xors": 603,
+      "accesses": 1009,
+      "input_reads": 372,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 203,
+      "slots": 101,
+      "scratch": 69
+    },
+    {
+      "id": 125,
+      "candidate_id": 36684,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 144,
+      "changes": {
+        "3": 9,
+        "4": 1
+      },
+      "xors": 608,
+      "accesses": 1000,
+      "input_reads": 418,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 196,
+      "slots": 89,
+      "scratch": 57
+    },
+    {
+      "id": 126,
+      "candidate_id": 36687,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 144,
+      "changes": {
+        "3": 6,
+        "4": 1
+      },
+      "xors": 583,
+      "accesses": 991,
+      "input_reads": 379,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 204,
+      "slots": 102,
+      "scratch": 70
+    },
+    {
+      "id": 127,
+      "candidate_id": 36723,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 145,
+      "changes": {
+        "3": 4
+      },
+      "xors": 557,
+      "accesses": 977,
+      "input_reads": 322,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 210,
+      "slots": 116,
+      "scratch": 84
+    },
+    {
+      "id": 128,
+      "candidate_id": 36783,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 146,
+      "changes": {
+        "3": 9,
+        "4": 1
+      },
+      "xors": 591,
+      "accesses": 999,
+      "input_reads": 373,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 204,
+      "slots": 101,
+      "scratch": 69
+    },
+    {
+      "id": 129,
+      "candidate_id": 36798,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 146,
+      "changes": {
+        "3": 7,
+        "4": 1
+      },
+      "xors": 600,
+      "accesses": 986,
+      "input_reads": 377,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 193,
+      "slots": 96,
+      "scratch": 64
+    },
+    {
+      "id": 130,
+      "candidate_id": 36810,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 146,
+      "changes": {
+        "3": 10,
+        "4": 1
+      },
+      "xors": 609,
+      "accesses": 1001,
+      "input_reads": 419,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 196,
+      "slots": 88,
+      "scratch": 56
+    },
+    {
+      "id": 131,
+      "candidate_id": 36876,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 147,
+      "changes": {
+        "3": 7,
+        "4": 1
+      },
+      "xors": 586,
+      "accesses": 994,
+      "input_reads": 384,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 204,
+      "slots": 101,
+      "scratch": 69
+    },
+    {
+      "id": 132,
+      "candidate_id": 36972,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 149,
+      "changes": {
+        "3": 11
+      },
+      "xors": 597,
+      "accesses": 1005,
+      "input_reads": 381,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 204,
+      "slots": 98,
+      "scratch": 66
+    },
+    {
+      "id": 133,
+      "candidate_id": 37041,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 150,
+      "changes": {
+        "3": 5,
+        "4": 3
+      },
+      "xors": 631,
+      "accesses": 1021,
+      "input_reads": 391,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 195,
+      "slots": 96,
+      "scratch": 64
+    },
+    {
+      "id": 134,
+      "candidate_id": 37065,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 150,
+      "changes": {
+        "3": 7,
+        "4": 1
+      },
+      "xors": 590,
+      "accesses": 994,
+      "input_reads": 390,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 202,
+      "slots": 99,
+      "scratch": 67
+    },
+    {
+      "id": 135,
+      "candidate_id": 37104,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 151,
+      "changes": {
+        "3": 5,
+        "4": 3
+      },
+      "xors": 632,
+      "accesses": 1020,
+      "input_reads": 391,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 194,
+      "slots": 96,
+      "scratch": 64
+    },
+    {
+      "id": 136,
+      "candidate_id": 37128,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 151,
+      "changes": {
+        "3": 7,
+        "4": 1
+      },
+      "xors": 591,
+      "accesses": 993,
+      "input_reads": 392,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 201,
+      "slots": 98,
+      "scratch": 66
+    },
+    {
+      "id": 137,
+      "candidate_id": 37191,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 152,
+      "changes": {
+        "3": 7,
+        "4": 1
+      },
+      "xors": 592,
+      "accesses": 992,
+      "input_reads": 394,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 200,
+      "slots": 97,
+      "scratch": 65
+    },
+    {
+      "id": 138,
+      "candidate_id": 37317,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 154,
+      "changes": {
+        "3": 8,
+        "4": 1
+      },
+      "xors": 594,
+      "accesses": 994,
+      "input_reads": 394,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 200,
+      "slots": 96,
+      "scratch": 64
+    },
+    {
+      "id": 139,
+      "candidate_id": 37368,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 155,
+      "changes": {
+        "3": 3
+      },
+      "xors": 566,
+      "accesses": 966,
+      "input_reads": 337,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 200,
+      "slots": 110,
+      "scratch": 78
+    },
+    {
+      "id": 140,
+      "candidate_id": 37380,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 155,
+      "changes": {
+        "3": 8,
+        "4": 1
+      },
+      "xors": 595,
+      "accesses": 997,
+      "input_reads": 395,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 201,
+      "slots": 95,
+      "scratch": 63
+    },
+    {
+      "id": 141,
+      "candidate_id": 37392,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 155,
+      "changes": {
+        "3": 6,
+        "4": 3
+      },
+      "xors": 662,
+      "accesses": 1026,
+      "input_reads": 499,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 182,
+      "slots": 81,
+      "scratch": 49
+    },
+    {
+      "id": 142,
+      "candidate_id": 37431,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 156,
+      "changes": {
+        "3": 3
+      },
+      "xors": 565,
+      "accesses": 965,
+      "input_reads": 334,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 200,
+      "slots": 111,
+      "scratch": 79
+    },
+    {
+      "id": 143,
+      "candidate_id": 37437,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 156,
+      "changes": {
+        "3": 9,
+        "4": 4
+      },
+      "xors": 759,
+      "accesses": 1091,
+      "input_reads": 658,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 166,
+      "slots": 56,
+      "scratch": 24
+    },
+    {
+      "id": 144,
+      "candidate_id": 37440,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 156,
+      "changes": {
+        "3": 12,
+        "4": 3
+      },
+      "xors": 613,
+      "accesses": 1007,
+      "input_reads": 420,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 197,
+      "slots": 88,
+      "scratch": 56
+    },
+    {
+      "id": 145,
+      "candidate_id": 37509,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 157,
+      "changes": {
+        "3": 3
+      },
+      "xors": 554,
+      "accesses": 972,
+      "input_reads": 329,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 209,
+      "slots": 112,
+      "scratch": 80
+    },
+    {
+      "id": 146,
+      "candidate_id": 37518,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 157,
+      "changes": {
+        "3": 6,
+        "4": 2
+      },
+      "xors": 658,
+      "accesses": 1028,
+      "input_reads": 497,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 185,
+      "slots": 79,
+      "scratch": 47
+    },
+    {
+      "id": 147,
+      "candidate_id": 37566,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 158,
+      "changes": {
+        "3": 12,
+        "4": 2
+      },
+      "xors": 610,
+      "accesses": 1006,
+      "input_reads": 422,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 198,
+      "slots": 85,
+      "scratch": 53
+    },
+    {
+      "id": 148,
+      "candidate_id": 37569,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 158,
+      "changes": {
+        "3": 8
+      },
+      "xors": 596,
+      "accesses": 998,
+      "input_reads": 402,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 201,
+      "slots": 92,
+      "scratch": 60
+    },
+    {
+      "id": 149,
+      "candidate_id": 37572,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 158,
+      "changes": {
+        "3": 3
+      },
+      "xors": 554,
+      "accesses": 972,
+      "input_reads": 331,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 209,
+      "slots": 111,
+      "scratch": 79
+    },
+    {
+      "id": 150,
+      "candidate_id": 37575,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 158,
+      "changes": {
+        "3": 7,
+        "4": 2
+      },
+      "xors": 623,
+      "accesses": 1019,
+      "input_reads": 421,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 198,
+      "slots": 91,
+      "scratch": 59
+    },
+    {
+      "id": 151,
+      "candidate_id": 37620,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 159,
+      "changes": {
+        "3": 3,
+        "4": 2
+      },
+      "xors": 572,
+      "accesses": 972,
+      "input_reads": 336,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 200,
+      "slots": 109,
+      "scratch": 77
+    },
+    {
+      "id": 152,
+      "candidate_id": 37626,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 159,
+      "changes": {
+        "3": 9,
+        "4": 4
+      },
+      "xors": 754,
+      "accesses": 1100,
+      "input_reads": 641,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 173,
+      "slots": 58,
+      "scratch": 26
+    },
+    {
+      "id": 153,
+      "candidate_id": 37629,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 159,
+      "changes": {
+        "3": 10,
+        "4": 2
+      },
+      "xors": 613,
+      "accesses": 1009,
+      "input_reads": 429,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 198,
+      "slots": 84,
+      "scratch": 52
+    },
+    {
+      "id": 154,
+      "candidate_id": 37689,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 160,
+      "changes": {
+        "3": 8,
+        "4": 4
+      },
+      "xors": 744,
+      "accesses": 1100,
+      "input_reads": 630,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 178,
+      "slots": 56,
+      "scratch": 24
+    },
+    {
+      "id": 155,
+      "candidate_id": 37692,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 160,
+      "changes": {
+        "3": 11,
+        "4": 1
+      },
+      "xors": 613,
+      "accesses": 1009,
+      "input_reads": 431,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 198,
+      "slots": 83,
+      "scratch": 51
+    },
+    {
+      "id": 156,
+      "candidate_id": 37755,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 161,
+      "changes": {
+        "3": 11,
+        "4": 1
+      },
+      "xors": 614,
+      "accesses": 1010,
+      "input_reads": 433,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 198,
+      "slots": 82,
+      "scratch": 50
+    },
+    {
+      "id": 157,
+      "candidate_id": 37758,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 161,
+      "changes": {
+        "3": 10
+      },
+      "xors": 601,
+      "accesses": 1011,
+      "input_reads": 411,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 205,
+      "slots": 91,
+      "scratch": 59
+    },
+    {
+      "id": 158,
+      "candidate_id": 37896,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 163,
+      "changes": {
+        "3": 6,
+        "4": 2
+      },
+      "xors": 654,
+      "accesses": 1028,
+      "input_reads": 492,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 187,
+      "slots": 78,
+      "scratch": 46
+    },
+    {
+      "id": 159,
+      "candidate_id": 37941,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 164,
+      "changes": {
+        "3": 9,
+        "4": 1
+      },
+      "xors": 744,
+      "accesses": 1104,
+      "input_reads": 634,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 180,
+      "slots": 54,
+      "scratch": 22
+    },
+    {
+      "id": 160,
+      "candidate_id": 37944,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 164,
+      "changes": {
+        "3": 10,
+        "4": 1
+      },
+      "xors": 612,
+      "accesses": 1010,
+      "input_reads": 430,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 199,
+      "slots": 80,
+      "scratch": 48
+    },
+    {
+      "id": 161,
+      "candidate_id": 37947,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 164,
+      "changes": {
+        "3": 9
+      },
+      "xors": 600,
+      "accesses": 1008,
+      "input_reads": 412,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 204,
+      "slots": 88,
+      "scratch": 56
+    },
+    {
+      "id": 162,
+      "candidate_id": 38067,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 166,
+      "changes": {
+        "3": 8,
+        "4": 1
+      },
+      "xors": 745,
+      "accesses": 1115,
+      "input_reads": 634,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 185,
+      "slots": 59,
+      "scratch": 27
+    },
+    {
+      "id": 163,
+      "candidate_id": 38205,
+      "op": "decode",
+      "schedule": "scheduled",
+      "cut": 168,
+      "changes": {
+        "4": 1,
+        "3": 4
+      },
+      "xors": 616,
+      "accesses": 1012,
+      "input_reads": 422,
+      "copies": 0,
+      "zero_writes": 0,
+      "statements": 198,
+      "slots": 85,
+      "scratch": 53
+    }
+  ]
+}

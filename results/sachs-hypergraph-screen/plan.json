@@ -1,0 +1,19 @@
+{
+  "inherited_manifest": "/Users/colkitt/sith/toys/math/butterflyMult/results/encrypted-probability-survey/completion.json",
+  "inherited_manifest_sha256": "ede33d1616980bd28867a4bac4e8d4633521f50d52b7e8008ae3f129eda816f6",
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/sachs_hypergraph_screen.py": "bb03029b4e48aa1bd556cef756500208d211bcaccb42cfd5b0b23b496016a43e",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/encrypted-probability-survey/runs/sachs1k-p2/trace/queries.tsv": "c3f9010340e134ee76bdb7a7d2f59c71ab65e8890184701dc5e2dfb3cc8e7bd0",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/exclusion_circuit.py": "b253f9d7318becda1c1f3b24e2287ed44a9c27fcea00cf9d531afb950d0457a0",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/paired_exclusion_circuit.py": "8f05f04cf06217befd6d0ee0f2d7d0c5c5eb32cfab8c9a8ca7917fd6d620b7d2",
+    "/Users/colkitt/sith/toys/math/integerMult/docs/research/paired-network.md": "335b664ca9b7c71a855b32dc44c4597997b6f616ef06dc878af1d5c2010891ea"
+  },
+  "scope": "All 11 nonempty pruned Sachs tables, all observed unique (L,U) queries in first-seen order. Static exact positive full-retained-sum graphs; immutable weights and unbounded result memoization shared by all methods. Offline knowledge of future queries is an optimistic screen, not an online implementation.",
+  "orders": [
+    "natural",
+    "reverse",
+    "descending parent-set incidence"
+  ],
+  "gate": "A table qualifies only if the best carried construction uses >=5% fewer additions than the best conventional comparator, strictly fewer than the best separate-singleton ablation, and no greater peak live computed values than its best-addition conventional comparator. No timing if none qualifies.",
+  "limits": "Native early cutoff and logarithm/base conversions are not reconstructed from rounded diagnostic weights. Conventional full-sum baselines do at least the requested mathematical summation work; beating them would not yet beat the native tolerance-aware scan. Compilation and table/circuit planning have unpriced CPU cost; generated nodes and contraction entry visits are retained."
+}

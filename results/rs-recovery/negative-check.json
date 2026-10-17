@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/negative-payload.bin",
+    "0",
+    "0"
+  ],
+  "returncode": 1,
+  "stderr": "incorrect recovery\n",
+  "fixture_sha256": "dd680afe02fa10bbd96c3ec95d758193d4c5818c58e6389cc7864501aa8f048f"
+}

@@ -1,0 +1,3 @@
+{"precision_bits":262144,"fused_calls":9,"fused_coefficients":35663,"np2_window_calls":17,"accuracy_bits":262142}
+{"precision_bits":524288,"fused_calls":23,"fused_coefficients":134664,"np2_window_calls":33,"accuracy_bits":524286}
+{"precision_bits":1048576,"fused_calls":57,"fused_coefficients":440511,"np2_window_calls":68,"accuracy_bits":1048574}

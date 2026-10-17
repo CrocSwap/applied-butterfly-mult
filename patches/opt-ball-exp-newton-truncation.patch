@@ -1,0 +1,50 @@
+--- a/src/arb_poly/exp_series.c
++++ b/src/arb_poly/exp_series.c
+@@ -54,15 +54,17 @@
+ 
+     /* U := h' + g (f' - f h') + O(x^(n-1))
+         Note: should replace h' by h' mod x^(m-1) */
+-    _arb_vec_zero(f + m, n - m);
+-    _arb_poly_mulmid(T, f, n, hprime, n, l, n, prec);
+-    _arb_poly_derivative(U, f, n, prec); arb_zero(U + n - 1); /* should skip low terms */
+-    _arb_vec_sub(U + l, U + l, T, n - l, prec);
++    /* f has degree less than m, so f' has no terms from m - 1.
++       Only coefficients m - 1 through n - 2 are consumed below. */
++    _arb_poly_mulmid(T, f, m, hprime, n - 1, l, n - 1, prec);
++    _arb_vec_neg(U + l, T, n - m);
+     _arb_poly_mullow(T + l, g, n - m, U + l, n - m, n - m, prec);
+     _arb_vec_add(U + l, hprime + l, T + l, n - m, prec);
+ 
+     /* f := f + f * (h - int U) + O(x^n) = exp(h) + O(x^n) */
+-    _arb_poly_integral(U, U, n, prec); /* should skip low terms */
++    /* Integrate the required high coefficients, backwards for aliasing. */
++    for (slong j = n - 1; j >= m; j--)
++        arb_div_ui(U + j, U + j - 1, j, prec);
+     _arb_vec_sub(U + m, h + m, U + m, n - m, prec);
+     _arb_poly_mullow(f + m, f, n - m, U + m, n - m, n - m, prec);
+ 
+--- a/src/acb_poly/exp_series.c
++++ b/src/acb_poly/exp_series.c
+@@ -55,15 +55,17 @@
+ 
+     /* U := h' + g (f' - f h') + O(x^(n-1))
+         Note: should replace h' by h' mod x^(m-1) */
+-    _acb_vec_zero(f + m, n - m);
+-    _acb_poly_mulmid(T, f, n, hprime, n, l, n, prec);
+-    _acb_poly_derivative(U, f, n, prec); acb_zero(U + n - 1); /* should skip low terms */
+-    _acb_vec_sub(U + l, U + l, T, n - l, prec);
++    /* f has degree less than m, so f' has no terms from m - 1.
++       Only coefficients m - 1 through n - 2 are consumed below. */
++    _acb_poly_mulmid(T, f, m, hprime, n - 1, l, n - 1, prec);
++    _acb_vec_neg(U + l, T, n - m);
+     _acb_poly_mullow(T + l, g, n - m, U + l, n - m, n - m, prec);
+     _acb_vec_add(U + l, hprime + l, T + l, n - m, prec);
+ 
+     /* f := f + f * (h - int U) + O(x^n) = exp(h) + O(x^n) */
+-    _acb_poly_integral(U, U, n, prec); /* should skip low terms */
++    /* Integrate the required high coefficients, backwards for aliasing. */
++    for (slong j = n - 1; j >= m; j--)
++        acb_div_ui(U + j, U + j - 1, j, prec);
+     _acb_vec_sub(U + m, h + m, U + m, n - m, prec);
+     _acb_poly_mullow(f + m, f, n - m, U + m, n - m, n - m, prec);
+ 

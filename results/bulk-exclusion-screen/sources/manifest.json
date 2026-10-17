@@ -1,0 +1,16 @@
+[
+  {
+    "repository": "bupticybee/TexasSolver",
+    "commit": "78f2ed2544440ea143873918f45b30a331f00383",
+    "url": "https://raw.githubusercontent.com/bupticybee/TexasSolver/78f2ed2544440ea143873918f45b30a331f00383/src/solver/PCfrSolver.cpp",
+    "file": "results/bulk-exclusion-screen/sources/PCfrSolver.cpp",
+    "sha256": "96431331358b5e49ec75ed712ced36204e7e70df13082d4283732e805bb475a6"
+  },
+  {
+    "repository": "johnlspouge/jackknife-product",
+    "commit": "11dfc1d6eb319cfcd8a50afc3d896947831713e3",
+    "url": "https://raw.githubusercontent.com/johnlspouge/jackknife-product/11dfc1d6eb319cfcd8a50afc3d896947831713e3/jls_jackknifeproduct.py",
+    "file": "results/bulk-exclusion-screen/sources/jls_jackknifeproduct.py",
+    "sha256": "113dd12afd19b34d83788ed9ae8024ef2491c12610d1e2fa88c2d31433d233a1"
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "flint_commit": "657a2839cf0125164859ff102b1f124abcb87ce0",
+  "baseline_unchanged": true,
+  "candidate_library_sha256": {
+    "control": "119f22302ae43fb2c5e26f8a00d558c27b1762481d9ef801b11fef1551c5c970",
+    "c1-native-lanes": "cf225d1e1ed163f41a7d2bd739e4f16c076bb47fe454aa38cb0338dcfe9572f8",
+    "c2-fused-inverse": "5889fe580c4d653eed5f7a44e643edeed3f5017b5f978c9277ea6c70551078f5",
+    "c3-tiled-reconstruction": "dabfb196add531180dc50211daf37b5477b09fad71a3ebe9a6ba854c0a325260",
+    "c3-register-reconstruction": "261463b29702f7346e206d5ebf5843ae4d7240ef4765318886327214cecff3bf"
+  },
+  "runs": {
+    "c3-register-confirm-1": {
+      "cases": 33,
+      "batches": 5412
+    },
+    "c3-register-confirm-2": {
+      "cases": 33,
+      "batches": 5412
+    },
+    "c3-register-boundaries": {
+      "cases": 30,
+      "batches": 1800
+    },
+    "control-aa-dual": {
+      "cases": 6,
+      "batches": 984
+    },
+    "control-aa-post": {
+      "cases": 3,
+      "batches": 492
+    }
+  },
+  "exact_comparisons_per_library": 4056,
+  "confirmation_gate": "Both runs: squaring aggregate lower 95% bound exceeds 1% for CPU and wall time"
+}

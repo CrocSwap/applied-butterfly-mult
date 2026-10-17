@@ -1,0 +1,43 @@
+--- a/src/acb_theta/agm_mul.c
++++ b/src/acb_theta/agm_mul.c
+@@ -74,30 +74,17 @@
+ {
+     if (all)
+     {
+-        slong n = 1 << g;
+-        acb_ptr v;
+-        ulong a, b;
+-
+-        v = _acb_vec_init(n);
+-
+-        for (a = 0; a < n; a++)
+-        {
+-            _acb_vec_set(v, a2, n);
+-            for (b = 0; b < n; b++)
+-            {
+-                if (acb_theta_char_dot(a, b, g) % 2 == 1)
+-                {
+-                    acb_neg(&v[b], &v[b]);
+-                }
+-            }
+-            acb_theta_agm_mul_one(v, a1, v, g, prec);
+-            for (b = 0; b < n; b++)
+-            {
+-                acb_set(&res[b * n + a], &v[b]);
+-            }
++        /* The signs in this interface multiply a2. For each k, take the
++           Hadamard transform in b of a1[b XOR k] * a2[b]. This computes
++           every res[k*n+a] with n transforms instead of 3*n and needs
++           no inverse scaling. This is a conventional Walsh identity. */
++        slong n = 1L << g;
++        acb_ptr w = _acb_vec_init(n);
++        for (slong k=0;k<n;k++) {
++            for (slong b=0;b<n;b++) acb_mul(w+b,a1+(b^k),a2+b,prec);
++            acb_theta_agm_hadamard(res+k*n,w,g,prec);
+         }
+-
+-        _acb_vec_clear(v, n);
++        _acb_vec_clear(w,n);
+     }
+     else
+     {

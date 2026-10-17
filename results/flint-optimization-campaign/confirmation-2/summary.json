@@ -1,0 +1,4337 @@
+{
+  "raw_sha256": "d92390fc011e6edf7e351cb46c6c65b8a60cc493844fb461b26a29a7fabfe932",
+  "results": [
+    {
+      "case": {
+        "candidate": "sqr-fallthrough",
+        "kind": "nmod_sqr",
+        "size": 84,
+        "length": 1,
+        "prec": 0,
+        "modulus": 1000003,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/sqr-fallthrough/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 64.70570848194201,
+        "ci95_low_pct": 64.31584628665787,
+        "ci95_high_pct": 65.05021598190517,
+        "baseline_median_ns": 581022.62109375,
+        "candidate_median_ns": 205066.89453125,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 64.6882919047944,
+        "ci95_low_pct": 64.27290059720467,
+        "ci95_high_pct": 65.0798186320299,
+        "baseline_median_ns": 581238.28125,
+        "candidate_median_ns": 205070.3125,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 16,
+        "length": 16,
+        "prec": 0,
+        "modulus": 18446744073709551557,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 22.84667469432118,
+        "ci95_low_pct": 22.342739575358618,
+        "ci95_high_pct": 23.329218302766396,
+        "baseline_median_ns": 3317.4768676755,
+        "candidate_median_ns": 2557.462097168,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 22.868631155745355,
+        "ci95_low_pct": 22.349259341370022,
+        "ci95_high_pct": 23.36992592446977,
+        "baseline_median_ns": 3317.4438476565,
+        "candidate_median_ns": 2557.556152344,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "evaluate2-dot",
+        "kind": "arb_eval2",
+        "size": 256,
+        "length": 128,
+        "prec": 1024,
+        "modulus": 0,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/evaluate2-dot/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1016
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1016
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1016
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1016
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 11.431560904885307,
+        "ci95_low_pct": 10.681780377391338,
+        "ci95_high_pct": 12.210384485283798,
+        "baseline_median_ns": 32315.836914062,
+        "candidate_median_ns": 28381.287109375,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 11.23845159188167,
+        "ci95_low_pct": 10.207925091019598,
+        "ci95_high_pct": 12.195939158879444,
+        "baseline_median_ns": 32318.84765625,
+        "candidate_median_ns": 28405.2734375,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 127,
+        "length": 127,
+        "prec": 0,
+        "modulus": 18446744073709551557,
+        "group": "active_neighbor",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 24.62950804331533,
+        "ci95_low_pct": 24.061746202864033,
+        "ci95_high_pct": 25.29723103288305,
+        "baseline_median_ns": 62603.23046875,
+        "candidate_median_ns": 47128.6611328125,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 25.572564147217303,
+        "ci95_low_pct": 24.044192995716763,
+        "ci95_high_pct": 28.011156008004168,
+        "baseline_median_ns": 62626.953125,
+        "candidate_median_ns": 47132.8125,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "evaluate2-dot",
+        "kind": "acb_eval2",
+        "size": 65,
+        "length": 128,
+        "prec": 1024,
+        "modulus": 0,
+        "group": "active_neighbor",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/evaluate2-dot/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1017
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1018
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1017
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1018
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 17.418903147838794,
+        "ci95_low_pct": 16.76219771805063,
+        "ci95_high_pct": 18.087876356606493,
+        "baseline_median_ns": 33780.049804687,
+        "candidate_median_ns": 27898.417480468997,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 17.4612559367165,
+        "ci95_low_pct": 16.703169407384845,
+        "ci95_high_pct": 18.279354778958457,
+        "baseline_median_ns": 33824.21875,
+        "candidate_median_ns": 27898.92578125,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 32,
+        "length": 32,
+        "prec": 0,
+        "modulus": 18446744073709551557,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 36.98915344899256,
+        "ci95_low_pct": 35.60275039741455,
+        "ci95_high_pct": 38.337884854479945,
+        "baseline_median_ns": 10570.790649414,
+        "candidate_median_ns": 6650.675415039001,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 35.825906528645,
+        "ci95_low_pct": 32.956404230481986,
+        "ci95_high_pct": 38.33199544941039,
+        "baseline_median_ns": 10597.2900390625,
+        "candidate_median_ns": 6663.818359375,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 15,
+        "length": 15,
+        "prec": 0,
+        "modulus": 1000000007,
+        "group": "inactive",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 0.34414721908890833,
+        "ci95_low_pct": -0.7506991252423267,
+        "ci95_high_pct": 1.389621338380842,
+        "baseline_median_ns": 4087.31842041,
+        "candidate_median_ns": 4080.144226074,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 0.43777376134718216,
+        "ci95_low_pct": -0.8294557167013661,
+        "ci95_high_pct": 1.6222985783545418,
+        "baseline_median_ns": 4090.148925781,
+        "candidate_median_ns": 4080.9326171875,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 17,
+        "length": 17,
+        "prec": 0,
+        "modulus": 1000000007,
+        "group": "active_neighbor",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 23.562174645438105,
+        "ci95_low_pct": 22.574487358625028,
+        "ci95_high_pct": 24.56454867937564,
+        "baseline_median_ns": 2969.7990722655,
+        "candidate_median_ns": 2271.226257324,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 23.59016429571257,
+        "ci95_low_pct": 22.501853606154278,
+        "ci95_high_pct": 24.6802761914403,
+        "baseline_median_ns": 2972.9614257815,
+        "candidate_median_ns": 2271.7895507815,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "evaluate2-dot",
+        "kind": "arb_eval2",
+        "size": 64,
+        "length": 128,
+        "prec": 1024,
+        "modulus": 0,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/evaluate2-dot/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1016
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1016
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1016
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1016
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 10.082619030649099,
+        "ci95_low_pct": 9.319463340566115,
+        "ci95_high_pct": 10.919887141433914,
+        "baseline_median_ns": 9338.7248535155,
+        "candidate_median_ns": 8542.8568115235,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 10.324268369811918,
+        "ci95_low_pct": 9.36283496601199,
+        "ci95_high_pct": 11.432286891702292,
+        "baseline_median_ns": 9354.00390625,
+        "candidate_median_ns": 8554.3212890625,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "evaluate2-dot",
+        "kind": "acb_eval2",
+        "size": 32,
+        "length": 128,
+        "prec": 4096,
+        "modulus": 0,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/evaluate2-dot/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 4089
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 4090
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 4089
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 4090
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 5.580060580743352,
+        "ci95_low_pct": 4.724566237962113,
+        "ci95_high_pct": 6.348220649416758,
+        "baseline_median_ns": 72404.9482421875,
+        "candidate_median_ns": 68579.7939453125,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 5.574666865609301,
+        "ci95_low_pct": 4.678445141898424,
+        "ci95_high_pct": 6.382482009144763,
+        "baseline_median_ns": 72424.8046875,
+        "candidate_median_ns": 68584.9609375,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "control",
+        "kind": "nmod_sqr",
+        "size": 84,
+        "length": 4,
+        "prec": 0,
+        "modulus": 1000003,
+        "group": "rebuild_control",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 0.6858253742659137,
+        "ci95_low_pct": -1.1754048401507955,
+        "ci95_high_pct": 3.210307030346793,
+        "baseline_median_ns": 5266567.6875,
+        "candidate_median_ns": 5282052.0625,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 2.6115153413614367,
+        "ci95_low_pct": -1.002745565810037,
+        "ci95_high_pct": 7.639631426055482,
+        "baseline_median_ns": 5268125.0,
+        "candidate_median_ns": 5298875.0,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "control",
+        "kind": "arb_eval2",
+        "size": 64,
+        "length": 128,
+        "prec": 1024,
+        "modulus": 0,
+        "group": "rebuild_control",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1016
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1016
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1016
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1016
+        }
+      ],
+      "cpu": {
+        "reduction_pct": -0.9408739055612347,
+        "ci95_low_pct": -2.165171375639363,
+        "ci95_high_pct": 0.27547753031843536,
+        "baseline_median_ns": 10270.3959960935,
+        "candidate_median_ns": 10380.971435546999,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": -1.2897430084733097,
+        "ci95_low_pct": -2.80267937451828,
+        "ci95_high_pct": 0.1551933130626293,
+        "baseline_median_ns": 10302.001953125,
+        "candidate_median_ns": 10438.232421875,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "evaluate2-dot",
+        "kind": "arb_eval2",
+        "size": 31,
+        "length": 128,
+        "prec": 1024,
+        "modulus": 0,
+        "group": "active_neighbor",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/evaluate2-dot/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1016
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1017
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1016
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1017
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 7.9617657085604865,
+        "ci95_low_pct": 6.907738873775704,
+        "ci95_high_pct": 8.946770206288758,
+        "baseline_median_ns": 5048.2609863279995,
+        "candidate_median_ns": 4610.295593262001,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 7.886446153553073,
+        "ci95_low_pct": 6.5709969466635325,
+        "ci95_high_pct": 9.170393640273334,
+        "baseline_median_ns": 5054.7485351565,
+        "candidate_median_ns": 4620.0561523435,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "evaluate2-dot",
+        "kind": "arb_eval2",
+        "size": 128,
+        "length": 128,
+        "prec": 4096,
+        "modulus": 0,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/evaluate2-dot/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 4088
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 4088
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 4088
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 4088
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 5.550114763255087,
+        "ci95_low_pct": 4.2137111576587944,
+        "ci95_high_pct": 6.861456001239674,
+        "baseline_median_ns": 59456.6240234375,
+        "candidate_median_ns": 55860.4326171875,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 5.51620384993069,
+        "ci95_low_pct": 3.9686368020699803,
+        "ci95_high_pct": 7.039689295538221,
+        "baseline_median_ns": 59575.1953125,
+        "candidate_median_ns": 55988.28125,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "original",
+        "kind": "acb_eval2",
+        "size": 64,
+        "length": 128,
+        "prec": 1024,
+        "modulus": 0,
+        "group": "same_function_control",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1017
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1017
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1017
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1017
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 0.7158807457602223,
+        "ci95_low_pct": -0.9239908112082418,
+        "ci95_high_pct": 2.3718530096528245,
+        "baseline_median_ns": 34684.977050781,
+        "candidate_median_ns": 34573.7915039065,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 0.9745496422599031,
+        "ci95_low_pct": -1.1333894371871267,
+        "ci95_high_pct": 3.1842575255054295,
+        "baseline_median_ns": 34777.83203125,
+        "candidate_median_ns": 34662.109375,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 127,
+        "length": 127,
+        "prec": 0,
+        "modulus": 1000000007,
+        "group": "active_neighbor",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 17.162018406792146,
+        "ci95_low_pct": 16.41331599574046,
+        "ci95_high_pct": 17.94573371171716,
+        "baseline_median_ns": 38971.19140625,
+        "candidate_median_ns": 32670.186523438,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 17.326812239014146,
+        "ci95_low_pct": 16.52840701305891,
+        "ci95_high_pct": 18.164949178659928,
+        "baseline_median_ns": 39090.33203125,
+        "candidate_median_ns": 32740.234375,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 512,
+        "length": 512,
+        "prec": 0,
+        "modulus": 18446744073709551557,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 13.835373512933202,
+        "ci95_low_pct": 12.162040012620912,
+        "ci95_high_pct": 15.460448401151561,
+        "baseline_median_ns": 490421.546875,
+        "candidate_median_ns": 418284.5,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 14.883887421102326,
+        "ci95_low_pct": 12.39757376081716,
+        "ci95_high_pct": 17.889310841079975,
+        "baseline_median_ns": 491710.9375,
+        "candidate_median_ns": 419242.1875,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 32,
+        "length": 32,
+        "prec": 0,
+        "modulus": 1000000007,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 22.184611851111658,
+        "ci95_low_pct": 21.567295566082876,
+        "ci95_high_pct": 22.758739028112796,
+        "baseline_median_ns": 6044.8811035154995,
+        "candidate_median_ns": 4690.190551758,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 22.241885954858397,
+        "ci95_low_pct": 21.6086791919616,
+        "ci95_high_pct": 22.858265025280645,
+        "baseline_median_ns": 6065.673828125,
+        "candidate_median_ns": 4696.044921875,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "sqr-fallthrough",
+        "kind": "nmod_sqr",
+        "size": 83,
+        "length": 4,
+        "prec": 0,
+        "modulus": 1000003,
+        "group": "active_neighbor",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/sqr-fallthrough/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 49.615432628166,
+        "ci95_low_pct": 49.23239618053087,
+        "ci95_high_pct": 49.96375089729149,
+        "baseline_median_ns": 5024127.625,
+        "candidate_median_ns": 2554312.5625,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 49.57104802710119,
+        "ci95_low_pct": 49.109092016469944,
+        "ci95_high_pct": 49.9821577122183,
+        "baseline_median_ns": 5031687.5,
+        "candidate_median_ns": 2556750.0,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 31,
+        "length": 31,
+        "prec": 0,
+        "modulus": 1000000007,
+        "group": "active_neighbor",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 24.83407596973265,
+        "ci95_low_pct": 23.885995804063676,
+        "ci95_high_pct": 25.98728044791575,
+        "baseline_median_ns": 5716.1408081055,
+        "candidate_median_ns": 4314.0690917970005,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 24.917467923776215,
+        "ci95_low_pct": 23.850583429815696,
+        "ci95_high_pct": 26.231655737967774,
+        "baseline_median_ns": 5741.7602539065,
+        "candidate_median_ns": 4324.279785156,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "sqr-fallthrough",
+        "kind": "nmod_sqr",
+        "size": 84,
+        "length": 4,
+        "prec": 0,
+        "modulus": 1000003,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/sqr-fallthrough/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 48.71214455767632,
+        "ci95_low_pct": 48.253910476028764,
+        "ci95_high_pct": 49.16991537679563,
+        "baseline_median_ns": 5117125.0,
+        "candidate_median_ns": 2623041.6875,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 48.649784273877984,
+        "ci95_low_pct": 48.12044212810132,
+        "ci95_high_pct": 49.17276404486377,
+        "baseline_median_ns": 5121687.5,
+        "candidate_median_ns": 2626875.0,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 129,
+        "length": 129,
+        "prec": 0,
+        "modulus": 1000000007,
+        "group": "active_neighbor",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 13.69362937612143,
+        "ci95_low_pct": 12.488247802082608,
+        "ci95_high_pct": 14.902245518534984,
+        "baseline_median_ns": 42136.495117188,
+        "candidate_median_ns": 36145.6704101565,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 13.542325133930177,
+        "ci95_low_pct": 12.172216238155064,
+        "ci95_high_pct": 14.948945276382686,
+        "baseline_median_ns": 42221.6796875,
+        "candidate_median_ns": 36225.09765625,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 33,
+        "length": 33,
+        "prec": 0,
+        "modulus": 1000000007,
+        "group": "active_neighbor",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 23.311209141134814,
+        "ci95_low_pct": 22.75479448621106,
+        "ci95_high_pct": 23.882793381309575,
+        "baseline_median_ns": 7294.738891601501,
+        "candidate_median_ns": 5593.8822021485,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 23.330656362151736,
+        "ci95_low_pct": 22.705176445188314,
+        "ci95_high_pct": 23.95307453383775,
+        "baseline_median_ns": 7317.0166015625,
+        "candidate_median_ns": 5610.2294921875,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "original",
+        "kind": "nmod_interp",
+        "size": 64,
+        "length": 64,
+        "prec": 0,
+        "modulus": 1000000007,
+        "group": "same_function_control",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 0.4237917713899586,
+        "ci95_low_pct": -0.14647964359399968,
+        "ci95_high_pct": 1.0625283236517014,
+        "baseline_median_ns": 15292.704101563,
+        "candidate_median_ns": 15276.173828125,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 0.5008308593419608,
+        "ci95_low_pct": -0.09131957217560771,
+        "ci95_high_pct": 1.149519576353475,
+        "baseline_median_ns": 15324.951171875,
+        "candidate_median_ns": 15308.10546875,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "evaluate2-dot",
+        "kind": "arb_eval2",
+        "size": 63,
+        "length": 128,
+        "prec": 1024,
+        "modulus": 0,
+        "group": "active_neighbor",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/evaluate2-dot/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1016
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1016
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1016
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1016
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 8.904614212346173,
+        "ci95_low_pct": 7.6145534276797155,
+        "ci95_high_pct": 10.195262368301261,
+        "baseline_median_ns": 9674.774169921999,
+        "candidate_median_ns": 8844.1618652345,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 9.076318086949742,
+        "ci95_low_pct": 7.718196765219309,
+        "ci95_high_pct": 10.457501235659517,
+        "baseline_median_ns": 9712.7685546875,
+        "candidate_median_ns": 8880.7373046875,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "original",
+        "kind": "nmod_sqr",
+        "size": 84,
+        "length": 4,
+        "prec": 0,
+        "modulus": 1000003,
+        "group": "same_function_control",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": -0.3675564944671361,
+        "ci95_low_pct": -0.9246613666258119,
+        "ci95_high_pct": 0.19558553715186555,
+        "baseline_median_ns": 5144474.0,
+        "candidate_median_ns": 5144171.875,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": -0.5168263718734689,
+        "ci95_low_pct": -1.107113039610974,
+        "ci95_high_pct": 0.06231260219108359,
+        "baseline_median_ns": 5153000.0,
+        "candidate_median_ns": 5158500.0,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 129,
+        "length": 129,
+        "prec": 0,
+        "modulus": 18446744073709551557,
+        "group": "active_neighbor",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 25.017446215800387,
+        "ci95_low_pct": 24.247684850261063,
+        "ci95_high_pct": 25.751215617778346,
+        "baseline_median_ns": 68694.62109375,
+        "candidate_median_ns": 51170.6953125,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 25.098317997218413,
+        "ci95_low_pct": 24.177619571231013,
+        "ci95_high_pct": 25.998991311420305,
+        "baseline_median_ns": 68924.8046875,
+        "candidate_median_ns": 51282.2265625,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 64,
+        "length": 64,
+        "prec": 0,
+        "modulus": 18446744073709551557,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 31.76834082254092,
+        "ci95_low_pct": 31.2036309934837,
+        "ci95_high_pct": 32.27389978338323,
+        "baseline_median_ns": 26453.430419922,
+        "candidate_median_ns": 18061.106445313,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 31.795119941478113,
+        "ci95_low_pct": 31.166885291372324,
+        "ci95_high_pct": 32.351339874044115,
+        "baseline_median_ns": 26571.533203125,
+        "candidate_median_ns": 18103.515625,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "control",
+        "kind": "acb_eval2",
+        "size": 64,
+        "length": 128,
+        "prec": 1024,
+        "modulus": 0,
+        "group": "rebuild_control",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1017
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1017
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1017
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1017
+        }
+      ],
+      "cpu": {
+        "reduction_pct": -0.13668725742097543,
+        "ci95_low_pct": -1.0444611478561683,
+        "ci95_high_pct": 0.6863525553458039,
+        "baseline_median_ns": 34575.643066406,
+        "candidate_median_ns": 34596.130371094,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": -0.16098462929536872,
+        "ci95_low_pct": -1.1320580033132632,
+        "ci95_high_pct": 0.7224719513179823,
+        "baseline_median_ns": 34647.4609375,
+        "candidate_median_ns": 34645.5078125,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "sqr-fallthrough",
+        "kind": "nmod_sqr",
+        "size": 82,
+        "length": 4,
+        "prec": 0,
+        "modulus": 1000003,
+        "group": "inactive",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/sqr-fallthrough/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": -0.01716791840369325,
+        "ci95_low_pct": -0.7922157579465905,
+        "ci95_high_pct": 0.686738833770828,
+        "baseline_median_ns": 2375315.09375,
+        "candidate_median_ns": 2377108.09375,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": -2.889936220193201,
+        "ci95_low_pct": -7.2586473976156585,
+        "ci95_high_pct": 0.5716143001632479,
+        "baseline_median_ns": 2381031.25,
+        "candidate_median_ns": 2380718.75,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "sqr-fallthrough",
+        "kind": "nmod_sqr",
+        "size": 112,
+        "length": 16,
+        "prec": 0,
+        "modulus": 1000003,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/sqr-fallthrough/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 42.54888098759112,
+        "ci95_low_pct": 41.70164784588199,
+        "ci95_high_pct": 43.35757881060115,
+        "baseline_median_ns": 61593250.0,
+        "candidate_median_ns": 35198021.5,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 42.539937202304856,
+        "ci95_low_pct": 41.606519218291474,
+        "ci95_high_pct": 43.43996173670289,
+        "baseline_median_ns": 61667000.0,
+        "candidate_median_ns": 35271500.0,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "sqr-fallthrough",
+        "kind": "nmod_sqr",
+        "size": 80,
+        "length": 1,
+        "prec": 0,
+        "modulus": 1000003,
+        "group": "inactive",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/sqr-fallthrough/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 0.24877206056334034,
+        "ci95_low_pct": -1.212697370940341,
+        "ci95_high_pct": 1.6161429364261903,
+        "baseline_median_ns": 350500.65625,
+        "candidate_median_ns": 348711.9140625,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 0.1713335191071086,
+        "ci95_low_pct": -1.3500918980930754,
+        "ci95_high_pct": 1.7054029830055106,
+        "baseline_median_ns": 351257.8125,
+        "candidate_median_ns": 349343.75,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "sqr-fallthrough",
+        "kind": "nmod_sqr",
+        "size": 96,
+        "length": 16,
+        "prec": 0,
+        "modulus": 1000003,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/sqr-fallthrough/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 41.6095614316052,
+        "ci95_low_pct": 40.52754447709558,
+        "ci95_high_pct": 42.64714594336761,
+        "baseline_median_ns": 43421708.5,
+        "candidate_median_ns": 25556874.5,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 41.63050483208172,
+        "ci95_low_pct": 40.49339696303339,
+        "ci95_high_pct": 42.73767779718304,
+        "baseline_median_ns": 43501000.0,
+        "candidate_median_ns": 25589000.0,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "evaluate2-dot",
+        "kind": "arb_eval2",
+        "size": 32,
+        "length": 128,
+        "prec": 1024,
+        "modulus": 0,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/evaluate2-dot/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1016
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1017
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1016
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1017
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 6.599622852287967,
+        "ci95_low_pct": 5.604501044820132,
+        "ci95_high_pct": 7.453248362409992,
+        "baseline_median_ns": 5119.6950073245,
+        "candidate_median_ns": 4731.6818237305,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 6.468565723463449,
+        "ci95_low_pct": 5.299233048303664,
+        "ci95_high_pct": 7.432170035527486,
+        "baseline_median_ns": 5126.3427734375,
+        "candidate_median_ns": 4742.858886719,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "control",
+        "kind": "nmod_interp",
+        "size": 64,
+        "length": 64,
+        "prec": 0,
+        "modulus": 1000000007,
+        "group": "rebuild_control",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 0.4473961073920174,
+        "ci95_low_pct": -0.19578494624450382,
+        "ci95_high_pct": 1.0113415730761965,
+        "baseline_median_ns": 14670.623535155999,
+        "candidate_median_ns": 14693.166259766,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 0.46041520075424947,
+        "ci95_low_pct": -0.232864631356966,
+        "ci95_high_pct": 1.073292245501889,
+        "baseline_median_ns": 14670.8984375,
+        "candidate_median_ns": 14694.82421875,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "evaluate2-dot",
+        "kind": "arb_eval2",
+        "size": 128,
+        "length": 128,
+        "prec": 1024,
+        "modulus": 0,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/evaluate2-dot/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1016
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1016
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1016
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1016
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 10.075269980545054,
+        "ci95_low_pct": 8.922295344874309,
+        "ci95_high_pct": 11.084565986305172,
+        "baseline_median_ns": 17670.2880859375,
+        "candidate_median_ns": 15707.611083984,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 8.218203954408231,
+        "ci95_low_pct": 3.519522214262172,
+        "ci95_high_pct": 11.102376885053179,
+        "baseline_median_ns": 17678.22265625,
+        "candidate_median_ns": 15720.703125,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "evaluate2-dot",
+        "kind": "acb_eval2",
+        "size": 64,
+        "length": 128,
+        "prec": 512,
+        "modulus": 0,
+        "group": "inactive",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/evaluate2-dot/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 507
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 507
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 507
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 507
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 0.043048882199703264,
+        "ci95_low_pct": -0.7218606458908816,
+        "ci95_high_pct": 0.9574797178134586,
+        "baseline_median_ns": 25484.537597656497,
+        "candidate_median_ns": 25547.220703125,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 0.07131999668060773,
+        "ci95_low_pct": -0.805700425183864,
+        "ci95_high_pct": 1.168330907343218,
+        "baseline_median_ns": 25516.11328125,
+        "candidate_median_ns": 25561.5234375,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "evaluate2-dot",
+        "kind": "arb_eval2",
+        "size": 64,
+        "length": 128,
+        "prec": 512,
+        "modulus": 0,
+        "group": "inactive",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/evaluate2-dot/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 507
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 507
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 507
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 507
+        }
+      ],
+      "cpu": {
+        "reduction_pct": -0.30841770465290796,
+        "ci95_low_pct": -1.2858298963681403,
+        "ci95_high_pct": 0.6068604373210773,
+        "baseline_median_ns": 9707.015869140501,
+        "candidate_median_ns": 9687.3626708985,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": -0.3452450896819004,
+        "ci95_low_pct": -1.473201673963076,
+        "ci95_high_pct": 0.6929239785450125,
+        "baseline_median_ns": 9718.994140625,
+        "candidate_median_ns": 9693.603515625,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "sqr-fallthrough",
+        "kind": "nmod_sqr",
+        "size": 81,
+        "length": 1,
+        "prec": 0,
+        "modulus": 1000003,
+        "group": "inactive_neighbor",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/sqr-fallthrough/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": -0.12284419039918504,
+        "ci95_low_pct": -0.6081120027870535,
+        "ci95_high_pct": 0.4579092253395811,
+        "baseline_median_ns": 357555.6640625,
+        "candidate_median_ns": 359081.0546875,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": -0.006876093119556614,
+        "ci95_low_pct": -0.5263113183167523,
+        "ci95_high_pct": 0.5481301591058751,
+        "baseline_median_ns": 358101.5625,
+        "candidate_median_ns": 359359.375,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "evaluate2-dot",
+        "kind": "acb_eval2",
+        "size": 256,
+        "length": 128,
+        "prec": 1024,
+        "modulus": 0,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/evaluate2-dot/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1017
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1017
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1017
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1017
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 23.218161803618266,
+        "ci95_low_pct": 22.331243634316998,
+        "ci95_high_pct": 24.48858636363521,
+        "baseline_median_ns": 125848.224609375,
+        "candidate_median_ns": 97147.625,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 23.272679520282725,
+        "ci95_low_pct": 22.311946731982946,
+        "ci95_high_pct": 24.667533432645094,
+        "baseline_median_ns": 125906.25,
+        "candidate_median_ns": 97173.828125,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "sqr-fallthrough",
+        "kind": "nmod_sqr",
+        "size": 83,
+        "length": 9,
+        "prec": 0,
+        "modulus": 1000003,
+        "group": "inactive_neighbor",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/sqr-fallthrough/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 0.9917022978468304,
+        "ci95_low_pct": -0.02959476584483145,
+        "ci95_high_pct": 2.09053573088549,
+        "baseline_median_ns": 6045073.0,
+        "candidate_median_ns": 6046041.625,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 1.0376785035073999,
+        "ci95_low_pct": -0.025519974265098,
+        "ci95_high_pct": 2.173204607661261,
+        "baseline_median_ns": 6052125.0,
+        "candidate_median_ns": 6049125.0,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 63,
+        "length": 63,
+        "prec": 0,
+        "modulus": 1000000007,
+        "group": "active_neighbor",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 19.873690077543493,
+        "ci95_low_pct": 19.304488803276133,
+        "ci95_high_pct": 20.360401584809683,
+        "baseline_median_ns": 14403.177734375,
+        "candidate_median_ns": 11503.163818359,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 19.891148144281168,
+        "ci95_low_pct": 19.285914074550004,
+        "ci95_high_pct": 20.412954929113305,
+        "baseline_median_ns": 14445.80078125,
+        "candidate_median_ns": 11503.662109375,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "evaluate2-dot",
+        "kind": "acb_eval2",
+        "size": 32,
+        "length": 128,
+        "prec": 1024,
+        "modulus": 0,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/evaluate2-dot/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1018
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1018
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1018
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1018
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 14.749155858702679,
+        "ci95_low_pct": 13.981662463253175,
+        "ci95_high_pct": 15.40593421950176,
+        "baseline_median_ns": 17326.110839843503,
+        "candidate_median_ns": 14814.3618164065,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 14.769183215274694,
+        "ci95_low_pct": 13.948523811135905,
+        "ci95_high_pct": 15.465981590843247,
+        "baseline_median_ns": 17331.54296875,
+        "candidate_median_ns": 14813.4765625,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 8,
+        "length": 8,
+        "prec": 0,
+        "modulus": 1000000007,
+        "group": "inactive",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": -0.8473943916008198,
+        "ci95_low_pct": -2.3532641195872506,
+        "ci95_high_pct": 0.34914778485219955,
+        "baseline_median_ns": 1107.718154907,
+        "candidate_median_ns": 1102.9116363525,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": -2.117978031075163,
+        "ci95_low_pct": -6.287207102687042,
+        "ci95_high_pct": 0.394850312912598,
+        "baseline_median_ns": 1108.7951660160002,
+        "candidate_median_ns": 1103.775024414,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "evaluate2-dot",
+        "kind": "acb_eval2",
+        "size": 128,
+        "length": 128,
+        "prec": 1024,
+        "modulus": 0,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/evaluate2-dot/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1017
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1017
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1017
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1017
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 20.355251010586063,
+        "ci95_low_pct": 20.025956475472007,
+        "ci95_high_pct": 20.68100824722675,
+        "baseline_median_ns": 63290.771484375,
+        "candidate_median_ns": 50550.3330078125,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 20.358959592035152,
+        "ci95_low_pct": 20.000994843836505,
+        "ci95_high_pct": 20.706542357396817,
+        "baseline_median_ns": 63294.921875,
+        "candidate_median_ns": 50635.7421875,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "evaluate2-dot",
+        "kind": "acb_eval2",
+        "size": 31,
+        "length": 128,
+        "prec": 1024,
+        "modulus": 0,
+        "group": "active_neighbor",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/evaluate2-dot/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1018
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1018
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1018
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1018
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 15.536093912687631,
+        "ci95_low_pct": 14.978377033452606,
+        "ci95_high_pct": 16.183955303682573,
+        "baseline_median_ns": 16634.918457031,
+        "candidate_median_ns": 14192.281005859,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 15.573883077255735,
+        "ci95_low_pct": 14.91994748776463,
+        "ci95_high_pct": 16.354269631043238,
+        "baseline_median_ns": 16635.25390625,
+        "candidate_median_ns": 14194.3359375,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 65,
+        "length": 65,
+        "prec": 0,
+        "modulus": 1000000007,
+        "group": "active_neighbor",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 17.17900280821295,
+        "ci95_low_pct": 16.76352556413895,
+        "ci95_high_pct": 17.60923093687414,
+        "baseline_median_ns": 16279.968261719001,
+        "candidate_median_ns": 13538.065673828001,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 17.189439686565965,
+        "ci95_low_pct": 16.759569064075297,
+        "ci95_high_pct": 17.64111392991915,
+        "baseline_median_ns": 16286.376953125,
+        "candidate_median_ns": 13538.57421875,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 31,
+        "length": 31,
+        "prec": 0,
+        "modulus": 18446744073709551557,
+        "group": "active_neighbor",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 36.87497050573382,
+        "ci95_low_pct": 36.5653790533227,
+        "ci95_high_pct": 37.21213201115273,
+        "baseline_median_ns": 9985.270263671999,
+        "candidate_median_ns": 6295.104858398499,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 36.850369065084344,
+        "ci95_low_pct": 36.52836093361203,
+        "ci95_high_pct": 37.19187064419294,
+        "baseline_median_ns": 9993.7744140625,
+        "candidate_median_ns": 6298.095703125,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "original",
+        "kind": "arb_eval2",
+        "size": 64,
+        "length": 128,
+        "prec": 1024,
+        "modulus": 0,
+        "group": "same_function_control",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1016
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1016
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1016
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1016
+        }
+      ],
+      "cpu": {
+        "reduction_pct": -0.021369953747840675,
+        "ci95_low_pct": -0.8011321403623484,
+        "ci95_high_pct": 0.6147758572427442,
+        "baseline_median_ns": 9214.213012695,
+        "candidate_median_ns": 9237.970947266,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": -0.026611013689370466,
+        "ci95_low_pct": -0.8411587873244253,
+        "ci95_high_pct": 0.6353067334156304,
+        "baseline_median_ns": 9214.35546875,
+        "candidate_median_ns": 9244.5068359375,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 256,
+        "length": 256,
+        "prec": 0,
+        "modulus": 1000000007,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 11.223670200462333,
+        "ci95_low_pct": 10.58101808963492,
+        "ci95_high_pct": 11.792281676321515,
+        "baseline_median_ns": 104518.1484375,
+        "candidate_median_ns": 92047.8515625,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 11.21882856729729,
+        "ci95_low_pct": 10.5723600812465,
+        "ci95_high_pct": 11.791388300786798,
+        "baseline_median_ns": 104521.484375,
+        "candidate_median_ns": 92060.546875,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "evaluate2-dot",
+        "kind": "arb_eval2",
+        "size": 33,
+        "length": 128,
+        "prec": 1024,
+        "modulus": 0,
+        "group": "active_neighbor",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/evaluate2-dot/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1017
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1018
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1017
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1018
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 6.897008190981424,
+        "ci95_low_pct": 6.571565853499539,
+        "ci95_high_pct": 7.251922414929412,
+        "baseline_median_ns": 5197.382629395001,
+        "candidate_median_ns": 4858.8332519535,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 6.884015561200584,
+        "ci95_low_pct": 6.491145366024553,
+        "ci95_high_pct": 7.296947519696784,
+        "baseline_median_ns": 5198.913574219,
+        "candidate_median_ns": 4860.107421875,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 128,
+        "length": 128,
+        "prec": 0,
+        "modulus": 18446744073709551557,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 24.235832153965454,
+        "ci95_low_pct": 23.803066627236312,
+        "ci95_high_pct": 24.663186529565863,
+        "baseline_median_ns": 62520.548828125,
+        "candidate_median_ns": 47303.5078125,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 24.23242046672842,
+        "ci95_low_pct": 23.791134562011894,
+        "ci95_high_pct": 24.665181968837068,
+        "baseline_median_ns": 62541.015625,
+        "candidate_median_ns": 47303.7109375,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "evaluate2-dot",
+        "kind": "acb_eval2",
+        "size": 64,
+        "length": 128,
+        "prec": 1024,
+        "modulus": 0,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/evaluate2-dot/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1017
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1018
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1017
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1018
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 17.062962974820895,
+        "ci95_low_pct": 16.77491610086048,
+        "ci95_high_pct": 17.406333720871025,
+        "baseline_median_ns": 33008.870605469,
+        "candidate_median_ns": 27328.349121093997,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 17.142360054845973,
+        "ci95_low_pct": 16.808564210681375,
+        "ci95_high_pct": 17.50564653277491,
+        "baseline_median_ns": 33009.27734375,
+        "candidate_median_ns": 27338.8671875,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "evaluate2-dot",
+        "kind": "arb_eval2",
+        "size": 32,
+        "length": 128,
+        "prec": 4096,
+        "modulus": 0,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/evaluate2-dot/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 4088
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 4088
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 4088
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 4088
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 2.8451265199838094,
+        "ci95_low_pct": 1.8533508263381737,
+        "ci95_high_pct": 3.667961456030877,
+        "baseline_median_ns": 19146.1589355465,
+        "candidate_median_ns": 18598.68359375,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 2.8437307304949866,
+        "ci95_low_pct": 1.8199086829139177,
+        "ci95_high_pct": 3.6990446387894282,
+        "baseline_median_ns": 19147.4609375,
+        "candidate_median_ns": 18600.09765625,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "sqr-fallthrough",
+        "kind": "nmod_sqr",
+        "size": 96,
+        "length": 4,
+        "prec": 0,
+        "modulus": 1000003,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/sqr-fallthrough/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 50.708402548779276,
+        "ci95_low_pct": 50.40547118713663,
+        "ci95_high_pct": 51.08882890186071,
+        "baseline_median_ns": 6606869.75,
+        "candidate_median_ns": 3271278.5625,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 50.72678968248935,
+        "ci95_low_pct": 50.413173842081015,
+        "ci95_high_pct": 51.111742275054304,
+        "baseline_median_ns": 6608250.0,
+        "candidate_median_ns": 3273125.0,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "evaluate2-dot",
+        "kind": "acb_eval2",
+        "size": 64,
+        "length": 128,
+        "prec": 4096,
+        "modulus": 0,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/evaluate2-dot/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 4089
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 4090
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 4089
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 4090
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 7.74971394047178,
+        "ci95_low_pct": 7.262368094606231,
+        "ci95_high_pct": 8.392631249207783,
+        "baseline_median_ns": 120746.419921875,
+        "candidate_median_ns": 111111.4921875,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 7.7427619788834505,
+        "ci95_low_pct": 7.237991613890382,
+        "ci95_high_pct": 8.406450108561048,
+        "baseline_median_ns": 120751.953125,
+        "candidate_median_ns": 111130.859375,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "sqr-fallthrough",
+        "kind": "nmod_sqr",
+        "size": 82,
+        "length": 1,
+        "prec": 0,
+        "modulus": 1000003,
+        "group": "active_neighbor",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/sqr-fallthrough/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 64.28665404852354,
+        "ci95_low_pct": 63.900227908583275,
+        "ci95_high_pct": 64.66498681827765,
+        "baseline_median_ns": 548484.05078125,
+        "candidate_median_ns": 195887.046875,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 64.49129083762047,
+        "ci95_low_pct": 63.969553562072335,
+        "ci95_high_pct": 65.09608822626232,
+        "baseline_median_ns": 548699.21875,
+        "candidate_median_ns": 195917.96875,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 16,
+        "length": 16,
+        "prec": 0,
+        "modulus": 1000000007,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 27.072963973193275,
+        "ci95_low_pct": 26.543304228834973,
+        "ci95_high_pct": 27.548336375992967,
+        "baseline_median_ns": 2407.7199096679997,
+        "candidate_median_ns": 1755.1434631345,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 27.074269999748413,
+        "ci95_low_pct": 26.472717306132154,
+        "ci95_high_pct": 27.604154838273097,
+        "baseline_median_ns": 2408.874511719,
+        "candidate_median_ns": 1755.859375,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "evaluate2-dot",
+        "kind": "acb_eval2",
+        "size": 256,
+        "length": 128,
+        "prec": 4096,
+        "modulus": 0,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/evaluate2-dot/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 4089
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 4089
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 4089
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 4089
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 11.66086016879605,
+        "ci95_low_pct": 10.95451814058972,
+        "ci95_high_pct": 12.45426776471784,
+        "baseline_median_ns": 390958.984375,
+        "candidate_median_ns": 344601.5703125,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 11.615560094212206,
+        "ci95_low_pct": 10.77721488401785,
+        "ci95_high_pct": 12.549570013294852,
+        "baseline_median_ns": 391429.6875,
+        "candidate_median_ns": 345585.9375,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "evaluate2-dot",
+        "kind": "acb_eval2",
+        "size": 63,
+        "length": 128,
+        "prec": 1024,
+        "modulus": 0,
+        "group": "active_neighbor",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/evaluate2-dot/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1017
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1018
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1017
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1018
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 17.8015390419331,
+        "ci95_low_pct": 17.487859974589405,
+        "ci95_high_pct": 18.135567343179538,
+        "baseline_median_ns": 32740.41796875,
+        "candidate_median_ns": 27022.908691406003,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 17.81145169361156,
+        "ci95_low_pct": 17.48968798812752,
+        "ci95_high_pct": 18.145910797722554,
+        "baseline_median_ns": 32746.09375,
+        "candidate_median_ns": 27032.71484375,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 256,
+        "length": 256,
+        "prec": 0,
+        "modulus": 18446744073709551557,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 19.261918609513316,
+        "ci95_low_pct": 18.945932096149175,
+        "ci95_high_pct": 19.572510536073594,
+        "baseline_median_ns": 176985.189453125,
+        "candidate_median_ns": 142012.2890625,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 19.23560182539329,
+        "ci95_low_pct": 18.922366626766028,
+        "ci95_high_pct": 19.551838112012867,
+        "baseline_median_ns": 177005.859375,
+        "candidate_median_ns": 142019.53125,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 4,
+        "length": 4,
+        "prec": 0,
+        "modulus": 1000000007,
+        "group": "inactive",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": -0.17874335085512616,
+        "ci95_low_pct": -0.8185221431076473,
+        "ci95_high_pct": 0.558492605668226,
+        "baseline_median_ns": 100.096464157,
+        "candidate_median_ns": 100.1800708775,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": -0.18259304079792926,
+        "ci95_low_pct": -0.8643790730555656,
+        "ci95_high_pct": 0.5894373928201135,
+        "baseline_median_ns": 100.11863708499999,
+        "candidate_median_ns": 100.18157959,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "evaluate2-dot",
+        "kind": "arb_eval2",
+        "size": 65,
+        "length": 128,
+        "prec": 1024,
+        "modulus": 0,
+        "group": "active_neighbor",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/evaluate2-dot/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1016
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1016
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1016
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1016
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 9.003617684909116,
+        "ci95_low_pct": 8.453742713840228,
+        "ci95_high_pct": 9.520823938159984,
+        "baseline_median_ns": 9438.0390625,
+        "candidate_median_ns": 8626.922607421999,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 9.07757644774232,
+        "ci95_low_pct": 8.483788061611309,
+        "ci95_high_pct": 9.628769907818246,
+        "baseline_median_ns": 9438.8427734375,
+        "candidate_median_ns": 8629.150390625,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "evaluate2-dot",
+        "kind": "arb_eval2",
+        "size": 64,
+        "length": 128,
+        "prec": 4096,
+        "modulus": 0,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/evaluate2-dot/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 4088
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 4089
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 4088
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 4089
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 3.87356147416289,
+        "ci95_low_pct": 3.256798501499858,
+        "ci95_high_pct": 4.467878225650468,
+        "baseline_median_ns": 31827.270507812,
+        "candidate_median_ns": 30543.009277343503,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 3.927783785141592,
+        "ci95_low_pct": 3.2629259815012746,
+        "ci95_high_pct": 4.560192431740595,
+        "baseline_median_ns": 31829.1015625,
+        "candidate_median_ns": 30552.24609375,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "sqr-fallthrough",
+        "kind": "nmod_sqr",
+        "size": 32,
+        "length": 16,
+        "prec": 0,
+        "modulus": 1000003,
+        "group": "inactive",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/sqr-fallthrough/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": -0.02279007872230121,
+        "ci95_low_pct": -0.5838011130832044,
+        "ci95_high_pct": 0.4927411777680857,
+        "baseline_median_ns": 1719747.40625,
+        "candidate_median_ns": 1721789.0625,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": -0.035500643746666505,
+        "ci95_low_pct": -0.6258125630161482,
+        "ci95_high_pct": 0.5093763093241943,
+        "baseline_median_ns": 1719968.75,
+        "candidate_median_ns": 1722656.25,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 65,
+        "length": 65,
+        "prec": 0,
+        "modulus": 18446744073709551557,
+        "group": "active_neighbor",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 29.901107882410727,
+        "ci95_low_pct": 29.4818006467645,
+        "ci95_high_pct": 30.32420357033414,
+        "baseline_median_ns": 26205.373046875,
+        "candidate_median_ns": 18419.3317871095,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 29.937734952604732,
+        "ci95_low_pct": 29.511079510045622,
+        "ci95_high_pct": 30.36270773228711,
+        "baseline_median_ns": 26249.267578125,
+        "candidate_median_ns": 18419.189453125,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 63,
+        "length": 63,
+        "prec": 0,
+        "modulus": 18446744073709551557,
+        "group": "active_neighbor",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 30.488326617407868,
+        "ci95_low_pct": 29.803466754841335,
+        "ci95_high_pct": 31.144419133560184,
+        "baseline_median_ns": 24494.445556641,
+        "candidate_median_ns": 16920.877929688,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 30.471400479633324,
+        "ci95_low_pct": 29.726403217938945,
+        "ci95_high_pct": 31.17766099729056,
+        "baseline_median_ns": 24497.314453125,
+        "candidate_median_ns": 16923.33984375,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "sqr-fallthrough",
+        "kind": "nmod_sqr",
+        "size": 84,
+        "length": 9,
+        "prec": 0,
+        "modulus": 1000003,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/sqr-fallthrough/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 39.876893432034365,
+        "ci95_low_pct": 39.27306269203952,
+        "ci95_high_pct": 40.40234409644414,
+        "baseline_median_ns": 15059890.625,
+        "candidate_median_ns": 9038265.625,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 39.882838249808295,
+        "ci95_low_pct": 39.27241635217686,
+        "ci95_high_pct": 40.41282114093742,
+        "baseline_median_ns": 15072500.0,
+        "candidate_median_ns": 9040125.0,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 17,
+        "length": 17,
+        "prec": 0,
+        "modulus": 18446744073709551557,
+        "group": "active_neighbor",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 20.111413424876147,
+        "ci95_low_pct": 17.981332459039734,
+        "ci95_high_pct": 21.650048113262578,
+        "baseline_median_ns": 3779.0705566405004,
+        "candidate_median_ns": 2997.2661743165,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 19.20216484909907,
+        "ci95_low_pct": 12.809456897958505,
+        "ci95_high_pct": 23.712503333763422,
+        "baseline_median_ns": 3779.1137695315,
+        "candidate_median_ns": 2997.314453125,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 128,
+        "length": 128,
+        "prec": 0,
+        "modulus": 1000000007,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 16.25354089053316,
+        "ci95_low_pct": 15.323044828441068,
+        "ci95_high_pct": 17.210824084160325,
+        "baseline_median_ns": 38166.524414062,
+        "candidate_median_ns": 31733.255371093503,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 15.897207551640824,
+        "ci95_low_pct": 14.309676800251548,
+        "ci95_high_pct": 17.25648428834995,
+        "baseline_median_ns": 38205.56640625,
+        "candidate_median_ns": 31734.375,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "evaluate2-dot",
+        "kind": "acb_eval2",
+        "size": 128,
+        "length": 128,
+        "prec": 4096,
+        "modulus": 0,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/evaluate2-dot/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 4089
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 4089
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 4089
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 4089
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 9.20236582397168,
+        "ci95_low_pct": 8.668428570646602,
+        "ci95_high_pct": 9.776285112988925,
+        "baseline_median_ns": 217033.19921875,
+        "candidate_median_ns": 197415.85546875,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 9.210778396042373,
+        "ci95_low_pct": 8.64841664562791,
+        "ci95_high_pct": 9.822853208922755,
+        "baseline_median_ns": 217085.9375,
+        "candidate_median_ns": 197417.96875,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 64,
+        "length": 64,
+        "prec": 0,
+        "modulus": 1000000007,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 19.5257394766709,
+        "ci95_low_pct": 19.052118994775192,
+        "ci95_high_pct": 20.051236182718856,
+        "baseline_median_ns": 14710.693359375,
+        "candidate_median_ns": 11843.434570312,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 19.5201137389285,
+        "ci95_low_pct": 18.99063930161182,
+        "ci95_high_pct": 20.106132892276808,
+        "baseline_median_ns": 14713.8671875,
+        "candidate_median_ns": 11844.23828125,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 512,
+        "length": 512,
+        "prec": 0,
+        "modulus": 1000000007,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 10.007776903735499,
+        "ci95_low_pct": 9.456317351366994,
+        "ci95_high_pct": 10.537832840111772,
+        "baseline_median_ns": 274806.8046875,
+        "candidate_median_ns": 247310.546875,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 9.993984458347061,
+        "ci95_low_pct": 9.417639139208466,
+        "ci95_high_pct": 10.544004942223884,
+        "baseline_median_ns": 274878.90625,
+        "candidate_median_ns": 247496.09375,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "interpolation-inverse",
+        "kind": "nmod_interp",
+        "size": 33,
+        "length": 33,
+        "prec": 0,
+        "modulus": 18446744073709551557,
+        "group": "active_neighbor",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/interpolation-inverse/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 0
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 0
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 33.658691175158374,
+        "ci95_low_pct": 33.14268487769538,
+        "ci95_high_pct": 34.120416861940384,
+        "baseline_median_ns": 10974.644897461,
+        "candidate_median_ns": 7251.602172851501,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 33.651982237827696,
+        "ci95_low_pct": 33.11991567442186,
+        "ci95_high_pct": 34.129156821165616,
+        "baseline_median_ns": 10976.5625,
+        "candidate_median_ns": 7255.126953125,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "evaluate2-dot",
+        "kind": "arb_eval2",
+        "size": 256,
+        "length": 128,
+        "prec": 4096,
+        "modulus": 0,
+        "group": "active",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/evaluate2-dot/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 4088
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 4088
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 4088
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 4088
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 9.581560395962995,
+        "ci95_low_pct": 8.937527309908255,
+        "ci95_high_pct": 10.255476818524201,
+        "baseline_median_ns": 101101.80859375,
+        "candidate_median_ns": 91255.697265625,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 9.730999960140174,
+        "ci95_low_pct": 8.889802251826062,
+        "ci95_high_pct": 10.704944426367756,
+        "baseline_median_ns": 101107.421875,
+        "candidate_median_ns": 91269.53125,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    },
+    {
+      "case": {
+        "candidate": "evaluate2-dot",
+        "kind": "acb_eval2",
+        "size": 33,
+        "length": 128,
+        "prec": 1024,
+        "modulus": 0,
+        "group": "active_neighbor",
+        "seed": 539871,
+        "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/evaluate2-dot/libflint-experiment.dylib"
+      },
+      "checks": [
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1018
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1019
+        },
+        {
+          "phase": "check",
+          "engine": 0,
+          "passed": true,
+          "accuracy": 1018
+        },
+        {
+          "phase": "check",
+          "engine": 1,
+          "passed": true,
+          "accuracy": 1019
+        }
+      ],
+      "cpu": {
+        "reduction_pct": 15.076539151492764,
+        "ci95_low_pct": 14.675208059845646,
+        "ci95_high_pct": 15.516438863171011,
+        "baseline_median_ns": 17822.0419921875,
+        "candidate_median_ns": 15194.620605468499,
+        "quartets": 31,
+        "bootstrap_block": 5
+      },
+      "wall": {
+        "reduction_pct": 15.12088530048523,
+        "ci95_low_pct": 14.704175901475725,
+        "ci95_high_pct": 15.574245549195531,
+        "baseline_median_ns": 17824.951171875,
+        "candidate_median_ns": 15195.3125,
+        "quartets": 31,
+        "bootstrap_block": 5
+      }
+    }
+  ]
+}

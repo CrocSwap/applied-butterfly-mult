@@ -1,0 +1,55 @@
+{
+  "created_utc": "2026-10-07T18:04:18.557828+00:00",
+  "comparisons": "Each ablation as baseline, retained C3 as candidate; positive reduction is benefit of the removed feature in the context of the other features. Not additive attribution.",
+  "ablations": [
+    "no-fusion",
+    "scalar-conversion",
+    "general-carry"
+  ],
+  "sizes": [
+    4095,
+    4096,
+    4097,
+    6144,
+    8191,
+    8192,
+    8193,
+    12288,
+    16383,
+    16384,
+    16385
+  ],
+  "operations": [
+    "mul",
+    "sqr",
+    "unbalanced"
+  ],
+  "primary_interval_limbs": [
+    4096,
+    16384
+  ],
+  "sessions": 2,
+  "trials": 21,
+  "batch_ms": 10,
+  "seeds": [
+    61391,
+    42937
+  ],
+  "primary_metric": "thread CPU time; retain wall time and all cases",
+  "controls": "Unchanged relink versus baseline and baseline versus retained C3 before ablations, 4096/8192/16384 all shapes, 21 quartets, 10ms",
+  "interpretation": "Use per-session aggregate 95% block-bootstrap intervals; a repeatable feature contribution requires same direction and CI excluding zero in both sessions. Inspect compiler output because scalar source may be vectorized. Carry ablation includes unrolling and while-to-if together.",
+  "application": {
+    "workload": "Uncached FLINT Chudnovsky pi via _mp_real_const_arb and mp_real_const_pi4(cache=0), then scale by four",
+    "precisions_bits": [
+      262144,
+      524288,
+      1048576
+    ],
+    "sessions": 2,
+    "trials": 31,
+    "batch_ms": 20,
+    "correctness": "Exact baseline/candidate ball equality and containment of MPFR directed-rounding pi endpoints at extra precision",
+    "control": "Unchanged versus unchanged before application runs",
+    "report": "Whole computation including internal allocations; output conversion/verification outside timing. No requirement to find an application win."
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "cases": 77,
+  "scope": "Source hashes, plan coverage, rational lemma thresholds, analytic tail thresholds, recorded certificate stopping decisions, inverse-error allocation. The 923 pre-screen tests independently check dyadic sums, exponent construction and small exact matrix powers; this audit is not a second implementation of all matrix powers.",
+  "numerical_solve_performed": false,
+  "runtime_speedup_claim": false
+}

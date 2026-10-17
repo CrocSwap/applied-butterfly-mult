@@ -1,0 +1,1985 @@
+{
+  "status": "PASS",
+  "scope": "exploratory warm complete synthetic path solves; no FLINT or application deployment claim",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "compile": [
+    "clang",
+    "-std=gnu23",
+    "-O3",
+    "-g",
+    "-mcpu=apple-m2",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/theory_paths.c",
+    "-o",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/theory-paths"
+  ],
+  "compiler": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\n",
+  "checks": [
+    [
+      4,
+      0,
+      "sergeev",
+      0
+    ],
+    [
+      4,
+      0,
+      "interval",
+      0
+    ],
+    [
+      4,
+      0,
+      "sergeev",
+      1
+    ],
+    [
+      4,
+      1,
+      "sergeev",
+      0
+    ],
+    [
+      4,
+      1,
+      "interval",
+      0
+    ],
+    [
+      4,
+      1,
+      "sergeev",
+      1
+    ],
+    [
+      4,
+      2,
+      "sergeev",
+      0
+    ],
+    [
+      4,
+      2,
+      "interval",
+      0
+    ],
+    [
+      4,
+      2,
+      "sergeev",
+      1
+    ],
+    [
+      4,
+      3,
+      "sergeev",
+      0
+    ],
+    [
+      4,
+      3,
+      "interval",
+      0
+    ],
+    [
+      4,
+      3,
+      "sergeev",
+      1
+    ],
+    [
+      4,
+      4,
+      "sergeev",
+      0
+    ],
+    [
+      4,
+      4,
+      "interval",
+      0
+    ],
+    [
+      4,
+      4,
+      "sergeev",
+      1
+    ],
+    [
+      5,
+      0,
+      "sergeev",
+      0
+    ],
+    [
+      5,
+      0,
+      "interval",
+      0
+    ],
+    [
+      5,
+      0,
+      "sergeev",
+      1
+    ],
+    [
+      5,
+      1,
+      "sergeev",
+      0
+    ],
+    [
+      5,
+      1,
+      "interval",
+      0
+    ],
+    [
+      5,
+      1,
+      "sergeev",
+      1
+    ],
+    [
+      5,
+      2,
+      "sergeev",
+      0
+    ],
+    [
+      5,
+      2,
+      "interval",
+      0
+    ],
+    [
+      5,
+      2,
+      "sergeev",
+      1
+    ],
+    [
+      5,
+      3,
+      "sergeev",
+      0
+    ],
+    [
+      5,
+      3,
+      "interval",
+      0
+    ],
+    [
+      5,
+      3,
+      "sergeev",
+      1
+    ],
+    [
+      5,
+      4,
+      "sergeev",
+      0
+    ],
+    [
+      5,
+      4,
+      "interval",
+      0
+    ],
+    [
+      5,
+      4,
+      "sergeev",
+      1
+    ],
+    [
+      6,
+      0,
+      "sergeev",
+      0
+    ],
+    [
+      6,
+      0,
+      "interval",
+      0
+    ],
+    [
+      6,
+      0,
+      "sergeev",
+      1
+    ],
+    [
+      6,
+      1,
+      "sergeev",
+      0
+    ],
+    [
+      6,
+      1,
+      "interval",
+      0
+    ],
+    [
+      6,
+      1,
+      "sergeev",
+      1
+    ],
+    [
+      6,
+      2,
+      "sergeev",
+      0
+    ],
+    [
+      6,
+      2,
+      "interval",
+      0
+    ],
+    [
+      6,
+      2,
+      "sergeev",
+      1
+    ],
+    [
+      6,
+      3,
+      "sergeev",
+      0
+    ],
+    [
+      6,
+      3,
+      "interval",
+      0
+    ],
+    [
+      6,
+      3,
+      "sergeev",
+      1
+    ],
+    [
+      6,
+      4,
+      "sergeev",
+      0
+    ],
+    [
+      6,
+      4,
+      "interval",
+      0
+    ],
+    [
+      6,
+      4,
+      "sergeev",
+      1
+    ],
+    [
+      7,
+      0,
+      "sergeev",
+      0
+    ],
+    [
+      7,
+      0,
+      "interval",
+      0
+    ],
+    [
+      7,
+      0,
+      "sergeev",
+      1
+    ],
+    [
+      7,
+      1,
+      "sergeev",
+      0
+    ],
+    [
+      7,
+      1,
+      "interval",
+      0
+    ],
+    [
+      7,
+      1,
+      "sergeev",
+      1
+    ],
+    [
+      7,
+      2,
+      "sergeev",
+      0
+    ],
+    [
+      7,
+      2,
+      "interval",
+      0
+    ],
+    [
+      7,
+      2,
+      "sergeev",
+      1
+    ],
+    [
+      7,
+      3,
+      "sergeev",
+      0
+    ],
+    [
+      7,
+      3,
+      "interval",
+      0
+    ],
+    [
+      7,
+      3,
+      "sergeev",
+      1
+    ],
+    [
+      7,
+      4,
+      "sergeev",
+      0
+    ],
+    [
+      7,
+      4,
+      "interval",
+      0
+    ],
+    [
+      7,
+      4,
+      "sergeev",
+      1
+    ],
+    [
+      8,
+      0,
+      "sergeev",
+      0
+    ],
+    [
+      8,
+      0,
+      "interval",
+      0
+    ],
+    [
+      8,
+      0,
+      "sergeev",
+      1
+    ],
+    [
+      8,
+      1,
+      "sergeev",
+      0
+    ],
+    [
+      8,
+      1,
+      "interval",
+      0
+    ],
+    [
+      8,
+      1,
+      "sergeev",
+      1
+    ],
+    [
+      8,
+      2,
+      "sergeev",
+      0
+    ],
+    [
+      8,
+      2,
+      "interval",
+      0
+    ],
+    [
+      8,
+      2,
+      "sergeev",
+      1
+    ],
+    [
+      8,
+      3,
+      "sergeev",
+      0
+    ],
+    [
+      8,
+      3,
+      "interval",
+      0
+    ],
+    [
+      8,
+      3,
+      "sergeev",
+      1
+    ],
+    [
+      8,
+      4,
+      "sergeev",
+      0
+    ],
+    [
+      8,
+      4,
+      "interval",
+      0
+    ],
+    [
+      8,
+      4,
+      "sergeev",
+      1
+    ]
+  ],
+  "counts": [
+    {
+      "name": "paired",
+      "n": 4,
+      "inputs": 6,
+      "outputs": 6,
+      "additions": 0,
+      "scratch_roles": 6,
+      "nonzero_coefficients": 6,
+      "all_output_supports_exact": true,
+      "all_additions_disjoint": true,
+      "circuit_sha256": "da74af48cf62093ef97022bced929a495c4ab668a0e7368aa687ce54d36f7673"
+    },
+    {
+      "name": "sergeev",
+      "n": 4,
+      "inputs": 6,
+      "outputs": 6,
+      "additions": 0,
+      "scratch_roles": 6,
+      "nonzero_coefficients": 6,
+      "all_output_supports_exact": true,
+      "all_additions_disjoint": true,
+      "circuit_sha256": "da74af48cf62093ef97022bced929a495c4ab668a0e7368aa687ce54d36f7673"
+    },
+    {
+      "name": "interval",
+      "n": 4,
+      "inputs": 6,
+      "outputs": 6,
+      "additions": 0,
+      "scratch_roles": 6,
+      "nonzero_coefficients": 6,
+      "all_output_supports_exact": true,
+      "all_additions_disjoint": true,
+      "circuit_sha256": "da74af48cf62093ef97022bced929a495c4ab668a0e7368aa687ce54d36f7673"
+    },
+    {
+      "name": "paired",
+      "n": 5,
+      "inputs": 10,
+      "outputs": 10,
+      "additions": 20,
+      "scratch_roles": 30,
+      "nonzero_coefficients": 30,
+      "all_output_supports_exact": true,
+      "all_additions_disjoint": true,
+      "circuit_sha256": "53b3e55de2a46bdf65736d01471cd926b9ac952d5d51b3e2bacd15b2dfae1735"
+    },
+    {
+      "name": "sergeev",
+      "n": 5,
+      "inputs": 10,
+      "outputs": 10,
+      "additions": 20,
+      "scratch_roles": 30,
+      "nonzero_coefficients": 30,
+      "all_output_supports_exact": true,
+      "all_additions_disjoint": true,
+      "circuit_sha256": "e04b7bdf0a64589cb7a8bb8d742c6df90d5237938fa4b50e4b990b54e44c8445"
+    },
+    {
+      "name": "interval",
+      "n": 5,
+      "inputs": 10,
+      "outputs": 10,
+      "additions": 20,
+      "scratch_roles": 30,
+      "nonzero_coefficients": 30,
+      "all_output_supports_exact": true,
+      "all_additions_disjoint": true,
+      "circuit_sha256": "b10145de0bc036df69ee4ed8eea88dc54614a0b38307e12c1314023020c89a5c"
+    },
+    {
+      "name": "paired",
+      "n": 6,
+      "inputs": 15,
+      "outputs": 15,
+      "additions": 51,
+      "scratch_roles": 66,
+      "nonzero_coefficients": 90,
+      "all_output_supports_exact": true,
+      "all_additions_disjoint": true,
+      "circuit_sha256": "41f02ba28a0c132846233fcbd746691915a996d2c0dbbe4362452d5dd78c72d1"
+    },
+    {
+      "name": "sergeev",
+      "n": 6,
+      "inputs": 15,
+      "outputs": 15,
+      "additions": 51,
+      "scratch_roles": 66,
+      "nonzero_coefficients": 90,
+      "all_output_supports_exact": true,
+      "all_additions_disjoint": true,
+      "circuit_sha256": "83f1e8ed7153587761b42aa585c08a55c3da9bed6924892b1adeddee5449de54"
+    },
+    {
+      "name": "interval",
+      "n": 6,
+      "inputs": 15,
+      "outputs": 15,
+      "additions": 52,
+      "scratch_roles": 67,
+      "nonzero_coefficients": 90,
+      "all_output_supports_exact": true,
+      "all_additions_disjoint": true,
+      "circuit_sha256": "2b6f217a3e378eef5e382beab14345ce3e8992eecdc0b2e3bad2fa02bb57787c"
+    },
+    {
+      "name": "paired",
+      "n": 7,
+      "inputs": 21,
+      "outputs": 21,
+      "additions": 90,
+      "scratch_roles": 111,
+      "nonzero_coefficients": 210,
+      "all_output_supports_exact": true,
+      "all_additions_disjoint": true,
+      "circuit_sha256": "8cdd9acc82636605cc0eaf0f60f5c5615b108257a56f90c2e7dd3edd996b8f58"
+    },
+    {
+      "name": "sergeev",
+      "n": 7,
+      "inputs": 21,
+      "outputs": 21,
+      "additions": 92,
+      "scratch_roles": 113,
+      "nonzero_coefficients": 210,
+      "all_output_supports_exact": true,
+      "all_additions_disjoint": true,
+      "circuit_sha256": "d759736d8926654a468d86c256eeb56bfd37b1c983298aa01206570ef0a99350"
+    },
+    {
+      "name": "interval",
+      "n": 7,
+      "inputs": 21,
+      "outputs": 21,
+      "additions": 96,
+      "scratch_roles": 117,
+      "nonzero_coefficients": 210,
+      "all_output_supports_exact": true,
+      "all_additions_disjoint": true,
+      "circuit_sha256": "3ab0eb0d898ed650d13fa77d681ab3b94a572067ba81b74a995352e27d8141a3"
+    },
+    {
+      "name": "paired",
+      "n": 8,
+      "inputs": 28,
+      "outputs": 28,
+      "additions": 142,
+      "scratch_roles": 170,
+      "nonzero_coefficients": 420,
+      "all_output_supports_exact": true,
+      "all_additions_disjoint": true,
+      "circuit_sha256": "5896371ae9303be3db8c4dc008ba834872fac62de7c6d8957af614db191ec645"
+    },
+    {
+      "name": "sergeev",
+      "n": 8,
+      "inputs": 28,
+      "outputs": 28,
+      "additions": 144,
+      "scratch_roles": 172,
+      "nonzero_coefficients": 420,
+      "all_output_supports_exact": true,
+      "all_additions_disjoint": true,
+      "circuit_sha256": "06cc48a22308302df95d7b4bb4d9d428f83d84ac962e54b11bdeac1d604a6da6"
+    },
+    {
+      "name": "interval",
+      "n": 8,
+      "inputs": 28,
+      "outputs": 28,
+      "additions": 152,
+      "scratch_roles": 180,
+      "nonzero_coefficients": 420,
+      "all_output_supports_exact": true,
+      "all_additions_disjoint": true,
+      "circuit_sha256": "6210e1e9305081748281e63893984f6ee0becacf4f13307e655665c88fd8ca95"
+    },
+    {
+      "name": "paired",
+      "n": 16,
+      "inputs": 120,
+      "outputs": 120,
+      "additions": 842,
+      "scratch_roles": 962,
+      "nonzero_coefficients": 10920,
+      "all_output_supports_exact": true,
+      "all_additions_disjoint": true,
+      "circuit_sha256": "28ab7eb9c788a6d2c7e561f64fe502750a1a101e3a8ce72b1902bfab05dd90ea"
+    },
+    {
+      "name": "sergeev",
+      "n": 16,
+      "inputs": 120,
+      "outputs": 120,
+      "additions": 926,
+      "scratch_roles": 1046,
+      "nonzero_coefficients": 10920,
+      "all_output_supports_exact": true,
+      "all_additions_disjoint": true,
+      "circuit_sha256": "e13da1ef63016500fef4c1802a5a2d66b06a01061eb085e36c2ff59099318dca"
+    },
+    {
+      "name": "interval",
+      "n": 16,
+      "inputs": 120,
+      "outputs": 120,
+      "additions": 1032,
+      "scratch_roles": 1152,
+      "nonzero_coefficients": 10920,
+      "all_output_supports_exact": true,
+      "all_additions_disjoint": true,
+      "circuit_sha256": "ce9c998006b3d09c52f6aaaad007c35aeeaf814c0bb95e8adbd4b5ecb55e4b66"
+    },
+    {
+      "name": "paired",
+      "n": 32,
+      "inputs": 496,
+      "outputs": 496,
+      "additions": 3970,
+      "scratch_roles": 4466,
+      "nonzero_coefficients": 215760,
+      "all_output_supports_exact": true,
+      "all_additions_disjoint": true,
+      "circuit_sha256": "5936ca5ba6de157555ea86ef1d8dd38fc588cca1eae95aec4b7228979335bd7a"
+    },
+    {
+      "name": "sergeev",
+      "n": 32,
+      "inputs": 496,
+      "outputs": 496,
+      "additions": 4442,
+      "scratch_roles": 4938,
+      "nonzero_coefficients": 215760,
+      "all_output_supports_exact": true,
+      "all_additions_disjoint": true,
+      "circuit_sha256": "a37e929a2c3ac74b37b7ee2bb2831395d754b1da65eab483bb8c00bb51f6a514"
+    },
+    {
+      "name": "interval",
+      "n": 32,
+      "inputs": 496,
+      "outputs": 496,
+      "additions": 5096,
+      "scratch_roles": 5592,
+      "nonzero_coefficients": 215760,
+      "all_output_supports_exact": true,
+      "all_additions_disjoint": true,
+      "circuit_sha256": "ee661e3d7a70bbc04d33e11eb56d2277210dae80005775c0cce2421916a86283"
+    },
+    {
+      "name": "paired",
+      "n": 49,
+      "inputs": 1176,
+      "outputs": 1176,
+      "additions": 9813,
+      "scratch_roles": 10989,
+      "nonzero_coefficients": 1271256,
+      "all_output_supports_exact": true,
+      "all_additions_disjoint": true,
+      "circuit_sha256": "ffeb0732444e4b9e907ef3ae59b9dccaf0937d99372ecacf27d68230333fd8c2"
+    },
+    {
+      "name": "sergeev",
+      "n": 49,
+      "inputs": 1176,
+      "outputs": 1176,
+      "additions": 11023,
+      "scratch_roles": 12199,
+      "nonzero_coefficients": 1271256,
+      "all_output_supports_exact": true,
+      "all_additions_disjoint": true,
+      "circuit_sha256": "1117d099b6a98d07e39e7c21dc75e95432dd4a8df7652a70711a016a067b21f9"
+    },
+    {
+      "name": "interval",
+      "n": 49,
+      "inputs": 1176,
+      "outputs": 1176,
+      "additions": 12780,
+      "scratch_roles": 13956,
+      "nonzero_coefficients": 1271256,
+      "all_output_supports_exact": true,
+      "all_additions_disjoint": true,
+      "circuit_sha256": "347943672ca8428eedb0c3e243ef8f08e80643a40e6770812d6d9d0c3510f170"
+    },
+    {
+      "name": "paired",
+      "n": 64,
+      "inputs": 2016,
+      "outputs": 2016,
+      "additions": 17138,
+      "scratch_roles": 19154,
+      "nonzero_coefficients": 3812256,
+      "all_output_supports_exact": true,
+      "all_additions_disjoint": true,
+      "circuit_sha256": "a3e0dbc40d21db0e1d103f446d3c5a84a0d330abf1e2edbb8e60ff255fb590bb"
+    },
+    {
+      "name": "sergeev",
+      "n": 64,
+      "inputs": 2016,
+      "outputs": 2016,
+      "additions": 19250,
+      "scratch_roles": 21266,
+      "nonzero_coefficients": 3812256,
+      "all_output_supports_exact": true,
+      "all_additions_disjoint": true,
+      "circuit_sha256": "ded8041a55d907686526aa8b4a863019deb788008736372df7384812141a3891"
+    },
+    {
+      "name": "interval",
+      "n": 64,
+      "inputs": 2016,
+      "outputs": 2016,
+      "additions": 22440,
+      "scratch_roles": 24456,
+      "nonzero_coefficients": 3812256,
+      "all_output_supports_exact": true,
+      "all_additions_disjoint": true,
+      "circuit_sha256": "bb74c3d416a28cecac4e94d6c4e13e5efb1e1f3eecec141579591973ae85401a"
+    }
+  ],
+  "summaries": [
+    {
+      "vertices": 19,
+      "pair_universe": 16,
+      "kind": 1,
+      "baseline": "sergeev",
+      "cpu": {
+        "reduction_pct": 8.782867596771348,
+        "ci95_low_pct": 8.442088320950603,
+        "ci95_high_pct": 9.143796321875797,
+        "baseline_median_ns": 32170.7385,
+        "candidate_median_ns": 29275.391,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 8.782942012400918,
+        "ci95_low_pct": 8.441779318907205,
+        "ci95_high_pct": 9.146365529954892,
+        "baseline_median_ns": 32171.875,
+        "candidate_median_ns": 29277.343500000003,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 52,
+      "pair_universe": 49,
+      "kind": 3,
+      "baseline": "interval",
+      "cpu": {
+        "reduction_pct": 42.18158046216568,
+        "ci95_low_pct": 41.65804481735221,
+        "ci95_high_pct": 42.69666967703961,
+        "baseline_median_ns": 2024625.0,
+        "candidate_median_ns": 1164968.75,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 42.21212723088811,
+        "ci95_low_pct": 41.68245764058543,
+        "ci95_high_pct": 42.74520768201005,
+        "baseline_median_ns": 2025500.0,
+        "candidate_median_ns": 1165000.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 67,
+      "pair_universe": 64,
+      "kind": 2,
+      "baseline": "interval",
+      "cpu": {
+        "reduction_pct": 41.572472149631054,
+        "ci95_low_pct": 41.24712773757234,
+        "ci95_high_pct": 41.8922240279612,
+        "baseline_median_ns": 4638937.5,
+        "candidate_median_ns": 2702750.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 41.6626815916699,
+        "ci95_low_pct": 41.26610023998476,
+        "ci95_high_pct": 42.101733905089404,
+        "baseline_median_ns": 4639000.0,
+        "candidate_median_ns": 2703000.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 52,
+      "pair_universe": 49,
+      "kind": 3,
+      "baseline": "sergeev",
+      "cpu": {
+        "reduction_pct": 12.417376131729052,
+        "ci95_low_pct": 11.95190983955704,
+        "ci95_high_pct": 12.970776177423327,
+        "baseline_median_ns": 1321380.125,
+        "candidate_median_ns": 1158890.625,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 12.264394662880672,
+        "ci95_low_pct": 11.624289911594799,
+        "ci95_high_pct": 12.936744323082527,
+        "baseline_median_ns": 1321375.0,
+        "candidate_median_ns": 1159250.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 35,
+      "pair_universe": 32,
+      "kind": 1,
+      "baseline": "interval",
+      "cpu": {
+        "reduction_pct": 41.41299900473331,
+        "ci95_low_pct": 41.09107369509467,
+        "ci95_high_pct": 41.77321581981332,
+        "baseline_median_ns": 510614.5625,
+        "candidate_median_ns": 298973.9375,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 41.46389880612589,
+        "ci95_low_pct": 41.110767127233714,
+        "ci95_high_pct": 41.86466586109567,
+        "baseline_median_ns": 510625.0,
+        "candidate_median_ns": 299000.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 67,
+      "pair_universe": 64,
+      "kind": 2,
+      "baseline": "failure_tree",
+      "cpu": {
+        "reduction_pct": -106.55621497731089,
+        "ci95_low_pct": -108.24443089296594,
+        "ci95_high_pct": -104.66677374526836,
+        "baseline_median_ns": 1313854.25,
+        "candidate_median_ns": 2734307.25,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": -106.69709136870563,
+        "ci95_low_pct": -108.47560894498302,
+        "ci95_high_pct": -104.71614800475382,
+        "baseline_median_ns": 1313875.0,
+        "candidate_median_ns": 2734375.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 35,
+      "pair_universe": 32,
+      "kind": 2,
+      "baseline": "failure_tree",
+      "cpu": {
+        "reduction_pct": -78.3249070683749,
+        "ci95_low_pct": -79.03251577417095,
+        "ci95_high_pct": -77.548320846762,
+        "baseline_median_ns": 170147.797,
+        "candidate_median_ns": 304085.9535,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": -78.42623674287483,
+        "ci95_low_pct": -79.20506097742712,
+        "ci95_high_pct": -77.5779943304789,
+        "baseline_median_ns": 170203.125,
+        "candidate_median_ns": 304140.625,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 19,
+      "pair_universe": 16,
+      "kind": 1,
+      "baseline": "failure_tree",
+      "cpu": {
+        "reduction_pct": 26.58702327318876,
+        "ci95_low_pct": 26.03804439619779,
+        "ci95_high_pct": 27.18260975584178,
+        "baseline_median_ns": 40362.6285,
+        "candidate_median_ns": 29725.586,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 26.491920832094372,
+        "ci95_low_pct": 25.884962610872897,
+        "ci95_high_pct": 27.127504017295657,
+        "baseline_median_ns": 40367.1875,
+        "candidate_median_ns": 29730.468999999997,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 52,
+      "pair_universe": 49,
+      "kind": 1,
+      "baseline": "failure_tree",
+      "cpu": {
+        "reduction_pct": -16.918611429536657,
+        "ci95_low_pct": -17.41951746887731,
+        "ci95_high_pct": -16.366236317365157,
+        "baseline_median_ns": 993427.125,
+        "candidate_median_ns": 1162359.375,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": -16.932021554343013,
+        "ci95_low_pct": -17.431805492237217,
+        "ci95_high_pct": -16.382026622883437,
+        "baseline_median_ns": 993500.0,
+        "candidate_median_ns": 1163250.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 35,
+      "pair_universe": 32,
+      "kind": 1,
+      "baseline": "sergeev",
+      "cpu": {
+        "reduction_pct": 16.588402022980464,
+        "ci95_low_pct": 16.21529799111412,
+        "ci95_high_pct": 17.018268280927394,
+        "baseline_median_ns": 354162.75,
+        "candidate_median_ns": 295736.96900000004,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 16.59363697248987,
+        "ci95_low_pct": 16.216581476019286,
+        "ci95_high_pct": 17.02944149738791,
+        "baseline_median_ns": 354187.5,
+        "candidate_median_ns": 295781.25,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 35,
+      "pair_universe": 32,
+      "kind": 0,
+      "baseline": "sergeev",
+      "cpu": {
+        "reduction_pct": 13.036636563597991,
+        "ci95_low_pct": 12.59294808489918,
+        "ci95_high_pct": 13.532481647836303,
+        "baseline_median_ns": 353824.21849999996,
+        "candidate_median_ns": 305362.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 13.03372713469767,
+        "ci95_low_pct": 12.572353972495588,
+        "ci95_high_pct": 13.545802709553179,
+        "baseline_median_ns": 353937.5,
+        "candidate_median_ns": 305500.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 52,
+      "pair_universe": 49,
+      "kind": 1,
+      "baseline": "interval",
+      "cpu": {
+        "reduction_pct": 42.17148388262789,
+        "ci95_low_pct": 41.54673583348898,
+        "ci95_high_pct": 42.87811222418757,
+        "baseline_median_ns": 1987687.5,
+        "candidate_median_ns": 1149416.75,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 42.18453046132213,
+        "ci95_low_pct": 41.535736324121956,
+        "ci95_high_pct": 42.94004379558699,
+        "baseline_median_ns": 1988750.0,
+        "candidate_median_ns": 1150000.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 35,
+      "pair_universe": 32,
+      "kind": 2,
+      "baseline": "interval",
+      "cpu": {
+        "reduction_pct": 42.028034953603,
+        "ci95_low_pct": 41.25224745946363,
+        "ci95_high_pct": 42.76308495363702,
+        "baseline_median_ns": 533713.5625,
+        "candidate_median_ns": 311161.5,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 42.11023168922379,
+        "ci95_low_pct": 41.28334834833929,
+        "ci95_high_pct": 42.81483200875994,
+        "baseline_median_ns": 533750.0,
+        "candidate_median_ns": 311125.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 52,
+      "pair_universe": 49,
+      "kind": 2,
+      "baseline": "interval",
+      "cpu": {
+        "reduction_pct": 41.7275803787275,
+        "ci95_low_pct": 41.230131289824776,
+        "ci95_high_pct": 42.24655931815048,
+        "baseline_median_ns": 1978041.5,
+        "candidate_median_ns": 1156771.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 41.711025250901216,
+        "ci95_low_pct": 41.189470411125306,
+        "ci95_high_pct": 42.243194316460595,
+        "baseline_median_ns": 1978000.0,
+        "candidate_median_ns": 1156750.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 19,
+      "pair_universe": 16,
+      "kind": 0,
+      "baseline": "sergeev",
+      "cpu": {
+        "reduction_pct": 8.057132792573773,
+        "ci95_low_pct": 7.503296833229866,
+        "ci95_high_pct": 8.518365593540288,
+        "baseline_median_ns": 32534.9925,
+        "candidate_median_ns": 29867.836,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 8.063187544548732,
+        "ci95_low_pct": 7.509388507270243,
+        "ci95_high_pct": 8.525341061663594,
+        "baseline_median_ns": 32542.968500000003,
+        "candidate_median_ns": 29867.187,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 19,
+      "pair_universe": 16,
+      "kind": 3,
+      "baseline": "sergeev",
+      "cpu": {
+        "reduction_pct": 8.9123447837118,
+        "ci95_low_pct": 8.221197729534103,
+        "ci95_high_pct": 9.804854395661112,
+        "baseline_median_ns": 32540.3635,
+        "candidate_median_ns": 29394.8595,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 9.070988553403648,
+        "ci95_low_pct": 8.233674991547913,
+        "ci95_high_pct": 10.209453912762157,
+        "baseline_median_ns": 32542.968500000003,
+        "candidate_median_ns": 29398.4375,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 35,
+      "pair_universe": 32,
+      "kind": 1,
+      "baseline": "failure_tree",
+      "cpu": {
+        "reduction_pct": -6.453129572998595,
+        "ci95_low_pct": -6.893743350072001,
+        "ci95_high_pct": -6.0046680579546985,
+        "baseline_median_ns": 282257.812,
+        "candidate_median_ns": 301205.71900000004,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": -6.283627948809878,
+        "ci95_low_pct": -6.7875336627950755,
+        "ci95_high_pct": -5.844282063073347,
+        "baseline_median_ns": 282281.25,
+        "candidate_median_ns": 301218.75,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 52,
+      "pair_universe": 49,
+      "kind": 2,
+      "baseline": "failure_tree",
+      "cpu": {
+        "reduction_pct": -97.66336251417005,
+        "ci95_low_pct": -99.38375779323492,
+        "ci95_high_pct": -95.87381949628313,
+        "baseline_median_ns": 605734.375,
+        "candidate_median_ns": 1205880.1875,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": -97.63963838848426,
+        "ci95_low_pct": -99.64227582563589,
+        "ci95_high_pct": -95.56394557700702,
+        "baseline_median_ns": 606000.0,
+        "candidate_median_ns": 1206125.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 52,
+      "pair_universe": 49,
+      "kind": 0,
+      "baseline": "failure_tree",
+      "cpu": {
+        "reduction_pct": -92.69220326267408,
+        "ci95_low_pct": -93.65581931809137,
+        "ci95_high_pct": -91.72592740758556,
+        "baseline_median_ns": 608862.0,
+        "candidate_median_ns": 1181565.125,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": -92.42698218848406,
+        "ci95_low_pct": -93.64184568104751,
+        "ci95_high_pct": -91.10126311170934,
+        "baseline_median_ns": 608875.0,
+        "candidate_median_ns": 1181812.5,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 35,
+      "pair_universe": 32,
+      "kind": 2,
+      "baseline": "sergeev",
+      "cpu": {
+        "reduction_pct": 16.25616273093291,
+        "ci95_low_pct": 15.612832764677309,
+        "ci95_high_pct": 16.876910178024673,
+        "baseline_median_ns": 356684.875,
+        "candidate_median_ns": 300231.75,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 16.456808017396472,
+        "ci95_low_pct": 15.63444220067165,
+        "ci95_high_pct": 17.380845305377335,
+        "baseline_median_ns": 356687.5,
+        "candidate_median_ns": 300250.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 67,
+      "pair_universe": 64,
+      "kind": 2,
+      "baseline": "sergeev",
+      "cpu": {
+        "reduction_pct": 9.895406079862457,
+        "ci95_low_pct": 9.585970353222262,
+        "ci95_high_pct": 10.192648135374904,
+        "baseline_median_ns": 3006614.5,
+        "candidate_median_ns": 2709156.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 9.911114315396208,
+        "ci95_low_pct": 9.609779309865418,
+        "ci95_high_pct": 10.199229539249878,
+        "baseline_median_ns": 3010750.0,
+        "candidate_median_ns": 2709250.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 35,
+      "pair_universe": 32,
+      "kind": 0,
+      "baseline": "interval",
+      "cpu": {
+        "reduction_pct": 41.361063335341285,
+        "ci95_low_pct": 40.9765766892656,
+        "ci95_high_pct": 41.77330400845365,
+        "baseline_median_ns": 531958.3125,
+        "candidate_median_ns": 307468.75,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 41.344462457358446,
+        "ci95_low_pct": 40.940693663836626,
+        "ci95_high_pct": 41.76833253530909,
+        "baseline_median_ns": 532000.0,
+        "candidate_median_ns": 307687.5,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 19,
+      "pair_universe": 16,
+      "kind": 2,
+      "baseline": "interval",
+      "cpu": {
+        "reduction_pct": 42.39899719434608,
+        "ci95_low_pct": 42.00935633699267,
+        "ci95_high_pct": 42.700549747154845,
+        "baseline_median_ns": 51283.851500000004,
+        "candidate_median_ns": 29569.008,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 42.50017184120748,
+        "ci95_low_pct": 42.03348046535342,
+        "ci95_high_pct": 42.938227051816135,
+        "baseline_median_ns": 51289.0625,
+        "candidate_median_ns": 29578.125,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 35,
+      "pair_universe": 32,
+      "kind": 3,
+      "baseline": "sergeev",
+      "cpu": {
+        "reduction_pct": 16.096809706445082,
+        "ci95_low_pct": 15.335017371384662,
+        "ci95_high_pct": 16.846388997146523,
+        "baseline_median_ns": 356526.063,
+        "candidate_median_ns": 297994.8125,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 15.933482851536185,
+        "ci95_low_pct": 15.172909823481618,
+        "ci95_high_pct": 16.73327325202537,
+        "baseline_median_ns": 356656.25,
+        "candidate_median_ns": 298000.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 67,
+      "pair_universe": 64,
+      "kind": 1,
+      "baseline": "failure_tree",
+      "cpu": {
+        "reduction_pct": -21.917498699532878,
+        "ci95_low_pct": -22.897925598013668,
+        "ci95_high_pct": -20.85895167147733,
+        "baseline_median_ns": 2217625.25,
+        "candidate_median_ns": 2697031.25,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": -21.940066471240314,
+        "ci95_low_pct": -22.961050404201888,
+        "ci95_high_pct": -20.842563180452277,
+        "baseline_median_ns": 2217750.0,
+        "candidate_median_ns": 2697500.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 67,
+      "pair_universe": 64,
+      "kind": 1,
+      "baseline": "sergeev",
+      "cpu": {
+        "reduction_pct": 9.803376976948808,
+        "ci95_low_pct": 8.9547609404957,
+        "ci95_high_pct": 10.59923750114795,
+        "baseline_median_ns": 2988802.0,
+        "candidate_median_ns": 2702739.5,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 9.661650608365768,
+        "ci95_low_pct": 8.857096674556718,
+        "ci95_high_pct": 10.458885511542704,
+        "baseline_median_ns": 2989000.0,
+        "candidate_median_ns": 2703500.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 52,
+      "pair_universe": 49,
+      "kind": 3,
+      "baseline": "failure_tree",
+      "cpu": {
+        "reduction_pct": -45.918281749450365,
+        "ci95_low_pct": -47.63304111237188,
+        "ci95_high_pct": -44.10194566099308,
+        "baseline_median_ns": 790234.375,
+        "candidate_median_ns": 1155619.875,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": -45.88065497440843,
+        "ci95_low_pct": -47.598436530164534,
+        "ci95_high_pct": -44.06774097398183,
+        "baseline_median_ns": 790875.0,
+        "candidate_median_ns": 1155625.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 52,
+      "pair_universe": 49,
+      "kind": 0,
+      "baseline": "sergeev",
+      "cpu": {
+        "reduction_pct": 12.570073967410734,
+        "ci95_low_pct": 11.896547104028999,
+        "ci95_high_pct": 13.320820468440953,
+        "baseline_median_ns": 1346734.375,
+        "candidate_median_ns": 1182036.5,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 12.575612921403856,
+        "ci95_low_pct": 11.909728874990888,
+        "ci95_high_pct": 13.321805354006756,
+        "baseline_median_ns": 1346875.0,
+        "candidate_median_ns": 1182125.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 19,
+      "pair_universe": 16,
+      "kind": 2,
+      "baseline": "failure_tree",
+      "cpu": {
+        "reduction_pct": -0.6472969194355249,
+        "ci95_low_pct": -1.4860521756266731,
+        "ci95_high_pct": 0.1871792566981334,
+        "baseline_median_ns": 29903.969,
+        "candidate_median_ns": 29893.3905,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": -0.4548776115324893,
+        "ci95_low_pct": -1.4441709096193245,
+        "ci95_high_pct": 0.5480190363127968,
+        "baseline_median_ns": 29957.031499999997,
+        "candidate_median_ns": 29906.25,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 67,
+      "pair_universe": 64,
+      "kind": 3,
+      "baseline": "sergeev",
+      "cpu": {
+        "reduction_pct": 9.741502721808558,
+        "ci95_low_pct": 9.303361929582188,
+        "ci95_high_pct": 10.17667748187543,
+        "baseline_median_ns": 2980208.25,
+        "candidate_median_ns": 2701708.25,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 9.635735292577452,
+        "ci95_low_pct": 9.102861051860444,
+        "ci95_high_pct": 10.150121089159514,
+        "baseline_median_ns": 2980250.0,
+        "candidate_median_ns": 2702500.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 67,
+      "pair_universe": 64,
+      "kind": 0,
+      "baseline": "interval",
+      "cpu": {
+        "reduction_pct": 40.88184571163191,
+        "ci95_low_pct": 40.39257331618491,
+        "ci95_high_pct": 41.37177341536161,
+        "baseline_median_ns": 4736145.5,
+        "candidate_median_ns": 2773729.5,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 40.97179190106157,
+        "ci95_low_pct": 40.48633111357335,
+        "ci95_high_pct": 41.4410284948446,
+        "baseline_median_ns": 4736500.0,
+        "candidate_median_ns": 2774500.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 67,
+      "pair_universe": 64,
+      "kind": 3,
+      "baseline": "interval",
+      "cpu": {
+        "reduction_pct": 41.76355623298459,
+        "ci95_low_pct": 41.49023281919268,
+        "ci95_high_pct": 42.0656863528623,
+        "baseline_median_ns": 4585583.5,
+        "candidate_median_ns": 2665041.5,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 41.74540020988234,
+        "ci95_low_pct": 41.46150916811246,
+        "ci95_high_pct": 42.05973940289165,
+        "baseline_median_ns": 4585500.0,
+        "candidate_median_ns": 2665500.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 19,
+      "pair_universe": 16,
+      "kind": 0,
+      "baseline": "failure_tree",
+      "cpu": {
+        "reduction_pct": -29.30258640836798,
+        "ci95_low_pct": -30.465404908249873,
+        "ci95_high_pct": -28.031957102703565,
+        "baseline_median_ns": 23252.7655,
+        "candidate_median_ns": 29950.3595,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": -29.20051779142623,
+        "ci95_low_pct": -30.45896732172575,
+        "ci95_high_pct": -27.80631347729439,
+        "baseline_median_ns": 23253.906499999997,
+        "candidate_median_ns": 29953.125,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 52,
+      "pair_universe": 49,
+      "kind": 0,
+      "baseline": "interval",
+      "cpu": {
+        "reduction_pct": 41.89511492008631,
+        "ci95_low_pct": 41.70567416430876,
+        "ci95_high_pct": 42.11918968776096,
+        "baseline_median_ns": 2017072.75,
+        "candidate_median_ns": 1168812.25,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 41.87105037508686,
+        "ci95_low_pct": 41.64430746716092,
+        "ci95_high_pct": 42.11981096440195,
+        "baseline_median_ns": 2017000.0,
+        "candidate_median_ns": 1169000.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 19,
+      "pair_universe": 16,
+      "kind": 2,
+      "baseline": "sergeev",
+      "cpu": {
+        "reduction_pct": 9.073214255008299,
+        "ci95_low_pct": 8.34149480891747,
+        "ci95_high_pct": 9.891793105576019,
+        "baseline_median_ns": 31846.187,
+        "candidate_median_ns": 29196.121,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 9.077046422775792,
+        "ci95_low_pct": 8.33837236379572,
+        "ci95_high_pct": 9.899222182791156,
+        "baseline_median_ns": 31851.5625,
+        "candidate_median_ns": 29199.218999999997,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 19,
+      "pair_universe": 16,
+      "kind": 3,
+      "baseline": "failure_tree",
+      "cpu": {
+        "reduction_pct": 1.1501146417096986,
+        "ci95_low_pct": 0.30943324135461747,
+        "ci95_high_pct": 2.123883942755689,
+        "baseline_median_ns": 29867.6755,
+        "candidate_median_ns": 29756.8355,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 1.1814057971037628,
+        "ci95_low_pct": 0.3298650817111892,
+        "ci95_high_pct": 2.1762274406135984,
+        "baseline_median_ns": 29882.813,
+        "candidate_median_ns": 29761.718500000003,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 52,
+      "pair_universe": 49,
+      "kind": 1,
+      "baseline": "sergeev",
+      "cpu": {
+        "reduction_pct": 11.540848804389958,
+        "ci95_low_pct": 10.233011848799178,
+        "ci95_high_pct": 12.763549566259103,
+        "baseline_median_ns": 1322338.5,
+        "candidate_median_ns": 1166739.5,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 11.3813530177164,
+        "ci95_low_pct": 10.024253597046506,
+        "ci95_high_pct": 12.707200312625078,
+        "baseline_median_ns": 1322500.0,
+        "candidate_median_ns": 1166750.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 19,
+      "pair_universe": 16,
+      "kind": 0,
+      "baseline": "interval",
+      "cpu": {
+        "reduction_pct": 41.52314699674869,
+        "ci95_low_pct": 41.01969141651668,
+        "ci95_high_pct": 42.03276231516401,
+        "baseline_median_ns": 51493.492,
+        "candidate_median_ns": 29978.195,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 41.30278625914371,
+        "ci95_low_pct": 40.47980148100964,
+        "ci95_high_pct": 42.005041951711966,
+        "baseline_median_ns": 51500.0,
+        "candidate_median_ns": 29976.5625,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 19,
+      "pair_universe": 16,
+      "kind": 3,
+      "baseline": "interval",
+      "cpu": {
+        "reduction_pct": 41.89827691647765,
+        "ci95_low_pct": 41.595458633719076,
+        "ci95_high_pct": 42.20589952080398,
+        "baseline_median_ns": 51202.148,
+        "candidate_median_ns": 29806.6405,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 41.9034639093904,
+        "ci95_low_pct": 41.60430858127929,
+        "ci95_high_pct": 42.214021061078796,
+        "baseline_median_ns": 51203.125,
+        "candidate_median_ns": 29804.6875,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 19,
+      "pair_universe": 16,
+      "kind": 1,
+      "baseline": "interval",
+      "cpu": {
+        "reduction_pct": 42.02465545549725,
+        "ci95_low_pct": 41.66560893304337,
+        "ci95_high_pct": 42.49877009845883,
+        "baseline_median_ns": 50803.711,
+        "candidate_median_ns": 29368.812,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 42.13335051407686,
+        "ci95_low_pct": 41.65071024801835,
+        "ci95_high_pct": 42.78572968698329,
+        "baseline_median_ns": 50812.5,
+        "candidate_median_ns": 29367.1875,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 35,
+      "pair_universe": 32,
+      "kind": 0,
+      "baseline": "failure_tree",
+      "cpu": {
+        "reduction_pct": -77.84194819242833,
+        "ci95_low_pct": -79.03053927179207,
+        "ci95_high_pct": -76.79236909968404,
+        "baseline_median_ns": 172162.094,
+        "candidate_median_ns": 304965.4845,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": -77.9221555783298,
+        "ci95_low_pct": -79.22161641357066,
+        "ci95_high_pct": -76.8022445609129,
+        "baseline_median_ns": 172203.125,
+        "candidate_median_ns": 304984.375,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 67,
+      "pair_universe": 64,
+      "kind": 0,
+      "baseline": "failure_tree",
+      "cpu": {
+        "reduction_pct": -94.34310130221843,
+        "ci95_low_pct": -95.30042677693726,
+        "ci95_high_pct": -93.47578378869548,
+        "baseline_median_ns": 1412531.375,
+        "candidate_median_ns": 2751526.125,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": -94.5117296591309,
+        "ci95_low_pct": -95.39468912623008,
+        "ci95_high_pct": -93.7017122948227,
+        "baseline_median_ns": 1412500.0,
+        "candidate_median_ns": 2751875.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 67,
+      "pair_universe": 64,
+      "kind": 0,
+      "baseline": "sergeev",
+      "cpu": {
+        "reduction_pct": 11.072138092216777,
+        "ci95_low_pct": 9.891166178828282,
+        "ci95_high_pct": 12.32561575426957,
+        "baseline_median_ns": 3107104.5,
+        "candidate_median_ns": 2768875.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 11.107544567705474,
+        "ci95_low_pct": 9.899309489651264,
+        "ci95_high_pct": 12.373424558176026,
+        "baseline_median_ns": 3107500.0,
+        "candidate_median_ns": 2770000.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 35,
+      "pair_universe": 32,
+      "kind": 3,
+      "baseline": "failure_tree",
+      "cpu": {
+        "reduction_pct": -17.66233184782933,
+        "ci95_low_pct": -18.527057674866796,
+        "ci95_high_pct": -16.864975819337413,
+        "baseline_median_ns": 253450.53100000002,
+        "candidate_median_ns": 298416.688,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": -17.859590403487545,
+        "ci95_low_pct": -18.994421355668866,
+        "ci95_high_pct": -16.85665224522399,
+        "baseline_median_ns": 253500.0,
+        "candidate_median_ns": 298468.75,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 35,
+      "pair_universe": 32,
+      "kind": 3,
+      "baseline": "interval",
+      "cpu": {
+        "reduction_pct": 41.33788869643673,
+        "ci95_low_pct": 41.00104409580808,
+        "ci95_high_pct": 41.63214389506267,
+        "baseline_median_ns": 514299.4375,
+        "candidate_median_ns": 300903.625,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 41.340902783788735,
+        "ci95_low_pct": 41.01005151181481,
+        "ci95_high_pct": 41.63093785064521,
+        "baseline_median_ns": 514375.0,
+        "candidate_median_ns": 300875.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 52,
+      "pair_universe": 49,
+      "kind": 2,
+      "baseline": "sergeev",
+      "cpu": {
+        "reduction_pct": 12.049679271563217,
+        "ci95_low_pct": 11.58192663567219,
+        "ci95_high_pct": 12.559768347675316,
+        "baseline_median_ns": 1321630.375,
+        "candidate_median_ns": 1156828.125,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 12.040149884442686,
+        "ci95_low_pct": 11.571468912593396,
+        "ci95_high_pct": 12.545264149603085,
+        "baseline_median_ns": 1322250.0,
+        "candidate_median_ns": 1156875.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 67,
+      "pair_universe": 64,
+      "kind": 3,
+      "baseline": "failure_tree",
+      "cpu": {
+        "reduction_pct": -55.53733682480002,
+        "ci95_low_pct": -56.36817730632622,
+        "ci95_high_pct": -54.67727904910771,
+        "baseline_median_ns": 1732312.5,
+        "candidate_median_ns": 2695094.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": -55.503367469647216,
+        "ci95_low_pct": -56.344155302862184,
+        "ci95_high_pct": -54.637301092085686,
+        "baseline_median_ns": 1733250.0,
+        "candidate_median_ns": 2695250.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    },
+    {
+      "vertices": 67,
+      "pair_universe": 64,
+      "kind": 1,
+      "baseline": "interval",
+      "cpu": {
+        "reduction_pct": 41.93249629307516,
+        "ci95_low_pct": 41.57452896378335,
+        "ci95_high_pct": 42.26815329555378,
+        "baseline_median_ns": 4652542.0,
+        "candidate_median_ns": 2692375.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      },
+      "wall": {
+        "reduction_pct": 42.03106657743824,
+        "ci95_low_pct": 41.597546930807106,
+        "ci95_high_pct": 42.473722243600406,
+        "baseline_median_ns": 4652000.0,
+        "candidate_median_ns": 2692500.0,
+        "quartets": 15,
+        "bootstrap_block": 3
+      }
+    }
+  ],
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/theory_paths.c": "845cef5f3ee119a370f0afdd57c62b78ab08463f861192558954de7b8a37aec6",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/benchmark_theory_paths.py": "3fbee3805467d7df6c3df6bb6520dd6d0ddacb76c845a7d41057cc6f886e090b",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/screen_theory_transfer.py": "1d1f58cfd06b2c3ee50857dd0c9fea41f561593510b385724b9a2e4549ea5489",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/compare.py": "d39062f684dc872dc37b895723a42e1d31add2dce640132a5d1114c24f203fac",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/exclusion_circuit.py": "b253f9d7318becda1c1f3b24e2287ed44a9c27fcea00cf9d531afb950d0457a0",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/paired_exclusion_circuit.py": "8f05f04cf06217befd6d0ee0f2d7d0c5c5eb32cfab8c9a8ca7917fd6d620b7d2",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/theory-paths": "b8b62246f808e533e776cacd714f14cbc78d8f914db71f672bfa32d95c8d03ca",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/raw.jsonl": "0b08422c50dc092ed3d30aaddf446efee1a921eb3f93496d17a1ea58cd72076d",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/paired-4.bin": "f343023d2244b9a4c0a119b9816a2224607ba92793ce149b77bcdffdf016dd62",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/sergeev-4.bin": "f343023d2244b9a4c0a119b9816a2224607ba92793ce149b77bcdffdf016dd62",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/interval-4.bin": "f343023d2244b9a4c0a119b9816a2224607ba92793ce149b77bcdffdf016dd62",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/paired-5.bin": "e821ba504e78d1cde31aee40836021583113508668f0db3d20e1e5fd8128b726",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/sergeev-5.bin": "a7744469e413d1bb2de36ccf567a71e466521c5a7937295cb47b2e0ed9f8448a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/interval-5.bin": "eca9ee78e4aa48d408b9162029a3df771a7e396ac69553032dc71ab545aea4f5",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/paired-6.bin": "4e84dcce681b39fa0e6c858c40515855ec11494441cdada374d67f53cf8a1af8",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/sergeev-6.bin": "165032abdf5b2b6dc8dd1de4043c0ef4ffc359e0746a2cc9a5bec21c89016eec",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/interval-6.bin": "9612260552861be681584587fa3edce952de9b156140f15fd5444db65f482c37",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/paired-7.bin": "e65462705a7d6e250869d4299be6bd5b3545a9e1e2240b022b11ca5f25919556",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/sergeev-7.bin": "3fb3aa85b1995fac504964896e6759dea3432095af194aa2997753bf7d7f5b4e",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/interval-7.bin": "98274263f2eab2e6c9e52bd82fe075d0f45db22ebcf4198febda084822d627a7",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/paired-8.bin": "7bf745f052d453d64db0f15534daede799117c41b9651d2b9b2e0cc6525d926d",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/sergeev-8.bin": "2cca1c1c578a1c7df308efbb3e255dd0f77abb7c07975775e039bdec2dac79be",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/interval-8.bin": "0ac53dc41da27167375617e73d00e05e36152d944ce0894d997c6849d7d01fa3",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/paired-16.bin": "4e97a20b064e9ae2bc7f3bf399671e10b805934d82bb9962f33db0c15b08daf9",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/sergeev-16.bin": "dde60d8e780490b48c22e718dfbcb2f0490e28f5f70d722d2341aeed6d6af2aa",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/interval-16.bin": "501b9762323831c6c845e42fd6b2e8072225cce4592e238555031e8b8bdc29f8",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/paired-32.bin": "4cf3759f8638beb1768165e9f8708c29488b69be49618a9f9a2e8def6da01d38",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/sergeev-32.bin": "998af04fec7c54f65bc2e458bfa5de6d3c42e65724617b6899b071a77c202cd7",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/interval-32.bin": "4aa9b56d2042507164f3e66a4be9b007a4d000a70ff2b23f3963854ae5009947",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/paired-49.bin": "b2a1ed2846371b239b441625b4abaa68a45d7dafa269730511656d309e0139e1",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/sergeev-49.bin": "156f958a94e00ea2e7c2fd2c66b581d58dbbdd26da7a5535c3cbfe60bf7d8302",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/interval-49.bin": "ed8fab0e46cd8ca3435612c15eed058aaf1d2fee59bbeb4256f1e3c54f1da264",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/paired-64.bin": "be187d8acee5933168e8c8de4ed5711158df014a0fb7d7ff6cccacf37f3aa598",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/sergeev-64.bin": "9e23bfd049552f1661b639e332a2ebb97b58e4732e32f47c145b73d122abade9",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/interval-64.bin": "63457eb92f0e932517f9647c2739032f87260b5ebb583cb1efe5dbffc23332a7"
+  }
+}

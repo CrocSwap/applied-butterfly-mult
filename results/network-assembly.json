@@ -1,0 +1,67 @@
+{
+  "functions": [
+    {
+      "source": "results/network-checks/network-control-fft-4.asm",
+      "instructions": 191,
+      "shuffle_instructions": 10,
+      "stack_address_references": 0,
+      "child_calls_or_tail_branches": []
+    },
+    {
+      "source": "results/network-checks/network-control-fft-5.asm",
+      "instructions": 487,
+      "shuffle_instructions": 20,
+      "stack_address_references": 10,
+      "child_calls_or_tail_branches": []
+    },
+    {
+      "source": "results/network-checks/network-control-ifft-4.asm",
+      "instructions": 195,
+      "shuffle_instructions": 12,
+      "stack_address_references": 0,
+      "child_calls_or_tail_branches": []
+    },
+    {
+      "source": "results/network-checks/network-control-ifft-5.asm",
+      "instructions": 504,
+      "shuffle_instructions": 24,
+      "stack_address_references": 22,
+      "child_calls_or_tail_branches": []
+    },
+    {
+      "source": "results/network-checks/network-two-lane-fft-4.asm",
+      "instructions": 210,
+      "shuffle_instructions": 8,
+      "stack_address_references": 0,
+      "child_calls_or_tail_branches": []
+    },
+    {
+      "source": "results/network-checks/network-two-lane-fft-5.asm",
+      "instructions": 140,
+      "shuffle_instructions": 0,
+      "stack_address_references": 6,
+      "child_calls_or_tail_branches": [
+        "bl\t_sd_fft_basecase_4_0",
+        "b\t_sd_fft_basecase_4_0"
+      ]
+    },
+    {
+      "source": "results/network-checks/network-two-lane-ifft-4.asm",
+      "instructions": 213,
+      "shuffle_instructions": 8,
+      "stack_address_references": 0,
+      "child_calls_or_tail_branches": []
+    },
+    {
+      "source": "results/network-checks/network-two-lane-ifft-5.asm",
+      "instructions": 142,
+      "shuffle_instructions": 0,
+      "stack_address_references": 8,
+      "child_calls_or_tail_branches": [
+        "bl\t_sd_ifft_basecase_4_0",
+        "bl\t_sd_ifft_basecase_4_0"
+      ]
+    }
+  ],
+  "scope": "Static instructions in named function bodies, excluding child bodies. Stack references include ABI saves, not only spills. These counts do not predict runtime."
+}

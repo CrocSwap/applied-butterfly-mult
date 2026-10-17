@@ -1,0 +1,14 @@
+{
+  "triplet": "aarch64-apple-darwin14",
+  "git-tree-sha256": "ee05684f9d5751548e80469aa8f381093b070ac8e3ad7a57a223668ea85dbea8",
+  "size": 135953938,
+  "url": "https://julialang-s3.julialang.org/bin/mac/aarch64/1.10/julia-1.10.10-macaarch64.tar.gz",
+  "extension": "tar.gz",
+  "kind": "archive",
+  "asc": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEENnPfUp2QSUd/drN1ZuPH3APW5JUFAmhiuJYACgkQZuPH3APW\n5JUlgg//fZZD4DExYK0444QUEiscfqUQmw26iXjiHGZmPLUzKI2DkNoTXWTxQh5h\nboYmbf9sOr8+5+RypvIHChD6XG/09naX5nZGhqhaH0BkXrFJW97WzY2/fnWoTWOY\neTbAAqrlt5ACwskj4dLAsrfibZB2p/p1h38GRJzFGvA3cRI+BBU03C1GbkR8Xsff\nrORuVbgjmFXirMFsTGy13+m1TWQ/Ozj6x986a/RxrD8XOmO2s56+o3UY414Tnwgd\ntaBrUNOKHNWx+u1Xtl0jXqL1Mx/T6DOQSQg14F2jXB0QGHfXJoI27vYUOHa6AGHc\nW+WMC9O7ARll9JU3KFwjx+ttXVlaV64Og4n+1msC5sJliNUIntlVkFechLfUD+WI\nLrpGx3GqdhLj+gjoF9yFgzc74mDTmQ0v7jahJp5QR1l2UVpbpxAeUvirbV/eq4h9\nrpk9XOYIcWyCru7VBzPInEV4RY5XoELxRqH1zykPqZ5XxD0N2OmRWDpAP4GYyGlp\n1FFL5EnyFBrbFWg7YyQgdLUcRHqHCBQ9HpzLl6TDr6ZHCXeCar4SXBpH1wIsOfE7\nH8cAYxr4ifbfiJL4GvOgxMXx403Sf1QEJqVzliq74kUjKse735t/Ez3rukwa7jut\nPegdkwTbN/JIWz3VriU0rUt0mFqitKye5w6GKXcDodLADeJCDdo=\n=iLA7\n-----END PGP SIGNATURE-----\n",
+  "arch": "aarch64",
+  "git-tree-sha1": "e576cc80e6787ae0b0ac981c025440ccd5a1eef3",
+  "sha256": "52d3f82c50d9402e42298b52edc3d36e0f73e59f81fc8609d22fa094fbad18be",
+  "version": "1.10.10",
+  "os": "mac"
+}

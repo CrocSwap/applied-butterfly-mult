@@ -1,0 +1,178 @@
+{
+  "status": "PASS",
+  "scope": "Exact scalar 2H map over integers/rings; no frame, conditioning or runtime claim",
+  "theory_commit": "d1d6c070f5a8c684727ee7ec35d930f9ebfa9758",
+  "selected_graph_pin_verified": true,
+  "cases": [
+    {
+      "p": 6,
+      "v": 160,
+      "sister_counts": {
+        "local_channel_additions": 500,
+        "query_additions": 420,
+        "center_additions": 84,
+        "center_tree_incidences": 0,
+        "signed_additions": 120,
+        "side_root_uses": 700,
+        "center_roots": 12
+      },
+      "side_producer_additions": 920,
+      "theory": {
+        "additions_subtractions": 1880,
+        "operand_reads": 3760,
+        "result_writes": 1880,
+        "peak_live_temporaries": 267,
+        "retained_output_values": 160,
+        "external_input_values": 160,
+        "schedule": "listed topological order, eager last-use release; no operand overwrite"
+      },
+      "baseline": {
+        "additions_subtractions": 2067,
+        "operand_reads": 4134,
+        "result_writes": 2067,
+        "peak_live_temporaries": 166,
+        "retained_output_values": 160,
+        "external_input_values": 160,
+        "schedule": "listed topological order, eager last-use release; no operand overwrite"
+      },
+      "checks": {
+        "basis_vectors": 160,
+        "dense_reference_fixtures": 6,
+        "checked_outputs": 26560
+      }
+    },
+    {
+      "p": 8,
+      "v": 448,
+      "sister_counts": {
+        "local_channel_additions": 1400,
+        "query_additions": 2856,
+        "center_additions": 272,
+        "center_tree_incidences": 0,
+        "signed_additions": 336,
+        "side_root_uses": 1960,
+        "center_roots": 16
+      },
+      "side_producer_additions": 4256,
+      "theory": {
+        "additions_subtractions": 6944,
+        "operand_reads": 13888,
+        "result_writes": 6944,
+        "peak_live_temporaries": 807,
+        "retained_output_values": 448,
+        "external_input_values": 448,
+        "schedule": "listed topological order, eager last-use release; no operand overwrite"
+      },
+      "baseline": {
+        "additions_subtractions": 5807,
+        "operand_reads": 11614,
+        "result_writes": 5807,
+        "peak_live_temporaries": 454,
+        "retained_output_values": 448,
+        "external_input_values": 448,
+        "schedule": "listed topological order, eager last-use release; no operand overwrite"
+      },
+      "checks": {
+        "basis_vectors": 0,
+        "dense_reference_fixtures": 6,
+        "checked_outputs": 2688
+      }
+    },
+    {
+      "p": 10,
+      "v": 960,
+      "sister_counts": {
+        "local_channel_additions": 3000,
+        "query_additions": 8334,
+        "center_additions": 520,
+        "center_tree_incidences": 0,
+        "signed_additions": 720,
+        "side_root_uses": 4200,
+        "center_roots": 20
+      },
+      "side_producer_additions": 11334,
+      "theory": {
+        "additions_subtractions": 17094,
+        "operand_reads": 34188,
+        "result_writes": 17094,
+        "peak_live_temporaries": 1780,
+        "retained_output_values": 960,
+        "external_input_values": 960,
+        "schedule": "listed topological order, eager last-use release; no operand overwrite"
+      },
+      "baseline": {
+        "additions_subtractions": 12459,
+        "operand_reads": 24918,
+        "result_writes": 12459,
+        "peak_live_temporaries": 966,
+        "retained_output_values": 960,
+        "external_input_values": 960,
+        "schedule": "listed topological order, eager last-use release; no operand overwrite"
+      },
+      "checks": {
+        "basis_vectors": 0,
+        "dense_reference_fixtures": 6,
+        "checked_outputs": 5760
+      }
+    },
+    {
+      "p": 12,
+      "v": 1760,
+      "sister_counts": {
+        "local_channel_additions": 5500,
+        "query_additions": 18259,
+        "center_additions": 1008,
+        "center_tree_incidences": 0,
+        "signed_additions": 1320,
+        "side_root_uses": 7700,
+        "center_roots": 24
+      },
+      "side_producer_additions": 23759,
+      "theory": {
+        "additions_subtractions": 34319,
+        "operand_reads": 68638,
+        "result_writes": 34319,
+        "peak_live_temporaries": 3370,
+        "retained_output_values": 1760,
+        "external_input_values": 1760,
+        "schedule": "listed topological order, eager last-use release; no operand overwrite"
+      },
+      "baseline": {
+        "additions_subtractions": 22855,
+        "operand_reads": 45710,
+        "result_writes": 22855,
+        "peak_live_temporaries": 1766,
+        "retained_output_values": 1760,
+        "external_input_values": 1760,
+        "schedule": "listed topological order, eager last-use release; no operand overwrite"
+      },
+      "checks": {
+        "basis_vectors": 0,
+        "dense_reference_fixtures": 6,
+        "checked_outputs": 10560
+      }
+    }
+  ],
+  "historical_live_fingerprints_verified": 1996,
+  "evolved_external_sources": [
+    {
+      "path": "/Users/colkitt/sith/toys/math/integerMult/README.md",
+      "old_commit": "56b66d58297deca1d7dd130247d720e960f77a37",
+      "historical_sha256": "fd92de31aece76b1f5ff897e6e0dbc38dd3bf67c140579bbcb03a1a11a792668",
+      "current_sha256": "82a51095522b8e69c7fe6af79a12ae907a1cb5e0ee3428bf2af2a188dd6cc4db"
+    }
+  ],
+  "inherited_manifest": "/Users/colkitt/sith/toys/math/butterflyMult/results/pareto-compatibility/completion.json",
+  "inherited_manifest_sha256": "719a643837075c595c41ceed06d68117666e10108caab91375507e0b1bc79a4d",
+  "source_sha256": {
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/paired_cube/graph.py": "c757d47997f2fa42a95c16f6e6855cf8b125216ae3335b3891e305cf1da82855",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/paired_cube/modules.py": "18a1ad8af0a7832b7c5c4791f5b95f76386cfa7e82ad52bfd2758c081ada68c4",
+    "/Users/colkitt/sith/toys/math/integerMult/references/three-stage-cover/pr117/dag.json.gz": "3c034d0aae388ef567a454826f4f48b26fd8a94c71e8ffed4835271b349a783b",
+    "/Users/colkitt/sith/toys/math/integerMult/references/paired-cube/selected-module/SOURCE.json": "51739341346433c85f1c01f4bfbdf8d5f8971dd640899da854b5deb7dc740646",
+    "/Users/colkitt/sith/toys/math/integerMult/notes/paired-cube-construction.tex": "879910dca21dc461dbb568a15214df4ba6632feffb3fb621b546a015bf252bde",
+    "/Users/colkitt/sith/toys/math/integerMult/notes/general-clifford-frames.tex": "c9bb9655b594583c6b4bab8cb485233f1d1e588f83858cf1e4c3530cee8fed54",
+    "/Users/colkitt/sith/toys/math/integerMult/notes/stopped-product-factorization.tex": "70d5a4405e1be9c7b6cfb326bb4ffdf88e5585d1fb3d16c7bb5ad62ac421fae3",
+    "/Users/colkitt/sith/toys/math/integerMult/docs/paired-cube.md": "4fc9c7c73569a5887bedec6e54471b9dde8442fb95e79f9e9f00eef673a9f815"
+  },
+  "script_sha256": "5d2db7a3a228c56e4f0f923d0c31f70dd67b8657898f01199f2f88da2bfe3841"
+}

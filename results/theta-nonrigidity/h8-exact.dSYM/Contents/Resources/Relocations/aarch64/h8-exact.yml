@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/colkitt/sith/toys/math/butterflyMult/results/theta-nonrigidity/h8-exact'
+relocations:     []
+...

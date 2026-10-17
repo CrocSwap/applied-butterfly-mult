@@ -1,0 +1,3278 @@
+[
+  {
+    "case": {
+      "k": 256,
+      "n": 512,
+      "modulus": 18446744073709551557,
+      "bytes_per_symbol": 7,
+      "mode": "batch16",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p18446744073709551557.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p18446744073709551557.bin",
+      "1",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 28672
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 28672
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 256,
+      "n": 512,
+      "modulus": 18446744073709551557,
+      "bytes_per_symbol": 7,
+      "mode": "batch16",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p18446744073709551557.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p18446744073709551557.bin",
+      "1",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 28672
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 28672
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 256,
+      "n": 512,
+      "modulus": 18446744073709551557,
+      "bytes_per_symbol": 7,
+      "mode": "batch16",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p18446744073709551557.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p18446744073709551557.bin",
+      "1",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 28672
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 28672
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 512,
+      "n": 1024,
+      "modulus": 1000000007,
+      "bytes_per_symbol": 3,
+      "mode": "cached",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k512-p1000000007.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k512-p1000000007.bin",
+      "2",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 24576
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 24576
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 512,
+      "n": 1024,
+      "modulus": 1000000007,
+      "bytes_per_symbol": 3,
+      "mode": "cached",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k512-p1000000007.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k512-p1000000007.bin",
+      "2",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 24576
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 24576
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 512,
+      "n": 1024,
+      "modulus": 1000000007,
+      "bytes_per_symbol": 3,
+      "mode": "cached",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k512-p1000000007.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k512-p1000000007.bin",
+      "2",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 24576
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 24576
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 256,
+      "n": 512,
+      "modulus": 1000000007,
+      "bytes_per_symbol": 3,
+      "mode": "cached",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p1000000007.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p1000000007.bin",
+      "2",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 12288
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 12288
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 256,
+      "n": 512,
+      "modulus": 1000000007,
+      "bytes_per_symbol": 3,
+      "mode": "cached",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p1000000007.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p1000000007.bin",
+      "2",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 12288
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 12288
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 256,
+      "n": 512,
+      "modulus": 1000000007,
+      "bytes_per_symbol": 3,
+      "mode": "cached",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p1000000007.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p1000000007.bin",
+      "2",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 12288
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 12288
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 64,
+      "n": 128,
+      "modulus": 1000000007,
+      "bytes_per_symbol": 3,
+      "mode": "batch16",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k64-p1000000007.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k64-p1000000007.bin",
+      "1",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 3072
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 3072
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 64,
+      "n": 128,
+      "modulus": 1000000007,
+      "bytes_per_symbol": 3,
+      "mode": "batch16",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k64-p1000000007.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k64-p1000000007.bin",
+      "1",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 3072
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 3072
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 64,
+      "n": 128,
+      "modulus": 1000000007,
+      "bytes_per_symbol": 3,
+      "mode": "batch16",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k64-p1000000007.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k64-p1000000007.bin",
+      "1",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 3072
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 3072
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 64,
+      "n": 128,
+      "modulus": 1000000007,
+      "bytes_per_symbol": 3,
+      "mode": "cached",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k64-p1000000007.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k64-p1000000007.bin",
+      "2",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 3072
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 3072
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 64,
+      "n": 128,
+      "modulus": 1000000007,
+      "bytes_per_symbol": 3,
+      "mode": "cached",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k64-p1000000007.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k64-p1000000007.bin",
+      "2",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 3072
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 3072
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 64,
+      "n": 128,
+      "modulus": 1000000007,
+      "bytes_per_symbol": 3,
+      "mode": "cached",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k64-p1000000007.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k64-p1000000007.bin",
+      "2",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 3072
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 3072
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 256,
+      "n": 512,
+      "modulus": 1000000007,
+      "bytes_per_symbol": 3,
+      "mode": "changing",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p1000000007.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p1000000007.bin",
+      "0",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 12288
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 12288
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 256,
+      "n": 512,
+      "modulus": 1000000007,
+      "bytes_per_symbol": 3,
+      "mode": "changing",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p1000000007.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p1000000007.bin",
+      "0",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 12288
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 12288
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 256,
+      "n": 512,
+      "modulus": 1000000007,
+      "bytes_per_symbol": 3,
+      "mode": "changing",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p1000000007.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p1000000007.bin",
+      "0",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 12288
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 12288
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 256,
+      "n": 512,
+      "modulus": 18446744073709551557,
+      "bytes_per_symbol": 7,
+      "mode": "changing",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p18446744073709551557.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p18446744073709551557.bin",
+      "0",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 28672
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 28672
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 256,
+      "n": 512,
+      "modulus": 18446744073709551557,
+      "bytes_per_symbol": 7,
+      "mode": "changing",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p18446744073709551557.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p18446744073709551557.bin",
+      "0",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 28672
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 28672
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 256,
+      "n": 512,
+      "modulus": 18446744073709551557,
+      "bytes_per_symbol": 7,
+      "mode": "changing",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p18446744073709551557.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p18446744073709551557.bin",
+      "0",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 28672
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 28672
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 256,
+      "n": 512,
+      "modulus": 1000000007,
+      "bytes_per_symbol": 3,
+      "mode": "batch16",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p1000000007.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p1000000007.bin",
+      "1",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 12288
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 12288
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 256,
+      "n": 512,
+      "modulus": 1000000007,
+      "bytes_per_symbol": 3,
+      "mode": "batch16",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p1000000007.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p1000000007.bin",
+      "1",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 12288
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 12288
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 256,
+      "n": 512,
+      "modulus": 1000000007,
+      "bytes_per_symbol": 3,
+      "mode": "batch16",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p1000000007.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p1000000007.bin",
+      "1",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 12288
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 12288
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 512,
+      "n": 1024,
+      "modulus": 1000000007,
+      "bytes_per_symbol": 3,
+      "mode": "batch16",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k512-p1000000007.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k512-p1000000007.bin",
+      "1",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 24576
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 24576
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 512,
+      "n": 1024,
+      "modulus": 1000000007,
+      "bytes_per_symbol": 3,
+      "mode": "batch16",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k512-p1000000007.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k512-p1000000007.bin",
+      "1",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 24576
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 24576
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 512,
+      "n": 1024,
+      "modulus": 1000000007,
+      "bytes_per_symbol": 3,
+      "mode": "batch16",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k512-p1000000007.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k512-p1000000007.bin",
+      "1",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 24576
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 24576
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 512,
+      "n": 1024,
+      "modulus": 1000000007,
+      "bytes_per_symbol": 3,
+      "mode": "changing",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k512-p1000000007.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k512-p1000000007.bin",
+      "0",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 24576
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 24576
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 512,
+      "n": 1024,
+      "modulus": 1000000007,
+      "bytes_per_symbol": 3,
+      "mode": "changing",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k512-p1000000007.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k512-p1000000007.bin",
+      "0",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 24576
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 24576
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 512,
+      "n": 1024,
+      "modulus": 1000000007,
+      "bytes_per_symbol": 3,
+      "mode": "changing",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k512-p1000000007.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k512-p1000000007.bin",
+      "0",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 24576
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 24576
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 256,
+      "n": 512,
+      "modulus": 18446744073709551557,
+      "bytes_per_symbol": 7,
+      "mode": "cached",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p18446744073709551557.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p18446744073709551557.bin",
+      "2",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 28672
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 28672
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 256,
+      "n": 512,
+      "modulus": 18446744073709551557,
+      "bytes_per_symbol": 7,
+      "mode": "cached",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p18446744073709551557.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p18446744073709551557.bin",
+      "2",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 28672
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 28672
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 256,
+      "n": 512,
+      "modulus": 18446744073709551557,
+      "bytes_per_symbol": 7,
+      "mode": "cached",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p18446744073709551557.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k256-p18446744073709551557.bin",
+      "2",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 28672
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 28672
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 64,
+      "n": 128,
+      "modulus": 1000000007,
+      "bytes_per_symbol": 3,
+      "mode": "changing",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k64-p1000000007.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k64-p1000000007.bin",
+      "0",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/control/libflint-experiment.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 3072
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 3072
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 64,
+      "n": 128,
+      "modulus": 1000000007,
+      "bytes_per_symbol": 3,
+      "mode": "changing",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k64-p1000000007.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k64-p1000000007.bin",
+      "0",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/optimization-builds/combined-v1/libflint-experiment.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 3072
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 3072
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "case": {
+      "k": 64,
+      "n": 128,
+      "modulus": 1000000007,
+      "bytes_per_symbol": 3,
+      "mode": "changing",
+      "fixture": "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k64-p1000000007.bin",
+      "candidate": "combined-v1",
+      "group": "active"
+    },
+    "library": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+    "command": [
+      "/Users/colkitt/sith/toys/math/butterflyMult/build/rs-recovery",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/rs-recovery/confirmation-1/k64-p1000000007.bin",
+      "0",
+      "0"
+    ],
+    "rows": [
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_init",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_clear",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_fit_length",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "nmod_poly_interpolate_nmod_vec",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_alloc",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_free",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_tree_build",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolation_weights",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "_nmod_poly_interpolate_nmod_vec_fast_precomp",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_set_num_threads",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "binding",
+        "symbol": "flint_cleanup_master",
+        "image": "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint-optimization-base/libflint.25.0.dylib"
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 3072
+      },
+      {
+        "phase": "check",
+        "passed": true,
+        "blocks": 16,
+        "bytes": 3072
+      }
+    ],
+    "stderr": "",
+    "returncode": 0
+  }
+]

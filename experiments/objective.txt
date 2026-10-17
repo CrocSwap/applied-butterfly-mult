@@ -1,0 +1,13 @@
+Find and evaluate up to three concrete layout or operation-fusion changes to the pinned FLINT multiplication implementation on the M2. Start with the hot butterfly basecases, then consider pointwise/inverse fusion and reconstruction tiling.
+
+For each candidate:
+
+State the proposed saving and verify the algebraic/layout contract.
+Implement it in an isolated experimental build.
+Check exact correctness against GMP and run relevant FLINT tests.
+Compare complete multiplication against unmodified FLINT using interleaved measurements.
+Retain, revise, or reject it based on evidence.
+
+First establish measurement reliability with an unchanged-versus-unchanged control. Confirm promising results in separate runs over a contiguous operand-size interval, including neighboring sizes, squaring, and unbalanced products.
+
+Finish with either a reproducible ≥1% improvement supported by uncertainty estimates, or documented results explaining why the three candidates failed. Preserve patches, raw measurements, and reproduction commands, and recommend the next experiment.

@@ -1,0 +1,43 @@
+{
+  "repo": {
+    "repo": "sums-of-products/gibby",
+    "sha": "4aae8cefb7c9ca3f8ddbf0ed18bd9198beb9aa80"
+  },
+  "files": [
+    {
+      "id": "gibby",
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/sums-of-products/gibby/4aae8cefb7c9ca3f8ddbf0ed18bd9198beb9aa80/LICENSE",
+      "bytes": 35149,
+      "git_blob_sha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7"
+    },
+    {
+      "id": "gibby",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/sums-of-products/gibby/4aae8cefb7c9ca3f8ddbf0ed18bd9198beb9aa80/README.md",
+      "bytes": 3793,
+      "git_blob_sha": "3ab1ff227c5297627173855dce3c4ff87c54312a"
+    },
+    {
+      "id": "gibby",
+      "path": "src/README.md",
+      "url": "https://raw.githubusercontent.com/sums-of-products/gibby/4aae8cefb7c9ca3f8ddbf0ed18bd9198beb9aa80/src/README.md",
+      "bytes": 356,
+      "git_blob_sha": "fed1f2f4b4b7202ea6a1c7a6a805fa1af14565a1"
+    },
+    {
+      "id": "gibby",
+      "path": "src/RangeSums.hpp",
+      "url": "https://raw.githubusercontent.com/sums-of-products/gibby/4aae8cefb7c9ca3f8ddbf0ed18bd9198beb9aa80/src/RangeSums.hpp",
+      "bytes": 8961,
+      "git_blob_sha": "7568546732467bddde18553ac8077578d8236e32"
+    },
+    {
+      "id": "gibby",
+      "path": "src/Scorer.hpp",
+      "url": "https://raw.githubusercontent.com/sums-of-products/gibby/4aae8cefb7c9ca3f8ddbf0ed18bd9198beb9aa80/src/Scorer.hpp",
+      "bytes": 20584,
+      "git_blob_sha": "9507d64e514be57052a929fd2a6bf198a4cc66c0"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "sha": "241124ea6863b2e7a28972e9362e98e8186e8dd4",
+  "url": "https://api.github.com/repos/kevinrao99/WHT-and-FFT-from-Non-Rigidity/git/trees/241124ea6863b2e7a28972e9362e98e8186e8dd4",
+  "tree": [
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17d4ba22401ab3e47dfb83be4cd1fdff74380443",
+      "size": 1067,
+      "url": "https://api.github.com/repos/kevinrao99/WHT-and-FFT-from-Non-Rigidity/git/blobs/17d4ba22401ab3e47dfb83be4cd1fdff74380443"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dbeb4cd0d3026b46a377ac1f7b3327d89bb1caab",
+      "size": 31,
+      "url": "https://api.github.com/repos/kevinrao99/WHT-and-FFT-from-Non-Rigidity/git/blobs/dbeb4cd0d3026b46a377ac1f7b3327d89bb1caab"
+    },
+    {
+      "path": "fft.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9619fde4ff4fd4031c16c213241428a121d4ec3",
+      "size": 11031,
+      "url": "https://api.github.com/repos/kevinrao99/WHT-and-FFT-from-Non-Rigidity/git/blobs/d9619fde4ff4fd4031c16c213241428a121d4ec3"
+    },
+    {
+      "path": "hadamard.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49d2dd6590b272781a9e8871fe2b56caca17f9a9",
+      "size": 3903,
+      "url": "https://api.github.com/repos/kevinrao99/WHT-and-FFT-from-Non-Rigidity/git/blobs/49d2dd6590b272781a9e8871fe2b56caca17f9a9"
+    },
+    {
+      "path": "utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59c98565e5b798dfaf682cabe9670ed21ec04b3a",
+      "size": 1716,
+      "url": "https://api.github.com/repos/kevinrao99/WHT-and-FFT-from-Non-Rigidity/git/blobs/59c98565e5b798dfaf682cabe9670ed21ec04b3a"
+    }
+  ],
+  "truncated": false
+}

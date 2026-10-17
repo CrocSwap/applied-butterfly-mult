@@ -1,0 +1,39 @@
+{
+  "created_utc": "2026-10-07T17:42:44.297896+00:00",
+  "candidate": "c3-register-reconstruction",
+  "patch": "patches/c3-register-reconstruction.patch",
+  "primary_metric": "thread CPU time for complete multiplication; wall time retained and reported separately",
+  "primary_operation": "sqr",
+  "primary_interval_limbs": [
+    4096,
+    16384
+  ],
+  "sizes": [
+    4095,
+    4096,
+    4097,
+    6144,
+    8191,
+    8192,
+    8193,
+    12288,
+    16383,
+    16384,
+    16385
+  ],
+  "operations": [
+    "mul",
+    "sqr",
+    "unbalanced"
+  ],
+  "sessions": 2,
+  "trials_per_case": 41,
+  "batch_ms": 20,
+  "seeds": [
+    55117,
+    98231
+  ],
+  "acceptance": "A/A control must resolve no systematic gain. In each independent session, equal-weight geometric mean of quartet ratios across squaring cases inside the prespecified interval must have runtime-reduction CI lower endpoint >1%; report every case and neighboring/mul/unbalanced regressions. Retain wall-clock results separately; do not describe CPU-time evidence as a wall-latency guarantee.",
+  "uncertainty": "Circular block bootstrap within each case; equal weight across prespecified cases, per-session aggregate interval. Case-level intervals are not simultaneous guarantees.",
+  "other_candidates": "C1 and C2 not retained: no stable contiguous win in completed screens/confirmation."
+}

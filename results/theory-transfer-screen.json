@@ -1,0 +1,993 @@
+{
+  "status": "PASS",
+  "scope": "Exact circuit counts and application mapping; no timing",
+  "rows": [
+    {
+      "n": 4,
+      "circuits": {
+        "paired": {
+          "n": 4,
+          "inputs": 6,
+          "outputs": 6,
+          "additions": 0,
+          "scratch_roles": 6,
+          "nonzero_coefficients": 6,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "da74af48cf62093ef97022bced929a495c4ab668a0e7368aa687ce54d36f7673"
+        },
+        "sergeev_2012_p2q2": {
+          "n": 4,
+          "inputs": 6,
+          "outputs": 6,
+          "additions": 0,
+          "scratch_roles": 6,
+          "nonzero_coefficients": 6,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "da74af48cf62093ef97022bced929a495c4ab668a0e7368aa687ce54d36f7673"
+        },
+        "interval_regions": {
+          "n": 4,
+          "inputs": 6,
+          "outputs": 6,
+          "additions": 0,
+          "scratch_roles": 6,
+          "nonzero_coefficients": 6,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "da74af48cf62093ef97022bced929a495c4ab668a0e7368aa687ce54d36f7673"
+        },
+        "sister_split": {
+          "n": 4,
+          "inputs": 6,
+          "outputs": 6,
+          "additions": 0,
+          "scratch_roles": 6,
+          "nonzero_coefficients": 6,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "da74af48cf62093ef97022bced929a495c4ab668a0e7368aa687ce54d36f7673"
+        }
+      }
+    },
+    {
+      "n": 5,
+      "circuits": {
+        "paired": {
+          "n": 5,
+          "inputs": 10,
+          "outputs": 10,
+          "additions": 20,
+          "scratch_roles": 30,
+          "nonzero_coefficients": 30,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "53b3e55de2a46bdf65736d01471cd926b9ac952d5d51b3e2bacd15b2dfae1735"
+        },
+        "sergeev_2012_p2q2": {
+          "n": 5,
+          "inputs": 10,
+          "outputs": 10,
+          "additions": 20,
+          "scratch_roles": 30,
+          "nonzero_coefficients": 30,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "e04b7bdf0a64589cb7a8bb8d742c6df90d5237938fa4b50e4b990b54e44c8445"
+        },
+        "interval_regions": {
+          "n": 5,
+          "inputs": 10,
+          "outputs": 10,
+          "additions": 20,
+          "scratch_roles": 30,
+          "nonzero_coefficients": 30,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "b10145de0bc036df69ee4ed8eea88dc54614a0b38307e12c1314023020c89a5c"
+        },
+        "sister_split": {
+          "n": 5,
+          "inputs": 10,
+          "outputs": 10,
+          "additions": 20,
+          "scratch_roles": 30,
+          "nonzero_coefficients": 30,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "682a68ad033d66592839b0c09ef98aea55bc1ce93af7e6dfb4326c3d79976f84"
+        }
+      }
+    },
+    {
+      "n": 6,
+      "circuits": {
+        "paired": {
+          "n": 6,
+          "inputs": 15,
+          "outputs": 15,
+          "additions": 51,
+          "scratch_roles": 66,
+          "nonzero_coefficients": 90,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "41f02ba28a0c132846233fcbd746691915a996d2c0dbbe4362452d5dd78c72d1"
+        },
+        "sergeev_2012_p2q2": {
+          "n": 6,
+          "inputs": 15,
+          "outputs": 15,
+          "additions": 51,
+          "scratch_roles": 66,
+          "nonzero_coefficients": 90,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "83f1e8ed7153587761b42aa585c08a55c3da9bed6924892b1adeddee5449de54"
+        },
+        "interval_regions": {
+          "n": 6,
+          "inputs": 15,
+          "outputs": 15,
+          "additions": 52,
+          "scratch_roles": 67,
+          "nonzero_coefficients": 90,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "2b6f217a3e378eef5e382beab14345ce3e8992eecdc0b2e3bad2fa02bb57787c"
+        },
+        "sister_split": {
+          "n": 6,
+          "inputs": 15,
+          "outputs": 15,
+          "additions": 55,
+          "scratch_roles": 70,
+          "nonzero_coefficients": 90,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "700bade2db2492fbeee28f9f123e0efc1a7c4a132e636ad7fe1cdccd4bcd51b0"
+        }
+      }
+    },
+    {
+      "n": 7,
+      "circuits": {
+        "paired": {
+          "n": 7,
+          "inputs": 21,
+          "outputs": 21,
+          "additions": 90,
+          "scratch_roles": 111,
+          "nonzero_coefficients": 210,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "8cdd9acc82636605cc0eaf0f60f5c5615b108257a56f90c2e7dd3edd996b8f58"
+        },
+        "sergeev_2012_p2q2": {
+          "n": 7,
+          "inputs": 21,
+          "outputs": 21,
+          "additions": 92,
+          "scratch_roles": 113,
+          "nonzero_coefficients": 210,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "d759736d8926654a468d86c256eeb56bfd37b1c983298aa01206570ef0a99350"
+        },
+        "interval_regions": {
+          "n": 7,
+          "inputs": 21,
+          "outputs": 21,
+          "additions": 96,
+          "scratch_roles": 117,
+          "nonzero_coefficients": 210,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "3ab0eb0d898ed650d13fa77d681ab3b94a572067ba81b74a995352e27d8141a3"
+        },
+        "sister_split": {
+          "n": 7,
+          "inputs": 21,
+          "outputs": 21,
+          "additions": 99,
+          "scratch_roles": 120,
+          "nonzero_coefficients": 210,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "428bf570a8450f727806d43d373c36e103d5cd8958898a33013e1f6ea9e9a8ea"
+        }
+      }
+    },
+    {
+      "n": 8,
+      "circuits": {
+        "paired": {
+          "n": 8,
+          "inputs": 28,
+          "outputs": 28,
+          "additions": 142,
+          "scratch_roles": 170,
+          "nonzero_coefficients": 420,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "5896371ae9303be3db8c4dc008ba834872fac62de7c6d8957af614db191ec645"
+        },
+        "sergeev_2012_p2q2": {
+          "n": 8,
+          "inputs": 28,
+          "outputs": 28,
+          "additions": 144,
+          "scratch_roles": 172,
+          "nonzero_coefficients": 420,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "06cc48a22308302df95d7b4bb4d9d428f83d84ac962e54b11bdeac1d604a6da6"
+        },
+        "interval_regions": {
+          "n": 8,
+          "inputs": 28,
+          "outputs": 28,
+          "additions": 152,
+          "scratch_roles": 180,
+          "nonzero_coefficients": 420,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "6210e1e9305081748281e63893984f6ee0becacf4f13307e655665c88fd8ca95"
+        },
+        "sister_split": {
+          "n": 8,
+          "inputs": 28,
+          "outputs": 28,
+          "additions": 154,
+          "scratch_roles": 182,
+          "nonzero_coefficients": 420,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "2fd1dba1c3cdcef663e538862968a4b54167329ae67a044df5c14094408844d8"
+        }
+      }
+    },
+    {
+      "n": 12,
+      "circuits": {
+        "paired": {
+          "n": 12,
+          "inputs": 66,
+          "outputs": 66,
+          "additions": 414,
+          "scratch_roles": 480,
+          "nonzero_coefficients": 2970,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "a0101fadb01eea1e1e99fa1f340ad31fe99c9f06701948cf942b716ad4bbe3f2"
+        },
+        "sergeev_2012_p2q2": {
+          "n": 12,
+          "inputs": 66,
+          "outputs": 66,
+          "additions": 453,
+          "scratch_roles": 519,
+          "nonzero_coefficients": 2970,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "feaec778b57f6ec18575c83f31a8f91bbe1878b3fdce6f1cc93e0e2aaf79d33e"
+        },
+        "interval_regions": {
+          "n": 12,
+          "inputs": 66,
+          "outputs": 66,
+          "additions": 496,
+          "scratch_roles": 562,
+          "nonzero_coefficients": 2970,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "4869e8274bfcdff1d8e809a7e3d1d81ec1e13291126bee34c67a37832a7881e9"
+        },
+        "sister_split": {
+          "n": 12,
+          "inputs": 66,
+          "outputs": 66,
+          "additions": 516,
+          "scratch_roles": 582,
+          "nonzero_coefficients": 2970,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "e19deb820bd61708ff04fd194d7dbad5570689f63bbe549df4ec03f54d502faf"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "circuits": {
+        "paired": {
+          "n": 16,
+          "inputs": 120,
+          "outputs": 120,
+          "additions": 842,
+          "scratch_roles": 962,
+          "nonzero_coefficients": 10920,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "28ab7eb9c788a6d2c7e561f64fe502750a1a101e3a8ce72b1902bfab05dd90ea"
+        },
+        "sergeev_2012_p2q2": {
+          "n": 16,
+          "inputs": 120,
+          "outputs": 120,
+          "additions": 926,
+          "scratch_roles": 1046,
+          "nonzero_coefficients": 10920,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "e13da1ef63016500fef4c1802a5a2d66b06a01061eb085e36c2ff59099318dca"
+        },
+        "interval_regions": {
+          "n": 16,
+          "inputs": 120,
+          "outputs": 120,
+          "additions": 1032,
+          "scratch_roles": 1152,
+          "nonzero_coefficients": 10920,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "ce9c998006b3d09c52f6aaaad007c35aeeaf814c0bb95e8adbd4b5ecb55e4b66"
+        },
+        "sister_split": {
+          "n": 16,
+          "inputs": 120,
+          "outputs": 120,
+          "additions": 1070,
+          "scratch_roles": 1190,
+          "nonzero_coefficients": 10920,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "b5df704d9915de1a8fa819639c74a7d41d736192181221fe9d938358d76eec72"
+        }
+      }
+    },
+    {
+      "n": 24,
+      "circuits": {
+        "paired": {
+          "n": 24,
+          "inputs": 276,
+          "outputs": 276,
+          "additions": 2112,
+          "scratch_roles": 2388,
+          "nonzero_coefficients": 63756,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "e012e09057cc9cc3b98b3fde5d2e42131c000ba545e8b1809085ea8a083de195"
+        },
+        "sergeev_2012_p2q2": {
+          "n": 24,
+          "inputs": 276,
+          "outputs": 276,
+          "additions": 2361,
+          "scratch_roles": 2637,
+          "nonzero_coefficients": 63756,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "80d00d30bc35bfa43907fce6969b8dc530a5ff4d7258587afd79d143cb7949d4"
+        },
+        "interval_regions": {
+          "n": 24,
+          "inputs": 276,
+          "outputs": 276,
+          "additions": 2680,
+          "scratch_roles": 2956,
+          "nonzero_coefficients": 63756,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "38f98d9b0741cdcc478b3090b1bcc5f91157f33a6a164aa0d96316c335647259"
+        },
+        "sister_split": {
+          "n": 24,
+          "inputs": 276,
+          "outputs": 276,
+          "additions": 2838,
+          "scratch_roles": 3114,
+          "nonzero_coefficients": 63756,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "44c6884470c4778f55e7d6a7ef79ee8594e8e5992f5350432e8468a5c366d12f"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "circuits": {
+        "paired": {
+          "n": 32,
+          "inputs": 496,
+          "outputs": 496,
+          "additions": 3970,
+          "scratch_roles": 4466,
+          "nonzero_coefficients": 215760,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "5936ca5ba6de157555ea86ef1d8dd38fc588cca1eae95aec4b7228979335bd7a"
+        },
+        "sergeev_2012_p2q2": {
+          "n": 32,
+          "inputs": 496,
+          "outputs": 496,
+          "additions": 4442,
+          "scratch_roles": 4938,
+          "nonzero_coefficients": 215760,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "a37e929a2c3ac74b37b7ee2bb2831395d754b1da65eab483bb8c00bb51f6a514"
+        },
+        "interval_regions": {
+          "n": 32,
+          "inputs": 496,
+          "outputs": 496,
+          "additions": 5096,
+          "scratch_roles": 5592,
+          "nonzero_coefficients": 215760,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "ee661e3d7a70bbc04d33e11eb56d2277210dae80005775c0cce2421916a86283"
+        },
+        "sister_split": {
+          "n": 32,
+          "inputs": 496,
+          "outputs": 496,
+          "additions": 5438,
+          "scratch_roles": 5934,
+          "nonzero_coefficients": 215760,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "801e5e86e1fc84bb9805a5d10b986b92b5b963aaf8946ad8dc45c96ee8eaadc1"
+        }
+      }
+    },
+    {
+      "n": 49,
+      "circuits": {
+        "paired": {
+          "n": 49,
+          "inputs": 1176,
+          "outputs": 1176,
+          "additions": 9813,
+          "scratch_roles": 10989,
+          "nonzero_coefficients": 1271256,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "ffeb0732444e4b9e907ef3ae59b9dccaf0937d99372ecacf27d68230333fd8c2"
+        },
+        "sergeev_2012_p2q2": {
+          "n": 49,
+          "inputs": 1176,
+          "outputs": 1176,
+          "additions": 11023,
+          "scratch_roles": 12199,
+          "nonzero_coefficients": 1271256,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "1117d099b6a98d07e39e7c21dc75e95432dd4a8df7652a70711a016a067b21f9"
+        },
+        "interval_regions": {
+          "n": 49,
+          "inputs": 1176,
+          "outputs": 1176,
+          "additions": 12780,
+          "scratch_roles": 13956,
+          "nonzero_coefficients": 1271256,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "347943672ca8428eedb0c3e243ef8f08e80643a40e6770812d6d9d0c3510f170"
+        },
+        "sister_split": {
+          "n": 49,
+          "inputs": 1176,
+          "outputs": 1176,
+          "additions": 13920,
+          "scratch_roles": 15096,
+          "nonzero_coefficients": 1271256,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "a368bb0046d6c11191246b24836824ef389a0fa2f12a4156e2c9cd2183977440"
+        }
+      }
+    },
+    {
+      "n": 64,
+      "circuits": {
+        "paired": {
+          "n": 64,
+          "inputs": 2016,
+          "outputs": 2016,
+          "additions": 17138,
+          "scratch_roles": 19154,
+          "nonzero_coefficients": 3812256,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "a3e0dbc40d21db0e1d103f446d3c5a84a0d330abf1e2edbb8e60ff255fb590bb"
+        },
+        "sergeev_2012_p2q2": {
+          "n": 64,
+          "inputs": 2016,
+          "outputs": 2016,
+          "additions": 19250,
+          "scratch_roles": 21266,
+          "nonzero_coefficients": 3812256,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "ded8041a55d907686526aa8b4a863019deb788008736372df7384812141a3891"
+        },
+        "interval_regions": {
+          "n": 64,
+          "inputs": 2016,
+          "outputs": 2016,
+          "additions": 22440,
+          "scratch_roles": 24456,
+          "nonzero_coefficients": 3812256,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "bb74c3d416a28cecac4e94d6c4e13e5efb1e1f3eecec141579591973ae85401a"
+        },
+        "sister_split": {
+          "n": 64,
+          "inputs": 2016,
+          "outputs": 2016,
+          "additions": 24606,
+          "scratch_roles": 26622,
+          "nonzero_coefficients": 3812256,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "1b9a0f78aafe7ef5f075774604f568aa0372ffc379194598669310caa9b7b5dd"
+        }
+      }
+    },
+    {
+      "n": 96,
+      "circuits": {
+        "paired": {
+          "n": 96,
+          "inputs": 4560,
+          "outputs": 4560,
+          "additions": 39516,
+          "scratch_roles": 44076,
+          "nonzero_coefficients": 19931760,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "b478888d2711d6daec04e56a68535aeb6558a0332e6db0f5de757ac4b3035f5d"
+        },
+        "sergeev_2012_p2q2": {
+          "n": 96,
+          "inputs": 4560,
+          "outputs": 4560,
+          "additions": 44385,
+          "scratch_roles": 48945,
+          "nonzero_coefficients": 19931760,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "4218d2f83ff0169fa5ef7d71ff31a7bdfc3e4d421b607739db4937cdc511d62e"
+        },
+        "interval_regions": {
+          "n": 96,
+          "inputs": 4560,
+          "outputs": 4560,
+          "additions": 52072,
+          "scratch_roles": 56632,
+          "nonzero_coefficients": 19931760,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "90643464bdddfb0d2a318fa5609fa296d77cdc8dfbc9033d31d9f318900c372e"
+        },
+        "sister_split": {
+          "n": 96,
+          "inputs": 4560,
+          "outputs": 4560,
+          "additions": 57902,
+          "scratch_roles": 62462,
+          "nonzero_coefficients": 19931760,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "1a651f95b06a9fdff42ec3216db25ac6ade04fb334fb0c3600d9e62f2707858a"
+        }
+      }
+    },
+    {
+      "n": 128,
+      "circuits": {
+        "paired": {
+          "n": 128,
+          "inputs": 8128,
+          "outputs": 8128,
+          "additions": 71122,
+          "scratch_roles": 79250,
+          "nonzero_coefficients": 64008000,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "00fe8f7d10af7aa8768c6e22bc12dd312b3a7f8ff6a9b95e6d9843d36ff656cc"
+        },
+        "sergeev_2012_p2q2": {
+          "n": 128,
+          "inputs": 8128,
+          "outputs": 8128,
+          "additions": 79820,
+          "scratch_roles": 87948,
+          "nonzero_coefficients": 64008000,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "6ecc521344b005ce61a7643b522823a0de30cfa85b2b70add47bf3a3d11994c6"
+        },
+        "interval_regions": {
+          "n": 128,
+          "inputs": 8128,
+          "outputs": 8128,
+          "additions": 93992,
+          "scratch_roles": 102120,
+          "nonzero_coefficients": 64008000,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "15110a4010f0f1af972d190fa1967de5f1a92b1ed24b25e8a26c3b548c37237b"
+        },
+        "sister_split": {
+          "n": 128,
+          "inputs": 8128,
+          "outputs": 8128,
+          "additions": 105278,
+          "scratch_roles": 113406,
+          "nonzero_coefficients": 64008000,
+          "all_output_supports_exact": true,
+          "all_additions_disjoint": true,
+          "circuit_sha256": "0cb288e862a84a5ce1e0db42cc4d476205f9a3096abe22bd47c4b2a187eca8ca"
+        }
+      }
+    }
+  ],
+  "path_checks": [
+    {
+      "vertices": 7,
+      "kind": "equal",
+      "result": [
+        0,
+        120
+      ],
+      "circuits_checked": [
+        "paired",
+        "sergeev_2012_p2q2",
+        "interval_regions",
+        "sister_split"
+      ]
+    },
+    {
+      "vertices": 7,
+      "kind": "distinct",
+      "result": [
+        -69827305480,
+        1
+      ],
+      "circuits_checked": [
+        "paired",
+        "sergeev_2012_p2q2",
+        "interval_regions",
+        "sister_split"
+      ]
+    },
+    {
+      "vertices": 7,
+      "kind": "ties",
+      "result": [
+        7,
+        1
+      ],
+      "circuits_checked": [
+        "paired",
+        "sergeev_2012_p2q2",
+        "interval_regions",
+        "sister_split"
+      ]
+    },
+    {
+      "vertices": 7,
+      "kind": "sparse",
+      "result": [
+        4,
+        1
+      ],
+      "circuits_checked": [
+        "paired",
+        "sergeev_2012_p2q2",
+        "interval_regions",
+        "sister_split"
+      ]
+    },
+    {
+      "vertices": 7,
+      "kind": "empty",
+      "result": [
+        null,
+        0
+      ],
+      "circuits_checked": [
+        "paired",
+        "sergeev_2012_p2q2",
+        "interval_regions",
+        "sister_split"
+      ]
+    },
+    {
+      "vertices": 7,
+      "kind": "negative",
+      "result": [
+        -43,
+        1
+      ],
+      "circuits_checked": [
+        "paired",
+        "sergeev_2012_p2q2",
+        "interval_regions",
+        "sister_split"
+      ]
+    },
+    {
+      "vertices": 8,
+      "kind": "equal",
+      "result": [
+        0,
+        720
+      ],
+      "circuits_checked": [
+        "paired",
+        "sergeev_2012_p2q2",
+        "interval_regions",
+        "sister_split"
+      ]
+    },
+    {
+      "vertices": 8,
+      "kind": "distinct",
+      "result": [
+        -2216473690120,
+        1
+      ],
+      "circuits_checked": [
+        "paired",
+        "sergeev_2012_p2q2",
+        "interval_regions",
+        "sister_split"
+      ]
+    },
+    {
+      "vertices": 8,
+      "kind": "ties",
+      "result": [
+        10,
+        2
+      ],
+      "circuits_checked": [
+        "paired",
+        "sergeev_2012_p2q2",
+        "interval_regions",
+        "sister_split"
+      ]
+    },
+    {
+      "vertices": 8,
+      "kind": "sparse",
+      "result": [
+        -2,
+        1
+      ],
+      "circuits_checked": [
+        "paired",
+        "sergeev_2012_p2q2",
+        "interval_regions",
+        "sister_split"
+      ]
+    },
+    {
+      "vertices": 8,
+      "kind": "empty",
+      "result": [
+        null,
+        0
+      ],
+      "circuits_checked": [
+        "paired",
+        "sergeev_2012_p2q2",
+        "interval_regions",
+        "sister_split"
+      ]
+    },
+    {
+      "vertices": 8,
+      "kind": "negative",
+      "result": [
+        -20,
+        2
+      ],
+      "circuits_checked": [
+        "paired",
+        "sergeev_2012_p2q2",
+        "interval_regions",
+        "sister_split"
+      ]
+    },
+    {
+      "vertices": 9,
+      "kind": "equal",
+      "result": [
+        0,
+        2520
+      ],
+      "circuits_checked": [
+        "paired",
+        "sergeev_2012_p2q2",
+        "interval_regions",
+        "sister_split"
+      ]
+    },
+    {
+      "vertices": 9,
+      "kind": "distinct",
+      "result": [
+        -70645778087944,
+        1
+      ],
+      "circuits_checked": [
+        "paired",
+        "sergeev_2012_p2q2",
+        "interval_regions",
+        "sister_split"
+      ]
+    },
+    {
+      "vertices": 9,
+      "kind": "ties",
+      "result": [
+        10,
+        3
+      ],
+      "circuits_checked": [
+        "paired",
+        "sergeev_2012_p2q2",
+        "interval_regions",
+        "sister_split"
+      ]
+    },
+    {
+      "vertices": 9,
+      "kind": "sparse",
+      "result": [
+        null,
+        0
+      ],
+      "circuits_checked": [
+        "paired",
+        "sergeev_2012_p2q2",
+        "interval_regions",
+        "sister_split"
+      ]
+    },
+    {
+      "vertices": 9,
+      "kind": "empty",
+      "result": [
+        null,
+        0
+      ],
+      "circuits_checked": [
+        "paired",
+        "sergeev_2012_p2q2",
+        "interval_regions",
+        "sister_split"
+      ]
+    },
+    {
+      "vertices": 9,
+      "kind": "negative",
+      "result": [
+        -21,
+        1
+      ],
+      "circuits_checked": [
+        "paired",
+        "sergeev_2012_p2q2",
+        "interval_regions",
+        "sister_split"
+      ]
+    },
+    {
+      "vertices": 10,
+      "kind": "equal",
+      "result": [
+        0,
+        6720
+      ],
+      "circuits_checked": [
+        "paired",
+        "sergeev_2012_p2q2",
+        "interval_regions",
+        "sister_split"
+      ]
+    },
+    {
+      "vertices": 10,
+      "kind": "distinct",
+      "result": [
+        -2256215074144264,
+        1
+      ],
+      "circuits_checked": [
+        "paired",
+        "sergeev_2012_p2q2",
+        "interval_regions",
+        "sister_split"
+      ]
+    },
+    {
+      "vertices": 10,
+      "kind": "ties",
+      "result": [
+        12,
+        1
+      ],
+      "circuits_checked": [
+        "paired",
+        "sergeev_2012_p2q2",
+        "interval_regions",
+        "sister_split"
+      ]
+    },
+    {
+      "vertices": 10,
+      "kind": "sparse",
+      "result": [
+        null,
+        0
+      ],
+      "circuits_checked": [
+        "paired",
+        "sergeev_2012_p2q2",
+        "interval_regions",
+        "sister_split"
+      ]
+    },
+    {
+      "vertices": 10,
+      "kind": "empty",
+      "result": [
+        null,
+        0
+      ],
+      "circuits_checked": [
+        "paired",
+        "sergeev_2012_p2q2",
+        "interval_regions",
+        "sister_split"
+      ]
+    },
+    {
+      "vertices": 10,
+      "kind": "negative",
+      "result": [
+        -18,
+        1
+      ],
+      "circuits_checked": [
+        "paired",
+        "sergeev_2012_p2q2",
+        "interval_regions",
+        "sister_split"
+      ]
+    }
+  ],
+  "ring_outputs_checked": 5452,
+  "sources": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/screen_theory_transfer.py": "1d1f58cfd06b2c3ee50857dd0c9fea41f561593510b385724b9a2e4549ea5489",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/exclusion_circuit.py": "b253f9d7318becda1c1f3b24e2287ed44a9c27fcea00cf9d531afb950d0457a0",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/paired_exclusion_circuit.py": "8f05f04cf06217befd6d0ee0f2d7d0c5c5eb32cfab8c9a8ca7917fd6d620b7d2",
+    "/Users/colkitt/sith/toys/math/integerMult/docs/research/paired-network.md": "335b664ca9b7c71a855b32dc44c4597997b6f616ef06dc878af1d5c2010891ea"
+  },
+  "prior_art": [
+    "https://arxiv.org/abs/1208.0554",
+    "https://igorssergeev.github.io/papers/1209.1645e.pdf",
+    "https://doi.org/10.1016/j.ipl.2013.12.003"
+  ]
+}

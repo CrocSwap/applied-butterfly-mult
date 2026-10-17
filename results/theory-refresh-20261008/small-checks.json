@@ -1,0 +1,290 @@
+{
+  "scope": "Source-level algebra and declared resource counts only; no time/memory benchmark or complete theorem audit",
+  "strip_checks": [
+    {
+      "k": 1,
+      "layout": "prefix_suffix",
+      "unpruned_nonzero_add_calls": 0
+    },
+    {
+      "k": 1,
+      "layout": "skip_prefix",
+      "unpruned_nonzero_add_calls": 0
+    },
+    {
+      "k": 1,
+      "layout": "interval",
+      "unpruned_nonzero_add_calls": 0
+    },
+    {
+      "k": 2,
+      "layout": "prefix_suffix",
+      "unpruned_nonzero_add_calls": 2
+    },
+    {
+      "k": 2,
+      "layout": "skip_prefix",
+      "unpruned_nonzero_add_calls": 2
+    },
+    {
+      "k": 2,
+      "layout": "interval",
+      "unpruned_nonzero_add_calls": 2
+    },
+    {
+      "k": 3,
+      "layout": "prefix_suffix",
+      "unpruned_nonzero_add_calls": 5
+    },
+    {
+      "k": 3,
+      "layout": "skip_prefix",
+      "unpruned_nonzero_add_calls": 5
+    },
+    {
+      "k": 3,
+      "layout": "interval",
+      "unpruned_nonzero_add_calls": 4
+    },
+    {
+      "k": 4,
+      "layout": "prefix_suffix",
+      "unpruned_nonzero_add_calls": 8
+    },
+    {
+      "k": 4,
+      "layout": "skip_prefix",
+      "unpruned_nonzero_add_calls": 9
+    },
+    {
+      "k": 4,
+      "layout": "interval",
+      "unpruned_nonzero_add_calls": 9
+    },
+    {
+      "k": 5,
+      "layout": "prefix_suffix",
+      "unpruned_nonzero_add_calls": 11
+    },
+    {
+      "k": 5,
+      "layout": "skip_prefix",
+      "unpruned_nonzero_add_calls": 13
+    },
+    {
+      "k": 5,
+      "layout": "interval",
+      "unpruned_nonzero_add_calls": 16
+    },
+    {
+      "k": 6,
+      "layout": "prefix_suffix",
+      "unpruned_nonzero_add_calls": 14
+    },
+    {
+      "k": 6,
+      "layout": "skip_prefix",
+      "unpruned_nonzero_add_calls": 17
+    },
+    {
+      "k": 6,
+      "layout": "interval",
+      "unpruned_nonzero_add_calls": 25
+    },
+    {
+      "k": 7,
+      "layout": "prefix_suffix",
+      "unpruned_nonzero_add_calls": 17
+    },
+    {
+      "k": 7,
+      "layout": "skip_prefix",
+      "unpruned_nonzero_add_calls": 21
+    },
+    {
+      "k": 7,
+      "layout": "interval",
+      "unpruned_nonzero_add_calls": 36
+    },
+    {
+      "k": 8,
+      "layout": "prefix_suffix",
+      "unpruned_nonzero_add_calls": 20
+    },
+    {
+      "k": 8,
+      "layout": "skip_prefix",
+      "unpruned_nonzero_add_calls": 25
+    },
+    {
+      "k": 8,
+      "layout": "interval",
+      "unpruned_nonzero_add_calls": 49
+    },
+    {
+      "k": 9,
+      "layout": "prefix_suffix",
+      "unpruned_nonzero_add_calls": 23
+    },
+    {
+      "k": 9,
+      "layout": "skip_prefix",
+      "unpruned_nonzero_add_calls": 29
+    },
+    {
+      "k": 9,
+      "layout": "interval",
+      "unpruned_nonzero_add_calls": 64
+    },
+    {
+      "k": 10,
+      "layout": "prefix_suffix",
+      "unpruned_nonzero_add_calls": 26
+    },
+    {
+      "k": 10,
+      "layout": "skip_prefix",
+      "unpruned_nonzero_add_calls": 33
+    },
+    {
+      "k": 10,
+      "layout": "interval",
+      "unpruned_nonzero_add_calls": 81
+    },
+    {
+      "k": 11,
+      "layout": "prefix_suffix",
+      "unpruned_nonzero_add_calls": 29
+    },
+    {
+      "k": 11,
+      "layout": "skip_prefix",
+      "unpruned_nonzero_add_calls": 37
+    },
+    {
+      "k": 11,
+      "layout": "interval",
+      "unpruned_nonzero_add_calls": 100
+    },
+    {
+      "k": 12,
+      "layout": "prefix_suffix",
+      "unpruned_nonzero_add_calls": 32
+    },
+    {
+      "k": 12,
+      "layout": "skip_prefix",
+      "unpruned_nonzero_add_calls": 41
+    },
+    {
+      "k": 12,
+      "layout": "interval",
+      "unpruned_nonzero_add_calls": 121
+    },
+    {
+      "k": 13,
+      "layout": "prefix_suffix",
+      "unpruned_nonzero_add_calls": 35
+    },
+    {
+      "k": 13,
+      "layout": "skip_prefix",
+      "unpruned_nonzero_add_calls": 45
+    },
+    {
+      "k": 13,
+      "layout": "interval",
+      "unpruned_nonzero_add_calls": 144
+    }
+  ],
+  "strip_count_caveat": "Raw nonzero add requests before pruning/hash-consing; not a peak-live-memory model",
+  "reported_network_tradeoffs": [
+    {
+      "h": 23,
+      "pr53_additions": 40329,
+      "pr62_additions": 62294,
+      "addition_increase_pct": 54.4645292469439,
+      "pr53_roles": 32946,
+      "pr62_roles": 28719,
+      "role_reduction_pct": 12.830085594609365,
+      "joint_compiled_roles": 27918
+    },
+    {
+      "h": 25,
+      "pr53_additions": 53475,
+      "pr62_additions": 86595,
+      "addition_increase_pct": 61.935483870967744,
+      "pr53_roles": 43409,
+      "pr62_roles": 37676,
+      "role_reduction_pct": 13.206938653274669,
+      "joint_compiled_roles": 36586
+    }
+  ],
+  "gaussian_power_bound_example": {
+    "p": 512,
+    "alpha": 8,
+    "s": 1031,
+    "t": 1280,
+    "theta": "249/1031",
+    "old_sufficient_terms": 34,
+    "new_sufficient_terms": 7,
+    "scope": "Sufficient bound for norm(E^n), not observed convergence or complete DFT speedup; stronger conventional norm/residual bounds untested"
+  },
+  "stronger_gaussian_comparator": {
+    "rows": [
+      {
+        "p": 512,
+        "alpha": 8,
+        "old_bound_terms": 34,
+        "new_power_bound_terms": 7,
+        "ordinary_one_step_norm_bound_terms": 4,
+        "nearest_shift_exponents": [
+          139,
+          139
+        ],
+        "tail_initial_exponent": 1060,
+        "tail_ratio_exponent": 1861
+      },
+      {
+        "p": 4096,
+        "alpha": 16,
+        "old_bound_terms": 67,
+        "new_power_bound_terms": 9,
+        "ordinary_one_step_norm_bound_terms": 8,
+        "nearest_shift_exponents": [
+          557,
+          557
+        ],
+        "tail_initial_exponent": 4242,
+        "tail_ratio_exponent": 7447
+      },
+      {
+        "p": 16384,
+        "alpha": 24,
+        "old_bound_terms": 118,
+        "new_power_bound_terms": 12,
+        "ordinary_one_step_norm_bound_terms": 14,
+        "nearest_shift_exponents": [
+          1254,
+          1254
+        ],
+        "tail_initial_exponent": 9544,
+        "tail_ratio_exponent": 16757
+      },
+      {
+        "p": 65536,
+        "alpha": 32,
+        "old_bound_terms": 265,
+        "new_power_bound_terms": 21,
+        "ordinary_one_step_norm_bound_terms": 30,
+        "nearest_shift_exponents": [
+          2230,
+          2230
+        ],
+        "tail_initial_exponent": 16968,
+        "tail_ratio_exponent": 29791
+      }
+    ],
+    "interpretation": "Certified upper bounds for the same E^n, not measured iteration counts, an optimal norm certificate, or an inverse-error/runtime comparison. Each row holds alpha fixed across methods; joint parameter optimization and sharper conventional certificates remain required."
+  }
+}

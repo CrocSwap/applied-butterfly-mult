@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "historical_fingerprints_verified": 1907,
+  "serialized_programs": 242,
+  "output_forms": 4235,
+  "coefficient_equalities": 386419,
+  "construction_fixture_outputs": 1060,
+  "scope": "Independent set-based replay of all serialized gates and outputs, disjointness, addition counts, depth, fixed-order liveness, selection and gate; frozen inputs/source hashes and predecessor artifacts. No timing, native tolerance replay or online deployment claim."
+}

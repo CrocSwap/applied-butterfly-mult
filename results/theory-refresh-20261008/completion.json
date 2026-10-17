@@ -1,0 +1,38 @@
+{
+  "status": "complete",
+  "sister_commit": "56b66d58297deca1d7dd130247d720e960f77a37",
+  "earlier_screen_commit": "1c09a5887e3f900798eef904371441ab18c057de",
+  "sister_clean": true,
+  "scope": "Local read-only source survey and bounded exact checks; no benchmark or full theorem audit",
+  "inherited_manifest": "/Users/colkitt/sith/toys/math/butterflyMult/results/hadamag-native/completion.json",
+  "inherited_manifest_sha256": "aaf05579724d24e98cf4cc1964f088ad7f3f50ae70772754828e10d7afd5e208",
+  "inherited_fingerprints_verified": 1671,
+  "source_sha256": {
+    "/Users/colkitt/sith/toys/math/integerMult/README.md": "fd92de31aece76b1f5ff897e6e0dbc38dd3bf67c140579bbcb03a1a11a792668",
+    "/Users/colkitt/sith/toys/math/integerMult/docs/research/community-round2-review.md": "cae0ca9b4070b8b45de92999f022676f2f3ab9c33aaa22a47fcd43b854cb3e92",
+    "/Users/colkitt/sith/toys/math/integerMult/docs/research/community-followup-review.md": "6be2b0f225ea1602824e7e21d3ad7397acb2d16fbfd0ed065fa3bb539753c3c7",
+    "/Users/colkitt/sith/toys/math/integerMult/research/pair-assembly/PROOF.md": "30685624bf922bb9d9f7ed4b0d367a660fe373cc9ee28fec33585bd8c7023e75",
+    "/Users/colkitt/sith/toys/math/integerMult/research/pair-assembly/pair_graph.py": "3d47e89d2649c90800a276bdd0480131def50e0bdf92c122a19494b55bf17420",
+    "/Users/colkitt/sith/toys/math/integerMult/research/pair-assembly/frame/frame-word-23.json.gz": "4629d45d5074f87706db46be3aa3cd369071cd215bc6560d641115aadcce54a0",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/experiments/binary_frame_compiler.py": "bc6910c8bbe8224285164323d3c06e9035ad3eaa55416abc2867ae0066454a0c",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/experiments/binary_frame_replay.py": "392e78e62d7685c99a5888a7da743ea6c3dcad631af4a743c91e0c09348442bc",
+    "/Users/colkitt/sith/toys/math/integerMult/research/joint-dual/PROOF.md": "ef87781965cd6d509150c6423525671a7c7d1734f334a6a3c39cc7bffdbae33a",
+    "/Users/colkitt/sith/toys/math/integerMult/research/split-skip/PROOF.md": "ce6bdb8d41209cfbceb499a1c6d564a8db359edad9c3ef173b42b1780936f881",
+    "/Users/colkitt/sith/toys/math/integerMult/research/gaussian-parity/README.md": "c77c0798437d9bbb08dce1e2b6b89ef45d94562c58c996adcbbeb4dd9c60d7be",
+    "/Users/colkitt/sith/toys/math/integerMult/research/gaussian-parity/verify_exact.py": "b45ba2ffa01efbf8554e281d1a44f71aa9464a7978da577aed69576a136774f0",
+    "/Users/colkitt/sith/toys/math/integerMult/research/gaussian-parity-synthesis/README.md": "d9cdae02accb6ce5857f5b55515f04b3e89234e2beef7f7327cf608472f94193",
+    "/Users/colkitt/sith/toys/math/integerMult/research/gaussian-parity-synthesis/IMAGE_PROOF.md": "3a7583ef28e54db2ff60ad2307c4281415964ad514977d289c94f556e3ce9698",
+    "/Users/colkitt/sith/toys/math/integerMult/notes/fast-gaussian-resampling.tex": "1a81e6b7f9228adace139ef891684db3a894e2a8b6f41b5234275627d25fe455",
+    "/Users/colkitt/sith/toys/math/integerMult/docs/research/batched-review.md": "990f4ed11aa3cea3388505fb61f9d6b7c0a8c44730cb9cc8a5350a8ee7cb0559",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/src/gr_dft/bluestein.c": "3dc846c9a434700aa3d9b475ed911d2b919aae6a5d7564e16926d91657881be8",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/src/gr_dft/precomp.c": "a31c0989a48f64155d5b8a34c7db978a9195f3fe016a0cabfd45ef9fcea6ba03"
+  },
+  "artifact_sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-refresh-20261008/small-checks.log": "bc226d38f89e6011cef8ad6b4289b166228d70b016ed6ba3217082a259e5fdc6",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-refresh-20261008/small-checks.json": "9d48e93f7c5047065bd36b4df522af6d4e5f17a2f7c67f62478f388095604ab1",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-refresh-20261008/parity-exact.json": "42dda7eaac79268f0f33fbb6096f4aa780b4dfbcec757f4030e7342c09844512",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-refresh-20261008/pair-frame-replay-23.json": "53f22c22ab576620ec91db0fcce56e42c4b0a6ba86c377074847f8cfc59a3266",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/theory_refresh_survey.py": "eb71db69dea70696007ee8e01bd484b9de73ea6d6d21e73b2ff06e279e02adfd",
+    "/Users/colkitt/sith/toys/math/butterflyMult/docs/theory-refresh-20261008.md": "e5a94d5d81c3386c12e7bd5169d5f96b3e8f3323f35db739d6b319e36d5764f1"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "scope": "All original tables, but only observed queries excluding zero, one or two supported labels. Removes the balanced fallback as an explanation of the initial comparison. No new tuning, gate relaxation or timing.",
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/sachs_hypergraph_eligible.py": "f121ae7616c5a54e384e4e5ed24607909f59bbde65709d6b3ba9277ed036093e",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/sachs_hypergraph_screen.py": "bb03029b4e48aa1bd556cef756500208d211bcaccb42cfd5b0b23b496016a43e",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hypergraph-screen/plan.json": "7ff18ecc9f18d223cd71afda0158f684652da31d719a58b8466ebd30e175782b",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hypergraph-screen/summary.json": "f9d7f1f932708bfb9358ea326449a508eeab753a3589d10b320d05cf3533a5c0",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/encrypted-probability-survey/runs/sachs1k-p2/trace/queries.tsv": "c3f9010340e134ee76bdb7a7d2f59c71ab65e8890184701dc5e2dfb3cc8e7bd0"
+  }
+}

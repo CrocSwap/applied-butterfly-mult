@@ -1,0 +1,381 @@
+{
+  "published_basis_vectors_checked": 255,
+  "rows": [
+    {
+      "logn": 0,
+      "n": 1,
+      "butterfly_add_sub": 0,
+      "h4": {
+        "add_sub": 0,
+        "halves": 0,
+        "leaf_scales": 0
+      },
+      "h8": {
+        "add_sub": 0,
+        "halves": 0,
+        "leaf_scales": 0
+      }
+    },
+    {
+      "logn": 1,
+      "n": 2,
+      "butterfly_add_sub": 2,
+      "h4": {
+        "add_sub": 2,
+        "halves": 0,
+        "leaf_scales": 0
+      },
+      "h8": {
+        "add_sub": 2,
+        "halves": 0,
+        "leaf_scales": 0
+      }
+    },
+    {
+      "logn": 2,
+      "n": 4,
+      "butterfly_add_sub": 8,
+      "h4": {
+        "add_sub": 7,
+        "halves": 1,
+        "leaf_scales": 3
+      },
+      "h8": {
+        "add_sub": 8,
+        "halves": 0,
+        "leaf_scales": 0
+      }
+    },
+    {
+      "logn": 3,
+      "n": 8,
+      "butterfly_add_sub": 24,
+      "h4": {
+        "add_sub": 22,
+        "halves": 2,
+        "leaf_scales": 6
+      },
+      "h8": {
+        "add_sub": 22,
+        "halves": 1,
+        "leaf_scales": 7
+      }
+    },
+    {
+      "logn": 4,
+      "n": 16,
+      "butterfly_add_sub": 64,
+      "h4": {
+        "add_sub": 56,
+        "halves": 8,
+        "leaf_scales": 15
+      },
+      "h8": {
+        "add_sub": 60,
+        "halves": 2,
+        "leaf_scales": 14
+      }
+    },
+    {
+      "logn": 5,
+      "n": 32,
+      "butterfly_add_sub": 160,
+      "h4": {
+        "add_sub": 144,
+        "halves": 16,
+        "leaf_scales": 30
+      },
+      "h8": {
+        "add_sub": 152,
+        "halves": 4,
+        "leaf_scales": 28
+      }
+    },
+    {
+      "logn": 6,
+      "n": 64,
+      "butterfly_add_sub": 384,
+      "h4": {
+        "add_sub": 336,
+        "halves": 48,
+        "leaf_scales": 63
+      },
+      "h8": {
+        "add_sub": 352,
+        "halves": 16,
+        "leaf_scales": 63
+      }
+    },
+    {
+      "logn": 7,
+      "n": 128,
+      "butterfly_add_sub": 896,
+      "h4": {
+        "add_sub": 800,
+        "halves": 96,
+        "leaf_scales": 126
+      },
+      "h8": {
+        "add_sub": 832,
+        "halves": 32,
+        "leaf_scales": 126
+      }
+    },
+    {
+      "logn": 8,
+      "n": 256,
+      "butterfly_add_sub": 2048,
+      "h4": {
+        "add_sub": 1792,
+        "halves": 256,
+        "leaf_scales": 255
+      },
+      "h8": {
+        "add_sub": 1920,
+        "halves": 64,
+        "leaf_scales": 252
+      }
+    },
+    {
+      "logn": 9,
+      "n": 512,
+      "butterfly_add_sub": 4608,
+      "h4": {
+        "add_sub": 4096,
+        "halves": 512,
+        "leaf_scales": 510
+      },
+      "h8": {
+        "add_sub": 4224,
+        "halves": 192,
+        "leaf_scales": 511
+      }
+    },
+    {
+      "logn": 10,
+      "n": 1024,
+      "butterfly_add_sub": 10240,
+      "h4": {
+        "add_sub": 8960,
+        "halves": 1280,
+        "leaf_scales": 1023
+      },
+      "h8": {
+        "add_sub": 9472,
+        "halves": 384,
+        "leaf_scales": 1022
+      }
+    },
+    {
+      "logn": 11,
+      "n": 2048,
+      "butterfly_add_sub": 22528,
+      "h4": {
+        "add_sub": 19968,
+        "halves": 2560,
+        "leaf_scales": 2046
+      },
+      "h8": {
+        "add_sub": 20992,
+        "halves": 768,
+        "leaf_scales": 2044
+      }
+    },
+    {
+      "logn": 12,
+      "n": 4096,
+      "butterfly_add_sub": 49152,
+      "h4": {
+        "add_sub": 43008,
+        "halves": 6144,
+        "leaf_scales": 4095
+      },
+      "h8": {
+        "add_sub": 45056,
+        "halves": 2048,
+        "leaf_scales": 4095
+      }
+    },
+    {
+      "logn": 13,
+      "n": 8192,
+      "butterfly_add_sub": 106496,
+      "h4": {
+        "add_sub": 94208,
+        "halves": 12288,
+        "leaf_scales": 8190
+      },
+      "h8": {
+        "add_sub": 98304,
+        "halves": 4096,
+        "leaf_scales": 8190
+      }
+    },
+    {
+      "logn": 14,
+      "n": 16384,
+      "butterfly_add_sub": 229376,
+      "h4": {
+        "add_sub": 200704,
+        "halves": 28672,
+        "leaf_scales": 16383
+      },
+      "h8": {
+        "add_sub": 212992,
+        "halves": 8192,
+        "leaf_scales": 16380
+      }
+    },
+    {
+      "logn": 15,
+      "n": 32768,
+      "butterfly_add_sub": 491520,
+      "h4": {
+        "add_sub": 434176,
+        "halves": 57344,
+        "leaf_scales": 32766
+      },
+      "h8": {
+        "add_sub": 450560,
+        "halves": 20480,
+        "leaf_scales": 32767
+      }
+    },
+    {
+      "logn": 16,
+      "n": 65536,
+      "butterfly_add_sub": 1048576,
+      "h4": {
+        "add_sub": 917504,
+        "halves": 131072,
+        "leaf_scales": 65535
+      },
+      "h8": {
+        "add_sub": 966656,
+        "halves": 40960,
+        "leaf_scales": 65534
+      }
+    },
+    {
+      "logn": 17,
+      "n": 131072,
+      "butterfly_add_sub": 2228224,
+      "h4": {
+        "add_sub": 1966080,
+        "halves": 262144,
+        "leaf_scales": 131070
+      },
+      "h8": {
+        "add_sub": 2064384,
+        "halves": 81920,
+        "leaf_scales": 131068
+      }
+    },
+    {
+      "logn": 18,
+      "n": 262144,
+      "butterfly_add_sub": 4718592,
+      "h4": {
+        "add_sub": 4128768,
+        "halves": 589824,
+        "leaf_scales": 262143
+      },
+      "h8": {
+        "add_sub": 4325376,
+        "halves": 196608,
+        "leaf_scales": 262143
+      }
+    },
+    {
+      "logn": 19,
+      "n": 524288,
+      "butterfly_add_sub": 9961472,
+      "h4": {
+        "add_sub": 8781824,
+        "halves": 1179648,
+        "leaf_scales": 524286
+      },
+      "h8": {
+        "add_sub": 9175040,
+        "halves": 393216,
+        "leaf_scales": 524286
+      }
+    },
+    {
+      "logn": 20,
+      "n": 1048576,
+      "butterfly_add_sub": 20971520,
+      "h4": {
+        "add_sub": 18350080,
+        "halves": 2621440,
+        "leaf_scales": 1048575
+      },
+      "h8": {
+        "add_sub": 19398656,
+        "halves": 786432,
+        "leaf_scales": 1048572
+      }
+    },
+    {
+      "logn": 21,
+      "n": 2097152,
+      "butterfly_add_sub": 44040192,
+      "h4": {
+        "add_sub": 38797312,
+        "halves": 5242880,
+        "leaf_scales": 2097150
+      },
+      "h8": {
+        "add_sub": 40370176,
+        "halves": 1835008,
+        "leaf_scales": 2097151
+      }
+    },
+    {
+      "logn": 22,
+      "n": 4194304,
+      "butterfly_add_sub": 92274688,
+      "h4": {
+        "add_sub": 80740352,
+        "halves": 11534336,
+        "leaf_scales": 4194303
+      },
+      "h8": {
+        "add_sub": 84934656,
+        "halves": 3670016,
+        "leaf_scales": 4194302
+      }
+    },
+    {
+      "logn": 23,
+      "n": 8388608,
+      "butterfly_add_sub": 192937984,
+      "h4": {
+        "add_sub": 169869312,
+        "halves": 23068672,
+        "leaf_scales": 8388606
+      },
+      "h8": {
+        "add_sub": 178257920,
+        "halves": 7340032,
+        "leaf_scales": 8388604
+      }
+    },
+    {
+      "logn": 24,
+      "n": 16777216,
+      "butterfly_add_sub": 402653184,
+      "h4": {
+        "add_sub": 352321536,
+        "halves": 50331648,
+        "leaf_scales": 16777215
+      },
+      "h8": {
+        "add_sub": 369098752,
+        "halves": 16777216,
+        "leaf_scales": 16777215
+      }
+    }
+  ],
+  "note": "Exact finite-size counts verified against the authors code; half/power-of-two scalings are reported separately. They are not additions."
+}

@@ -1,0 +1,6 @@
+{
+  "flint": {
+    "url": "https://github.com/flintlib/flint.git",
+    "commit": "657a2839cf0125164859ff102b1f124abcb87ce0"
+  }
+}

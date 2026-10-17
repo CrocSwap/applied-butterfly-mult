@@ -1,0 +1,5 @@
+{
+  "status": "PASS",
+  "small_rewrite_allocator_cases": 30,
+  "basis_positive_controls": 2
+}

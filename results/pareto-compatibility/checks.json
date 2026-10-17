@@ -1,0 +1,129 @@
+{
+  "status": "PASS",
+  "inherited_manifest": "/Users/colkitt/sith/toys/math/butterflyMult/results/qrom-compatibility/completion.json",
+  "inherited_manifest_sha256": "8aa77fa36c5f009e3525d87a8a5d37afb7391852cda2e1b68aed196236714630",
+  "historical_fingerprints_verified": 1977,
+  "upstream_git_blobs_verified": 15,
+  "theory_source_sha256": {
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/paired_exclusion_circuit.py": "8f05f04cf06217befd6d0ee0f2d7d0c5c5eb32cfab8c9a8ca7917fd6d620b7d2",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/exclusion_circuit.py": "b253f9d7318becda1c1f3b24e2287ed44a9c27fcea00cf9d531afb950d0457a0",
+    "/Users/colkitt/sith/toys/math/integerMult/docs/research/paired-network.md": "335b664ca9b7c71a855b32dc44c4597997b6f616ef06dc878af1d5c2010891ea"
+  },
+  "paired_payload": {
+    "cases": [
+      {
+        "n": 4,
+        "dimensions": [
+          2,
+          3
+        ],
+        "fixtures": 24,
+        "checked_outputs": 144,
+        "circuit_sha256": "da74af48cf62093ef97022bced929a495c4ab668a0e7368aa687ce54d36f7673"
+      },
+      {
+        "n": 5,
+        "dimensions": [
+          2,
+          3
+        ],
+        "fixtures": 24,
+        "checked_outputs": 240,
+        "circuit_sha256": "53b3e55de2a46bdf65736d01471cd926b9ac952d5d51b3e2bacd15b2dfae1735"
+      },
+      {
+        "n": 6,
+        "dimensions": [
+          2,
+          3
+        ],
+        "fixtures": 24,
+        "checked_outputs": 360,
+        "circuit_sha256": "41f02ba28a0c132846233fcbd746691915a996d2c0dbbe4362452d5dd78c72d1"
+      },
+      {
+        "n": 7,
+        "dimensions": [
+          2,
+          3
+        ],
+        "fixtures": 24,
+        "checked_outputs": 504,
+        "circuit_sha256": "8cdd9acc82636605cc0eaf0f60f5c5615b108257a56f90c2e7dd3edd996b8f58"
+      },
+      {
+        "n": 8,
+        "dimensions": [
+          2,
+          3
+        ],
+        "fixtures": 24,
+        "checked_outputs": 672,
+        "circuit_sha256": "5896371ae9303be3db8c4dc008ba834872fac62de7c6d8957af614db191ec645"
+      },
+      {
+        "n": 10,
+        "dimensions": [
+          2,
+          3
+        ],
+        "fixtures": 24,
+        "checked_outputs": 1080,
+        "circuit_sha256": "ce5ad6d5edf1eee28454737db32b7a791366c36151a6c218fcc65add00177f46"
+      },
+      {
+        "n": 12,
+        "dimensions": [
+          2,
+          3
+        ],
+        "fixtures": 24,
+        "checked_outputs": 1584,
+        "circuit_sha256": "a0101fadb01eea1e1e99fa1f340ad31fe99c9f06701948cf942b716ad4bbe3f2"
+      }
+    ],
+    "fixtures": 168,
+    "checked_outputs": 4584,
+    "scope": "Synthetic immutable pair payloads, distinct cost vectors only"
+  },
+  "algebra": {
+    "associativity_triples": 4096,
+    "commutativity_pairs": 256,
+    "projection_partitions_checked": 502,
+    "exclusion_counterexample": {
+      "correct": [
+        [
+          1,
+          1
+        ]
+      ],
+      "incorrect": []
+    },
+    "no_inverse_counterexample": true,
+    "union_is_not_pareto_sum": true,
+    "pareto_sum_example": [
+      [
+        1,
+        7
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        7,
+        1
+      ]
+    ]
+  },
+  "limitations": [
+    "No captured application query trace",
+    "No solver execution or profiling",
+    "No runtime improvement or new construction claimed",
+    "Does not validate multiplicity or all-witness output contracts"
+  ]
+}

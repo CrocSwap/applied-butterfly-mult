@@ -1,0 +1,30 @@
+[
+  {
+    "run": "control-aa-post",
+    "metrics": {
+      "wall": {
+        "sqr": {
+          "cases": 3,
+          "reduction_pct": 1.5164717596949928,
+          "ci95_low_pct": -1.6174098511187118,
+          "ci95_high_pct": 4.869057845210389
+        }
+      },
+      "cpu": {
+        "sqr": {
+          "cases": 3,
+          "reduction_pct": -0.06400770733983041,
+          "ci95_low_pct": -0.5314696808793373,
+          "ci95_high_pct": 0.3486169527413874
+        }
+      }
+    }
+  },
+  {
+    "run": "c3-register-boundaries",
+    "metrics": {
+      "wall": {},
+      "cpu": {}
+    }
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "dim": 8,
+    "length": 256,
+    "modulus": 1000000007,
+    "window": "full",
+    "supported": true,
+    "cpu": {
+      "reduction_pct": 6.1557291281790665,
+      "ci95_low_pct": 5.954938584151592,
+      "ci95_high_pct": 6.404642634473534,
+      "baseline_median_ns": 1215998.6875,
+      "candidate_median_ns": 1143156.25,
+      "quartets": 31,
+      "bootstrap_block": 5
+    },
+    "wall": {
+      "reduction_pct": 6.268263961114107,
+      "ci95_low_pct": 5.958579617274773,
+      "ci95_high_pct": 6.663730365010601,
+      "baseline_median_ns": 1216343.75,
+      "candidate_median_ns": 1143125.0,
+      "quartets": 31,
+      "bootstrap_block": 5
+    }
+  },
+  {
+    "dim": 8,
+    "length": 1024,
+    "modulus": 1108307720798209,
+    "window": "full",
+    "supported": true,
+    "cpu": {
+      "reduction_pct": 6.17114222001357,
+      "ci95_low_pct": 5.42823882354182,
+      "ci95_high_pct": 6.858811781863805,
+      "baseline_median_ns": 2574328.125,
+      "candidate_median_ns": 2401531.25,
+      "quartets": 31,
+      "bootstrap_block": 5
+    },
+    "wall": {
+      "reduction_pct": 6.1621260266596085,
+      "ci95_low_pct": 5.392481121409842,
+      "ci95_high_pct": 6.865622223644763,
+      "baseline_median_ns": 2574750.0,
+      "candidate_median_ns": 2408000.0,
+      "quartets": 31,
+      "bootstrap_block": 5
+    }
+  },
+  {
+    "dim": 8,
+    "length": 1008,
+    "modulus": 1000000007,
+    "window": "full",
+    "supported": true,
+    "cpu": {
+      "reduction_pct": 3.973435642120038,
+      "ci95_low_pct": 3.3558362318890977,
+      "ci95_high_pct": 4.5109854160926055,
+      "baseline_median_ns": 3995380.25,
+      "candidate_median_ns": 3842869.875,
+      "quartets": 31,
+      "bootstrap_block": 5
+    },
+    "wall": {
+      "reduction_pct": 4.000786576335901,
+      "ci95_low_pct": 3.4440187580609516,
+      "ci95_high_pct": 4.495264434307233,
+      "baseline_median_ns": 3995250.0,
+      "candidate_median_ns": 3843250.0,
+      "quartets": 31,
+      "bootstrap_block": 5
+    }
+  },
+  {
+    "dim": 8,
+    "length": 240,
+    "modulus": 1000000007,
+    "window": "full",
+    "supported": true,
+    "cpu": {
+      "reduction_pct": 3.7723148309260934,
+      "ci95_low_pct": 3.2011782011177603,
+      "ci95_high_pct": 4.288276138573965,
+      "baseline_median_ns": 904559.9375,
+      "candidate_median_ns": 866105.4375,
+      "quartets": 31,
+      "bootstrap_block": 5
+    },
+    "wall": {
+      "reduction_pct": 3.725715287936171,
+      "ci95_low_pct": 3.1744033970743435,
+      "ci95_high_pct": 4.2390448008458925,
+      "baseline_median_ns": 904562.5,
+      "candidate_median_ns": 866406.25,
+      "quartets": 31,
+      "bootstrap_block": 5
+    }
+  },
+  {
+    "dim": 4,
+    "length": 256,
+    "modulus": 1000000007,
+    "window": "full",
+    "supported": true,
+    "cpu": {
+      "reduction_pct": 4.148458629735252,
+      "ci95_low_pct": 3.899523303035579,
+      "ci95_high_pct": 4.422192978338623,
+      "baseline_median_ns": 218607.7421875,
+      "candidate_median_ns": 209700.1953125,
+      "quartets": 31,
+      "bootstrap_block": 5
+    },
+    "wall": {
+      "reduction_pct": 4.138344872818511,
+      "ci95_low_pct": 3.820202843508669,
+      "ci95_high_pct": 4.467886841800384,
+      "baseline_median_ns": 218625.0,
+      "candidate_median_ns": 209703.125,
+      "quartets": 31,
+      "bootstrap_block": 5
+    }
+  },
+  {
+    "dim": 8,
+    "length": 1024,
+    "modulus": 1000000007,
+    "window": "full",
+    "supported": true,
+    "cpu": {
+      "reduction_pct": 3.6799738589457176,
+      "ci95_low_pct": -0.44774728028049715,
+      "ci95_high_pct": 6.202807394753529,
+      "baseline_median_ns": 5705145.75,
+      "candidate_median_ns": 5391500.25,
+      "quartets": 31,
+      "bootstrap_block": 5
+    },
+    "wall": {
+      "reduction_pct": 2.2447990839716603,
+      "ci95_low_pct": -6.237820062741739,
+      "ci95_high_pct": 7.0168974693389,
+      "baseline_median_ns": 5705750.0,
+      "candidate_median_ns": 5392000.0,
+      "quartets": 31,
+      "bootstrap_block": 5
+    }
+  }
+]

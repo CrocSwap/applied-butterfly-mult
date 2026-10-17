@@ -1,0 +1,25 @@
+{
+  "sha256": {
+    "README.md": "41ec25c5db70787b2ec3515656bf389cff8552610eb60af37cd19076e1aab67d",
+    "docs/experiments-m2.md": "cbf06b63f99e33ad633336c4d817fe994f4fa7d3eed8f280f44156746110e065",
+    "docs/ablations-m2.md": "d65bd28dcc1f9bd687243f72576aa3241468d9cf1ab2bf5e9f911df04569e724",
+    "docs/ablation-contracts.md": "ac02388663693a6094fc6e9ad5c15b2d2a0723f95f248809d707476a3684a1bf",
+    "bench/pi.c": "b9b3f0ac7a6de66d69726ded19645ebf4ea1e3746b66d49e0b01150ae6b5d168",
+    "bench/trace_pi.c": "6d1cf0d1729b56c61328ccd0169ffb5b56808a7b2e662867594c8bae58224a5e",
+    "scripts/make_ablations.py": "bfbe2bfa29b33575a329c31e8a85696bfe3b563c8e0e4145e9db516ca833fa31",
+    "scripts/run_ablations.py": "af34986ed89cbe329592172ce9ba6727d80941504258f9955314f84f0d73c568",
+    "scripts/compare_pi.py": "d361c737280eedb184a2a44fa0946d95ac4f740efd0f8b29b3967b8b320bbe8a",
+    "scripts/profile_pi.py": "5007b84689e5ca2a4a1378302880a8dc4cf9bc53db76faa32d4b8054e97757ec",
+    "scripts/trace_pi.py": "021328b84171996a0379dc54bed6e9fd2f09afdd6acb50a3d52f4008dc51a1b6",
+    "scripts/audit_ablations.py": "1cdfebd1a3e5396ddf5a86117be49ac55ab07b6844a9e0f8b568a3e6955fbef0",
+    "scripts/build_pi.sh": "1c59a78e657307adf465100fe058f74b1a2b26a82ee45cc9701f29d8c54c8e48"
+  },
+  "checks": [
+    "Python syntax",
+    "Shell syntax",
+    "Whitespace",
+    "Local document links",
+    "Original evidence audit",
+    "Phase-two evidence audit"
+  ]
+}

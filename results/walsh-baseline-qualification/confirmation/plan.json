@@ -1,0 +1,845 @@
+{
+  "names": [
+    "iterative_copy",
+    "recursive_copy",
+    "alman_rao_h4",
+    "alman_rao_h8",
+    "direct_iterative",
+    "direct_recursive",
+    "direct_radix4",
+    "direct_radix8"
+  ],
+  "ordinary": [
+    0,
+    1,
+    4,
+    5,
+    6,
+    7
+  ],
+  "cases": [
+    {
+      "logn": 3,
+      "target": 512,
+      "fixture": 0
+    },
+    {
+      "logn": 3,
+      "target": 512,
+      "fixture": 1
+    },
+    {
+      "logn": 3,
+      "target": 4096,
+      "fixture": 0
+    },
+    {
+      "logn": 3,
+      "target": 4096,
+      "fixture": 1
+    },
+    {
+      "logn": 6,
+      "target": 512,
+      "fixture": 0
+    },
+    {
+      "logn": 6,
+      "target": 512,
+      "fixture": 1
+    },
+    {
+      "logn": 6,
+      "target": 4096,
+      "fixture": 0
+    },
+    {
+      "logn": 6,
+      "target": 4096,
+      "fixture": 1
+    },
+    {
+      "logn": 9,
+      "target": 512,
+      "fixture": 0
+    },
+    {
+      "logn": 9,
+      "target": 512,
+      "fixture": 1
+    },
+    {
+      "logn": 9,
+      "target": 4096,
+      "fixture": 0
+    },
+    {
+      "logn": 9,
+      "target": 4096,
+      "fixture": 1
+    },
+    {
+      "logn": 12,
+      "target": 512,
+      "fixture": 0
+    },
+    {
+      "logn": 12,
+      "target": 512,
+      "fixture": 1
+    },
+    {
+      "logn": 12,
+      "target": 4096,
+      "fixture": 0
+    },
+    {
+      "logn": 12,
+      "target": 4096,
+      "fixture": 1
+    },
+    {
+      "logn": 6,
+      "target": 32768,
+      "fixture": 0
+    },
+    {
+      "logn": 12,
+      "target": 32768,
+      "fixture": 0
+    }
+  ],
+  "comparisons": [
+    {
+      "logn": 12,
+      "target": 4096,
+      "fixture": 0,
+      "base": 1,
+      "candidate": 2,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 12,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 0,
+      "trials": 31,
+      "control": true
+    },
+    {
+      "logn": 12,
+      "target": 4096,
+      "fixture": 1,
+      "base": 1,
+      "candidate": 3,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 12,
+      "target": 512,
+      "fixture": 1,
+      "base": 6,
+      "candidate": 3,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 3,
+      "target": 4096,
+      "fixture": 1,
+      "base": 4,
+      "candidate": 3,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 3,
+      "target": 4096,
+      "fixture": 0,
+      "base": 6,
+      "candidate": 2,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 6,
+      "target": 4096,
+      "fixture": 0,
+      "base": 5,
+      "candidate": 2,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 3,
+      "target": 4096,
+      "fixture": 0,
+      "base": 6,
+      "candidate": 3,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 6,
+      "target": 4096,
+      "fixture": 0,
+      "base": 2,
+      "candidate": 2,
+      "trials": 31,
+      "control": true
+    },
+    {
+      "logn": 9,
+      "target": 512,
+      "fixture": 1,
+      "base": 4,
+      "candidate": 2,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 12,
+      "target": 32768,
+      "fixture": 0,
+      "base": 7,
+      "candidate": 3,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 6,
+      "target": 4096,
+      "fixture": 1,
+      "base": 6,
+      "candidate": 3,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 12,
+      "target": 4096,
+      "fixture": 0,
+      "base": 2,
+      "candidate": 2,
+      "trials": 31,
+      "control": true
+    },
+    {
+      "logn": 9,
+      "target": 4096,
+      "fixture": 0,
+      "base": 7,
+      "candidate": 2,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 6,
+      "target": 512,
+      "fixture": 0,
+      "base": 7,
+      "candidate": 2,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 6,
+      "target": 32768,
+      "fixture": 0,
+      "base": 1,
+      "candidate": 3,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 9,
+      "target": 4096,
+      "fixture": 0,
+      "base": 7,
+      "candidate": 3,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 12,
+      "target": 4096,
+      "fixture": 0,
+      "base": 1,
+      "candidate": 3,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 3,
+      "target": 512,
+      "fixture": 1,
+      "base": 4,
+      "candidate": 3,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 6,
+      "target": 512,
+      "fixture": 1,
+      "base": 7,
+      "candidate": 2,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 6,
+      "target": 4096,
+      "fixture": 1,
+      "base": 6,
+      "candidate": 2,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 12,
+      "target": 512,
+      "fixture": 0,
+      "base": 5,
+      "candidate": 2,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 12,
+      "target": 512,
+      "fixture": 1,
+      "base": 6,
+      "candidate": 2,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 6,
+      "target": 4096,
+      "fixture": 0,
+      "base": 4,
+      "candidate": 4,
+      "trials": 31,
+      "control": true
+    },
+    {
+      "logn": 12,
+      "target": 4096,
+      "fixture": 0,
+      "base": 4,
+      "candidate": 4,
+      "trials": 31,
+      "control": true
+    },
+    {
+      "logn": 12,
+      "target": 4096,
+      "fixture": 1,
+      "base": 1,
+      "candidate": 2,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 3,
+      "target": 512,
+      "fixture": 0,
+      "base": 6,
+      "candidate": 2,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 12,
+      "target": 32768,
+      "fixture": 0,
+      "base": 7,
+      "candidate": 2,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 6,
+      "target": 4096,
+      "fixture": 0,
+      "base": 6,
+      "candidate": 6,
+      "trials": 31,
+      "control": true
+    },
+    {
+      "logn": 12,
+      "target": 512,
+      "fixture": 0,
+      "base": 5,
+      "candidate": 3,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 12,
+      "target": 4096,
+      "fixture": 0,
+      "base": 6,
+      "candidate": 6,
+      "trials": 31,
+      "control": true
+    },
+    {
+      "logn": 9,
+      "target": 512,
+      "fixture": 0,
+      "base": 4,
+      "candidate": 3,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 6,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 0,
+      "trials": 31,
+      "control": true
+    },
+    {
+      "logn": 6,
+      "target": 4096,
+      "fixture": 0,
+      "base": 5,
+      "candidate": 3,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 9,
+      "target": 4096,
+      "fixture": 1,
+      "base": 5,
+      "candidate": 2,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 3,
+      "target": 4096,
+      "fixture": 1,
+      "base": 4,
+      "candidate": 2,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 6,
+      "target": 32768,
+      "fixture": 0,
+      "base": 1,
+      "candidate": 2,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 9,
+      "target": 4096,
+      "fixture": 1,
+      "base": 5,
+      "candidate": 3,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 3,
+      "target": 512,
+      "fixture": 0,
+      "base": 6,
+      "candidate": 3,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 9,
+      "target": 512,
+      "fixture": 1,
+      "base": 4,
+      "candidate": 3,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 6,
+      "target": 512,
+      "fixture": 1,
+      "base": 7,
+      "candidate": 3,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 3,
+      "target": 512,
+      "fixture": 1,
+      "base": 4,
+      "candidate": 2,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 9,
+      "target": 512,
+      "fixture": 0,
+      "base": 4,
+      "candidate": 2,
+      "trials": 31,
+      "control": false
+    },
+    {
+      "logn": 6,
+      "target": 512,
+      "fixture": 0,
+      "base": 7,
+      "candidate": 3,
+      "trials": 31,
+      "control": false
+    }
+  ],
+  "commands": [
+    [
+      "clang",
+      "-std=gnu23",
+      "-O3",
+      "-g",
+      "-mcpu=apple-m2",
+      "-fno-omit-frame-pointer",
+      "-I/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/src",
+      "-I/opt/homebrew/opt/gmp/include",
+      "-I/opt/homebrew/opt/mpfr/include",
+      "-I/Users/colkitt/sith/toys/math/butterflyMult/bench",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-baseline-qualification/harness.c",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/libflint.25.0.dylib",
+      "-L/opt/homebrew/opt/gmp/lib",
+      "-L/opt/homebrew/opt/mpfr/lib",
+      "-Wl,-rpath,/opt/homebrew/opt/gmp/lib",
+      "-Wl,-rpath,/opt/homebrew/opt/mpfr/lib",
+      "-pthread",
+      "-lmpfr",
+      "-lgmp",
+      "-o",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-baseline-qualification/walsh"
+    ],
+    [
+      "clang",
+      "-std=gnu23",
+      "-O3",
+      "-g",
+      "-mcpu=apple-m2",
+      "-fno-omit-frame-pointer",
+      "-fsanitize=address,undefined",
+      "-I/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/src",
+      "-I/opt/homebrew/opt/gmp/include",
+      "-I/opt/homebrew/opt/mpfr/include",
+      "-I/Users/colkitt/sith/toys/math/butterflyMult/bench",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-baseline-qualification/harness.c",
+      "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/libflint.25.0.dylib",
+      "-L/opt/homebrew/opt/gmp/lib",
+      "-L/opt/homebrew/opt/mpfr/lib",
+      "-Wl,-rpath,/opt/homebrew/opt/gmp/lib",
+      "-Wl,-rpath,/opt/homebrew/opt/mpfr/lib",
+      "-pthread",
+      "-lmpfr",
+      "-lgmp",
+      "-o",
+      "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-baseline-qualification/walsh-sanitize"
+    ]
+  ],
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/walsh_nonrigidity.c": "c99ba42c833f9b87854a4eb5cb536e00e69f45cbdf9456065300f964374845ca",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/walsh_nonrigidity.h": "0b6a5e9bbf4187381af0d94a659ba6762712bbd4a746bcc9196943607da90143",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/walsh_baseline_qualification.h": "9bd58858d6c0b0ba3de1e5c54e41b50ca299bd881356de98a50f3433404d4892",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/walsh_baseline_qualification.py": "512271c396f1614af0b1d1e5aba00ae01d18b703b1da7fc07f7e0ba65f8ae374",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/compare.py": "d39062f684dc872dc37b895723a42e1d31add2dce640132a5d1114c24f203fac",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/build_experiment.py": "a361988bad20f107900b1896fa502c07acd542a199097783817e7ad419ec8bec",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/flint/libflint.25.0.dylib": "31b9d75a502a408098b37990830d1f033a55fc5957e22ebf12cdaeb2a0fafe58",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-baseline-qualification/harness.c": "dd133ca4bde71915ac4bde193b9beb5217cd8d6d48da3d9a2497e5dee7af6fab",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-baseline-qualification/walsh": "32906f58334744f49a63c7f5bff4057eaf77debd7b296ef3ebb722582f44d399",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-baseline-qualification/build-sanitize.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-baseline-qualification/walsh-sanitize": "e94f2ecba43398910e2ae70920b9740b889c462542f1603b84d997d9dc66ceb0",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-baseline-qualification/validation.json": "3ead778c44ce0ea8f967e5bb697fbdfab5f681c183b4057858422cb2f6b63d8a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-baseline-qualification/build.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-baseline-qualification/walsh.dSYM/Contents/Info.plist": "d05a658feaa1a63df110447b3b6601c6de43d14144b246cefae53f5b12b39907",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-baseline-qualification/walsh.dSYM/Contents/Resources/DWARF/walsh": "83c3e0b961228ef803ebc2f2c822ef23fdd7071c676efefee418fc59002b7166",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-baseline-qualification/walsh.dSYM/Contents/Resources/Relocations/aarch64/walsh.yml": "8d48eda7870fa8f9d8283e4a8c1ad0c746476da1c7d67b2a9d1570a80a74adf9",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-baseline-qualification/walsh-sanitize.dSYM/Contents/Info.plist": "47b740b048be3ad33ba9a120be9c0353d12e920438be369277dc7282e2c65167",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-baseline-qualification/walsh-sanitize.dSYM/Contents/Resources/DWARF/walsh-sanitize": "84c42b4d9051935c73f384b2f4844cf6bcc92c85254dd4fd2aae523cee857e4a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-baseline-qualification/walsh-sanitize.dSYM/Contents/Resources/Relocations/aarch64/walsh-sanitize.yml": "d57066be2c1e9ee3e67405280148eb3f5bdc4070d841e965a6ff7bcec1e20b3c",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-baseline-qualification/plan.json": "56b7f81a3d7d115652d2052a6eb0c0a979287ab70299e865e4b7ac9d18c08585",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-baseline-qualification/raw.jsonl": "26731414a1f417c326423f5fc9d4533725a5b34cfbaced6a366270d30ef263db",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/walsh-baseline-qualification/summary.json": "29d31c5c25d50205b092ab0c77b1f5f94e52269082994aa96218fa37eeebee85"
+  },
+  "inherited_manifest": "/Users/colkitt/sith/toys/math/butterflyMult/results/erasure-basis-short-controls/completion.json",
+  "inherited_manifest_sha256": "3a0faeade156d4836daf9fb7586d7d44041745d402e117f324a605b54ccc7866",
+  "protocol": "31 ABBA/BAAB quartets; other numerical and timing contracts unchanged. All H4/H8 cases and controls retained.",
+  "accuracy": "Same frozen full-box dyadic oracle and target-relative-to-one contract. Start target+logn+8, retry +16 up to +256; copy/scaling/accuracy scan/retries timed; reusable output and scratch allocation outside timing.",
+  "confirmation": "Select fastest of six ordinary methods in each cell by screening CPU reduction versus method 0 (zero for method 0). Carry ALL 36 H4/H8 comparisons and all eight controls to 31-quartet confirmation, no candidate selection or source edits.",
+  "gate": "Report marginal CPU and wall intervals per case. A retained win must clear both in confirmation against selected ordinary baseline; inspect all controls and retain failures. No additional rerun to clean controls.",
+  "scope": "Qualification of existing synthetic real-ball kernel gains on the same M2, not cross-hardware or a new full application gain.",
+  "attribution": "Frozen older Alman--Rao non-rigidity constructions; new comparators are conventional butterflies with direct initial output and stage fusion.",
+  "selection": [
+    {
+      "logn": 3,
+      "target": 512,
+      "fixture": 0,
+      "baseline": 6,
+      "screen_cpu_reductions": {
+        "0": 0.0,
+        "4": 6.326329315669632,
+        "1": -2.4257222563222047,
+        "7": 6.162859108213237,
+        "5": 6.143836393149693,
+        "6": 7.930146788922798
+      }
+    },
+    {
+      "logn": 3,
+      "target": 512,
+      "fixture": 1,
+      "baseline": 4,
+      "screen_cpu_reductions": {
+        "0": 0.0,
+        "5": 4.564270054346498,
+        "4": 5.549750450414647,
+        "7": 5.076389680429005,
+        "1": -3.016246191054761,
+        "6": 5.070547883494669
+      }
+    },
+    {
+      "logn": 3,
+      "target": 4096,
+      "fixture": 0,
+      "baseline": 6,
+      "screen_cpu_reductions": {
+        "0": 0.0,
+        "1": 1.9760791845089054,
+        "4": 4.949262809593535,
+        "7": 4.671838644877846,
+        "5": 5.004295815358928,
+        "6": 5.557978368055283
+      }
+    },
+    {
+      "logn": 3,
+      "target": 4096,
+      "fixture": 1,
+      "baseline": 4,
+      "screen_cpu_reductions": {
+        "0": 0.0,
+        "7": 6.930440360360035,
+        "1": 2.09800027209307,
+        "6": 3.8401278243882953,
+        "4": 9.284889795522,
+        "5": 6.672615235050772
+      }
+    },
+    {
+      "logn": 6,
+      "target": 512,
+      "fixture": 0,
+      "baseline": 7,
+      "screen_cpu_reductions": {
+        "0": 0.0,
+        "5": 2.1691209176962434,
+        "1": -1.1381871249821263,
+        "4": 3.087923299449491,
+        "6": 2.4120515739977866,
+        "7": 4.172565015857499
+      }
+    },
+    {
+      "logn": 6,
+      "target": 512,
+      "fixture": 1,
+      "baseline": 7,
+      "screen_cpu_reductions": {
+        "0": 0.0,
+        "4": 2.8677423086775566,
+        "1": -3.043797820260674,
+        "6": 5.6228263079238,
+        "7": 7.074517187200124,
+        "5": -1.3272430359015264
+      }
+    },
+    {
+      "logn": 6,
+      "target": 4096,
+      "fixture": 0,
+      "baseline": 5,
+      "screen_cpu_reductions": {
+        "0": 0.0,
+        "5": 5.15675954069158,
+        "7": 5.097076483870843,
+        "6": 2.0443664744528522,
+        "4": 3.784277737207542,
+        "1": 1.0864017894642863
+      }
+    },
+    {
+      "logn": 6,
+      "target": 4096,
+      "fixture": 1,
+      "baseline": 6,
+      "screen_cpu_reductions": {
+        "0": 0.0,
+        "1": 0.18335142736025656,
+        "6": 5.509377504212609,
+        "5": 2.2016469976874453,
+        "4": 2.9881377060186343,
+        "7": 0.19447305138750037
+      }
+    },
+    {
+      "logn": 6,
+      "target": 32768,
+      "fixture": 0,
+      "baseline": 1,
+      "screen_cpu_reductions": {
+        "0": 0.0,
+        "6": 2.5755477916318714,
+        "5": -1.1429556843304933,
+        "7": 0.10084049205395518,
+        "1": 3.798128656783184,
+        "4": 3.4188810935797176
+      }
+    },
+    {
+      "logn": 9,
+      "target": 512,
+      "fixture": 0,
+      "baseline": 4,
+      "screen_cpu_reductions": {
+        "0": 0.0,
+        "6": 0.908450756472623,
+        "4": 2.6661215367327573,
+        "5": 0.9087227045189716,
+        "1": -0.10698105989879192,
+        "7": -0.13785214534383083
+      }
+    },
+    {
+      "logn": 9,
+      "target": 512,
+      "fixture": 1,
+      "baseline": 4,
+      "screen_cpu_reductions": {
+        "0": 0.0,
+        "5": -0.1137885210634515,
+        "4": 1.913880686713143,
+        "6": -3.6346677177391262,
+        "1": -0.5797221296348631,
+        "7": -1.7767182219584399
+      }
+    },
+    {
+      "logn": 9,
+      "target": 4096,
+      "fixture": 0,
+      "baseline": 7,
+      "screen_cpu_reductions": {
+        "0": 0.0,
+        "5": 3.9826831089895154,
+        "6": 6.709705093579221,
+        "7": 7.093382728297282,
+        "1": 4.255963293494847,
+        "4": -1.5873822858386344
+      }
+    },
+    {
+      "logn": 9,
+      "target": 4096,
+      "fixture": 1,
+      "baseline": 5,
+      "screen_cpu_reductions": {
+        "0": 0.0,
+        "1": 4.915622712238166,
+        "7": 7.841295102724144,
+        "5": 9.729754905995136,
+        "4": -1.0627696497654604,
+        "6": -2.8392666539603706
+      }
+    },
+    {
+      "logn": 12,
+      "target": 512,
+      "fixture": 0,
+      "baseline": 5,
+      "screen_cpu_reductions": {
+        "0": 0.0,
+        "5": 4.36212642942353,
+        "6": 3.234824523092794,
+        "1": 3.114392677996125,
+        "7": -3.8865870638113753,
+        "4": -1.5629502317046517
+      }
+    },
+    {
+      "logn": 12,
+      "target": 512,
+      "fixture": 1,
+      "baseline": 6,
+      "screen_cpu_reductions": {
+        "0": 0.0,
+        "4": 0.8919759544116168,
+        "1": 2.029175537229899,
+        "5": -0.5618569534374895,
+        "6": 2.222236017011725,
+        "7": 1.3316322682865311
+      }
+    },
+    {
+      "logn": 12,
+      "target": 4096,
+      "fixture": 0,
+      "baseline": 1,
+      "screen_cpu_reductions": {
+        "0": 0.0,
+        "6": 9.327439620408896,
+        "5": 9.156465028405536,
+        "7": 8.838962141589912,
+        "4": 2.222860044237873,
+        "1": 12.543527350355754
+      }
+    },
+    {
+      "logn": 12,
+      "target": 4096,
+      "fixture": 1,
+      "baseline": 1,
+      "screen_cpu_reductions": {
+        "0": 0.0,
+        "7": 14.810577433064875,
+        "5": 9.38494197008044,
+        "1": 16.174535294692006,
+        "6": 10.1673950002381,
+        "4": 0.0752081368107782
+      }
+    },
+    {
+      "logn": 12,
+      "target": 32768,
+      "fixture": 0,
+      "baseline": 7,
+      "screen_cpu_reductions": {
+        "0": 0.0,
+        "7": 23.407249848261003,
+        "5": 11.570543939698597,
+        "1": 14.144665068998286,
+        "4": -1.5601074018622763,
+        "6": 18.18127096843317
+      }
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+[
+  {
+    "id": "sumu",
+    "path": "COPYING",
+    "url": "https://raw.githubusercontent.com/Sums-of-Products/sumu/d0e2d6dd5a42053bf507dfd06c4de8129c0b6a9d/COPYING",
+    "bytes": 1472,
+    "git_blob_sha": "e78c120c0c7aad4615520528aba5be8f6ce3dac3"
+  },
+  {
+    "id": "sumu",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/Sums-of-Products/sumu/d0e2d6dd5a42053bf507dfd06c4de8129c0b6a9d/README.md",
+    "bytes": 5704,
+    "git_blob_sha": "4ecb5f6bace9e0a0c171bff9fa3fdb87656a9c25"
+  },
+  {
+    "id": "sumu",
+    "path": "data/README.md",
+    "url": "https://raw.githubusercontent.com/Sums-of-Products/sumu/d0e2d6dd5a42053bf507dfd06c4de8129c0b6a9d/data/README.md",
+    "bytes": 90,
+    "git_blob_sha": "06e4b3c06e10805db2f98f9f25343ff1c8a92b15"
+  },
+  {
+    "id": "sumu",
+    "path": "sumu/weight_sum/CandidateRestrictedScore.cpp",
+    "url": "https://raw.githubusercontent.com/Sums-of-Products/sumu/d0e2d6dd5a42053bf507dfd06c4de8129c0b6a9d/sumu/weight_sum/CandidateRestrictedScore.cpp",
+    "bytes": 5881,
+    "git_blob_sha": "8f9e2a21a16a713528c8da60a3e94b1cec8fa5ff"
+  },
+  {
+    "id": "sumu",
+    "path": "sumu/weight_sum/CandidateRestrictedScore.hpp",
+    "url": "https://raw.githubusercontent.com/Sums-of-Products/sumu/d0e2d6dd5a42053bf507dfd06c4de8129c0b6a9d/sumu/weight_sum/CandidateRestrictedScore.hpp",
+    "bytes": 1376,
+    "git_blob_sha": "43306f8f390b8bbdf47d5bf8a617baef2991a197"
+  },
+  {
+    "id": "sumu",
+    "path": "sumu/weight_sum/IntersectSums.cpp",
+    "url": "https://raw.githubusercontent.com/Sums-of-Products/sumu/d0e2d6dd5a42053bf507dfd06c4de8129c0b6a9d/sumu/weight_sum/IntersectSums.cpp",
+    "bytes": 8971,
+    "git_blob_sha": "922a80facdefedebd14d63d2d3bc42d31e9bb58f"
+  },
+  {
+    "id": "sumu",
+    "path": "sumu/weight_sum/GroundSetIntersectSums.cpp",
+    "url": "https://raw.githubusercontent.com/Sums-of-Products/sumu/d0e2d6dd5a42053bf507dfd06c4de8129c0b6a9d/sumu/weight_sum/GroundSetIntersectSums.cpp",
+    "bytes": 4186,
+    "git_blob_sha": "910dc6ab0d1bb9d0fb9372185b1e59e2d3a2bc60"
+  },
+  {
+    "id": "sumu",
+    "path": "sumu/weight_sum/Breal.hpp",
+    "url": "https://raw.githubusercontent.com/Sums-of-Products/sumu/d0e2d6dd5a42053bf507dfd06c4de8129c0b6a9d/sumu/weight_sum/Breal.hpp",
+    "bytes": 7771,
+    "git_blob_sha": "1192f1bef45155ded7a91d3c6706c5d6ee48cafa"
+  },
+  {
+    "id": "sumu",
+    "path": "sumu/weight_sum/_weight_sum.pyx",
+    "url": "https://raw.githubusercontent.com/Sums-of-Products/sumu/d0e2d6dd5a42053bf507dfd06c4de8129c0b6a9d/sumu/weight_sum/_weight_sum.pyx",
+    "bytes": 8913,
+    "git_blob_sha": "d21d8816b17f472e1d554f5b5e5789d82c21550f"
+  },
+  {
+    "id": "sumu",
+    "path": "sumu/mcmc.py",
+    "url": "https://raw.githubusercontent.com/Sums-of-Products/sumu/d0e2d6dd5a42053bf507dfd06c4de8129c0b6a9d/sumu/mcmc.py",
+    "bytes": 17020,
+    "git_blob_sha": "7b2e9addeb7e4ec621dbd0fe1068e1fc637b0cc8"
+  },
+  {
+    "id": "sumu",
+    "path": "sumu/gadget.py",
+    "url": "https://raw.githubusercontent.com/Sums-of-Products/sumu/d0e2d6dd5a42053bf507dfd06c4de8129c0b6a9d/sumu/gadget.py",
+    "bytes": 90864,
+    "git_blob_sha": "1b60f9ff689d6de63f6f029ceba651df3ee2b389"
+  },
+  {
+    "id": "sumu",
+    "path": "sumu/tests/test_gadget.py",
+    "url": "https://raw.githubusercontent.com/Sums-of-Products/sumu/d0e2d6dd5a42053bf507dfd06c4de8129c0b6a9d/sumu/tests/test_gadget.py",
+    "bytes": 11180,
+    "git_blob_sha": "2033ee351c08e5edf694b588eab2afa78a32e5cc"
+  },
+  {
+    "id": "openfhe",
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/openfheorg/openfhe-development/6206d24f9eefefc620b524a4f2b9f308feb91e9f/LICENSE",
+    "bytes": 1318,
+    "git_blob_sha": "d9c3a09aa13fb1d4b714621736a5b4703e435214"
+  },
+  {
+    "id": "openfhe",
+    "path": "src/pke/examples/CKKS_BOOTSTRAPPING.md",
+    "url": "https://raw.githubusercontent.com/openfheorg/openfhe-development/6206d24f9eefefc620b524a4f2b9f308feb91e9f/src/pke/examples/CKKS_BOOTSTRAPPING.md",
+    "bytes": 12471,
+    "git_blob_sha": "3f47423efcdf9eb40d9e050b0ae25b2bc07d0428"
+  },
+  {
+    "id": "openfhe",
+    "path": "src/pke/examples/CKKS_FUNCTIONAL_BOOTSTRAPING.md",
+    "url": "https://raw.githubusercontent.com/openfheorg/openfhe-development/6206d24f9eefefc620b524a4f2b9f308feb91e9f/src/pke/examples/CKKS_FUNCTIONAL_BOOTSTRAPING.md",
+    "bytes": 19424,
+    "git_blob_sha": "9fd91561fe6c00a61de84e216b8c76db4cfc42b1"
+  },
+  {
+    "id": "openfhe",
+    "path": "src/pke/lib/scheme/ckksrns/ckksrns-fhe.cpp",
+    "url": "https://raw.githubusercontent.com/openfheorg/openfhe-development/6206d24f9eefefc620b524a4f2b9f308feb91e9f/src/pke/lib/scheme/ckksrns/ckksrns-fhe.cpp",
+    "bytes": 229167,
+    "git_blob_sha": "2b1d56f7f4ec645a1653a89dbc81894507cf743b"
+  },
+  {
+    "id": "openfhe",
+    "path": "src/pke/lib/scheme/ckksrns/ckksrns-utils.cpp",
+    "url": "https://raw.githubusercontent.com/openfheorg/openfhe-development/6206d24f9eefefc620b524a4f2b9f308feb91e9f/src/pke/lib/scheme/ckksrns/ckksrns-utils.cpp",
+    "bytes": 36078,
+    "git_blob_sha": "6cd1f252ac06d3ff700c8f203df71aca215e5298"
+  },
+  {
+    "id": "openfhe",
+    "path": "src/pke/examples/simple-ckks-bootstrapping.cpp",
+    "url": "https://raw.githubusercontent.com/openfheorg/openfhe-development/6206d24f9eefefc620b524a4f2b9f308feb91e9f/src/pke/examples/simple-ckks-bootstrapping.cpp",
+    "bytes": 13507,
+    "git_blob_sha": "011bb654ae635ae6188334271925553f52626d34"
+  }
+]

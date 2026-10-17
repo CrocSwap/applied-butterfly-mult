@@ -1,0 +1,25 @@
+--- a/src/fft_small/sd_ifft.c
++++ b/src/fft_small/sd_ifft.c
+@@ -452,10 +452,22 @@
+ 
+     W2 = vec4d_load_aligned(&Q->w2tab[2+j_bits][4*j_mr+0]); /* a b c d */
+     W2 = vec4d_permute_3_2_1_0(W2);                         /* d c b a */
++#if defined(__ARM_NEON) && !defined(FLINT_MACHINE_VECTORS_GENERIC)
++    {
++        const double *tw = &Q->w2tab[3+j_bits][8*j_mr];
++        float64x2x2_t a = vld2q_f64(tw);
++        float64x2x2_t b = vld2q_f64(tw + 4);
++        W = vec4d_set_vec2d2(vextq_f64(b.val[1], b.val[1], 1),
++                            vextq_f64(a.val[1], a.val[1], 1)); /* 7 5 3 1 */
++        IW = vec4d_set_vec2d2(vextq_f64(b.val[0], b.val[0], 1),
++                             vextq_f64(a.val[0], a.val[0], 1)); /* 6 4 2 0 */
++    }
++#else
+     u  = vec4d_load_aligned(&Q->w2tab[3+j_bits][8*j_mr+0]); /* 0 1 2 3 */
+     v  = vec4d_load_aligned(&Q->w2tab[3+j_bits][8*j_mr+4]); /* 4 5 6 7 */
+     W  = vec4d_unpackhi_permute_3_1_2_0(u, v);              /* 7 5 3 1 */
+     IW = vec4d_unpacklo_permute_3_1_2_0(u, v);              /* 6 4 2 0 */
++#endif
+     LENGTH4INV_ANY_J(vec4d, x0,x1,x2,x3, n,ninv, W2, W, IW);
+     VEC4D_TRANSPOSE(x0,x1,x2,x3, x0,x1,x2,x3);
+ 

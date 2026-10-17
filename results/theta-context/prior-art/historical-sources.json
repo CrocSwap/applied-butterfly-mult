@@ -1,0 +1,52 @@
+[
+  {
+    "file": "agm_mul-14794ad2.c",
+    "url": "https://raw.githubusercontent.com/flintlib/flint/14794ad2a8358406e884b71b3db0f4c6c4b122b5/src/acb_theta/agm_mul.c",
+    "sha256": "acff4a13a80b447f2f5d29dcac5b2f1023d33ac53f4be1a18a9d2914e846d244"
+  },
+  {
+    "file": "agm_mul-4ce379a3.c",
+    "url": "https://raw.githubusercontent.com/flintlib/flint/4ce379a37a35962920248a39b8f2f67aeebedea8/src/acb_theta/agm_mul.c",
+    "sha256": "5c4578465e6b21f21ac4af3370a264b0ba33022ed476ed16efbed4cd8ccce2b1"
+  },
+  {
+    "file": "agm_mul-213a4cff.c",
+    "url": "https://raw.githubusercontent.com/flintlib/flint/213a4cff74d1bff9f0e07b63c57b6f3f8876e3a0/src/acb_theta/agm_mul.c",
+    "sha256": "3742040b3c9fa6a58538d6715611dce1b9b42cce3edce08ce88b127e7336525c"
+  },
+  {
+    "file": "agm_mul-172f80bb.c",
+    "url": "https://raw.githubusercontent.com/flintlib/flint/172f80bba34e6b599a2a625abf70f6c415dd4ab7/src/acb_theta/agm_mul.c",
+    "sha256": "55e6e6f13611411a9de1bcc4182f31fb971fb38214c306b6ed3a56d7c7bdb0d9"
+  },
+  {
+    "file": "agm_mul-066c19e9.c",
+    "url": "https://raw.githubusercontent.com/flintlib/flint/066c19e97f05da5b5858f034ccca3328d076ecb1/src/acb_theta/agm_mul.c",
+    "sha256": "7315b3c5801ca872ab1e862870110cef6210c4318ac82723299c5f06882e996d"
+  },
+  {
+    "file": "agm_mul-767bc8aa.c",
+    "url": "https://raw.githubusercontent.com/flintlib/flint/767bc8aaba890df572cb4be96e4fc160e7cec9b8/src/acb_theta/agm_mul.c",
+    "sha256": "246e886e0b10f99dcad834aad483a414aaa34507aa371ed4ddb00561b60da2b6"
+  },
+  {
+    "file": "agm_mul-0593be07.c",
+    "url": "https://raw.githubusercontent.com/flintlib/flint/0593be07c08f2f2b258e3aa4fbe75f859b13ee73/src/acb_theta/agm_mul.c",
+    "sha256": "6be2a0715ad2bac7b29ba0e6dac74756435b9dab6f936c921111afbc4bc0a84c"
+  },
+  {
+    "file": "agm_mul-1bcd7b88.c",
+    "url": "https://raw.githubusercontent.com/flintlib/flint/1bcd7b8836a5f84f8d14190dbbb402b261588f21/src/acb_theta/agm_mul.c",
+    "sha256": "e6ad5284b0e6dc0df7a2ae0adff82cbf80ef1e41fb4b414b2d62920ae779ee1d"
+  },
+  {
+    "file": "agm_mul-f0174692.c",
+    "url": "https://raw.githubusercontent.com/flintlib/flint/f01746925c4e5c7513a1ade9f8b8ce596e9cc164/src/acb_theta/agm_mul.c",
+    "sha256": "f0900dce50725c810770080aee28d3a22d29b0523e048b6612746f311218b1d5"
+  },
+  {
+    "file": "agm_mul-d0ee3478.c",
+    "url": "https://raw.githubusercontent.com/flintlib/flint/d0ee3478aa35bf6f53a313d6a5d0a4afc67a1eb8/src/acb_theta/agm_mul.c",
+    "sha256": "e1510b2ca289d7d44cef3bdc196100f5f25d4d302e81b2207b6f77f04e66058e"
+  }
+]

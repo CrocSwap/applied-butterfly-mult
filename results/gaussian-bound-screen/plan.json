@@ -1,0 +1,477 @@
+{
+  "jobs": [
+    {
+      "s": 31,
+      "t": 36,
+      "p": 512,
+      "alpha": 8
+    },
+    {
+      "s": 31,
+      "t": 36,
+      "p": 512,
+      "alpha": 12
+    },
+    {
+      "s": 31,
+      "t": 36,
+      "p": 512,
+      "alpha": 16
+    },
+    {
+      "s": 31,
+      "t": 36,
+      "p": 4096,
+      "alpha": 13
+    },
+    {
+      "s": 31,
+      "t": 36,
+      "p": 4096,
+      "alpha": 20
+    },
+    {
+      "s": 31,
+      "t": 36,
+      "p": 4096,
+      "alpha": 26
+    },
+    {
+      "s": 31,
+      "t": 36,
+      "p": 4096,
+      "alpha": 39
+    },
+    {
+      "s": 31,
+      "t": 36,
+      "p": 4096,
+      "alpha": 52
+    },
+    {
+      "s": 31,
+      "t": 36,
+      "p": 16384,
+      "alpha": 18
+    },
+    {
+      "s": 31,
+      "t": 36,
+      "p": 16384,
+      "alpha": 27
+    },
+    {
+      "s": 31,
+      "t": 36,
+      "p": 16384,
+      "alpha": 36
+    },
+    {
+      "s": 31,
+      "t": 36,
+      "p": 16384,
+      "alpha": 54
+    },
+    {
+      "s": 31,
+      "t": 36,
+      "p": 16384,
+      "alpha": 72
+    },
+    {
+      "s": 31,
+      "t": 36,
+      "p": 65536,
+      "alpha": 26
+    },
+    {
+      "s": 31,
+      "t": 36,
+      "p": 65536,
+      "alpha": 39
+    },
+    {
+      "s": 31,
+      "t": 36,
+      "p": 65536,
+      "alpha": 52
+    },
+    {
+      "s": 31,
+      "t": 36,
+      "p": 65536,
+      "alpha": 78
+    },
+    {
+      "s": 31,
+      "t": 36,
+      "p": 65536,
+      "alpha": 104
+    },
+    {
+      "s": 127,
+      "t": 144,
+      "p": 512,
+      "alpha": 8
+    },
+    {
+      "s": 127,
+      "t": 144,
+      "p": 512,
+      "alpha": 12
+    },
+    {
+      "s": 127,
+      "t": 144,
+      "p": 512,
+      "alpha": 16
+    },
+    {
+      "s": 127,
+      "t": 144,
+      "p": 4096,
+      "alpha": 14
+    },
+    {
+      "s": 127,
+      "t": 144,
+      "p": 4096,
+      "alpha": 21
+    },
+    {
+      "s": 127,
+      "t": 144,
+      "p": 4096,
+      "alpha": 28
+    },
+    {
+      "s": 127,
+      "t": 144,
+      "p": 4096,
+      "alpha": 42
+    },
+    {
+      "s": 127,
+      "t": 144,
+      "p": 4096,
+      "alpha": 56
+    },
+    {
+      "s": 127,
+      "t": 144,
+      "p": 16384,
+      "alpha": 19
+    },
+    {
+      "s": 127,
+      "t": 144,
+      "p": 16384,
+      "alpha": 29
+    },
+    {
+      "s": 127,
+      "t": 144,
+      "p": 16384,
+      "alpha": 38
+    },
+    {
+      "s": 127,
+      "t": 144,
+      "p": 16384,
+      "alpha": 57
+    },
+    {
+      "s": 127,
+      "t": 144,
+      "p": 16384,
+      "alpha": 76
+    },
+    {
+      "s": 127,
+      "t": 144,
+      "p": 65536,
+      "alpha": 27
+    },
+    {
+      "s": 127,
+      "t": 144,
+      "p": 65536,
+      "alpha": 41
+    },
+    {
+      "s": 127,
+      "t": 144,
+      "p": 65536,
+      "alpha": 54
+    },
+    {
+      "s": 127,
+      "t": 144,
+      "p": 65536,
+      "alpha": 81
+    },
+    {
+      "s": 127,
+      "t": 144,
+      "p": 65536,
+      "alpha": 108
+    },
+    {
+      "s": 1031,
+      "t": 1152,
+      "p": 512,
+      "alpha": 9
+    },
+    {
+      "s": 1031,
+      "t": 1152,
+      "p": 512,
+      "alpha": 14
+    },
+    {
+      "s": 1031,
+      "t": 1152,
+      "p": 512,
+      "alpha": 18
+    },
+    {
+      "s": 1031,
+      "t": 1152,
+      "p": 4096,
+      "alpha": 14
+    },
+    {
+      "s": 1031,
+      "t": 1152,
+      "p": 4096,
+      "alpha": 21
+    },
+    {
+      "s": 1031,
+      "t": 1152,
+      "p": 4096,
+      "alpha": 28
+    },
+    {
+      "s": 1031,
+      "t": 1152,
+      "p": 4096,
+      "alpha": 42
+    },
+    {
+      "s": 1031,
+      "t": 1152,
+      "p": 4096,
+      "alpha": 56
+    },
+    {
+      "s": 1031,
+      "t": 1152,
+      "p": 16384,
+      "alpha": 20
+    },
+    {
+      "s": 1031,
+      "t": 1152,
+      "p": 16384,
+      "alpha": 30
+    },
+    {
+      "s": 1031,
+      "t": 1152,
+      "p": 16384,
+      "alpha": 40
+    },
+    {
+      "s": 1031,
+      "t": 1152,
+      "p": 16384,
+      "alpha": 60
+    },
+    {
+      "s": 1031,
+      "t": 1152,
+      "p": 16384,
+      "alpha": 80
+    },
+    {
+      "s": 1031,
+      "t": 1152,
+      "p": 65536,
+      "alpha": 28
+    },
+    {
+      "s": 1031,
+      "t": 1152,
+      "p": 65536,
+      "alpha": 42
+    },
+    {
+      "s": 1031,
+      "t": 1152,
+      "p": 65536,
+      "alpha": 56
+    },
+    {
+      "s": 1031,
+      "t": 1152,
+      "p": 65536,
+      "alpha": 84
+    },
+    {
+      "s": 1031,
+      "t": 1152,
+      "p": 65536,
+      "alpha": 112
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 512,
+      "alpha": 7
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 512,
+      "alpha": 8
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 512,
+      "alpha": 11
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 512,
+      "alpha": 14
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 512,
+      "alpha": 21
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 4096,
+      "alpha": 12
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 4096,
+      "alpha": 16
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 4096,
+      "alpha": 18
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 4096,
+      "alpha": 24
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 4096,
+      "alpha": 36
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 4096,
+      "alpha": 48
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 16384,
+      "alpha": 17
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 16384,
+      "alpha": 24
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 16384,
+      "alpha": 26
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 16384,
+      "alpha": 34
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 16384,
+      "alpha": 51
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 16384,
+      "alpha": 68
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 65536,
+      "alpha": 23
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 65536,
+      "alpha": 32
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 65536,
+      "alpha": 35
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 65536,
+      "alpha": 46
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 65536,
+      "alpha": 69
+    },
+    {
+      "s": 1031,
+      "t": 1280,
+      "p": 65536,
+      "alpha": 92
+    }
+  ],
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/gaussian_bound_screen.py": "ea22d47a291fb9ab09b7d13235a382475ad58b7333c237d025a509a0182501c1",
+    "/Users/colkitt/sith/toys/math/integerMult/notes/fast-gaussian-resampling.tex": "1a81e6b7f9228adace139ef891684db3a894e2a8b6f41b5234275627d25fe455",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-refresh-20261008/completion.json": "d38be8c911f87480435ce03f22aaac9c3ac246aada8bdaec959fbc0814a3b5b7",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/gaussian-bound-screen/validation.json": "b94428f56899fbe9fc723bd42ff47b9b715ad4c3e1b0aa35ca0e7486976e6d64"
+  },
+  "question": "Does the new Gaussian power lemma save correction work against finite-matrix norm certificates at matched complete inverse-error budgets?",
+  "contract": "||b||inf<=1; absolute error <=2^-p in (I+E)^-1 b. Budget 1/4 series, 1/4 omitted Gaussian tails, 1/2 numerical arithmetic.",
+  "scope": "Four rational oversampling pairs; four precisions; predeclared admissible alpha grid plus previous examples. Positive dyadic matrix certificate uses full retained band and analytic infinite tails. No timing or full DFT claim.",
+  "gate": "Any strict theorem term advantage over all conventional certificates triggers numerical-solve investigation at that parameter. No strict advantage closes this bounded iteration-saving route. Ties alone do not establish planning or runtime savings.",
+  "tuning": "Report pointwise comparisons and nondominated alpha choices in (S-window-width proxy, retained-edge-count*(terms-1)); proxy is not measured runtime. No removal of unfavorable alpha values."
+}

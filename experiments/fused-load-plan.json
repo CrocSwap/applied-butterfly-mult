@@ -1,0 +1,71 @@
+{
+  "created_utc": "2026-10-07T18:43:28.414791+00:00",
+  "candidate": "fused-load-fft",
+  "change": "NEON LD2 twiddle deinterleaving in original nonzero 16/32-point forward FFT leaves. Same arithmetic, spectral layout, inverse and CRT. No C3 fusion.",
+  "assembly_gate": {
+    "forward16": [
+      191,
+      188
+    ],
+    "forward32": [
+      487,
+      479
+    ],
+    "stack_references_unchanged": true,
+    "inverse16": [
+      195,
+      194
+    ],
+    "inverse_decision": "deferred: reversed lane ordering retains four rearrangement instructions; prioritize larger forward reduction"
+  },
+  "sizes": [
+    4095,
+    4096,
+    4097,
+    6144,
+    8191,
+    8192,
+    8193,
+    12288,
+    16383,
+    16384,
+    16385
+  ],
+  "operations": [
+    "mul",
+    "sqr",
+    "unbalanced"
+  ],
+  "trials": 21,
+  "batch_ms": 10,
+  "runs": [
+    {
+      "name": "fused-load-aa",
+      "baseline": "unmodified FLINT",
+      "candidate": "control",
+      "sizes": [
+        4096,
+        8192,
+        16384
+      ],
+      "seed": 93471
+    },
+    {
+      "name": "fused-load-screen",
+      "baseline": "unmodified FLINT",
+      "candidate": "fused-load-fft",
+      "sizes": "all",
+      "seed": 76491
+    },
+    {
+      "name": "fused-load-repeat",
+      "baseline": "unmodified FLINT",
+      "candidate": "fused-load-fft",
+      "sizes": "all",
+      "seed": 18493
+    }
+  ],
+  "primary_metric": "Thread CPU time. Equal weight across the nine sizes inside 4096\u201316384 by shape. Retain wall and boundary cases.",
+  "decision": "Run both candidate passes irrespective of first-pass direction. Claim improvement only with positive intervals in both passes exceeding relink controls; >=1% repeatable full-operation reduction is the practical continuation threshold. Otherwise report unresolved or rejected and do not pursue application benchmarks.",
+  "scope": "Tests hardware load/rearrangement fusion within conventional FFT leaves. No new finite network or asymptotic gain."
+}

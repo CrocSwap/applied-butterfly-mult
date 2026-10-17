@@ -1,0 +1,2375 @@
+{
+  "candidate": ".deps/experiments/network-two-lane/libflint-experiment.dylib",
+  "sha256": "fc0ee3ca89bd69645a6b64ed5956fc436ec1c97be13ec9a3badb6a66451d2c4a",
+  "validator_sha256": "6532c6bfbee5ceff5991aed346854d2ab57f96db629417357f77e359557272fe",
+  "cases": [
+    {
+      "an": 1,
+      "bn": 1,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1,
+      "bn": 1,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 2,
+      "bn": 1,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 2,
+      "bn": 2,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 2,
+      "bn": 2,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 3,
+      "bn": 1,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 3,
+      "bn": 3,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 3,
+      "bn": 3,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 7,
+      "bn": 1,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 7,
+      "bn": 2,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 7,
+      "bn": 3,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 7,
+      "bn": 7,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 7,
+      "bn": 7,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 15,
+      "bn": 1,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 15,
+      "bn": 5,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 15,
+      "bn": 7,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 15,
+      "bn": 15,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 15,
+      "bn": 15,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 16,
+      "bn": 1,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 16,
+      "bn": 5,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 16,
+      "bn": 8,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 16,
+      "bn": 16,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 16,
+      "bn": 16,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 17,
+      "bn": 1,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 17,
+      "bn": 5,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 17,
+      "bn": 8,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 17,
+      "bn": 17,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 17,
+      "bn": 17,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 31,
+      "bn": 1,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 31,
+      "bn": 10,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 31,
+      "bn": 15,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 31,
+      "bn": 31,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 31,
+      "bn": 31,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 63,
+      "bn": 1,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 63,
+      "bn": 21,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 63,
+      "bn": 31,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 63,
+      "bn": 63,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 63,
+      "bn": 63,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 64,
+      "bn": 1,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 64,
+      "bn": 21,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 64,
+      "bn": 32,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 64,
+      "bn": 64,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 64,
+      "bn": 64,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 65,
+      "bn": 1,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 65,
+      "bn": 21,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 65,
+      "bn": 32,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 65,
+      "bn": 65,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 65,
+      "bn": 65,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 127,
+      "bn": 1,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 127,
+      "bn": 42,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 127,
+      "bn": 63,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 127,
+      "bn": 127,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 127,
+      "bn": 127,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 255,
+      "bn": 2,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 255,
+      "bn": 85,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 255,
+      "bn": 127,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 255,
+      "bn": 255,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 255,
+      "bn": 255,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 256,
+      "bn": 2,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 256,
+      "bn": 85,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 256,
+      "bn": 128,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 256,
+      "bn": 256,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 256,
+      "bn": 256,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 257,
+      "bn": 2,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 257,
+      "bn": 85,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 257,
+      "bn": 128,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 257,
+      "bn": 257,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 257,
+      "bn": 257,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 511,
+      "bn": 5,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 511,
+      "bn": 170,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 511,
+      "bn": 255,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 511,
+      "bn": 511,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 511,
+      "bn": 511,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 512,
+      "bn": 5,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 512,
+      "bn": 170,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 512,
+      "bn": 256,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 512,
+      "bn": 512,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 512,
+      "bn": 512,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 513,
+      "bn": 5,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 513,
+      "bn": 171,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 513,
+      "bn": 256,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 513,
+      "bn": 513,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 513,
+      "bn": 513,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 998,
+      "bn": 9,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 998,
+      "bn": 332,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 998,
+      "bn": 499,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 998,
+      "bn": 998,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 998,
+      "bn": 998,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 999,
+      "bn": 9,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 999,
+      "bn": 333,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 999,
+      "bn": 499,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 999,
+      "bn": 999,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 999,
+      "bn": 999,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1000,
+      "bn": 10,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1000,
+      "bn": 333,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1000,
+      "bn": 500,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1000,
+      "bn": 1000,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1000,
+      "bn": 1000,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1001,
+      "bn": 10,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1001,
+      "bn": 333,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1001,
+      "bn": 500,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1001,
+      "bn": 1001,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1001,
+      "bn": 1001,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1002,
+      "bn": 10,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1002,
+      "bn": 334,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1002,
+      "bn": 501,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1002,
+      "bn": 1002,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1002,
+      "bn": 1002,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1399,
+      "bn": 13,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1399,
+      "bn": 466,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1399,
+      "bn": 699,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1399,
+      "bn": 1399,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1399,
+      "bn": 1399,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1400,
+      "bn": 14,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1400,
+      "bn": 466,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1400,
+      "bn": 700,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1400,
+      "bn": 1400,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1400,
+      "bn": 1400,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1401,
+      "bn": 14,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1401,
+      "bn": 467,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1401,
+      "bn": 700,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1401,
+      "bn": 1401,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1401,
+      "bn": 1401,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1535,
+      "bn": 15,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1535,
+      "bn": 511,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1535,
+      "bn": 767,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1535,
+      "bn": 1535,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1535,
+      "bn": 1535,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1536,
+      "bn": 15,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1536,
+      "bn": 512,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1536,
+      "bn": 768,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1536,
+      "bn": 1536,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1536,
+      "bn": 1536,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1537,
+      "bn": 15,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1537,
+      "bn": 512,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1537,
+      "bn": 768,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1537,
+      "bn": 1537,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 1537,
+      "bn": 1537,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 2047,
+      "bn": 20,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 2047,
+      "bn": 682,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 2047,
+      "bn": 1023,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 2047,
+      "bn": 2047,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 2047,
+      "bn": 2047,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 2048,
+      "bn": 20,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 2048,
+      "bn": 682,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 2048,
+      "bn": 1024,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 2048,
+      "bn": 2048,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 2048,
+      "bn": 2048,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 2049,
+      "bn": 20,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 2049,
+      "bn": 683,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 2049,
+      "bn": 1024,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 2049,
+      "bn": 2049,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 2049,
+      "bn": 2049,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 3071,
+      "bn": 30,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 3071,
+      "bn": 1023,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 3071,
+      "bn": 1535,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 3071,
+      "bn": 3071,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 3071,
+      "bn": 3071,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 3072,
+      "bn": 30,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 3072,
+      "bn": 1024,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 3072,
+      "bn": 1536,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 3072,
+      "bn": 3072,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 3072,
+      "bn": 3072,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 3073,
+      "bn": 30,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 3073,
+      "bn": 1024,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 3073,
+      "bn": 1536,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 3073,
+      "bn": 3073,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 3073,
+      "bn": 3073,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 4093,
+      "bn": 40,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 4093,
+      "bn": 1364,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 4093,
+      "bn": 2046,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 4093,
+      "bn": 4093,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 4093,
+      "bn": 4093,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 4095,
+      "bn": 40,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 4095,
+      "bn": 1365,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 4095,
+      "bn": 2047,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 4095,
+      "bn": 4095,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 4095,
+      "bn": 4095,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 4096,
+      "bn": 40,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 4096,
+      "bn": 1365,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 4096,
+      "bn": 2048,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 4096,
+      "bn": 4096,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 4096,
+      "bn": 4096,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 4097,
+      "bn": 40,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 4097,
+      "bn": 1365,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 4097,
+      "bn": 2048,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 4097,
+      "bn": 4097,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 4097,
+      "bn": 4097,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 6143,
+      "bn": 61,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 6143,
+      "bn": 2047,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 6143,
+      "bn": 3071,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 6143,
+      "bn": 6143,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 6143,
+      "bn": 6143,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 6144,
+      "bn": 61,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 6144,
+      "bn": 2048,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 6144,
+      "bn": 3072,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 6144,
+      "bn": 6144,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 6144,
+      "bn": 6144,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 6145,
+      "bn": 61,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 6145,
+      "bn": 2048,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 6145,
+      "bn": 3072,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 6145,
+      "bn": 6145,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 6145,
+      "bn": 6145,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 8191,
+      "bn": 81,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 8191,
+      "bn": 2730,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 8191,
+      "bn": 4095,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 8191,
+      "bn": 8191,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 8191,
+      "bn": 8191,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 8192,
+      "bn": 81,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 8192,
+      "bn": 2730,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 8192,
+      "bn": 4096,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 8192,
+      "bn": 8192,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 8192,
+      "bn": 8192,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 8193,
+      "bn": 81,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 8193,
+      "bn": 2731,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 8193,
+      "bn": 4096,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 8193,
+      "bn": 8193,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 8193,
+      "bn": 8193,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 10239,
+      "bn": 102,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 10239,
+      "bn": 3413,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 10239,
+      "bn": 5119,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 10239,
+      "bn": 10239,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 10239,
+      "bn": 10239,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 10240,
+      "bn": 102,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 10240,
+      "bn": 3413,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 10240,
+      "bn": 5120,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 10240,
+      "bn": 10240,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 10240,
+      "bn": 10240,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 10241,
+      "bn": 102,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 10241,
+      "bn": 3413,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 10241,
+      "bn": 5120,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 10241,
+      "bn": 10241,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 10241,
+      "bn": 10241,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 12287,
+      "bn": 122,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 12287,
+      "bn": 4095,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 12287,
+      "bn": 6143,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 12287,
+      "bn": 12287,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 12287,
+      "bn": 12287,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 12288,
+      "bn": 122,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 12288,
+      "bn": 4096,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 12288,
+      "bn": 6144,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 12288,
+      "bn": 12288,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 12288,
+      "bn": 12288,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 12289,
+      "bn": 122,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 12289,
+      "bn": 4096,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 12289,
+      "bn": 6144,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 12289,
+      "bn": 12289,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 12289,
+      "bn": 12289,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 16383,
+      "bn": 163,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 16383,
+      "bn": 5461,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 16383,
+      "bn": 8191,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 16383,
+      "bn": 16383,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 16383,
+      "bn": 16383,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 16384,
+      "bn": 163,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 16384,
+      "bn": 5461,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 16384,
+      "bn": 8192,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 16384,
+      "bn": 16384,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 16384,
+      "bn": 16384,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 16385,
+      "bn": 163,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 16385,
+      "bn": 5461,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 16385,
+      "bn": 8192,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 16385,
+      "bn": 16385,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 16385,
+      "bn": 16385,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 24575,
+      "bn": 245,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 24575,
+      "bn": 8191,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 24575,
+      "bn": 12287,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 24575,
+      "bn": 24575,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 24575,
+      "bn": 24575,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 24576,
+      "bn": 245,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 24576,
+      "bn": 8192,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 24576,
+      "bn": 12288,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 24576,
+      "bn": 24576,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 24576,
+      "bn": 24576,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 24577,
+      "bn": 245,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 24577,
+      "bn": 8192,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 24577,
+      "bn": 12288,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 24577,
+      "bn": 24577,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 24577,
+      "bn": 24577,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 32767,
+      "bn": 327,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 32767,
+      "bn": 10922,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 32767,
+      "bn": 16383,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 32767,
+      "bn": 32767,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 32767,
+      "bn": 32767,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 32768,
+      "bn": 327,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 32768,
+      "bn": 10922,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 32768,
+      "bn": 16384,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 32768,
+      "bn": 32768,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 32768,
+      "bn": 32768,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 32769,
+      "bn": 327,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 32769,
+      "bn": 10923,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 32769,
+      "bn": 16384,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 32769,
+      "bn": 32769,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 32769,
+      "bn": 32769,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 39999,
+      "bn": 399,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 39999,
+      "bn": 13333,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 39999,
+      "bn": 19999,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 39999,
+      "bn": 39999,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 39999,
+      "bn": 39999,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 40000,
+      "bn": 400,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 40000,
+      "bn": 13333,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 40000,
+      "bn": 20000,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 40000,
+      "bn": 40000,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 40000,
+      "bn": 40000,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 40001,
+      "bn": 400,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 40001,
+      "bn": 13333,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 40001,
+      "bn": 20000,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 40001,
+      "bn": 40001,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 40001,
+      "bn": 40001,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 49151,
+      "bn": 491,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 49151,
+      "bn": 16383,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 49151,
+      "bn": 24575,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 49151,
+      "bn": 49151,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 49151,
+      "bn": 49151,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 49152,
+      "bn": 491,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 49152,
+      "bn": 16384,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 49152,
+      "bn": 24576,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 49152,
+      "bn": 49152,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 49152,
+      "bn": 49152,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 49153,
+      "bn": 491,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 49153,
+      "bn": 16384,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 49153,
+      "bn": 24576,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 49153,
+      "bn": 49153,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 49153,
+      "bn": 49153,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 65535,
+      "bn": 655,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 65535,
+      "bn": 21845,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 65535,
+      "bn": 32767,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 65535,
+      "bn": 65535,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 65535,
+      "bn": 65535,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 65536,
+      "bn": 655,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 65536,
+      "bn": 21845,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 65536,
+      "bn": 32768,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 65536,
+      "bn": 65536,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 65536,
+      "bn": 65536,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 65537,
+      "bn": 655,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 65537,
+      "bn": 21845,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 65537,
+      "bn": 32768,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 65537,
+      "bn": 65537,
+      "operation": "mul",
+      "patterns_per_library": 12,
+      "passed": true
+    },
+    {
+      "an": 65537,
+      "bn": 65537,
+      "operation": "sqr",
+      "patterns_per_library": 12,
+      "passed": true
+    }
+  ],
+  "case_count": 338,
+  "comparisons_per_library": 4056
+}

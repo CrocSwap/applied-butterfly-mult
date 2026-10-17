@@ -1,0 +1,173 @@
+{
+  "status": "PASS",
+  "scope": "Exact shortcut verification; no timing or application win",
+  "certificate_checks": [
+    {
+      "n": 5,
+      "alphabet": [
+        null,
+        -1,
+        2
+      ],
+      "cases": 59049,
+      "queries_checked": 944784,
+      "largest_certificate": 6
+    },
+    {
+      "n": 6,
+      "alphabet": [
+        null,
+        1
+      ],
+      "cases": 32768,
+      "queries_checked": 720896,
+      "largest_certificate": 6
+    }
+  ],
+  "ring_output_checks": 10910,
+  "tie_count_counterexample": {
+    "n": 6,
+    "excluded": [
+      0,
+      1
+    ],
+    "all_weights": 1,
+    "selected": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "actual_tie_count": 6,
+    "representative_tie_count": 1
+  },
+  "old_fingerprints_checked": 86,
+  "frozen_sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/docs/theory-transfer-screen.md": "0e273cb2a6550cad0dd03ba55fb219a78b3b617fd52d457f538b1da7d42adb56",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-transfer-audit.json": "1c28bede4f6f262300227ccda35e01908c2db9049172764c25de3b7b3cd5fc31",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-transfer-completion.json": "1c2289a7cfaf7ed314aa5aa0440a595be9c62446d5c36ba5c56baf25180fa36d",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-transfer-screen.json": "8c6e17c8dead29eb585331bd8e6b6ec5f3df9c658a8a41a63fe91745827b8b94",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/audit_theory_transfer.py": "de5ca3598289bb02b2632715281db3632fe91aad68624d719615e1a21ae00dcc",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/summary.json": "2a6947a745d8a316efe138753f7f89352538f35f1c4c9e88a6b1cb0cc6a7891f",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-control/summary.json": "d5272b819bf1a73e7cefee085400e806f9fc2bca1e35ab56a398c114e49f576e",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/summary.json": "d87c1c0d7ca6cab328ea783e7c97b3adf7c56adc4d9a5216cc63f294ae418fb2",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/theory_paths.c": "845cef5f3ee119a370f0afdd57c62b78ab08463f861192558954de7b8a37aec6",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/benchmark_theory_paths.py": "3fbee3805467d7df6c3df6bb6520dd6d0ddacb76c845a7d41057cc6f886e090b",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/screen_theory_transfer.py": "1d1f58cfd06b2c3ee50857dd0c9fea41f561593510b385724b9a2e4549ea5489",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/compare.py": "d39062f684dc872dc37b895723a42e1d31add2dce640132a5d1114c24f203fac",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/exclusion_circuit.py": "b253f9d7318becda1c1f3b24e2287ed44a9c27fcea00cf9d531afb950d0457a0",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/paired_exclusion_circuit.py": "8f05f04cf06217befd6d0ee0f2d7d0c5c5eb32cfab8c9a8ca7917fd6d620b7d2",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/theory-paths": "b8b62246f808e533e776cacd714f14cbc78d8f914db71f672bfa32d95c8d03ca",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/raw.jsonl": "0b08422c50dc092ed3d30aaddf446efee1a921eb3f93496d17a1ea58cd72076d",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/paired-4.bin": "f343023d2244b9a4c0a119b9816a2224607ba92793ce149b77bcdffdf016dd62",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/sergeev-4.bin": "f343023d2244b9a4c0a119b9816a2224607ba92793ce149b77bcdffdf016dd62",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/interval-4.bin": "f343023d2244b9a4c0a119b9816a2224607ba92793ce149b77bcdffdf016dd62",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/paired-5.bin": "e821ba504e78d1cde31aee40836021583113508668f0db3d20e1e5fd8128b726",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/sergeev-5.bin": "a7744469e413d1bb2de36ccf567a71e466521c5a7937295cb47b2e0ed9f8448a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/interval-5.bin": "eca9ee78e4aa48d408b9162029a3df771a7e396ac69553032dc71ab545aea4f5",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/paired-6.bin": "4e84dcce681b39fa0e6c858c40515855ec11494441cdada374d67f53cf8a1af8",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/sergeev-6.bin": "165032abdf5b2b6dc8dd1de4043c0ef4ffc359e0746a2cc9a5bec21c89016eec",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/interval-6.bin": "9612260552861be681584587fa3edce952de9b156140f15fd5444db65f482c37",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/paired-7.bin": "e65462705a7d6e250869d4299be6bd5b3545a9e1e2240b022b11ca5f25919556",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/sergeev-7.bin": "3fb3aa85b1995fac504964896e6759dea3432095af194aa2997753bf7d7f5b4e",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/interval-7.bin": "98274263f2eab2e6c9e52bd82fe075d0f45db22ebcf4198febda084822d627a7",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/paired-8.bin": "7bf745f052d453d64db0f15534daede799117c41b9651d2b9b2e0cc6525d926d",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/sergeev-8.bin": "2cca1c1c578a1c7df308efbb3e255dd0f77abb7c07975775e039bdec2dac79be",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/interval-8.bin": "0ac53dc41da27167375617e73d00e05e36152d944ce0894d997c6849d7d01fa3",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/paired-16.bin": "4e97a20b064e9ae2bc7f3bf399671e10b805934d82bb9962f33db0c15b08daf9",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/sergeev-16.bin": "dde60d8e780490b48c22e718dfbcb2f0490e28f5f70d722d2341aeed6d6af2aa",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/interval-16.bin": "501b9762323831c6c845e42fd6b2e8072225cce4592e238555031e8b8bdc29f8",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/paired-32.bin": "4cf3759f8638beb1768165e9f8708c29488b69be49618a9f9a2e8def6da01d38",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/sergeev-32.bin": "998af04fec7c54f65bc2e458bfa5de6d3c42e65724617b6899b071a77c202cd7",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/interval-32.bin": "4aa9b56d2042507164f3e66a4be9b007a4d000a70ff2b23f3963854ae5009947",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/paired-49.bin": "b2a1ed2846371b239b441625b4abaa68a45d7dafa269730511656d309e0139e1",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/sergeev-49.bin": "156f958a94e00ea2e7c2fd2c66b581d58dbbdd26da7a5535c3cbfe60bf7d8302",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/interval-49.bin": "ed8fab0e46cd8ca3435612c15eed058aaf1d2fee59bbeb4256f1e3c54f1da264",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/paired-64.bin": "be187d8acee5933168e8c8de4ed5711158df014a0fb7d7ff6cccacf37f3aa598",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/sergeev-64.bin": "9e23bfd049552f1661b639e332a2ebb97b58e4732e32f47c145b73d122abade9",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-screen/interval-64.bin": "63457eb92f0e932517f9647c2739032f87260b5ebb583cb1efe5dbffc23332a7",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/check_theory_paths_control.py": "e9adf601951d92cd32e64dec19911fee57b8067b9802112a14da6c1e5cb0336a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/theory_paths_control.c": "f7b88f38b097d43c5e68b3b16a2d97e209bc81e8671e5c1df0f395bbb827e89a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-control/theory-paths": "63c6c7c7a1887460463a8de66ac1f880a269cc155b31fe57a20c186cafeaf45a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-control/raw.jsonl": "505a4e70fcb68fdeceba948998ae4607e42e86659a4f800bb0805b46131c6bb0",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/confirm_theory_paths.py": "b60d5b43ca645c3bb88c630e51be442b6fd609fe9926aa21beecffc79ad4aefa",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/plan.json": "3229173612f511f69b9de73d639ad76748f1a440107a0abb73726939687a0c98",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/raw.jsonl": "7d83e5017867bc2bdfcd4846a448366601e1c8169e5f02e30f392d746c35b466",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/paired-8.bin": "7bf745f052d453d64db0f15534daede799117c41b9651d2b9b2e0cc6525d926d",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/sergeev-8.bin": "2cca1c1c578a1c7df308efbb3e255dd0f77abb7c07975775e039bdec2dac79be",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/separate_weights-8.bin": "295b39b83b2b147cf0d57741e06875c3a8d0aa79f59989beb6ec02c39e7d74a0",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/paired-12.bin": "5a90096177b9ce24995324a6f5f1b27d56fe6ee9ed914cd5f237a72b2a35f2cc",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/sergeev-12.bin": "619015246289c80d35347ca44fca6a9a7dc6d446e1937faeb05a3fae080a2b3a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/separate_weights-12.bin": "93d1a3cc720d81f951e2b45e82879eb123d272bd4009c3245528ed33265c2b1a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/paired-16.bin": "4e97a20b064e9ae2bc7f3bf399671e10b805934d82bb9962f33db0c15b08daf9",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/sergeev-16.bin": "dde60d8e780490b48c22e718dfbcb2f0490e28f5f70d722d2341aeed6d6af2aa",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/separate_weights-16.bin": "fef677119975bcb662543849a6df717cd9bd1ff1d1fb1b8b7fe16ba6f08dce9e",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/paired-20.bin": "4d94129f9f224fb04800eae6f47496d86ab00c50df5a9333d9fc22042ddf81df",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/sergeev-20.bin": "d397bcb19bda906074a35650f3d882769cf3acb7bbb7d70b57a71b795500cba1",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/separate_weights-20.bin": "a69dae85603866fb1ec94aab5fd30d584a1170fef7656561c21b32d61b5e0063",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/paired-24.bin": "181ced7f1ede046636c3bf8d3067b63f65b1cf831a3d894d5b26a8a25468d7ce",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/sergeev-24.bin": "b87d61b2d197d2d3549ae14c43766190978ec7c5f7063e7c9c56eb2ed78c8f9c",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-confirm/separate_weights-24.bin": "4e57536c342e561631d6e6973ccf9f7e4d75aa3d0aafeb36e39e3f47b4f8d5a1",
+    "/Users/colkitt/sith/toys/math/butterflyMult/docs/theory-paths-qualification.md": "d3aa08c21761ed69bdeda2e9803c90938ec0d2a3de6caade6e60ea9d70a241c1",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-bnb-audit.json": "ced9d1d39ff17bb06c36cc3d5b2999b0296e16d80f5075274dd36d3e36fe3231",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-bnb-completion.json": "28d36af8ccd16e94d1939393f8439b0e031b036bc58ba42a567925f7892a82d2",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/audit_theory_paths_bnb.py": "34354b179aa0cf6b3bfc786fcf557b8e16b36139cb7ebeeb70f6e1db2dd001bf",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-bnb/summary.json": "e5a7ca6d59208fc084ac4e5d8ce303a0a599fb1f7c688311659a0f2aeeb28e40",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-bnb-validation/validation.json": "0ea58717235c4277cada77e4f95948948a52abc7c8d422ef45f0ed2317256f98",
+    "/Users/colkitt/sith/toys/math/butterflyMult/bench/theory_paths_bnb.c": "9368ef346b382c8b6017bdd6809f4cf38815fcc96b283227a2834636fdefca2b",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/qualify_theory_paths_bnb.py": "16089537587677325c4ce5c8f355ceda0578bb16d67f0b47fe714bc68862e745",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-bnb/theory-paths-bnb": "6691feda86a062ed2c362fa68af0fffdde73c37c72bf5d4c93ebee5babadb72f",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-bnb/raw.jsonl": "5c73c99515e6d7a9e2947e9627a3dc25d818daa236f2d177018bad70e1f1bd40",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-bnb/plan.json": "35f9e0660f4ac639c8c470b47b9101b2c046c0eb0a6eae804c8bad3185325aba",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/validate_theory_paths_bnb.py": "4c32b9c7e17b74e323d71d8561db3c0938a26c8765ee65058462adc6fc30b921",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-bnb-validation/trace.c": "a0aab03c1bebba34533e0e0e0e6b14778cc4fd34cd879f4ad61b1096e8ec894f",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-bnb-validation/trace": "fd42e160588ccc2bb0c54bc46e6d37862b63d954129c77922ae00b5005b68470",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/theory-paths-qualification-venv/lib/python3.14/site-packages/networkx/algorithms/simple_paths.py": "2c5745365b69b7ead123de31ec7543428a0d6e09bebab9331900b15477c84794",
+    "/Users/colkitt/sith/toys/math/butterflyMult/.deps/theory-paths-qualification-venv/lib/python3.14/site-packages/networkx/__init__.py": "bd5f9b6329a5f492b9395f0873f75cb4be59191e4dab01787f37789ac4766fd5",
+    "docs/prepared-inputs-m2.md": "4eab0f229e9fd8c298d33feaa98158e1c98b5b225591e576e7bb5fdd926cd905",
+    "README.md": "c9d38806fcffdfbaf8cbf835ca84f7c55b0c4dda635c8025ed7f52318f925476",
+    "results/poly-prepared-audit.json": "6d548469f364bfc0f4044156c1cbb0e1a0405709c1d6fdd375f4bdd73c807991",
+    "results/poly-prepared-doc-snapshots/README-before.md": "f3fa7eedfc8a2c9a5c9e7cb7318336f08fa6d97c97444178b0d2ebac635a2b98",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/poly-prepared-completion.json": "12e7f76ba539c977fb2ff8d0164f5e097438fdaa505d1e551581d590dfd49ccd"
+  },
+  "sources": [
+    {
+      "repository": "bupticybee/TexasSolver",
+      "commit": "78f2ed2544440ea143873918f45b30a331f00383",
+      "url": "https://raw.githubusercontent.com/bupticybee/TexasSolver/78f2ed2544440ea143873918f45b30a331f00383/src/solver/PCfrSolver.cpp",
+      "file": "results/bulk-exclusion-screen/sources/PCfrSolver.cpp",
+      "sha256": "96431331358b5e49ec75ed712ced36204e7e70df13082d4283732e805bb475a6"
+    },
+    {
+      "repository": "johnlspouge/jackknife-product",
+      "commit": "11dfc1d6eb319cfcd8a50afc3d896947831713e3",
+      "url": "https://raw.githubusercontent.com/johnlspouge/jackknife-product/11dfc1d6eb319cfcd8a50afc3d896947831713e3/jls_jackknifeproduct.py",
+      "file": "results/bulk-exclusion-screen/sources/jls_jackknifeproduct.py",
+      "sha256": "113dd12afd19b34d83788ed9ae8024ef2491c12610d1e2fa88c2d31433d233a1"
+    }
+  ],
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/screen_bulk_exclusion.py": "3fd1dbb85c184609712236abd5615defb7999d09c6e162f5183b9be4629bc485",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/bulk-exclusion-screen/sources/manifest.json": "8d66b204dff89a67b90da6860ab926bcc6c15b0245249bf6ffd838ed06b495cb"
+  }
+}

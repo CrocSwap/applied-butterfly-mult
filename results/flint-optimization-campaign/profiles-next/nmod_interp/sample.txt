@@ -1,0 +1,515 @@
+Analysis of sampling optimization-campaign (pid 22152) every 1 millisecond
+Process:         optimization-campaign [22152]
+Path:            /Users/USER/*/optimization-campaign
+Load Address:    0x102b28000
+Identifier:      optimization-campaign
+Version:         0
+Code Type:       ARM64
+Platform:        macOS
+Parent Process:  Python [22135]
+Target Type:     live task
+
+Date/Time:       2026-10-13 00:00:05.280 -0400
+Launch Time:     2026-10-13 00:00:04.732 -0400
+OS Version:      macOS 26.6.2 (25G83)
+Report Version:  7
+Analysis Tool:   /usr/bin/sample
+
+Physical footprint:         1232K
+Physical footprint (peak):  1232K
+Idle exit:                  untracked
+----
+
+Call graph:
+    2527 Thread_49204955   DispatchQueue_1: com.apple.main-thread  (serial)
+      2527 start  (in dyld) + 6992  [0x18e3604e4]
+        2514 main  (in optimization-campaign) + 3644  [0x102b2949c]  optimization_campaign.c:282
+        + 2514 nmod_poly_interpolate_nmod_vec  (in libflint.25.0.dylib) + 248  [0x1041bc034]  interpolate_nmod_vec.c:41
+        +   1590 _nmod_poly_interpolate_nmod_vec_fast  (in libflint.25.0.dylib) + 164  [0x1041bbe98]  interpolate_nmod_vec.c:137
+        +   ! 728 _gr_poly_interpolation_weights  (in libflint.25.0.dylib) + 388  [0x1048da374]  interpolate_fast.c:43
+        +   ! : 720 _gr_nmod_inv  (in libflint.25.0.dylib) + 88  [0x10484cb5c]  nmod.c:224
+        +   ! : | 415 n_gcdinv  (in libflint.25.0.dylib) + 220,212,...  [0x103f514f4,0x103f514ec,...]  gcdinv.c:71
+        +   ! : | 144 n_gcdinv  (in libflint.25.0.dylib) + 224,228,...  [0x103f514f8,0x103f514fc,...]  gcdinv.c:0
+        +   ! : | 87 n_gcdinv  (in libflint.25.0.dylib) + 232,132  [0x103f51500,0x103f5149c]  gcdinv.c:68
+        +   ! : | 47 n_gcdinv  (in libflint.25.0.dylib) + 208  [0x103f514e8]  gcdinv.c:74
+        +   ! : | 15 n_gcdinv  (in libflint.25.0.dylib) + 28,32,...  [0x103f51434,0x103f51438,...]  gcdinv.c:28
+        +   ! : | 5 n_gcdinv  (in libflint.25.0.dylib) + 244  [0x103f5150c]  gcdinv.c:114
+        +   ! : | 2 n_gcdinv  (in libflint.25.0.dylib) + 236  [0x103f51504]  gcdinv.c:111
+        +   ! : | 2 n_gcdinv  (in libflint.25.0.dylib) + 192  [0x103f514d8]  gcdinv.c:82
+        +   ! : | 1 n_gcdinv  (in libflint.25.0.dylib) + 0  [0x103f51418]  gcdinv.c:16
+        +   ! : | 1 n_gcdinv  (in libflint.25.0.dylib) + 36  [0x103f5143c]  gcdinv.c:39
+        +   ! : | 1 n_gcdinv  (in libflint.25.0.dylib) + 164  [0x103f514bc]  gcdinv.c:94
+        +   ! : 4 _gr_nmod_inv  (in libflint.25.0.dylib) + 88  [0x10484cb5c]  nmod.c:225
+        +   ! : 3 _gr_nmod_inv  (in libflint.25.0.dylib) + 28  [0x10484cb20]  nmod.c:218
+        +   ! : 1 _gr_nmod_inv  (in libflint.25.0.dylib) + 72  [0x10484cb4c]  nmod.c:0
+        +   ! 721 _gr_poly_interpolation_weights  (in libflint.25.0.dylib) + 348  [0x1048da34c]  interpolate_fast.c:40
+        +   ! : 307 _gr_poly_evaluate_vec_fast_precomp  (in libflint.25.0.dylib) + 956  [0x1048cb60c]  evaluate_vec_fast.c:232
+        +   ! : | 305 _gr_nmod_poly_divrem  (in libflint.25.0.dylib) + 180  [0x104851384]  nmod.c:1313
+        +   ! : | + 303 _nmod_poly_divrem_basecase_preinv1  (in libflint.25.0.dylib) + 276  [0x1041ae048]  divrem_basecase.c:506
+        +   ! : | + ! 138 _nmod_poly_divrem_basecase_preinv1_2  (in libflint.25.0.dylib) + 696  [0x1041ae788]  divrem_basecase.c:347
+        +   ! : | + ! : 127 _nmod_vec_nored_ll_scalar_addmul_halflimb  (in libflint.25.0.dylib) + 116,132,...  [0x104165d20,0x104165d30,...]  nored_scalar.c:71
+        +   ! : | + ! : 8 _nmod_vec_nored_ll_scalar_addmul_halflimb  (in libflint.25.0.dylib) + 0  [0x104165cac]  nored_scalar.c:69
+        +   ! : | + ! : 3 _nmod_vec_nored_ll_scalar_addmul_halflimb  (in libflint.25.0.dylib) + 244  [0x104165da0]  nored_scalar.c:77
+        +   ! : | + ! 75 _nmod_poly_divrem_basecase_preinv1_2  (in libflint.25.0.dylib) + 556  [0x1041ae6fc]  divrem_basecase.c:329
+        +   ! : | + ! : 35 n_ll_mod_preinv  (in libflint.25.0.dylib) + 176,168,...  [0x103f58f20,0x103f58f18,...]  ll_mod_preinv.c:69
+        +   ! : | + ! : 28 n_ll_mod_preinv  (in libflint.25.0.dylib) + 164  [0x103f58f14]  ll_mod_preinv.c:66
+        +   ! : | + ! : 4 n_ll_mod_preinv  (in libflint.25.0.dylib) + 104  [0x103f58ed8]  ll_mod_preinv.c:32
+        +   ! : | + ! : 3 n_ll_mod_preinv  (in libflint.25.0.dylib) + 112,108  [0x103f58ee0,0x103f58edc]  ll_mod_preinv.c:58
+        +   ! : | + ! : 2 n_ll_mod_preinv  (in libflint.25.0.dylib) + 140  [0x103f58efc]  ll_mod_preinv.c:62
+        +   ! : | + ! : 1 n_ll_mod_preinv  (in libflint.25.0.dylib) + 0  [0x103f58e70]  ll_mod_preinv.c:29
+        +   ! : | + ! : 1 n_ll_mod_preinv  (in libflint.25.0.dylib) + 56  [0x103f58ea8]  ll_mod_preinv.c:40
+        +   ! : | + ! : 1 n_ll_mod_preinv  (in libflint.25.0.dylib) + 60  [0x103f58eac]  ll_mod_preinv.c:42
+        +   ! : | + ! 46 _nmod_poly_divrem_basecase_preinv1_2  (in libflint.25.0.dylib) + 380  [0x1041ae64c]  divrem_basecase.c:355
+        +   ! : | + ! : 21 n_ll_mod_preinv  (in libflint.25.0.dylib) + 172,168  [0x103f58f1c,0x103f58f18]  ll_mod_preinv.c:69
+        +   ! : | + ! : 16 n_ll_mod_preinv  (in libflint.25.0.dylib) + 160,164  [0x103f58f10,0x103f58f14]  ll_mod_preinv.c:66
+        +   ! : | + ! : 3 n_ll_mod_preinv  (in libflint.25.0.dylib) + 128,136  [0x103f58ef0,0x103f58ef8]  ll_mod_preinv.c:61
+        +   ! : | + ! : 2 n_ll_mod_preinv  (in libflint.25.0.dylib) + 104  [0x103f58ed8]  ll_mod_preinv.c:32
+        +   ! : | + ! : 2 n_ll_mod_preinv  (in libflint.25.0.dylib) + 56  [0x103f58ea8]  ll_mod_preinv.c:40
+        +   ! : | + ! : 1 n_ll_mod_preinv  (in libflint.25.0.dylib) + 84  [0x103f58ec4]  ll_mod_preinv.c:47
+        +   ! : | + ! : 1 n_ll_mod_preinv  (in libflint.25.0.dylib) + 108  [0x103f58edc]  ll_mod_preinv.c:58
+        +   ! : | + ! 18 _nmod_poly_divrem_basecase_preinv1_2  (in libflint.25.0.dylib) + 644,664,...  [0x1041ae754,0x1041ae768,...]  divrem_basecase.c:0
+        +   ! : | + ! 8 _nmod_poly_divrem_basecase_preinv1_2  (in libflint.25.0.dylib) + 352,384  [0x1041ae630,0x1041ae650]  divrem_basecase.c:354
+        +   ! : | + ! 6 _nmod_poly_divrem_basecase_preinv1_2  (in libflint.25.0.dylib) + 560  [0x1041ae700]  divrem_basecase.c:337
+        +   ! : | + ! 2 _nmod_poly_divrem_basecase_preinv1_2  (in libflint.25.0.dylib) + 0,60  [0x1041ae4d0,0x1041ae50c]  divrem_basecase.c:309
+        +   ! : | + ! 2 _nmod_poly_divrem_basecase_preinv1_2  (in libflint.25.0.dylib) + 252  [0x1041ae5cc]  divrem_basecase.c:321
+        +   ! : | + ! 2 _nmod_poly_divrem_basecase_preinv1_2  (in libflint.25.0.dylib) + 556  [0x1041ae6fc]  divrem_basecase.c:331
+        +   ! : | + ! 2 _nmod_poly_divrem_basecase_preinv1_2  (in libflint.25.0.dylib) + 652  [0x1041ae75c]  divrem_basecase.c:342
+        +   ! : | + ! 2 _nmod_poly_divrem_basecase_preinv1_2  (in libflint.25.0.dylib) + 380  [0x1041ae64c]  divrem_basecase.c:355
+        +   ! : | + ! 1 _nmod_poly_divrem_basecase_preinv1_2  (in libflint.25.0.dylib) + 76  [0x1041ae51c]  divrem_basecase.c:317
+        +   ! : | + ! 1 _nmod_poly_divrem_basecase_preinv1_2  (in libflint.25.0.dylib) + 260  [0x1041ae5d4]  divrem_basecase.c:322
+        +   ! : | + 1 _nmod_poly_divrem_basecase_preinv1  (in libflint.25.0.dylib) + 120  [0x1041adfac]  divrem_basecase.c:494
+        +   ! : | + 1 _nmod_poly_divrem_basecase_preinv1  (in libflint.25.0.dylib) + 244  [0x1041ae028]  divrem_basecase.c:505
+        +   ! : | 2 _gr_nmod_poly_divrem  (in libflint.25.0.dylib) + 120  [0x104851348]  nmod.c:1309
+        +   ! : |   2 _gr_nmod_inv  (in libflint.25.0.dylib) + 28  [0x10484cb20]  nmod.c:218
+        +   ! : 177 _gr_poly_evaluate_vec_fast_precomp  (in libflint.25.0.dylib) + 1376  [0x1048cb7b0]  evaluate_vec_fast.c:246
+        +   ! : | 156 _gr_nmod_poly_divrem  (in libflint.25.0.dylib) + 180  [0x104851384]  nmod.c:1313
+        +   ! : | + 122 _nmod_poly_divrem_basecase_preinv1  (in libflint.25.0.dylib) + 232  [0x1041ae01c]  divrem_basecase.c:504
+        +   ! : | + ! 48 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 608,580,...  [0x1041ae2d8,0x1041ae2bc,...]  divrem_basecase.c:279
+        +   ! : | + ! 17 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 92  [0x1041ae0d4]  divrem_basecase.c:247
+        +   ! : | + ! : 17 n_barrett_precomp  (in libflint.25.0.dylib) + 88,12,...  [0x1041adb64,0x1041adb18,...]  ulong_extras.h:407
+        +   ! : | + ! 10 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 408,484,...  [0x1041ae210,0x1041ae25c,...]  divrem_basecase.c:0
+        +   ! : | + ! 10 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 880,860,...  [0x1041ae3e8,0x1041ae3d4,...]  divrem_basecase.c:294
+        +   ! : | + ! 8 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 952  [0x1041ae430]  divrem_basecase.c:293
+        +   ! : | + ! 6 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 384  [0x1041ae1f8]  divrem_basecase.c:256
+        +   ! : | + ! 6 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 432  [0x1041ae228]  divrem_basecase.c:261
+        +   ! : | + ! 4 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 264  [0x1041ae180]  divrem_basecase.c:254
+        +   ! : | + ! : 4 _platform_memmove  (in libsystem_platform.dylib) + 180,24,...  [0x18e735414,0x18e735378,...]
+        +   ! : | + ! 3 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 200  [0x1041ae140]  divrem_basecase.c:252
+        +   ! : | + ! 2 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 208  [0x1041ae148]  divrem_basecase.c:252
+        +   ! : | + ! : 2 ___chkstk_darwin  (in libsystem_pthread.dylib) + 12,52  [0x18e726c2c,0x18e726c54]
+        +   ! : | + ! 2 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 456  [0x1041ae240]  divrem_basecase.c:269
+        +   ! : | + ! 1 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 412  [0x1041ae214]  divrem_basecase.c:258
+        +   ! : | + ! 1 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 496  [0x1041ae268]  divrem_basecase.c:278
+        +   ! : | + ! 1 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 288  [0x1041ae198]  divrem_basecase.c:284
+        +   ! : | + ! 1 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 1032  [0x1041ae480]  divrem_basecase.c:298
+        +   ! : | + ! 1 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 1076  [0x1041ae4ac]  divrem_basecase.c:299
+        +   ! : | + ! 1 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 264  [0x1041ae180]  mpn_extras.h:0
+        +   ! : | + 25 _nmod_poly_divrem_basecase_preinv1  (in libflint.25.0.dylib) + 48  [0x1041adf64]  divrem_basecase.c:488
+        +   ! : | + ! 9 _nmod_poly_divrem_q1_preinv1  (in libflint.25.0.dylib) + 380  [0x1041ad6ec]  divrem_basecase.c:168
+        +   ! : | + ! : 8 n_barrett_precomp  (in libflint.25.0.dylib) + 376,12,...  [0x1041adc84,0x1041adb18,...]  ulong_extras.h:407
+        +   ! : | + ! : 1 n_barrett_precomp  (in libflint.25.0.dylib) + 380  [0x1041adc88]  ulong_extras.h:408
+        +   ! : | + ! 8 _nmod_poly_divrem_q1_preinv1  (in libflint.25.0.dylib) + 564  [0x1041ad7a4]  divrem_basecase.c:186
+        +   ! : | + ! 5 _nmod_poly_divrem_q1_preinv1  (in libflint.25.0.dylib) + 648,584  [0x1041ad7f8,0x1041ad7b8]  divrem_basecase.c:187
+        +   ! : | + ! 1 _nmod_poly_divrem_q1_preinv1  (in libflint.25.0.dylib) + 340  [0x1041ad6c4]  divrem_basecase.c:0
+        +   ! : | + ! 1 _nmod_poly_divrem_q1_preinv1  (in libflint.25.0.dylib) + 488  [0x1041ad758]  divrem_basecase.c:173
+        +   ! : | + ! 1 _nmod_poly_divrem_q1_preinv1  (in libflint.25.0.dylib) + 504  [0x1041ad768]  divrem_basecase.c:174
+        +   ! : | + 3 _nmod_poly_divrem_q1_preinv1  (in libflint.25.0.dylib) + 96  [0x1041ad5d0]  divrem_basecase.c:226
+        +   ! : | + 2 _nmod_poly_divrem_basecase_preinv1  (in libflint.25.0.dylib) + 4  [0x1041adf38]  divrem_basecase.c:485
+        +   ! : | + 1 _nmod_poly_divrem_basecase_preinv1  (in libflint.25.0.dylib) + 120  [0x1041adfac]  divrem_basecase.c:494
+        +   ! : | + 1 _nmod_poly_divrem_basecase_preinv1  (in libflint.25.0.dylib) + 196  [0x1041adff8]  divrem_basecase.c:501
+        +   ! : | + 1 _nmod_poly_divrem_basecase_preinv1  (in libflint.25.0.dylib) + 48  [0x1041adf64]  divrem_basecase.c:510
+        +   ! : | + 1 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 1100  [0x1041ae4c4]  divrem_basecase.c:299
+        +   ! : | 6 _gr_nmod_poly_divrem  (in libflint.25.0.dylib) + 20  [0x1048512e4]  nmod.c:1299
+        +   ! : | 5 _gr_nmod_inv  (in libflint.25.0.dylib) + 60  [0x10484cb40]  nmod.c:235
+        +   ! : | 5 _gr_nmod_poly_divrem  (in libflint.25.0.dylib) + 120  [0x104851348]  nmod.c:1309
+        +   ! : | + 5 _gr_nmod_inv  (in libflint.25.0.dylib) + 4,12  [0x10484cb08,0x10484cb10]  nmod.c:214
+        +   ! : | 2 _gr_nmod_poly_divrem  (in libflint.25.0.dylib) + 124,140  [0x10485134c,0x10485135c]  nmod.c:1313
+        +   ! : | 1 _gr_nmod_poly_divrem  (in libflint.25.0.dylib) + 88  [0x104851328]  nmod.c:0
+        +   ! : | 1 _gr_nmod_poly_divrem  (in libflint.25.0.dylib) + 32  [0x1048512f0]  nmod.c:1303
+        +   ! : | 1 _gr_nmod_poly_divrem  (in libflint.25.0.dylib) + 120  [0x104851348]  nmod.c:1310
+        +   ! : 134 _gr_poly_evaluate_vec_fast_precomp  (in libflint.25.0.dylib) + 1320  [0x1048cb778]  evaluate_vec_fast.c:245
+        +   ! : | 118 _gr_nmod_poly_divrem  (in libflint.25.0.dylib) + 180  [0x104851384]  nmod.c:1313
+        +   ! : | + 85 _nmod_poly_divrem_basecase_preinv1  (in libflint.25.0.dylib) + 232  [0x1041ae01c]  divrem_basecase.c:504
+        +   ! : | + ! 32 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 608,580,...  [0x1041ae2d8,0x1041ae2bc,...]  divrem_basecase.c:279
+        +   ! : | + ! 11 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 408,236,...  [0x1041ae210,0x1041ae164,...]  divrem_basecase.c:0
+        +   ! : | + ! 10 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 384,404  [0x1041ae1f8,0x1041ae20c]  divrem_basecase.c:256
+        +   ! : | + ! 7 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 92  [0x1041ae0d4]  divrem_basecase.c:247
+        +   ! : | + ! : 6 n_barrett_precomp  (in libflint.25.0.dylib) + 12,64,...  [0x1041adb18,0x1041adb4c,...]  ulong_extras.h:407
+        +   ! : | + ! : 1 n_barrett_precomp  (in libflint.25.0.dylib) + 0  [0x1041adb0c]  ulong_extras.h:404
+        +   ! : | + ! 7 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 880,908,...  [0x1041ae3e8,0x1041ae404,...]  divrem_basecase.c:294
+        +   ! : | + ! 5 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 456  [0x1041ae240]  divrem_basecase.c:269
+        +   ! : | + ! 4 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 208  [0x1041ae148]  divrem_basecase.c:252
+        +   ! : | + ! : 4 ___chkstk_darwin  (in libsystem_pthread.dylib) + 20,52  [0x18e726c34,0x18e726c54]
+        +   ! : | + ! 2 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 432  [0x1041ae228]  divrem_basecase.c:261
+        +   ! : | + ! 2 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 288  [0x1041ae198]  divrem_basecase.c:284
+        +   ! : | + ! 2 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 952  [0x1041ae430]  divrem_basecase.c:293
+        +   ! : | + ! 1 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 44  [0x1041ae0a4]  divrem_basecase.c:233
+        +   ! : | + ! 1 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 264  [0x1041ae180]  divrem_basecase.c:254
+        +   ! : | + ! : 1 _platform_memmove  (in libsystem_platform.dylib) + 12  [0x18e73536c]
+        +   ! : | + ! 1 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 272  [0x1041ae188]  mpn_extras.h:0
+        +   ! : | + 22 _nmod_poly_divrem_basecase_preinv1  (in libflint.25.0.dylib) + 48  [0x1041adf64]  divrem_basecase.c:488
+        +   ! : | + ! 6 _nmod_poly_divrem_q1_preinv1  (in libflint.25.0.dylib) + 380  [0x1041ad6ec]  divrem_basecase.c:168
+        +   ! : | + ! : 6 n_barrett_precomp  (in libflint.25.0.dylib) + 20,88,...  [0x1041adb20,0x1041adb64,...]  ulong_extras.h:407
+        +   ! : | + ! 5 _nmod_poly_divrem_q1_preinv1  (in libflint.25.0.dylib) + 648,584,...  [0x1041ad7f8,0x1041ad7b8,...]  divrem_basecase.c:187
+        +   ! : | + ! 4 _nmod_poly_divrem_q1_preinv1  (in libflint.25.0.dylib) + 564,568  [0x1041ad7a4,0x1041ad7a8]  divrem_basecase.c:186
+        +   ! : | + ! 2 _nmod_poly_divrem_q1_preinv1  (in libflint.25.0.dylib) + 512,524  [0x1041ad770,0x1041ad77c]  divrem_basecase.c:176
+        +   ! : | + ! 1 _nmod_poly_divrem_q1_preinv1  (in libflint.25.0.dylib) + 16  [0x1041ad580]  divrem_basecase.c:126
+        +   ! : | + ! 1 _nmod_poly_divrem_q1_preinv1  (in libflint.25.0.dylib) + 108  [0x1041ad5dc]  divrem_basecase.c:138
+        +   ! : | + ! 1 _nmod_poly_divrem_q1_preinv1  (in libflint.25.0.dylib) + 332  [0x1041ad6bc]  divrem_basecase.c:165
+        +   ! : | + ! 1 _nmod_poly_divrem_q1_preinv1  (in libflint.25.0.dylib) + 488  [0x1041ad758]  divrem_basecase.c:173
+        +   ! : | + ! 1 _nmod_poly_divrem_q1_preinv1  (in libflint.25.0.dylib) + 504  [0x1041ad768]  divrem_basecase.c:174
+        +   ! : | + 3 _nmod_poly_divrem_basecase_preinv1  (in libflint.25.0.dylib) + 4  [0x1041adf38]  divrem_basecase.c:485
+        +   ! : | + 3 _nmod_poly_divrem_basecase_preinv1  (in libflint.25.0.dylib) + 48,232  [0x1041adf64,0x1041ae01c]  divrem_basecase.c:510
+        +   ! : | + 2 _nmod_poly_divrem_basecase_preinv1  (in libflint.25.0.dylib) + 196  [0x1041adff8]  divrem_basecase.c:501
+        +   ! : | + 2 _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib) + 1096,1100  [0x1041ae4c0,0x1041ae4c4]  divrem_basecase.c:299
+        +   ! : | + 1 _nmod_poly_divrem_q1_preinv1  (in libflint.25.0.dylib) + 96  [0x1041ad5d0]  divrem_basecase.c:226
+        +   ! : | 9 _gr_nmod_poly_divrem  (in libflint.25.0.dylib) + 20,0  [0x1048512e4,0x1048512d0]  nmod.c:1299
+        +   ! : | 4 _gr_nmod_poly_divrem  (in libflint.25.0.dylib) + 120  [0x104851348]  nmod.c:1309
+        +   ! : | + 3 _gr_nmod_inv  (in libflint.25.0.dylib) + 28  [0x10484cb20]  nmod.c:218
+        +   ! : | + 1 _gr_nmod_inv  (in libflint.25.0.dylib) + 8  [0x10484cb0c]  nmod.c:214
+        +   ! : | 2 _gr_nmod_inv  (in libflint.25.0.dylib) + 56,60  [0x10484cb3c,0x10484cb40]  nmod.c:235
+        +   ! : | 1 _gr_nmod_poly_divrem  (in libflint.25.0.dylib) + 76  [0x10485131c]  nmod.c:0
+        +   ! : 15 _gr_poly_evaluate_vec_fast_precomp  (in libflint.25.0.dylib) + 1532  [0x1048cb84c]  evaluate_vec_fast.c:246
+        +   ! : | 15 _gr_nmod_mul  (in libflint.25.0.dylib) + 84,72  [0x10484bdb8,0x10484bdac]  nmod.c:396
+        +   ! : 13 _gr_poly_evaluate_vec_fast_precomp  (in libflint.25.0.dylib) + 1604,984,...  [0x1048cb894,0x1048cb628,...]  evaluate_vec_fast.c:0
+        +   ! : 12 _gr_poly_evaluate_vec_fast_precomp  (in libflint.25.0.dylib) + 1696  [0x1048cb8f0]  evaluate_vec_fast.c:267
+        +   ! : | 6 gr_generic_vec_swap  (in libflint.25.0.dylib) + 68  [0x104887ee0]  generic.c:1998
+        +   ! : | 3 gr_generic_vec_swap  (in libflint.25.0.dylib) + 52  [0x104887ed0]  generic.c:1999
+        +   ! : | 2 gr_generic_vec_swap  (in libflint.25.0.dylib) + 68  [0x104887ee0]  generic.c:1999
+        +   ! : | + 2 _gr_nmod_swap  (in libflint.25.0.dylib) + 12  [0x10484b624]  nmod.c:70
+        +   ! : | 1 gr_generic_vec_swap  (in libflint.25.0.dylib) + 48  [0x104887ecc]  generic.c:0
+        +   ! : 11 _gr_poly_evaluate_vec_fast_precomp  (in libflint.25.0.dylib) + 1208,1416,...  [0x1048cb708,0x1048cb7d8,...]  evaluate_vec_fast.c:243
+        +   ! : 10 _gr_poly_evaluate_vec_fast_precomp  (in libflint.25.0.dylib) + 1304,1460,...  [0x1048cb768,0x1048cb804,...]  evaluate_vec_fast.c:245
+        +   ! : 9 _gr_poly_evaluate_vec_fast_precomp  (in libflint.25.0.dylib) + 1452  [0x1048cb7fc]  evaluate_vec_fast.c:245
+        +   ! : | 7 _gr_nmod_mul  (in libflint.25.0.dylib) + 84,8,...  [0x10484bdb8,0x10484bd6c,...]  nmod.c:396
+        +   ! : | 2 _gr_nmod_mul  (in libflint.25.0.dylib) + 88,92  [0x10484bdbc,0x10484bdc0]  nmod.c:397
+        +   ! : 9 _gr_poly_evaluate_vec_fast_precomp  (in libflint.25.0.dylib) + 1372,1540,...  [0x1048cb7ac,0x1048cb854,...]  evaluate_vec_fast.c:246
+        +   ! : 7 _gr_nmod_poly_divrem  (in libflint.25.0.dylib) + 200  [0x104851398]  nmod.c:1327
+        +   ! : 6 _gr_poly_evaluate_vec_fast_precomp  (in libflint.25.0.dylib) + 944  [0x1048cb600]  evaluate_vec_fast.c:232
+        +   ! : 4 _gr_poly_evaluate_vec_fast_precomp  (in libflint.25.0.dylib) + 836  [0x1048cb594]  evaluate_vec_fast.c:223
+        +   ! : | 4 _platform_memset  (in libsystem_platform.dylib) + 140,160  [0x18e73511c,0x18e735130]
+        +   ! : 3 _gr_poly_evaluate_vec_fast_precomp  (in libflint.25.0.dylib) + 1564  [0x1048cb86c]  evaluate_vec_fast.c:246
+        +   ! : | 3 _gr_nmod_sub  (in libflint.25.0.dylib) + 24,0  [0x10484bc40,0x10484bc28]  nmod.c:375
+        +   ! : 2 _gr_poly_evaluate_vec_fast_precomp  (in libflint.25.0.dylib) + 1484  [0x1048cb81c]  evaluate_vec_fast.c:245
+        +   ! : | 2 _gr_nmod_sub  (in libflint.25.0.dylib) + 4,24  [0x10484bc2c,0x10484bc40]  nmod.c:375
+        +   ! : 1 _gr_poly_evaluate_vec_fast_precomp  (in libflint.25.0.dylib) + 152  [0x1048cb2e8]  evaluate_vec_fast.c:215
+        +   ! : 1 _gr_poly_evaluate_vec_fast_precomp  (in libflint.25.0.dylib) + 1728  [0x1048cb910]  evaluate_vec_fast.c:269
+        +   ! :   1 _gr_nmod_vec_clear  (in libflint.25.0.dylib) + 0  [0x10484cea8]  nmod.c:691
+        +   ! 63 _gr_poly_interpolation_weights  (in libflint.25.0.dylib) + 292  [0x1048da314]  interpolate_fast.c:36
+        +   ! : 62 _gr_poly_mul_monic  (in libflint.25.0.dylib) + 64  [0x1048cae58]  evaluate_vec_fast.c:67
+        +   ! : | 62 _gr_nmod_poly_mullow  (in libflint.25.0.dylib) + 236  [0x10485128c]  nmod.c:0
+        +   ! : |   56 _nmod_poly_mullow  (in libflint.25.0.dylib) + 352  [0x1041c6934]  mullow.c:45
+        +   ! : |   + 26 _nmod_poly_mullow_classical  (in libflint.25.0.dylib) + 1668  [0x1041c71e8]  mullow_classical.c:118
+        +   ! : |   + ! 26 _nmod_vec_dot1_rev  (in libflint.25.0.dylib) + 136,180,...  [0x104162f74,0x104162fa0,...]  dot.c:279
+        +   ! : |   + 26 _nmod_poly_mullow_classical  (in libflint.25.0.dylib) + 1368,5408,...  [0x1041c70bc,0x1041c8084,...]  mullow_classical.c:118
+        +   ! : |   + 1 _nmod_poly_mullow_classical  (in libflint.25.0.dylib) + 1080  [0x1041c6f9c]  mullow_classical.c:0
+        +   ! : |   + 1 _nmod_poly_mullow_classical  (in libflint.25.0.dylib) + 1308  [0x1041c7080]  mullow_classical.c:113
+        +   ! : |   + 1 _nmod_poly_mullow_classical  (in libflint.25.0.dylib) + 1316  [0x1041c7088]  mullow_classical.c:115
+        +   ! : |   + 1 _nmod_poly_mullow_classical  (in libflint.25.0.dylib) + 1112  [0x1041c6fbc]  mullow_classical.c:93
+        +   ! : |   3 _nmod_poly_mullow  (in libflint.25.0.dylib) + 156,168  [0x1041c6870,0x1041c687c]  mullow.c:36
+        +   ! : |   2 _nmod_poly_mullow  (in libflint.25.0.dylib) + 204  [0x1041c68a0]  mullow.c:36
+        +   ! : |   + 1 _nmod_poly_mullow_want_fft_small  (in libflint.25.0.dylib) + 20  [0x1041ca508]  mullow_fft_small.c:0
+        +   ! : |   + 1 _nmod_poly_mullow_want_fft_small  (in libflint.25.0.dylib) + 96  [0x1041ca554]  mullow_fft_small.c:499
+        +   ! : |   1 _nmod_poly_mullow  (in libflint.25.0.dylib) + 44  [0x1041c6800]  mullow.c:24
+        +   ! : 1 _gr_poly_mul_monic  (in libflint.25.0.dylib) + 32  [0x1048cae38]  evaluate_vec_fast.c:66
+        +   ! 52 _gr_poly_interpolation_weights  (in libflint.25.0.dylib) + 316  [0x1048da32c]  interpolate_fast.c:39
+        +   ! : 43 _gr_poly_derivative  (in libflint.25.0.dylib) + 84  [0x1048c1304]  derivative.c:24
+        +   ! : | 43 _gr_nmod_mul_ui  (in libflint.25.0.dylib) + 40  [0x10484be70]  nmod.c:406
+        +   ! : |   25 n_ll_mod_preinv  (in libflint.25.0.dylib) + 168,180,...  [0x103f58f18,0x103f58f24,...]  ll_mod_preinv.c:69
+        +   ! : |   8 n_ll_mod_preinv  (in libflint.25.0.dylib) + 160,164  [0x103f58f10,0x103f58f14]  ll_mod_preinv.c:66
+        +   ! : |   3 n_ll_mod_preinv  (in libflint.25.0.dylib) + 84  [0x103f58ec4]  ll_mod_preinv.c:47
+        +   ! : |   2 n_ll_mod_preinv  (in libflint.25.0.dylib) + 136  [0x103f58ef8]  ll_mod_preinv.c:61
+        +   ! : |   1 n_ll_mod_preinv  (in libflint.25.0.dylib) + 28  [0x103f58e8c]  ll_mod_preinv.c:34
+        +   ! : |   1 n_ll_mod_preinv  (in libflint.25.0.dylib) + 116  [0x103f58ee4]  ll_mod_preinv.c:58
+        +   ! : |   1 n_ll_mod_preinv  (in libflint.25.0.dylib) + 124  [0x103f58eec]  ll_mod_preinv.c:59
+        +   ! : |   1 n_ll_mod_preinv  (in libflint.25.0.dylib) + 144  [0x103f58f00]  ll_mod_preinv.c:62
+        +   ! : |   1 n_ll_mod_preinv  (in libflint.25.0.dylib) + 152  [0x103f58f08]  ll_mod_preinv.c:64
+        +   ! : 4 _gr_nmod_mul_ui  (in libflint.25.0.dylib) + 52  [0x10484be7c]  nmod.c:407
+        +   ! : 3 _gr_poly_derivative  (in libflint.25.0.dylib) + 64,84  [0x1048c12f0,0x1048c1304]  derivative.c:24
+        +   ! : 2 _gr_poly_derivative  (in libflint.25.0.dylib) + 108  [0x1048c131c]  derivative.c:23
+        +   ! 12 _gr_poly_interpolation_weights  (in libflint.25.0.dylib) + 368,388  [0x1048da360,0x1048da374]  interpolate_fast.c:43
+        +   ! 10 _gr_nmod_inv  (in libflint.25.0.dylib) + 116  [0x10484cb78]  nmod.c:235
+        +   ! 2 _gr_poly_interpolation_weights  (in libflint.25.0.dylib) + 196  [0x1048da2b4]  interpolate_fast.c:32
+        +   ! : 2 ___chkstk_darwin  (in libsystem_pthread.dylib) + 8,12  [0x18e726c28,0x18e726c2c]
+        +   ! 1 _gr_poly_interpolation_weights  (in libflint.25.0.dylib) + 20  [0x1048da204]  interpolate_fast.c:20
+        +   ! 1 _gr_poly_interpolation_weights  (in libflint.25.0.dylib) + 436  [0x1048da3a4]  interpolate_fast.c:45
+        +   634 _nmod_poly_interpolate_nmod_vec_fast  (in libflint.25.0.dylib) + 224  [0x1041bbed4]  interpolate_nmod_vec.c:139
+        +   ! 302 _gr_poly_interpolate_fast_precomp  (in libflint.25.0.dylib) + 560  [0x1048da620]  interpolate_fast.c:77
+        +   ! : 285 _gr_nmod_poly_mullow  (in libflint.25.0.dylib) + 196  [0x104851264]  nmod.c:1104
+        +   ! : | 258 _nmod_poly_mul  (in libflint.25.0.dylib) + 72  [0x1041c14a0]  mul.c:0
+        +   ! : | + 85 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 1432  [0x1041c3bb0]  mul_classical.c:71
+        +   ! : | + ! 71 _nmod_vec_reduce  (in libflint.25.0.dylib) + 100,0,...  [0x104166270,0x10416620c,...]  reduce.c:18
+        +   ! : | + ! 14 _nmod_vec_reduce  (in libflint.25.0.dylib) + 8,64,...  [0x104166214,0x10416624c,...]  reduce.c:19
+        +   ! : | + 49 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 1384,1340,...  [0x1041c3b80,0x1041c3b54,...]  mul_classical.c:66
+        +   ! : | + 31 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 1316,1308,...  [0x1041c3b3c,0x1041c3b34,...]  mul_classical.c:67
+        +   ! : | + 26 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 192  [0x1041c36d8]  mul_classical.c:35
+        +   ! : | + ! 8 _nmod_vec_scalar_mul_nmod  (in libflint.25.0.dylib) + 640,556  [0x104166b44,0x104166af0]  scalar.c:110
+        +   ! : | + ! 6 _nmod_vec_scalar_mul_nmod  (in libflint.25.0.dylib) + 16,20,...  [0x1041668d4,0x1041668d8,...]  scalar.c:95
+        +   ! : | + ! 5 _nmod_vec_scalar_mul_nmod  (in libflint.25.0.dylib) + 208  [0x104166994]  scalar.c:100
+        +   ! : | + ! 5 _nmod_vec_scalar_mul_nmod  (in libflint.25.0.dylib) + 272  [0x1041669d4]  scalar.c:102
+        +   ! : | + ! 2 _nmod_vec_scalar_mul_nmod  (in libflint.25.0.dylib) + 280  [0x1041669dc]  scalar.c:107
+        +   ! : | + 14 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 1176,1108  [0x1041c3ab0,0x1041c3a6c]  mul_classical.c:62
+        +   ! : | + 12 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 244,548,...  [0x1041c370c,0x1041c383c,...]  mul_classical.c:41
+        +   ! : | + 10 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 44,12,...  [0x1041c3644,0x1041c3624,...]  mul_classical.c:22
+        +   ! : | + 10 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 968  [0x1041c39e0]  mul_classical.c:45
+        +   ! : | + ! 9 _platform_memset  (in libsystem_platform.dylib) + 180,160,...  [0x18e735144,0x18e735130,...]
+        +   ! : | + ! 1 __bzero  (in libsystem_platform.dylib) + 0  [0x18e735030]
+        +   ! : | + 5 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 48  [0x1041c3648]  mul_classical.c:27
+        +   ! : | + 4 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 168,160  [0x1041c36c0,0x1041c36b8]  mul_classical.c:35
+        +   ! : | + 4 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 936,968  [0x1041c39c0,0x1041c39e0]  mul_classical.c:45
+        +   ! : | + 2 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 1208  [0x1041c3ad0]  mul_classical.c:0
+        +   ! : | + 2 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 196  [0x1041c36dc]  mul_classical.c:39
+        +   ! : | + 2 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 1196  [0x1041c3ac4]  mul_classical.c:64
+        +   ! : | + 1 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 1408  [0x1041c3b98]  mul_classical.c:71
+        +   ! : | + 1 _nmod_vec_scalar_mul_nmod  (in libflint.25.0.dylib) + 200  [0x10416698c]  scalar.c:111
+        +   ! : | 11 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 1684,1668  [0x1041c3cac,0x1041c3c9c]  mul_classical.c:111
+        +   ! : | 8 _nmod_poly_mul  (in libflint.25.0.dylib) + 20,12,...  [0x1041c146c,0x1041c1464,...]  mul.c:18
+        +   ! : | 4 _nmod_poly_mul  (in libflint.25.0.dylib) + 40,36  [0x1041c1480,0x1041c147c]  mul.c:21
+        +   ! : | 3 _nmod_poly_mul  (in libflint.25.0.dylib) + 148  [0x1041c14ec]  mul.c:27
+        +   ! : | + 2 _nmod_poly_mullow_want_fft_small  (in libflint.25.0.dylib) + 416  [0x1041ca694]  mullow_fft_small.c:0
+        +   ! : | + 1 _nmod_poly_mul  (in libflint.25.0.dylib) + 148  [0x1041c14ec]  mul.c:27
+        +   ! : | +   1 _nmod_poly_mullow_want_fft_small  (in libflint.25.0.dylib) + 364  [0x1041ca660]  mullow_fft_small.c:0
+        +   ! : | 1 _nmod_poly_mul  (in libflint.25.0.dylib) + 256  [0x1041c1558]  mul.c:36
+        +   ! : 7 _gr_poly_mul  (in libflint.25.0.dylib) + 16,12,...  [0x1048df520,0x1048df51c,...]  mul.c:19
+        +   ! : 4 _gr_nmod_poly_mullow  (in libflint.25.0.dylib) + 200  [0x104851268]  nmod.c:1116
+        +   ! : 4 _nmod_poly_mul  (in libflint.25.0.dylib) + 216  [0x1041c1530]  mul.c:44
+        +   ! : 2 _gr_nmod_poly_mullow  (in libflint.25.0.dylib) + 28  [0x1048511bc]  nmod.c:1103
+        +   ! 251 _gr_poly_interpolate_fast_precomp  (in libflint.25.0.dylib) + 600  [0x1048da648]  interpolate_fast.c:78
+        +   ! : 235 _gr_nmod_poly_mullow  (in libflint.25.0.dylib) + 196  [0x104851264]  nmod.c:1104
+        +   ! : | 213 _nmod_poly_mul  (in libflint.25.0.dylib) + 72  [0x1041c14a0]  mul.c:0
+        +   ! : | + 75 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 1432  [0x1041c3bb0]  mul_classical.c:71
+        +   ! : | + ! 62 _nmod_vec_reduce  (in libflint.25.0.dylib) + 100,0  [0x104166270,0x10416620c]  reduce.c:18
+        +   ! : | + ! 12 _nmod_vec_reduce  (in libflint.25.0.dylib) + 64,84,...  [0x10416624c,0x104166260,...]  reduce.c:19
+        +   ! : | + ! 1 _nmod_vec_reduce  (in libflint.25.0.dylib) + 108  [0x104166278]  reduce.c:20
+        +   ! : | + 30 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 1384,1328,...  [0x1041c3b80,0x1041c3b48,...]  mul_classical.c:66
+        +   ! : | + 29 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 1316,1268,...  [0x1041c3b3c,0x1041c3b0c,...]  mul_classical.c:67
+        +   ! : | + 19 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 192  [0x1041c36d8]  mul_classical.c:35
+        +   ! : | + ! 11 _nmod_vec_scalar_mul_nmod  (in libflint.25.0.dylib) + 640,548,...  [0x104166b44,0x104166ae8,...]  scalar.c:110
+        +   ! : | + ! 4 _nmod_vec_scalar_mul_nmod  (in libflint.25.0.dylib) + 16,8  [0x1041668d4,0x1041668cc]  scalar.c:95
+        +   ! : | + ! 2 _nmod_vec_scalar_mul_nmod  (in libflint.25.0.dylib) + 208  [0x104166994]  scalar.c:100
+        +   ! : | + ! 1 _nmod_vec_scalar_mul_nmod  (in libflint.25.0.dylib) + 272  [0x1041669d4]  scalar.c:102
+        +   ! : | + ! 1 _nmod_vec_scalar_mul_nmod  (in libflint.25.0.dylib) + 280  [0x1041669dc]  scalar.c:107
+        +   ! : | + 15 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 1176,1100  [0x1041c3ab0,0x1041c3a64]  mul_classical.c:62
+        +   ! : | + 11 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 252,544,...  [0x1041c3714,0x1041c3838,...]  mul_classical.c:41
+        +   ! : | + 6 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 1196  [0x1041c3ac4]  mul_classical.c:64
+        +   ! : | + 5 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 968  [0x1041c39e0]  mul_classical.c:45
+        +   ! : | + ! 5 _platform_memset  (in libsystem_platform.dylib) + 180  [0x18e735144]
+        +   ! : | + 4 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 1208  [0x1041c3ad0]  mul_classical.c:0
+        +   ! : | + 4 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 196  [0x1041c36dc]  mul_classical.c:39
+        +   ! : | + 4 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 968  [0x1041c39e0]  mul_classical.c:45
+        +   ! : | + 4 _nmod_vec_scalar_mul_nmod  (in libflint.25.0.dylib) + 196  [0x104166988]  scalar.c:111
+        +   ! : | + 2 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 12,16  [0x1041c3624,0x1041c3628]  mul_classical.c:22
+        +   ! : | + 2 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 48  [0x1041c3648]  mul_classical.c:27
+        +   ! : | + 2 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 148  [0x1041c36ac]  mul_classical.c:33
+        +   ! : | + 1 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 1432  [0x1041c3bb0]  mul_classical.c:72
+        +   ! : | 9 _nmod_poly_mul  (in libflint.25.0.dylib) + 148  [0x1041c14ec]  mul.c:27
+        +   ! : | + 5 _nmod_poly_mul  (in libflint.25.0.dylib) + 148  [0x1041c14ec]  mul.c:27
+        +   ! : | + ! 5 _nmod_poly_mullow_want_fft_small  (in libflint.25.0.dylib) + 152  [0x1041ca58c]  mullow_fft_small.c:482
+        +   ! : | + 4 _nmod_poly_mullow_want_fft_small  (in libflint.25.0.dylib) + 20,416  [0x1041ca508,0x1041ca694]  mullow_fft_small.c:0
+        +   ! : | 6 _nmod_poly_mul  (in libflint.25.0.dylib) + 20,16  [0x1041c146c,0x1041c1468]  mul.c:18
+        +   ! : | 5 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 1684,1672  [0x1041c3cac,0x1041c3ca0]  mul_classical.c:111
+        +   ! : | 1 _nmod_poly_mul  (in libflint.25.0.dylib) + 148  [0x1041c14ec]  mul.c:27
+        +   ! : | 1 _nmod_poly_mul  (in libflint.25.0.dylib) + 256  [0x1041c1558]  mul.c:36
+        +   ! : 5 _gr_poly_mul  (in libflint.25.0.dylib) + 16  [0x1048df520]  mul.c:19
+        +   ! : 5 _nmod_poly_mul  (in libflint.25.0.dylib) + 216,224  [0x1041c1530,0x1041c1538]  mul.c:44
+        +   ! : 2 _gr_nmod_poly_mullow  (in libflint.25.0.dylib) + 4  [0x1048511a4]  nmod.c:1100
+        +   ! : 2 _gr_nmod_poly_mullow  (in libflint.25.0.dylib) + 28  [0x1048511bc]  nmod.c:1103
+        +   ! : 2 _gr_nmod_poly_mullow  (in libflint.25.0.dylib) + 200  [0x104851268]  nmod.c:1116
+        +   ! 35 _gr_poly_interpolate_fast_precomp  (in libflint.25.0.dylib) + 640  [0x1048da670]  interpolate_fast.c:79
+        +   ! : 19 _gr_nmod_vec_add  (in libflint.25.0.dylib) + 72,104,...  [0x10484d0a0,0x10484d0c0,...]  nmod.c:741
+        +   ! : 8 _gr_nmod_vec_add  (in libflint.25.0.dylib) + 8  [0x10484d060]  nmod.c:0
+        +   ! : 4 _gr_nmod_vec_add  (in libflint.25.0.dylib) + 236,48,...  [0x10484d144,0x10484d088,...]  nmod.c:742
+        +   ! : 4 _gr_nmod_vec_add  (in libflint.25.0.dylib) + 80  [0x10484d0a8]  nmod.c:744
+        +   ! 27 _gr_poly_interpolate_fast_precomp  (in libflint.25.0.dylib) + 76,684,...  [0x1048da43c,0x1048da69c,...]  interpolate_fast.c:0
+        +   ! 14 _gr_poly_interpolate_fast_precomp  (in libflint.25.0.dylib) + 212  [0x1048da4c4]  interpolate_fast.c:66
+        +   ! : 10 _gr_nmod_vec_mul  (in libflint.25.0.dylib) + 100  [0x10484d2b8]  nmod.c:765
+        +   ! : 4 _gr_nmod_vec_mul  (in libflint.25.0.dylib) + 88,52,...  [0x10484d2ac,0x10484d288,...]  nmod.c:766
+        +   ! 1 _gr_nmod_poly_mullow  (in libflint.25.0.dylib) + 208  [0x104851270]  nmod.c:1116
+        +   ! 1 _gr_poly_interpolate_fast_precomp  (in libflint.25.0.dylib) + 176  [0x1048da4a0]  interpolate_fast.c:63
+        +   ! : 1 _platform_memset  (in libsystem_platform.dylib) + 140  [0x18e73511c]
+        +   ! 1 _gr_poly_interpolate_fast_precomp  (in libflint.25.0.dylib) + 160  [0x1048da490]  interpolate_fast.c:63
+        +   ! 1 _gr_poly_interpolate_fast_precomp  (in libflint.25.0.dylib) + 624  [0x1048da660]  interpolate_fast.c:79
+        +   ! 1 _gr_poly_interpolate_fast_precomp  (in libflint.25.0.dylib) + 756  [0x1048da6e4]  interpolate_fast.c:94
+        +   !   1 _gr_nmod_vec_clear  (in libflint.25.0.dylib) + 0  [0x10484cea8]  nmod.c:691
+        +   214 _nmod_poly_interpolate_nmod_vec_fast  (in libflint.25.0.dylib) + 104  [0x1041bbe5c]  interpolate_nmod_vec.c:134
+        +   ! 186 _nmod_poly_tree_build  (in libflint.25.0.dylib) + 748  [0x1041dbee0]  tree.c:96
+        +   ! : 179 _nmod_poly_mul  (in libflint.25.0.dylib) + 72  [0x1041c14a0]  mul.c:0
+        +   ! : | 66 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 1432  [0x1041c3bb0]  mul_classical.c:71
+        +   ! : | + 57 _nmod_vec_reduce  (in libflint.25.0.dylib) + 100,0,...  [0x104166270,0x10416620c,...]  reduce.c:18
+        +   ! : | + 7 _nmod_vec_reduce  (in libflint.25.0.dylib) + 92,8,...  [0x104166268,0x104166214,...]  reduce.c:19
+        +   ! : | + 2 _nmod_vec_reduce  (in libflint.25.0.dylib) + 108  [0x104166278]  reduce.c:20
+        +   ! : | 44 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 1384,1352,...  [0x1041c3b80,0x1041c3b60,...]  mul_classical.c:66
+        +   ! : | 16 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 1316,1372,...  [0x1041c3b3c,0x1041c3b74,...]  mul_classical.c:67
+        +   ! : | 14 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 968  [0x1041c39e0]  mul_classical.c:45
+        +   ! : | + 10 _platform_memset  (in libsystem_platform.dylib) + 180,160  [0x18e735144,0x18e735130]
+        +   ! : | + 2 DYLD-STUB$$bzero  (in libflint.25.0.dylib) + 4,8  [0x1049d0180,0x1049d0184]
+        +   ! : | + 2 __bzero  (in libsystem_platform.dylib) + 24  [0x18e735048]
+        +   ! : | 13 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 1176,1100  [0x1041c3ab0,0x1041c3a64]  mul_classical.c:62
+        +   ! : | 8 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 1196  [0x1041c3ac4]  mul_classical.c:64
+        +   ! : | 6 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 1208  [0x1041c3ad0]  mul_classical.c:0
+        +   ! : | 4 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 236,244,...  [0x1041c3704,0x1041c370c,...]  mul_classical.c:41
+        +   ! : | 2 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 0,4  [0x1041c3618,0x1041c361c]  mul_classical.c:22
+        +   ! : | 2 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 936,968  [0x1041c39c0,0x1041c39e0]  mul_classical.c:45
+        +   ! : | 2 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 1396,1408  [0x1041c3b8c,0x1041c3b98]  mul_classical.c:71
+        +   ! : | 1 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 48  [0x1041c3648]  mul_classical.c:27
+        +   ! : | 1 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 196  [0x1041c36dc]  mul_classical.c:39
+        +   ! : 3 _nmod_poly_mul  (in libflint.25.0.dylib) + 4,8,...  [0x1041c145c,0x1041c1460,...]  mul.c:18
+        +   ! : 3 _nmod_poly_mul  (in libflint.25.0.dylib) + 148  [0x1041c14ec]  mul.c:27
+        +   ! : | 2 _nmod_poly_mullow_want_fft_small  (in libflint.25.0.dylib) + 20  [0x1041ca508]  mullow_fft_small.c:0
+        +   ! : | 1 _nmod_poly_mul  (in libflint.25.0.dylib) + 148  [0x1041c14ec]  mul.c:27
+        +   ! : |   1 _nmod_poly_mullow_want_fft_small  (in libflint.25.0.dylib) + 152  [0x1041ca58c]  mullow_fft_small.c:482
+        +   ! : 1 _nmod_poly_mul_classical  (in libflint.25.0.dylib) + 1692  [0x1041c3cb4]  mul_classical.c:111
+        +   ! 12 _nmod_poly_tree_build  (in libflint.25.0.dylib) + 316  [0x1041dbd30]  tree.c:76
+        +   ! 9 _nmod_poly_tree_build  (in libflint.25.0.dylib) + 768  [0x1041dbef4]  tree.c:102
+        +   ! 3 _nmod_poly_mul  (in libflint.25.0.dylib) + 216  [0x1041c1530]  mul.c:44
+        +   ! 2 _nmod_poly_tree_build  (in libflint.25.0.dylib) + 536,552  [0x1041dbe0c,0x1041dbe1c]  tree.c:57
+        +   ! 1 _nmod_poly_tree_build  (in libflint.25.0.dylib) + 324  [0x1041dbd38]  tree.c:68
+        +   ! 1 _nmod_poly_tree_build  (in libflint.25.0.dylib) + 664  [0x1041dbe8c]  tree.c:92
+        +   38 _nmod_poly_interpolate_nmod_vec_fast  (in libflint.25.0.dylib) + 248  [0x1041bbeec]  interpolate_nmod_vec.c:142
+        +   ! 35 _nmod_poly_tree_free  (in libflint.25.0.dylib) + 52  [0x1041dbbcc]  tree.c:39
+        +   ! : 13 _xzm_free  (in libsystem_malloc.dylib) + 1048  [0x18e548530]
+        +   ! : | 13 mach_absolute_time  (in libsystem_kernel.dylib) + 108,112,...  [0x18e6e810c,0x18e6e8110,...]
+        +   ! : 12 _xzm_free  (in libsystem_malloc.dylib) + 220,352,...  [0x18e5481f4,0x18e548278,...]
+        +   ! : 6 _xzm_free  (in libsystem_malloc.dylib) + 352  [0x18e548278]
+        +   ! : | 5 _platform_memset  (in libsystem_platform.dylib) + 140,132,...  [0x18e73511c,0x18e735114,...]
+        +   ! : | 1 DYLD-STUB$$_platform_bzero  (in libsystem_malloc.dylib) + 8  [0x18e55f878]
+        +   ! : 1 DYLD-STUB$$free  (in libflint.25.0.dylib) + 4  [0x1049d0258]
+        +   ! : 1 _free  (in libsystem_malloc.dylib) + 56  [0x18e557d08]
+        +   ! : 1 flint_free  (in libflint.25.0.dylib) + 4  [0x103f44e4c]  memory_manager.c:151
+        +   ! : 1 xzm_malloc_zone_try_free_default  (in libsystem_malloc.dylib) + 0  [0x18e553170]
+        +   ! 2 _xzm_free  (in libsystem_malloc.dylib) + 1560  [0x18e548730]
+        +   ! 1 _free  (in libsystem_malloc.dylib) + 96  [0x18e557d30]
+        +   29 _nmod_poly_interpolate_nmod_vec_fast  (in libflint.25.0.dylib) + 68  [0x1041bbe38]  interpolate_nmod_vec.c:133
+        +   ! 24 _nmod_poly_tree_alloc  (in libflint.25.0.dylib) + 88  [0x1041dbb5c]  tree.c:26
+        +   ! : 19 flint_malloc  (in libflint.25.0.dylib) + 28  [0x103f44d8c]  memory_manager.c:81
+        +   ! : | 13 _xzm_xzone_malloc_tiny  (in libsystem_malloc.dylib) + 420,248,...  [0x18e54d0e0,0x18e54d034,...]
+        +   ! : | 3 _malloc_zone_malloc  (in libsystem_malloc.dylib) + 12,100  [0x18e5570c8,0x18e557120]
+        +   ! : | 2 _xzm_xzone_malloc  (in libsystem_malloc.dylib) + 8,192  [0x18e547958,0x18e547a10]
+        +   ! : | 1 <deduplicated_symbol>  (in libsystem_malloc.dylib) + 112  [0x18e5471cc]
+        +   ! : 4 flint_malloc  (in libflint.25.0.dylib) + 0  [0x103f44d70]  memory_manager.c:80
+        +   ! : 1 flint_malloc  (in libflint.25.0.dylib) + 20  [0x103f44d84]  memory_manager.c:81
+        +   ! 2 _nmod_poly_tree_alloc  (in libflint.25.0.dylib) + 56  [0x1041dbb3c]  tree.c:24
+        +   ! : 2 flint_malloc  (in libflint.25.0.dylib) + 24  [0x103f44d88]  memory_manager.c:81
+        +   ! 2 _nmod_poly_tree_alloc  (in libflint.25.0.dylib) + 104  [0x1041dbb6c]  tree.c:29
+        +   ! 1 flint_malloc  (in libflint.25.0.dylib) + 36  [0x103f44d94]  memory_manager.c:86
+        +   4 _nmod_poly_interpolate_nmod_vec_fast  (in libflint.25.0.dylib) + 236  [0x1041bbee0]  interpolate_nmod_vec.c:141
+        +   ! 3 _free  (in libsystem_malloc.dylib) + 56,0  [0x18e557d08,0x18e557cd0]
+        +   ! 1 _xzm_free  (in libsystem_malloc.dylib) + 1540  [0x18e54871c]
+        +   2 _xzm_free  (in libsystem_malloc.dylib) + 1560  [0x18e548730]
+        +   1 _gr_poly_interpolation_weights  (in libflint.25.0.dylib) + 492  [0x1048da3dc]  interpolate_fast.c:48
+        +   1 _nmod_poly_interpolate_nmod_vec_fast  (in libflint.25.0.dylib) + 112  [0x1041bbe64]  interpolate_nmod_vec.c:136
+        +   ! 1 flint_malloc  (in libflint.25.0.dylib) + 28  [0x103f44d8c]  memory_manager.c:81
+        +   !   1 <deduplicated_symbol>  (in libsystem_malloc.dylib) + 112  [0x18e5471cc]
+        +   1 _nmod_poly_interpolate_nmod_vec_fast  (in libflint.25.0.dylib) + 196  [0x1041bbeb8]  interpolate_nmod_vec.c:139
+        +     1 _gr_ctx_init_nmod  (in libflint.25.0.dylib) + 76  [0x1048528ac]  nmod.c:1966
+        10 main  (in optimization-campaign) + 3520  [0x102b29420]  optimization_campaign.c:281
+        + 8 clock_gettime  (in libsystem_c.dylib) + 296  [0x18e5c7e4c]
+        + ! 8 _mach_boottime_usec  (in libsystem_c.dylib) + 64  [0x18e5ed4b0]
+        + !   7 gettimeofday  (in libsystem_c.dylib) + 56  [0x18e5bfdc0]
+        + !   : 5 __commpage_gettimeofday_internal  (in libsystem_kernel.dylib) + 44  [0x18e6e9c24]
+        + !   : | 5 mach_absolute_time  (in libsystem_kernel.dylib) + 108,112  [0x18e6e810c,0x18e6e8110]
+        + !   : 1 DYLD-STUB$$__commpage_gettimeofday  (in libsystem_c.dylib) + 8  [0x18e6322b8]
+        + !   : 1 __commpage_gettimeofday_internal  (in libsystem_kernel.dylib) + 12  [0x18e6e9c04]
+        + !   1 gettimeofday  (in libsystem_c.dylib) + 16  [0x18e5bfd98]
+        + 1 _mach_boottime_usec  (in libsystem_c.dylib) + 108  [0x18e5ed4dc]
+        + 1 clock_gettime  (in libsystem_c.dylib) + 12  [0x18e5c7d30]
+        1 main  (in optimization-campaign) + 3560  [0x102b29448]  optimization_campaign.c:282
+        + 1 _platform_strcmp$VARIANT$Base  (in libsystem_platform.dylib) + 36  [0x18e736754]
+        1 main  (in optimization-campaign) + 3576  [0x102b29458]  optimization_campaign.c:282
+        + 1 _platform_strcmp$VARIANT$Base  (in libsystem_platform.dylib) + 172  [0x18e7367dc]
+        1 main  (in optimization-campaign) + 3644  [0x102b2949c]  optimization_campaign.c:282
+
+Total number in stack (recursive counted multiple, when >=5):
+        6       _nmod_poly_mul  (in libflint.25.0.dylib) + 148  [0x1041c14ec]  mul.c:27
+        6       _platform_memset  (in libsystem_platform.dylib) + 0  [0x18e735090]
+        5       _nmod_poly_mullow_want_fft_small  (in libflint.25.0.dylib) + 0  [0x1041ca4f4]  mullow_fft_small.c:0
+
+Sort by top of stack, same collapsed (when >= 5):
+        n_gcdinv  (in libflint.25.0.dylib)        720
+        _nmod_poly_mul_classical  (in libflint.25.0.dylib)        362
+        _nmod_vec_reduce  (in libflint.25.0.dylib)        226
+        _nmod_poly_divrem_basecase_preinv1_1  (in libflint.25.0.dylib)        175
+        n_ll_mod_preinv  (in libflint.25.0.dylib)        164
+        _nmod_vec_nored_ll_scalar_addmul_halflimb  (in libflint.25.0.dylib)        138
+        _gr_poly_evaluate_vec_fast_precomp  (in libflint.25.0.dylib)        50
+        _nmod_vec_scalar_mul_nmod  (in libflint.25.0.dylib)        50
+        _nmod_poly_divrem_basecase_preinv1_2  (in libflint.25.0.dylib)        44
+        n_barrett_precomp  (in libflint.25.0.dylib)        39
+        _gr_nmod_inv  (in libflint.25.0.dylib)        36
+        _nmod_poly_divrem_q1_preinv1  (in libflint.25.0.dylib)        36
+        _nmod_poly_mul  (in libflint.25.0.dylib)        36
+        _gr_nmod_vec_add  (in libflint.25.0.dylib)        35
+        _platform_memset  (in libsystem_platform.dylib)        34
+        _nmod_poly_mullow_classical  (in libflint.25.0.dylib)        30
+        _gr_poly_interpolate_fast_precomp  (in libflint.25.0.dylib)        29
+        _gr_nmod_poly_divrem  (in libflint.25.0.dylib)        28
+        _nmod_vec_dot1_rev  (in libflint.25.0.dylib)        26
+        _nmod_poly_tree_build  (in libflint.25.0.dylib)        25
+        _gr_nmod_mul  (in libflint.25.0.dylib)        24
+        mach_absolute_time  (in libsystem_kernel.dylib)        18
+        _nmod_poly_mullow_want_fft_small  (in libflint.25.0.dylib)        17
+        _xzm_free  (in libsystem_malloc.dylib)        17
+        _gr_poly_interpolation_weights  (in libflint.25.0.dylib)        15
+        _nmod_poly_divrem_basecase_preinv1  (in libflint.25.0.dylib)        15
+        _gr_nmod_vec_mul  (in libflint.25.0.dylib)        14
+        _gr_nmod_poly_mullow  (in libflint.25.0.dylib)        13
+        _xzm_xzone_malloc_tiny  (in libsystem_malloc.dylib)        13
+        _gr_poly_mul  (in libflint.25.0.dylib)        12
+        gr_generic_vec_swap  (in libflint.25.0.dylib)        10
+        ___chkstk_darwin  (in libsystem_pthread.dylib)        8
+        flint_malloc  (in libflint.25.0.dylib)        8
+        _free  (in libsystem_malloc.dylib)        5
+        _gr_nmod_sub  (in libflint.25.0.dylib)        5
+        _gr_poly_derivative  (in libflint.25.0.dylib)        5
+        _platform_memmove  (in libsystem_platform.dylib)        5
+
+Binary Images:
+       0x102b28000 -        0x102b2a293 +optimization-campaign (0) <69F2DFBE-13C9-35C0-8C92-69DBC8263B1E> /Users/*/optimization-campaign
+       0x102ba8000 -        0x102bffbd7 +libmpfr.6.dylib (0) <52900495-C806-30A1-B740-BFBB152F39FE> /opt/homebrew/*/libmpfr.6.dylib
+       0x102c1c000 -        0x102c70f67 +libgmp.10.dylib (0) <61CFD8B8-214C-314F-96F5-0489BF7A8F45> /opt/homebrew/*/libgmp.10.dylib
+       0x103f3c000 -        0x104aeef2f +libflint.25.0.dylib (0) <9D0466B0-4E65-3642-AEDB-C7604186CE3C> /Users/*/libflint.25.0.dylib
+       0x18e2b8000 -        0x18e30ab4b  libobjc.A.dylib (951.7) <03BD9E32-CF0A-37B0-898A-3CE8DE06D842> /usr/lib/libobjc.A.dylib
+       0x18e30b000 -        0x18e33fd58  libdyld.dylib (1387) <957F93B3-8805-39C7-9C51-EDD1715F550E> /usr/lib/system/libdyld.dylib
+       0x18e340000 -        0x18e3f34ff  dyld (1.0.0 - 1387) <74E52480-C2BD-3C8D-812D-95FE2B74A096> /usr/lib/dyld
+       0x18e3f4000 -        0x18e3f7228  libsystem_blocks.dylib (96) <E0AC1231-27AA-3A13-8FAC-41D5802B1F3C> /usr/lib/system/libsystem_blocks.dylib
+       0x18e3f8000 -        0x18e44c55f  libxpc.dylib (3102.160.5) <33E44C2D-D65E-37A6-B85F-1A4CF524A050> /usr/lib/system/libxpc.dylib
+       0x18e44d000 -        0x18e46d9ff  libsystem_trace.dylib (1861.160.4) <93F1DD8C-6CD9-32B9-B222-D23DA5D161B4> /usr/lib/system/libsystem_trace.dylib
+       0x18e46e000 -        0x18e51c5f7  libcorecrypto.dylib (1922.160.10) <0642DDAD-4771-3C82-805C-E7C6701C1461> /usr/lib/system/libcorecrypto.dylib
+       0x18e51d000 -        0x18e56d257  libsystem_malloc.dylib (812.160.5) <D969A907-3E43-3951-9365-8C2DB3812E9D> /usr/lib/system/libsystem_malloc.dylib
+       0x18e56e000 -        0x18e5b523f  libdispatch.dylib (1542.160.2) <B2000CD5-F580-314A-A141-E036719D854E> /usr/lib/system/libdispatch.dylib
+       0x18e5b6000 -        0x18e5b8ffb  libsystem_featureflags.dylib (103) <FEE12F9C-344B-33B3-8EDD-283580EF1C67> /usr/lib/system/libsystem_featureflags.dylib
+       0x18e5b9000 -        0x18e63a1e7  libsystem_c.dylib (1752.160.4) <D77CEB62-AFF6-3CEC-BA9B-4F057FBE2EB5> /usr/lib/system/libsystem_c.dylib
+       0x18e63b000 -        0x18e6cbae7  libc++.1.dylib (2100.43) <F0FD393C-15BC-3C75-A19D-897F7B225C78> /usr/lib/libc++.1.dylib
+       0x18e6cc000 -        0x18e6e675f  libc++abi.dylib (2100.43) <F38A9C58-22AB-3798-BBAE-8DCD9CC0CE27> /usr/lib/libc++abi.dylib
+       0x18e6e7000 -        0x18e7242e7  libsystem_kernel.dylib (12377.161.14) <C6A4A4CB-92E6-3BAF-AAE0-E8306259209A> /usr/lib/system/libsystem_kernel.dylib
+       0x18e725000 -        0x18e731b3b  libsystem_pthread.dylib (539.100.4) <A373F0B0-9880-326A-88B4-DD8BE4E33072> /usr/lib/system/libsystem_pthread.dylib
+       0x18e732000 -        0x18e73a963  libsystem_platform.dylib (375.120.2) <EDB83A19-EC17-32DE-9350-6145970A85D6> /usr/lib/system/libsystem_platform.dylib
+       0x18e73b000 -        0x18e76a6eb  libsystem_info.dylib (600) <9B5FB84B-31AD-3EA7-8F89-8C700D369DC8> /usr/lib/system/libsystem_info.dylib
+       0x192708000 -        0x192711e5f  libsystem_darwin.dylib (1752.160.4) <8E07D22E-CE5A-38A0-B091-5B0338C326F5> /usr/lib/system/libsystem_darwin.dylib
+       0x192b73000 -        0x192b851b6  libsystem_notify.dylib (348.160.3) <15799128-6CBD-30D6-A2BB-B9D02B4470C0> /usr/lib/system/libsystem_notify.dylib
+       0x194e44000 -        0x194e5ef7b  libsystem_networkextension.dylib (2226.161.1) <9C7B1EEB-47BE-3791-93A9-CFC693CB9417> /usr/lib/system/libsystem_networkextension.dylib
+       0x194ee1000 -        0x194ef8fdf  libsystem_asl.dylib (406) <54439739-33EE-3273-839F-CBA67D7F5CB1> /usr/lib/system/libsystem_asl.dylib
+       0x196a9a000 -        0x196aa2387  libsystem_symptoms.dylib (2169.160.3) <229122B9-B8B1-3F2F-870E-8650AE3C4FB5> /usr/lib/system/libsystem_symptoms.dylib
+       0x19ad3f000 -        0x19ad775b7  libsystem_containermanager.dylib (725.160.3) <14B2A47F-19C8-392F-8FDB-FE8AE375DD41> /usr/lib/system/libsystem_containermanager.dylib
+       0x19c151000 -        0x19c1555d7  libsystem_configuration.dylib (1405.160.3) <D8D6280B-783D-3550-BDBA-2861AE40604F> /usr/lib/system/libsystem_configuration.dylib
+       0x19c156000 -        0x19c15c99f  libsystem_sandbox.dylib (2680.160.6) <54688162-B50D-3D31-A1E8-7B9766D3530D> /usr/lib/system/libsystem_sandbox.dylib
+       0x19d7b1000 -        0x19d7b41fb  libquarantine.dylib (196.160.2) <EEE5AADB-52E1-3C4C-881A-70405770B1F1> /usr/lib/system/libquarantine.dylib
+       0x19df50000 -        0x19df56d03  libsystem_coreservices.dylib (191.5.1) <D4ACD2AC-5702-3C45-85A0-300B2C2D19E1> /usr/lib/system/libsystem_coreservices.dylib
+       0x19e4df000 -        0x19e51ca77  libsystem_m.dylib (3312.100.1) <B54FBE99-DB0B-32C7-ABDD-C2206DF606A4> /usr/lib/system/libsystem_m.dylib
+       0x19e51e000 -        0x19e521527  libmacho.dylib (1387) <949131E5-BDA2-39BA-AA50-62651BB51802> /usr/lib/system/libmacho.dylib
+       0x19e53b000 -        0x19e5483a7  libcommonCrypto.dylib (600035) <3B110564-5278-3CB0-85F1-2CE8431FF935> /usr/lib/system/libcommonCrypto.dylib
+       0x19e549000 -        0x19e552ca3  libunwind.dylib (2100.2) <05FD0014-55B1-3B8A-A6BA-6C7A389C4123> /usr/lib/system/libunwind.dylib
+       0x19e55b000 -        0x19e565bef  libcopyfile.dylib (240.160.2.0.1) <D0009B8A-8ECC-3D56-9206-7E1839707F93> /usr/lib/system/libcopyfile.dylib
+       0x19e566000 -        0x19e569987  libcompiler_rt.dylib (103.3) <6FB345CA-7F5C-3263-A23F-143F7539FD8A> /usr/lib/system/libcompiler_rt.dylib
+       0x19e56a000 -        0x19e56e78b  libsystem_collections.dylib (1752.160.4) <C8160BD2-5941-3DC0-BB40-F8C2B8156EC4> /usr/lib/system/libsystem_collections.dylib
+       0x19e56f000 -        0x19e5724cf  libsystem_secinit.dylib (168.100.7) <ECABC024-8F02-374A-BB7E-29437CEA2ABD> /usr/lib/system/libsystem_secinit.dylib
+       0x19e573000 -        0x19e575bf7  libremovefile.dylib (85.100.6) <7460B5AE-469A-36A0-A7EC-6C7D69628E86> /usr/lib/system/libremovefile.dylib
+       0x19e576000 -        0x19e576f27  libkeymgr.dylib (31) <7E863FCA-F3FF-32C7-8A8C-F983E946AFC3> /usr/lib/system/libkeymgr.dylib
+       0x19e577000 -        0x19e57fe37  libsystem_dnssd.dylib (2881.160.4) <305F4398-E688-3384-B351-02D865EC8A04> /usr/lib/system/libsystem_dnssd.dylib
+       0x19e580000 -        0x19e58509b  libcache.dylib (95) <9CD7B1E1-3E47-339C-A193-2392E3E0ED23> /usr/lib/system/libcache.dylib
+       0x19e586000 -        0x19e587ce3  libSystem.B.dylib (1356) <4FED5EE2-5D3E-35B1-A170-9859C4B683BB> /usr/lib/libSystem.B.dylib
+       0x292549000 -        0x292550349  libRosetta.dylib (367.9) <0C7397C6-D747-31F2-8BC1-4096213BDE5C> /usr/lib/libRosetta.dylib
+       0x29415c000 -        0x29415fa4b  libsystem_darwindirectory.dylib (122) <971A4F65-493D-39F3-846D-0D33FA2769FD> /usr/lib/system/libsystem_darwindirectory.dylib
+       0x294160000 -        0x29416a39b  libsystem_eligibility.dylib (319.160.17) <750CA446-92EA-3A56-9A7B-CC0841686C50> /usr/lib/system/libsystem_eligibility.dylib
+       0x29416b000 -        0x29417288b  libsystem_sanitizers.dylib (26.1) <D88EC709-9AA8-3083-B22B-D3CB39678D71> /usr/lib/system/libsystem_sanitizers.dylib
+       0x294173000 -        0x294173bb7  libsystem_trial.dylib (474.2.18.2) <7194FF5B-A6C5-3D67-B00A-90209F10D603> /usr/lib/system/libsystem_trial.dylib

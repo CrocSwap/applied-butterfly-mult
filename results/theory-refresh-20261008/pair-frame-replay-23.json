@@ -1,0 +1,33 @@
+{
+  "status": "independent serialized word, exact frames, full input and dirty basis both orientations PASS",
+  "h": 23,
+  "roles": 27918,
+  "output_roles": 5336,
+  "elementary_xors": 148958,
+  "word_length": 620626,
+  "full_basis_vectors": 31460,
+  "rank_mass": 642620,
+  "histogram": {
+    "1": 42694,
+    "0": 162731,
+    "2": 82328,
+    "3": 11086,
+    "4": 10646,
+    "6": 2005,
+    "5": 7548,
+    "8": 1361,
+    "9": 562,
+    "10": 597,
+    "12": 558,
+    "14": 2005,
+    "16": 547,
+    "18": 4220,
+    "19": 7820,
+    "22": 23,
+    "17": 274,
+    "7": 688,
+    "15": 396,
+    "21": 165,
+    "13": 23
+  }
+}

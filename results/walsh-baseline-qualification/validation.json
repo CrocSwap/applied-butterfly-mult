@@ -1,0 +1,10418 @@
+[
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      158,
+      158
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      158,
+      158
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      158,
+      158
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      158,
+      158
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      158,
+      158
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      158,
+      158
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      158,
+      158
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      158,
+      158
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      158,
+      158
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      158,
+      158
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      158,
+      158
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      158,
+      158
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      158,
+      158
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      158,
+      158
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 0,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 2,
+    "precision": [
+      136,
+      136
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      135,
+      135
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      135,
+      135
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      135,
+      135
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      135,
+      135
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      135,
+      135
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      135,
+      135
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      135,
+      135
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      135,
+      135
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      135,
+      135
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      135,
+      135
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      135,
+      135
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      135,
+      135
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      135,
+      135
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      135,
+      135
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 1,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 4,
+    "precision": [
+      137,
+      137
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      134,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 2.71770326
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      135,
+      135
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      135,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 2.59998816
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      135,
+      135
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      135,
+      135
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      135,
+      135
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      135,
+      135
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      135,
+      135
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 2,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 8,
+    "precision": [
+      138,
+      138
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      136,
+      136
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      136,
+      135
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1.24715263
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      136,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 3.11845094
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      136,
+      136
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      136,
+      136
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      136,
+      136
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      136,
+      136
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      134,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1.99999612
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      134,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 4.49996047
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      139,
+      139
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      134,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 2.77406827
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      134,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 2.0522774
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      134,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 4.03122421
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      134,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 3.10936731
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 4,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 32,
+    "precision": [
+      140,
+      140
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      134,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1.79970219
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      134,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1.99132262
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      134,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 2.54999616
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      134,
+      132
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 2.32856556
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 5,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 64,
+    "precision": [
+      141,
+      141
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      134,
+      132
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 2.93847238
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      134,
+      132
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 3.33589323
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      134,
+      132
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 5.22724108
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      134,
+      132
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 8.25087082
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      142,
+      142
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      134,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 2.37812327
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      134,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 2.35011976
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      133,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      133,
+      132
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 3.43618095
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      133,
+      132
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 4.95408963
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      133,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      133,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      133,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      133,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 7,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 256,
+    "precision": [
+      143,
+      143
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      134,
+      132
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 3.71072293
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      134,
+      132
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 2.71816387
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      133,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      133,
+      131
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 7.14796004
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      133,
+      132
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 3.80055501
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      133,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      133,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      133,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      133,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 8,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 512,
+    "precision": [
+      144,
+      144
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      134,
+      132
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 3.13857488
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      134,
+      131
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 4.88617282
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      133,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      133,
+      132
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 4.44975031
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      133,
+      131
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 13.5723698
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      133,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      133,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      133,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      133,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      145,
+      145
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      134,
+      131
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 4.72057259
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      134,
+      132
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 4.24528848
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      134,
+      134
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      133,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      133,
+      131
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 9.4033329
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      133,
+      131
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 7.78008115
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      133,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      133,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      133,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      133,
+      133
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 2,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 10,
+      "target": 128,
+      "fixture": 3,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 2048,
+    "precision": [
+      146,
+      146
+    ],
+    "accuracy": [
+      9223372036854775807,
+      9223372036854775807
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      523,
+      523
+    ],
+    "accuracy": [
+      519,
+      519
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      523,
+      523
+    ],
+    "accuracy": [
+      519,
+      520
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 0.728610269
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      523,
+      523
+    ],
+    "accuracy": [
+      519,
+      518
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1.51380717
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      523,
+      523
+    ],
+    "accuracy": [
+      519,
+      519
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      523,
+      523
+    ],
+    "accuracy": [
+      519,
+      519
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      523,
+      523
+    ],
+    "accuracy": [
+      519,
+      519
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      523,
+      523
+    ],
+    "accuracy": [
+      519,
+      519
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      523,
+      523
+    ],
+    "accuracy": [
+      519,
+      519
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      523,
+      523
+    ],
+    "accuracy": [
+      519,
+      518
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1.33333808
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      523,
+      523
+    ],
+    "accuracy": [
+      519,
+      517
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 6.74995428
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      523,
+      523
+    ],
+    "accuracy": [
+      519,
+      519
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      523,
+      523
+    ],
+    "accuracy": [
+      519,
+      519
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      523,
+      523
+    ],
+    "accuracy": [
+      519,
+      519
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      523,
+      523
+    ],
+    "accuracy": [
+      519,
+      519
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      4107,
+      4107
+    ],
+    "accuracy": [
+      4103,
+      4103
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      4107,
+      4107
+    ],
+    "accuracy": [
+      4103,
+      4102
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1.30952382
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      4107,
+      4107
+    ],
+    "accuracy": [
+      4103,
+      4102
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1.11904766
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      4107,
+      4107
+    ],
+    "accuracy": [
+      4103,
+      4103
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      4107,
+      4107
+    ],
+    "accuracy": [
+      4103,
+      4103
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      4107,
+      4107
+    ],
+    "accuracy": [
+      4103,
+      4103
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      4107,
+      4107
+    ],
+    "accuracy": [
+      4103,
+      4103
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      4107,
+      4107
+    ],
+    "accuracy": [
+      4102,
+      4102
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      4107,
+      4107
+    ],
+    "accuracy": [
+      4102,
+      4101
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1.74999616
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      4107,
+      4107
+    ],
+    "accuracy": [
+      4102,
+      4101
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 4.12498397
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      4107,
+      4107
+    ],
+    "accuracy": [
+      4102,
+      4102
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      4107,
+      4107
+    ],
+    "accuracy": [
+      4102,
+      4102
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      4107,
+      4107
+    ],
+    "accuracy": [
+      4102,
+      4102
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 3,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 16,
+    "precision": [
+      4107,
+      4107
+    ],
+    "accuracy": [
+      4102,
+      4102
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      526,
+      526
+    ],
+    "accuracy": [
+      518,
+      518
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      526,
+      526
+    ],
+    "accuracy": [
+      518,
+      516
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 2.45096168
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      526,
+      526
+    ],
+    "accuracy": [
+      518,
+      516
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 2.69333205
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      526,
+      526
+    ],
+    "accuracy": [
+      518,
+      518
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      526,
+      526
+    ],
+    "accuracy": [
+      518,
+      518
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      526,
+      526
+    ],
+    "accuracy": [
+      518,
+      518
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      526,
+      526
+    ],
+    "accuracy": [
+      518,
+      518
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      526,
+      526
+    ],
+    "accuracy": [
+      518,
+      518
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      526,
+      526
+    ],
+    "accuracy": [
+      518,
+      516
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 5.46674928
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      526,
+      526
+    ],
+    "accuracy": [
+      518,
+      516
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 8.86708784
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      526,
+      526
+    ],
+    "accuracy": [
+      518,
+      518
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      526,
+      526
+    ],
+    "accuracy": [
+      518,
+      518
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      526,
+      526
+    ],
+    "accuracy": [
+      518,
+      518
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      526,
+      526
+    ],
+    "accuracy": [
+      518,
+      518
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      4110,
+      4110
+    ],
+    "accuracy": [
+      4102,
+      4102
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      4110,
+      4110
+    ],
+    "accuracy": [
+      4102,
+      4100
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 2.7621463
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      4110,
+      4110
+    ],
+    "accuracy": [
+      4102,
+      4100
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 2.5298688
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      4110,
+      4110
+    ],
+    "accuracy": [
+      4102,
+      4102
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      4110,
+      4110
+    ],
+    "accuracy": [
+      4102,
+      4102
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      4110,
+      4110
+    ],
+    "accuracy": [
+      4102,
+      4102
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      4110,
+      4110
+    ],
+    "accuracy": [
+      4102,
+      4102
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      4110,
+      4110
+    ],
+    "accuracy": [
+      4101,
+      4101
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      4110,
+      4110
+    ],
+    "accuracy": [
+      4101,
+      4100
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 5.12010325
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      4110,
+      4110
+    ],
+    "accuracy": [
+      4101,
+      4100
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 7.53890558
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      4110,
+      4110
+    ],
+    "accuracy": [
+      4101,
+      4101
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      4110,
+      4110
+    ],
+    "accuracy": [
+      4101,
+      4101
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      4110,
+      4110
+    ],
+    "accuracy": [
+      4101,
+      4101
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      4110,
+      4110
+    ],
+    "accuracy": [
+      4101,
+      4101
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      529,
+      529
+    ],
+    "accuracy": [
+      518,
+      518
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      529,
+      529
+    ],
+    "accuracy": [
+      518,
+      516
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 3.14745808
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      529,
+      529
+    ],
+    "accuracy": [
+      518,
+      515
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 4.91614242
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      529,
+      529
+    ],
+    "accuracy": [
+      518,
+      518
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      529,
+      529
+    ],
+    "accuracy": [
+      518,
+      518
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      529,
+      529
+    ],
+    "accuracy": [
+      518,
+      518
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      529,
+      529
+    ],
+    "accuracy": [
+      518,
+      518
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      529,
+      529
+    ],
+    "accuracy": [
+      517,
+      517
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      529,
+      529
+    ],
+    "accuracy": [
+      517,
+      516
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 4.55184742
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      529,
+      529
+    ],
+    "accuracy": [
+      517,
+      515
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 14.4105725
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      529,
+      529
+    ],
+    "accuracy": [
+      517,
+      517
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      529,
+      529
+    ],
+    "accuracy": [
+      517,
+      517
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      529,
+      529
+    ],
+    "accuracy": [
+      517,
+      517
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      529,
+      529
+    ],
+    "accuracy": [
+      517,
+      517
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      4113,
+      4113
+    ],
+    "accuracy": [
+      4102,
+      4102
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      4113,
+      4113
+    ],
+    "accuracy": [
+      4102,
+      4100
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 3.2785511
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      4113,
+      4113
+    ],
+    "accuracy": [
+      4102,
+      4099
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 4.90518164
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      4113,
+      4113
+    ],
+    "accuracy": [
+      4102,
+      4102
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      4113,
+      4113
+    ],
+    "accuracy": [
+      4102,
+      4102
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      4113,
+      4113
+    ],
+    "accuracy": [
+      4102,
+      4102
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      4113,
+      4113
+    ],
+    "accuracy": [
+      4102,
+      4102
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      4113,
+      4113
+    ],
+    "accuracy": [
+      4101,
+      4101
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      4113,
+      4113
+    ],
+    "accuracy": [
+      4101,
+      4099
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 4.58909396
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      4113,
+      4113
+    ],
+    "accuracy": [
+      4101,
+      4099
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 13.6070102
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      4113,
+      4113
+    ],
+    "accuracy": [
+      4101,
+      4101
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      4113,
+      4113
+    ],
+    "accuracy": [
+      4101,
+      4101
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      4113,
+      4113
+    ],
+    "accuracy": [
+      4101,
+      4101
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 9,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 1024,
+    "precision": [
+      4113,
+      4113
+    ],
+    "accuracy": [
+      4101,
+      4101
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      532,
+      532
+    ],
+    "accuracy": [
+      518,
+      518
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      532,
+      532
+    ],
+    "accuracy": [
+      518,
+      514
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 6.387485
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      532,
+      532
+    ],
+    "accuracy": [
+      518,
+      515
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 7.80857962
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      532,
+      532
+    ],
+    "accuracy": [
+      518,
+      518
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      532,
+      532
+    ],
+    "accuracy": [
+      518,
+      518
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      532,
+      532
+    ],
+    "accuracy": [
+      518,
+      518
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 512,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      532,
+      532
+    ],
+    "accuracy": [
+      518,
+      518
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      532,
+      532
+    ],
+    "accuracy": [
+      516,
+      516
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      532,
+      532
+    ],
+    "accuracy": [
+      516,
+      514
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 12.6171286
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      532,
+      532
+    ],
+    "accuracy": [
+      516,
+      514
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 21.6630245
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      532,
+      532
+    ],
+    "accuracy": [
+      516,
+      516
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      532,
+      532
+    ],
+    "accuracy": [
+      516,
+      516
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      532,
+      532
+    ],
+    "accuracy": [
+      516,
+      516
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 512,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      532,
+      532
+    ],
+    "accuracy": [
+      516,
+      516
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      4116,
+      4116
+    ],
+    "accuracy": [
+      4102,
+      4102
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      4116,
+      4116
+    ],
+    "accuracy": [
+      4102,
+      4099
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 6.61174516
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      4116,
+      4116
+    ],
+    "accuracy": [
+      4102,
+      4099
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 7.77696086
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      4116,
+      4116
+    ],
+    "accuracy": [
+      4102,
+      4102
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      4116,
+      4116
+    ],
+    "accuracy": [
+      4102,
+      4102
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      4116,
+      4116
+    ],
+    "accuracy": [
+      4102,
+      4102
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 4096,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      4116,
+      4116
+    ],
+    "accuracy": [
+      4102,
+      4102
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      4116,
+      4116
+    ],
+    "accuracy": [
+      4100,
+      4100
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      4116,
+      4116
+    ],
+    "accuracy": [
+      4100,
+      4098
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 12.6670388
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      4116,
+      4116
+    ],
+    "accuracy": [
+      4100,
+      4098
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 22.005652
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      4116,
+      4116
+    ],
+    "accuracy": [
+      4100,
+      4100
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      4116,
+      4116
+    ],
+    "accuracy": [
+      4100,
+      4100
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      4116,
+      4116
+    ],
+    "accuracy": [
+      4100,
+      4100
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 4096,
+      "fixture": 1,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      4116,
+      4116
+    ],
+    "accuracy": [
+      4100,
+      4100
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 32768,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      32782,
+      32782
+    ],
+    "accuracy": [
+      32774,
+      32774
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 32768,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      32782,
+      32782
+    ],
+    "accuracy": [
+      32774,
+      32772
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 2.78577391
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 32768,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      32782,
+      32782
+    ],
+    "accuracy": [
+      32774,
+      32772
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 2.63978202
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 32768,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      32782,
+      32782
+    ],
+    "accuracy": [
+      32774,
+      32774
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 32768,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      32782,
+      32782
+    ],
+    "accuracy": [
+      32774,
+      32774
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 32768,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      32782,
+      32782
+    ],
+    "accuracy": [
+      32774,
+      32774
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 6,
+      "target": 32768,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 128,
+    "precision": [
+      32782,
+      32782
+    ],
+    "accuracy": [
+      32774,
+      32774
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 32768,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 1
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      32788,
+      32788
+    ],
+    "accuracy": [
+      32774,
+      32774
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 32768,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 2
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      32788,
+      32788
+    ],
+    "accuracy": [
+      32774,
+      32771
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 6.53275074
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 32768,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 3
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      32788,
+      32788
+    ],
+    "accuracy": [
+      32774,
+      32771
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 7.61767218
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 32768,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 4
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      32788,
+      32788
+    ],
+    "accuracy": [
+      32774,
+      32774
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 32768,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 5
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      32788,
+      32788
+    ],
+    "accuracy": [
+      32774,
+      32774
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 32768,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 6
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      32788,
+      32788
+    ],
+    "accuracy": [
+      32774,
+      32774
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  },
+  {
+    "case": {
+      "logn": 12,
+      "target": 32768,
+      "fixture": 0,
+      "base": 0,
+      "candidate": 7
+    },
+    "status": "PASS",
+    "outputs_checked": 8192,
+    "precision": [
+      32788,
+      32788
+    ],
+    "accuracy": [
+      32774,
+      32774
+    ],
+    "attempts": [
+      1,
+      1
+    ],
+    "sum_radius_ratio": 1
+  }
+]

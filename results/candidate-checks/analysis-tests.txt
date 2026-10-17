@@ -1,0 +1,9 @@
+test_bad_quartet_is_rejected (test_analysis.AnalysisTests.test_bad_quartet_is_rejected) ... ok
+test_fixed_case_aggregation (test_analysis.AnalysisTests.test_fixed_case_aggregation) ... ok
+test_known_reduction (test_analysis.AnalysisTests.test_known_reduction) ... ok
+test_null_and_drift (test_analysis.AnalysisTests.test_null_and_drift) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.187s
+
+OK

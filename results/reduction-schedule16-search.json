@@ -1,0 +1,78 @@
+{
+  "schedules_checked": 65536,
+  "valid_schedules": 25600,
+  "invalid_reasons": {
+    "integer addition may exceed 2**53": 24576,
+    "output exceeds inverse interface bound": 15360
+  },
+  "minimum_simd_reductions": 2,
+  "minimum_schedules": [
+    {
+      "valid": true,
+      "cuts": [
+        "0.Z0",
+        "1.Z0"
+      ],
+      "output_bounds_in_half_p_units": [
+        [
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          4,
+          4,
+          4,
+          4
+        ],
+        [
+          2,
+          3,
+          3,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          2
+        ]
+      ]
+    }
+  ],
+  "original": {
+    "valid": true,
+    "cuts": [
+      "0.Z0",
+      "1.Z0"
+    ],
+    "output_bounds_in_half_p_units": [
+      [
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        4,
+        4,
+        4,
+        4
+      ],
+      [
+        2,
+        3,
+        3,
+        2
+      ],
+      [
+        2,
+        2,
+        2,
+        2
+      ]
+    ]
+  },
+  "scope": "Screen SIMD reduction placements in the actually hot 4x4 inverse16 graph.\n\nEach optional reduction acts on all four logical SIMD lanes. Bounds use half-p\nunits, with the same strict integer/mulmod contract as reduction_schedule.py.\nOnly reduction placement varies; factorization, arithmetic and transpose stay fixed.\n"
+}

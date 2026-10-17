@@ -1,0 +1,34 @@
+{
+  "status": "complete",
+  "decision": "Actual paired circuit accepts Pareto-union payloads; no competitive application contract established among inspected solvers.",
+  "inherited_manifest": "/Users/colkitt/sith/toys/math/butterflyMult/results/qrom-compatibility/completion.json",
+  "inherited_manifest_sha256": "8aa77fa36c5f009e3525d87a8a5d37afb7391852cda2e1b68aed196236714630",
+  "historical_fingerprints_verified": 1977,
+  "qualified_for_performance_prototype": 0,
+  "theory_source_sha256": {
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/paired_exclusion_circuit.py": "8f05f04cf06217befd6d0ee0f2d7d0c5c5eb32cfab8c9a8ca7917fd6d620b7d2",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/exclusion_circuit.py": "b253f9d7318becda1c1f3b24e2287ed44a9c27fcea00cf9d531afb950d0457a0",
+    "/Users/colkitt/sith/toys/math/integerMult/docs/research/paired-network.md": "335b664ca9b7c71a855b32dc44c4597997b6f616ef06dc878af1d5c2010891ea"
+  },
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/pareto-compatibility/checks.json": "4d14ec0a45b3a22c653c0e3a18228fc2083023575ae746a4f6bfe749173cde0d",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/pareto-compatibility/sources/HanZhang39/MultiObjectiveSearch/README.md": "de5cb985fcaa3a4c960f23dc35b16e2a71207aeb35bb6fbe61cc2458dd4ee669",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/pareto-compatibility/sources/HanZhang39/MultiObjectiveSearch/inc/GCL.h": "a0b066b40945426718c43adb66ed8e3fc1d3bb68f4f660f7c70a67ef02067c0c",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/pareto-compatibility/sources/HanZhang39/MultiObjectiveSearch/inc/LTMOA2.h": "3b674d63ff71471b27afb76587c0785ad6a9bc81bd6996edd0cd18d50ae40b8a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/pareto-compatibility/sources/HanZhang39/MultiObjectiveSearch/src/Solvers/GCL.cpp": "401c2429d35ddc8616fd5cfd9b9bdf2ed96fc4f497fc805f2ef3ef2c396e223f",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/pareto-compatibility/sources/HanZhang39/MultiObjectiveSearch/src/Solvers/LTMOA.cpp": "876a2db9bbe2a8b2503a1027df7566d7f4d9222467d2cb6dd0fea8eb5efe8fe3",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/pareto-compatibility/sources/HanZhang39/MultiObjectiveSearch/src/Solvers/LTMOA2.cpp": "428e03eb81e49891130ee250651ba67e5dc60120f6fb3cf872924c2406caf101",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/pareto-compatibility/sources/Tarek-pub/Bicriteria_Aggregation/Readme.md": "8642c1ac3a6ccdd67b5f228f97e2954f1785a6ef41079bf2a1001613a28f01dd",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/pareto-compatibility/sources/Tarek-pub/Bicriteria_Aggregation/src/main/java/multicriteriaSTCuts/dynamicProgamming/MincutSolutionVector.java": "48a7d27c3313b1efcfd696f3368b9119a7580f8fa1acc7b50122ee4dd2c2ff9f",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/pareto-compatibility/sources/Tarek-pub/Bicriteria_Aggregation/src/main/java/multicriteriaSTCuts/dynamicProgamming/algorithms/BicritMergeIterator.java": "6a665f7c8ae62548b78e7b5a60edfa337e6b492c6672724131ceebfb2eab3892",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/pareto-compatibility/sources/Tarek-pub/Bicriteria_Aggregation/src/main/java/multicriteriaSTCuts/dynamicProgamming/algorithms/HeuristicBicritSolutionHeap.java": "8ed9537bba96b0df8b2a58b7a4ada70826f237817113158c78b6c9bf24c531af",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/pareto-compatibility/sources/Tarek-pub/Bicriteria_Aggregation/src/main/java/multicriteriaSTCuts/dynamicProgamming/algorithms/NormalBicritSolutionHeap.java": "6cc88b36db3a166fd78a9c930fe48df474f69064a02c8b84f989821b34fd4852",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/pareto-compatibility/sources/utndatasystems/DPconv/LICENSE": "e09262ba677cac0a37893ef6a1bffadd757a940f01cea726718ea399376caf3d",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/pareto-compatibility/sources/utndatasystems/DPconv/README.md": "5df9c8011909076428e35d3163de8b71dda03be897aff48fb83e98b7743be95b",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/pareto-compatibility/sources/utndatasystems/DPconv/src/algorithms/DPconv.cpp": "b5c4f1ed519b91a24fffe034564def6f5a9eb911ad74ba1b45ac82f3fef2a3b7",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/pareto-compatibility/sources/utndatasystems/DPconv/src/include/SubsetConvolution.hpp": "629df4b56c2c0bcb43db783550fd7bfc130a9332cab6446fbdaabefe3be1da7d",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/pareto-compatibility/sources.json": "1f6b4d977755b4571615fde258785ec8e0dd7e05777d99fe2724b2ea1f148cef",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/pareto_compatibility.py": "2f11005263df143b25442566f781062ea1a5cadc462ffe4b3c08540625d1e86e",
+    "/Users/colkitt/sith/toys/math/butterflyMult/docs/pareto-compatibility.md": "ac471bcd4b0fbc3f5a6977435beb2951c2b995c739229e39d6937c2ed70783e2"
+  }
+}

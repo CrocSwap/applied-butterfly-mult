@@ -1,0 +1,68 @@
+{
+  "cases": [
+    [
+      8,
+      240,
+      1000000007,
+      "full"
+    ],
+    [
+      8,
+      256,
+      1000000007,
+      "full"
+    ],
+    [
+      8,
+      1008,
+      1000000007,
+      "full"
+    ],
+    [
+      8,
+      1024,
+      1000000007,
+      "full"
+    ],
+    [
+      8,
+      1024,
+      1108307720798209,
+      "full"
+    ],
+    [
+      4,
+      256,
+      1000000007,
+      "full"
+    ],
+    [
+      8,
+      1024,
+      1000000007,
+      "mid"
+    ],
+    [
+      8,
+      1040,
+      1000000007,
+      "mid"
+    ],
+    [
+      8,
+      256,
+      1108307720798209,
+      "full"
+    ],
+    [
+      8,
+      272,
+      1000000007,
+      "mid"
+    ]
+  ],
+  "trials": 31,
+  "batch_ms": 10,
+  "seed": 504117,
+  "scope": "Paired comparison with the prior tiled kernel, including its headline win and its regressions. Positive reductions favor the prepared-input candidate."
+}

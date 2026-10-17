@@ -1,0 +1,3 @@
+{"precision_bits":1048576,"exact_ball_equality":true,"mpfr_directed_bounds_contained":true,"accuracy_bits":[1048574,1048574],"verified_before_and_after":true}
+{"precision_bits":524288,"exact_ball_equality":true,"mpfr_directed_bounds_contained":true,"accuracy_bits":[524286,524286],"verified_before_and_after":true}
+{"precision_bits":262144,"exact_ball_equality":true,"mpfr_directed_bounds_contained":true,"accuracy_bits":[262142,262142],"verified_before_and_after":true}

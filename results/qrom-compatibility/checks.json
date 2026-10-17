@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "inherited_manifest": "/Users/colkitt/sith/toys/math/butterflyMult/results/sachs-hybrid-screen/completion.json",
+  "inherited_manifest_sha256": "469a96b4018a200bc6220dd9c490e8ef1e01d2dfaef9b32588719c609f236134",
+  "historical_fingerprints_verified": 1963,
+  "upstream_git_blobs_verified": 9,
+  "source_schedule": {
+    "file": "results/qrom-compatibility/sources/qualtran/qualtran/bloqs/data_loading/select_swap_qrom.py",
+    "line": 369,
+    "dirty_branch_schedule": [
+      "L",
+      "S",
+      "C",
+      "S^-1",
+      "L^-1",
+      "S",
+      "C",
+      "S^-1"
+    ],
+    "scope": "AST block order, not decomposition execution"
+  },
+  "lookup": {
+    "fixtures": [
+      {
+        "entries": 4,
+        "output_bits": 1,
+        "rows": 2,
+        "basis_columns": 512
+      },
+      {
+        "entries": 4,
+        "output_bits": 2,
+        "rows": 2,
+        "basis_columns": 65536
+      },
+      {
+        "entries": 8,
+        "output_bits": 1,
+        "rows": 4,
+        "basis_columns": 65536
+      }
+    ],
+    "basis_columns": 131584,
+    "variants_per_column": 2,
+    "exact_phase": "All modeled gates are phase-free permutations"
+  },
+  "packet_sharing": {
+    "cases": [
+      {
+        "packets": 1,
+        "basis_columns": 64,
+        "independent_load_passes": 2,
+        "shared_load_passes": 2,
+        "shared_selected_reads": 2,
+        "extra_output_cnots": 0
+      },
+      {
+        "packets": 2,
+        "basis_columns": 512,
+        "independent_load_passes": 4,
+        "shared_load_passes": 3,
+        "shared_selected_reads": 3,
+        "extra_output_cnots": 2
+      },
+      {
+        "packets": 3,
+        "basis_columns": 4096,
+        "independent_load_passes": 6,
+        "shared_load_passes": 4,
+        "shared_selected_reads": 4,
+        "extra_output_cnots": 4
+      },
+      {
+        "packets": 4,
+        "basis_columns": 32768,
+        "independent_load_passes": 8,
+        "shared_load_passes": 5,
+        "shared_selected_reads": 5,
+        "extra_output_cnots": 6
+      }
+    ],
+    "basis_columns": 37440,
+    "attribution": "Existing sequential-QROM sharing; not a sister-project result"
+  },
+  "dense_primitive": {
+    "signed_basis_columns": 32,
+    "wrong_inverse_negative_control_failures": 8,
+    "scope": "Single-qubit read commutator only; no full dense-encoding QROM validation"
+  },
+  "linear_boundary": {
+    "selector_anf": "d0 XOR (r AND d0) XOR (r AND d1)",
+    "degree": 2,
+    "invertible_two_bit_bases_checked": 6,
+    "conclusion": "A fixed CNOT/X network cannot implement the coherent selected read"
+  },
+  "theory_sources": {
+    "/Users/colkitt/sith/toys/math/integerMult/research/joint-dual/PROOF.md": "ef87781965cd6d509150c6423525671a7c7d1734f334a6a3c39cc7bffdbae33a",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/experiments/binary_frame_compiler.py": "bc6910c8bbe8224285164323d3c06e9035ad3eaa55416abc2867ae0066454a0c",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/experiments/joint_dual_reclaim_compiler.py": "9984aaccf880e4840402322d76678bfddb33ce7e494af78430a43429f51b85fd"
+  },
+  "limitations": [
+    "No library execution or timing",
+    "No new theory-derived circuit",
+    "No full dense-QROM implementation audit",
+    "No impossibility claim for future quantum adaptations"
+  ]
+}

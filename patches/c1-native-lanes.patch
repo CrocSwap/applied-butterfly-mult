@@ -1,0 +1,41 @@
+--- a/src/fft_small/sd_fft.c
++++ b/src/fft_small/sd_fft.c
+@@ -544,6 +544,30 @@
+ 
+ static void sd_fft_basecase_4_0(const sd_fft_ctx_t Q, double* X, ulong j_r, ulong j_bits)
+ {
++#if (defined(__ARM_NEON) || defined(_M_ARM64)) && !defined(FLINT_MACHINE_VECTORS_GENERIC)
++    /* Each four-lane vector is two independent NEON groups. Complete one
++       group before the other, then transpose and repeat. The external
++       4x4-transposed order and every per-lane arithmetic operation are unchanged. */
++    vec2d n = vec2d_set_d(Q->p), ninv = vec2d_set_d(Q->pinv);
++    vec2d sw2 = vec2d_set_d(Q->w2tab[j_bits][j_r]);
++    vec2d sw = vec2d_set_d(Q->w2tab[1+j_bits][2*j_r]);
++    vec2d siw = vec2d_set_d(Q->w2tab[1+j_bits][2*j_r+1]);
++    vec4d x0 = vec4d_load(X), x1 = vec4d_load(X+4);
++    vec4d x2 = vec4d_load(X+8), x3 = vec4d_load(X+12);
++    LENGTH4_ANY_J(vec2d, x0.e1,x1.e1,x2.e1,x3.e1, n,ninv, sw2,sw,siw);
++    LENGTH4_ANY_J(vec2d, x0.e2,x1.e2,x2.e2,x3.e2, n,ninv, sw2,sw,siw);
++    VEC4D_TRANSPOSE(x0,x1,x2,x3, x0,x1,x2,x3);
++    vec4d u = vec4d_load_aligned(Q->w2tab[3+j_bits]+8*j_r);
++    vec4d v = vec4d_load_aligned(Q->w2tab[3+j_bits]+8*j_r+4);
++    vec4d w2 = vec4d_load_aligned(Q->w2tab[2+j_bits]+4*j_r);
++    vec4d w = vec4d_unpack_lo_permute_0_2_1_3(u,v);
++    vec4d iw = vec4d_unpack_hi_permute_0_2_1_3(u,v);
++    LENGTH4_ANY_J(vec2d, x0.e1,x1.e1,x2.e1,x3.e1, n,ninv, w2.e1,w.e1,iw.e1);
++    LENGTH4_ANY_J(vec2d, x0.e2,x1.e2,x2.e2,x3.e2, n,ninv, w2.e2,w.e2,iw.e2);
++    vec4d_store(X,x0); vec4d_store(X+4,x1);
++    vec4d_store(X+8,x2); vec4d_store(X+12,x3);
++#else
++
+     vec4d n    = vec4d_set_d(Q->p);
+     vec4d ninv = vec4d_set_d(Q->pinv);
+     vec4d w, w2, iw, u, v;
+@@ -571,6 +595,7 @@
+     vec4d_store(X+4*1, x1);
+     vec4d_store(X+4*2, x2);
+     vec4d_store(X+4*3, x3);
++#endif
+ }
+ 
+ /*

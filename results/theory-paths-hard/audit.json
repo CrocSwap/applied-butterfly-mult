@@ -1,0 +1,183 @@
+{
+  "status": "PASS",
+  "decision": "No family qualifies for held-out confirmation; no practical paired-circuit win",
+  "comparisons": 259,
+  "timed_batches": 15540,
+  "graphs": 84,
+  "engine_correctness_checks": 573,
+  "networkx_graphs": 51,
+  "networkx_enumerated_six_edge_paths": 56829,
+  "fingerprints_checked": 250,
+  "plans": [
+    {
+      "path": "results/theory-paths-hard/run/paired-103.bin",
+      "n": 103,
+      "nodes": 50901,
+      "outputs": 5253
+    },
+    {
+      "path": "results/theory-paths-hard/run/paired-16.bin",
+      "n": 16,
+      "nodes": 963,
+      "outputs": 120
+    },
+    {
+      "path": "results/theory-paths-hard/run/paired-24.bin",
+      "n": 24,
+      "nodes": 2389,
+      "outputs": 276
+    },
+    {
+      "path": "results/theory-paths-hard/run/paired-4.bin",
+      "n": 4,
+      "nodes": 7,
+      "outputs": 6
+    },
+    {
+      "path": "results/theory-paths-hard/run/paired-5.bin",
+      "n": 5,
+      "nodes": 31,
+      "outputs": 10
+    },
+    {
+      "path": "results/theory-paths-hard/run/paired-6.bin",
+      "n": 6,
+      "nodes": 67,
+      "outputs": 15
+    },
+    {
+      "path": "results/theory-paths-hard/run/separate_weights-103.bin",
+      "n": 103,
+      "nodes": 55976,
+      "outputs": 5253
+    },
+    {
+      "path": "results/theory-paths-hard/run/separate_weights-16.bin",
+      "n": 16,
+      "nodes": 1033,
+      "outputs": 120
+    },
+    {
+      "path": "results/theory-paths-hard/run/separate_weights-24.bin",
+      "n": 24,
+      "nodes": 2601,
+      "outputs": 276
+    },
+    {
+      "path": "results/theory-paths-hard/run/separate_weights-4.bin",
+      "n": 4,
+      "nodes": 7,
+      "outputs": 6
+    },
+    {
+      "path": "results/theory-paths-hard/run/separate_weights-5.bin",
+      "n": 5,
+      "nodes": 31,
+      "outputs": 10
+    },
+    {
+      "path": "results/theory-paths-hard/run/separate_weights-6.bin",
+      "n": 6,
+      "nodes": 67,
+      "outputs": 15
+    },
+    {
+      "path": "results/theory-paths-hard/run/sergeev-103.bin",
+      "n": 103,
+      "nodes": 56507,
+      "outputs": 5253
+    },
+    {
+      "path": "results/theory-paths-hard/run/sergeev-16.bin",
+      "n": 16,
+      "nodes": 1047,
+      "outputs": 120
+    },
+    {
+      "path": "results/theory-paths-hard/run/sergeev-24.bin",
+      "n": 24,
+      "nodes": 2638,
+      "outputs": 276
+    },
+    {
+      "path": "results/theory-paths-hard/run/sergeev-4.bin",
+      "n": 4,
+      "nodes": 7,
+      "outputs": 6
+    },
+    {
+      "path": "results/theory-paths-hard/run/sergeev-5.bin",
+      "n": 5,
+      "nodes": 31,
+      "outputs": 10
+    },
+    {
+      "path": "results/theory-paths-hard/run/sergeev-6.bin",
+      "n": 6,
+      "nodes": 67,
+      "outputs": 15
+    }
+  ],
+  "nonbacktracking_wins_cpu_and_wall": 48,
+  "confirmation_families": [],
+  "table": [
+    {
+      "family": "independent",
+      "cases": 6,
+      "paired_over_nonbacktracking_cpu_min": 11.581289481818375,
+      "paired_over_nonbacktracking_cpu_max": 21.45166107442464
+    },
+    {
+      "family": "reciprocal",
+      "cases": 6,
+      "paired_over_nonbacktracking_cpu_min": 11.85991531198146,
+      "paired_over_nonbacktracking_cpu_max": 21.593820056248475
+    },
+    {
+      "family": "two_cycle",
+      "cases": 6,
+      "paired_over_nonbacktracking_cpu_min": 9.221674160034123,
+      "paired_over_nonbacktracking_cpu_max": 16.530626265769495
+    },
+    {
+      "family": "three_cycle",
+      "cases": 6,
+      "paired_over_nonbacktracking_cpu_min": 5.490971749343295,
+      "paired_over_nonbacktracking_cpu_max": 8.192994398155589
+    },
+    {
+      "family": "four_cluster",
+      "cases": 6,
+      "paired_over_nonbacktracking_cpu_min": 8.011564759446607,
+      "paired_over_nonbacktracking_cpu_max": 15.643175147053269
+    },
+    {
+      "family": "quantized",
+      "cases": 6,
+      "paired_over_nonbacktracking_cpu_min": 1.9194039473468325,
+      "paired_over_nonbacktracking_cpu_max": 9.287454433649584
+    },
+    {
+      "family": "public_wnt",
+      "cases": 12,
+      "paired_over_nonbacktracking_cpu_min": 639.1779137592043,
+      "paired_over_nonbacktracking_cpu_max": 1411.782836066508
+    }
+  ],
+  "aa_comparisons": 7,
+  "aa_positive_small_signals": [
+    {
+      "case": "two_cycle-19-4300051",
+      "cpu_reduction_pct": 0.5549890588413819
+    }
+  ],
+  "baseline_flint_unchanged": true,
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/audit_theory_paths_hard.py": "10e31d9db69481bd4afb03f321276faaa5486e0410abca3248dfb100ba91664a",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/plan.json": "585c3a22dac6c42119a72475d14cb9bbd89e2a7dbafaa5c6d48d5a4ed278cb4f",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/validation.json": "c3197416d34efaa5ed39fd932c1c0a89bf52a941fb7bfad50f9ed5f8682f4d89",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/run/summary.json": "95830b66bdfbff83bafa8bef98b88ef218cf0052c1b810d3b490feea637fdd92",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/fallback-checks/summary.json": "cb8f85cddf64ccaa21e055c805b4e9e334ede3daff0ea4db202bfe9f0bd69f02",
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/audit_theory_transfer.py": "de5ca3598289bb02b2632715281db3632fe91aad68624d719615e1a21ae00dcc"
+  }
+}

@@ -1,0 +1,1590 @@
+{
+  "cases": [
+    {
+      "id": "independent-19-4300051",
+      "family": "independent",
+      "vertices": 19,
+      "seed": 4300051
+    },
+    {
+      "id": "independent-19-5900087",
+      "family": "independent",
+      "vertices": 19,
+      "seed": 5900087
+    },
+    {
+      "id": "independent-19-6700099",
+      "family": "independent",
+      "vertices": 19,
+      "seed": 6700099
+    },
+    {
+      "id": "independent-27-4300051",
+      "family": "independent",
+      "vertices": 27,
+      "seed": 4300051
+    },
+    {
+      "id": "independent-27-5900087",
+      "family": "independent",
+      "vertices": 27,
+      "seed": 5900087
+    },
+    {
+      "id": "independent-27-6700099",
+      "family": "independent",
+      "vertices": 27,
+      "seed": 6700099
+    },
+    {
+      "id": "reciprocal-19-4300051",
+      "family": "reciprocal",
+      "vertices": 19,
+      "seed": 4300051
+    },
+    {
+      "id": "reciprocal-19-5900087",
+      "family": "reciprocal",
+      "vertices": 19,
+      "seed": 5900087
+    },
+    {
+      "id": "reciprocal-19-6700099",
+      "family": "reciprocal",
+      "vertices": 19,
+      "seed": 6700099
+    },
+    {
+      "id": "reciprocal-27-4300051",
+      "family": "reciprocal",
+      "vertices": 27,
+      "seed": 4300051
+    },
+    {
+      "id": "reciprocal-27-5900087",
+      "family": "reciprocal",
+      "vertices": 27,
+      "seed": 5900087
+    },
+    {
+      "id": "reciprocal-27-6700099",
+      "family": "reciprocal",
+      "vertices": 27,
+      "seed": 6700099
+    },
+    {
+      "id": "two_cycle-19-4300051",
+      "family": "two_cycle",
+      "vertices": 19,
+      "seed": 4300051
+    },
+    {
+      "id": "two_cycle-19-5900087",
+      "family": "two_cycle",
+      "vertices": 19,
+      "seed": 5900087
+    },
+    {
+      "id": "two_cycle-19-6700099",
+      "family": "two_cycle",
+      "vertices": 19,
+      "seed": 6700099
+    },
+    {
+      "id": "two_cycle-27-4300051",
+      "family": "two_cycle",
+      "vertices": 27,
+      "seed": 4300051
+    },
+    {
+      "id": "two_cycle-27-5900087",
+      "family": "two_cycle",
+      "vertices": 27,
+      "seed": 5900087
+    },
+    {
+      "id": "two_cycle-27-6700099",
+      "family": "two_cycle",
+      "vertices": 27,
+      "seed": 6700099
+    },
+    {
+      "id": "three_cycle-19-4300051",
+      "family": "three_cycle",
+      "vertices": 19,
+      "seed": 4300051
+    },
+    {
+      "id": "three_cycle-19-5900087",
+      "family": "three_cycle",
+      "vertices": 19,
+      "seed": 5900087
+    },
+    {
+      "id": "three_cycle-19-6700099",
+      "family": "three_cycle",
+      "vertices": 19,
+      "seed": 6700099
+    },
+    {
+      "id": "three_cycle-27-4300051",
+      "family": "three_cycle",
+      "vertices": 27,
+      "seed": 4300051
+    },
+    {
+      "id": "three_cycle-27-5900087",
+      "family": "three_cycle",
+      "vertices": 27,
+      "seed": 5900087
+    },
+    {
+      "id": "three_cycle-27-6700099",
+      "family": "three_cycle",
+      "vertices": 27,
+      "seed": 6700099
+    },
+    {
+      "id": "four_cluster-19-4300051",
+      "family": "four_cluster",
+      "vertices": 19,
+      "seed": 4300051
+    },
+    {
+      "id": "four_cluster-19-5900087",
+      "family": "four_cluster",
+      "vertices": 19,
+      "seed": 5900087
+    },
+    {
+      "id": "four_cluster-19-6700099",
+      "family": "four_cluster",
+      "vertices": 19,
+      "seed": 6700099
+    },
+    {
+      "id": "four_cluster-27-4300051",
+      "family": "four_cluster",
+      "vertices": 27,
+      "seed": 4300051
+    },
+    {
+      "id": "four_cluster-27-5900087",
+      "family": "four_cluster",
+      "vertices": 27,
+      "seed": 5900087
+    },
+    {
+      "id": "four_cluster-27-6700099",
+      "family": "four_cluster",
+      "vertices": 27,
+      "seed": 6700099
+    },
+    {
+      "id": "quantized-19-4300051",
+      "family": "quantized",
+      "vertices": 19,
+      "seed": 4300051
+    },
+    {
+      "id": "quantized-19-5900087",
+      "family": "quantized",
+      "vertices": 19,
+      "seed": 5900087
+    },
+    {
+      "id": "quantized-19-6700099",
+      "family": "quantized",
+      "vertices": 19,
+      "seed": 6700099
+    },
+    {
+      "id": "quantized-27-4300051",
+      "family": "quantized",
+      "vertices": 27,
+      "seed": 4300051
+    },
+    {
+      "id": "quantized-27-5900087",
+      "family": "quantized",
+      "vertices": 27,
+      "seed": 5900087
+    },
+    {
+      "id": "quantized-27-6700099",
+      "family": "quantized",
+      "vertices": 27,
+      "seed": 6700099
+    },
+    {
+      "id": "wnt-00",
+      "family": "public_wnt",
+      "vertices": 106,
+      "source": "O00570",
+      "target": "O00144"
+    },
+    {
+      "id": "wnt-01",
+      "family": "public_wnt",
+      "vertices": 106,
+      "source": "P15884",
+      "target": "O75581"
+    },
+    {
+      "id": "wnt-02",
+      "family": "public_wnt",
+      "vertices": 106,
+      "source": "P15923",
+      "target": "Q01974"
+    },
+    {
+      "id": "wnt-03",
+      "family": "public_wnt",
+      "vertices": 106,
+      "source": "P25054",
+      "target": "Q14332"
+    },
+    {
+      "id": "wnt-04",
+      "family": "public_wnt",
+      "vertices": 106,
+      "source": "P35222",
+      "target": "Q9ULW2"
+    },
+    {
+      "id": "wnt-05",
+      "family": "public_wnt",
+      "vertices": 106,
+      "source": "P98082",
+      "target": "O75084"
+    },
+    {
+      "id": "wnt-06",
+      "family": "public_wnt",
+      "vertices": 106,
+      "source": "Q02962",
+      "target": "P34925"
+    },
+    {
+      "id": "wnt-07",
+      "family": "public_wnt",
+      "vertices": 106,
+      "source": "Q13363",
+      "target": "Q07954"
+    },
+    {
+      "id": "wnt-08",
+      "family": "public_wnt",
+      "vertices": 106,
+      "source": "Q13469",
+      "target": "Q9H461"
+    },
+    {
+      "id": "wnt-09",
+      "family": "public_wnt",
+      "vertices": 106,
+      "source": "Q15797",
+      "target": "Q9UP38"
+    },
+    {
+      "id": "wnt-10",
+      "family": "public_wnt",
+      "vertices": 106,
+      "source": "Q9P2D1",
+      "target": "O75197"
+    },
+    {
+      "id": "wnt-11",
+      "family": "public_wnt",
+      "vertices": 106,
+      "source": "Q9UJU2",
+      "target": "Q01973"
+    }
+  ],
+  "validations": [
+    {
+      "id": "validate-independent-7-4300051",
+      "family": "independent",
+      "vertices": 7,
+      "seed": 4300051
+    },
+    {
+      "id": "validate-independent-7-5900087",
+      "family": "independent",
+      "vertices": 7,
+      "seed": 5900087
+    },
+    {
+      "id": "validate-independent-8-4300051",
+      "family": "independent",
+      "vertices": 8,
+      "seed": 4300051
+    },
+    {
+      "id": "validate-independent-8-5900087",
+      "family": "independent",
+      "vertices": 8,
+      "seed": 5900087
+    },
+    {
+      "id": "validate-independent-9-4300051",
+      "family": "independent",
+      "vertices": 9,
+      "seed": 4300051
+    },
+    {
+      "id": "validate-independent-9-5900087",
+      "family": "independent",
+      "vertices": 9,
+      "seed": 5900087
+    },
+    {
+      "id": "validate-reciprocal-7-4300051",
+      "family": "reciprocal",
+      "vertices": 7,
+      "seed": 4300051
+    },
+    {
+      "id": "validate-reciprocal-7-5900087",
+      "family": "reciprocal",
+      "vertices": 7,
+      "seed": 5900087
+    },
+    {
+      "id": "validate-reciprocal-8-4300051",
+      "family": "reciprocal",
+      "vertices": 8,
+      "seed": 4300051
+    },
+    {
+      "id": "validate-reciprocal-8-5900087",
+      "family": "reciprocal",
+      "vertices": 8,
+      "seed": 5900087
+    },
+    {
+      "id": "validate-reciprocal-9-4300051",
+      "family": "reciprocal",
+      "vertices": 9,
+      "seed": 4300051
+    },
+    {
+      "id": "validate-reciprocal-9-5900087",
+      "family": "reciprocal",
+      "vertices": 9,
+      "seed": 5900087
+    },
+    {
+      "id": "validate-two_cycle-7-4300051",
+      "family": "two_cycle",
+      "vertices": 7,
+      "seed": 4300051
+    },
+    {
+      "id": "validate-two_cycle-7-5900087",
+      "family": "two_cycle",
+      "vertices": 7,
+      "seed": 5900087
+    },
+    {
+      "id": "validate-two_cycle-8-4300051",
+      "family": "two_cycle",
+      "vertices": 8,
+      "seed": 4300051
+    },
+    {
+      "id": "validate-two_cycle-8-5900087",
+      "family": "two_cycle",
+      "vertices": 8,
+      "seed": 5900087
+    },
+    {
+      "id": "validate-two_cycle-9-4300051",
+      "family": "two_cycle",
+      "vertices": 9,
+      "seed": 4300051
+    },
+    {
+      "id": "validate-two_cycle-9-5900087",
+      "family": "two_cycle",
+      "vertices": 9,
+      "seed": 5900087
+    },
+    {
+      "id": "validate-three_cycle-7-4300051",
+      "family": "three_cycle",
+      "vertices": 7,
+      "seed": 4300051
+    },
+    {
+      "id": "validate-three_cycle-7-5900087",
+      "family": "three_cycle",
+      "vertices": 7,
+      "seed": 5900087
+    },
+    {
+      "id": "validate-three_cycle-8-4300051",
+      "family": "three_cycle",
+      "vertices": 8,
+      "seed": 4300051
+    },
+    {
+      "id": "validate-three_cycle-8-5900087",
+      "family": "three_cycle",
+      "vertices": 8,
+      "seed": 5900087
+    },
+    {
+      "id": "validate-three_cycle-9-4300051",
+      "family": "three_cycle",
+      "vertices": 9,
+      "seed": 4300051
+    },
+    {
+      "id": "validate-three_cycle-9-5900087",
+      "family": "three_cycle",
+      "vertices": 9,
+      "seed": 5900087
+    },
+    {
+      "id": "validate-four_cluster-7-4300051",
+      "family": "four_cluster",
+      "vertices": 7,
+      "seed": 4300051
+    },
+    {
+      "id": "validate-four_cluster-7-5900087",
+      "family": "four_cluster",
+      "vertices": 7,
+      "seed": 5900087
+    },
+    {
+      "id": "validate-four_cluster-8-4300051",
+      "family": "four_cluster",
+      "vertices": 8,
+      "seed": 4300051
+    },
+    {
+      "id": "validate-four_cluster-8-5900087",
+      "family": "four_cluster",
+      "vertices": 8,
+      "seed": 5900087
+    },
+    {
+      "id": "validate-four_cluster-9-4300051",
+      "family": "four_cluster",
+      "vertices": 9,
+      "seed": 4300051
+    },
+    {
+      "id": "validate-four_cluster-9-5900087",
+      "family": "four_cluster",
+      "vertices": 9,
+      "seed": 5900087
+    },
+    {
+      "id": "validate-quantized-7-4300051",
+      "family": "quantized",
+      "vertices": 7,
+      "seed": 4300051
+    },
+    {
+      "id": "validate-quantized-7-5900087",
+      "family": "quantized",
+      "vertices": 7,
+      "seed": 5900087
+    },
+    {
+      "id": "validate-quantized-8-4300051",
+      "family": "quantized",
+      "vertices": 8,
+      "seed": 4300051
+    },
+    {
+      "id": "validate-quantized-8-5900087",
+      "family": "quantized",
+      "vertices": 8,
+      "seed": 5900087
+    },
+    {
+      "id": "validate-quantized-9-4300051",
+      "family": "quantized",
+      "vertices": 9,
+      "seed": 4300051
+    },
+    {
+      "id": "validate-quantized-9-5900087",
+      "family": "quantized",
+      "vertices": 9,
+      "seed": 5900087
+    }
+  ],
+  "schedule": [
+    {
+      "case": "reciprocal-27-6700099",
+      "engine": 3
+    },
+    {
+      "case": "quantized-27-4300051",
+      "engine": 2
+    },
+    {
+      "case": "reciprocal-19-5900087",
+      "engine": 3
+    },
+    {
+      "case": "independent-27-4300051",
+      "engine": 4
+    },
+    {
+      "case": "three_cycle-27-5900087",
+      "engine": 2
+    },
+    {
+      "case": "two_cycle-19-6700099",
+      "engine": 2
+    },
+    {
+      "case": "two_cycle-19-6700099",
+      "engine": 1
+    },
+    {
+      "case": "wnt-01",
+      "engine": 5
+    },
+    {
+      "case": "four_cluster-19-6700099",
+      "engine": 3
+    },
+    {
+      "case": "reciprocal-27-4300051",
+      "engine": 1
+    },
+    {
+      "case": "quantized-19-4300051",
+      "engine": 1
+    },
+    {
+      "case": "reciprocal-19-4300051",
+      "engine": 0
+    },
+    {
+      "case": "reciprocal-27-5900087",
+      "engine": 1
+    },
+    {
+      "case": "quantized-27-5900087",
+      "engine": 4
+    },
+    {
+      "case": "independent-27-4300051",
+      "engine": 2
+    },
+    {
+      "case": "reciprocal-27-5900087",
+      "engine": 4
+    },
+    {
+      "case": "quantized-19-6700099",
+      "engine": 2
+    },
+    {
+      "case": "three_cycle-19-6700099",
+      "engine": 4
+    },
+    {
+      "case": "two_cycle-27-6700099",
+      "engine": 2
+    },
+    {
+      "case": "four_cluster-27-6700099",
+      "engine": 4
+    },
+    {
+      "case": "independent-19-5900087",
+      "engine": 1
+    },
+    {
+      "case": "three_cycle-19-6700099",
+      "engine": 1
+    },
+    {
+      "case": "independent-19-4300051",
+      "engine": 1
+    },
+    {
+      "case": "quantized-19-5900087",
+      "engine": 1
+    },
+    {
+      "case": "quantized-27-4300051",
+      "engine": 5
+    },
+    {
+      "case": "wnt-10",
+      "engine": 4
+    },
+    {
+      "case": "wnt-08",
+      "engine": 2
+    },
+    {
+      "case": "quantized-19-6700099",
+      "engine": 4
+    },
+    {
+      "case": "independent-27-4300051",
+      "engine": 3
+    },
+    {
+      "case": "independent-19-4300051",
+      "engine": 4
+    },
+    {
+      "case": "wnt-07",
+      "engine": 1
+    },
+    {
+      "case": "two_cycle-19-4300051",
+      "engine": 2
+    },
+    {
+      "case": "four_cluster-19-5900087",
+      "engine": 1
+    },
+    {
+      "case": "three_cycle-27-5900087",
+      "engine": 4
+    },
+    {
+      "case": "reciprocal-19-4300051",
+      "engine": 1
+    },
+    {
+      "case": "wnt-05",
+      "engine": 1
+    },
+    {
+      "case": "three_cycle-19-4300051",
+      "engine": 4
+    },
+    {
+      "case": "reciprocal-27-4300051",
+      "engine": 5
+    },
+    {
+      "case": "independent-19-4300051",
+      "engine": 2
+    },
+    {
+      "case": "four_cluster-19-4300051",
+      "engine": 3
+    },
+    {
+      "case": "four_cluster-27-4300051",
+      "engine": 4
+    },
+    {
+      "case": "quantized-27-6700099",
+      "engine": 1
+    },
+    {
+      "case": "wnt-10",
+      "engine": 6
+    },
+    {
+      "case": "three_cycle-27-6700099",
+      "engine": 1
+    },
+    {
+      "case": "wnt-04",
+      "engine": 2
+    },
+    {
+      "case": "wnt-06",
+      "engine": 4
+    },
+    {
+      "case": "wnt-04",
+      "engine": 6
+    },
+    {
+      "case": "reciprocal-27-5900087",
+      "engine": 2
+    },
+    {
+      "case": "reciprocal-27-4300051",
+      "engine": 4
+    },
+    {
+      "case": "three_cycle-19-4300051",
+      "engine": 3
+    },
+    {
+      "case": "reciprocal-19-5900087",
+      "engine": 1
+    },
+    {
+      "case": "four_cluster-27-5900087",
+      "engine": 3
+    },
+    {
+      "case": "independent-19-5900087",
+      "engine": 5
+    },
+    {
+      "case": "quantized-19-5900087",
+      "engine": 3
+    },
+    {
+      "case": "independent-19-6700099",
+      "engine": 1
+    },
+    {
+      "case": "wnt-05",
+      "engine": 2
+    },
+    {
+      "case": "reciprocal-27-6700099",
+      "engine": 2
+    },
+    {
+      "case": "three_cycle-19-4300051",
+      "engine": 1
+    },
+    {
+      "case": "wnt-05",
+      "engine": 6
+    },
+    {
+      "case": "quantized-19-4300051",
+      "engine": 2
+    },
+    {
+      "case": "wnt-02",
+      "engine": 5
+    },
+    {
+      "case": "wnt-11",
+      "engine": 4
+    },
+    {
+      "case": "wnt-11",
+      "engine": 5
+    },
+    {
+      "case": "quantized-19-5900087",
+      "engine": 4
+    },
+    {
+      "case": "reciprocal-19-5900087",
+      "engine": 4
+    },
+    {
+      "case": "reciprocal-27-4300051",
+      "engine": 3
+    },
+    {
+      "case": "four_cluster-27-5900087",
+      "engine": 2
+    },
+    {
+      "case": "two_cycle-27-6700099",
+      "engine": 3
+    },
+    {
+      "case": "reciprocal-19-6700099",
+      "engine": 3
+    },
+    {
+      "case": "wnt-07",
+      "engine": 3
+    },
+    {
+      "case": "reciprocal-19-4300051",
+      "engine": 4
+    },
+    {
+      "case": "four_cluster-27-5900087",
+      "engine": 1
+    },
+    {
+      "case": "independent-19-4300051",
+      "engine": 0
+    },
+    {
+      "case": "two_cycle-19-5900087",
+      "engine": 4
+    },
+    {
+      "case": "two_cycle-19-4300051",
+      "engine": 3
+    },
+    {
+      "case": "wnt-05",
+      "engine": 4
+    },
+    {
+      "case": "two_cycle-19-4300051",
+      "engine": 0
+    },
+    {
+      "case": "four_cluster-19-4300051",
+      "engine": 1
+    },
+    {
+      "case": "wnt-01",
+      "engine": 3
+    },
+    {
+      "case": "wnt-10",
+      "engine": 2
+    },
+    {
+      "case": "independent-27-5900087",
+      "engine": 3
+    },
+    {
+      "case": "quantized-27-6700099",
+      "engine": 5
+    },
+    {
+      "case": "quantized-19-4300051",
+      "engine": 0
+    },
+    {
+      "case": "two_cycle-19-4300051",
+      "engine": 4
+    },
+    {
+      "case": "two_cycle-19-5900087",
+      "engine": 3
+    },
+    {
+      "case": "four_cluster-19-4300051",
+      "engine": 2
+    },
+    {
+      "case": "quantized-27-4300051",
+      "engine": 1
+    },
+    {
+      "case": "three_cycle-19-4300051",
+      "engine": 2
+    },
+    {
+      "case": "wnt-00",
+      "engine": 1
+    },
+    {
+      "case": "three_cycle-27-4300051",
+      "engine": 5
+    },
+    {
+      "case": "quantized-27-5900087",
+      "engine": 1
+    },
+    {
+      "case": "wnt-01",
+      "engine": 4
+    },
+    {
+      "case": "two_cycle-19-6700099",
+      "engine": 5
+    },
+    {
+      "case": "four_cluster-19-6700099",
+      "engine": 5
+    },
+    {
+      "case": "wnt-08",
+      "engine": 6
+    },
+    {
+      "case": "reciprocal-27-6700099",
+      "engine": 4
+    },
+    {
+      "case": "quantized-19-5900087",
+      "engine": 5
+    },
+    {
+      "case": "two_cycle-27-5900087",
+      "engine": 1
+    },
+    {
+      "case": "four_cluster-19-6700099",
+      "engine": 4
+    },
+    {
+      "case": "wnt-00",
+      "engine": 2
+    },
+    {
+      "case": "wnt-07",
+      "engine": 5
+    },
+    {
+      "case": "wnt-07",
+      "engine": 6
+    },
+    {
+      "case": "independent-27-5900087",
+      "engine": 5
+    },
+    {
+      "case": "wnt-08",
+      "engine": 5
+    },
+    {
+      "case": "wnt-10",
+      "engine": 1
+    },
+    {
+      "case": "reciprocal-27-5900087",
+      "engine": 3
+    },
+    {
+      "case": "wnt-09",
+      "engine": 4
+    },
+    {
+      "case": "wnt-07",
+      "engine": 2
+    },
+    {
+      "case": "reciprocal-19-6700099",
+      "engine": 1
+    },
+    {
+      "case": "wnt-06",
+      "engine": 5
+    },
+    {
+      "case": "two_cycle-27-5900087",
+      "engine": 2
+    },
+    {
+      "case": "four_cluster-27-4300051",
+      "engine": 2
+    },
+    {
+      "case": "independent-19-5900087",
+      "engine": 4
+    },
+    {
+      "case": "two_cycle-27-5900087",
+      "engine": 4
+    },
+    {
+      "case": "two_cycle-19-5900087",
+      "engine": 1
+    },
+    {
+      "case": "four_cluster-19-5900087",
+      "engine": 4
+    },
+    {
+      "case": "wnt-03",
+      "engine": 4
+    },
+    {
+      "case": "two_cycle-19-4300051",
+      "engine": 1
+    },
+    {
+      "case": "three_cycle-19-4300051",
+      "engine": 0
+    },
+    {
+      "case": "four_cluster-19-6700099",
+      "engine": 2
+    },
+    {
+      "case": "wnt-11",
+      "engine": 3
+    },
+    {
+      "case": "wnt-09",
+      "engine": 3
+    },
+    {
+      "case": "wnt-08",
+      "engine": 3
+    },
+    {
+      "case": "wnt-03",
+      "engine": 2
+    },
+    {
+      "case": "three_cycle-19-5900087",
+      "engine": 1
+    },
+    {
+      "case": "wnt-03",
+      "engine": 5
+    },
+    {
+      "case": "wnt-11",
+      "engine": 2
+    },
+    {
+      "case": "independent-27-6700099",
+      "engine": 3
+    },
+    {
+      "case": "three_cycle-19-5900087",
+      "engine": 3
+    },
+    {
+      "case": "three_cycle-27-4300051",
+      "engine": 2
+    },
+    {
+      "case": "wnt-04",
+      "engine": 4
+    },
+    {
+      "case": "wnt-00",
+      "engine": 4
+    },
+    {
+      "case": "wnt-00",
+      "engine": 5
+    },
+    {
+      "case": "two_cycle-27-5900087",
+      "engine": 5
+    },
+    {
+      "case": "wnt-03",
+      "engine": 3
+    },
+    {
+      "case": "two_cycle-27-4300051",
+      "engine": 2
+    },
+    {
+      "case": "wnt-06",
+      "engine": 1
+    },
+    {
+      "case": "four_cluster-19-4300051",
+      "engine": 4
+    },
+    {
+      "case": "quantized-19-4300051",
+      "engine": 5
+    },
+    {
+      "case": "wnt-06",
+      "engine": 2
+    },
+    {
+      "case": "wnt-08",
+      "engine": 4
+    },
+    {
+      "case": "two_cycle-19-4300051",
+      "engine": 5
+    },
+    {
+      "case": "three_cycle-19-5900087",
+      "engine": 5
+    },
+    {
+      "case": "four_cluster-27-6700099",
+      "engine": 2
+    },
+    {
+      "case": "three_cycle-27-4300051",
+      "engine": 1
+    },
+    {
+      "case": "two_cycle-27-4300051",
+      "engine": 5
+    },
+    {
+      "case": "wnt-04",
+      "engine": 3
+    },
+    {
+      "case": "three_cycle-27-6700099",
+      "engine": 3
+    },
+    {
+      "case": "four_cluster-27-5900087",
+      "engine": 4
+    },
+    {
+      "case": "wnt-01",
+      "engine": 2
+    },
+    {
+      "case": "reciprocal-27-4300051",
+      "engine": 2
+    },
+    {
+      "case": "two_cycle-27-4300051",
+      "engine": 3
+    },
+    {
+      "case": "quantized-27-6700099",
+      "engine": 4
+    },
+    {
+      "case": "two_cycle-27-4300051",
+      "engine": 4
+    },
+    {
+      "case": "four_cluster-19-4300051",
+      "engine": 5
+    },
+    {
+      "case": "four_cluster-19-5900087",
+      "engine": 5
+    },
+    {
+      "case": "reciprocal-19-4300051",
+      "engine": 5
+    },
+    {
+      "case": "three_cycle-19-6700099",
+      "engine": 3
+    },
+    {
+      "case": "wnt-04",
+      "engine": 1
+    },
+    {
+      "case": "wnt-00",
+      "engine": 3
+    },
+    {
+      "case": "three_cycle-27-6700099",
+      "engine": 4
+    },
+    {
+      "case": "quantized-19-6700099",
+      "engine": 5
+    },
+    {
+      "case": "wnt-04",
+      "engine": 5
+    },
+    {
+      "case": "three_cycle-27-6700099",
+      "engine": 2
+    },
+    {
+      "case": "four_cluster-19-5900087",
+      "engine": 2
+    },
+    {
+      "case": "independent-19-6700099",
+      "engine": 3
+    },
+    {
+      "case": "reciprocal-19-5900087",
+      "engine": 5
+    },
+    {
+      "case": "quantized-27-6700099",
+      "engine": 2
+    },
+    {
+      "case": "wnt-03",
+      "engine": 6
+    },
+    {
+      "case": "wnt-02",
+      "engine": 1
+    },
+    {
+      "case": "independent-27-6700099",
+      "engine": 2
+    },
+    {
+      "case": "two_cycle-27-6700099",
+      "engine": 4
+    },
+    {
+      "case": "quantized-27-6700099",
+      "engine": 3
+    },
+    {
+      "case": "independent-19-4300051",
+      "engine": 3
+    },
+    {
+      "case": "independent-27-5900087",
+      "engine": 2
+    },
+    {
+      "case": "wnt-11",
+      "engine": 6
+    },
+    {
+      "case": "four_cluster-27-6700099",
+      "engine": 5
+    },
+    {
+      "case": "wnt-10",
+      "engine": 3
+    },
+    {
+      "case": "quantized-27-4300051",
+      "engine": 4
+    },
+    {
+      "case": "wnt-02",
+      "engine": 6
+    },
+    {
+      "case": "independent-27-5900087",
+      "engine": 4
+    },
+    {
+      "case": "wnt-02",
+      "engine": 3
+    },
+    {
+      "case": "wnt-00",
+      "engine": 6
+    },
+    {
+      "case": "independent-19-5900087",
+      "engine": 3
+    },
+    {
+      "case": "two_cycle-27-5900087",
+      "engine": 3
+    },
+    {
+      "case": "three_cycle-27-5900087",
+      "engine": 3
+    },
+    {
+      "case": "three_cycle-27-5900087",
+      "engine": 1
+    },
+    {
+      "case": "wnt-09",
+      "engine": 2
+    },
+    {
+      "case": "wnt-10",
+      "engine": 5
+    },
+    {
+      "case": "reciprocal-19-6700099",
+      "engine": 4
+    },
+    {
+      "case": "three_cycle-27-6700099",
+      "engine": 5
+    },
+    {
+      "case": "wnt-05",
+      "engine": 3
+    },
+    {
+      "case": "independent-27-6700099",
+      "engine": 1
+    },
+    {
+      "case": "three_cycle-19-5900087",
+      "engine": 2
+    },
+    {
+      "case": "wnt-06",
+      "engine": 3
+    },
+    {
+      "case": "quantized-19-5900087",
+      "engine": 2
+    },
+    {
+      "case": "four_cluster-27-6700099",
+      "engine": 1
+    },
+    {
+      "case": "three_cycle-19-6700099",
+      "engine": 2
+    },
+    {
+      "case": "independent-19-6700099",
+      "engine": 5
+    },
+    {
+      "case": "four_cluster-27-5900087",
+      "engine": 5
+    },
+    {
+      "case": "three_cycle-19-6700099",
+      "engine": 5
+    },
+    {
+      "case": "independent-19-6700099",
+      "engine": 4
+    },
+    {
+      "case": "wnt-09",
+      "engine": 6
+    },
+    {
+      "case": "quantized-27-5900087",
+      "engine": 2
+    },
+    {
+      "case": "independent-19-5900087",
+      "engine": 2
+    },
+    {
+      "case": "three_cycle-19-5900087",
+      "engine": 4
+    },
+    {
+      "case": "two_cycle-27-6700099",
+      "engine": 1
+    },
+    {
+      "case": "four_cluster-27-6700099",
+      "engine": 3
+    },
+    {
+      "case": "wnt-02",
+      "engine": 2
+    },
+    {
+      "case": "two_cycle-19-6700099",
+      "engine": 3
+    },
+    {
+      "case": "wnt-00",
+      "engine": 0
+    },
+    {
+      "case": "two_cycle-19-5900087",
+      "engine": 2
+    },
+    {
+      "case": "wnt-09",
+      "engine": 5
+    },
+    {
+      "case": "four_cluster-27-4300051",
+      "engine": 5
+    },
+    {
+      "case": "three_cycle-19-4300051",
+      "engine": 5
+    },
+    {
+      "case": "independent-27-5900087",
+      "engine": 1
+    },
+    {
+      "case": "wnt-02",
+      "engine": 4
+    },
+    {
+      "case": "four_cluster-19-5900087",
+      "engine": 3
+    },
+    {
+      "case": "reciprocal-19-4300051",
+      "engine": 3
+    },
+    {
+      "case": "independent-19-4300051",
+      "engine": 5
+    },
+    {
+      "case": "independent-27-4300051",
+      "engine": 5
+    },
+    {
+      "case": "independent-27-6700099",
+      "engine": 5
+    },
+    {
+      "case": "independent-27-6700099",
+      "engine": 4
+    },
+    {
+      "case": "two_cycle-27-4300051",
+      "engine": 1
+    },
+    {
+      "case": "quantized-27-5900087",
+      "engine": 3
+    },
+    {
+      "case": "wnt-09",
+      "engine": 1
+    },
+    {
+      "case": "wnt-01",
+      "engine": 1
+    },
+    {
+      "case": "reciprocal-19-5900087",
+      "engine": 2
+    },
+    {
+      "case": "independent-19-6700099",
+      "engine": 2
+    },
+    {
+      "case": "four_cluster-19-4300051",
+      "engine": 0
+    },
+    {
+      "case": "quantized-19-4300051",
+      "engine": 4
+    },
+    {
+      "case": "four_cluster-27-4300051",
+      "engine": 1
+    },
+    {
+      "case": "wnt-06",
+      "engine": 6
+    },
+    {
+      "case": "four_cluster-19-6700099",
+      "engine": 1
+    },
+    {
+      "case": "wnt-08",
+      "engine": 1
+    },
+    {
+      "case": "reciprocal-19-6700099",
+      "engine": 2
+    },
+    {
+      "case": "reciprocal-19-4300051",
+      "engine": 2
+    },
+    {
+      "case": "quantized-27-5900087",
+      "engine": 5
+    },
+    {
+      "case": "quantized-19-6700099",
+      "engine": 3
+    },
+    {
+      "case": "wnt-11",
+      "engine": 1
+    },
+    {
+      "case": "wnt-07",
+      "engine": 4
+    },
+    {
+      "case": "reciprocal-27-6700099",
+      "engine": 5
+    },
+    {
+      "case": "two_cycle-19-5900087",
+      "engine": 5
+    },
+    {
+      "case": "independent-27-4300051",
+      "engine": 1
+    },
+    {
+      "case": "reciprocal-27-6700099",
+      "engine": 1
+    },
+    {
+      "case": "two_cycle-27-6700099",
+      "engine": 5
+    },
+    {
+      "case": "quantized-19-6700099",
+      "engine": 1
+    },
+    {
+      "case": "wnt-03",
+      "engine": 1
+    },
+    {
+      "case": "quantized-19-4300051",
+      "engine": 3
+    },
+    {
+      "case": "four_cluster-27-4300051",
+      "engine": 3
+    },
+    {
+      "case": "two_cycle-19-6700099",
+      "engine": 4
+    },
+    {
+      "case": "three_cycle-27-5900087",
+      "engine": 5
+    },
+    {
+      "case": "wnt-01",
+      "engine": 6
+    },
+    {
+      "case": "reciprocal-19-6700099",
+      "engine": 5
+    },
+    {
+      "case": "wnt-05",
+      "engine": 5
+    },
+    {
+      "case": "three_cycle-27-4300051",
+      "engine": 3
+    },
+    {
+      "case": "three_cycle-27-4300051",
+      "engine": 4
+    },
+    {
+      "case": "reciprocal-27-5900087",
+      "engine": 5
+    },
+    {
+      "case": "quantized-27-4300051",
+      "engine": 3
+    }
+  ],
+  "families": [
+    "independent",
+    "reciprocal",
+    "two_cycle",
+    "three_cycle",
+    "four_cluster",
+    "quantized"
+  ],
+  "seeds": [
+    4300051,
+    5900087,
+    6700099
+  ],
+  "quartets": 15,
+  "batch_ms": 2,
+  "warmup_ms": 20,
+  "real_selection": "Whole published 106-node graph, sorted source x target product, every 17th pair starting at index zero",
+  "real_weights": "Unweighted input: every present arc has weight zero. Exact six-edge path census; no probability rounding.",
+  "application_limit": "This fixed-length count query is not the PathLinker top-k workflow or a demonstrated biological use of the counts.",
+  "synthetic_scope": "Mechanistic stress tests, not empirical models of biological networks. Cycle and cluster arcs receive +10000.",
+  "count_bound": "N<=106 gives at most 104*103*102*101*100 six-edge paths per query; uint64 is sufficient.",
+  "costs": "Every solve includes half-path preparation or bound/adjacency construction and failed search plus fallback. Static circuit generation/loading excluded from warm solve, reported separately.",
+  "confirmation_rule": "Only families beating both search controls and failure tree on all three seeds at a size, with CPU+wall lower intervals positive, qualify for held-out confirmation.",
+  "confirmation_seeds": [
+    7300109,
+    8300143,
+    9700153
+  ],
+  "confirmation_quartets": 31,
+  "no_application_claim_without_complete_contract": true
+}

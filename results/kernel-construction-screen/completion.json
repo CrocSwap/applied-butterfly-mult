@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "decision": "No competitive circuit and no support-interning advantage in the bounded construction screen",
+  "report_links_checked": true,
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/docs/kernel-construction-screen.md": "88871b4672d78858eca9316b2e7766689acd3cc6f68a21b37922ff55dc779757",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/kernel-construction-screen/audit.json": "aee3a982def01bc406639675e2458c3eb2a3f12acd549598458c4c51783d80ae"
+  }
+}

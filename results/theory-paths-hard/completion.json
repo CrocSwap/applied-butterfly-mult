@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "decision": "Hard-instance qualification rejected; no family passes the confirmation gate",
+  "report_links_checked": true,
+  "previous_evidence_unchanged": true,
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/docs/theory-paths-hard-qualification.md": "fa6659c4d25d6fc9c72923bb4401b25ea22fde3f2c7d7b6c4d6b30e7736eab52",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/audit.json": "529a8429f76180675652caa4e4956ec0c7564e281e4c59eb64052f52d30f4de4",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-paths-hard/data/manifest.json": "bea00a8ad37056502c7ceb920c2bd73af1de474a17d80d67a64e14dee4153352"
+  }
+}

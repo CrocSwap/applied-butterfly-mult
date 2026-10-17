@@ -1,0 +1,3 @@
+{
+  "reason": "Correct prose-only eligible query total from 106 to 86; all raw tables, metrics and scripts unchanged. Initial manifest/report preserved; completion-initial.json is superseded."
+}

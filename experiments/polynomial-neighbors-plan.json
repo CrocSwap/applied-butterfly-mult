@@ -1,0 +1,10 @@
+{
+  "dimensions": [4, 8],
+  "lengths": [240, 272, 1008, 1040],
+  "moduli": [1000000007, 1108307720798209],
+  "windows": ["full", "mid"],
+  "samples": 7,
+  "batch_ms": 10,
+  "seed": 490177,
+  "scope": "Follow-up after discovering that signed-bias headroom raises the plan depth at the original power-of-two lengths. Nearby lengths test whether the spectral target persists across this size boundary; baseline only."
+}

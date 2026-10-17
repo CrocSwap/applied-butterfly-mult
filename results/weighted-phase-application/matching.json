@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "sister_commit": "1c09a5887e3f900798eef904371441ab18c057de",
+  "theta": {
+    "modulation_matrix_entries": 299592,
+    "bilinear_tensor_entries": 69905,
+    "ordinary_identity": "H D_a = X_a H; C_a squared = X_a",
+    "source_output": "res[k*n+a] = sum_b (-1)^popcount(a&b) x[b XOR k] y[b]",
+    "attribution": "No new weighted phase-frame capability is necessary for either conventional control."
+  },
+  "weighted_scalar": {
+    "coefficients": 17536,
+    "identity": "side_T = x_T + (total - sum_{i in T} incident_i)/2",
+    "limit": "Scalar simplification need not satisfy the theoretical binary phase-frame constraints."
+  },
+  "frame_controls": {
+    "h": 8,
+    "directed_rectangle_checks": 292,
+    "all_local_residual_bases_constructed": true,
+    "pair_basis_checked": true
+  },
+  "sources": [
+    {
+      "url": "https://flintlib.org/doc/acb_theta.html",
+      "file": "/Users/colkitt/sith/toys/math/butterflyMult/results/weighted-phase-application/sources/flint-theta.html",
+      "sha256": "d70dc8f2fe4e73fabbb5b711949fb94ff8d0ac9036705c0575259e5e3ff01fd0"
+    },
+    {
+      "url": "https://quest-kit.github.io/QuEST/group__op__pauligadget.html",
+      "file": "/Users/colkitt/sith/toys/math/butterflyMult/results/weighted-phase-application/sources/quest-pauli.html",
+      "sha256": "0e8f6c751e1f32655ed08e896f73a57c6473ff52c396f411b9ca5bb98718f9dc"
+    },
+    {
+      "url": "https://quantum-journal.org/papers/q-2022-09-15-803/",
+      "file": "/Users/colkitt/sith/toys/math/butterflyMult/results/weighted-phase-application/sources/quadratic-stabilizer.html",
+      "sha256": "648dd7790a716906d25d80c23cfc1052ec5121160a370392c046c2d31ad5f017"
+    }
+  ],
+  "test_suites": [
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_complex_compression.py",
+        "-v"
+      ],
+      "log": "/Users/colkitt/sith/toys/math/butterflyMult/results/weighted-phase-application/test_complex_compression.py.log",
+      "sha256": "e72ced823ed53cd34ec5201dd2aba232630a416c13566b02a102aa451ea3d8ff"
+    },
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_compact_controls.py",
+        "-v"
+      ],
+      "log": "/Users/colkitt/sith/toys/math/butterflyMult/results/weighted-phase-application/test_compact_controls.py.log",
+      "sha256": "aa82a221cd91b1f2768bb6b4b08ae358904e83dc9a7b8a9da50cfcfd463a040b"
+    }
+  ],
+  "matches": [
+    {
+      "operation": "FLINT acb_theta_agm_mul(all=1)",
+      "actual_caller": "acb_theta_jet_notransform and ql_exact via agm_mul_tight",
+      "decision": "Real repeated phase/transform computation; ordinary controls capture identified reuse; benchmark controls separately"
+    },
+    {
+      "operation": "FLINT acb_theta_char_shuffle",
+      "decision": "Already a direct permutation and per-entry root multiplication; no repeated shared-sum phase network identified"
+    },
+    {
+      "operation": "QuEST Pauli gadget",
+      "decision": "C_v equals exp(i*pi/4) R_Xv(pi/2); existing API directly applies the rotation. No actual mixed-bank weighted-frame workload identified"
+    },
+    {
+      "operation": "Stabilizer simulation",
+      "decision": "Existing quadratic-form representations are a necessary control; no new matching application identified"
+    },
+    {
+      "operation": "Compact-control selected-bit permutation",
+      "decision": "Tape bound does not establish RAM saving; four early swaps plus four rotations, or twelve late swaps plus ten rotations, plus repair. No whole-record traffic saving against a direct RAM permutation established"
+    }
+  ],
+  "theory_transfer_candidates": 0,
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/scripts/check_weighted_phase_application.py": "73cb5532d68fe20618bafd7aa406ca79197f39df0414a4846ed2a89d742c1dd4",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/complex_compression.py": "9b6f758a5985ba5d9fdd726fe6556b3d3b4bd9d98aaf8ba06a7bb58093c4c504",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/binary_phase_frames.py": "4148cfa313cf050ed25296e8db36d35871520b8318fd086c7d1facf0c6af67d7",
+    "/Users/colkitt/sith/toys/math/integerMult/scripts/audit_sparse_fusion.py": "bbaa32f9786f083409e363b081bfb7a1e597c8d32e4183c13a4105c2170934ce",
+    "/Users/colkitt/sith/toys/math/integerMult/notes/complex-compression.tex": "10312815290c7bb8ef4db153e30fba13c032bf17ccaf991a34f1aa6340405a0d",
+    "/Users/colkitt/sith/toys/math/integerMult/notes/compact-control-movement.tex": "b963c3d2f4e1b7059aa289bb4b4ac89b688920bcf42f5b20d7698cdef0132cc6"
+  }
+}

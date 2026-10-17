@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "scope": "direct circuit transfer prototype; synthetic warm path workloads, no FLINT patch",
+  "sha256": {
+    "/Users/colkitt/sith/toys/math/butterflyMult/docs/theory-transfer-screen.md": "0e273cb2a6550cad0dd03ba55fb219a78b3b617fd52d457f538b1da7d42adb56",
+    "/Users/colkitt/sith/toys/math/butterflyMult/results/theory-transfer-audit.json": "1c28bede4f6f262300227ccda35e01908c2db9049172764c25de3b7b3cd5fc31"
+  }
+}
