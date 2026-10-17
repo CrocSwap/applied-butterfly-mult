@@ -1,0 +1,36 @@
+PASS flint HEAD 657a2839cf0125164859ff102b1f124abcb87ce0 == deps.json pin
+PASS flint checkout clean
+PASS git apply --check patches/poly-prepared.patch 
+PASS git apply --check patches/poly-contiguous-control.patch 
+PASS git apply --check patches/poly-shared4.patch 
+PASS git apply --check patches/poly-tile4.patch 
+PASS git apply --check patches/poly-shared4-wide.patch 
+PASS git apply --check patches/poly-shared4-medium.patch 
+PASS git apply --check patches/poly-shared4-ordered.patch 
+PASS git apply --check patches/poly-tile4-ordered.patch 
+PASS git apply --check patches/poly-tile4-wide-control.patch 
+PASS poly-prepared build.json prepare=1
+PASS poly-prepared: committed scripts/build_poly_prepared.py hash matches build.json
+PASS poly-prepared: committed bench/poly_prepared.inc hash matches build.json
+PASS poly-prepared: committed bench/poly_survey.c hash matches build.json
+PASS poly-prepared: committed patches/poly-prepared.patch hash matches build.json
+PASS poly-prepared: committed results/poly-prepared-build/gr.s hash matches build.json
+PASS poly-prepared: patched src/gr/nmod_transformed_poly.c sha256 15470e18da63 == pinned 15470e18da63
+PASS poly-prepared: replayed builder transform of src/gr/nmod_transformed_poly.c == patch result
+PASS poly-prepared: patched src/nmod_poly_mat/mulmid_fft_small.c sha256 4b051a064d11 == pinned 4b051a064d11
+PASS poly-prepared: replayed builder transform of src/nmod_poly_mat/mulmid_fft_small.c == patch result
+PASS poly-prepared: regenerated patch byte-identical to patches/poly-prepared.patch
+PASS poly-contiguous-control build.json prepare=0
+PASS poly-contiguous-control: committed scripts/build_poly_prepared.py hash matches build.json
+PASS poly-contiguous-control: committed bench/poly_prepared.inc hash matches build.json
+PASS poly-contiguous-control: committed bench/poly_survey.c hash matches build.json
+PASS poly-contiguous-control: committed patches/poly-contiguous-control.patch hash matches build.json
+PASS poly-contiguous-control: committed results/poly-contiguous-control-build/gr.s hash matches build.json
+PASS poly-contiguous-control: patched src/gr/nmod_transformed_poly.c sha256 d23bdd2aeb16 == pinned d23bdd2aeb16
+PASS poly-contiguous-control: replayed builder transform of src/gr/nmod_transformed_poly.c == patch result
+PASS poly-contiguous-control: patched src/nmod_poly_mat/mulmid_fft_small.c sha256 488400c2ee37 == pinned 488400c2ee37
+PASS poly-contiguous-control: replayed builder transform of src/nmod_poly_mat/mulmid_fft_small.c == patch result
+PASS poly-contiguous-control: regenerated patch byte-identical to patches/poly-contiguous-control.patch
+PASS control: corrupted context line is rejected by git apply --check
+PASS control: BF_PREPARE=0 transform does not match poly-prepared pinned hash
+35 checks, 0 failures
