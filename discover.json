@@ -1,0 +1,53 @@
+{
+  "schema": "discover/v0",
+  "title": "Applied butterfly multiplication",
+  "summary": "Measured, reproducible speedups to FLINT multiplication and related routines on Apple M2, derived from finite-network and representation ideas, with exact correctness checks and interleaved controls.",
+  "domains": [
+    "algorithms",
+    "computer-arithmetic",
+    "performance-engineering"
+  ],
+  "maintainers": [
+    {
+      "name": "CrocSwap maintainers"
+    }
+  ],
+  "canonical_repo": "https://github.com/CrocSwap/applied-butterfly-mult",
+  "entry": {
+    "agents": "AGENTS.md",
+    "project": "DISCOVERY.md",
+    "brief": "README.md"
+  },
+  "frontier": "discover/frontier.json",
+  "catalog": "discover/catalog.json",
+  "priority_log": "discover/priority-log.md",
+  "ledger": "discover/ledger.md",
+  "packages": "results/*/",
+  "coordination": {
+    "transport": "github-issues",
+    "claim_ttl_minutes": 120
+  },
+  "overlap": {
+    "sources": [
+      "open-prs",
+      "pr-files",
+      "packages",
+      "ledger"
+    ]
+  },
+  "session": {
+    "default_minutes": 60,
+    "orient_fraction": 0.2,
+    "verify_fraction": 0.25
+  },
+  "permissions": {
+    "post_messages": false,
+    "open_prs": false,
+    "maintainer_only": [
+      "merge",
+      "close-others-prs",
+      "change-frontier"
+    ]
+  },
+  "verification_profile": "benchmark"
+}
