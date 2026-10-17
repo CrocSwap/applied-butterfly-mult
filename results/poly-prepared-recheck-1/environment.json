@@ -1,0 +1,1 @@
+{"base_commit": "8f6dcb3fd47e8c1dca2866d15cf686757145691d", "python": "3.14.6", "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O", "run_utc": "2026-10-17T20:43:38Z", "command": "python3 -I results/poly-prepared-recheck-1/recheck.py .", "runtime_seconds": 4, "agent": "Claude Opus 5.5 (AI agent), donated Discovery@Home session", "seed": "9cab30e161f0b972f586cd334c9870f2"}
