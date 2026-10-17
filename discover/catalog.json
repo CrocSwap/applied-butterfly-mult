@@ -1,0 +1,366 @@
+{
+  "schema": "discover-catalog/v0",
+  "priority_revision": 1,
+  "assessed_on": "2026-10-17",
+  "priority_log": "discover/priority-log.md",
+  "status": "Adopted by the maintainer on 2026-10-17 from a contributor's draft. Research suggestions, not reservations: check the Handoffs discussion (#13) and open PRs first.",
+  "tracks": [
+    {
+      "id": "verify",
+      "weight": 30,
+      "useful_outcome": "Independent rechecks of the lead results, so maintainers can accept on evidence other than the author's.",
+      "tasks": [
+        {
+          "id": "recheck-integer-analysis",
+          "question": "Do the stored integer-squaring confirmation summaries follow from the committed raw samples?",
+          "starting_points": [
+            "discover/frontier.json",
+            "docs/experiments-m2.md#reproduce",
+            "scripts/analyze_experiments.py",
+            "results/c3-register-confirm-1/",
+            "results/c3-register-confirm-2/"
+          ],
+          "methods": [
+            "Run the incremental check from a clean clone; inspect the quartet ordering and bootstrap in scripts/compare.py; report any discrepancy with its path."
+          ],
+          "acceptance_gate": "A verification report naming the commit, Python version, commands, and either 'reproduced byte for byte' or each differing file.",
+          "first_step": {
+            "command": [
+              "sh",
+              "-c",
+              "python3 scripts/analyze_experiments.py >/dev/null && git diff --exit-code -- results/ && echo REPRODUCED"
+            ],
+            "expected": "REPRODUCED (and no diff)",
+            "scope": "Incremental check: recomputes the stored integer-squaring confirmation summaries from raw samples. Takes about 30 seconds."
+          },
+          "bottleneck_link": "Review capacity is the constraint; recorded independent checks let maintainers accept without re-deriving.",
+          "overlap_terms": [
+            "analyze_experiments",
+            "confirmation-analysis",
+            "c3-register"
+          ]
+        },
+        {
+          "id": "replicate-c3-on-apple-silicon",
+          "question": "Does the C3 squaring gain reproduce on a different Apple Silicon machine?",
+          "starting_points": [
+            "README.md#build-on-apple-silicon-macos",
+            "docs/experiments-m2.md#reproduce",
+            "patches/c3-register-reconstruction.patch"
+          ],
+          "methods": [
+            "Follow the Reproduce commands with fresh run names, including the unchanged-versus-unchanged control, on a quiet machine; report CPU-time intervals per operation."
+          ],
+          "acceptance_gate": "Control intervals include zero, and both confirmation runs are reported with chip, OS, compiler, and metadata.json hashes, whether the gain repeats or not.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests"
+            ],
+            "expected": "Ran 11 tests ... OK",
+            "scope": "Positive control: the analysis and finite-model tests pass. Takes about 1 second."
+          },
+          "bottleneck_link": "Closes the independent-replication obligation in the frontier record.",
+          "overlap_terms": [
+            "c3",
+            "replication",
+            "M1",
+            "M3",
+            "M4"
+          ]
+        },
+        {
+          "id": "recheck-poly-prepared",
+          "question": "Do the polynomial-matrix audit outputs follow from the committed raw results?",
+          "starting_points": [
+            "docs/prepared-inputs-m2.md",
+            "scripts/audit_poly_prepared.py",
+            "results/poly-prepared-audit.json"
+          ],
+          "methods": [
+            "Read the audit script, then run it in a disposable copy if it needs no build; otherwise check the summaries against raw.jsonl by inspection."
+          ],
+          "acceptance_gate": "A report stating which figures were recomputed, which were inspected, and any mismatch.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests"
+            ],
+            "expected": "Ran 11 tests ... OK",
+            "scope": "Positive control: the analysis and finite-model tests pass. Takes about 1 second."
+          },
+          "bottleneck_link": "The 4-15% matrix result is a lead example with no recorded independent check.",
+          "overlap_terms": [
+            "poly-prepared",
+            "prepared-inputs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "portability",
+      "weight": 25,
+      "useful_outcome": "A portable form of the retained changes, measured on a second architecture.",
+      "tasks": [
+        {
+          "id": "portable-fusion-fallback",
+          "question": "Can the fused reconstruction/carry change keep its NEON fast path and add a correct portable fallback with no regression?",
+          "starting_points": [
+            "docs/ablations-m2.md#next-step",
+            "patches/c3-register-reconstruction.patch",
+            "patches/ablation-scalar-conversion.patch"
+          ],
+          "methods": [
+            "Write the fallback as an isolated patch against FLINT 657a2839; check exactly against GMP and the fft_small tests; rerun the whole-operation comparisons."
+          ],
+          "acceptance_gate": "Exact checks pass, and an interleaved comparison with control shows no regression on M2 for the NEON path.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests"
+            ],
+            "expected": "Ran 11 tests ... OK",
+            "scope": "Positive control: the analysis and finite-model tests pass. Takes about 1 second."
+          },
+          "bottleneck_link": "Portable code is the stated prerequisite for proposing the change upstream.",
+          "overlap_terms": [
+            "portable",
+            "fallback",
+            "NEON",
+            "fusion",
+            "carry"
+          ]
+        },
+        {
+          "id": "second-architecture-measurement",
+          "question": "Do any of the lead results hold on a second architecture (x86-64 or another ARM)?",
+          "starting_points": [
+            "docs/project-plan.md#practical-follow-through",
+            "scripts/bootstrap.sh",
+            "scripts/compare.py"
+          ],
+          "methods": [
+            "Adapt the build flags; run the unchanged-versus-unchanged control first, then one lead result's comparison; label results architecture-specific."
+          ],
+          "acceptance_gate": "Control intervals include zero and the comparison reports CPU-time intervals with environment metadata.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests"
+            ],
+            "expected": "Ran 11 tests ... OK",
+            "scope": "Positive control: the analysis and finite-model tests pass. Takes about 1 second."
+          },
+          "bottleneck_link": "The frontier's second-architecture obligation is open.",
+          "overlap_terms": [
+            "x86",
+            "AVX",
+            "architecture",
+            "Linux"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "upstream-prep",
+      "weight": 20,
+      "useful_outcome": "Patches in a state a FLINT maintainer could review.",
+      "tasks": [
+        {
+          "id": "theta-patch-review-package",
+          "question": "What would a reviewable theta patch need: correctness scope, dispatch conditions, accuracy checks, and retained timing controls?",
+          "starting_points": [
+            "docs/project-plan.md#practical-follow-through",
+            "docs/theta-batch.md",
+            "docs/theta-equal.md",
+            "patches/theta-direct-walsh.patch"
+          ],
+          "methods": [
+            "Assemble a review note that links each claim to evidence in results/; list gaps without running new timing."
+          ],
+          "acceptance_gate": "A review note whose every claim has a path to evidence, and a list of missing checks.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests"
+            ],
+            "expected": "Ran 11 tests ... OK",
+            "scope": "Positive control: the analysis and finite-model tests pass. Takes about 1 second."
+          },
+          "bottleneck_link": "Item 2 of the project plan's follow-through.",
+          "overlap_terms": [
+            "theta",
+            "upstream",
+            "review"
+          ]
+        },
+        {
+          "id": "reconcile-review-bundle",
+          "question": "Where do the reproduce/ bundle and the 0001-0005 patches referenced by docs/review-reproduction.md live, and how should this repo reference them?",
+          "starting_points": [
+            "docs/review-reproduction.md",
+            "docs/review-report.md",
+            "docs/flint-optimization-campaign.md",
+            "results/"
+          ],
+          "methods": [
+            "Search the repo for the referenced files and hashes; propose doc fixes or a pointer, without moving files."
+          ],
+          "acceptance_gate": "A list of every missing reference and a proposed fix for each, for the maintainer to accept.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests"
+            ],
+            "expected": "Ran 11 tests ... OK",
+            "scope": "Positive control: the analysis and finite-model tests pass. Takes about 1 second."
+          },
+          "bottleneck_link": "An agent following that doc fails at its first command.",
+          "overlap_terms": [
+            "review-reproduction",
+            "0001",
+            "26b9bc9d",
+            "bundle"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "downstream",
+      "weight": 15,
+      "useful_outcome": "Evidence from complete real callers rather than synthetic fixtures.",
+      "tasks": [
+        {
+          "id": "pi-workload-quiet-rerun",
+          "question": "Does the sub-percent pi-workload effect of the squaring change repeat on an idle machine with longer batches?",
+          "starting_points": [
+            "docs/ablations-m2.md",
+            "results/pi-confirm-1/",
+            "results/pi-confirm-2/",
+            "results/pi-control/"
+          ],
+          "methods": [
+            "Repeat the three pi precisions with longer batches and a control on a quiet machine; add one workload dominated by large products."
+          ],
+          "acceptance_gate": "Control and both runs are reported; the result is stated whether or not the effect repeats.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests"
+            ],
+            "expected": "Ran 11 tests ... OK",
+            "scope": "Positive control: the analysis and finite-model tests pass. Takes about 1 second."
+          },
+          "bottleneck_link": "Extending the 3% kernel claim to applications is explicitly premature until this repeats.",
+          "overlap_terms": [
+            "pi",
+            "application",
+            "workload"
+          ]
+        },
+        {
+          "id": "find-downstream-caller",
+          "question": "Which genuine, complete downstream caller exercises the polynomial-matrix or theta paths at the measured sizes?",
+          "starting_points": [
+            "docs/project-plan.md",
+            "docs/application-survey.md",
+            "docs/joint-workload-survey.md"
+          ],
+          "methods": [
+            "Survey public code that calls these FLINT routines; record size distributions and how much of the runtime is in the patched path, before any benchmarking."
+          ],
+          "acceptance_gate": "A survey listing callers, input sizes, and how much of the runtime is in the patched path, with sources pinned.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests"
+            ],
+            "expected": "Ran 11 tests ... OK",
+            "scope": "Positive control: the analysis and finite-model tests pass. Takes about 1 second."
+          },
+          "bottleneck_link": "Item 3 of the project plan's follow-through.",
+          "overlap_terms": [
+            "downstream",
+            "caller",
+            "genus",
+            "invariant"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "research-screens",
+      "weight": 10,
+      "useful_outcome": "Bounded screens that either earn a prototype or close a line with a precise scope.",
+      "tasks": [
+        {
+          "id": "fused-shuffle-butterfly-cost-model",
+          "question": "Can a fused shuffle-and-butterfly schedule with interleaved loads and dynamic frames reduce total compiled work for one 16-point layer transition?",
+          "starting_points": [
+            "docs/network-research-m2.md#next-bounded-research-experiment",
+            "docs/network-contract.md",
+            "scripts/network_frames.py"
+          ],
+          "methods": [
+            "Score arithmetic, twiddle loads, lane movement, register pressure and boundary conversions together, on generated machine code."
+          ],
+          "acceptance_gate": "Generated code that reduces total work under the full cost model, or a documented negative result with its scope.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests"
+            ],
+            "expected": "Ran 11 tests ... OK",
+            "scope": "Positive control: the analysis and finite-model tests pass. Takes about 1 second."
+          },
+          "bottleneck_link": "Open question: can a different physical network reduce total compiled work?",
+          "overlap_terms": [
+            "shuffle",
+            "butterfly",
+            "frame",
+            "network"
+          ],
+          "scope_change_triggers": [
+            "A smaller count of one kind of shuffle alone is not a result."
+          ]
+        }
+      ]
+    }
+  ]
+}
