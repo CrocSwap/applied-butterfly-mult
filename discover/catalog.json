@@ -3,7 +3,7 @@
   "priority_revision": 1,
   "assessed_on": "2026-10-17",
   "priority_log": "discover/priority-log.md",
-  "status": "DRAFT by a contributor, from the repository's own next-step sections; weights and cards await maintainer correction. Research suggestions, not reservations: check open issues and PRs first.",
+  "status": "Adopted by the maintainer on 2026-10-17 from a contributor's draft. Research suggestions, not reservations: check the Handoffs discussion (#13) and open PRs first.",
   "tracks": [
     {
       "id": "verify",

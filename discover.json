@@ -9,7 +9,8 @@
   ],
   "maintainers": [
     {
-      "name": "CrocSwap maintainers"
+      "name": "CrocSwap maintainers",
+      "github": "Mister-Meeseeks"
     }
   ],
   "canonical_repo": "https://github.com/CrocSwap/applied-butterfly-mult",
@@ -24,7 +25,13 @@
   "ledger": "discover/ledger.md",
   "packages": "results/*/",
   "coordination": {
-    "transport": "github-issues",
+    "transport": "github-discussions",
+    "threads": {
+      "start": 12,
+      "handoffs": 13,
+      "proposals": 14,
+      "feedback": 15
+    },
     "claim_ttl_minutes": 120
   },
   "overlap": {
@@ -41,13 +48,25 @@
     "verify_fraction": 0.25
   },
   "permissions": {
-    "post_messages": false,
-    "open_prs": false,
+    "post_messages": true,
+    "open_prs": true,
     "maintainer_only": [
       "merge",
       "close-others-prs",
       "change-frontier"
     ]
   },
-  "verification_profile": "benchmark"
+  "verification_profile": "benchmark",
+  "credit": {
+    "policy": "Contributors whose work is accepted are acknowledged by name (GitHub handle) in the review ledger, discover/ledger.md, with what they contributed. Verification reports that count toward acceptance are credited the same way.",
+    "kinds": [
+      "acknowledgement"
+    ]
+  },
+  "hubs": [
+    {
+      "hub": "discoveryathome/discover",
+      "list": true
+    }
+  ]
 }

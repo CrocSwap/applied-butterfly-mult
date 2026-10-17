@@ -1,8 +1,11 @@
 {
   "schema": "discover-frontier/v0",
-  "statement": "DRAFT, awaiting maintainer confirmation. Three retained, isolated FLINT patches reduce complete-operation time on selected workloads on one Apple M2 (one FLINT thread, Apple clang 21, -O3 -mcpu=apple-m2): (1) integer squaring: fusing two-prime reconstruction with carry propagation (patches/c3-register-reconstruction.patch) reduces complete squaring CPU time by 3.26% [95% CI 2.99, 3.54] and 3.10% [2.85, 3.34] in two confirmation runs over 4095-16385-limb (about 262k-1M-bit) operands (wall time about 3%); (2) polynomial matrices: preparing each reusable left input once (patches/poly-prepared.patch) reduces CPU time by 4.34-15.09% across all 30 eligible tested cases, with positive intervals in both confirmations; (3) theta evaluation: shared signed transforms and equal-bank specialization (patches/theta-direct-walsh.patch + theta-batch-retained.patch; theta-equal-bank.patch) give median CPU reductions of 3.65-5.84% on nonzero-point batches and 4.38-9.13% on squared constants versus original FLINT. Figures describe different conditions and are not additive.",
-  "status": "Draft frontier assembled from docs/project-plan.md (lead examples, 2026-10-09). Not yet confirmed by a maintainer.",
-  "evidence_level": ["author-checked"],
+  "statement": "Three retained, isolated FLINT patches reduce complete-operation time on selected workloads on one Apple M2 (one FLINT thread, Apple clang 21, -O3 -mcpu=apple-m2): (1) integer squaring: fusing two-prime reconstruction with carry propagation (patches/c3-register-reconstruction.patch) reduces complete squaring CPU time by 3.26% [95% CI 2.99, 3.54] and 3.10% [2.85, 3.34] in two confirmation runs over 4095-16385-limb (about 262k-1M-bit) operands (wall time about 3%); (2) polynomial matrices: preparing each reusable left input once (patches/poly-prepared.patch) reduces CPU time by 4.34-15.09% across all 30 eligible tested cases, with positive intervals in both confirmations; (3) theta evaluation: shared signed transforms and equal-bank specialization (patches/theta-direct-walsh.patch + theta-batch-retained.patch; theta-equal-bank.patch) give median CPU reductions of 3.65-5.84% on nonzero-point batches and 4.38-9.13% on squared constants versus original FLINT. Figures describe different conditions and are not additive.",
+  "status": "Accepted by the maintainer (@Mister-Meeseeks) on 2026-10-17; assembled from docs/project-plan.md lead examples (2026-10-09). See discover/ledger.md.",
+  "evidence_level": [
+    "author-checked",
+    "maintainer-reviewed"
+  ],
   "metric": {
     "name": "complete integer squaring CPU-time reduction vs unmodified FLINT 657a2839 (confirmation 2)",
     "value": "3.10% [2.85, 3.34]",
@@ -10,24 +13,75 @@
   },
   "scope": "Apple M2, macOS, one FLINT thread, warm synthetic inputs, FLINT commit 657a2839cf0125164859ff102b1f124abcb87ce0 (deps.json). Selected sizes and workloads only; not an overall FLINT speedup, not another architecture, not a complete downstream application. Patches are experimental and not submitted upstream. The five-patch interpolation/series campaign in docs/review-report.md (FLINT 26b9bc9d) is reported separately and is not part of this record.",
   "assumptions": [
-    {"id": "second-architecture", "statement": "The gains hold on a second architecture; the C3 patch uses NEON internals and has no portable fallback yet.", "status": "open", "link": "docs/ablations-m2.md"},
-    {"id": "downstream-caller", "statement": "The gains survive in a genuine complete downstream caller; current fixtures are synthetic, and the pi workload effect is sub-percent and noisy.", "status": "open", "link": "docs/project-plan.md"},
-    {"id": "independent-replication", "statement": "Someone other than the author re-measures at least one lead result on separate Apple Silicon hardware.", "status": "open"},
-    {"id": "upstream-review", "statement": "FLINT maintainers accept the correctness scope and dispatch conditions of a submitted patch.", "status": "open", "link": "docs/project-plan.md"}
+    {
+      "id": "second-architecture",
+      "statement": "The gains hold on a second architecture; the C3 patch uses NEON internals and has no portable fallback yet.",
+      "status": "open",
+      "link": "docs/ablations-m2.md"
+    },
+    {
+      "id": "downstream-caller",
+      "statement": "The gains survive in a genuine complete downstream caller; current fixtures are synthetic, and the pi workload effect is sub-percent and noisy.",
+      "status": "open",
+      "link": "docs/project-plan.md"
+    },
+    {
+      "id": "independent-replication",
+      "statement": "Someone other than the author re-measures at least one lead result on separate Apple Silicon hardware.",
+      "status": "open"
+    },
+    {
+      "id": "upstream-review",
+      "statement": "FLINT maintainers accept the correctness scope and dispatch conditions of a submitted patch.",
+      "status": "open",
+      "link": "docs/project-plan.md"
+    }
   ],
-  "sources": ["3d2fc587b233a7ac3cd19f1b7d2e3bdc0797eeba", "docs/project-plan.md", "docs/experiments-m2.md", "docs/prepared-inputs-m2.md", "docs/theta-batch.md", "docs/theta-equal.md"],
+  "sources": [
+    "3d2fc587b233a7ac3cd19f1b7d2e3bdc0797eeba",
+    "docs/project-plan.md",
+    "docs/experiments-m2.md",
+    "docs/prepared-inputs-m2.md",
+    "docs/theta-batch.md",
+    "docs/theta-equal.md"
+  ],
   "artifacts": [
-    {"path": "patches/c3-register-reconstruction.patch", "sha256": "9e2e3bb841d3c742c1feb2e19bc62d2ff475bc26dc120a2d9d364f6526ae1d1e", "role": "integer squaring patch"},
-    {"path": "patches/poly-prepared.patch", "sha256": "953893b3a4da7b0b532aa6fe14f0103f73f62d62431e947c9c69eda2f122844d", "role": "polynomial matrix patch"},
-    {"path": "patches/theta-batch-retained.patch", "sha256": "c16069fb2a2436d3deaef24cb2f274b82ddf8bf9d473e0d317255383d001e8de", "role": "theta batch patch (on theta-direct-walsh.patch)"},
-    {"path": "patches/theta-equal-bank.patch", "sha256": "8bb2d6d94d6451a6062ec9139a106879e3231726bc33446cce291a1e8397d664", "role": "equal-bank theta patch"},
-    {"path": "results/confirmation-analysis.json", "sha256": "0635177add0bc226bc9539ad3917114e054afbc14aa3eaea7284a35aca1117af", "role": "integer squaring confirmation summaries"}
+    {
+      "path": "patches/c3-register-reconstruction.patch",
+      "sha256": "9e2e3bb841d3c742c1feb2e19bc62d2ff475bc26dc120a2d9d364f6526ae1d1e",
+      "role": "integer squaring patch"
+    },
+    {
+      "path": "patches/poly-prepared.patch",
+      "sha256": "953893b3a4da7b0b532aa6fe14f0103f73f62d62431e947c9c69eda2f122844d",
+      "role": "polynomial matrix patch"
+    },
+    {
+      "path": "patches/theta-batch-retained.patch",
+      "sha256": "c16069fb2a2436d3deaef24cb2f274b82ddf8bf9d473e0d317255383d001e8de",
+      "role": "theta batch patch (on theta-direct-walsh.patch)"
+    },
+    {
+      "path": "patches/theta-equal-bank.patch",
+      "sha256": "8bb2d6d94d6451a6062ec9139a106879e3231726bc33446cce291a1e8397d664",
+      "role": "equal-bank theta patch"
+    },
+    {
+      "path": "results/confirmation-analysis.json",
+      "sha256": "0635177add0bc226bc9539ad3917114e054afbc14aa3eaea7284a35aca1117af",
+      "role": "integer squaring confirmation summaries"
+    }
   ],
   "reproduce": "python3 -m unittest discover -s tests && python3 scripts/analyze_experiments.py >/dev/null && git diff --exit-code -- results/",
   "reproduce_full": "make && make check, then the commands under 'Reproduce' in docs/experiments-m2.md (fresh run names), and compare with results/confirmation-analysis.json",
   "reproduce_minutes": 1,
-  "prerequisites": ["Python 3 (standard library only) and git, for the incremental check", "For the full replay: Apple Silicon macOS, Xcode command-line tools, Homebrew gmp, mpfr, autoconf, automake, libtool (README.md)"],
+  "prerequisites": [
+    "Python 3 (standard library only) and git, for the incremental check",
+    "For the full replay: Apple Silicon macOS, Xcode command-line tools, Homebrew gmp, mpfr, autoconf, automake, libtool (README.md)"
+  ],
   "review": "discover/ledger.md",
-  "pinned_heads": {"flint": "657a2839cf0125164859ff102b1f124abcb87ce0"},
+  "pinned_heads": {
+    "flint": "657a2839cf0125164859ff102b1f124abcb87ce0"
+  },
   "updated_on": "2026-10-17"
 }
