@@ -1,0 +1,283 @@
+{
+  "schema": "discover-catalog/v0",
+  "priority_revision": 1,
+  "assessed_on": "2026-10-17",
+  "priority_log": "discover/priority-log.md",
+  "status": "Research suggestions, not reservations. Check live claims and open PRs.",
+  "tracks": [
+    {
+      "id": "replicate-hardware",
+      "weight": 30,
+      "useful_outcome": "Frontier results re-timed on hardware other than the original Apple M2, or a harness that makes that possible.",
+      "tasks": [
+        {
+          "id": "c3-other-apple-silicon",
+          "question": "Does the C3 reconstruction-fusion squaring gain (about 3% wall time at 4,096-16,384 limbs on M2) reproduce on another Apple Silicon chip (M1, M3, M4, Pro/Max variants)?",
+          "starting_points": [
+            "docs/experiments-m2.md (Reproduce section)",
+            "patches/c3-register-reconstruction.patch",
+            "scripts/build_experiment.py",
+            "scripts/compare.py",
+            "scripts/analyze_experiments.py"
+          ],
+          "methods": [
+            "Follow the Reproduce commands in docs/experiments-m2.md with -mcpu set for your chip; run the A/A control first, then both confirmation seeds.",
+            "Same, but with the M2 flags unchanged (-mcpu=apple-m2), to separate tuning from microarchitecture."
+          ],
+          "acceptance_gate": "Control interval includes zero; both confirmation runs reported with CPU and wall aggregates and 95% intervals; chip, macOS, clang version and CFLAGS stated; raw results directory committed under results/. A null or negative result is equally acceptable.",
+          "first_step": {
+            "command": ["git", "apply", "--stat", "patches/c3-register-reconstruction.patch"],
+            "expected": "src/fft_small/mpn_mul_np2.c |   65 ++++",
+            "scope": "Positive control: the patch file is present and well-formed. Building needs Apple Silicon macOS and the README prerequisites."
+          },
+          "first_experiment": "make && sh scripts/build_harness.sh, build repro-control and repro-c3, then the repro-control comparison; stop and report if the control interval excludes zero.",
+          "bottleneck_link": "All frontier evidence is from one M2; a second chip is the cheapest way to test whether the gain is algorithmic.",
+          "allowed_variations": ["Other operand sizes in addition to (not instead of) the documented confirmation sizes"],
+          "scope_change_triggers": ["The harness needs code changes to run on your chip: switch to harness-linux-port's scope and say so"],
+          "overlap_terms": ["c3", "reconstruction", "squaring", "replication", "apple silicon", "m1", "m3", "m4"]
+        },
+        {
+          "id": "poly-theta-other-hardware",
+          "question": "Do the prepared-input polynomial-matrix gains (4.34-15.09% CPU) or the theta batch gains (3.65/4.92/5.84%) reproduce on a non-M2 machine?",
+          "starting_points": [
+            "docs/prepared-inputs-m2.md (Reproduction and artifacts)",
+            "docs/theta-batch.md",
+            "docs/theta-equal.md (Reproduction)",
+            "experiments/poly-prepared-confirm-plan.json"
+          ],
+          "methods": [
+            "Polynomial matrices: build poly-prepared and poly-contiguous-control, validate, then compare_poly.py with the confirm plan.",
+            "Theta: rebuild the theta-batch retained candidate and rerun its confirmation slice."
+          ],
+          "acceptance_gate": "Validation passes; per-case CPU intervals for every case in the plan, with machine details and an A/A or control comparison; raw results committed.",
+          "first_step": {
+            "command": ["git", "apply", "--stat", "patches/poly-prepared.patch"],
+            "expected": "2 files changed, 116 insertions(+), 2 deletions(-)",
+            "scope": "Positive control: the patch is present and well-formed."
+          },
+          "bottleneck_link": "Second-architecture evidence for the strongest eligible paths is item 3 of the project plan's follow-through.",
+          "scope_change_triggers": ["Only part of the plan can run on your machine: report the subset explicitly"],
+          "overlap_terms": ["poly-prepared", "nmod_poly_mat", "theta", "acb_theta", "replication"]
+        },
+        {
+          "id": "harness-linux-port",
+          "question": "Can the build and timing harness run on Linux (x86-64 and aarch64) without changing what it measures?",
+          "starting_points": [
+            "scripts/bootstrap.sh (uses brew --prefix and -mcpu=apple-m2)",
+            "scripts/benchmark.py (sysctl, .dylib names)",
+            "scripts/compare.py and bench/compare.c (two resident dylibs)",
+            "scripts/build_experiment.py"
+          ],
+          "methods": [
+            "Parameterize prefixes, CFLAGS and shared-library names; load two FLINT builds side by side with dlopen(RTLD_LOCAL) on Linux.",
+            "Run in a container first, then on bare metal for timing."
+          ],
+          "acceptance_gate": "make check passes on Linux; an A/A comparison of two identical builds gives intervals including zero; macOS behaviour unchanged (re-run make check there or state that you couldn't).",
+          "first_step": {
+            "command": ["grep", "-n", "brew --prefix", "scripts/bootstrap.sh"],
+            "expected": "gmp_prefix=${GMP_PREFIX:-$(brew --prefix gmp)}",
+            "scope": "Locates the first macOS-specific assumption."
+          },
+          "bottleneck_link": "Most donor hardware is not Apple Silicon; without a Linux harness, replication can't use it.",
+          "overlap_terms": ["linux", "port", "harness", "dlopen", "bootstrap", "x86", "aarch64"]
+        }
+      ]
+    },
+    {
+      "id": "verify-audit",
+      "weight": 25,
+      "useful_outcome": "Independent rechecks of the frontier, and repairs to evidence that a stranger can't currently check.",
+      "tasks": [
+        {
+          "id": "recheck-frontier-statistics",
+          "question": "Do the frontier's headline numbers follow from the committed raw samples under the documented estimators, when re-derived independently?",
+          "starting_points": [
+            "discover/frontier.json",
+            "scripts/check_frontier.py",
+            "scripts/analyze_experiments.py (aggregate: block bootstrap)",
+            "results/c3-register-confirm-1/raw.jsonl"
+          ],
+          "methods": [
+            "Replay: run scripts/check_frontier.py and audit what it actually checks.",
+            "Reimplement: write your own estimator from the method descriptions in the docs, without reading check_frontier.py, and compare."
+          ],
+          "acceptance_gate": "A verification record at research/frontier-recheck/verifications/<date>-<handle>.json with method, outcome, scope and not_checked; any discrepancy quoted with file and number.",
+          "first_step": {
+            "command": ["python3", "scripts/check_frontier.py"],
+            "expected": "\"status\": \"PASS\"",
+            "scope": "Re-derives statistics from committed samples; re-times nothing."
+          },
+          "bottleneck_link": "One independent recheck plus maintainer review is the acceptance rule; this is the cheapest such check.",
+          "overlap_terms": ["verify", "recheck", "frontier", "bootstrap", "statistics", "audit"]
+        },
+        {
+          "id": "review-package-references",
+          "question": "docs/review-report.md and docs/review-reproduction.md cite patches/0001-0005-*.patch, reproduce/, evidence/, REPRODUCE.md, PROCESS-AUDITS.md and SHA256SUMS, none of which exist here. Which patches/opt-*.patch files (including -v2 variants) are the five reviewed patches, and can the references be made to resolve?",
+          "starting_points": [
+            "docs/review-report.md",
+            "docs/review-reproduction.md",
+            "docs/flint-optimization-campaign.md (line ~139 still says the objective is incomplete)",
+            "scripts/package_optimization_campaign.py",
+            "patches/opt-*.patch"
+          ],
+          "methods": [
+            "Map each cited patch to an opt-*.patch file by content and hashes recorded under results/flint-optimization-campaign/, then fix the references.",
+            "Regenerate the missing package with scripts/package_optimization_campaign.py if its inputs are committed."
+          ],
+          "acceptance_gate": "Every path cited in both review docs resolves, or is marked as not retained; the mapping is justified by hashes; the stale status line is corrected with a pointer to review-report.md.",
+          "first_step": {
+            "command": ["ls", "patches"],
+            "expected": "opt-nmod-matrix-sqr-fallthrough.patch",
+            "scope": "Confirms the reference gap: the listing contains opt-*.patch files but no 0001-*.patch files."
+          },
+          "bottleneck_link": "Reviewers and upstream maintainers can't check the review series until its references resolve.",
+          "overlap_terms": ["review-report", "review series", "opt-", "references", "SHA256SUMS", "package"]
+        },
+        {
+          "id": "clean-clone-audits",
+          "question": "Can the retained-result audits (audit_experiments, audit_poly_prepared, audit_theta_batch, audit_theta_equal) be split so that the data checks run from a fresh clone, leaving build-fingerprint checks optional?",
+          "starting_points": [
+            "scripts/audit_theta_batch.py (imports exclusion_circuit from ../integerMult)",
+            "scripts/audit_experiments.py (hashes .deps/flint)",
+            "scripts/audit_poly_prepared.py (needs .deps/experiments/poly-prepared)"
+          ],
+          "methods": [
+            "Add a --data-only mode that skips local-artifact hashes and sister imports, keeping every check on committed files.",
+            "Vendor the small sister-repo functions that the audits need, with their source commit recorded."
+          ],
+          "acceptance_gate": "In a fresh clone without .deps/ or ../integerMult, each audit's data-only mode passes; on the original machine, the full mode still passes unchanged.",
+          "first_step": {
+            "command": ["grep", "-n", "integerMult", "scripts/paired_cube_resource_screen.py"],
+            "expected": "SISTER = ROOT.parent / 'integerMult'",
+            "scope": "Shows the sibling-repo dependency pattern. In a fresh clone, python3 scripts/audit_theta_batch.py fails with ModuleNotFoundError: No module named 'exclusion_circuit'."
+          },
+          "bottleneck_link": "Verification by other contributors only works if they can run the checks.",
+          "overlap_terms": ["audit", "clean clone", "data-only", "exclusion_circuit", "sister repo"]
+        }
+      ]
+    },
+    {
+      "id": "upstream-readiness",
+      "weight": 25,
+      "useful_outcome": "Patches a FLINT maintainer could review: portable, fully tested, memory-profiled, with dispatch and accuracy scope stated.",
+      "tasks": [
+        {
+          "id": "c3-portability-x86",
+          "question": "The C3 patch is described as M2-specific, but it uses only FLINT's vec8d/vec4n abstractions, with no NEON intrinsics. Does it build, pass the fft_small tests, and keep a gain on x86-64 with FLINT's AVX2 backend?",
+          "starting_points": [
+            "patches/c3-register-reconstruction.patch",
+            "docs/experiments-m2.md (Next experiment: 'uses NEON vector internals')",
+            "FLINT src/machine_vectors.h at the commit in deps.json"
+          ],
+          "methods": [
+            "Apply to the pinned FLINT on x86-64 Linux, configure with AVX2, run make check MOD=fft_small; then time if harness-linux-port has landed.",
+            "Audit the vector operations it uses against each backend in machine_vectors.h and list any that lack an AVX2 implementation."
+          ],
+          "acceptance_gate": "Build and fft_small test log on x86-64; a corrected portability statement for docs/experiments-m2.md; timing with an A/A control if measured.",
+          "first_step": {
+            "command": ["grep", "-oE", "vec(8d|4d|4n)_[a-z]+", "patches/c3-register-reconstruction.patch"],
+            "expected": "vec8d_mulmod",
+            "scope": "Lists the FLINT vector operations the patch uses. grep -cE 'vld1|vst1|vreinterpret|arm_neon|__aarch64__' on the same file prints 0: no direct NEON intrinsics. That doesn't prove the backends are equivalent."
+          },
+          "bottleneck_link": "Portability is a precondition for proposing C3 upstream (docs/experiments-m2.md).",
+          "overlap_terms": ["c3", "portable", "avx2", "x86", "machine_vectors", "fft_small"]
+        },
+        {
+          "id": "theta-review-package",
+          "question": "Is the combined theta patch (direct-walsh + batch-retained, optionally equal-bank) ready for maintainer review: correctness scope, dispatch conditions, accuracy checks and timing controls stated?",
+          "starting_points": [
+            "patches/theta-direct-walsh.patch",
+            "patches/theta-batch-retained.patch",
+            "patches/theta-equal-bank.patch",
+            "docs/theta-batch.md",
+            "docs/theta-equal.md",
+            "docs/project-plan.md (follow-through item 2)"
+          ],
+          "methods": [
+            "Run FLINT's acb_theta tests on the patched tree and add tests for the new paths.",
+            "Write the dispatch conditions and accuracy argument as a reviewer-facing note."
+          ],
+          "acceptance_gate": "acb_theta tests pass on the patched tree (log committed); a review note covering correctness, dispatch, accuracy and timing evidence, with prior-art attribution as in docs/project-plan.md.",
+          "first_step": {
+            "command": ["git", "apply", "--stat", "patches/theta-direct-walsh.patch", "patches/theta-batch-retained.patch"],
+            "expected": "src/acb_theta/ql_exact.c |  204",
+            "scope": "Lists the files the theta patches touch."
+          },
+          "bottleneck_link": "Preparing the theta patch for maintainer review is follow-through item 2 of the project plan.",
+          "overlap_terms": ["theta", "acb_theta", "walsh", "review", "upstream", "ql_exact", "agm_mul"]
+        },
+        {
+          "id": "review-series-tests-memory",
+          "question": "Do the five review-series patches pass FLINT's full test suite, and what do they cost in memory?",
+          "starting_points": [
+            "docs/review-report.md (open obligations, around lines 94-132)",
+            "docs/review-reproduction.md",
+            "scripts/optimization_campaign.py",
+            "patches/opt-*.patch"
+          ],
+          "methods": [
+            "Full make check on FLINT 26b9bc9d with the series applied.",
+            "Peak RSS and allocation counts for each patch's benchmark cases, before and after."
+          ],
+          "acceptance_gate": "Full-suite log with the base commit and the patch hashes; a memory table per patch with method stated.",
+          "first_step": {
+            "command": ["git", "apply", "--stat", "patches/opt-nmod-matrix-sqr-fallthrough.patch"],
+            "expected": "src/",
+            "scope": "Positive control: the patch file is present and well-formed."
+          },
+          "bottleneck_link": "No full-library test run and no memory profile are listed obligations before upstream submission.",
+          "overlap_terms": ["review series", "opt-", "make check", "memory", "rss", "26b9bc9d"]
+        }
+      ]
+    },
+    {
+      "id": "downstream-callers",
+      "weight": 20,
+      "useful_outcome": "A genuine complete caller, or the missing inputs for one, profiled before any new timing campaign.",
+      "tasks": [
+        {
+          "id": "find-genuine-caller",
+          "question": "Is there real software, such as a published computation or a library built on FLINT, whose complete run spends a material share of time in nmod_poly_mat multiplication, acb_theta evaluation or large-integer squaring at the frontier's sizes?",
+          "starting_points": [
+            "docs/polynomial-survey-m2.md",
+            "docs/application-survey.md",
+            "docs/project-plan.md (follow-through items 3-4)"
+          ],
+          "methods": [
+            "Search published code (Sage, Oscar, Magma ports, number-theory papers with code) for call sites, then profile one complete run.",
+            "Instrument FLINT to count calls and sizes in one candidate's run."
+          ],
+          "acceptance_gate": "A named caller with reproducible inputs and a profile showing the share of time in the patched routine at the relevant sizes; an opportunity estimate (share × measured gain) before any timing. A documented null result is acceptable.",
+          "first_step": {
+            "command": ["git", "apply", "--stat", "patches/poly-prepared.patch"],
+            "expected": "src/nmod_poly_mat/mulmid_fft_small.c",
+            "scope": "Names the entry point a caller would have to reach."
+          },
+          "bottleneck_link": "No genuine downstream caller exists for any frontier result; synthetic fixtures limit what the gains mean.",
+          "overlap_terms": ["caller", "downstream", "application", "profile", "workload", "opportunity"]
+        },
+        {
+          "id": "genus6-period-matrix",
+          "question": "Can the genus-six period matrix for Elkies-Kieffer (arXiv:2505.22382, Section 6.3) be produced to 120 digits with provenance, unblocking the E4 benchmark?",
+          "starting_points": [
+            "docs/theta-e4.md",
+            "scripts/export_theta_e4.m (untested; needs Magma)",
+            "https://github.com/j-kieffer/theta-implementations"
+          ],
+          "methods": [
+            "Run scripts/export_theta_e4.m in Magma and commit the tagged export with the log.",
+            "Compute the period matrix with open tools (e.g. Sage's RiemannSurface) and cross-check the symmetry assertion and the E4 value against the paper."
+          ],
+          "acceptance_gate": "A committed export in THETA_E4_V1 format, plus the tool, version and log; an independent cross-check of at least one invariant against the paper.",
+          "first_step": {
+            "command": ["head", "-3", "scripts/export_theta_e4.m"],
+            "expected": "// Elkies--Kieffer arXiv:2505.22382, Section 6.3: base curve only.",
+            "scope": "Locates the export script and its stated limits."
+          },
+          "bottleneck_link": "Genus-six E4 is the next theta target and is blocked only on this input.",
+          "overlap_terms": ["genus-six", "genus 6", "E4", "period matrix", "elkies", "kieffer", "magma"]
+        }
+      ]
+    }
+  ]
+}

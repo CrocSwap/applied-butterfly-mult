@@ -1,0 +1,74 @@
+{
+  "schema": "discover/v0",
+  "title": "Applied butterfly multiplication",
+  "summary": "Turning integer-multiplication theory into measured, exactly checked speedups of complete operations in FLINT: about 3% for large-integer squaring, 4–15% for polynomial matrix products, and 4–9% for theta evaluation, so far on one Apple M2.",
+  "domains": [
+    "math",
+    "algorithms",
+    "performance-engineering"
+  ],
+  "maintainers": [
+    {
+      "name": "Douglas R. Colkitt",
+      "github": "Mister-Meeseeks"
+    }
+  ],
+  "canonical_repo": "https://github.com/CrocSwap/applied-butterfly-mult",
+  "entry": {
+    "agents": "AGENTS.md",
+    "project": "DISCOVERY.md"
+  },
+  "frontier": "discover/frontier.json",
+  "catalog": "discover/catalog.json",
+  "priority_log": "discover/priority-log.md",
+  "ledger": "discover/ledger.md",
+  "packages": "research/*/",
+  "coordination": {
+    "transport": "github-discussions",
+    "threads": {
+      "start": 1,
+      "handoffs": 2,
+      "proposals": 3,
+      "feedback": 4
+    },
+    "claim_ttl_minutes": 120
+  },
+  "overlap": {
+    "sources": [
+      "open-prs",
+      "pr-files",
+      "discussions",
+      "packages",
+      "ledger"
+    ]
+  },
+  "session": {
+    "default_minutes": 60,
+    "orient_fraction": 0.2,
+    "verify_fraction": 0.25
+  },
+  "permissions": {
+    "post_messages": true,
+    "open_prs": true,
+    "maintainer_only": [
+      "merge",
+      "close-others-prs",
+      "change-frontier"
+    ]
+  },
+  "verification_profile": "benchmark",
+  "credit": {
+    "policy": "Accepted contributions are credited by GitHub handle in CONTRIBUTORS.md and acknowledged in any write-up or upstream FLINT patch that uses them.",
+    "kinds": [
+      "acknowledgement",
+      "contributors-file"
+    ]
+  },
+  "hubs": [
+    {
+      "hub": "discoveryathome/discover",
+      "list": true
+    }
+  ],
+  "process_changed_on": "2026-10-17"
+}

@@ -1,0 +1,49 @@
+{
+  "schema": "discover-frontier/v0",
+  "statement": "Three isolated patches to FLINT 657a2839 reduce complete-operation time on an Apple M2 (one thread), measured as two resident libraries in interleaved ABBA/BAAB quartets after exact checks. (1) Integer squaring, patches/c3-register-reconstruction.patch: fusing two-prime reconstruction with carry propagation reduces complete squaring wall time by 2.99% [1.94, 4.11] and 2.91% [2.02, 3.74] (aggregate, 95% intervals) in two confirmation runs over sampled 4,096-16,384-limb operands. (2) Polynomial matrices, patches/poly-prepared.patch: preparing each reusable left spectral input once reduces complete-call CPU by 4.34-15.09% across all 30 eligible tested cases, with positive intervals in both confirmation runs. (3) Theta, patches/theta-direct-walsh.patch + theta-batch-retained.patch: median CPU reductions versus original FLINT of 3.65%, 4.92% and 5.84% at 1, 4 and 16 points per call (512 bits, genus 2-3); adding theta-equal-bank.patch, squared-constant totals fall by 4.38-9.13% by genus versus original FLINT. The theta figures describe different input conditions and are not additive.",
+  "status": "Accepted on one machine; replication on other hardware is the open bottleneck.",
+  "evidence_level": [
+    "author-checked",
+    "maintainer-reviewed"
+  ],
+  "scope": "One Apple M2, macOS, Apple clang 21, -O3 -g -mcpu=apple-m2 -fno-omit-frame-pointer, GMP 6.3.0, MPFR 4.2.2, one FLINT thread, FLINT commit in deps.json. Sizes and fixtures are sampled: no minimum gain is claimed at every size, nor absence of regressions elsewhere in FLINT. Balanced multiplication (not squaring) under C3 is weaker: 1.43% [-0.02, 2.77]. The equal-bank theta result uses two fixtures and is not a representative workload distribution. Patches are experimental and not submitted upstream.",
+  "assumptions": [
+    {
+      "id": "other-hardware",
+      "statement": "The gains are not specific to the M2 microarchitecture, compiler and memory system.",
+      "status": "open"
+    },
+    {
+      "id": "c3-portability",
+      "statement": "C3 builds and keeps a gain outside Apple Silicon. It uses FLINT's vector abstractions; an x86 AVX2 build has not been tried.",
+      "status": "open"
+    },
+    {
+      "id": "downstream-caller",
+      "statement": "A genuine complete caller spends enough time in the patched routines at these sizes for the gains to matter.",
+      "status": "open"
+    },
+    {
+      "id": "full-test-suite",
+      "statement": "The patched FLINT passes the test suite beyond the touched modules.",
+      "status": "open"
+    }
+  ],
+  "sources": [
+    "docs/experiments-m2.md",
+    "docs/ablations-m2.md",
+    "docs/prepared-inputs-m2.md",
+    "docs/theta-batch.md",
+    "docs/theta-equal.md",
+    "docs/project-plan.md"
+  ],
+  "reproduce": "PYTHONDONTWRITEBYTECODE=1 python3 scripts/check_frontier.py",
+  "reproduce_full": "On Apple Silicon macOS: make, then the Reproduce commands in docs/experiments-m2.md, docs/prepared-inputs-m2.md (Reproduction and artifacts) and docs/theta-equal.md (Reproduction), with new output directory names.",
+  "reproduce_minutes": 1,
+  "prerequisites": [
+    "Python 3.9+ (standard library only) for reproduce",
+    "For reproduce_full: Apple Silicon macOS, Xcode command-line tools, Homebrew gmp, mpfr, autoconf, automake, libtool"
+  ],
+  "review": "discover/ledger.md",
+  "updated_on": "2026-10-17"
+}
