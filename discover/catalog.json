@@ -1,9 +1,9 @@
 {
   "schema": "discover-catalog/v0",
-  "priority_revision": 1,
+  "priority_revision": 2,
   "assessed_on": "2026-10-17",
   "priority_log": "discover/priority-log.md",
-  "status": "Adopted by the maintainer on 2026-10-17 from a contributor's draft. Research suggestions, not reservations: check the Handoffs discussion (#13) and open PRs first.",
+  "status": "Revision 2 (2026-10-17): verify cards narrowed toward builds and re-measurement; weights unchanged. Research suggestions, not reservations: check the Handoffs discussion (#13), open PRs and each card's existing_checks first.",
   "tracks": [
     {
       "id": "verify",
@@ -75,16 +75,19 @@
         },
         {
           "id": "recheck-poly-prepared",
-          "question": "Do the polynomial-matrix audit outputs follow from the committed raw results?",
+          "question": "Does the build-dependent half of the polynomial-matrix audit reproduce: after a fresh build of FLINT 657a2839 and the poly-prepared libraries, which pinned build artifacts differ in hash, and does a regenerated gr.s keep the audited _bf_contiguous frintn counts with no stack references?",
           "starting_points": [
-            "docs/prepared-inputs-m2.md",
+            "README.md#build-on-apple-silicon-macos",
+            "docs/prepared-inputs-m2.md#reproduction-and-artifacts",
             "scripts/audit_poly_prepared.py",
-            "results/poly-prepared-audit.json"
+            "results/poly-prepared-recheck-1/",
+            "results/poly-prepared-patchcheck-1/"
           ],
           "methods": [
-            "Read the audit script, then run it in a disposable copy if it needs no build; otherwise check the summaries against raw.jsonl by inspection."
+            "In a disposable clone, run make, then scripts/build_poly_prepared.py under new names (for example poly-prepared-rebuild-1 --prepare 1 and poly-contiguous-control-rebuild-1 --prepare 0); it refuses existing names and creates patches/<name>.patch, .deps/experiments/<name>/ and results/<name>-build/. Compare each hash in the new build.json with the pinned hash for the same role in results/poly-prepared-build/build.json and results/poly-contiguous-control-build/build.json, and recount instructions, frintn and stack references in _bf_normalize and _bf_contiguous of the new gr.s against results/poly-prepared-audit.json.",
+            "After the same build, run scripts/validate_poly_prepared.py on both new names, and a local copy of scripts/trace_poly_prepared.py pointed at the new names and a new output directory (the committed script writes to results/poly-prepared-coverage, which exists); compare test, trace and coverage counts with results/poly-prepared-audit.json."
           ],
-          "acceptance_gate": "A report stating which figures were recomputed, which were inspected, and any mismatch.",
+          "acceptance_gate": "A report giving, for each pinned build-artifact role (experiment dylib, poly-survey binary, libflint.25.0.dylib, gr.s, and trace builds if run), whether the rebuild's hash matches the pinned one, the regenerated assembly counts, the validation and coverage results, and the machine and toolchain. Hash differences are expected across toolchains and are reported, not treated as failures. Commit only a new results/ package; nothing existing changes. Recomputing summaries from raw.jsonl or re-checking patch application does not meet this gate; both are already recorded.",
           "first_step": {
             "command": [
               "python3",
@@ -97,10 +100,70 @@
             "expected": "Ran 11 tests ... OK",
             "scope": "Positive control: the analysis and finite-model tests pass. Takes about 1 second."
           },
-          "bottleneck_link": "The 4-15% matrix result is a lead example with no recorded independent check.",
+          "bottleneck_link": "The 4-15% matrix result's stored figures and patches are rechecked, but nothing has rebuilt it; build reproducibility is the remaining author-side check before re-measurement.",
           "overlap_terms": [
             "poly-prepared",
-            "prepared-inputs"
+            "prepared-inputs",
+            "audit_poly_prepared",
+            "build_poly_prepared"
+          ],
+          "existing_checks": [
+            {
+              "scope": "Every figure in results/poly-prepared-audit.json, the seven runs' summary.json files and the docs/prepared-inputs-m2.md confirmation table recomputed from committed raw.jsonl by a separate stdlib reimplementation (bootstrap bounds included): 7945 checks, 0 failures. Hashes of the 56 committed audit-pinned files match.",
+              "evidence": "results/poly-prepared-recheck-1/ (PR #17)",
+              "remaining": "The 20 uncommitted pinned build artifacts, patch application, any rebuild or re-measurement.",
+              "status": "author-checked; same account and machine as the original work, so not an independent recheck. A near-duplicate recheck (PR #19) agreed on every figure.",
+              "source_commit": "8f6dcb3fd47e8c1dca2866d15cf686757145691d",
+              "frontier_sha256": "f1590122dd5536e13fc8732bd23cef50392fc5dfd80688e875e48885525ab2ff"
+            },
+            {
+              "scope": "On a clean FLINT 657a2839: git apply --check passes for poly-prepared, poly-contiguous-control and the 7 kernel patches; the 4 patched sources match their pinned build.json hashes; replaying build_poly_prepared.py regenerates both patches byte for byte. 35 checks, 0 failures, with 2 failure controls.",
+              "evidence": "results/poly-prepared-patchcheck-1/ (PR #18)",
+              "remaining": "The other 16 uncommitted pinned artifacts (dylibs, poly-survey binaries, trace builds and sources, build/*), gr.s regeneration, the kernel patches' patched-source hashes, any build, test or timing.",
+              "status": "author-checked; same account and machine as the original work.",
+              "source_commit": "8f6dcb3fd47e8c1dca2866d15cf686757145691d",
+              "frontier_sha256": "f1590122dd5536e13fc8732bd23cef50392fc5dfd80688e875e48885525ab2ff"
+            }
+          ],
+          "scope_change_triggers": [
+            "Another raw-data recompute or patch-application check is not new evidence for this card while the frontier record is unchanged."
+          ]
+        },
+        {
+          "id": "replicate-poly-prepared-measurement",
+          "question": "Does the prepared-input polynomial-matrix gain (4.34-15.09% CPU over 30 eligible cases) repeat when freshly built and re-measured, and does it hold on Apple Silicon other than the author's M2?",
+          "starting_points": [
+            "docs/prepared-inputs-m2.md#reproduction-and-artifacts",
+            "experiments/poly-prepared-confirm-plan.json",
+            "scripts/compare_poly.py",
+            "results/poly-prepared-aa/"
+          ],
+          "methods": [
+            "Build per README.md, then scripts/build_poly_prepared.py under a new name with --prepare 1; run an unchanged-versus-unchanged control first (an unmodified library copy as candidate, as in results/poly-prepared-aa/metadata.json), then scripts/compare_poly.py with experiments/poly-prepared-confirm-plan.json twice, the second with --seed 505093, each to a new results/<name>/; report every case, including the inactive 1x1 and 2x2 controls.",
+            "Same build and control, then only the 8x8 cases of the confirm plan (the largest gains) from a new plan file with longer batches; report whether the per-case intervals overlap the stored ones."
+          ],
+          "acceptance_gate": "Control intervals include zero; both runs are reported with chip, OS, compiler, FLINT commit and metadata.json hashes, whether the gain repeats or not; the report states whether the machine and GitHub account differ from the original author's, since only a different machine and contributor closes independent-replication.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests"
+            ],
+            "expected": "Ran 11 tests ... OK",
+            "scope": "Positive control: the analysis and finite-model tests pass. Takes about 1 second. The FLINT build that follows takes several minutes; each confirm run is about 4,000 batches of 10-20 ms."
+          },
+          "bottleneck_link": "Re-measurement is the only route to the frontier's independent-replication obligation for the matrix result; arithmetic rechecks of stored data cannot close it.",
+          "overlap_terms": [
+            "poly-prepared",
+            "compare_poly",
+            "replication",
+            "re-measure",
+            "M1",
+            "M3",
+            "M4"
           ]
         }
       ]

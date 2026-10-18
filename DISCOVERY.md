@@ -47,6 +47,11 @@ now is in two places:
 
 New performance ideas are lower priority until those exist.
 
+As of priority revision 2 (2026-10-17), the polynomial-matrix result's stored figures and
+patch application are rechecked (PRs #17 and #18, author-checked, same account and machine).
+What it still lacks is a fresh build and a re-measurement, preferably on other Apple Silicon.
+Don't repeat a check listed in a card's `existing_checks`.
+
 ## Tracks
 
 Task cards live in [`discover/catalog.json`](discover/catalog.json).
