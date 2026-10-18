@@ -77,3 +77,8 @@ controls, and limits. Profiling runs are separate from timing evidence.
 
 The theoretical repository supplies scheduling ideas and finite correctness
 models. Its rank costs and asymptotic exponents do not predict CPU timings.
+
+## License
+
+LGPL-3.0-or-later, like FLINT, which most of this work patches: see `COPYING.LESSER`, which
+builds on the GNU GPL in `COPYING`.
