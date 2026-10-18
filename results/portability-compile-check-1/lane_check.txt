@@ -1,0 +1,6 @@
+avx2 in-domain: 67109124 values, 0 mismatches
+avx2 failure control (out of domain): 5/8 mismatches
+exit=0
+neon in-domain: 67109124 values, 0 mismatches
+neon failure control (out of domain): 2/8 mismatches
+exit=0
