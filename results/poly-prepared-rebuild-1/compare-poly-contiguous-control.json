@@ -1,0 +1,101 @@
+{
+  "pinned": "poly-contiguous-control",
+  "rebuild": "poly-contiguous-control-rebuild-1",
+  "prepare": [
+    0,
+    0
+  ],
+  "hashes": {
+    ".deps/experiments/<name>/libflint-experiment.dylib": {
+      "pinned": "836a2e36603ef8bfcab149efea9622af8716b3c471eea51feeb59dce44a7649d",
+      "rebuild": "0fac588ba0ae9a62e6f5d249eae87e1fc48cbae464cede7e4c852a3340766bed",
+      "match": false
+    },
+    ".deps/experiments/<name>/poly-survey": {
+      "pinned": "3825222ee14d2cf45bf57e358c88dfdb10c4d44d1c7c3a6f19aae77159e4c220",
+      "rebuild": "863f78b61dbb9feb0004a0ae4ce4086f1002542f3e91705193ccab0e1330f72b",
+      "match": false
+    },
+    ".deps/experiments/<name>/src/gr/nmod_transformed_poly.c": {
+      "pinned": "d23bdd2aeb160c1b28f0dd3c0143f27266f5cbbb339dc9a0d6725e1390f3f7ea",
+      "rebuild": "d23bdd2aeb160c1b28f0dd3c0143f27266f5cbbb339dc9a0d6725e1390f3f7ea",
+      "match": true
+    },
+    ".deps/experiments/<name>/src/nmod_poly_mat/mulmid_fft_small.c": {
+      "pinned": "488400c2ee37b1966b74094e7eea1ba7d177e70f411aa25316f83e148e55e12d",
+      "rebuild": "488400c2ee37b1966b74094e7eea1ba7d177e70f411aa25316f83e148e55e12d",
+      "match": true
+    },
+    ".deps/flint/libflint.25.0.dylib": {
+      "pinned": "31b9d75a502a408098b37990830d1f033a55fc5957e22ebf12cdaeb2a0fafe58",
+      "rebuild": "f0f247adeb1507d205a4d2f7ebdad557d95f11ebec2e0913bf57bd1f20976025",
+      "match": false
+    },
+    "bench/poly_prepared.inc": {
+      "pinned": "e3b7921d1c0e7b3ff25c5ed9acac60d0c5ced43dbed9055ab556302083c4f55e",
+      "rebuild": "e3b7921d1c0e7b3ff25c5ed9acac60d0c5ced43dbed9055ab556302083c4f55e",
+      "match": true
+    },
+    "bench/poly_survey.c": {
+      "pinned": "dc33b45f7cdf11e1692570dbd2475cf5701f490e80cc9ec6b37be131e13269ec",
+      "rebuild": "dc33b45f7cdf11e1692570dbd2475cf5701f490e80cc9ec6b37be131e13269ec",
+      "match": true
+    },
+    "patches/<name>.patch": {
+      "pinned": "2e5f98fc8c8aa0187422971fab762233e9ea7caa50e1a9a3849159551155b2f7",
+      "rebuild": "2e5f98fc8c8aa0187422971fab762233e9ea7caa50e1a9a3849159551155b2f7",
+      "match": true
+    },
+    "results/<name>-build/gr.s": {
+      "pinned": "0a9fda97285d4c0e9fc561ec76ec1cc340703ce78e120b35fd244a6f373e31e1",
+      "rebuild": "c7a1f6172981558766444237209fcb2299d84eb126943b32b92d85f043a8e321",
+      "match": false
+    },
+    "scripts/build_poly_prepared.py": {
+      "pinned": "6dbe27028f528e0265b2ee7444f2d11e45129ff742e8a40c79731c805c9f1f3f",
+      "rebuild": "6dbe27028f528e0265b2ee7444f2d11e45129ff742e8a40c79731c805c9f1f3f",
+      "match": true
+    }
+  },
+  "gr_s": {
+    "lines": [
+      49566,
+      49566
+    ],
+    "path_normalized_sha256": [
+      "f1b215c33877ff6ee96efff86000e9e943fb23be57d1c696a781cea68d73a8da",
+      "850586c547446d6edcb9e43ada3e4d1901425bdb2c50d5e308e542f479fb8bc7"
+    ],
+    "path_normalized_identical": false,
+    "path_normalized_differing_lines": 2188,
+    "kernel_bodies_identical_ignoring_loc": {
+      "_bf_normalize": true,
+      "_bf_contiguous": true
+    },
+    "counts_pinned": {
+      "_bf_normalize": {
+        "instructions": 39,
+        "frintn": 8,
+        "stack_references": 0
+      },
+      "_bf_contiguous": {
+        "instructions": 150,
+        "frintn": 24,
+        "stack_references": 0
+      }
+    },
+    "counts_rebuild": {
+      "_bf_normalize": {
+        "instructions": 39,
+        "frintn": 8,
+        "stack_references": 0
+      },
+      "_bf_contiguous": {
+        "instructions": 150,
+        "frintn": 24,
+        "stack_references": 0
+      }
+    }
+  },
+  "commands_identical_after_path_normalization": false
+}

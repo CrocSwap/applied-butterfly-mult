@@ -1,0 +1,1214 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "dim": 4,
+      "length": 240,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 16,
+      "dot_successes": 16,
+      "prepared_inputs": 16,
+      "prepared_slots": 16384,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 4,
+      "length": 240,
+      "modulus": 1000000007,
+      "window": "middle",
+      "dot_calls": 16,
+      "dot_successes": 16,
+      "prepared_inputs": 16,
+      "prepared_slots": 16384,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 4,
+      "length": 256,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 16,
+      "dot_successes": 16,
+      "prepared_inputs": 16,
+      "prepared_slots": 32768,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 4,
+      "length": 256,
+      "modulus": 1000000007,
+      "window": "middle",
+      "dot_calls": 16,
+      "dot_successes": 16,
+      "prepared_inputs": 16,
+      "prepared_slots": 32768,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 4,
+      "length": 272,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 16,
+      "dot_successes": 16,
+      "prepared_inputs": 16,
+      "prepared_slots": 32768,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 4,
+      "length": 272,
+      "modulus": 1000000007,
+      "window": "middle",
+      "dot_calls": 16,
+      "dot_successes": 16,
+      "prepared_inputs": 16,
+      "prepared_slots": 32768,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 4,
+      "length": 1008,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 16,
+      "dot_successes": 16,
+      "prepared_inputs": 16,
+      "prepared_slots": 65536,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 4,
+      "length": 1008,
+      "modulus": 1000000007,
+      "window": "middle",
+      "dot_calls": 16,
+      "dot_successes": 16,
+      "prepared_inputs": 16,
+      "prepared_slots": 65536,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 4,
+      "length": 1024,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 16,
+      "dot_successes": 16,
+      "prepared_inputs": 16,
+      "prepared_slots": 131072,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 4,
+      "length": 1024,
+      "modulus": 1000000007,
+      "window": "middle",
+      "dot_calls": 16,
+      "dot_successes": 16,
+      "prepared_inputs": 16,
+      "prepared_slots": 131072,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 4,
+      "length": 1040,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 16,
+      "dot_successes": 16,
+      "prepared_inputs": 16,
+      "prepared_slots": 131072,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 4,
+      "length": 1040,
+      "modulus": 1000000007,
+      "window": "middle",
+      "dot_calls": 16,
+      "dot_successes": 16,
+      "prepared_inputs": 16,
+      "prepared_slots": 131072,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 240,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 64,
+      "prepared_slots": 65536,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 240,
+      "modulus": 1000000007,
+      "window": "middle",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 64,
+      "prepared_slots": 65536,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 256,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 64,
+      "prepared_slots": 131072,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 256,
+      "modulus": 1000000007,
+      "window": "middle",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 64,
+      "prepared_slots": 131072,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 272,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 64,
+      "prepared_slots": 131072,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 272,
+      "modulus": 1000000007,
+      "window": "middle",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 64,
+      "prepared_slots": 131072,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 1008,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 64,
+      "prepared_slots": 262144,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 1008,
+      "modulus": 1000000007,
+      "window": "middle",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 64,
+      "prepared_slots": 262144,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 1024,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 64,
+      "prepared_slots": 524288,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 1024,
+      "modulus": 1000000007,
+      "window": "middle",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 64,
+      "prepared_slots": 524288,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 1040,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 64,
+      "prepared_slots": 524288,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 1040,
+      "modulus": 1000000007,
+      "window": "middle",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 64,
+      "prepared_slots": 524288,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 240,
+      "modulus": 1108307720798209,
+      "window": "full",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 64,
+      "prepared_slots": 32768,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 240,
+      "modulus": 1108307720798209,
+      "window": "middle",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 64,
+      "prepared_slots": 32768,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 256,
+      "modulus": 1108307720798209,
+      "window": "full",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 64,
+      "prepared_slots": 65536,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 256,
+      "modulus": 1108307720798209,
+      "window": "middle",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 64,
+      "prepared_slots": 65536,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 1024,
+      "modulus": 1108307720798209,
+      "window": "full",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 64,
+      "prepared_slots": 262144,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 1024,
+      "modulus": 1108307720798209,
+      "window": "middle",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 64,
+      "prepared_slots": 262144,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 2,
+      "length": 1024,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 0,
+      "dot_successes": 0,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 1,
+      "length": 1024,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 0,
+      "dot_successes": 0,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-prepared-rebuild-1"
+    },
+    {
+      "dim": 4,
+      "length": 240,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 16,
+      "dot_successes": 16,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 4,
+      "length": 240,
+      "modulus": 1000000007,
+      "window": "middle",
+      "dot_calls": 16,
+      "dot_successes": 16,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 4,
+      "length": 256,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 16,
+      "dot_successes": 16,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 4,
+      "length": 256,
+      "modulus": 1000000007,
+      "window": "middle",
+      "dot_calls": 16,
+      "dot_successes": 16,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 4,
+      "length": 272,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 16,
+      "dot_successes": 16,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 4,
+      "length": 272,
+      "modulus": 1000000007,
+      "window": "middle",
+      "dot_calls": 16,
+      "dot_successes": 16,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 4,
+      "length": 1008,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 16,
+      "dot_successes": 16,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 4,
+      "length": 1008,
+      "modulus": 1000000007,
+      "window": "middle",
+      "dot_calls": 16,
+      "dot_successes": 16,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 4,
+      "length": 1024,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 16,
+      "dot_successes": 16,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 4,
+      "length": 1024,
+      "modulus": 1000000007,
+      "window": "middle",
+      "dot_calls": 16,
+      "dot_successes": 16,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 4,
+      "length": 1040,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 16,
+      "dot_successes": 16,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 4,
+      "length": 1040,
+      "modulus": 1000000007,
+      "window": "middle",
+      "dot_calls": 16,
+      "dot_successes": 16,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 240,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 240,
+      "modulus": 1000000007,
+      "window": "middle",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 256,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 256,
+      "modulus": 1000000007,
+      "window": "middle",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 272,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 272,
+      "modulus": 1000000007,
+      "window": "middle",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 1008,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 1008,
+      "modulus": 1000000007,
+      "window": "middle",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 1024,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 1024,
+      "modulus": 1000000007,
+      "window": "middle",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 1040,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 1040,
+      "modulus": 1000000007,
+      "window": "middle",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 240,
+      "modulus": 1108307720798209,
+      "window": "full",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 240,
+      "modulus": 1108307720798209,
+      "window": "middle",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 256,
+      "modulus": 1108307720798209,
+      "window": "full",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 256,
+      "modulus": 1108307720798209,
+      "window": "middle",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 1024,
+      "modulus": 1108307720798209,
+      "window": "full",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 8,
+      "length": 1024,
+      "modulus": 1108307720798209,
+      "window": "middle",
+      "dot_calls": 64,
+      "dot_successes": 64,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 2,
+      "length": 1024,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 0,
+      "dot_successes": 0,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    },
+    {
+      "dim": 1,
+      "length": 1024,
+      "modulus": 1000000007,
+      "window": "full",
+      "dot_calls": 0,
+      "dot_successes": 0,
+      "prepared_inputs": 0,
+      "prepared_slots": 0,
+      "library": "poly-contiguous-control-rebuild-1"
+    }
+  ],
+  "commands": [
+    [
+      "clang",
+      "-std=gnu23",
+      "-O3",
+      "-g",
+      "-mcpu=apple-m2",
+      "-fno-omit-frame-pointer",
+      "-I/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/.deps/flint/src",
+      "-I/opt/homebrew/opt/gmp/include",
+      "-I/opt/homebrew/opt/mpfr/include",
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/bench/trace_poly_prepared.c",
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/.deps/experiments/poly-prepared-rebuild-1-trace/libflint-experiment.dylib",
+      "-L/opt/homebrew/opt/gmp/lib",
+      "-L/opt/homebrew/opt/mpfr/lib",
+      "-Wl,-rpath,/opt/homebrew/opt/gmp/lib",
+      "-Wl,-rpath,/opt/homebrew/opt/mpfr/lib",
+      "-pthread",
+      "-lmpfr",
+      "-lgmp",
+      "-o",
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "4",
+      "240",
+      "1000000007",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "4",
+      "240",
+      "1000000007",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "4",
+      "256",
+      "1000000007",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "4",
+      "256",
+      "1000000007",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "4",
+      "272",
+      "1000000007",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "4",
+      "272",
+      "1000000007",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "4",
+      "1008",
+      "1000000007",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "4",
+      "1008",
+      "1000000007",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "4",
+      "1024",
+      "1000000007",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "4",
+      "1024",
+      "1000000007",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "4",
+      "1040",
+      "1000000007",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "4",
+      "1040",
+      "1000000007",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "8",
+      "240",
+      "1000000007",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "8",
+      "240",
+      "1000000007",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "8",
+      "256",
+      "1000000007",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "8",
+      "256",
+      "1000000007",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "8",
+      "272",
+      "1000000007",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "8",
+      "272",
+      "1000000007",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "8",
+      "1008",
+      "1000000007",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "8",
+      "1008",
+      "1000000007",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "8",
+      "1024",
+      "1000000007",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "8",
+      "1024",
+      "1000000007",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "8",
+      "1040",
+      "1000000007",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "8",
+      "1040",
+      "1000000007",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "8",
+      "240",
+      "1108307720798209",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "8",
+      "240",
+      "1108307720798209",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "8",
+      "256",
+      "1108307720798209",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "8",
+      "256",
+      "1108307720798209",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "8",
+      "1024",
+      "1108307720798209",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "8",
+      "1024",
+      "1108307720798209",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "2",
+      "1024",
+      "1000000007",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-prepared-rebuild-1",
+      "1",
+      "1024",
+      "1000000007",
+      "full"
+    ],
+    [
+      "clang",
+      "-std=gnu23",
+      "-O3",
+      "-g",
+      "-mcpu=apple-m2",
+      "-fno-omit-frame-pointer",
+      "-I/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/.deps/flint/src",
+      "-I/opt/homebrew/opt/gmp/include",
+      "-I/opt/homebrew/opt/mpfr/include",
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/bench/trace_poly_prepared.c",
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/.deps/experiments/poly-contiguous-control-rebuild-1-trace/libflint-experiment.dylib",
+      "-L/opt/homebrew/opt/gmp/lib",
+      "-L/opt/homebrew/opt/mpfr/lib",
+      "-Wl,-rpath,/opt/homebrew/opt/gmp/lib",
+      "-Wl,-rpath,/opt/homebrew/opt/mpfr/lib",
+      "-pthread",
+      "-lmpfr",
+      "-lgmp",
+      "-o",
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "4",
+      "240",
+      "1000000007",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "4",
+      "240",
+      "1000000007",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "4",
+      "256",
+      "1000000007",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "4",
+      "256",
+      "1000000007",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "4",
+      "272",
+      "1000000007",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "4",
+      "272",
+      "1000000007",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "4",
+      "1008",
+      "1000000007",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "4",
+      "1008",
+      "1000000007",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "4",
+      "1024",
+      "1000000007",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "4",
+      "1024",
+      "1000000007",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "4",
+      "1040",
+      "1000000007",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "4",
+      "1040",
+      "1000000007",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "8",
+      "240",
+      "1000000007",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "8",
+      "240",
+      "1000000007",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "8",
+      "256",
+      "1000000007",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "8",
+      "256",
+      "1000000007",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "8",
+      "272",
+      "1000000007",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "8",
+      "272",
+      "1000000007",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "8",
+      "1008",
+      "1000000007",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "8",
+      "1008",
+      "1000000007",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "8",
+      "1024",
+      "1000000007",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "8",
+      "1024",
+      "1000000007",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "8",
+      "1040",
+      "1000000007",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "8",
+      "1040",
+      "1000000007",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "8",
+      "240",
+      "1108307720798209",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "8",
+      "240",
+      "1108307720798209",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "8",
+      "256",
+      "1108307720798209",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "8",
+      "256",
+      "1108307720798209",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "8",
+      "1024",
+      "1108307720798209",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "8",
+      "1024",
+      "1108307720798209",
+      "mid"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "2",
+      "1024",
+      "1000000007",
+      "full"
+    ],
+    [
+      "/Users/colkitt/discover-work/donation-20261018T1636Z/r1-CrocSwap-applied-butterfly-mult/repo/build/trace-poly-contiguous-control-rebuild-1",
+      "1",
+      "1024",
+      "1000000007",
+      "full"
+    ]
+  ],
+  "scope": "Separate instrumented libraries. One dense operation per case, independent KS reference; no timings.",
+  "sha256": {
+    "scripts/trace_poly_prepared_rebuild.py": "6a4fdf8de0aaa310e6530fd7089ba5459b8bb2af6287acc98c969b8ec2edef3e",
+    "bench/trace_poly_prepared.c": "e81d67be024b15ba4686356d798ff3ae9ba940012bcb31fc44a46623e30b5e3c",
+    "bench/poly_survey.c": "dc33b45f7cdf11e1692570dbd2475cf5701f490e80cc9ec6b37be131e13269ec",
+    "experiments/poly-prepared-confirm-plan.json": "70fccb8eb39f02321f2567dcfdb005f8dfe9c43ee0abb053402d86d6daf29b78",
+    ".deps/experiments/poly-prepared-rebuild-1-trace/libflint-experiment.dylib": "856e724c7ddd224d7472294573179adf5e96074ad5904bde269711172a5aa1b4",
+    "build/trace-poly-prepared-rebuild-1": "adb972a38ba03333f5df92ab94e1e8fdc1dfefc22a9cf2ea6c2e1d611ea1c7a3",
+    ".deps/experiments/poly-contiguous-control-rebuild-1-trace/libflint-experiment.dylib": "5fe2639dd7e195b6d29ecda062a0a66aa827cf124e5585c9eb74b551a49a2cee",
+    "build/trace-poly-contiguous-control-rebuild-1": "232072c8bb14ad559856e90ea2171bd79cac5ee8f38c02ca59511888811a8651"
+  }
+}

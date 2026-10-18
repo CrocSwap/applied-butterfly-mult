@@ -1,0 +1,21 @@
+{
+  "machine": "Apple M2",
+  "cpus": 8,
+  "memory_bytes": 25769803776,
+  "macos": "26.6.2 (25G83)",
+  "clang": "Apple clang version 21.0.0 (clang-2100.3.34.2)",
+  "make": "GNU Make 3.81",
+  "locale_LC_COLLATE": "en_US.UTF-8 (shell default; see locale-control.json)",
+  "gmp": "gmp 6.3.0",
+  "mpfr": "mpfr 4.2.2",
+  "autoconf": "autoconf 2.73",
+  "automake": "automake 1.19",
+  "libtool": "libtool 2.5.4",
+  "python": "3.14.6",
+  "repo_base": "cc72641d0dab6731f8fc9faa2e5e5c9cf46cb951",
+  "flint": "657a2839cf0125164859ff102b1f124abcb87ce0",
+  "flint_build_seconds": 352,
+  "flint_build_jobs": 4,
+  "load_average_note": "load average 6.6-24.7 on 8 cores during the session (other work on the machine); no timings are reported",
+  "independence": "Same GitHub account (Mister-Meeseeks) and the same physical machine as the original build (pinned commands use /Users/colkitt/sith/toys/math/butterflyMult). Author-side reproducibility check, NOT an independent recheck."
+}

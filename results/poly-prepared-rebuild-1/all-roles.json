@@ -1,0 +1,283 @@
+{
+  "roles": {
+    "scripts/build_poly_prepared.py": {
+      "record": "results/poly-contiguous-control-build/build.json",
+      "pinned": "6dbe27028f528e0265b2ee7444f2d11e45129ff742e8a40c79731c805c9f1f3f",
+      "rebuild": "6dbe27028f528e0265b2ee7444f2d11e45129ff742e8a40c79731c805c9f1f3f",
+      "match": true,
+      "pinned_file_committed": true
+    },
+    "bench/poly_prepared.inc": {
+      "record": "results/poly-contiguous-control-build/build.json",
+      "pinned": "e3b7921d1c0e7b3ff25c5ed9acac60d0c5ced43dbed9055ab556302083c4f55e",
+      "rebuild": "e3b7921d1c0e7b3ff25c5ed9acac60d0c5ced43dbed9055ab556302083c4f55e",
+      "match": true,
+      "pinned_file_committed": true
+    },
+    "bench/poly_survey.c": {
+      "record": "results/poly-prepared-coverage/coverage.json",
+      "pinned": "dc33b45f7cdf11e1692570dbd2475cf5701f490e80cc9ec6b37be131e13269ec",
+      "rebuild": "dc33b45f7cdf11e1692570dbd2475cf5701f490e80cc9ec6b37be131e13269ec",
+      "match": true,
+      "pinned_file_committed": true
+    },
+    "patches/poly-prepared.patch": {
+      "record": "results/poly-prepared-build/build.json",
+      "pinned": "953893b3a4da7b0b532aa6fe14f0103f73f62d62431e947c9c69eda2f122844d",
+      "rebuild": "953893b3a4da7b0b532aa6fe14f0103f73f62d62431e947c9c69eda2f122844d",
+      "match": true,
+      "pinned_file_committed": true
+    },
+    ".deps/experiments/poly-prepared/libflint-experiment.dylib": {
+      "record": "results/poly-prepared-checks/validation.json",
+      "pinned": "ed78d2476966117ec2245e8b367c49e44ebfaedc3ebd1c99710c165d3e0b425a",
+      "rebuild": "51974930bb7dbe370082fedf40e3259eb9dc08d2081e0fcdd7c1b3f8f5db4fe5",
+      "match": false,
+      "pinned_file_committed": false
+    },
+    ".deps/experiments/poly-prepared/poly-survey": {
+      "record": "results/poly-prepared-build/build.json",
+      "pinned": "74278a25fe5f5d934a99a0341007df69c0be5399137ac787cfd5ea442220edd4",
+      "rebuild": "836cd26f7adca8ea1b213fb781a65926cb40b9f391aceb4441ec97a5b5c52c08",
+      "match": false,
+      "pinned_file_committed": false
+    },
+    ".deps/flint/libflint.25.0.dylib": {
+      "record": "results/poly-contiguous-control-build/build.json",
+      "pinned": "31b9d75a502a408098b37990830d1f033a55fc5957e22ebf12cdaeb2a0fafe58",
+      "rebuild": "f0f247adeb1507d205a4d2f7ebdad557d95f11ebec2e0913bf57bd1f20976025",
+      "match": false,
+      "pinned_file_committed": false
+    },
+    "results/poly-prepared-build/gr.s": {
+      "record": "results/poly-prepared-build/build.json",
+      "pinned": "402286f47cb158ab5dd264b6a7498d5028a61dacf6566471442cf05871b2bb4c",
+      "rebuild": "9717028f40d57b43d32b38284e1a05b76ea6c86200ba1e8e8ca34f3dff9ff576",
+      "match": false,
+      "pinned_file_committed": true
+    },
+    ".deps/experiments/poly-prepared/src/gr/nmod_transformed_poly.c": {
+      "record": "results/poly-prepared-build/build.json",
+      "pinned": "15470e18da63dd979a9dcd9913d90ba828d8bfbbc30d9ae893d47575f6eb5a89",
+      "rebuild": "15470e18da63dd979a9dcd9913d90ba828d8bfbbc30d9ae893d47575f6eb5a89",
+      "match": true,
+      "pinned_file_committed": false
+    },
+    ".deps/experiments/poly-prepared/src/nmod_poly_mat/mulmid_fft_small.c": {
+      "record": "results/poly-prepared-build/build.json",
+      "pinned": "4b051a064d11b0e61579c985020b7223eb954a7e48d50bbb6927c2803409117d",
+      "rebuild": "4b051a064d11b0e61579c985020b7223eb954a7e48d50bbb6927c2803409117d",
+      "match": true,
+      "pinned_file_committed": false
+    },
+    "patches/poly-contiguous-control.patch": {
+      "record": "results/poly-contiguous-control-build/build.json",
+      "pinned": "2e5f98fc8c8aa0187422971fab762233e9ea7caa50e1a9a3849159551155b2f7",
+      "rebuild": "2e5f98fc8c8aa0187422971fab762233e9ea7caa50e1a9a3849159551155b2f7",
+      "match": true,
+      "pinned_file_committed": true
+    },
+    ".deps/experiments/poly-contiguous-control/libflint-experiment.dylib": {
+      "record": "results/poly-contiguous-control-checks/validation.json",
+      "pinned": "836a2e36603ef8bfcab149efea9622af8716b3c471eea51feeb59dce44a7649d",
+      "rebuild": "0fac588ba0ae9a62e6f5d249eae87e1fc48cbae464cede7e4c852a3340766bed",
+      "match": false,
+      "pinned_file_committed": false
+    },
+    ".deps/experiments/poly-contiguous-control/poly-survey": {
+      "record": "results/poly-contiguous-control-build/build.json",
+      "pinned": "3825222ee14d2cf45bf57e358c88dfdb10c4d44d1c7c3a6f19aae77159e4c220",
+      "rebuild": "863f78b61dbb9feb0004a0ae4ce4086f1002542f3e91705193ccab0e1330f72b",
+      "match": false,
+      "pinned_file_committed": false
+    },
+    "results/poly-contiguous-control-build/gr.s": {
+      "record": "results/poly-contiguous-control-build/build.json",
+      "pinned": "0a9fda97285d4c0e9fc561ec76ec1cc340703ce78e120b35fd244a6f373e31e1",
+      "rebuild": "c7a1f6172981558766444237209fcb2299d84eb126943b32b92d85f043a8e321",
+      "match": false,
+      "pinned_file_committed": true
+    },
+    ".deps/experiments/poly-contiguous-control/src/gr/nmod_transformed_poly.c": {
+      "record": "results/poly-contiguous-control-build/build.json",
+      "pinned": "d23bdd2aeb160c1b28f0dd3c0143f27266f5cbbb339dc9a0d6725e1390f3f7ea",
+      "rebuild": "d23bdd2aeb160c1b28f0dd3c0143f27266f5cbbb339dc9a0d6725e1390f3f7ea",
+      "match": true,
+      "pinned_file_committed": false
+    },
+    ".deps/experiments/poly-contiguous-control/src/nmod_poly_mat/mulmid_fft_small.c": {
+      "record": "results/poly-contiguous-control-build/build.json",
+      "pinned": "488400c2ee37b1966b74094e7eea1ba7d177e70f411aa25316f83e148e55e12d",
+      "rebuild": "488400c2ee37b1966b74094e7eea1ba7d177e70f411aa25316f83e148e55e12d",
+      "match": true,
+      "pinned_file_committed": false
+    },
+    "scripts/validate_poly_prepared.py": {
+      "record": "results/poly-contiguous-control-checks/validation.json",
+      "pinned": "a8e62219cc46854d2bf1a0206058d9767093d4d7fc8862c7a61f17ba0cea7799",
+      "rebuild": "a8e62219cc46854d2bf1a0206058d9767093d4d7fc8862c7a61f17ba0cea7799",
+      "match": true,
+      "pinned_file_committed": true
+    },
+    "bench/test_poly_dot.c": {
+      "record": "results/poly-contiguous-control-checks/validation.json",
+      "pinned": "a50895a6ea16c1f2c8940e4eda74e532cac861bf817c45fde9ec963eaf6b7911",
+      "rebuild": "a50895a6ea16c1f2c8940e4eda74e532cac861bf817c45fde9ec963eaf6b7911",
+      "match": true,
+      "pinned_file_committed": true
+    },
+    "bench/test_poly_matrix.c": {
+      "record": "results/poly-contiguous-control-checks/validation.json",
+      "pinned": "26cdfb8d452422f736f63ec639578adfe70d7304c0055cb2d90cf39424771694",
+      "rebuild": "26cdfb8d452422f736f63ec639578adfe70d7304c0055cb2d90cf39424771694",
+      "match": true,
+      "pinned_file_committed": true
+    },
+    "bench/test_poly_prepared_matrix.c": {
+      "record": "results/poly-contiguous-control-checks/validation.json",
+      "pinned": "a5cfd4ff3d2d323ed18d7f44be904a88f450f9e68eb1adcae89690db1b6d8bc5",
+      "rebuild": "a5cfd4ff3d2d323ed18d7f44be904a88f450f9e68eb1adcae89690db1b6d8bc5",
+      "match": true,
+      "pinned_file_committed": true
+    },
+    ".deps/experiments/poly-prepared-trace/libflint-experiment.dylib": {
+      "record": "results/poly-prepared-coverage/coverage.json",
+      "pinned": "a0047aa38e5707bac052dd1c7a052e452810a7bca7828e377f7b49de18fa43a3",
+      "rebuild": "856e724c7ddd224d7472294573179adf5e96074ad5904bde269711172a5aa1b4",
+      "match": false,
+      "pinned_file_committed": false
+    },
+    ".deps/experiments/poly-prepared-trace/kernel.inc": {
+      "record": "results/poly-prepared-checks/validation.json",
+      "pinned": "defe96f6cd5178bf5749b202d4fa6ef0ff44fc2374ef88a5b39bce9b735cdc98",
+      "rebuild": "defe96f6cd5178bf5749b202d4fa6ef0ff44fc2374ef88a5b39bce9b735cdc98",
+      "match": true,
+      "pinned_file_committed": false
+    },
+    ".deps/experiments/poly-prepared-trace/gr.c": {
+      "record": "results/poly-prepared-checks/validation.json",
+      "pinned": "c1b42c366b2414b5cb8b7faa2c7478029ad2ecb23807b031cc441f3ced9835d4",
+      "rebuild": "c1b42c366b2414b5cb8b7faa2c7478029ad2ecb23807b031cc441f3ced9835d4",
+      "match": true,
+      "pinned_file_committed": false
+    },
+    "results/poly-prepared-checks/upstream.txt": {
+      "record": "results/poly-prepared-checks/validation.json",
+      "pinned": "24de4a576a9baeb9bf090f5e9efbd3279d3b22a965445d4936895662690345cd",
+      "rebuild": "e048effe5bc7770e830496e0132dc260834925d17e4808c745a35e19c5667f8c",
+      "match": false,
+      "pinned_file_committed": true
+    },
+    "results/poly-prepared-checks/test_poly_matrix.json": {
+      "record": "results/poly-prepared-checks/validation.json",
+      "pinned": "babeec5070acaeef14992d390e7413e20242183e201fb26252136509daf4a402",
+      "rebuild": "babeec5070acaeef14992d390e7413e20242183e201fb26252136509daf4a402",
+      "match": true,
+      "pinned_file_committed": true
+    },
+    "results/poly-prepared-checks/test_poly_dot.json": {
+      "record": "results/poly-prepared-checks/validation.json",
+      "pinned": "59b9be1c403021c0f1b322d92302d1fdbb9250ec1e6f7cd5ed75a8554869f995",
+      "rebuild": "59b9be1c403021c0f1b322d92302d1fdbb9250ec1e6f7cd5ed75a8554869f995",
+      "match": true,
+      "pinned_file_committed": true
+    },
+    "results/poly-prepared-checks/matrix-trace.json": {
+      "record": "results/poly-prepared-checks/validation.json",
+      "pinned": "48994c5b9c21ba19ecc16b8df0e610bfffcbc1641635ab80745af470c2df3eda",
+      "rebuild": "48994c5b9c21ba19ecc16b8df0e610bfffcbc1641635ab80745af470c2df3eda",
+      "match": true,
+      "pinned_file_committed": true
+    },
+    ".deps/experiments/poly-contiguous-control-trace/libflint-experiment.dylib": {
+      "record": "results/poly-prepared-coverage/coverage.json",
+      "pinned": "4612020b90c8ec694544a0064adf4513c72a67950b9006c53f8fe767dfcc1b49",
+      "rebuild": "5fe2639dd7e195b6d29ecda062a0a66aa827cf124e5585c9eb74b551a49a2cee",
+      "match": false,
+      "pinned_file_committed": false
+    },
+    ".deps/experiments/poly-contiguous-control-trace/kernel.inc": {
+      "record": "results/poly-contiguous-control-checks/validation.json",
+      "pinned": "fa8dbced744b5f8a92c48acd93269785975d4db65cb636f94558d3d3ad73f8f9",
+      "rebuild": "fa8dbced744b5f8a92c48acd93269785975d4db65cb636f94558d3d3ad73f8f9",
+      "match": true,
+      "pinned_file_committed": false
+    },
+    ".deps/experiments/poly-contiguous-control-trace/gr.c": {
+      "record": "results/poly-contiguous-control-checks/validation.json",
+      "pinned": "10f088674fa72e04879ec2447f55fc4c19bcf86b8434533721b6c17468c545d5",
+      "rebuild": "10f088674fa72e04879ec2447f55fc4c19bcf86b8434533721b6c17468c545d5",
+      "match": true,
+      "pinned_file_committed": false
+    },
+    "results/poly-contiguous-control-checks/upstream.txt": {
+      "record": "results/poly-contiguous-control-checks/validation.json",
+      "pinned": "24de4a576a9baeb9bf090f5e9efbd3279d3b22a965445d4936895662690345cd",
+      "rebuild": "e048effe5bc7770e830496e0132dc260834925d17e4808c745a35e19c5667f8c",
+      "match": false,
+      "pinned_file_committed": true
+    },
+    "results/poly-contiguous-control-checks/test_poly_matrix.json": {
+      "record": "results/poly-contiguous-control-checks/validation.json",
+      "pinned": "babeec5070acaeef14992d390e7413e20242183e201fb26252136509daf4a402",
+      "rebuild": "babeec5070acaeef14992d390e7413e20242183e201fb26252136509daf4a402",
+      "match": true,
+      "pinned_file_committed": true
+    },
+    "results/poly-contiguous-control-checks/test_poly_dot.json": {
+      "record": "results/poly-contiguous-control-checks/validation.json",
+      "pinned": "59b9be1c403021c0f1b322d92302d1fdbb9250ec1e6f7cd5ed75a8554869f995",
+      "rebuild": "59b9be1c403021c0f1b322d92302d1fdbb9250ec1e6f7cd5ed75a8554869f995",
+      "match": true,
+      "pinned_file_committed": true
+    },
+    "results/poly-contiguous-control-checks/matrix-trace.json": {
+      "record": "results/poly-contiguous-control-checks/validation.json",
+      "pinned": "df23bd742e9aede2421e93e546ea2c1db380dfc8b8622ed7c30d74f60a57cec2",
+      "rebuild": "df23bd742e9aede2421e93e546ea2c1db380dfc8b8622ed7c30d74f60a57cec2",
+      "match": true,
+      "pinned_file_committed": true
+    },
+    "scripts/trace_poly_prepared.py": {
+      "record": "results/poly-prepared-coverage/coverage.json",
+      "pinned": "da04e420dbb113fa193fc68f4bb1e3db5374719b89eb8fed83fab50bde06918d",
+      "rebuild": "6a4fdf8de0aaa310e6530fd7089ba5459b8bb2af6287acc98c969b8ec2edef3e",
+      "match": false,
+      "pinned_file_committed": true
+    },
+    "bench/trace_poly_prepared.c": {
+      "record": "results/poly-prepared-coverage/coverage.json",
+      "pinned": "e81d67be024b15ba4686356d798ff3ae9ba940012bcb31fc44a46623e30b5e3c",
+      "rebuild": "e81d67be024b15ba4686356d798ff3ae9ba940012bcb31fc44a46623e30b5e3c",
+      "match": true,
+      "pinned_file_committed": true
+    },
+    "experiments/poly-prepared-confirm-plan.json": {
+      "record": "results/poly-prepared-coverage/coverage.json",
+      "pinned": "70fccb8eb39f02321f2567dcfdb005f8dfe9c43ee0abb053402d86d6daf29b78",
+      "rebuild": "70fccb8eb39f02321f2567dcfdb005f8dfe9c43ee0abb053402d86d6daf29b78",
+      "match": true,
+      "pinned_file_committed": true
+    },
+    "build/trace-poly-prepared": {
+      "record": "results/poly-prepared-coverage/coverage.json",
+      "pinned": "5edc1bcd4358d5e901a993b186833d6ad7a2352e00aa16953779750dc4297e19",
+      "rebuild": "adb972a38ba03333f5df92ab94e1e8fdc1dfefc22a9cf2ea6c2e1d611ea1c7a3",
+      "match": false,
+      "pinned_file_committed": false
+    },
+    "build/trace-poly-contiguous-control": {
+      "record": "results/poly-prepared-coverage/coverage.json",
+      "pinned": "9b731a7f90af90ce9d077e431e80fe60f6088644b7f1000983e47074a76feda8",
+      "rebuild": "232072c8bb14ad559856e90ea2171bd79cac5ee8f38c02ca59511888811a8651",
+      "match": false,
+      "pinned_file_committed": false
+    }
+  },
+  "summary": {
+    "roles": 39,
+    "match": 25,
+    "uncommitted_pinned": 17,
+    "uncommitted_pinned_match": 8
+  }
+}
