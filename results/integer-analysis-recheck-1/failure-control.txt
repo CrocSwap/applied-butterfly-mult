@@ -1,0 +1,18 @@
+control-aa-dual        wall sqr        n= 3 sizes=[4096, 8192, 16384] point=-0.1961 stored=-0.1961 ci=[-1.09,+0.69] stored=[-1.13,+0.71]
+control-aa-dual        wall mul        n= 3 sizes=[4096, 8192, 16384] point=-0.9390 stored=-0.9390 ci=[-2.24,+0.27] stored=[-2.17,+0.23]
+control-aa-dual        cpu  sqr        n= 3 sizes=[4096, 8192, 16384] point=+0.0621 stored=+0.0621 ci=[-0.45,+0.56] stored=[-0.46,+0.56]
+control-aa-dual        cpu  mul        n= 3 sizes=[4096, 8192, 16384] point=-0.3062 stored=-0.3062 ci=[-0.57,-0.04] stored=[-0.57,-0.03]
+c3-register-confirm-1  wall sqr        n= 9 sizes=[4096, 4097, 6144, 8191, 8192, 8193, 12288, 16383, 16384] point=+2.9944 stored=+2.9944 ci=[+1.96,+4.13] stored=[+1.94,+4.11]
+c3-register-confirm-1  wall mul        n= 9 sizes=[4096, 4097, 6144, 8191, 8192, 8193, 12288, 16383, 16384] point=+1.4320 stored=+1.4320 ci=[-0.05,+2.78] stored=[-0.02,+2.77]
+c3-register-confirm-1  wall unbalanced n= 9 sizes=[4096, 4097, 6144, 8191, 8192, 8193, 12288, 16383, 16384] point=+2.0042 stored=+2.0042 ci=[+0.75,+3.14] stored=[+0.77,+3.13]
+c3-register-confirm-1  cpu  sqr        n= 9 sizes=[4096, 4097, 6144, 8191, 8192, 8193, 12288, 16383, 16384] point=+3.2633 stored=+3.2633 ci=[+2.99,+3.55] stored=[+2.99,+3.54]
+c3-register-confirm-1  cpu  mul        n= 9 sizes=[4096, 4097, 6144, 8191, 8192, 8193, 12288, 16383, 16384] point=+2.1844 stored=+2.1844 ci=[+2.00,+2.38] stored=[+2.00,+2.39]
+c3-register-confirm-1  cpu  unbalanced n= 9 sizes=[4096, 4097, 6144, 8191, 8192, 8193, 12288, 16383, 16384] point=+2.1671 stored=+2.1671 ci=[+1.98,+2.34] stored=[+1.97,+2.35]
+c3-register-confirm-2  wall sqr        n= 9 sizes=[4096, 4097, 6144, 8191, 8192, 8193, 12288, 16383, 16384] point=+2.9103 stored=+2.9103 ci=[+2.05,+3.73] stored=[+2.02,+3.74]
+c3-register-confirm-2  wall mul        n= 9 sizes=[4096, 4097, 6144, 8191, 8192, 8193, 12288, 16383, 16384] point=+1.4009 stored=+1.4009 ci=[+0.00,+2.50] stored=[+0.00,+2.53]
+c3-register-confirm-2  wall unbalanced n= 9 sizes=[4096, 4097, 6144, 8191, 8192, 8193, 12288, 16383, 16384] point=+2.2247 stored=+2.2247 ci=[+1.11,+3.19] stored=[+1.16,+3.24]
+FAIL point c3-register-confirm-2 cpu sqr 3.100546984292296 3.101546984292296
+c3-register-confirm-2  cpu  sqr        n= 9 sizes=[4096, 4097, 6144, 8191, 8192, 8193, 12288, 16383, 16384] point=+3.1005 stored=+3.1015 ci=[+2.85,+3.35] stored=[+2.85,+3.34]
+c3-register-confirm-2  cpu  mul        n= 9 sizes=[4096, 4097, 6144, 8191, 8192, 8193, 12288, 16383, 16384] point=+2.1315 stored=+2.1315 ci=[+1.93,+2.33] stored=[+1.92,+2.34]
+c3-register-confirm-2  cpu  unbalanced n= 9 sizes=[4096, 4097, 6144, 8191, 8192, 8193, 12288, 16383, 16384] point=+2.5595 stored=+2.5595 ci=[+2.31,+2.82] stored=[+2.30,+2.82]
+checks=5952 failures=1

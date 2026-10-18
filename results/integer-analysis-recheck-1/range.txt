@@ -1,0 +1,2 @@
+c3-register-confirm-1 9-size 3.2633 11-size 3.2162 4095 2.897 16385 3.110
+c3-register-confirm-2 9-size 3.1005 11-size 3.0336 4095 2.993 16385 2.470
