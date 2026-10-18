@@ -1,0 +1,125 @@
+[
+  {
+    "run": "m54-control-aa",
+    "metrics": {
+      "wall": {
+        "sqr": {
+          "cases": 3,
+          "reduction_pct": -0.08526623919939968,
+          "ci95_low_pct": -0.797591360737071,
+          "ci95_high_pct": 0.611905252096312
+        },
+        "mul": {
+          "cases": 3,
+          "reduction_pct": -0.5577590623642159,
+          "ci95_low_pct": -1.1352327759786451,
+          "ci95_high_pct": -0.026349321542085136
+        }
+      },
+      "cpu": {
+        "sqr": {
+          "cases": 3,
+          "reduction_pct": -0.19853645156500122,
+          "ci95_low_pct": -0.8289738199560137,
+          "ci95_high_pct": 0.41920430228536976
+        },
+        "mul": {
+          "cases": 3,
+          "reduction_pct": -0.4102617449347479,
+          "ci95_low_pct": -0.8715900700998924,
+          "ci95_high_pct": 0.0555673739644047
+        }
+      }
+    }
+  },
+  {
+    "run": "m54-c3-confirm-1",
+    "metrics": {
+      "wall": {
+        "sqr": {
+          "cases": 9,
+          "reduction_pct": 3.698755614455995,
+          "ci95_low_pct": 3.3554548627876546,
+          "ci95_high_pct": 4.052294530387968
+        },
+        "mul": {
+          "cases": 9,
+          "reduction_pct": 2.2366211301104166,
+          "ci95_low_pct": 1.7783901437712468,
+          "ci95_high_pct": 2.669818300192184
+        },
+        "unbalanced": {
+          "cases": 9,
+          "reduction_pct": 2.826248554996036,
+          "ci95_low_pct": 2.221595728322734,
+          "ci95_high_pct": 3.586150979749081
+        }
+      },
+      "cpu": {
+        "sqr": {
+          "cases": 9,
+          "reduction_pct": 3.648399110991829,
+          "ci95_low_pct": 3.333007773981489,
+          "ci95_high_pct": 3.9755251318440155
+        },
+        "mul": {
+          "cases": 9,
+          "reduction_pct": 2.400767198155318,
+          "ci95_low_pct": 2.0605180947333213,
+          "ci95_high_pct": 2.7370905480039065
+        },
+        "unbalanced": {
+          "cases": 9,
+          "reduction_pct": 2.537674175461213,
+          "ci95_low_pct": 2.1614864366521602,
+          "ci95_high_pct": 2.90423650823165
+        }
+      }
+    }
+  },
+  {
+    "run": "m54-c3-confirm-2",
+    "metrics": {
+      "wall": {
+        "sqr": {
+          "cases": 9,
+          "reduction_pct": 3.521039822337213,
+          "ci95_low_pct": 3.2701989704136514,
+          "ci95_high_pct": 3.7887543108641064
+        },
+        "mul": {
+          "cases": 9,
+          "reduction_pct": 2.3728485518556663,
+          "ci95_low_pct": 1.9401158903904259,
+          "ci95_high_pct": 2.812375774598852
+        },
+        "unbalanced": {
+          "cases": 9,
+          "reduction_pct": 2.3214267849676173,
+          "ci95_low_pct": 1.7943371413195353,
+          "ci95_high_pct": 2.8106048927220906
+        }
+      },
+      "cpu": {
+        "sqr": {
+          "cases": 9,
+          "reduction_pct": 3.4377947902920702,
+          "ci95_low_pct": 3.211184021419544,
+          "ci95_high_pct": 3.6820675467550745
+        },
+        "mul": {
+          "cases": 9,
+          "reduction_pct": 2.384102437255875,
+          "ci95_low_pct": 2.086277751553578,
+          "ci95_high_pct": 2.6786108845867185
+        },
+        "unbalanced": {
+          "cases": 9,
+          "reduction_pct": 2.312728617471116,
+          "ci95_low_pct": 2.0128563793073706,
+          "ci95_high_pct": 2.585454176054458
+        }
+      }
+    }
+  }
+]

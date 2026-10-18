@@ -1,0 +1,55 @@
+{
+  "utc": "2026-10-18T05:08:50.310950+00:00",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "cpu": "Apple M2",
+  "memory_bytes": 25769803776,
+  "compiler": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin",
+  "flint_commit": "54d1439be0247173c743f1300a1e0144d24e25dd",
+  "flint_diff": "",
+  "configure": "--with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --disable-static CC=clang 'CFLAGS=-O3 -g -mcpu=apple-m2 -fno-omit-frame-pointer'",
+  "libraries": "gmp 6.3.0\nmpfr 4.2.2",
+  "threads": 1,
+  "limb_bits": 64,
+  "sha256": {
+    "bench/mul.c": "db1b197d6ceb7ad656cc7b2911688a71fa0fb133da7935e03a9ad723c42d5650",
+    "build/mul": "8c96c5e0b3de4a40d412221e5e41b67014cdcd4ebfe86e5e66b998e1457b1cfe",
+    ".deps/flint/libflint.25.0.dylib": "d580f22b59560b97d6bb8dcbad92fef0cf08818f91cda7f1bcf2bbe4d3e383c3"
+  },
+  "method": "Two resident dylibs; 200ms combined warmup; equal iteration counts; alternating ABBA/BAAB quartets; 12 exact patterns per library per case",
+  "environment": {},
+  "arguments": {
+    "baseline": "/Users/colkitt/discover-work/CrocSwap-applied-butterfly-mult-20261018T043623Z/repo/.deps/flint/libflint.25.0.dylib",
+    "candidate": ".deps/experiments/m54-c3/libflint-experiment.dylib",
+    "binary": "build/compare-dual",
+    "metric": "cpu",
+    "output": "results/m54-c3-confirm-1",
+    "sizes": [
+      4095,
+      4096,
+      4097,
+      6144,
+      8191,
+      8192,
+      8193,
+      12288,
+      16383,
+      16384,
+      16385
+    ],
+    "operations": [
+      "mul",
+      "sqr",
+      "unbalanced"
+    ],
+    "trials": 41,
+    "batch_ms": 20,
+    "seed": 55117
+  },
+  "comparison_sha256": {
+    "/Users/colkitt/discover-work/CrocSwap-applied-butterfly-mult-20261018T043623Z/repo/.deps/flint/libflint.25.0.dylib": "d580f22b59560b97d6bb8dcbad92fef0cf08818f91cda7f1bcf2bbe4d3e383c3",
+    ".deps/experiments/m54-c3/libflint-experiment.dylib": "1083d7f704cc4df7f37d00849b5b832435901dd105671204ec0c59f435252ead",
+    "build/compare-dual": "ed8ba7cfa98232a68d3b207a24e1c1f8db5f169085de3bcdd7553652fbef4a86",
+    "/Users/colkitt/discover-work/CrocSwap-applied-butterfly-mult-20261018T043623Z/repo/bench/compare.c": "d512ce40b39db49a5851fda602fa1a9d13707294002bf920f78776d146e357c0"
+  }
+}
