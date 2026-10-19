@@ -23,8 +23,8 @@ is a build-and-revision repeatability check, **not** independent replication.
     about 5% at 4x4 (was about 8%).
   - Lengths 240 and 1008 are unchanged within noise.
   - Over the same revisions the unmodified baseline got faster: up to 29% at 256/1024
-    and 7-20% at 272/1040 (median ns, run 1). Those runs were weeks apart under
-    different load, so treat these baseline shifts as indicative only.
+    and 7-20% at 272/1040 (median ns, run 1). Those runs were 11 days apart
+    (2026-10-07 and 2026-10-18) under different load, so treat these baseline shifts as indicative only.
 
 The frontier record is scoped to `657a2839` and stays as stated. This affects any
 upstream proposal: poly-prepared needed rework against current FLINT (below), while
