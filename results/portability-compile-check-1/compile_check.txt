@@ -1,0 +1,6 @@
+base arm64 exit=0 warnings=0 errors=0
+base x86_64 exit=0 warnings=0 errors=0
+c3 arm64 exit=0 warnings=0 errors=0
+c3 x86_64 exit=0 warnings=0 errors=0
+scalar arm64 exit=0 warnings=0 errors=0
+scalar x86_64 exit=0 warnings=0 errors=0

@@ -1,0 +1,11 @@
+date_utc: 2026-10-18T16:20:27Z
+chip: Apple M2, 8 cores, 24 GiB
+os: macOS 26.6.2 (25G83)
+compiler: Apple clang version 21.0.0 (clang-2100.3.34.2)
+x86_64 execution: Rosetta 2 (arch -x86_64), AVX2 ymm instructions confirmed in lane_x86 disassembly
+gmp.h: /opt/homebrew/include/gmp.h (arm64 Homebrew header, used for both targets; compile-only)
+flint: 657a2839cf0125164859ff102b1f124abcb87ce0 (sparse: src/*.h, src/*.h.in, src/fft_small/)
+flint.h: generated from flint.h.in with version 3.5.0-dev placeholders
+flint-mparam.h: arm64 <- src/mpn_extras/arm64/applem1, x86_64 <- src/mpn_extras/x86_64/skylake
+repo base: cc72641d0dab6731f8fc9faa2e5e5c9cf46cb951
+seed: 711a97e932757134a101062ddfdb4ffd (track portability, card portable-fusion-fallback)
