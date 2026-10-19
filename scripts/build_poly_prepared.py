@@ -12,7 +12,8 @@ from build_experiment import ROOT,BASE,FLAGS,INCLUDES,LIBS,make_var
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument('name');ap.add_argument('--prepare',type=int,choices=[0,1],required=True)
-    a=ap.parse_args();assert a.name.replace('-','').isalnum()
+    ap.add_argument('--kernel',type=Path,default=ROOT/'bench/poly_prepared.inc')
+    a=ap.parse_args();a.kernel=a.kernel.resolve();assert a.name.replace('-','').isalnum()
     assert not subprocess.check_output(['git','diff','--stat'],cwd=BASE,text=True).strip()
     assert subprocess.check_output(['git','rev-parse','HEAD'],cwd=BASE,text=True).strip()==json.loads((ROOT/'deps.json').read_text())['flint']['commit']
     dest=ROOT/'.deps/experiments'/a.name;dest.mkdir(parents=True,exist_ok=False)
@@ -21,7 +22,7 @@ def main():
     for path in ['gr/nmod_transformed_poly.c','nmod_poly_mat/mulmid_fft_small.c']:
         old=(BASE/'src'/path).read_text();s=old
         if path.startswith('gr/'):
-            code='\n#define BF_PREPARE '+str(a.prepare)+'\n'+(ROOT/'bench/poly_prepared.inc').read_text()
+            code='\n#define BF_PREPARE '+str(a.prepare)+'\n'+a.kernel.read_text()
             needle='static gr_funcptr __tpoly_methods[GR_METHOD_TAB_SIZE];'
             assert s.count(needle)==1;s=s.replace(needle,code+'\n'+needle)
         else:
@@ -70,8 +71,8 @@ int _bf_tpoly_contiguous(gr_ptr,gr_srcptr,gr_srcptr,slong,slong,gr_ctx_t);
     run(['clang',*FLAGS,'-shared','-install_name',str(lib),'-compatibility_version','25.0','-current_version','25.0.0',*map(str,objects),'-o',str(lib),*LIBS])
     binary=dest/'poly-survey'
     run(['clang',*FLAGS,*INCLUDES,str(ROOT/'bench/poly_survey.c'),str(lib),*LIBS,'-o',str(binary)])
-    files=[Path(__file__).resolve(),ROOT/'bench/poly_prepared.inc',ROOT/'bench/poly_survey.c',patchfile,lib,binary,BASE/'libflint.25.0.dylib',evidence/'gr.s',*[dest/'src'/p for p in sources]]
-    report={'name':a.name,'prepare':a.prepare,'commands':commands,'sha256':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in files}}
+    files=[Path(__file__).resolve(),a.kernel,ROOT/'bench/poly_survey.c',patchfile,lib,binary,BASE/'libflint.25.0.dylib',evidence/'gr.s',*[dest/'src'/p for p in sources]]
+    report={'name':a.name,'prepare':a.prepare,'kernel':str(a.kernel.relative_to(ROOT)),'commands':commands,'sha256':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in files}}
     for p in [dest/'build.json',evidence/'build.json']:p.write_text(json.dumps(report,indent=2)+'\n')
 
 
