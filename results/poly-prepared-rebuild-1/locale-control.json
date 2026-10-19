@@ -1,0 +1,64 @@
+{
+  "question": "Are whole-file hash differences explained by absolute paths, by locale-dependent link order, or by code generation?",
+  "method": "Two extra prepare=1 experiment builds under LC_ALL=C at different directory names (rebuild-1c, rebuild-2c), against the default-locale rebuild-1. Section bytes via `otool -s SEG SECT FILE | tail -n +3 | cut -f2- | shasum -a 256` (addresses stripped).",
+  "builds": {
+    "poly-prepared-rebuild-1": {
+      "LC_ALL": "en_US.UTF-8",
+      "prepare": 1,
+      "__TEXT,__text": "a6a74861e5ea2d884e6cbe0d3bf6d6ff1d873ec9673a03af8325962138e7bd85",
+      "__DATA,__data": "7b907a4a43b22c6605d657729ed638d1b9a27324275f2d55456e4718e753ed28",
+      "file_sha256": "51974930bb7dbe370082fedf40e3259eb9dc08d2081e0fcdd7c1b3f8f5db4fe5",
+      "ld_r_gr_order_head": [
+        "fmpq_mpoly.lo",
+        "fmpq_poly.lo",
+        "fmpq.lo",
+        "fmpz_mod_mpoly_q.lo"
+      ]
+    },
+    "poly-contiguous-control-rebuild-1": {
+      "LC_ALL": "en_US.UTF-8",
+      "prepare": 0,
+      "__TEXT,__text": "b4282e12360bc38d1015a320083b0ab07cdea6057b316c336c4ca608d41ab1aa",
+      "__DATA,__data": "8a122ba37246921341a3e7bf741e1b23f0ab6e9c246a85f82cc4010d65e2e177",
+      "file_sha256": "0fac588ba0ae9a62e6f5d249eae87e1fc48cbae464cede7e4c852a3340766bed",
+      "ld_r_gr_order_head": [
+        "fmpq_mpoly.lo",
+        "fmpq_poly.lo",
+        "fmpq.lo",
+        "fmpz_mod_mpoly_q.lo"
+      ]
+    },
+    "poly-prepared-rebuild-1c": {
+      "LC_ALL": "C",
+      "prepare": 1,
+      "__TEXT,__text": "07faa72b6bacd73187cbb87037b92ef653ae2009757a287f5233d7f72a0ce219",
+      "__DATA,__data": "cfb83b91e3f1a62c3d4408b660ef5bd46c6bf32c9ee27ce429c09a524a404415",
+      "file_sha256": "381069bcb19024967c5c244d1679257a08ebb920e492ed293bee849aa8889697",
+      "ld_r_gr_order_head": [
+        "fmpq.lo",
+        "fmpq_mpoly.lo",
+        "fmpq_poly.lo",
+        "fmpz.lo"
+      ]
+    },
+    "poly-prepared-rebuild-2c": {
+      "LC_ALL": "C",
+      "prepare": 1,
+      "__TEXT,__text": "07faa72b6bacd73187cbb87037b92ef653ae2009757a287f5233d7f72a0ce219",
+      "__DATA,__data": "cfb83b91e3f1a62c3d4408b660ef5bd46c6bf32c9ee27ce429c09a524a404415",
+      "file_sha256": "20bad9829a4b70e0956948cce08809322138b3b88633f1ba781ab223dbdd2e54",
+      "ld_r_gr_order_head": [
+        "fmpq.lo",
+        "fmpq_mpoly.lo",
+        "fmpq_poly.lo",
+        "fmpz.lo"
+      ]
+    }
+  },
+  "findings": [
+    "rebuild-1c and rebuild-2c (both LC_ALL=C, different paths) have identical __text and __data bytes but different file hashes: the file-hash difference comes from path-dependent metadata (install_name, debug map, UUID), not code.",
+    "rebuild-1 (en_US.UTF-8) has different __text bytes from rebuild-1c: link order changes the code layout.",
+    "GNU Make 3.81 (/usr/bin/make) sorts $(wildcard) by locale collation: under en_US.UTF-8 gr_LOBJS gives fmpq_mpoly.lo fmpq_poly.lo fmpq.lo; under LC_ALL=C fmpq.lo fmpq_mpoly.lo fmpq_poly.lo. The pinned ld -r lists are in C (byte) order, so the pinned build ran under a C-collating locale or a different make."
+  ],
+  "not_checked": "The pinned binaries are not committed, so pinned section bytes could not be compared; libflint.25.0.dylib in this session was built under en_US.UTF-8 and not rebuilt under LC_ALL=C. The 1c/2c build directories are scratch and not committed."
+}
