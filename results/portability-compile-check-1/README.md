@@ -48,9 +48,13 @@ cost relative to the NEON path is in `docs/ablations-m2.md`.
 
 - No FLINT build or link, no `fft_small` tests, and no exact multiplication against
   GMP on x86-64. Compiling is not correctness.
-- No timing on any architecture. The card's no-regression gate on M2 is unaffected,
-  because the NEON path is byte-identical to the measured patch, but this was not
-  re-measured.
+- **This does not meet the card's acceptance gate** (exact multiplication against GMP,
+  `fft_small` tests and timing), so `portable-fusion-fallback` stays open. It is a compile
+  and lane screen only.
+- No timing on any architecture. The NEON path is byte-identical to the measured patch,
+  so the M2 result should carry over, but this was not re-measured.
+- The lane test uses conversion code copied from FLINT `657a2839` `machine_vectors.h`,
+  not FLINT's headers themselves; the copies were checked against the source.
 - The AVX2 check ran under Rosetta 2 on an M2, not on x86 hardware. Rosetta's AVX2
   emulation was trusted.
 - The compile used a hand-written minimal `flint-config.h` (`flint-config.min.h`), a
