@@ -23,8 +23,8 @@ built upstream.
    model. An `mpn_mod` variant is declared at `src/mpn_mod.h:279`. Multi-prime plans
    are limited to multiplicative depth two; deeper products return `GR_UNABLE` and
    callers renormalize through a conversion roundtrip (file header comment).
-2. **No in-library caller chains same-length products.** The only FLINT function that
-   chains `nmod_poly_mat_mul`/`sqr` is `nmod_poly_mat_pow` (`src/nmod_poly_mat/pow.c`),
+2. **Apart from half-gcd (finding 4), no in-library caller chains same-length products.**
+   The only other FLINT function that chains `nmod_poly_mat_mul`/`sqr` is `nmod_poly_mat_pow` (`src/nmod_poly_mat/pow.c`),
    by repeated squaring. Each step doubles the entry length, so a result cannot be
    reused at the same transform size.
 3. **Best case for `pow` is at or below the gate.** With the usual transform-doubling
@@ -34,6 +34,8 @@ built upstream.
    the saving at roughly 10-15% of `pow` alone. This is an order-of-magnitude
    estimate, not a measured or certified bound, for a function with no identified
    performance-critical caller.
+   An estimate of 10-15% doesn't clearly fall below the 10% kill threshold, so the stop
+   rests on the other leg: the mechanism is already being built upstream (findings 1 and 4).
 
 4. **The obvious same-length chaining caller is already covered upstream.** Half-gcd
    chains 2x2 polynomial-matrix products; FLINT already dispatches them to a
