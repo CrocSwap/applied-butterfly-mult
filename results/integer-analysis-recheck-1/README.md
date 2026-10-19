@@ -62,7 +62,7 @@ This package doesn't change the frontier.
 - Other analysis outputs (`ablation-analysis.json`, `final-checks-analysis.json`, pi runs).
 - Whether the raw samples are genuine measurements. Only their internal consistency with the
   summaries was checked.
-- Independence: the contributor's account and machine were not confirmed to differ from the original author's.
+- Independence: none. This recheck ran under the same account as the original analysis (@Mister-Meeseeks), so it is author-checked and doesn't count toward `independent-replication`.
 
 ## Open next questions
 
