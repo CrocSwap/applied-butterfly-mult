@@ -57,6 +57,9 @@
       "change-frontier"
     ]
   },
+  "requirements": {
+    "note": "The measured results are on Apple Silicon macOS, and cards that rebuild or re-measure them say so (`requires`). The analysis, review, upstream-preparation and survey cards run on any machine with Python 3; the second-architecture card wants a machine that isn't an Apple Silicon Mac."
+  },
   "verification_profile": "benchmark",
   "credit": {
     "policy": "Contributors whose work is accepted are acknowledged by name (GitHub handle) in the review ledger, discover/ledger.md, with what they contributed. Verification reports that count toward acceptance are credited the same way.",
